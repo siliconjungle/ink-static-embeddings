@@ -1,0 +1,34 @@
+{
+  "backend": "hardware-webgpu",
+  "all_outputs_bit_exact": true,
+  "invalid_ids_rejected": true,
+  "oversized_documents_rejected": true,
+  "oversized_allocations_rejected": true,
+  "javascript_loader_checked": false,
+  "adapter": {
+    "vendor": "apple",
+    "architecture": "metal-3",
+    "isFallbackAdapter": false
+  },
+  "load_ms": 330.15499997138977,
+  "session_open_ms": 569.9900000095367,
+  "rounds": [
+    {
+      "shift": 0,
+      "elapsed_ms": 10.270000040531158,
+      "output_sha256": "5b8fcfdffdc6b21a32536ba8a17174e2e680faf87077aff6f2ff4d96ba62cbba"
+    },
+    {
+      "shift": 1,
+      "elapsed_ms": 2.259999990463257,
+      "output_sha256": "127cd1a8af987c81e3fbe3fbe641533469504aeff387dd2cb530c8d7b982b437"
+    },
+    {
+      "shift": 2,
+      "elapsed_ms": 2.134999990463257,
+      "output_sha256": "f19d9c11d6b7f01692d389b56c43a23e0677a36dc362e8cc5faa92007edfcb19"
+    }
+  ],
+  "scope": "Correctness validation with changing query order; round timings are diagnostics, not a controlled performance benchmark.",
+  "browser_version": "156.0.8078.80"
+}

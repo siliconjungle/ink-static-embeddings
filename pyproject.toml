@@ -1,7 +1,7 @@
 [project]
 name = "neural-to-ink"
-version = "0.1.0"
-description = "Convert a pinned static embedding model to Ink and benchmark checked optimization."
+version = "0.2.0"
+description = "Convert static embedding architectures to Ink with JavaScript, Rust and WebGPU targets."
 requires-python = ">=3.12"
 dependencies = ["model2vec==0.7.0", "numpy==2.5.4", "safetensors==0.8.0", "huggingface-hub==2.4.0", "tokenizers==0.23.3"]
 
@@ -10,6 +10,7 @@ neural-to-ink = "neural_to_ink.__main__:main"
 
 [dependency-groups]
 dev = ["pytest==9.2.0"]
+validation = ["torch==2.10.0"]
 
 [build-system]
 requires = ["hatchling"]

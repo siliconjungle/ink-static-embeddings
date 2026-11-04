@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "architecture": "static-embedding-mean",
+  "source_format": "model2vec",
+  "model_id": "minishlab/potion-base-2M",
+  "revision": "389b9f64be5aa4ae7a6bc6fe95ef20ce485ae5da",
+  "vocabulary_size": 29528,
+  "dimensions": 64,
+  "parameters": 1889792,
+  "dtype": "float32-le",
+  "normalization": {
+    "kind": "l2-add-epsilon",
+    "epsilon": "1.0e-32"
+  },
+  "shards": [
+    {
+      "name": "weight_0",
+      "offset": 0,
+      "elements": 999000
+    },
+    {
+      "name": "weight_1",
+      "offset": 999000,
+      "elements": 890792
+    }
+  ],
+  "tokenization": {
+    "add_special_tokens": false,
+    "skip_unknown": true
+  },
+  "transformations": [],
+  "source_sha256": "cc89cb00728fd61866e5535879badd6a19d0ca0f482b410e33d92b8ad9b9cebb",
+  "weights_sha256": "a0d8dd289307213f53db86d5c5368be6ae0e69b5c2536dc0352f9c188587d938",
+  "tokenizer_sha256": "e67e803f624fb4d67dea1c730d06e1067e1b14d830e2c2202569e3ef0f70bb50",
+  "upstream_files": {
+    "config.json": "b2a89173391ca774c2d7323090a993a9a1553faa5b40eb37bb7cec6685fbea47",
+    "model.safetensors": "f95ffde02ad06f63ae38eb9d400038cd5ccaf8411ec3cb650c6025113f96cbb8",
+    "tokenizer.json": "e67e803f624fb4d67dea1c730d06e1067e1b14d830e2c2202569e3ef0f70bb50"
+  },
+  "numerics": "ordered binary32 pooling and right-fold norm; upstream reductions checked with explicit tolerance"
+}

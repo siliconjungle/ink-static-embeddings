@@ -1,0 +1,28 @@
+{
+  "schema": 2,
+  "model_id": "fixture/unseen-clamp",
+  "revision": "seed-91837",
+  "source_format": "sentence-transformers",
+  "dimensions": 5,
+  "parameters": 85,
+  "shards": 7,
+  "normalization": {
+    "kind": "l2-clamp",
+    "epsilon": "1.0e-12"
+  },
+  "cases": 16,
+  "upstream_reference": "PyTorch 2.10.0 EmbeddingBag(mean), optional functional.normalize; official StaticEmbedding operations",
+  "upstream_max_abs_error": 5.960464477539063e-08,
+  "rtol": 2e-05,
+  "atol": 2e-06,
+  "backends": {
+    "literal": "bit-exact ordered F32 oracle",
+    "rust": "bit-exact ordered F32 oracle"
+  },
+  "identities": {
+    "model.json": "4567350d49bc694e079e8e621ebbee47262e318dbf278da3518279b60f16d86b",
+    "model.ink": "c5663228fe62641d00aa244dcb5108f1b2e7ac9dc1da139fa93238369fa1f47b",
+    "weights.f32": "6bee504388e52e687df573bd76624a1c6651f22343fe6316e5da15581f24e86c",
+    "validation.json": "146585835afe2c5fc0d230c5564c596db4f900b865a1e9f7d1f8afb98ff4be72"
+  }
+}

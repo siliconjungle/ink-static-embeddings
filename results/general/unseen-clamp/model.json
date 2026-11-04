@@ -1,0 +1,66 @@
+{
+  "schema": 2,
+  "architecture": "static-embedding-mean",
+  "source_format": "sentence-transformers",
+  "model_id": "fixture/unseen-clamp",
+  "revision": "seed-91837",
+  "vocabulary_size": 17,
+  "dimensions": 5,
+  "parameters": 85,
+  "dtype": "float32-le",
+  "normalization": {
+    "kind": "l2-clamp",
+    "epsilon": "1.0e-12"
+  },
+  "shards": [
+    {
+      "name": "weight_0",
+      "offset": 0,
+      "elements": 13
+    },
+    {
+      "name": "weight_1",
+      "offset": 13,
+      "elements": 13
+    },
+    {
+      "name": "weight_2",
+      "offset": 26,
+      "elements": 13
+    },
+    {
+      "name": "weight_3",
+      "offset": 39,
+      "elements": 13
+    },
+    {
+      "name": "weight_4",
+      "offset": 52,
+      "elements": 13
+    },
+    {
+      "name": "weight_5",
+      "offset": 65,
+      "elements": 13
+    },
+    {
+      "name": "weight_6",
+      "offset": 78,
+      "elements": 7
+    }
+  ],
+  "tokenization": {
+    "add_special_tokens": false,
+    "skip_unknown": false
+  },
+  "transformations": [],
+  "source_sha256": "c5663228fe62641d00aa244dcb5108f1b2e7ac9dc1da139fa93238369fa1f47b",
+  "weights_sha256": "6bee504388e52e687df573bd76624a1c6651f22343fe6316e5da15581f24e86c",
+  "tokenizer_sha256": "d81b9bc36f90eef9f6466b8a0268d18931c1ce5072a4b7e2b38e89bf98f38a30",
+  "upstream_files": {
+    "modules.json": "3f09d795c8d0662269c582457c38d642115c029e5ba53132e67bd03586b4551d",
+    "0_StaticEmbedding/model.safetensors": "85db55c33c1ce388e14ce74089a5e963f06b8f76757b1107d94f364e7c98be13",
+    "0_StaticEmbedding/tokenizer.json": "d81b9bc36f90eef9f6466b8a0268d18931c1ce5072a4b7e2b38e89bf98f38a30"
+  },
+  "numerics": "ordered binary32 pooling and right-fold norm; upstream reductions checked with explicit tolerance"
+}

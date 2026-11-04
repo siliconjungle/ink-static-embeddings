@@ -1,0 +1,27 @@
+{
+  "schema": 2,
+  "model_id": "sentence-transformers/static-retrieval-mrl-en-v1",
+  "revision": "f60985c706f192d45d218078e49e5a8b6f15283a",
+  "source_format": "sentence-transformers",
+  "dimensions": 1024,
+  "parameters": 31254528,
+  "shards": 32,
+  "normalization": {
+    "kind": "none"
+  },
+  "cases": 16,
+  "upstream_reference": "PyTorch 2.10.0 EmbeddingBag(mean), optional functional.normalize; official StaticEmbedding operations",
+  "upstream_max_abs_error": 0.0,
+  "rtol": 2e-05,
+  "atol": 2e-06,
+  "backends": {
+    "literal": "bit-exact ordered F32 oracle",
+    "rust": "bit-exact ordered F32 oracle"
+  },
+  "identities": {
+    "model.json": "c25e902d78e8504351dd98c55820db32d27343195e050b4cf23c18bfb3654a1d",
+    "model.ink": "e1363f7f036ec87a636bd46369e09a6ea8173f262e8eb75798f07350f631858b",
+    "weights.f32": "26946bbc5605eadd0663b6196c6b7a7baf4a2c92658abc44bb34024cfa603aab",
+    "validation.json": "7a01eee3e9d23804d1cb2ca2edabe68d22001c0db6670042f9052de48a3b1dce"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "phases": [
+    {
+      "name": "literal",
+      "seconds": 0.008663083950523287,
+      "exit_code": 0
+    },
+    {
+      "name": "core",
+      "seconds": 0.005404333001933992,
+      "exit_code": 0
+    },
+    {
+      "name": "search",
+      "seconds": 35.52144145802595,
+      "exit_code": 0
+    },
+    {
+      "name": "check-selection",
+      "seconds": 0.0063462500111199915,
+      "exit_code": 0
+    },
+    {
+      "name": "optimized",
+      "seconds": 0.01219820900587365,
+      "exit_code": 0
+    }
+  ],
+  "rule_applications": 1,
+  "compiler_sha256": "5e64707e9b7bea6bccd74460f8d75e4250777038be12eb983600db11106cfcaa",
+  "source_sha256": "cc89cb00728fd61866e5535879badd6a19d0ca0f482b410e33d92b8ad9b9cebb",
+  "selection_sha256": "80e603b5654d5cd103d65427709e71dbd489f7e21ec3ea9f927cd050caf0a391",
+  "literal_bytes": 171684,
+  "optimized_bytes": 171147,
+  "scope": "Existing Ink compiler/planner and vendored existing laws; no Ink modifications."
+}

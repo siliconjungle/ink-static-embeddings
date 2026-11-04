@@ -3,11 +3,16 @@
 Convert a pretrained embedding model into ordinary Ink source and weight data,
 compile it with **unchanged Ink**, and measure whether checked optimization helps.
 
-The first supported architecture is normalized **Model2Vec static embeddings**.
-The retained experiment uses Minish Lab's real pretrained **Potion 2M** model:
-29,528 vocabulary entries × 64 dimensions, or 1,889,792 learned F32 values.
-This is lookup, mean pooling and L2 normalization. Transformer/LLM import and
+The supported architecture is **static token embeddings with mean pooling and
+optional L2 normalization**. The importer reads model metadata and weights;
+there is no model-name allowlist. It supports Model2Vec and Sentence Transformers
+StaticEmbedding exports. Tokenization stays host-side; generated numeric
+inference runs independently of the original library. Transformer/LLM import and
 discovery of hidden symbolic algorithms are future work.
+
+The [general architecture validation](results/general/REPORT.md) covers Potion
+2M, Potion 8M, Sentence Transformers static retrieval, and generated models with
+unfamiliar dimensions, token remapping/weights and normalization policies.
 
 **Initial result:** conversion and fidelity checks pass, but this workload shows
 no clear compiler-optimization speedup. The original NumPy kernel is faster than
@@ -27,6 +32,88 @@ flowchart LR
   C --> V
   B --> V
 ```
+
+## Import and run a static model
+
+Requirements: Python 3.12+, uv, Node 22+, the pinned Ink toolchain and Rust/Cargo
+on PATH for the Rust and WebGPU builds. Bootstrap the toolchain as described
+below. The default CLI emits schema 2 metadata and a complete F32 table:
+
+```sh
+uv sync --dev
+uv run neural-to-ink /path/to/model build/my-model --model-id OWNER/MODEL --revision COMMIT
+uv run python scripts/build_model.py --build build/my-model --toolchain work/toolchain
+# Add --optimize to also run the existing proof-checked JavaScript optimizer.
+```
+
+Use `--format model2vec` or `--format sentence-transformers` to override format
+detection. `--targets javascript,rust,webgpu` selects targets; its default builds
+all three. This generates a literal JS module, a Rust crate with `native_batch`,
+and a browser/native WebGPU bundle. Rust can be compiled with ordinary Cargo.
+
+The importer derives dimensions, vocabulary and the number of JavaScript weight
+shards from metadata. Shards stay below Ink's capture-node limit. Rust uses an
+owned flat buffer within a pure batch call; WebGPU uses a resident flat table.
+Neither target depends on a Potion-specific split or dimension count.
+
+Model2Vec exports may include F32 per-token weights and vocabulary mappings.
+These are materialized into the effective lookup table, preserving F32 row
+multiplication before pooling. Source file hashes and this expansion are recorded.
+Normalization is preserved: Model2Vec uses norm plus epsilon, while the optional
+Sentence Transformers Normalize module clamps the norm. Raw means are supported
+too. Unknown-token filtering follows the source format.
+
+For browser numeric inference, serve the model directory and this repo's host
+module over HTTP(S), then use pretokenized IDs from the original tokenizer:
+
+```js
+import {loadStaticEmbedding} from '/runtime/static-embedding.mjs';
+const model = await loadStaticEmbedding('/build/my-model/', {backend: 'gpu'});
+const session = await model.createSession({batchSize: 2, tokenCapacity: 32});
+const embeddings = await session.encodeBatch([[1, 2, 3], [4, 5]]);
+await session.close();
+await model.close();
+```
+
+IDs in this example must exist in the imported vocabulary. A session keeps weights
+resident and accepts changing queries within its declared capacities. JavaScript
+uses `loadStaticEmbedding(base, {backend: 'javascript'})` and `encodeBatch(queries)`;
+Node can use the exported `createJavascriptEncoder` with a generated module,
+manifest and F32 table. Encoders return flat F32 embeddings in document order.
+Inputs outside the vocabulary or session limits fail rather than being truncated.
+
+Current boundaries: finite F32 tables, 1..4096 dimensions, mean pooling, and optional
+supported normalization. Integer/packed quantized tables, extra Dense/attention
+layers and other pooling operations are rejected. GPU limits remain Ink's existing
+256 MiB live-allocation budget plus the actual device limits. Larger models can
+be imported for CPU targets without fitting the GPU budget; vocabulary expansion
+may increase their effective table size. GPU sessions default to at most 4096
+tokens per document; `build_model.py --max-tokens N` changes the explicit bound.
+
+To reproduce the validation matrix (PyTorch is only a validation dependency):
+
+```sh
+uv sync --dev --group validation
+uv run python scripts/prepare_validation_models.py
+# For each NAME: potion-2m, potion-8m, st-retrieval, unseen-weighted, unseen-clamp
+uv run python scripts/build_model.py --build build/general/NAME
+uv run --group validation python scripts/validate_model.py --model-dir work/models/NAME --build build/general/NAME --rust
+npm install --prefix work/browser-tools playwright@1.58.2 --no-audit --no-fund
+PLAYWRIGHT_MODULE=../work/browser-tools/node_modules/playwright/index.mjs node scripts/validate_browser.mjs build/general/NAME
+INK="$PWD/work/toolchain/ink" uv run pytest -q
+```
+
+The general validation checks original Model2Vec inference or PyTorch's actual
+StaticEmbedding operations with tolerance, then demands bit-exact agreement with
+the independent ordered F32 oracle across generated JavaScript, Rust and hardware
+WebGPU. These checks establish tested compatibility, not a universal proof for all
+possible models or a new performance claim.
+
+## Historical Potion 2M experiment
+
+The sections below retain the original schema 1 benchmark and its reproduction
+scripts. `prepare_model.py` explicitly selects that historical importer. Its
+measured results do not apply automatically to other models or the new layouts.
 
 ## What is converted
 
@@ -77,14 +164,8 @@ No installed/global knowledge database is written. The retained selection fuses
 the norm's map into its ordered reduction; it does not change floating-point
 grouping. The source-order pooling loop currently remains unchanged.
 
-For an already-downloaded compatible model:
-
-```sh
-uv run neural-to-ink /path/to/model build --model-id OWNER/MODEL --revision COMMIT
-```
-
-Only the documented normalized, unquantized two-shard Model2Vec domain is
-supported. Merely changing the model identifier does not import a transformer.
+The historical importer supports normalized, unquantized two-shard Model2Vec.
+The default CLI now uses the generalized schema 2 importer described above.
 
 ## Measurement boundaries
 

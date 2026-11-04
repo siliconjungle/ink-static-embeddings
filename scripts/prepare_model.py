@@ -47,7 +47,7 @@ def main():
     p.add_argument('--output',type=Path,default=Path('build'));args=p.parse_args()
     start=time.perf_counter()
     snapshot_download(MODEL_ID,revision=REVISION,allow_patterns=['model.safetensors','tokenizer.json','config.json','README.md'],local_dir=args.model_dir)
-    metadata=convert(args.model_dir,args.output,MODEL_ID,REVISION)
+    metadata=convert(args.model_dir,args.output,MODEL_ID,REVISION,legacy=True)
     model=StaticModel.from_pretrained(args.model_dir)
     if model.weights is not None or model.token_mapping is not None:
         raise ValueError('this importer does not support runtime token weighting/remapping')

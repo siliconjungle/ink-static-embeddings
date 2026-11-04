@@ -1,0 +1,389 @@
+{
+  "schema": 2,
+  "scope": "Architecture compatibility validation, not a general performance benchmark or universal equivalence proof.",
+  "models": [
+    {
+      "schema": 2,
+      "model_id": "minishlab/potion-base-2M",
+      "revision": "389b9f64be5aa4ae7a6bc6fe95ef20ce485ae5da",
+      "source_format": "model2vec",
+      "dimensions": 64,
+      "parameters": 1889792,
+      "shards": 2,
+      "normalization": {
+        "kind": "l2-add-epsilon",
+        "epsilon": "1.0e-32"
+      },
+      "cases": 16,
+      "upstream_reference": "upstream Model2Vec 0.7.0 tokenize/encode and numeric helper",
+      "upstream_max_abs_error": 2.8925902839649353e-08,
+      "rtol": 2e-05,
+      "atol": 2e-06,
+      "backends": {
+        "literal": "bit-exact ordered F32 oracle",
+        "optimized": "bit-exact ordered F32 oracle",
+        "rust": "bit-exact ordered F32 oracle"
+      },
+      "identities": {
+        "model.json": "66fd487759e1cea585af7c6205e72bce8e349436e86c3e48ecaa8579873eb292",
+        "model.ink": "cc89cb00728fd61866e5535879badd6a19d0ca0f482b410e33d92b8ad9b9cebb",
+        "weights.f32": "a0d8dd289307213f53db86d5c5368be6ae0e69b5c2536dc0352f9c188587d938",
+        "validation.json": "dd74e3a1527f6ad13dddee83e07f98aa2fec63b924f0822738904f91e75aad84"
+      },
+      "browser": {
+        "backend": "hardware-webgpu",
+        "all_outputs_bit_exact": true,
+        "invalid_ids_rejected": true,
+        "oversized_documents_rejected": true,
+        "oversized_allocations_rejected": true,
+        "javascript_loader_checked": false,
+        "adapter": {
+          "vendor": "apple",
+          "architecture": "metal-3",
+          "isFallbackAdapter": false
+        },
+        "load_ms": 43.6700000166893,
+        "session_open_ms": 54.794999957084656,
+        "rounds": [
+          {
+            "shift": 0,
+            "elapsed_ms": 2.3700000047683716,
+            "output_sha256": "f9e2c2e89fd98847b32f0fffe23a4ddc9eb664eea1d3624e7c5ddfb1bd532bd3"
+          },
+          {
+            "shift": 1,
+            "elapsed_ms": 1.3799999952316284,
+            "output_sha256": "72137ed9a130f901a33acbe2f684277d41bfeb0c03a8a57493d53b216a5d1871"
+          },
+          {
+            "shift": 2,
+            "elapsed_ms": 1.2549999952316284,
+            "output_sha256": "14b8d9f529242cfa98b0daaaafa4e66785e15a7e74e29dc5b34ae5b63d76d545"
+          }
+        ],
+        "scope": "Correctness validation with changing query order; round timings are diagnostics, not a controlled performance benchmark.",
+        "browser_version": "156.0.8078.80"
+      },
+      "retained_directory": "potion-2m",
+      "retained_sha256": {
+        "model.json": "66fd487759e1cea585af7c6205e72bce8e349436e86c3e48ecaa8579873eb292",
+        "model.ink": "cc89cb00728fd61866e5535879badd6a19d0ca0f482b410e33d92b8ad9b9cebb",
+        "gpu-model.ink": "a2be2d3d4be34c526eea211290013e3f135a1e8c909cbacc9e415aee690f953f",
+        "native-model.ink": "c15de3581d58f22cbb7354b11b15e34e44a1397e8026d1a7b32e5a4382e36ca1",
+        "targets.json": "acc35db10d9a4c918848845109c5a5442ef83f70813dd4aac354e80cda12e56b",
+        "target-compilation.json": "9fe85be0f7dbad6c0543a198edf75c5ac8be0431b1b5c13068fbff4d54d9c0b3",
+        "validation.json": "dd74e3a1527f6ad13dddee83e07f98aa2fec63b924f0822738904f91e75aad84",
+        "validation-report.json": "05a80031ece8f94fd5d3468c5ce42a732cb22dc464ee1a2fd2496582d9602185",
+        "browser-validation.json": "7d7cb0ddf44bb8b524f7186c33572a3a818c47c453ac60795fe569ed6e3fa3c9",
+        "compilation.json": "d2588a77fd344a996c872980b216e23ca19cc47219c9b615a825b5987b2f7336",
+        "selection.json": "80e603b5654d5cd103d65427709e71dbd489f7e21ec3ea9f927cd050caf0a391"
+      }
+    },
+    {
+      "schema": 2,
+      "model_id": "minishlab/potion-base-8M",
+      "revision": "bf8b056651a2c21b8d2565580b8569da283cab23",
+      "source_format": "model2vec",
+      "dimensions": 256,
+      "parameters": 7559168,
+      "shards": 8,
+      "normalization": {
+        "kind": "l2-add-epsilon",
+        "epsilon": "1.0e-32"
+      },
+      "cases": 16,
+      "upstream_reference": "upstream Model2Vec 0.7.0 tokenize/encode and numeric helper",
+      "upstream_max_abs_error": 6.73685449648076e-08,
+      "rtol": 2e-05,
+      "atol": 2e-06,
+      "backends": {
+        "literal": "bit-exact ordered F32 oracle",
+        "rust": "bit-exact ordered F32 oracle"
+      },
+      "identities": {
+        "model.json": "fa006c38436ba0d799f3bcad4dd8275153c2cf12624db06cf512e2ce2a118aa9",
+        "model.ink": "aa79d293e787228dbf0b5f6d985751d7cf322419d916c2f83133aafd1e626dce",
+        "weights.f32": "581e7655d306b7c1f8a17bd1dff99375d30caa9c2ab7e833586597239a89f05e",
+        "validation.json": "387191fed69282f19e137baba8e4fdaccc354af9358fe72df3b943c9caca3b74"
+      },
+      "browser": {
+        "backend": "hardware-webgpu",
+        "all_outputs_bit_exact": true,
+        "invalid_ids_rejected": true,
+        "oversized_documents_rejected": true,
+        "oversized_allocations_rejected": true,
+        "javascript_loader_checked": false,
+        "adapter": {
+          "vendor": "apple",
+          "architecture": "metal-3",
+          "isFallbackAdapter": false
+        },
+        "load_ms": 98.37000000476837,
+        "session_open_ms": 159.75999999046326,
+        "rounds": [
+          {
+            "shift": 0,
+            "elapsed_ms": 2.740000009536743,
+            "output_sha256": "a06ca64f2c4d9f389fa8b7bb18a7551cc4ff6c25b2f11f6ebbd0745468fdfdf0"
+          },
+          {
+            "shift": 1,
+            "elapsed_ms": 1.9399999976158142,
+            "output_sha256": "c3f20e3017e010c3f9e2c7cecaf45b101b265f15b48504bec33823da0ef877fc"
+          },
+          {
+            "shift": 2,
+            "elapsed_ms": 1.4450000524520874,
+            "output_sha256": "a493fc5c8fedb194e0c53440f3edd458d6e8dde7c8db1821d0baec8bb1974190"
+          }
+        ],
+        "scope": "Correctness validation with changing query order; round timings are diagnostics, not a controlled performance benchmark.",
+        "browser_version": "156.0.8078.80"
+      },
+      "retained_directory": "potion-8m",
+      "retained_sha256": {
+        "model.json": "fa006c38436ba0d799f3bcad4dd8275153c2cf12624db06cf512e2ce2a118aa9",
+        "model.ink": "aa79d293e787228dbf0b5f6d985751d7cf322419d916c2f83133aafd1e626dce",
+        "gpu-model.ink": "7e12aa5c2f1c172a3896030161a428f5549f471c77984817da62415fb718780b",
+        "native-model.ink": "003e63a360c72d734c173835d102b029b72ef2507f2409648c376d4bf837ecd7",
+        "targets.json": "be5cada35744509d12e4837db354c4c9ca13f80a7318ace6cab29d551ecea523",
+        "target-compilation.json": "330fd16027ed96084d7c69d8a06a0e83def26474d617f50e79e901f404c3028d",
+        "validation.json": "387191fed69282f19e137baba8e4fdaccc354af9358fe72df3b943c9caca3b74",
+        "validation-report.json": "8249c45bd6ba2d53b01e4d1bd08a91a678313ff38e368c41750f56cf5b7c2402",
+        "browser-validation.json": "db29a3e6794194cbdee1d1f597a269b6846df398b7d1bace70fa53694b9973c6"
+      }
+    },
+    {
+      "schema": 2,
+      "model_id": "sentence-transformers/static-retrieval-mrl-en-v1",
+      "revision": "f60985c706f192d45d218078e49e5a8b6f15283a",
+      "source_format": "sentence-transformers",
+      "dimensions": 1024,
+      "parameters": 31254528,
+      "shards": 32,
+      "normalization": {
+        "kind": "none"
+      },
+      "cases": 16,
+      "upstream_reference": "PyTorch 2.10.0 EmbeddingBag(mean), optional functional.normalize; official StaticEmbedding operations",
+      "upstream_max_abs_error": 0.0,
+      "rtol": 2e-05,
+      "atol": 2e-06,
+      "backends": {
+        "literal": "bit-exact ordered F32 oracle",
+        "rust": "bit-exact ordered F32 oracle"
+      },
+      "identities": {
+        "model.json": "c25e902d78e8504351dd98c55820db32d27343195e050b4cf23c18bfb3654a1d",
+        "model.ink": "e1363f7f036ec87a636bd46369e09a6ea8173f262e8eb75798f07350f631858b",
+        "weights.f32": "26946bbc5605eadd0663b6196c6b7a7baf4a2c92658abc44bb34024cfa603aab",
+        "validation.json": "7a01eee3e9d23804d1cb2ca2edabe68d22001c0db6670042f9052de48a3b1dce"
+      },
+      "browser": {
+        "backend": "hardware-webgpu",
+        "all_outputs_bit_exact": true,
+        "invalid_ids_rejected": true,
+        "oversized_documents_rejected": true,
+        "oversized_allocations_rejected": true,
+        "javascript_loader_checked": false,
+        "adapter": {
+          "vendor": "apple",
+          "architecture": "metal-3",
+          "isFallbackAdapter": false
+        },
+        "load_ms": 330.15499997138977,
+        "session_open_ms": 569.9900000095367,
+        "rounds": [
+          {
+            "shift": 0,
+            "elapsed_ms": 10.270000040531158,
+            "output_sha256": "5b8fcfdffdc6b21a32536ba8a17174e2e680faf87077aff6f2ff4d96ba62cbba"
+          },
+          {
+            "shift": 1,
+            "elapsed_ms": 2.259999990463257,
+            "output_sha256": "127cd1a8af987c81e3fbe3fbe641533469504aeff387dd2cb530c8d7b982b437"
+          },
+          {
+            "shift": 2,
+            "elapsed_ms": 2.134999990463257,
+            "output_sha256": "f19d9c11d6b7f01692d389b56c43a23e0677a36dc362e8cc5faa92007edfcb19"
+          }
+        ],
+        "scope": "Correctness validation with changing query order; round timings are diagnostics, not a controlled performance benchmark.",
+        "browser_version": "156.0.8078.80"
+      },
+      "retained_directory": "st-retrieval",
+      "retained_sha256": {
+        "model.json": "c25e902d78e8504351dd98c55820db32d27343195e050b4cf23c18bfb3654a1d",
+        "model.ink": "e1363f7f036ec87a636bd46369e09a6ea8173f262e8eb75798f07350f631858b",
+        "gpu-model.ink": "07699910fff20531f2f591854794d43fe4ad9ae4224dd29f2c340d28044e51f9",
+        "native-model.ink": "b465a977d51a39d760efea8be47531f76b7999a5652f34de9adaf59233d92fc3",
+        "targets.json": "683767ec325106371abf6d6e2044a1d775bef9c333d3ff079aca235e2179d6f9",
+        "target-compilation.json": "d59d7fd696ea067b4a99aa512308582b412fc92c73b9336af664b706c0d85ffd",
+        "validation.json": "7a01eee3e9d23804d1cb2ca2edabe68d22001c0db6670042f9052de48a3b1dce",
+        "validation-report.json": "72f6e2dc8b658cfff4560a6a9c45fc0f40f39324f309a8ed256d3a64e5108112",
+        "browser-validation.json": "8129b62a0d1276310c5a126c861b8c82ef041258d7bf534b5d3f23f54d4731e5"
+      }
+    },
+    {
+      "schema": 2,
+      "model_id": "fixture/unseen-weighted",
+      "revision": "seed-91837",
+      "source_format": "model2vec",
+      "dimensions": 7,
+      "parameters": 133,
+      "shards": 13,
+      "normalization": {
+        "kind": "l2-add-epsilon",
+        "epsilon": "1.0e-32"
+      },
+      "cases": 16,
+      "upstream_reference": "upstream Model2Vec 0.7.0 tokenize/encode and numeric helper",
+      "upstream_max_abs_error": 4.694116539916138e-08,
+      "rtol": 2e-05,
+      "atol": 2e-06,
+      "backends": {
+        "literal": "bit-exact ordered F32 oracle",
+        "rust": "bit-exact ordered F32 oracle"
+      },
+      "identities": {
+        "model.json": "b94bbb0fb5a14c135663e84ce4190a12d0d235f6fbe6a5de96d89302742ffca3",
+        "model.ink": "49a59e997680b6ee571470ce909c6006548b8a928595500255712698f2a4fa48",
+        "weights.f32": "a7909581d82eac08f0d4fa2ec55a773f4d0a64810eeff26962e5b1adc7b981b6",
+        "validation.json": "2a047aba059efa8ab52aaa9be191a5eee215ca406da031e8725951493b735671"
+      },
+      "browser": {
+        "backend": "hardware-webgpu",
+        "all_outputs_bit_exact": true,
+        "invalid_ids_rejected": true,
+        "oversized_documents_rejected": true,
+        "oversized_allocations_rejected": true,
+        "javascript_loader_checked": true,
+        "adapter": {
+          "vendor": "apple",
+          "architecture": "metal-3",
+          "isFallbackAdapter": false
+        },
+        "load_ms": 16.44999998807907,
+        "session_open_ms": 19.889999985694885,
+        "rounds": [
+          {
+            "shift": 0,
+            "elapsed_ms": 1.7549999952316284,
+            "output_sha256": "152d53794300c1ab56f80026ec14049092cc605f7617d894c74f90fce7c2ea4f"
+          },
+          {
+            "shift": 1,
+            "elapsed_ms": 0.9950000047683716,
+            "output_sha256": "0afcfe4c9556fbd75d686d9b4c81e094aefad6cb21f6946b5a38a090da0869d9"
+          },
+          {
+            "shift": 2,
+            "elapsed_ms": 0.9149999618530273,
+            "output_sha256": "24a52dc14a5522cbfe300dfbc2cf5207621f86fb389e81e9e31a9e393c645912"
+          }
+        ],
+        "scope": "Correctness validation with changing query order; round timings are diagnostics, not a controlled performance benchmark.",
+        "browser_version": "156.0.8078.80"
+      },
+      "retained_directory": "unseen-weighted",
+      "retained_sha256": {
+        "model.json": "b94bbb0fb5a14c135663e84ce4190a12d0d235f6fbe6a5de96d89302742ffca3",
+        "model.ink": "49a59e997680b6ee571470ce909c6006548b8a928595500255712698f2a4fa48",
+        "gpu-model.ink": "daace6eb7720584505189bf27e09f935ce73bf7333b69bcd7c954e6b32d57982",
+        "native-model.ink": "702db2ac11e99ff97f03cd9a1b57460123c841942c5d907e76401ffa66e7e363",
+        "targets.json": "401d8955e076c4d5abe436c6628198177afbec26490c5677b02ff0277de269f7",
+        "target-compilation.json": "a8fc1ad29b9d3f9de96ac2efa218956db92b5ff1d1bfeffbce543f61bc3bd347",
+        "validation.json": "2a047aba059efa8ab52aaa9be191a5eee215ca406da031e8725951493b735671",
+        "validation-report.json": "5b44752600fc4436db34c991312740bb3ca5e7a66f2bc29b52173679cac9d582",
+        "browser-validation.json": "dc04707cffcfd801be873dd25ef9979b10bfc8ac952cd45cf821920850d3b536"
+      }
+    },
+    {
+      "schema": 2,
+      "model_id": "fixture/unseen-clamp",
+      "revision": "seed-91837",
+      "source_format": "sentence-transformers",
+      "dimensions": 5,
+      "parameters": 85,
+      "shards": 7,
+      "normalization": {
+        "kind": "l2-clamp",
+        "epsilon": "1.0e-12"
+      },
+      "cases": 16,
+      "upstream_reference": "PyTorch 2.10.0 EmbeddingBag(mean), optional functional.normalize; official StaticEmbedding operations",
+      "upstream_max_abs_error": 5.960464477539063e-08,
+      "rtol": 2e-05,
+      "atol": 2e-06,
+      "backends": {
+        "literal": "bit-exact ordered F32 oracle",
+        "rust": "bit-exact ordered F32 oracle"
+      },
+      "identities": {
+        "model.json": "4567350d49bc694e079e8e621ebbee47262e318dbf278da3518279b60f16d86b",
+        "model.ink": "c5663228fe62641d00aa244dcb5108f1b2e7ac9dc1da139fa93238369fa1f47b",
+        "weights.f32": "6bee504388e52e687df573bd76624a1c6651f22343fe6316e5da15581f24e86c",
+        "validation.json": "146585835afe2c5fc0d230c5564c596db4f900b865a1e9f7d1f8afb98ff4be72"
+      },
+      "browser": {
+        "backend": "hardware-webgpu",
+        "all_outputs_bit_exact": true,
+        "invalid_ids_rejected": true,
+        "oversized_documents_rejected": true,
+        "oversized_allocations_rejected": true,
+        "javascript_loader_checked": true,
+        "adapter": {
+          "vendor": "apple",
+          "architecture": "metal-3",
+          "isFallbackAdapter": false
+        },
+        "load_ms": 15.680000007152557,
+        "session_open_ms": 14.469999969005585,
+        "rounds": [
+          {
+            "shift": 0,
+            "elapsed_ms": 2.064999997615814,
+            "output_sha256": "3baba815fce5b2ee73c4d80a722fbe4bf082840ebb0f8cb66ecf8bb20191a1f6"
+          },
+          {
+            "shift": 1,
+            "elapsed_ms": 1.3149999976158142,
+            "output_sha256": "808e54f4fb118871f1bbf21aacc834b457902155a3eee08350b216095b514988"
+          },
+          {
+            "shift": 2,
+            "elapsed_ms": 0.85999995470047,
+            "output_sha256": "faa1aa32d70d4c400232f48e07e7b198b088d3acee29bd8ea8207020797177b5"
+          }
+        ],
+        "scope": "Correctness validation with changing query order; round timings are diagnostics, not a controlled performance benchmark.",
+        "browser_version": "156.0.8078.80"
+      },
+      "retained_directory": "unseen-clamp",
+      "retained_sha256": {
+        "model.json": "4567350d49bc694e079e8e621ebbee47262e318dbf278da3518279b60f16d86b",
+        "model.ink": "c5663228fe62641d00aa244dcb5108f1b2e7ac9dc1da139fa93238369fa1f47b",
+        "gpu-model.ink": "0a3027fee6c5f17e53737f1f9540d57586d6d69584c576fed8f277ae1580776c",
+        "native-model.ink": "b48a2b23a7652ad3a904626757532cd97308d8fd8f7e49e365c080ecb89edd03",
+        "targets.json": "45ff5b6d70588d365607490edf51d780a1c975bce091f01c91cce2fa437bb151",
+        "target-compilation.json": "5f531741de3298848ea9d1f34338a5ca83d02fc103bfaa174b60954ae3bcb517",
+        "validation.json": "146585835afe2c5fc0d230c5564c596db4f900b865a1e9f7d1f8afb98ff4be72",
+        "validation-report.json": "0ae96951eb4be4f05913c316ffd97c216cf9a1a420f4117d9a2b72ae947816a5",
+        "browser-validation.json": "536b34ec90bf22c5124b02027fd234df7766cbf2d499f965ea15e679b21fad69"
+      }
+    }
+  ],
+  "source_sha256": {
+    "src/neural_to_ink/static_model.py": "896986f0f04ec1aa78b89ad8c5d34c439f6224b770ccc24b6e38ecab67810452",
+    "src/neural_to_ink/targets.py": "9c3101e9b71135bbeff8832d9b5908709398042749a0067f23f5a008288a6652",
+    "runtime/static-embedding.mjs": "75e638efba8f6184f23e8c2b7daaf02c01c9997dc2172a06cbcfaedd6e61c089",
+    "scripts/prepare_validation_models.py": "5d276364332418428e72bbd3901b5be548aac896dd6b7eeea946c956abc92463",
+    "scripts/build_model.py": "c46196637f6ac8f1da28ff4c7d3e9b88fe44df596e1e5e4a9e4a6aaf7bda68c5",
+    "scripts/validate_model.py": "51a54e7d02af9f3f0cacfe0fca387cc792a3edf52b500fe25b21458c818e6ed5",
+    "scripts/validate_native.rs": "7e6d53ebfb326d3f4ea34de61b2b15df14fae6c75fa74a924120597b2dd1be59",
+    "scripts/validate_browser.mjs": "fe0bc2da7cbd7f9918bcf0f6be57aae37b9fc4830c8cc22362dc38931688412f",
+    "scripts/retain_validation.py": "c77546607b05288fbe898f3d9ff9a62a90b167bd410d0ce8837b946e08d35470"
+  }
+}

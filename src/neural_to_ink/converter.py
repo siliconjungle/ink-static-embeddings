@@ -46,7 +46,14 @@ fn encode(first:List<f32>,second:List<f32>,ids:List<u32>)->List<f32> {{
 '''
 
 
-def convert(model_dir: Path, output: Path, model_id: str, revision: str) -> dict:
+def convert(model_dir: Path, output: Path, model_id: str, revision: str, *, legacy: bool = False, **options) -> dict:
+    if not legacy:
+        from .static_model import convert_static
+        return convert_static(model_dir, output, model_id, revision, **options)
+    return _convert_legacy(model_dir, output, model_id, revision)
+
+
+def _convert_legacy(model_dir: Path, output: Path, model_id: str, revision: str) -> dict:
     config = json.loads((model_dir / "config.json").read_text())
     if config.get("model_type") != "model2vec" or config.get("normalize") is not True:
         raise ValueError("only normalized Model2Vec static embeddings are supported")

@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "dimensions": 5,
+  "max_tokens": 4096,
+  "normalization": {
+    "kind": "l2-clamp",
+    "epsilon": "1.0e-12"
+  },
+  "gpu_weight_layout": "one-flat-F32-buffer",
+  "gpu_limits": "Existing Ink 256 MiB live allocation budget and actual device binding/buffer limits apply; unsupported sizes fail explicitly.",
+  "sources": {
+    "model.ink": "c5663228fe62641d00aa244dcb5108f1b2e7ac9dc1da139fa93238369fa1f47b",
+    "gpu-model.ink": "0a3027fee6c5f17e53737f1f9540d57586d6d69584c576fed8f277ae1580776c",
+    "native-model.ink": "b48a2b23a7652ad3a904626757532cd97308d8fd8f7e49e365c080ecb89edd03"
+  }
+}

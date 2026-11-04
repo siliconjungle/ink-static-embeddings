@@ -5,6 +5,7 @@ import subprocess
 import numpy as np
 import pytest
 from safetensors.numpy import save_file
+from tokenizers import Tokenizer, models
 from neural_to_ink.converter import convert, emit_source
 
 
@@ -14,7 +15,7 @@ def test_complete_weights_are_preserved(tmp_path):
     weights = np.array([[0.0, -0.0], [1.25, -2.0], [3.0, 4.0]], dtype=np.float32)
     save_file({"embeddings": weights}, source / "model.safetensors")
     (source / "config.json").write_text(json.dumps({"model_type": "model2vec", "normalize": True, "hidden_dim": 2}))
-    (source / "tokenizer.json").write_text("{}")
+    Tokenizer(models.WordLevel({'[UNK]':0,'a':1,'b':2},unk_token='[UNK]')).save(str(source / 'tokenizer.json'))
     result = convert(source, tmp_path / "out", "test", "0" * 40)
     actual = np.fromfile(tmp_path / "out/weights.f32", dtype="<f4")
     assert actual.tobytes() == weights.tobytes()
@@ -30,7 +31,7 @@ def test_rejects_unsupported_shapes(dimensions):
 
 def test_rejects_wrong_architecture(tmp_path):
     (tmp_path / 'config.json').write_text('{"model_type":"bert","normalize":true}')
-    with pytest.raises(ValueError,match='only normalized'):
+    with pytest.raises(ValueError,match='unsupported architecture'):
         convert(tmp_path,tmp_path/'out','test','test')
 
 

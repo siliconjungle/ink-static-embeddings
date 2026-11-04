@@ -1,0 +1,28 @@
+{
+  "schema": 2,
+  "model_id": "fixture/unseen-weighted",
+  "revision": "seed-91837",
+  "source_format": "model2vec",
+  "dimensions": 7,
+  "parameters": 133,
+  "shards": 13,
+  "normalization": {
+    "kind": "l2-add-epsilon",
+    "epsilon": "1.0e-32"
+  },
+  "cases": 16,
+  "upstream_reference": "upstream Model2Vec 0.7.0 tokenize/encode and numeric helper",
+  "upstream_max_abs_error": 4.694116539916138e-08,
+  "rtol": 2e-05,
+  "atol": 2e-06,
+  "backends": {
+    "literal": "bit-exact ordered F32 oracle",
+    "rust": "bit-exact ordered F32 oracle"
+  },
+  "identities": {
+    "model.json": "b94bbb0fb5a14c135663e84ce4190a12d0d235f6fbe6a5de96d89302742ffca3",
+    "model.ink": "49a59e997680b6ee571470ce909c6006548b8a928595500255712698f2a4fa48",
+    "weights.f32": "a7909581d82eac08f0d4fa2ec55a773f4d0a64810eeff26962e5b1adc7b981b6",
+    "validation.json": "2a047aba059efa8ab52aaa9be191a5eee215ca406da031e8725951493b735671"
+  }
+}
