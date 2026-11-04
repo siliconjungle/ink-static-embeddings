@@ -1,29 +1,41 @@
-# Shareable CPU speed comparison
+# Shareable speed comparison
 
 [GIF](potion-2m-speed.gif) · [MP4](potion-2m-speed.mp4) · [Static PNG](potion-2m-speed.png)
 
-![Potion 2M CPU comparison](potion-2m-speed.gif)
+![Potion 2M comparison](potion-2m-speed.gif)
 
-The 10-second animation compares current Ink-generated JavaScript with original
-Model2Vec/NumPy numeric inference for **Potion 2M on an Apple M4 Pro CPU**:
+The 10-second animation compares Ink with original Model2Vec/NumPy inference for
+**Potion 2M on an Apple M4 Pro**, with two CPU panels and one GPU/CPU batch panel:
 
 | Workload | Ink / JS | Model2Vec / NumPy | Result |
 | --- | ---: | ---: | --- |
 | Short, 1–16 tokens | 1.84 µs/query | 4.85 µs/query | Ink 2.63× faster |
 | Mixed 64-case corpus | 16.84 µs/query | 8.77 µs/query | NumPy 1.92× faster |
+| GPU vs CPU, batch 1,024 | 3.77 µs/embedding (GPU) | 6.87 µs/embedding (CPU) | Ink GPU 1.82× CPU throughput |
 
 Ball velocity is proportional to inverse measured latency, with a common track
-distance and scale across both panels. Movement is slowed for viewing; it is not
+distance and scale across all panels. Movement is slowed for viewing; it is not
 real-time execution. Balls fade at the loop boundary, preserving the measured
 ratios without forcing an integer number of trips. Empty inputs are excluded
 from the short group and included in the mixed corpus.
 
-These are single-query CPU results. Loading/tokenization are excluded; changing
+The first two panels are single-query CPU results. Loading/tokenization are excluded; changing
 ID capture and complete output consumption are included. Same weights and IDs;
 the generated path reuses a caller destination while NumPy allocates its normal
 result. Raw timing samples, setup costs and checks are in the
-[CPU latency report](../results/javascript/REPORT.md). No other model or GPU
-comparison is represented by this graphic.
+[CPU latency report](../results/javascript/REPORT.md).
+
+The third panel uses the [native GPU batch report](../results/targets/REPORT.md):
+Apple GPU/Metal with resident weights, new-query uploads, three completed
+dispatches and complete decoded readback. It shows amortized throughput at batch
+1,024, not individual request latency. The NumPy comparison runs on CPU; no
+upstream GPU implementation is benchmarked. These are the native GPU numbers,
+not the separately measured Chrome WebGPU numbers.
+
+Styling follows [inkwell.ing](https://inkwell.ing/) and the
+[Ink site](https://siliconjungle.github.io/ink-spec-site/): Arial, near-black,
+warm white, muted grey/green, open spacing and thin rules. Details stay here in
+the caption so the animation remains minimal.
 
 To regenerate from the recorded JSON data (Pillow and ffmpeg required):
 
