@@ -1,0 +1,285 @@
+{
+  "abi": "packed little-endian 32-bit lanes; GPU lists carry a length header; records in declaration order; vectors unpadded",
+  "backend": "webgpu-wgpu-v2",
+  "collection_strategy": "parallel graph schedules for integer scan, sum and radix sort, stable filter and concat; other stages retain literal source order; profitability must be measured",
+  "core_semantics": "ink-executable-core-v8",
+  "core_sha256": "8f1be9020e4a50bad0703966c8d345334fdcf2d94363ff1df2897bbb98a4a422",
+  "cpu_rust_sha256": "ce96374fa44e588f5dae11956db7166267d84b57b6581b63ba8145df7ab91b9c",
+  "destination_abi": {
+    "aliasing": "destination-disjoint-from-all-reachable-inputs",
+    "alignment": 8,
+    "capacity": "trusted",
+    "count": "words32",
+    "name": "ink-packed-into-v1",
+    "ownership": "caller-owned",
+    "prepared_instance": "exclusive",
+    "scratch_lifetime": "call-mark-rewind",
+    "symbol": "ink_compute_into"
+  },
+  "float_contract": "integer-lane binary32; round-to-nearest ties-to-even, gradual underflow, signed zero, source operation order and canonical arithmetic NaN; pass-through/negation retain payload bits",
+  "functions": [
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "param": 1
+              },
+              {
+                "param": 0
+              }
+            ],
+            "capacity": {
+              "args": [
+                0
+              ],
+              "kind": "same"
+            },
+            "id": 0,
+            "op": "map",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-0.wgsl",
+            "workgroup_size": 64
+          }
+        ],
+        "output": {
+          "node": 0
+        },
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": false,
+      "index": 0,
+      "lengths": [
+        1
+      ],
+      "name": "run",
+      "params": [
+        {
+          "name": "samples",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "coefficients",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "element": {
+          "kind": "f32"
+        },
+        "kind": "list"
+      },
+      "shader": "compute-0.wgsl"
+    }
+  ],
+  "gpu_list_abi": "ink-gpu-list-v3",
+  "javascript": {
+    "abi": "ink-javascript-trusted-values-v2",
+    "backend": "javascript",
+    "caller_contract": "trusted, well-typed target-native values; no input validation, snapshot capture or host resource budgets",
+    "core_semantics": "ink-executable-core-v8",
+    "core_sha256": "8f1be9020e4a50bad0703966c8d345334fdcf2d94363ff1df2897bbb98a4a422",
+    "destination_abi": {
+      "aliasing": "destination-disjoint-from-all-reachable-inputs",
+      "capacity": "trusted",
+      "count_unit": "elements",
+      "name": "ink-javascript-into-v1",
+      "ownership": "caller-owned",
+      "tail": "unwritten"
+    },
+    "f32_computation": "native-number-with-exact-nonfinite-tags",
+    "f32_storage": "native-number-with-exact-nonfinite-tags",
+    "functions": [
+      {
+        "destination": {
+          "abi": "ink-javascript-into-v1",
+          "count_unit": "elements",
+          "ownership": "caller-owned"
+        },
+        "index": 0,
+        "internal": false,
+        "name": "run",
+        "parallel": false,
+        "params": [
+          {
+            "name": "samples",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "coefficients",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        }
+      }
+    ],
+    "javascript_sha256": "bc20d5dc659b6c39aaf824d4d0dc9fe9a59b6beb816f40258848012691e904e7",
+    "named_types": {},
+    "owned_result_contract": {
+      "functions": 1,
+      "inputs": "same trusted caller contract",
+      "results": "canonical detached values with ABI byte/node/depth limits",
+      "unsupported": []
+    },
+    "prepared_compiled": {
+      "destination": {
+        "call": "callPreparedCompiledInto",
+        "capacity": "trusted",
+        "failure": "destination may be partially written",
+        "float_values": "trusted public representation",
+        "inputs": "sealed compiled values",
+        "ownership": "caller-owned",
+        "structured_elements": "detached",
+        "tail": "unwritten"
+      },
+      "evaluation": "lazy source-order; successful bindings only",
+      "functions": [
+        {
+          "factory": false,
+          "function": "run",
+          "reason": "no reusable captured work"
+        }
+      ],
+      "lifetime": "prepared token",
+      "semantics": "sealed-value-residual-v1"
+    },
+    "private_record_elisions": [],
+    "private_sum_spines": [],
+    "schema": 1,
+    "scope": "trusted pure functions and temporary collections; state/actions with portable snapshots and ordered transaction events",
+    "state": null,
+    "trusted": [
+      "Ink checker and source correspondence",
+      "JavaScript emitter and representation conversion",
+      "JavaScript engine and host"
+    ],
+    "wire": {
+      "format": "ink-value-wire-v1",
+      "functions": {
+        "run": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "510c6505c2713c9e56597ed3fb4ef09cc93fbe78cbbaf7394f263527093d4714",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "samples",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "coefficients",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "0cbb9d1ff6b72318080ea11a6297b384d97178624f821e3901cca51ec8ad4477",
+            "named": {},
+            "root": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          }
+        }
+      }
+    }
+  },
+  "javascript_sha256": "bc20d5dc659b6c39aaf824d4d0dc9fe9a59b6beb816f40258848012691e904e7",
+  "pipeline_planner_sha256": "7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0",
+  "proof_claim": "no backend correctness proof or optimisation theorem; saved profiles estimate profitability only",
+  "runtime_abi": "ink-packed-pipeline-v2",
+  "runtime_host_sha256": "3d24209d6a4bd27a7696e58f1d2558e6e51e0d1da63caa8882c37c7ccc8195af",
+  "schema": 2,
+  "shaders": {
+    "compute-0.wgsl": "c868a1f9a15bc537ff7f14d61f1e5bce343ec726ef517f15a96e27681b127267",
+    "graph-0-0.wgsl": "b2b4aaed341c6be178913fd2c4d4a2a6b236e2dcb46d8c75dc40cc74dab2214c"
+  },
+  "trust": [
+    "type checker",
+    "literal C and WGSL lowering",
+    "packed ABI and host pipeline execution",
+    "C/LLVM, WebGPU/wgpu and drivers"
+  ]
+}

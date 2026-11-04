@@ -1,0 +1,5376 @@
+{
+  "schema": 1,
+  "scope": "ABI-only before/after comparison on actual Chrome hardware. Identical emitted source, shaders and host; only the compiler-package packed codec changes. Ordinary and prepared calls return complete owned Arrays; resident sessions return complete fresh typed destinations. Stable model/context data versus changed inputs and prepared snapshots retain their separate lifetimes. Three fresh processes rotate label/mode order; twelve warmups, seven rounds, four calls/round. Setup, first runs and repeated ready-session opens are retained separately and never added to warm medians. Output validation is outside timers; every timed output is checked and mutated to check detachment. Upload/readback counters isolate unchanged transfer volume. No handwritten or approximate kernels.",
+  "summary": [
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "before/ordinary": 750000,
+        "before/prepared": 525000.0059604645,
+        "before/resident": 424999.99701976776,
+        "after/ordinary": 575000.0029802322,
+        "after/prepared": 525000.0059604645,
+        "after/resident": 450000.00298023224
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "before/ordinary": 700000.0029802322,
+        "before/prepared": 475000.0089406967,
+        "before/resident": 399999.9910593033,
+        "after/ordinary": 525000.0059604645,
+        "after/prepared": 500000,
+        "after/resident": 399999.9910593033
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "before/ordinary": 825000.0029802322,
+        "before/prepared": 625000,
+        "before/resident": 549999.9970197678,
+        "after/ordinary": 650000.0059604645,
+        "after/prepared": 625000,
+        "after/resident": 549999.9970197678
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "before/ordinary": 850000.0089406967,
+        "before/prepared": 674999.9970197678,
+        "before/resident": 550000.011920929,
+        "after/ordinary": 674999.9970197678,
+        "after/prepared": 649999.9910593033,
+        "after/resident": 575000.0029802322
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 64,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "before/ordinary": 474999.9940395355,
+        "before/prepared": 450000.00298023224,
+        "before/resident": 400000.0059604645,
+        "after/ordinary": 475000.0089406967,
+        "after/prepared": 474999.9940395355,
+        "after/resident": 450000.00298023224
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 64,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "before/ordinary": 450000.00298023224,
+        "before/prepared": 450000.00298023224,
+        "before/resident": 400000.0059604645,
+        "after/ordinary": 474999.9940395355,
+        "after/prepared": 474999.9940395355,
+        "after/resident": 400000.0059604645
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 512,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "before/ordinary": 675000.011920929,
+        "before/prepared": 674999.9970197678,
+        "before/resident": 600000.0089406967,
+        "after/ordinary": 674999.9970197678,
+        "after/prepared": 650000.0059604645,
+        "after/resident": 600000.0089406967
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 512,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "before/ordinary": 700000.0029802322,
+        "before/prepared": 674999.9970197678,
+        "before/resident": 625000,
+        "after/ordinary": 699999.988079071,
+        "after/prepared": 674999.9970197678,
+        "after/resident": 625000
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 64,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "before/ordinary": 500000,
+        "before/prepared": 475000.0089406967,
+        "before/resident": 450000.00298023224,
+        "after/ordinary": 500000,
+        "after/prepared": 474999.9940395355,
+        "after/resident": 474999.9940395355
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 64,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "before/ordinary": 525000.0059604645,
+        "before/prepared": 500000,
+        "before/resident": 474999.9940395355,
+        "after/ordinary": 549999.9970197678,
+        "after/prepared": 500000,
+        "after/resident": 450000.00298023224
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 512,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "before/ordinary": 700000.0029802322,
+        "before/prepared": 599999.9940395355,
+        "before/resident": 600000.0089406967,
+        "after/ordinary": 725000.0089406967,
+        "after/prepared": 625000,
+        "after/resident": 625000
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 512,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "before/ordinary": 674999.9970197678,
+        "before/prepared": 575000.0029802322,
+        "before/resident": 625000,
+        "after/ordinary": 674999.9970197678,
+        "after/prepared": 575000.0029802322,
+        "after/resident": 600000.0089406967
+      }
+    }
+  ],
+  "potion": {
+    "batch": 16,
+    "median_ns_per_embedding": {
+      "before": 39062.5,
+      "after": 37500.000558793545
+    },
+    "median_warm_open_ms": {
+      "before": 34.10000002384186,
+      "after": 4
+    }
+  },
+  "runs": [
+    {
+      "records": [
+        {
+          "name": "matrix-columns",
+          "length": 64,
+          "lanes": 16,
+          "width": 64,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 7.800000011920929,
+              "first_open_ms": 6.900000035762787,
+              "capture_ms": [
+                0.7000000476837158,
+                0.30000001192092896
+              ],
+              "first_prepared_run_ms": 2.5,
+              "warm_open_ms": [
+                0.7999999523162842,
+                0.6000000238418579,
+                0.5999999642372131
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.5,
+              "first_open_ms": 2.800000011920929,
+              "capture_ms": [
+                0.30000001192092896,
+                0.19999998807907104
+              ],
+              "first_prepared_run_ms": 1.600000023841858,
+              "warm_open_ms": [
+                0.5,
+                0.5,
+                0.30000001192092896
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              724999.9940395355,
+              850000.0089406967,
+              899999.9910593033,
+              750000,
+              825000.0029802322,
+              799999.9970197678,
+              850000.0089406967
+            ],
+            "before/prepared": [
+              525000.0059604645,
+              500000,
+              600000.0089406967,
+              524999.9910593033,
+              549999.9970197678,
+              500000,
+              575000.0029802322
+            ],
+            "before/resident": [
+              474999.9940395355,
+              424999.99701976776,
+              524999.9910593033,
+              424999.99701976776,
+              500000,
+              500000,
+              424999.99701976776
+            ],
+            "after/ordinary": [
+              1350000.0089406967,
+              674999.9970197678,
+              675000.011920929,
+              599999.9940395355,
+              625000,
+              575000.0029802322,
+              575000.0029802322
+            ],
+            "after/prepared": [
+              674999.9970197678,
+              549999.9970197678,
+              549999.9970197678,
+              599999.9940395355,
+              550000.011920929,
+              649999.9910593033,
+              500000
+            ],
+            "after/resident": [
+              375000,
+              474999.9940395355,
+              450000.00298023224,
+              425000.01192092896,
+              450000.00298023224,
+              450000.00298023224,
+              424999.99701976776
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 33380,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 33584,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 33380,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 33584,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 68
+            },
+            "after/ordinary": {
+              "upload_bytes": 33380,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 33584,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 33380,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 33584,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "matrix-columns",
+          "length": 64,
+          "lanes": 64,
+          "width": 64,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 7.800000011920929,
+              "first_open_ms": 0.40000003576278687,
+              "capture_ms": [
+                0.10000002384185791,
+                0
+              ],
+              "first_prepared_run_ms": 0.8999999761581421,
+              "warm_open_ms": [
+                0.6000000238418579,
+                0.3999999761581421,
+                0.30000001192092896
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.5,
+              "first_open_ms": 0.40000003576278687,
+              "capture_ms": [
+                0.10000002384185791,
+                0
+              ],
+              "first_prepared_run_ms": 0.7000000476837158,
+              "warm_open_ms": [
+                0.19999998807907104,
+                0.30000001192092896,
+                0.30000001192092896
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              775000.0059604645,
+              649999.9910593033,
+              700000.0029802322,
+              650000.0059604645,
+              625000,
+              724999.9940395355,
+              675000.011920929
+            ],
+            "before/prepared": [
+              474999.9940395355,
+              399999.9910593033,
+              474999.9940395355,
+              424999.99701976776,
+              424999.99701976776,
+              400000.0059604645,
+              399999.9910593033
+            ],
+            "before/resident": [
+              349999.9940395355,
+              325000.00298023224,
+              350000.0089406967,
+              450000.00298023224,
+              349999.9940395355,
+              324999.98807907104,
+              375000
+            ],
+            "after/ordinary": [
+              475000.0089406967,
+              474999.9940395355,
+              449999.98807907104,
+              450000.00298023224,
+              450000.00298023224,
+              474999.9940395355,
+              575000.0029802322
+            ],
+            "after/prepared": [
+              450000.00298023224,
+              424999.99701976776,
+              425000.01192092896,
+              475000.0089406967,
+              474999.9940395355,
+              375000,
+              474999.9940395355
+            ],
+            "after/resident": [
+              350000.0089406967,
+              325000.01788139343,
+              399999.9910593033,
+              324999.98807907104,
+              350000.0089406967,
+              325000.00298023224,
+              400000.0059604645
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 33572,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 34352,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 33572,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 34352,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 260
+            },
+            "after/ordinary": {
+              "upload_bytes": 33572,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 34352,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 33572,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 34352,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "matrix-columns",
+          "length": 512,
+          "lanes": 16,
+          "width": 64,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 7.800000011920929,
+              "first_open_ms": 0.6000000238418579,
+              "capture_ms": [
+                0.09999996423721313,
+                0
+              ],
+              "first_prepared_run_ms": 0.8999999761581421,
+              "warm_open_ms": [
+                0.3999999761581421,
+                0.3999999761581421,
+                0.40000003576278687
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.5,
+              "first_open_ms": 0.40000003576278687,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.6000000238418579,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.19999998807907104,
+                0.19999998807907104
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              775000.0059604645,
+              850000.0089406967,
+              799999.9970197678,
+              849999.9940395355,
+              775000.0059604645,
+              775000.0059604645,
+              875000
+            ],
+            "before/prepared": [
+              625000,
+              599999.9940395355,
+              599999.9940395355,
+              625000,
+              625000,
+              575000.0029802322,
+              649999.9910593033
+            ],
+            "before/resident": [
+              524999.9910593033,
+              550000.011920929,
+              524999.9910593033,
+              550000.011920929,
+              524999.9910593033,
+              524999.9910593033,
+              525000.0059604645
+            ],
+            "after/ordinary": [
+              650000.0059604645,
+              649999.9910593033,
+              625000,
+              600000.0089406967,
+              650000.0059604645,
+              625000,
+              649999.9910593033
+            ],
+            "after/prepared": [
+              575000.0029802322,
+              625000,
+              600000.0089406967,
+              625000,
+              625000,
+              650000.0059604645,
+              600000.0089406967
+            ],
+            "after/resident": [
+              574999.988079071,
+              600000.0089406967,
+              524999.9910593033,
+              525000.0059604645,
+              524999.9910593033,
+              549999.9970197678,
+              524999.9910593033
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 35172,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 35376,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 35172,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 35376,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 68
+            },
+            "after/ordinary": {
+              "upload_bytes": 35172,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 35376,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 35172,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 35376,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "matrix-columns",
+          "length": 512,
+          "lanes": 64,
+          "width": 64,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 7.800000011920929,
+              "first_open_ms": 0.5,
+              "capture_ms": [
+                0.10000002384185791,
+                0
+              ],
+              "first_prepared_run_ms": 0.8999999761581421,
+              "warm_open_ms": [
+                0.40000003576278687,
+                0.5,
+                0.3999999761581421
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.5,
+              "first_open_ms": 0.19999998807907104,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.7000000476837158,
+              "warm_open_ms": [
+                0.19999998807907104,
+                0.30000001192092896,
+                0.30000001192092896
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              850000.0089406967,
+              825000.0029802322,
+              799999.9970197678,
+              825000.0029802322,
+              900000.0059604645,
+              875000,
+              925000.011920929
+            ],
+            "before/prepared": [
+              625000,
+              625000,
+              674999.9970197678,
+              649999.9910593033,
+              625000,
+              750000,
+              724999.9940395355
+            ],
+            "before/resident": [
+              549999.9970197678,
+              549999.9970197678,
+              549999.9970197678,
+              524999.9910593033,
+              575000.0029802322,
+              775000.0059604645,
+              525000.0059604645
+            ],
+            "after/ordinary": [
+              649999.9910593033,
+              649999.9910593033,
+              674999.9970197678,
+              650000.0059604645,
+              674999.9970197678,
+              750000,
+              625000
+            ],
+            "after/prepared": [
+              575000.0029802322,
+              600000.0089406967,
+              625000,
+              599999.9940395355,
+              600000.0089406967,
+              574999.988079071,
+              625000
+            ],
+            "after/resident": [
+              600000.0089406967,
+              549999.9970197678,
+              575000.0029802322,
+              549999.9970197678,
+              575000.0029802322,
+              524999.9910593033,
+              500000
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 35364,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 36144,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 35364,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 36144,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 260
+            },
+            "after/ordinary": {
+              "upload_bytes": 35364,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 36144,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 35364,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 36144,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "filter-bank",
+          "length": 64,
+          "lanes": 16,
+          "width": null,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 5.600000023841858,
+              "first_open_ms": 5.699999988079071,
+              "capture_ms": [
+                0.19999998807907104,
+                0
+              ],
+              "first_prepared_run_ms": 1.300000011920929,
+              "warm_open_ms": [
+                0.20000004768371582,
+                0.19999998807907104,
+                0.30000001192092896
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.399999976158142,
+              "first_open_ms": 2.299999952316284,
+              "capture_ms": [
+                0.30000001192092896,
+                0
+              ],
+              "first_prepared_run_ms": 1.199999988079071,
+              "warm_open_ms": [
+                0.19999998807907104,
+                0.20000004768371582,
+                0.09999996423721313
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              450000.00298023224,
+              474999.9940395355,
+              500000,
+              474999.9940395355,
+              474999.9940395355,
+              500000,
+              500000
+            ],
+            "before/prepared": [
+              450000.00298023224,
+              500000,
+              500000,
+              500000,
+              500000,
+              475000.0089406967,
+              450000.00298023224
+            ],
+            "before/resident": [
+              375000,
+              424999.99701976776,
+              424999.99701976776,
+              500000,
+              475000.0089406967,
+              424999.99701976776,
+              400000.0059604645
+            ],
+            "after/ordinary": [
+              449999.98807907104,
+              474999.9940395355,
+              474999.9940395355,
+              500000,
+              524999.9910593033,
+              500000,
+              524999.9910593033
+            ],
+            "after/prepared": [
+              474999.9940395355,
+              525000.0059604645,
+              475000.0089406967,
+              500000,
+              450000.00298023224,
+              449999.98807907104,
+              450000.00298023224
+            ],
+            "after/resident": [
+              450000.00298023224,
+              450000.00298023224,
+              399999.9910593033,
+              400000.0059604645,
+              450000.00298023224,
+              450000.00298023224,
+              450000.00298023224
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 340,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 544,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 340,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 544,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 68
+            },
+            "after/ordinary": {
+              "upload_bytes": 340,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 544,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 340,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 544,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "filter-bank",
+          "length": 64,
+          "lanes": 64,
+          "width": null,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 5.600000023841858,
+              "first_open_ms": 0.19999998807907104,
+              "capture_ms": [
+                0.10000002384185791,
+                0
+              ],
+              "first_prepared_run_ms": 0.5999999642372131,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.19999998807907104,
+                0.19999998807907104
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.399999976158142,
+              "first_open_ms": 0.19999998807907104,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.5,
+              "warm_open_ms": [
+                0.19999998807907104,
+                0.19999998807907104,
+                0.5
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              500000,
+              450000.00298023224,
+              450000.00298023224,
+              450000.00298023224,
+              424999.99701976776,
+              424999.99701976776,
+              424999.99701976776
+            ],
+            "before/prepared": [
+              424999.99701976776,
+              474999.9940395355,
+              450000.00298023224,
+              424999.99701976776,
+              450000.00298023224,
+              450000.00298023224,
+              424999.99701976776
+            ],
+            "before/resident": [
+              399999.9910593033,
+              400000.0059604645,
+              375000,
+              400000.0059604645,
+              350000.0089406967,
+              375000,
+              375000
+            ],
+            "after/ordinary": [
+              450000.00298023224,
+              449999.98807907104,
+              474999.9940395355,
+              474999.9940395355,
+              500000,
+              525000.0059604645,
+              500000
+            ],
+            "after/prepared": [
+              399999.9910593033,
+              500000,
+              424999.99701976776,
+              425000.01192092896,
+              474999.9940395355,
+              500000,
+              474999.9940395355
+            ],
+            "after/resident": [
+              425000.01192092896,
+              400000.0059604645,
+              375000,
+              399999.9910593033,
+              375000,
+              399999.9910593033,
+              350000.0089406967
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 532,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1312,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 532,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1312,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 260
+            },
+            "after/ordinary": {
+              "upload_bytes": 532,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1312,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 532,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1312,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "filter-bank",
+          "length": 512,
+          "lanes": 16,
+          "width": null,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 5.600000023841858,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0.10000002384185791,
+                0
+              ],
+              "first_prepared_run_ms": 0.699999988079071,
+              "warm_open_ms": [
+                0.19999998807907104,
+                0.30000001192092896,
+                0.19999998807907104
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.399999976158142,
+              "first_open_ms": 0.19999998807907104,
+              "capture_ms": [
+                0.10000002384185791,
+                0
+              ],
+              "first_prepared_run_ms": 0.699999988079071,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.19999998807907104,
+                0.19999998807907104
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              850000.0089406967,
+              750000,
+              700000.0029802322,
+              674999.9970197678,
+              675000.011920929,
+              675000.011920929,
+              724999.9940395355
+            ],
+            "before/prepared": [
+              649999.9910593033,
+              700000.0029802322,
+              625000,
+              725000.0089406967,
+              699999.988079071,
+              649999.9910593033,
+              675000.011920929
+            ],
+            "before/resident": [
+              625000,
+              599999.9940395355,
+              599999.9940395355,
+              599999.9940395355,
+              625000,
+              600000.0089406967,
+              625000
+            ],
+            "after/ordinary": [
+              750000,
+              650000.0059604645,
+              700000.0029802322,
+              725000.0089406967,
+              675000.011920929,
+              649999.9910593033,
+              649999.9910593033
+            ],
+            "after/prepared": [
+              625000,
+              649999.9910593033,
+              649999.9910593033,
+              649999.9910593033,
+              600000.0089406967,
+              700000.0029802322,
+              674999.9970197678
+            ],
+            "after/resident": [
+              600000.0089406967,
+              600000.0089406967,
+              650000.0059604645,
+              575000.0029802322,
+              574999.988079071,
+              574999.988079071,
+              650000.0059604645
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 2132,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 2336,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 2132,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 2336,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 68
+            },
+            "after/ordinary": {
+              "upload_bytes": 2132,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 2336,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 2132,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 2336,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "filter-bank",
+          "length": 512,
+          "lanes": 64,
+          "width": null,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 5.600000023841858,
+              "first_open_ms": 0.19999998807907104,
+              "capture_ms": [
+                0.09999996423721313,
+                0
+              ],
+              "first_prepared_run_ms": 0.7000000476837158,
+              "warm_open_ms": [
+                0.19999998807907104,
+                0.20000004768371582,
+                0.19999998807907104
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.399999976158142,
+              "first_open_ms": 0.19999998807907104,
+              "capture_ms": [
+                0.09999996423721313,
+                0
+              ],
+              "first_prepared_run_ms": 0.800000011920929,
+              "warm_open_ms": [
+                0.19999998807907104,
+                0.19999998807907104,
+                0.10000002384185791
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              825000.0029802322,
+              700000.0029802322,
+              674999.9970197678,
+              674999.9970197678,
+              674999.9970197678,
+              674999.9970197678,
+              700000.0029802322
+            ],
+            "before/prepared": [
+              674999.9970197678,
+              724999.9940395355,
+              674999.9970197678,
+              650000.0059604645,
+              674999.9970197678,
+              650000.0059604645,
+              650000.0059604645
+            ],
+            "before/resident": [
+              625000,
+              674999.9970197678,
+              650000.0059604645,
+              625000,
+              625000,
+              599999.9940395355,
+              649999.9910593033
+            ],
+            "after/ordinary": [
+              750000,
+              700000.0029802322,
+              699999.988079071,
+              650000.0059604645,
+              674999.9970197678,
+              700000.0029802322,
+              650000.0059604645
+            ],
+            "after/prepared": [
+              700000.0029802322,
+              725000.0089406967,
+              675000.011920929,
+              674999.9970197678,
+              674999.9970197678,
+              649999.9910593033,
+              649999.9910593033
+            ],
+            "after/resident": [
+              625000,
+              649999.9910593033,
+              625000,
+              599999.9940395355,
+              625000,
+              600000.0089406967,
+              600000.0089406967
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 2324,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 3104,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 2324,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 3104,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 260
+            },
+            "after/ordinary": {
+              "upload_bytes": 2324,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 3104,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 2324,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 3104,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "channel-energy",
+          "length": 64,
+          "lanes": 16,
+          "width": null,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 5.800000011920929,
+              "first_open_ms": 5.600000023841858,
+              "capture_ms": [
+                0.2999999523162842,
+                0
+              ],
+              "first_prepared_run_ms": 1.100000023841858,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.20000004768371582,
+                0.2999999523162842
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.699999988079071,
+              "first_open_ms": 3,
+              "capture_ms": [
+                0.19999998807907104,
+                0.09999996423721313
+              ],
+              "first_prepared_run_ms": 1.2000000476837158,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.2999999523162842,
+                0.30000001192092896
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              474999.9940395355,
+              500000,
+              500000,
+              475000.0089406967,
+              1174999.9970197678,
+              525000.0059604645,
+              500000
+            ],
+            "before/prepared": [
+              475000.0089406967,
+              474999.9940395355,
+              475000.0089406967,
+              449999.98807907104,
+              424999.99701976776,
+              500000,
+              474999.9940395355
+            ],
+            "before/resident": [
+              449999.98807907104,
+              450000.00298023224,
+              424999.99701976776,
+              400000.0059604645,
+              474999.9940395355,
+              474999.9940395355,
+              525000.0059604645
+            ],
+            "after/ordinary": [
+              475000.0089406967,
+              500000,
+              500000,
+              474999.9940395355,
+              475000.0089406967,
+              500000,
+              500000
+            ],
+            "after/prepared": [
+              450000.00298023224,
+              475000.0089406967,
+              450000.00298023224,
+              450000.00298023224,
+              424999.99701976776,
+              450000.00298023224,
+              450000.00298023224
+            ],
+            "after/resident": [
+              474999.9940395355,
+              399999.9910593033,
+              399999.9910593033,
+              424999.99701976776,
+              475000.0089406967,
+              474999.9940395355,
+              500000
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 852,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 1056,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 852,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 1056,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 772,
+              "readback_bytes": 68
+            },
+            "after/ordinary": {
+              "upload_bytes": 852,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 1056,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 852,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 1056,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 772,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "channel-energy",
+          "length": 64,
+          "lanes": 64,
+          "width": null,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 5.800000011920929,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0.10000002384185791,
+                0.09999996423721313
+              ],
+              "first_prepared_run_ms": 0.6000000238418579,
+              "warm_open_ms": [
+                0.3999999761581421,
+                0.20000004768371582,
+                0.3999999761581421
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.699999988079071,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.6000000238418579,
+              "warm_open_ms": [
+                0.20000004768371582,
+                0.2999999523162842,
+                0.19999998807907104
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              525000.0059604645,
+              550000.011920929,
+              549999.9970197678,
+              500000,
+              500000,
+              599999.9940395355,
+              500000
+            ],
+            "before/prepared": [
+              524999.9910593033,
+              700000.0029802322,
+              549999.9970197678,
+              525000.0059604645,
+              600000.0089406967,
+              500000,
+              500000
+            ],
+            "before/resident": [
+              575000.0029802322,
+              450000.00298023224,
+              449999.98807907104,
+              325000.00298023224,
+              474999.9940395355,
+              500000,
+              525000.0059604645
+            ],
+            "after/ordinary": [
+              549999.9970197678,
+              549999.9970197678,
+              575000.0029802322,
+              525000.0059604645,
+              575000.0029802322,
+              575000.0029802322,
+              575000.0029802322
+            ],
+            "after/prepared": [
+              500000,
+              625000,
+              474999.9940395355,
+              575000.0029802322,
+              399999.9910593033,
+              524999.9910593033,
+              474999.9940395355
+            ],
+            "after/resident": [
+              599999.9940395355,
+              524999.9910593033,
+              450000.00298023224,
+              450000.00298023224,
+              424999.99701976776,
+              500000,
+              500000
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 1044,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1824,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 1044,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1824,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 772,
+              "readback_bytes": 260
+            },
+            "after/ordinary": {
+              "upload_bytes": 1044,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1824,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 1044,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1824,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 772,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "channel-energy",
+          "length": 512,
+          "lanes": 16,
+          "width": null,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 5.800000011920929,
+              "first_open_ms": 0.3999999761581421,
+              "capture_ms": [
+                0.09999996423721313,
+                0.09999996423721313
+              ],
+              "first_prepared_run_ms": 0.699999988079071,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.3999999761581421,
+                0.30000001192092896
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.699999988079071,
+              "first_open_ms": 0.40000003576278687,
+              "capture_ms": [
+                0.09999996423721313,
+                0.10000002384185791
+              ],
+              "first_prepared_run_ms": 0.6000000238418579,
+              "warm_open_ms": [
+                0.3999999761581421,
+                0.30000001192092896,
+                0.19999998807907104
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              699999.988079071,
+              824999.988079071,
+              724999.9940395355,
+              700000.0029802322,
+              850000.0089406967,
+              699999.988079071,
+              675000.011920929
+            ],
+            "before/prepared": [
+              600000.0089406967,
+              625000,
+              725000.0089406967,
+              825000.0029802322,
+              649999.9910593033,
+              575000.0029802322,
+              649999.9910593033
+            ],
+            "before/resident": [
+              700000.0029802322,
+              625000,
+              650000.0059604645,
+              724999.9940395355,
+              650000.0059604645,
+              625000,
+              600000.0089406967
+            ],
+            "after/ordinary": [
+              775000.0059604645,
+              774999.9910593033,
+              799999.9970197678,
+              750000,
+              700000.0029802322,
+              700000.0029802322,
+              824999.988079071
+            ],
+            "after/prepared": [
+              625000,
+              575000.0029802322,
+              674999.9970197678,
+              649999.9910593033,
+              625000,
+              574999.988079071,
+              600000.0089406967
+            ],
+            "after/resident": [
+              825000.0029802322,
+              625000,
+              650000.0059604645,
+              625000.0149011612,
+              849999.9940395355,
+              700000.0029802322,
+              600000.0089406967
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 6228,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 6432,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 6228,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 6432,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 6148,
+              "readback_bytes": 68
+            },
+            "after/ordinary": {
+              "upload_bytes": 6228,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 6432,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 6228,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 6432,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 6148,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "channel-energy",
+          "length": 512,
+          "lanes": 64,
+          "width": null,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 5.800000011920929,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0,
+                0.10000002384185791
+              ],
+              "first_prepared_run_ms": 0.699999988079071,
+              "warm_open_ms": [
+                0.40000003576278687,
+                0.40000003576278687,
+                0.2999999523162842
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.699999988079071,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0.09999996423721313,
+                0
+              ],
+              "first_prepared_run_ms": 1,
+              "warm_open_ms": [
+                0.2999999523162842,
+                0.30000001192092896,
+                0.30000001192092896
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              724999.9940395355,
+              674999.9970197678,
+              699999.988079071,
+              700000.0029802322,
+              849999.9940395355,
+              724999.9940395355,
+              649999.9910593033
+            ],
+            "before/prepared": [
+              650000.0059604645,
+              625000,
+              625000,
+              625000,
+              625000,
+              575000.0029802322,
+              525000.0059604645
+            ],
+            "before/resident": [
+              699999.988079071,
+              674999.9970197678,
+              599999.9940395355,
+              649999.9910593033,
+              674999.9970197678,
+              599999.9940395355,
+              724999.9940395355
+            ],
+            "after/ordinary": [
+              800000.011920929,
+              700000.0029802322,
+              775000.0059604645,
+              700000.0029802322,
+              775000.0059604645,
+              750000,
+              700000.0029802322
+            ],
+            "after/prepared": [
+              625000,
+              575000.0029802322,
+              625000,
+              625000,
+              650000.0059604645,
+              625000,
+              575000.0029802322
+            ],
+            "after/resident": [
+              599999.9940395355,
+              625000,
+              700000.0029802322,
+              600000.0089406967,
+              650000.0059604645,
+              575000.0029802322,
+              699999.988079071
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 6420,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 7200,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 6420,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 7200,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 6148,
+              "readback_bytes": 260
+            },
+            "after/ordinary": {
+              "upload_bytes": 6420,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 7200,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 6420,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 7200,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 6148,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        }
+      ],
+      "validation": [
+        {
+          "name": "potion-2m",
+          "label": "before",
+          "all_bits_exact": true,
+          "actual_public_loader": true
+        },
+        {
+          "name": "potion-2m",
+          "label": "after",
+          "all_bits_exact": true,
+          "actual_public_loader": true
+        },
+        {
+          "name": "potion-8m",
+          "label": "before",
+          "all_bits_exact": true,
+          "actual_public_loader": true
+        },
+        {
+          "name": "potion-8m",
+          "label": "after",
+          "all_bits_exact": true,
+          "actual_public_loader": true
+        },
+        {
+          "name": "st-retrieval",
+          "label": "before",
+          "all_bits_exact": true,
+          "actual_public_loader": true
+        },
+        {
+          "name": "st-retrieval",
+          "label": "after",
+          "all_bits_exact": true,
+          "actual_public_loader": true
+        },
+        {
+          "name": "unseen-weighted",
+          "label": "before",
+          "all_bits_exact": true,
+          "actual_public_loader": true
+        },
+        {
+          "name": "unseen-weighted",
+          "label": "after",
+          "all_bits_exact": true,
+          "actual_public_loader": true
+        },
+        {
+          "name": "unseen-clamp",
+          "label": "before",
+          "all_bits_exact": true,
+          "actual_public_loader": true
+        },
+        {
+          "name": "unseen-clamp",
+          "label": "after",
+          "all_bits_exact": true,
+          "actual_public_loader": true
+        }
+      ],
+      "potion": {
+        "batch": 16,
+        "setup": {
+          "before": {
+            "loader_fetch_validate_ms": 22,
+            "first_open_ms": 37.80000001192093,
+            "warm_open_ms": [
+              36.5,
+              25.69999998807907,
+              25.30000001192093,
+              25.100000023841858,
+              26.5,
+              26.200000047683716,
+              25.599999964237213
+            ]
+          },
+          "after": {
+            "loader_fetch_validate_ms": 23.399999976158142,
+            "first_open_ms": 9.5,
+            "warm_open_ms": [
+              4.100000023841858,
+              4.099999964237213,
+              4.699999988079071,
+              4.5,
+              3.5,
+              3.299999952316284,
+              4.199999988079071
+            ]
+          }
+        },
+        "samples_ns_per_embedding": {
+          "before": [
+            59375.000186264515,
+            76562.50055879354,
+            43749.99925494194,
+            34374.99888241291,
+            35937.500186264515,
+            35937.50111758709,
+            48437.499441206455
+          ],
+          "after": [
+            43750.000186264515,
+            46875,
+            35937.500186264515,
+            35937.500186264515,
+            34374.999813735485,
+            34374.999813735485,
+            46874.999068677425
+          ]
+        },
+        "all_bits_exact": true
+      },
+      "adapter": {
+        "vendor": "apple",
+        "architecture": "metal-3",
+        "isFallbackAdapter": false
+      },
+      "browser_version": "156.0.8078.80"
+    },
+    {
+      "records": [
+        {
+          "name": "matrix-columns",
+          "length": 64,
+          "lanes": 16,
+          "width": 64,
+          "setup": {
+            "after": {
+              "shared_runtime_load_ms": 7.300000011920929,
+              "first_open_ms": 5.699999988079071,
+              "capture_ms": [
+                0.40000003576278687,
+                0
+              ],
+              "first_prepared_run_ms": 1.7999999523162842,
+              "warm_open_ms": [
+                0.3999999761581421,
+                0.5,
+                0.30000001192092896
+              ]
+            },
+            "before": {
+              "shared_runtime_load_ms": 5.300000011920929,
+              "first_open_ms": 3.100000023841858,
+              "capture_ms": [
+                0.5,
+                0.30000001192092896
+              ],
+              "first_prepared_run_ms": 2.400000035762787,
+              "warm_open_ms": [
+                0.699999988079071,
+                0.6000000238418579,
+                0.3999999761581421
+              ]
+            }
+          },
+          "samples_ns": {
+            "after/ordinary": [
+              1099999.9940395355,
+              525000.0059604645,
+              525000.0059604645,
+              549999.9970197678,
+              575000.0029802322,
+              500000,
+              500000
+            ],
+            "after/prepared": [
+              599999.9940395355,
+              525000.0059604645,
+              524999.9910593033,
+              600000.0089406967,
+              500000,
+              474999.9940395355,
+              500000
+            ],
+            "after/resident": [
+              425000.01192092896,
+              524999.9910593033,
+              399999.9910593033,
+              399999.9910593033,
+              424999.99701976776,
+              400000.0059604645,
+              450000.00298023224
+            ],
+            "before/ordinary": [
+              774999.9910593033,
+              700000.0029802322,
+              725000.0089406967,
+              725000.0089406967,
+              674999.9970197678,
+              674999.9970197678,
+              674999.9970197678
+            ],
+            "before/prepared": [
+              525000.0059604645,
+              500000,
+              474999.9940395355,
+              500000,
+              525000.0059604645,
+              524999.9910593033,
+              475000.0089406967
+            ],
+            "before/resident": [
+              424999.99701976776,
+              424999.99701976776,
+              450000.00298023224,
+              399999.9910593033,
+              375000,
+              475000.0089406967,
+              424999.99701976776
+            ]
+          },
+          "receipts": {
+            "after/ordinary": {
+              "upload_bytes": 33380,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 33584,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 33380,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 33584,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 68
+            },
+            "before/ordinary": {
+              "upload_bytes": 33380,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 33584,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 33380,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 33584,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "matrix-columns",
+          "length": 64,
+          "lanes": 64,
+          "width": 64,
+          "setup": {
+            "after": {
+              "shared_runtime_load_ms": 7.300000011920929,
+              "first_open_ms": 0.19999998807907104,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.5999999642372131,
+              "warm_open_ms": [
+                0.19999998807907104,
+                0.20000004768371582,
+                0.2999999523162842
+              ]
+            },
+            "before": {
+              "shared_runtime_load_ms": 5.300000011920929,
+              "first_open_ms": 0.5,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.7999999523162842,
+              "warm_open_ms": [
+                0.3999999761581421,
+                0.5,
+                0.30000001192092896
+              ]
+            }
+          },
+          "samples_ns": {
+            "after/ordinary": [
+              500000,
+              500000,
+              500000,
+              574999.988079071,
+              774999.9910593033,
+              649999.9910593033,
+              549999.9970197678
+            ],
+            "after/prepared": [
+              474999.9940395355,
+              500000,
+              500000,
+              550000.011920929,
+              599999.9940395355,
+              525000.0059604645,
+              475000.0089406967
+            ],
+            "after/resident": [
+              375000,
+              399999.9910593033,
+              375000,
+              399999.9910593033,
+              500000,
+              399999.9910593033,
+              449999.98807907104
+            ],
+            "before/ordinary": [
+              724999.9940395355,
+              674999.9970197678,
+              675000.011920929,
+              725000.0089406967,
+              799999.9970197678,
+              700000.0029802322,
+              650000.0059604645
+            ],
+            "before/prepared": [
+              525000.0059604645,
+              500000,
+              500000,
+              524999.9910593033,
+              525000.0059604645,
+              549999.9970197678,
+              474999.9940395355
+            ],
+            "before/resident": [
+              400000.0059604645,
+              375000,
+              400000.0059604645,
+              425000.01192092896,
+              450000.00298023224,
+              425000.01192092896,
+              425000.01192092896
+            ]
+          },
+          "receipts": {
+            "after/ordinary": {
+              "upload_bytes": 33572,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 34352,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 33572,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 34352,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 260
+            },
+            "before/ordinary": {
+              "upload_bytes": 33572,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 34352,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 33572,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 34352,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "matrix-columns",
+          "length": 512,
+          "lanes": 16,
+          "width": 64,
+          "setup": {
+            "after": {
+              "shared_runtime_load_ms": 7.300000011920929,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.6000000238418579,
+              "warm_open_ms": [
+                0.19999998807907104,
+                0.20000004768371582,
+                0.19999998807907104
+              ]
+            },
+            "before": {
+              "shared_runtime_load_ms": 5.300000011920929,
+              "first_open_ms": 0.3999999761581421,
+              "capture_ms": [
+                0.09999996423721313,
+                0
+              ],
+              "first_prepared_run_ms": 1,
+              "warm_open_ms": [
+                0.6000000238418579,
+                0.3999999761581421,
+                0.40000003576278687
+              ]
+            }
+          },
+          "samples_ns": {
+            "after/ordinary": [
+              625000,
+              674999.9970197678,
+              699999.988079071,
+              650000.0059604645,
+              650000.0059604645,
+              625000,
+              674999.9970197678
+            ],
+            "after/prepared": [
+              650000.0059604645,
+              699999.988079071,
+              625000,
+              625000,
+              650000.0059604645,
+              625000,
+              599999.9940395355
+            ],
+            "after/resident": [
+              575000.0029802322,
+              600000.0089406967,
+              575000.0029802322,
+              549999.9970197678,
+              549999.9970197678,
+              550000.011920929,
+              550000.011920929
+            ],
+            "before/ordinary": [
+              875000,
+              974999.9940395355,
+              825000.0029802322,
+              800000.011920929,
+              825000.0029802322,
+              824999.988079071,
+              799999.9970197678
+            ],
+            "before/prepared": [
+              750000,
+              575000.0029802322,
+              625000,
+              649999.9910593033,
+              625000,
+              600000.0089406967,
+              649999.9910593033
+            ],
+            "before/resident": [
+              550000.011920929,
+              549999.9970197678,
+              525000.0059604645,
+              549999.9970197678,
+              549999.9970197678,
+              574999.988079071,
+              525000.0059604645
+            ]
+          },
+          "receipts": {
+            "after/ordinary": {
+              "upload_bytes": 35172,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 35376,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 35172,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 35376,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 68
+            },
+            "before/ordinary": {
+              "upload_bytes": 35172,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 35376,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 35172,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 35376,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "matrix-columns",
+          "length": 512,
+          "lanes": 64,
+          "width": 64,
+          "setup": {
+            "after": {
+              "shared_runtime_load_ms": 7.300000011920929,
+              "first_open_ms": 0.19999998807907104,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.6000000238418579,
+              "warm_open_ms": [
+                0.2999999523162842,
+                0.30000001192092896,
+                0.30000001192092896
+              ]
+            },
+            "before": {
+              "shared_runtime_load_ms": 5.300000011920929,
+              "first_open_ms": 0.5,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.9000000357627869,
+              "warm_open_ms": [
+                0.40000003576278687,
+                0.3999999761581421,
+                0.3999999761581421
+              ]
+            }
+          },
+          "samples_ns": {
+            "after/ordinary": [
+              650000.0059604645,
+              649999.9910593033,
+              699999.988079071,
+              649999.9910593033,
+              700000.0029802322,
+              825000.0029802322,
+              724999.9940395355
+            ],
+            "after/prepared": [
+              625000,
+              625000,
+              625000,
+              650000.0059604645,
+              700000.0029802322,
+              825000.0029802322,
+              700000.0029802322
+            ],
+            "after/resident": [
+              575000.0029802322,
+              550000.011920929,
+              600000.0089406967,
+              575000.0029802322,
+              549999.9970197678,
+              575000.0029802322,
+              575000.0029802322
+            ],
+            "before/ordinary": [
+              899999.9910593033,
+              799999.9970197678,
+              799999.9970197678,
+              825000.0029802322,
+              850000.0089406967,
+              950000.0029802322,
+              849999.9940395355
+            ],
+            "before/prepared": [
+              650000.0059604645,
+              674999.9970197678,
+              649999.9910593033,
+              674999.9970197678,
+              649999.9910593033,
+              674999.9970197678,
+              750000
+            ],
+            "before/resident": [
+              599999.9940395355,
+              525000.0059604645,
+              550000.011920929,
+              550000.011920929,
+              549999.9970197678,
+              574999.988079071,
+              575000.0029802322
+            ]
+          },
+          "receipts": {
+            "after/ordinary": {
+              "upload_bytes": 35364,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 36144,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 35364,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 36144,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 260
+            },
+            "before/ordinary": {
+              "upload_bytes": 35364,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 36144,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 35364,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 36144,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "filter-bank",
+          "length": 64,
+          "lanes": 16,
+          "width": null,
+          "setup": {
+            "after": {
+              "shared_runtime_load_ms": 6,
+              "first_open_ms": 5,
+              "capture_ms": [
+                0.30000001192092896,
+                0
+              ],
+              "first_prepared_run_ms": 1.300000011920929,
+              "warm_open_ms": [
+                0.20000004768371582,
+                0.30000001192092896,
+                0.30000001192092896
+              ]
+            },
+            "before": {
+              "shared_runtime_load_ms": 5.699999988079071,
+              "first_open_ms": 2.199999988079071,
+              "capture_ms": [
+                0.30000001192092896,
+                0
+              ],
+              "first_prepared_run_ms": 1,
+              "warm_open_ms": [
+                0.2999999523162842,
+                0.10000002384185791,
+                0.09999996423721313
+              ]
+            }
+          },
+          "samples_ns": {
+            "after/ordinary": [
+              550000.011920929,
+              474999.9940395355,
+              474999.9940395355,
+              450000.00298023224,
+              449999.98807907104,
+              474999.9940395355,
+              450000.00298023224
+            ],
+            "after/prepared": [
+              474999.9940395355,
+              500000,
+              450000.00298023224,
+              400000.0059604645,
+              450000.00298023224,
+              424999.99701976776,
+              450000.00298023224
+            ],
+            "after/resident": [
+              450000.00298023224,
+              449999.98807907104,
+              450000.00298023224,
+              450000.00298023224,
+              450000.00298023224,
+              475000.0089406967,
+              399999.9910593033
+            ],
+            "before/ordinary": [
+              450000.00298023224,
+              500000,
+              450000.00298023224,
+              475000.0089406967,
+              500000,
+              424999.98211860657,
+              425000.01192092896
+            ],
+            "before/prepared": [
+              449999.98807907104,
+              475000.0089406967,
+              474999.9940395355,
+              449999.98807907104,
+              450000.00298023224,
+              450000.00298023224,
+              474999.9940395355
+            ],
+            "before/resident": [
+              425000.01192092896,
+              424999.99701976776,
+              400000.0059604645,
+              400000.0059604645,
+              375000,
+              400000.0059604645,
+              450000.00298023224
+            ]
+          },
+          "receipts": {
+            "after/ordinary": {
+              "upload_bytes": 340,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 544,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 340,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 544,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 68
+            },
+            "before/ordinary": {
+              "upload_bytes": 340,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 544,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 340,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 544,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "filter-bank",
+          "length": 64,
+          "lanes": 64,
+          "width": null,
+          "setup": {
+            "after": {
+              "shared_runtime_load_ms": 6,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.3999999761581421,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.20000004768371582,
+                0.19999998807907104
+              ]
+            },
+            "before": {
+              "shared_runtime_load_ms": 5.699999988079071,
+              "first_open_ms": 0.19999998807907104,
+              "capture_ms": [
+                0.10000002384185791,
+                0
+              ],
+              "first_prepared_run_ms": 0.40000003576278687,
+              "warm_open_ms": [
+                0.5,
+                0.3999999761581421,
+                0.19999998807907104
+              ]
+            }
+          },
+          "samples_ns": {
+            "after/ordinary": [
+              474999.9940395355,
+              500000,
+              575000.0029802322,
+              575000.0029802322,
+              600000.0089406967,
+              600000.0089406967,
+              574999.988079071
+            ],
+            "after/prepared": [
+              424999.99701976776,
+              500000,
+              500000,
+              474999.9940395355,
+              599999.9940395355,
+              575000.0029802322,
+              500000
+            ],
+            "after/resident": [
+              475000.0089406967,
+              375000,
+              450000.00298023224,
+              475000.0089406967,
+              474999.9940395355,
+              500000,
+              500000
+            ],
+            "before/ordinary": [
+              424999.99701976776,
+              550000.011920929,
+              699999.988079071,
+              549999.9970197678,
+              599999.9940395355,
+              574999.988079071,
+              625000
+            ],
+            "before/prepared": [
+              450000.00298023224,
+              424999.99701976776,
+              525000.0059604645,
+              599999.9940395355,
+              599999.9940395355,
+              550000.011920929,
+              625000
+            ],
+            "before/resident": [
+              449999.98807907104,
+              375000,
+              424999.99701976776,
+              500000,
+              500000,
+              474999.9940395355,
+              475000.0089406967
+            ]
+          },
+          "receipts": {
+            "after/ordinary": {
+              "upload_bytes": 532,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1312,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 532,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1312,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 260
+            },
+            "before/ordinary": {
+              "upload_bytes": 532,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1312,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 532,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1312,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "filter-bank",
+          "length": 512,
+          "lanes": 16,
+          "width": null,
+          "setup": {
+            "after": {
+              "shared_runtime_load_ms": 6,
+              "first_open_ms": 0.3999999761581421,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.800000011920929,
+              "warm_open_ms": [
+                0.19999998807907104,
+                0.19999998807907104,
+                0.30000001192092896
+              ]
+            },
+            "before": {
+              "shared_runtime_load_ms": 5.699999988079071,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0.09999996423721313,
+                0
+              ],
+              "first_prepared_run_ms": 0.800000011920929,
+              "warm_open_ms": [
+                0.19999998807907104,
+                0.30000001192092896,
+                0.19999998807907104
+              ]
+            }
+          },
+          "samples_ns": {
+            "after/ordinary": [
+              650000.0059604645,
+              725000.0089406967,
+              849999.9940395355,
+              674999.9970197678,
+              649999.9910593033,
+              650000.0059604645,
+              674999.9970197678
+            ],
+            "after/prepared": [
+              649999.9910593033,
+              650000.0059604645,
+              674999.9970197678,
+              650000.0059604645,
+              674999.9970197678,
+              625000,
+              625000
+            ],
+            "after/resident": [
+              600000.0089406967,
+              674999.9970197678,
+              625000,
+              575000.0029802322,
+              600000.0089406967,
+              574999.988079071,
+              575000.0029802322
+            ],
+            "before/ordinary": [
+              649999.9910593033,
+              700000.0029802322,
+              699999.988079071,
+              650000.0059604645,
+              700000.0029802322,
+              675000.011920929,
+              674999.9970197678
+            ],
+            "before/prepared": [
+              674999.9970197678,
+              700000.0029802322,
+              725000.0089406967,
+              674999.9970197678,
+              674999.9970197678,
+              649999.9910593033,
+              650000.0059604645
+            ],
+            "before/resident": [
+              625000,
+              599999.9940395355,
+              625000,
+              650000.0059604645,
+              600000.0089406967,
+              599999.9940395355,
+              599999.9940395355
+            ]
+          },
+          "receipts": {
+            "after/ordinary": {
+              "upload_bytes": 2132,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 2336,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 2132,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 2336,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 68
+            },
+            "before/ordinary": {
+              "upload_bytes": 2132,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 2336,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 2132,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 2336,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "filter-bank",
+          "length": 512,
+          "lanes": 64,
+          "width": null,
+          "setup": {
+            "after": {
+              "shared_runtime_load_ms": 6,
+              "first_open_ms": 0.19999998807907104,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.699999988079071,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.3999999761581421,
+                0.10000002384185791
+              ]
+            },
+            "before": {
+              "shared_runtime_load_ms": 5.699999988079071,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0,
+                0.10000002384185791
+              ],
+              "first_prepared_run_ms": 0.5999999642372131,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.19999998807907104,
+                0.30000001192092896
+              ]
+            }
+          },
+          "samples_ns": {
+            "after/ordinary": [
+              700000.0029802322,
+              674999.9970197678,
+              700000.0029802322,
+              699999.988079071,
+              674999.9970197678,
+              650000.0059604645,
+              700000.0029802322
+            ],
+            "after/prepared": [
+              649999.9910593033,
+              674999.9970197678,
+              649999.9910593033,
+              650000.0059604645,
+              649999.9910593033,
+              649999.9910593033,
+              700000.0029802322
+            ],
+            "after/resident": [
+              625000,
+              599999.9940395355,
+              625000,
+              599999.9940395355,
+              650000.0059604645,
+              625000,
+              599999.9940395355
+            ],
+            "before/ordinary": [
+              700000.0029802322,
+              700000.0029802322,
+              674999.9970197678,
+              674999.9970197678,
+              700000.0029802322,
+              675000.011920929,
+              700000.0029802322
+            ],
+            "before/prepared": [
+              650000.0059604645,
+              674999.9970197678,
+              799999.9970197678,
+              650000.0059604645,
+              650000.0059604645,
+              649999.9910593033,
+              724999.9940395355
+            ],
+            "before/resident": [
+              625000,
+              625000,
+              600000.0089406967,
+              625000,
+              650000.0059604645,
+              599999.9940395355,
+              774999.9910593033
+            ]
+          },
+          "receipts": {
+            "after/ordinary": {
+              "upload_bytes": 2324,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 3104,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 2324,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 3104,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 260
+            },
+            "before/ordinary": {
+              "upload_bytes": 2324,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 3104,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 2324,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 3104,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "channel-energy",
+          "length": 64,
+          "lanes": 16,
+          "width": null,
+          "setup": {
+            "after": {
+              "shared_runtime_load_ms": 7,
+              "first_open_ms": 9.900000035762787,
+              "capture_ms": [
+                0.30000001192092896,
+                0
+              ],
+              "first_prepared_run_ms": 1.699999988079071,
+              "warm_open_ms": [
+                0.3999999761581421,
+                0.3999999761581421,
+                0.20000004768371582
+              ]
+            },
+            "before": {
+              "shared_runtime_load_ms": 6.100000023841858,
+              "first_open_ms": 3,
+              "capture_ms": [
+                0.30000001192092896,
+                0.09999996423721313
+              ],
+              "first_prepared_run_ms": 1.300000011920929,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.19999998807907104,
+                0.19999998807907104
+              ]
+            }
+          },
+          "samples_ns": {
+            "after/ordinary": [
+              525000.0059604645,
+              524999.9910593033,
+              549999.9970197678,
+              599999.9940395355,
+              724999.9940395355,
+              549999.9970197678,
+              600000.0089406967
+            ],
+            "after/prepared": [
+              524999.9910593033,
+              575000.0029802322,
+              549999.9970197678,
+              450000.00298023224,
+              650000.0059604645,
+              599999.9940395355,
+              649999.9910593033
+            ],
+            "after/resident": [
+              525000.0059604645,
+              450000.00298023224,
+              475000.0089406967,
+              449999.98807907104,
+              474999.9940395355,
+              600000.0089406967,
+              450000.00298023224
+            ],
+            "before/ordinary": [
+              575000.0029802322,
+              574999.988079071,
+              700000.0029802322,
+              550000.011920929,
+              549999.9970197678,
+              599999.9940395355,
+              525000.0059604645
+            ],
+            "before/prepared": [
+              575000.0029802322,
+              475000.0089406967,
+              474999.9940395355,
+              449999.98807907104,
+              475000.0089406967,
+              500000,
+              524999.9910593033
+            ],
+            "before/resident": [
+              574999.988079071,
+              500000,
+              450000.00298023224,
+              475000.0089406967,
+              450000.00298023224,
+              525000.0059604645,
+              650000.0059604645
+            ]
+          },
+          "receipts": {
+            "after/ordinary": {
+              "upload_bytes": 852,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 1056,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 852,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 1056,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 772,
+              "readback_bytes": 68
+            },
+            "before/ordinary": {
+              "upload_bytes": 852,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 1056,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 852,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 1056,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 772,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "channel-energy",
+          "length": 64,
+          "lanes": 64,
+          "width": null,
+          "setup": {
+            "after": {
+              "shared_runtime_load_ms": 7,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0.10000002384185791,
+                0
+              ],
+              "first_prepared_run_ms": 0.699999988079071,
+              "warm_open_ms": [
+                0.2999999523162842,
+                0.20000004768371582,
+                0.19999998807907104
+              ]
+            },
+            "before": {
+              "shared_runtime_load_ms": 6.100000023841858,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.800000011920929,
+              "warm_open_ms": [
+                0.20000004768371582,
+                0.2999999523162842,
+                0.19999998807907104
+              ]
+            }
+          },
+          "samples_ns": {
+            "after/ordinary": [
+              549999.9970197678,
+              625000,
+              575000.0029802322,
+              475000.0089406967,
+              549999.9970197678,
+              474999.9940395355,
+              475000.0089406967
+            ],
+            "after/prepared": [
+              599999.9940395355,
+              450000.00298023224,
+              474999.9940395355,
+              474999.9940395355,
+              600000.0089406967,
+              450000.00298023224,
+              474999.9940395355
+            ],
+            "after/resident": [
+              450000.00298023224,
+              475000.0089406967,
+              549999.9970197678,
+              450000.00298023224,
+              500000,
+              424999.99701976776,
+              424999.99701976776
+            ],
+            "before/ordinary": [
+              499999.9850988388,
+              699999.988079071,
+              750000,
+              525000.0059604645,
+              500000,
+              525000.0059604645,
+              500000
+            ],
+            "before/prepared": [
+              525000.0059604645,
+              850000.0089406967,
+              650000.0059604645,
+              474999.9940395355,
+              474999.9940395355,
+              474999.9940395355,
+              450000.00298023224
+            ],
+            "before/resident": [
+              599999.9940395355,
+              500000,
+              474999.9940395355,
+              424999.99701976776,
+              450000.00298023224,
+              500000,
+              450000.00298023224
+            ]
+          },
+          "receipts": {
+            "after/ordinary": {
+              "upload_bytes": 1044,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1824,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 1044,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1824,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 772,
+              "readback_bytes": 260
+            },
+            "before/ordinary": {
+              "upload_bytes": 1044,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1824,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 1044,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1824,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 772,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "channel-energy",
+          "length": 512,
+          "lanes": 16,
+          "width": null,
+          "setup": {
+            "after": {
+              "shared_runtime_load_ms": 7,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0.19999998807907104,
+                0
+              ],
+              "first_prepared_run_ms": 1,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.19999998807907104,
+                0.30000001192092896
+              ]
+            },
+            "before": {
+              "shared_runtime_load_ms": 6.100000023841858,
+              "first_open_ms": 0.3999999761581421,
+              "capture_ms": [
+                0.10000002384185791,
+                0.09999996423721313
+              ],
+              "first_prepared_run_ms": 0.9000000357627869,
+              "warm_open_ms": [
+                0.2999999523162842,
+                0.30000001192092896,
+                0.19999998807907104
+              ]
+            }
+          },
+          "samples_ns": {
+            "after/ordinary": [
+              725000.0089406967,
+              650000.0059604645,
+              649999.9910593033,
+              750000,
+              674999.9970197678,
+              674999.9970197678,
+              650000.0059604645
+            ],
+            "after/prepared": [
+              625000,
+              575000.0029802322,
+              600000.0089406967,
+              549999.9970197678,
+              575000.0029802322,
+              549999.9970197678,
+              574999.988079071
+            ],
+            "after/resident": [
+              599999.9940395355,
+              650000.0059604645,
+              674999.9970197678,
+              625000,
+              599999.9940395355,
+              625000,
+              600000.0089406967
+            ],
+            "before/ordinary": [
+              674999.9970197678,
+              674999.9970197678,
+              650000.0059604645,
+              625000,
+              650000.0059604645,
+              825000.0029802322,
+              649999.9910593033
+            ],
+            "before/prepared": [
+              575000.0029802322,
+              599999.9940395355,
+              599999.9940395355,
+              575000.0029802322,
+              575000.0029802322,
+              599999.9940395355,
+              600000.0089406967
+            ],
+            "before/resident": [
+              599999.9940395355,
+              575000.0029802322,
+              575000.0029802322,
+              625000,
+              599999.9940395355,
+              575000.0029802322,
+              599999.9940395355
+            ]
+          },
+          "receipts": {
+            "after/ordinary": {
+              "upload_bytes": 6228,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 6432,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 6228,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 6432,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 6148,
+              "readback_bytes": 68
+            },
+            "before/ordinary": {
+              "upload_bytes": 6228,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 6432,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 6228,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 6432,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 6148,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "channel-energy",
+          "length": 512,
+          "lanes": 64,
+          "width": null,
+          "setup": {
+            "after": {
+              "shared_runtime_load_ms": 7,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0.10000002384185791,
+                0.10000002384185791
+              ],
+              "first_prepared_run_ms": 1,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.30000001192092896,
+                0.30000001192092896
+              ]
+            },
+            "before": {
+              "shared_runtime_load_ms": 6.100000023841858,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0,
+                0.09999996423721313
+              ],
+              "first_prepared_run_ms": 0.699999988079071,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.2999999523162842,
+                0.30000001192092896
+              ]
+            }
+          },
+          "samples_ns": {
+            "after/ordinary": [
+              674999.9970197678,
+              799999.9970197678,
+              650000.0059604645,
+              674999.9970197678,
+              700000.0029802322,
+              724999.9940395355,
+              674999.9970197678
+            ],
+            "after/prepared": [
+              575000.0029802322,
+              574999.988079071,
+              574999.988079071,
+              575000.0029802322,
+              599999.9940395355,
+              575000.0029802322,
+              575000.0029802322
+            ],
+            "after/resident": [
+              599999.9940395355,
+              600000.0089406967,
+              625000,
+              575000.0029802322,
+              600000.0089406967,
+              674999.9970197678,
+              650000.0059604645
+            ],
+            "before/ordinary": [
+              700000.0029802322,
+              700000.0029802322,
+              650000.0059604645,
+              625000,
+              724999.9940395355,
+              674999.9970197678,
+              674999.9970197678
+            ],
+            "before/prepared": [
+              549999.9970197678,
+              599999.9940395355,
+              599999.9940395355,
+              575000.0029802322,
+              625000,
+              575000.0029802322,
+              575000.0029802322
+            ],
+            "before/resident": [
+              650000.0059604645,
+              625000,
+              575000.0029802322,
+              599999.9940395355,
+              625000,
+              650000.0059604645,
+              625000
+            ]
+          },
+          "receipts": {
+            "after/ordinary": {
+              "upload_bytes": 6420,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 7200,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 6420,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 7200,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 6148,
+              "readback_bytes": 260
+            },
+            "before/ordinary": {
+              "upload_bytes": 6420,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 7200,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 6420,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 7200,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 6148,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        }
+      ],
+      "validation": [],
+      "potion": {
+        "batch": 16,
+        "setup": {
+          "after": {
+            "loader_fetch_validate_ms": 40.69999998807907,
+            "first_open_ms": 26.19999998807907,
+            "warm_open_ms": [
+              4.800000011920929,
+              8.899999976158142,
+              4.600000023841858,
+              3.800000011920929,
+              3.599999964237213,
+              4,
+              3.699999988079071
+            ]
+          },
+          "before": {
+            "loader_fetch_validate_ms": 34.80000001192093,
+            "first_open_ms": 40.19999998807907,
+            "warm_open_ms": [
+              35.799999952316284,
+              34.80000001192093,
+              35.30000001192093,
+              35.10000002384186,
+              35.10000002384186,
+              34.80000001192093,
+              35.09999996423721
+            ]
+          }
+        },
+        "samples_ns_per_embedding": {
+          "before": [
+            40624.999441206455,
+            37500.000558793545,
+            37499.99962747097,
+            40624.999441206455,
+            34375.00074505806,
+            35937.49925494194,
+            37499.99962747097
+          ],
+          "after": [
+            46875,
+            45312.49962747097,
+            40625.00037252903,
+            32812.50037252903,
+            37499.99962747097,
+            37500.000558793545,
+            35937.500186264515
+          ]
+        },
+        "all_bits_exact": true
+      },
+      "adapter": {
+        "vendor": "apple",
+        "architecture": "metal-3",
+        "isFallbackAdapter": false
+      },
+      "browser_version": "156.0.8078.80"
+    },
+    {
+      "records": [
+        {
+          "name": "matrix-columns",
+          "length": 64,
+          "lanes": 16,
+          "width": 64,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 7.899999976158142,
+              "first_open_ms": 6.400000035762787,
+              "capture_ms": [
+                0.5,
+                0.20000004768371582
+              ],
+              "first_prepared_run_ms": 2.399999976158142,
+              "warm_open_ms": [
+                0.699999988079071,
+                0.5999999642372131,
+                0.5
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 6.199999988079071,
+              "first_open_ms": 3.199999988079071,
+              "capture_ms": [
+                0.19999998807907104,
+                0
+              ],
+              "first_prepared_run_ms": 1.5,
+              "warm_open_ms": [
+                0.5,
+                0.30000001192092896,
+                0.19999998807907104
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              775000.0059604645,
+              750000,
+              750000,
+              724999.9940395355,
+              825000.0029802322,
+              700000.0029802322,
+              725000.0089406967
+            ],
+            "before/prepared": [
+              449999.98807907104,
+              525000.0059604645,
+              549999.9970197678,
+              1050000.011920929,
+              575000.0029802322,
+              549999.9970197678,
+              549999.9970197678
+            ],
+            "before/resident": [
+              549999.9970197678,
+              449999.98807907104,
+              424999.99701976776,
+              525000.0059604645,
+              424999.99701976776,
+              399999.9910593033,
+              424999.99701976776
+            ],
+            "after/ordinary": [
+              575000.0029802322,
+              625000,
+              650000.0059604645,
+              549999.9970197678,
+              575000.0029802322,
+              575000.0029802322,
+              525000.0059604645
+            ],
+            "after/prepared": [
+              525000.0059604645,
+              525000.0059604645,
+              599999.9940395355,
+              575000.0029802322,
+              524999.9910593033,
+              500000,
+              524999.9910593033
+            ],
+            "after/resident": [
+              474999.9940395355,
+              450000.00298023224,
+              500000,
+              450000.00298023224,
+              500000,
+              450000.00298023224,
+              400000.0059604645
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 33380,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 33584,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 33380,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 33584,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 68
+            },
+            "after/ordinary": {
+              "upload_bytes": 33380,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 33584,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 33380,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 33584,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "matrix-columns",
+          "length": 64,
+          "lanes": 64,
+          "width": 64,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 7.899999976158142,
+              "first_open_ms": 0.5,
+              "capture_ms": [
+                0,
+                0.10000002384185791
+              ],
+              "first_prepared_run_ms": 0.800000011920929,
+              "warm_open_ms": [
+                0.40000003576278687,
+                0.30000001192092896,
+                0.3999999761581421
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 6.199999988079071,
+              "first_open_ms": 0.2999999523162842,
+              "capture_ms": [
+                0,
+                0.10000002384185791
+              ],
+              "first_prepared_run_ms": 0.5,
+              "warm_open_ms": [
+                0.2999999523162842,
+                0.40000003576278687,
+                0.30000001192092896
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              699999.988079071,
+              675000.011920929,
+              799999.9970197678,
+              724999.9940395355,
+              700000.0029802322,
+              725000.0089406967,
+              674999.9970197678
+            ],
+            "before/prepared": [
+              500000,
+              525000.0059604645,
+              525000.0059604645,
+              474999.9940395355,
+              450000.00298023224,
+              474999.9940395355,
+              475000.0089406967
+            ],
+            "before/resident": [
+              400000.0059604645,
+              399999.9910593033,
+              375000,
+              375000,
+              424999.99701976776,
+              375000,
+              399999.9910593033
+            ],
+            "after/ordinary": [
+              525000.0059604645,
+              525000.0059604645,
+              524999.9910593033,
+              525000.0059604645,
+              500000,
+              500000,
+              525000.0059604645
+            ],
+            "after/prepared": [
+              474999.9940395355,
+              525000.0059604645,
+              549999.9970197678,
+              500000,
+              475000.0089406967,
+              500000,
+              474999.9940395355
+            ],
+            "after/resident": [
+              424999.99701976776,
+              449999.98807907104,
+              424999.99701976776,
+              375000,
+              399999.9910593033,
+              375000,
+              400000.0059604645
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 33572,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 34352,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 33572,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 34352,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 260
+            },
+            "after/ordinary": {
+              "upload_bytes": 33572,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 34352,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 33572,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 34352,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "matrix-columns",
+          "length": 512,
+          "lanes": 16,
+          "width": 64,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 7.899999976158142,
+              "first_open_ms": 0.6000000238418579,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.8999999761581421,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.40000003576278687,
+                0.3999999761581421
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 6.199999988079071,
+              "first_open_ms": 0.19999998807907104,
+              "capture_ms": [
+                0.09999996423721313,
+                0
+              ],
+              "first_prepared_run_ms": 0.7000000476837158,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.2999999523162842,
+                0.19999998807907104
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              825000.0029802322,
+              825000.0029802322,
+              799999.9970197678,
+              825000.0029802322,
+              775000.0059604645,
+              799999.9970197678,
+              875000
+            ],
+            "before/prepared": [
+              600000.0089406967,
+              649999.9910593033,
+              600000.0089406967,
+              649999.9910593033,
+              625000,
+              625000,
+              574999.988079071
+            ],
+            "before/resident": [
+              549999.9970197678,
+              549999.9970197678,
+              524999.9910593033,
+              575000.0029802322,
+              575000.0029802322,
+              599999.9940395355,
+              575000.0029802322
+            ],
+            "after/ordinary": [
+              649999.9910593033,
+              725000.0089406967,
+              650000.0208616257,
+              699999.988079071,
+              625000,
+              675000.011920929,
+              650000.0059604645
+            ],
+            "after/prepared": [
+              600000.0089406967,
+              625000,
+              674999.9970197678,
+              650000.0059604645,
+              599999.9940395355,
+              625000,
+              625000
+            ],
+            "after/resident": [
+              575000.0029802322,
+              549999.9970197678,
+              549999.9970197678,
+              575000.0029802322,
+              575000.0029802322,
+              549999.9970197678,
+              549999.9970197678
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 35172,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 35376,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 35172,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 35376,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 68
+            },
+            "after/ordinary": {
+              "upload_bytes": 35172,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 35376,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 35172,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 35376,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "matrix-columns",
+          "length": 512,
+          "lanes": 64,
+          "width": 64,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 7.899999976158142,
+              "first_open_ms": 0.5,
+              "capture_ms": [
+                0,
+                0.09999996423721313
+              ],
+              "first_prepared_run_ms": 0.699999988079071,
+              "warm_open_ms": [
+                0.3999999761581421,
+                0.5,
+                0.3999999761581421
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 6.199999988079071,
+              "first_open_ms": 0.40000003576278687,
+              "capture_ms": [
+                0.10000002384185791,
+                0.09999996423721313
+              ],
+              "first_prepared_run_ms": 0.5,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.30000001192092896,
+                0.30000001192092896
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              825000.0029802322,
+              875000,
+              899999.9910593033,
+              875000,
+              850000.0089406967,
+              799999.9970197678,
+              849999.9940395355
+            ],
+            "before/prepared": [
+              674999.9970197678,
+              674999.9970197678,
+              674999.9970197678,
+              650000.0059604645,
+              674999.9970197678,
+              625000,
+              674999.9970197678
+            ],
+            "before/resident": [
+              575000.0029802322,
+              625000,
+              575000.0029802322,
+              625000,
+              549999.9970197678,
+              600000.0089406967,
+              600000.0089406967
+            ],
+            "after/ordinary": [
+              674999.9970197678,
+              700000.0029802322,
+              649999.9910593033,
+              675000.011920929,
+              674999.9970197678,
+              674999.9970197678,
+              650000.0059604645
+            ],
+            "after/prepared": [
+              675000.011920929,
+              625000,
+              625000,
+              649999.9910593033,
+              625000,
+              700000.0029802322,
+              649999.9910593033
+            ],
+            "after/resident": [
+              599999.9940395355,
+              575000.0029802322,
+              575000.0029802322,
+              575000.0029802322,
+              574999.988079071,
+              625000,
+              575000.0029802322
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 35364,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 36144,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 35364,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 36144,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 260
+            },
+            "after/ordinary": {
+              "upload_bytes": 35364,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 36144,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 35364,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 36144,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "filter-bank",
+          "length": 64,
+          "lanes": 16,
+          "width": null,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 5.599999964237213,
+              "first_open_ms": 4.400000035762787,
+              "capture_ms": [
+                0.19999998807907104,
+                0
+              ],
+              "first_prepared_run_ms": 1.2000000476837158,
+              "warm_open_ms": [
+                0.2999999523162842,
+                0.30000001192092896,
+                0.19999998807907104
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.5,
+              "first_open_ms": 2.5,
+              "capture_ms": [
+                0.10000002384185791,
+                0
+              ],
+              "first_prepared_run_ms": 1.199999988079071,
+              "warm_open_ms": [
+                0.20000004768371582,
+                0.19999998807907104,
+                0.19999998807907104
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              449999.98807907104,
+              1150000.0059604645,
+              500000,
+              525000.0059604645,
+              450000.00298023224,
+              450000.00298023224,
+              474999.9940395355
+            ],
+            "before/prepared": [
+              450000.00298023224,
+              450000.00298023224,
+              474999.9940395355,
+              424999.99701976776,
+              424999.99701976776,
+              424999.99701976776,
+              475000.0089406967
+            ],
+            "before/resident": [
+              424999.99701976776,
+              400000.0059604645,
+              399999.9910593033,
+              399999.9910593033,
+              424999.99701976776,
+              424999.99701976776,
+              399999.9910593033
+            ],
+            "after/ordinary": [
+              475000.0089406967,
+              500000,
+              500000,
+              475000.0089406967,
+              450000.00298023224,
+              474999.9940395355,
+              450000.00298023224
+            ],
+            "after/prepared": [
+              474999.9940395355,
+              424999.99701976776,
+              475000.0089406967,
+              474999.9940395355,
+              450000.00298023224,
+              475000.0089406967,
+              449999.98807907104
+            ],
+            "after/resident": [
+              424999.99701976776,
+              399999.9910593033,
+              375000,
+              375000,
+              450000.00298023224,
+              450000.00298023224,
+              425000.01192092896
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 340,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 544,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 340,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 544,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 68
+            },
+            "after/ordinary": {
+              "upload_bytes": 340,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 544,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 340,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 544,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "filter-bank",
+          "length": 64,
+          "lanes": 64,
+          "width": null,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 5.599999964237213,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.5,
+              "warm_open_ms": [
+                0.10000002384185791,
+                0.19999998807907104,
+                0.19999998807907104
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.5,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.3999999761581421,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.19999998807907104,
+                0.20000004768371582
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              475000.0089406967,
+              424999.99701976776,
+              474999.9940395355,
+              450000.00298023224,
+              450000.00298023224,
+              474999.9940395355,
+              450000.00298023224
+            ],
+            "before/prepared": [
+              450000.00298023224,
+              424999.99701976776,
+              424999.99701976776,
+              474999.9940395355,
+              450000.00298023224,
+              450000.00298023224,
+              450000.00298023224
+            ],
+            "before/resident": [
+              375000,
+              375000,
+              424999.99701976776,
+              400000.0059604645,
+              399999.9910593033,
+              424999.99701976776,
+              400000.0059604645
+            ],
+            "after/ordinary": [
+              474999.9940395355,
+              500000,
+              450000.00298023224,
+              450000.00298023224,
+              450000.00298023224,
+              450000.00298023224,
+              424999.99701976776
+            ],
+            "after/prepared": [
+              424999.99701976776,
+              424999.99701976776,
+              424999.99701976776,
+              424999.99701976776,
+              474999.9940395355,
+              424999.99701976776,
+              450000.00298023224
+            ],
+            "after/resident": [
+              400000.0059604645,
+              400000.0059604645,
+              400000.0059604645,
+              400000.0059604645,
+              424999.99701976776,
+              375000,
+              399999.9910593033
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 532,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1312,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 532,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1312,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 260
+            },
+            "after/ordinary": {
+              "upload_bytes": 532,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1312,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 532,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1312,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 260,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "filter-bank",
+          "length": 512,
+          "lanes": 16,
+          "width": null,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 5.599999964237213,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.699999988079071,
+              "warm_open_ms": [
+                0.19999998807907104,
+                0.19999998807907104,
+                0.30000001192092896
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.5,
+              "first_open_ms": 0.19999998807907104,
+              "capture_ms": [
+                0.10000002384185791,
+                0
+              ],
+              "first_prepared_run_ms": 0.699999988079071,
+              "warm_open_ms": [
+                0.19999998807907104,
+                0.19999998807907104,
+                0.19999998807907104
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              675000.011920929,
+              649999.9910593033,
+              2724999.9940395355,
+              649999.9910593033,
+              675000.011920929,
+              649999.9910593033,
+              699999.988079071
+            ],
+            "before/prepared": [
+              799999.9970197678,
+              675000.011920929,
+              675000.011920929,
+              650000.0059604645,
+              649999.9910593033,
+              650000.0059604645,
+              625000
+            ],
+            "before/resident": [
+              625000,
+              599999.9940395355,
+              599999.9940395355,
+              625000,
+              625000,
+              599999.9940395355,
+              600000.0089406967
+            ],
+            "after/ordinary": [
+              649999.9910593033,
+              650000.0059604645,
+              700000.0029802322,
+              699999.988079071,
+              674999.9970197678,
+              650000.0059604645,
+              674999.9970197678
+            ],
+            "after/prepared": [
+              650000.0059604645,
+              674999.9970197678,
+              625000,
+              650000.0059604645,
+              674999.9970197678,
+              650000.0059604645,
+              650000.0059604645
+            ],
+            "after/resident": [
+              599999.9940395355,
+              575000.0029802322,
+              625000,
+              625000,
+              599999.9940395355,
+              600000.0089406967,
+              574999.988079071
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 2132,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 2336,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 2132,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 2336,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 68
+            },
+            "after/ordinary": {
+              "upload_bytes": 2132,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 2336,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 2132,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 2336,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "filter-bank",
+          "length": 512,
+          "lanes": 64,
+          "width": null,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 5.599999964237213,
+              "first_open_ms": 0.10000002384185791,
+              "capture_ms": [
+                0.10000002384185791,
+                0
+              ],
+              "first_prepared_run_ms": 0.699999988079071,
+              "warm_open_ms": [
+                0.19999998807907104,
+                0.19999998807907104,
+                0.19999998807907104
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.5,
+              "first_open_ms": 0.10000002384185791,
+              "capture_ms": [
+                0,
+                0
+              ],
+              "first_prepared_run_ms": 0.699999988079071,
+              "warm_open_ms": [
+                0.40000003576278687,
+                0.19999998807907104,
+                0.19999998807907104
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              1050000.011920929,
+              799999.9970197678,
+              699999.988079071,
+              750000,
+              799999.9970197678,
+              750000,
+              699999.988079071
+            ],
+            "before/prepared": [
+              699999.988079071,
+              700000.0029802322,
+              775000.0059604645,
+              674999.9970197678,
+              625000,
+              699999.988079071,
+              675000.011920929
+            ],
+            "before/resident": [
+              675000.011920929,
+              674999.9970197678,
+              650000.0059604645,
+              700000.0029802322,
+              625000,
+              800000.011920929,
+              750000
+            ],
+            "after/ordinary": [
+              774999.9910593033,
+              799999.9970197678,
+              724999.9940395355,
+              700000.0029802322,
+              700000.0029802322,
+              699999.988079071,
+              699999.988079071
+            ],
+            "after/prepared": [
+              775000.0059604645,
+              700000.0029802322,
+              775000.0059604645,
+              700000.0029802322,
+              725000.0089406967,
+              800000.011920929,
+              675000.011920929
+            ],
+            "after/resident": [
+              674999.9970197678,
+              649999.9910593033,
+              625000,
+              649999.9910593033,
+              625000,
+              600000.0089406967,
+              699999.988079071
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 2324,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 3104,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 2324,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 3104,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 260
+            },
+            "after/ordinary": {
+              "upload_bytes": 2324,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 3104,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 2324,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 3104,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 2052,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "channel-energy",
+          "length": 64,
+          "lanes": 16,
+          "width": null,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 6,
+              "first_open_ms": 5.699999988079071,
+              "capture_ms": [
+                0.3999999761581421,
+                0.10000002384185791
+              ],
+              "first_prepared_run_ms": 1.300000011920929,
+              "warm_open_ms": [
+                0.20000004768371582,
+                0.19999998807907104,
+                0.19999998807907104
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.800000011920929,
+              "first_open_ms": 2.899999976158142,
+              "capture_ms": [
+                0.40000003576278687,
+                0
+              ],
+              "first_prepared_run_ms": 1.399999976158142,
+              "warm_open_ms": [
+                0.19999998807907104,
+                0.40000003576278687,
+                0.19999998807907104
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              524999.9910593033,
+              574999.988079071,
+              500000,
+              450000.00298023224,
+              500000,
+              500000,
+              474999.9940395355
+            ],
+            "before/prepared": [
+              700000.0029802322,
+              575000.0029802322,
+              500000,
+              500000,
+              474999.9940395355,
+              500000,
+              425000.01192092896
+            ],
+            "before/resident": [
+              549999.9970197678,
+              450000.00298023224,
+              450000.00298023224,
+              450000.00298023224,
+              475000.0089406967,
+              425000.01192092896,
+              574999.988079071
+            ],
+            "after/ordinary": [
+              575000.0029802322,
+              525000.0059604645,
+              549999.9970197678,
+              500000,
+              500000,
+              500000,
+              450000.00298023224
+            ],
+            "after/prepared": [
+              725000.0089406967,
+              500000,
+              500000,
+              424999.99701976776,
+              450000.00298023224,
+              474999.9940395355,
+              450000.00298023224
+            ],
+            "after/resident": [
+              574999.988079071,
+              500000,
+              525000.0059604645,
+              450000.00298023224,
+              424999.99701976776,
+              449999.98807907104,
+              424999.99701976776
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 852,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 1056,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 852,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 1056,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 772,
+              "readback_bytes": 68
+            },
+            "after/ordinary": {
+              "upload_bytes": 852,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 1056,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 852,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 1056,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 772,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "channel-energy",
+          "length": 64,
+          "lanes": 64,
+          "width": null,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 6,
+              "first_open_ms": 0.2999999523162842,
+              "capture_ms": [
+                0.10000002384185791,
+                0.10000002384185791
+              ],
+              "first_prepared_run_ms": 0.7999999523162842,
+              "warm_open_ms": [
+                0.19999998807907104,
+                0.30000001192092896,
+                0.19999998807907104
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.800000011920929,
+              "first_open_ms": 0.30000001192092896,
+              "capture_ms": [
+                0,
+                0.10000002384185791
+              ],
+              "first_prepared_run_ms": 0.5999999642372131,
+              "warm_open_ms": [
+                0.20000004768371582,
+                0.19999998807907104,
+                0.30000001192092896
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              525000.0059604645,
+              625000,
+              524999.9910593033,
+              500000,
+              500000,
+              650000.0059604645,
+              574999.988079071
+            ],
+            "before/prepared": [
+              549999.9970197678,
+              449999.98807907104,
+              500000,
+              450000.00298023224,
+              625000,
+              500000,
+              500000
+            ],
+            "before/resident": [
+              474999.9940395355,
+              500000,
+              474999.9940395355,
+              450000.00298023224,
+              474999.9940395355,
+              450000.00298023224,
+              450000.00298023224
+            ],
+            "after/ordinary": [
+              525000.0059604645,
+              549999.9970197678,
+              500000,
+              599999.9940395355,
+              500000,
+              649999.9910593033,
+              575000.0029802322
+            ],
+            "after/prepared": [
+              474999.9940395355,
+              424999.99701976776,
+              474999.9940395355,
+              525000.0059604645,
+              500000,
+              600000.0089406967,
+              500000
+            ],
+            "after/resident": [
+              475000.0089406967,
+              425000.01192092896,
+              550000.011920929,
+              450000.00298023224,
+              450000.00298023224,
+              424999.99701976776,
+              450000.00298023224
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 1044,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1824,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 1044,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1824,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 772,
+              "readback_bytes": 260
+            },
+            "after/ordinary": {
+              "upload_bytes": 1044,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1824,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 1044,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 1824,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 772,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "channel-energy",
+          "length": 512,
+          "lanes": 16,
+          "width": null,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 6,
+              "first_open_ms": 0.40000003576278687,
+              "capture_ms": [
+                0.10000002384185791,
+                0.10000002384185791
+              ],
+              "first_prepared_run_ms": 0.7000000476837158,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.30000001192092896,
+                0.19999998807907104
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.800000011920929,
+              "first_open_ms": 0.3999999761581421,
+              "capture_ms": [
+                0.09999996423721313,
+                0
+              ],
+              "first_prepared_run_ms": 0.800000011920929,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.30000001192092896,
+                0.3999999761581421
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              700000.0029802322,
+              725000.0089406967,
+              724999.9940395355,
+              700000.0029802322,
+              750000,
+              649999.9910593033,
+              824999.988079071
+            ],
+            "before/prepared": [
+              599999.9940395355,
+              599999.9940395355,
+              575000.0029802322,
+              600000.0089406967,
+              549999.9970197678,
+              625000,
+              575000.0029802322
+            ],
+            "before/resident": [
+              650000.0059604645,
+              625000,
+              599999.9940395355,
+              674999.9970197678,
+              575000.0029802322,
+              575000.0029802322,
+              600000.0089406967
+            ],
+            "after/ordinary": [
+              750000,
+              750000,
+              725000.0089406967,
+              650000.0059604645,
+              674999.9970197678,
+              725000.0089406967,
+              699999.988079071
+            ],
+            "after/prepared": [
+              575000.0029802322,
+              600000.0089406967,
+              649999.9910593033,
+              625000,
+              625000,
+              625000,
+              575000.0029802322
+            ],
+            "after/resident": [
+              674999.9970197678,
+              649999.9910593033,
+              600000.0089406967,
+              599999.9940395355,
+              599999.9940395355,
+              600000.0089406967,
+              625000
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 6228,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 6432,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 6228,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 6432,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 6148,
+              "readback_bytes": 68
+            },
+            "after/ordinary": {
+              "upload_bytes": 6228,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 6432,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 6228,
+              "readback_bytes": 68,
+              "dispatches": 1,
+              "live_buffer_bytes": 6432,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 6148,
+              "readback_bytes": 68
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        },
+        {
+          "name": "channel-energy",
+          "length": 512,
+          "lanes": 64,
+          "width": null,
+          "setup": {
+            "before": {
+              "shared_runtime_load_ms": 6,
+              "first_open_ms": 0.20000004768371582,
+              "capture_ms": [
+                0.09999996423721313,
+                0.10000002384185791
+              ],
+              "first_prepared_run_ms": 0.7999999523162842,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.30000001192092896,
+                0.2999999523162842
+              ]
+            },
+            "after": {
+              "shared_runtime_load_ms": 5.800000011920929,
+              "first_open_ms": 0.20000004768371582,
+              "capture_ms": [
+                0.10000002384185791,
+                0.20000004768371582
+              ],
+              "first_prepared_run_ms": 0.8999999761581421,
+              "warm_open_ms": [
+                0.30000001192092896,
+                0.30000001192092896,
+                0.30000001192092896
+              ]
+            }
+          },
+          "samples_ns": {
+            "before/ordinary": [
+              750000,
+              700000.0029802322,
+              649999.9910593033,
+              674999.9970197678,
+              774999.9910593033,
+              649999.9910593033,
+              674999.9970197678
+            ],
+            "before/prepared": [
+              825000.0029802322,
+              575000.0029802322,
+              600000.0089406967,
+              575000.0029802322,
+              575000.0029802322,
+              550000.011920929,
+              575000.0029802322
+            ],
+            "before/resident": [
+              650000.0059604645,
+              649999.9910593033,
+              599999.9940395355,
+              574999.988079071,
+              575000.0029802322,
+              599999.9940395355,
+              575000.0029802322
+            ],
+            "after/ordinary": [
+              799999.9970197678,
+              674999.9970197678,
+              750000,
+              674999.9970197678,
+              649999.9910593033,
+              650000.0059604645,
+              799999.9970197678
+            ],
+            "after/prepared": [
+              575000.0029802322,
+              550000.011920929,
+              549999.9970197678,
+              575000.0029802322,
+              600000.0089406967,
+              599999.9940395355,
+              575000.0029802322
+            ],
+            "after/resident": [
+              625000,
+              599999.9940395355,
+              549999.9970197678,
+              625000,
+              625000,
+              600000.0089406967,
+              599999.9940395355
+            ]
+          },
+          "receipts": {
+            "before/ordinary": {
+              "upload_bytes": 6420,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 7200,
+              "resident_copy_bytes": 0
+            },
+            "before/prepared": {
+              "upload_bytes": 6420,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 7200,
+              "resident_copy_bytes": 0
+            },
+            "before/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 6148,
+              "readback_bytes": 260
+            },
+            "after/ordinary": {
+              "upload_bytes": 6420,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 7200,
+              "resident_copy_bytes": 0
+            },
+            "after/prepared": {
+              "upload_bytes": 6420,
+              "readback_bytes": 260,
+              "dispatches": 1,
+              "live_buffer_bytes": 7200,
+              "resident_copy_bytes": 0
+            },
+            "after/resident": {
+              "dispatches": 1,
+              "resident_copy_bytes": 0,
+              "upload_bytes": 6148,
+              "readback_bytes": 260
+            }
+          },
+          "all_bits_exact": true,
+          "prepared_snapshot_mutation": true,
+          "fresh_invalid_float_write_rejected": true
+        }
+      ],
+      "validation": [],
+      "potion": {
+        "batch": 16,
+        "setup": {
+          "before": {
+            "loader_fetch_validate_ms": 35.60000002384186,
+            "first_open_ms": 62.89999997615814,
+            "warm_open_ms": [
+              35,
+              40.59999996423721,
+              33.10000002384186,
+              32.5,
+              32.30000001192093,
+              35.39999997615814,
+              34.10000002384186
+            ]
+          },
+          "after": {
+            "loader_fetch_validate_ms": 38.69999998807907,
+            "first_open_ms": 8.300000011920929,
+            "warm_open_ms": [
+              4.300000011920929,
+              3.800000011920929,
+              3.699999988079071,
+              3.899999976158142,
+              3.899999976158142,
+              4.100000023841858,
+              5.100000023841858
+            ]
+          }
+        },
+        "samples_ns_per_embedding": {
+          "before": [
+            40625.00037252903,
+            42187.499813735485,
+            39062.5,
+            35937.500186264515,
+            39062.5,
+            35937.500186264515,
+            37499.99962747097
+          ],
+          "after": [
+            40624.999441206455,
+            39062.500931322575,
+            40624.999441206455,
+            37499.99962747097,
+            39062.5,
+            37499.99962747097,
+            37499.99962747097
+          ]
+        },
+        "all_bits_exact": true
+      },
+      "adapter": {
+        "vendor": "apple",
+        "architecture": "metal-3",
+        "isFallbackAdapter": false
+      },
+      "browser_version": "156.0.8078.80"
+    }
+  ],
+  "hashes": {
+    "scripts/typed_input_browser.mjs": "dc4168667accbc6a7515f02ec6e69a633ab28b5c66daceedbf547cdd2b4db77a",
+    "build/generalization/typed-input/build.json": "64662fd04dc2cb469765e54c79df735d9806af5c3886168a3a9683b6a30f380a",
+    "artifacts/generalization/typed-input/before.mjs": "9e8da6373393af3fbb459fdf2c8c419ac3d4857b28d259a8a109738b69fd9d13",
+    "artifacts/generalization/typed-input/after.mjs": "ef1aa8d7ab3ed7ac674f11c6109e61a8b0100d8138bde4416e439042f836dd9c",
+    "work/generalization/inputs.json": "ca19991dc8a77383048650bea873281e76a434a037b764005da5073498c0d9d4"
+  }
+}

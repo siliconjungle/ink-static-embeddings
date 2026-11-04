@@ -1,13 +1,13 @@
 {
   "ink_repository": "https://github.com/siliconjungle/ink-lang",
-  "ink_revision": "2debcb76593d4dea7329e8f610f55c4c6f34ab55",
-  "planner_revision": "e6eafa79170ae1fc7a7e1cf27ffcee4f71dd6037",
-  "knowledge_revision": "0f6633380156133a5e928fccf27eccf1cd307efe",
-  "javascript_revision": "bcdaeb966a92e9c645a2734280498af149c64e9b",
-  "abi_revision": "d4c9e1a9d9d1a2d1f9fc2956e0136fbed4b28331",
+  "ink_revision": "f44ca165191c0327790efc61ba71b08f45a71727",
+  "planner_revision": "c3e7ae6aadf8ab226481452c1e2065fa0c95b07b",
+  "knowledge_revision": "be927dd9a7a5f1db600700dd77ac296ae4e15e0a",
+  "javascript_revision": "4f9e4f55c98efd5a0252bdc57b9545691ba916cf",
+  "abi_revision": "3e1498a3291302b031605efc732d8f29ec74cbd0",
   "gpu_revision": "c15988b4dc87b6c87d7fade843144dfc61175da7",
-  "runtime_revision": "1c805496b8e95d9445e0b10516acee3c4f4f63f1",
-  "core_revision": "e9056193b9cf465bd92dd4bd349e082c0407f520",
+  "runtime_revision": "e4c184d1d765d7daaa93b79fb557c66c1d059337",
+  "core_revision": "6229997ba04f3e00068583e3ca225b88da1373e0",
   "rust_revision": "4f4d9d5a6eb16a69270273728d229e759ed1348f",
   "wasm_revision": "7e6fb5b5f655a8f5f314579215a37c0a0f5a6192"
 }

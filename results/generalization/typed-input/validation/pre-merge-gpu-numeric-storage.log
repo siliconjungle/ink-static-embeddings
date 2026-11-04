@@ -1,0 +1,63 @@
+   Compiling ink-core v0.1.0 (/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/work/ink-compiler-src/core)
+   Compiling ink-abi v0.1.0 (/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/work/ink-compiler-src/abi)
+   Compiling ink-lowering-rust v0.1.0 (/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/work/ink-compiler-src/lowerings/rust)
+   Compiling ink-lowering-js v0.1.0 (/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/work/ink-compiler-src/lowerings/js)
+   Compiling ink-lowering-gpu v0.1.0 (/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/work/ink-compiler-src/lowerings/gpu)
+   Compiling ink-lowering-wasm v0.1.0 (/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/work/ink-compiler-src/lowerings/wasm)
+   Compiling ink-runtime v0.1.0 (/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/work/ink-compiler-src/runtime)
+   Compiling ink v0.1.0 (/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/work/ink-compiler-src)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.44s
+     Running tests/gpu.rs (target/debug/deps/gpu-7555d011cff35538)
+
+running 23 tests
+test local_lists::literal_graph_wrapping_cannot_remove_direct_collection_work_limits ... ok
+test function_types::reachable_binary64_fields_and_strict_argument_work_stay_cpu_only ... ok
+test packed_wasm_parallel_fallback_preserves_captures_indices_and_nesting ... ok
+test entry_points::entry_transport_does_not_hide_strict_unsupported_helper_work ... ok
+test entry_points::private_helper_folds_cannot_grow_beyond_a_proven_temporary_bound ... ok
+test local_lists::unchecked_helper_preconditions_reject_before_device_emission ... ok
+test local_lists::lazy_list_control_has_one_bounded_graph_stage_without_eager_arm_stages ... ok
+test entry_points::scalar_entries_keep_owned_helpers_local_and_preserve_lazy_work ... ok
+test record_buffers::loop_checks_cover_each_owned_record_field ... ok
+test entry_points::internal_owned_helpers_do_not_require_host_transport ... ok
+test complete_gpu_bundle_keeps_state_on_the_host ... ok
+test record_buffers::private_scan_classification_does_not_relax_list_scan_work_limits ... ok
+test function_types::unrelated_owned_and_binary64_records_do_not_block_literal_device_functions ... ok
+test function_types::local_annotations_and_helpers_retain_types_without_constructors ... ok
+test record_buffers::records_carry_private_buffer_bounds_through_helpers_fields_branches_and_loops ... ok
+test record_buffers::anonymous_record_and_vector_buffers_have_exact_private_declarations ... ok
+test record_buffers::local_and_input_output_capacities_keep_static_floor_and_lazy_arms ... ok
+test local_lists::private_list_budget_includes_wgsl_record_and_vector_padding ... ok
+test local_lists::local_lists_cross_helpers_loops_captures_and_scalar_record_elements ... ok
+test capability_rejection_preserves_compiled_cpu_and_staged_lowering ... ok
+test scalar_and_packed_browser_bundles_have_complete_module_dependencies ... ok
+test record_buffers::full_record_tape_observations_and_ordered_buffer_scans_are_device_eligible ... ok
+test local_lists::local_storage_exhaustion_retains_cpu_without_publishing_partial_shaders ... ok
+
+test result: ok. 23 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.13s
+
+     Running tests/numeric_text_primitives.rs (target/debug/deps/numeric_text_primitives-29fb4834d5f67d1d)
+
+running 1 test
+test primitives_match_reference_values_events_and_portable_snapshots_on_every_target ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.10s
+
+     Running tests/storage_regions.rs (target/debug/deps/storage_regions-2e264d743ab5b8f9)
+
+running 9 tests
+test generic_storage_handles_reject_element_type_confusion_and_representation_access ... ok
+test owned_fold_evidence_is_bound_to_the_original_source_and_complete_obligations ... ok
+test generic_recursive_tree_traversals_preserve_values_order_abort_and_snapshots_across_targets ... ok
+test database_authored_measures_execute_imports_generics_and_derived_descent_across_targets ... ok
+test owned_folds_preserve_refined_elements_and_transaction_boundaries_across_targets ... ok
+test scoped_range_borrows_preserve_payloads_owner_lifetimes_and_action_history_across_targets ... ok
+test generic_storage_preserves_strings_records_and_nested_payloads_across_targets has been running for over 60 seconds
+test storage_interfaces_execute_and_validate_boundaries_across_targets has been running for over 60 seconds
+test storage_results_require_replayed_proofs has been running for over 60 seconds
+test storage_results_require_replayed_proofs ... ok
+test storage_interfaces_execute_and_validate_boundaries_across_targets ... ok
+test generic_storage_preserves_strings_records_and_nested_payloads_across_targets ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 231.82s
+

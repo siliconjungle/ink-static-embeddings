@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "scope": "Codec phase only: pack, owned capture + GPU/CPU transport materialization, or owned capture + ordinary JS Array materialization. All output bits checked after every timed batch; outputs retained until checked. Three fresh Node processes rotate mode order. Same frozen descriptor and changed finite input arrays; no inference, uploads or readback timed. These medians must not be added to GPU medians.",
+  "codec_sha256": {
+    "before": "9e8da6373393af3fbb459fdf2c8c419ac3d4857b28d259a8a109738b69fd9d13",
+    "after": "19388856fe98c43c0c745c796866f2509b22cd95f855be874a7ea854105c6d11"
+  },
+  "summary": [
+    {
+      "carrier": "typed",
+      "count": 0,
+      "median_ns": {
+        "before/pack": 468.75,
+        "before/capture-gpu": 643.25,
+        "before/capture-js": 204.40625,
+        "after/pack": 562.5,
+        "after/capture-gpu": 667.96875,
+        "after/capture-js": 723.9375
+      }
+    },
+    {
+      "carrier": "typed",
+      "count": 8,
+      "median_ns": {
+        "before/pack": 1289.0625,
+        "before/capture-gpu": 1873.6875,
+        "before/capture-js": 619.8125,
+        "after/pack": 681,
+        "after/capture-gpu": 746.09375,
+        "after/capture-js": 932.28125
+      }
+    },
+    {
+      "carrier": "typed",
+      "count": 64,
+      "median_ns": {
+        "before/pack": 1457.03125,
+        "before/capture-gpu": 2510.40625,
+        "before/capture-js": 535.15625,
+        "after/pack": 1188.78125,
+        "after/capture-gpu": 1283.84375,
+        "after/capture-js": 1390.625
+      }
+    },
+    {
+      "carrier": "typed",
+      "count": 512,
+      "median_ns": {
+        "before/pack": 9322.90625,
+        "before/capture-gpu": 11571.625,
+        "before/capture-js": 3503.90625,
+        "after/pack": 830.75,
+        "after/capture-gpu": 955.71875,
+        "after/capture-js": 1445.3125
+      }
+    },
+    {
+      "carrier": "typed",
+      "count": 4096,
+      "median_ns": {
+        "before/pack": 52000,
+        "before/capture-gpu": 86875,
+        "before/capture-js": 21437.5,
+        "after/pack": 3781.25,
+        "after/capture-gpu": 3677,
+        "after/capture-js": 7270.75
+      }
+    },
+    {
+      "carrier": "typed",
+      "count": 65536,
+      "median_ns": {
+        "before/pack": 1034583.5,
+        "before/capture-gpu": 1393729,
+        "before/capture-js": 453833.5,
+        "after/pack": 48521,
+        "after/capture-gpu": 55396,
+        "after/capture-js": 133916.5
+      }
+    },
+    {
+      "carrier": "typed",
+      "count": 1889792,
+      "median_ns": {
+        "before/pack": 27838458,
+        "before/capture-gpu": 42646958,
+        "before/capture-js": 12604709,
+        "after/pack": 1739792,
+        "after/capture-gpu": 1731166,
+        "after/capture-js": 4697334
+      }
+    },
+    {
+      "carrier": "array",
+      "count": 8,
+      "median_ns": {
+        "before/pack": 1205.75,
+        "before/capture-gpu": 1550.78125,
+        "before/capture-js": 386.71875,
+        "after/pack": 1200.53125,
+        "after/capture-gpu": 1713.5625,
+        "after/capture-js": 507.8125
+      }
+    },
+    {
+      "carrier": "array",
+      "count": 512,
+      "median_ns": {
+        "before/pack": 7166.6875,
+        "before/capture-gpu": 10947.90625,
+        "before/capture-js": 3479.15625,
+        "after/pack": 5184.90625,
+        "after/capture-gpu": 6845.0625,
+        "after/capture-js": 1658.84375
+      }
+    },
+    {
+      "carrier": "array",
+      "count": 4096,
+      "median_ns": {
+        "before/pack": 55187.5,
+        "before/capture-gpu": 77718.75,
+        "before/capture-js": 26572.75,
+        "after/pack": 37625,
+        "after/capture-gpu": 52010.25,
+        "after/capture-js": 12635.25
+      }
+    }
+  ]
+}

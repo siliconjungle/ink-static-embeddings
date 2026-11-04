@@ -1,0 +1,2674 @@
+{
+  "schema": 1,
+  "layout": "content addressed text snapshots; binary build outputs identified by hash, not duplicated",
+  "bundles": [
+    {
+      "name": "channel-energy",
+      "files": [
+        {
+          "name": "backend-selection.mjs",
+          "sha256": "bb91138ead935b737c596edcf0ed1fe2aede064eb0d4ac51c50963c82ddcd07e",
+          "bytes": 7663,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bb91138ead935b737c596edcf0ed1fe2aede064eb0d4ac51c50963c82ddcd07e.mjs"
+        },
+        {
+          "name": "complete-session.mjs",
+          "sha256": "77553f3024bd17448eb17f3ad4c099893c50e203a341f4fa8fe4c01454b757cc",
+          "bytes": 1787,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/77553f3024bd17448eb17f3ad4c099893c50e203a341f4fa8fe4c01454b757cc.mjs"
+        },
+        {
+          "name": "compute-1.wgsl",
+          "sha256": "173cb76ef750d436d27b8984b8d8562e0f305830616279d18790609d6b8313dc",
+          "bytes": 9656,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/173cb76ef750d436d27b8984b8d8562e0f305830616279d18790609d6b8313dc.wgsl"
+        },
+        {
+          "name": "cpu.wasm",
+          "sha256": "7cb21949069076b07caf8c07610b940ca86f51f53d63a5d594eef4272fa73b02",
+          "bytes": 28949
+        },
+        {
+          "name": "graph-0-0.wgsl",
+          "sha256": "001db43af9b924c7ef78965890dd51d89202294ba3477eef687d38e6b5c526b6",
+          "bytes": 9125,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/001db43af9b924c7ef78965890dd51d89202294ba3477eef687d38e6b5c526b6.wgsl"
+        },
+        {
+          "name": "graph-1-0.wgsl",
+          "sha256": "4d13a11149abf770b1aefa8136285be7aca40e696bd99690d1c0bd7753e01a1c",
+          "bytes": 9478,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/4d13a11149abf770b1aefa8136285be7aca40e696bd99690d1c0bd7753e01a1c.wgsl"
+        },
+        {
+          "name": "graph-1-1.wgsl",
+          "sha256": "0ece46de1bf8571f7b41ab3123c4031de2f6492a1d42f1985630c188197b71ac",
+          "bytes": 8872,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/0ece46de1bf8571f7b41ab3123c4031de2f6492a1d42f1985630c188197b71ac.wgsl"
+        },
+        {
+          "name": "ink-abi.mjs",
+          "sha256": "c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d",
+          "bytes": 15773,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d.mjs"
+        },
+        {
+          "name": "ink-device.mjs",
+          "sha256": "21d76d0742970670ecea83b122cd4e071f747b3a0c2d39616be4c19b55853b13",
+          "bytes": 34689,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/21d76d0742970670ecea83b122cd4e071f747b3a0c2d39616be4c19b55853b13.mjs"
+        },
+        {
+          "name": "ink-gpu.mjs",
+          "sha256": "d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc",
+          "bytes": 46856,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc.mjs"
+        },
+        {
+          "name": "ink-selection.mjs",
+          "sha256": "bbd63dfd959c06658dde1f5da743af125e5394171202e865a07de7826166afd5",
+          "bytes": 1148,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bbd63dfd959c06658dde1f5da743af125e5394171202e865a07de7826166afd5.mjs"
+        },
+        {
+          "name": "ink-selection.wasm",
+          "sha256": "1597f63e25b60e0b0b92486c5b370a01f3828603a47149efe9f953099bb1e6b0",
+          "bytes": 554195
+        },
+        {
+          "name": "manifest.after.json",
+          "sha256": "4b797d9a7234d41d406f1d4395893d129f332ecb87f9888204e43c1bcac299fb",
+          "bytes": 19469,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/4b797d9a7234d41d406f1d4395893d129f332ecb87f9888204e43c1bcac299fb.json"
+        },
+        {
+          "name": "manifest.before.json",
+          "sha256": "5565950856e6b6113a295158d4c1b497ecb3ae6e30bd22dd454f7be2e4ed88cd",
+          "bytes": 19469,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/5565950856e6b6113a295158d4c1b497ecb3ae6e30bd22dd454f7be2e4ed88cd.json"
+        },
+        {
+          "name": "manifest.control.json",
+          "sha256": "4d8b03d7d33238878bebba35cb7095d2698862f21cff0c233b1d4949c2e85ac1",
+          "bytes": 19469,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/4d8b03d7d33238878bebba35cb7095d2698862f21cff0c233b1d4949c2e85ac1.json"
+        },
+        {
+          "name": "manifest.json",
+          "sha256": "6043e20387033f06bf46f68dcd12c703797058e725f8c564843e48cfc926e79b",
+          "bytes": 19468,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6043e20387033f06bf46f68dcd12c703797058e725f8c564843e48cfc926e79b.json"
+        },
+        {
+          "name": "pipeline-contract.mjs",
+          "sha256": "40c347af629cf19ceb35a197343bfa0057daa54fe618e47ac784e0e2b59b63a5",
+          "bytes": 3264,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/40c347af629cf19ceb35a197343bfa0057daa54fe618e47ac784e0e2b59b63a5.mjs"
+        },
+        {
+          "name": "pipeline-profile.mjs",
+          "sha256": "6e302b624979c317a47d2413d84b9ebfc4ea9ffffe756d45cf82a51f2d101cfe",
+          "bytes": 5457,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6e302b624979c317a47d2413d84b9ebfc4ea9ffffe756d45cf82a51f2d101cfe.mjs"
+        },
+        {
+          "name": "pipeline-selection.mjs",
+          "sha256": "7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0",
+          "bytes": 10114,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0.mjs"
+        },
+        {
+          "name": "pipeline-worker.mjs",
+          "sha256": "eb7609cd6751c276f7edb1c9b56aec08b6d15ee955917362b174db9516d77336",
+          "bytes": 884,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/eb7609cd6751c276f7edb1c9b56aec08b6d15ee955917362b174db9516d77336.mjs"
+        },
+        {
+          "name": "pipeline-workers.mjs",
+          "sha256": "ce2acfcfb75d6c8c6c5ae4e03727ffa3a1a6160782f691ae9dd6449655119430",
+          "bytes": 2829,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ce2acfcfb75d6c8c6c5ae4e03727ffa3a1a6160782f691ae9dd6449655119430.mjs"
+        },
+        {
+          "name": "plan.json",
+          "sha256": "ec7e68425f545b26c6ec1190015ef68198a190d31d2f0cc70fe84ca174c74db7",
+          "bytes": 654,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ec7e68425f545b26c6ec1190015ef68198a190d31d2f0cc70fe84ca174c74db7.json"
+        },
+        {
+          "name": "prepared-wasm.mjs",
+          "sha256": "cfd128e081b2fab9c35012878255af7f79a7720427c7b94363b0112d67289f06",
+          "bytes": 1788,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/cfd128e081b2fab9c35012878255af7f79a7720427c7b94363b0112d67289f06.mjs"
+        },
+        {
+          "name": "program.mjs",
+          "sha256": "b072094019f592859bfd6839bf960edc947679c85afd43816d1e248b62031ad0",
+          "bytes": 160159,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b072094019f592859bfd6839bf960edc947679c85afd43816d1e248b62031ad0.mjs"
+        },
+        {
+          "name": "usage-profile.mjs",
+          "sha256": "42087f6de268e704be5851654945f27c05bbd392930dd4a69045f6a5e34736bb",
+          "bytes": 2807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/42087f6de268e704be5851654945f27c05bbd392930dd4a69045f6a5e34736bb.mjs"
+        }
+      ],
+      "source": {
+        "path": "artifacts/generalization/typed-input/sources/channel-energy.ink",
+        "sha256": "0c8e0258e34b6b348b625d8f332b3c8112e34c41d04cc3558095450edc40a876"
+      }
+    },
+    {
+      "name": "filter-bank",
+      "files": [
+        {
+          "name": "backend-selection.mjs",
+          "sha256": "bb91138ead935b737c596edcf0ed1fe2aede064eb0d4ac51c50963c82ddcd07e",
+          "bytes": 7663,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bb91138ead935b737c596edcf0ed1fe2aede064eb0d4ac51c50963c82ddcd07e.mjs"
+        },
+        {
+          "name": "complete-session.mjs",
+          "sha256": "77553f3024bd17448eb17f3ad4c099893c50e203a341f4fa8fe4c01454b757cc",
+          "bytes": 1787,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/77553f3024bd17448eb17f3ad4c099893c50e203a341f4fa8fe4c01454b757cc.mjs"
+        },
+        {
+          "name": "compute-0.wgsl",
+          "sha256": "c868a1f9a15bc537ff7f14d61f1e5bce343ec726ef517f15a96e27681b127267",
+          "bytes": 9000,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c868a1f9a15bc537ff7f14d61f1e5bce343ec726ef517f15a96e27681b127267.wgsl"
+        },
+        {
+          "name": "cpu.wasm",
+          "sha256": "6104afd387a42eebe01e91b5a49f0c3b5575f34225aee516d61b4d1c620ac8ae",
+          "bytes": 27865
+        },
+        {
+          "name": "graph-0-0.wgsl",
+          "sha256": "b2b4aaed341c6be178913fd2c4d4a2a6b236e2dcb46d8c75dc40cc74dab2214c",
+          "bytes": 8900,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2b4aaed341c6be178913fd2c4d4a2a6b236e2dcb46d8c75dc40cc74dab2214c.wgsl"
+        },
+        {
+          "name": "ink-abi.mjs",
+          "sha256": "c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d",
+          "bytes": 15773,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d.mjs"
+        },
+        {
+          "name": "ink-device.mjs",
+          "sha256": "21d76d0742970670ecea83b122cd4e071f747b3a0c2d39616be4c19b55853b13",
+          "bytes": 34689,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/21d76d0742970670ecea83b122cd4e071f747b3a0c2d39616be4c19b55853b13.mjs"
+        },
+        {
+          "name": "ink-gpu.mjs",
+          "sha256": "d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc",
+          "bytes": 46856,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc.mjs"
+        },
+        {
+          "name": "ink-selection.mjs",
+          "sha256": "bbd63dfd959c06658dde1f5da743af125e5394171202e865a07de7826166afd5",
+          "bytes": 1148,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bbd63dfd959c06658dde1f5da743af125e5394171202e865a07de7826166afd5.mjs"
+        },
+        {
+          "name": "ink-selection.wasm",
+          "sha256": "1597f63e25b60e0b0b92486c5b370a01f3828603a47149efe9f953099bb1e6b0",
+          "bytes": 554195
+        },
+        {
+          "name": "manifest.after.json",
+          "sha256": "e70752c0dd2cd80b463790c082bcd619eb575ab30b23552337ac4c958f9b6a8e",
+          "bytes": 8957,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/e70752c0dd2cd80b463790c082bcd619eb575ab30b23552337ac4c958f9b6a8e.json"
+        },
+        {
+          "name": "manifest.before.json",
+          "sha256": "cb4d57e9cfd90b2d37c97c558d14739ffac1b59f5109ae531e4f2e7b87120aa5",
+          "bytes": 8957,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/cb4d57e9cfd90b2d37c97c558d14739ffac1b59f5109ae531e4f2e7b87120aa5.json"
+        },
+        {
+          "name": "manifest.control.json",
+          "sha256": "46b8efb98606a4b8918eb1c004bf0e9ac0444a97922257d5eed120096c4b5389",
+          "bytes": 8957,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/46b8efb98606a4b8918eb1c004bf0e9ac0444a97922257d5eed120096c4b5389.json"
+        },
+        {
+          "name": "manifest.json",
+          "sha256": "8f3872ddf7891fb9b12f2b85ff42e397d0713e641891b577ef70691219803fe6",
+          "bytes": 8956,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/8f3872ddf7891fb9b12f2b85ff42e397d0713e641891b577ef70691219803fe6.json"
+        },
+        {
+          "name": "pipeline-contract.mjs",
+          "sha256": "40c347af629cf19ceb35a197343bfa0057daa54fe618e47ac784e0e2b59b63a5",
+          "bytes": 3264,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/40c347af629cf19ceb35a197343bfa0057daa54fe618e47ac784e0e2b59b63a5.mjs"
+        },
+        {
+          "name": "pipeline-profile.mjs",
+          "sha256": "6e302b624979c317a47d2413d84b9ebfc4ea9ffffe756d45cf82a51f2d101cfe",
+          "bytes": 5457,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6e302b624979c317a47d2413d84b9ebfc4ea9ffffe756d45cf82a51f2d101cfe.mjs"
+        },
+        {
+          "name": "pipeline-selection.mjs",
+          "sha256": "7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0",
+          "bytes": 10114,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0.mjs"
+        },
+        {
+          "name": "pipeline-worker.mjs",
+          "sha256": "eb7609cd6751c276f7edb1c9b56aec08b6d15ee955917362b174db9516d77336",
+          "bytes": 884,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/eb7609cd6751c276f7edb1c9b56aec08b6d15ee955917362b174db9516d77336.mjs"
+        },
+        {
+          "name": "pipeline-workers.mjs",
+          "sha256": "ce2acfcfb75d6c8c6c5ae4e03727ffa3a1a6160782f691ae9dd6449655119430",
+          "bytes": 2829,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ce2acfcfb75d6c8c6c5ae4e03727ffa3a1a6160782f691ae9dd6449655119430.mjs"
+        },
+        {
+          "name": "plan.json",
+          "sha256": "a052506263b26baa15b8b9c6cd7af900af3d23c43bb11fc66298b8fc55c731cb",
+          "bytes": 651,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/a052506263b26baa15b8b9c6cd7af900af3d23c43bb11fc66298b8fc55c731cb.json"
+        },
+        {
+          "name": "prepared-wasm.mjs",
+          "sha256": "cfd128e081b2fab9c35012878255af7f79a7720427c7b94363b0112d67289f06",
+          "bytes": 1788,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/cfd128e081b2fab9c35012878255af7f79a7720427c7b94363b0112d67289f06.mjs"
+        },
+        {
+          "name": "program.mjs",
+          "sha256": "bc20d5dc659b6c39aaf824d4d0dc9fe9a59b6beb816f40258848012691e904e7",
+          "bytes": 142233,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bc20d5dc659b6c39aaf824d4d0dc9fe9a59b6beb816f40258848012691e904e7.mjs"
+        },
+        {
+          "name": "usage-profile.mjs",
+          "sha256": "42087f6de268e704be5851654945f27c05bbd392930dd4a69045f6a5e34736bb",
+          "bytes": 2807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/42087f6de268e704be5851654945f27c05bbd392930dd4a69045f6a5e34736bb.mjs"
+        }
+      ],
+      "source": {
+        "path": "artifacts/generalization/typed-input/sources/filter-bank.ink",
+        "sha256": "615de2a4e5e9f922be14c794f6de8cb9cedc1afa3365e9875e99d78398ebbd98"
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "files": [
+        {
+          "name": "backend-selection.mjs",
+          "sha256": "bb91138ead935b737c596edcf0ed1fe2aede064eb0d4ac51c50963c82ddcd07e",
+          "bytes": 7663,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bb91138ead935b737c596edcf0ed1fe2aede064eb0d4ac51c50963c82ddcd07e.mjs"
+        },
+        {
+          "name": "complete-session.mjs",
+          "sha256": "77553f3024bd17448eb17f3ad4c099893c50e203a341f4fa8fe4c01454b757cc",
+          "bytes": 1787,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/77553f3024bd17448eb17f3ad4c099893c50e203a341f4fa8fe4c01454b757cc.mjs"
+        },
+        {
+          "name": "compute-0.wgsl",
+          "sha256": "e27338f9676a52148eded0542dbd4282114e348becb7f58ebfecdd560677923a",
+          "bytes": 9217,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/e27338f9676a52148eded0542dbd4282114e348becb7f58ebfecdd560677923a.wgsl"
+        },
+        {
+          "name": "cpu.wasm",
+          "sha256": "52c17373277af43dfac68bc2d6046a2ad184f4f634623bb93cddf209650aa084",
+          "bytes": 28155
+        },
+        {
+          "name": "graph-0-0.wgsl",
+          "sha256": "bb92afa11cbbc4a0c75900aa40c9741d0119bc1d5f21f61eaa20bd6e70db28ca",
+          "bytes": 9115,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bb92afa11cbbc4a0c75900aa40c9741d0119bc1d5f21f61eaa20bd6e70db28ca.wgsl"
+        },
+        {
+          "name": "ink-abi.mjs",
+          "sha256": "c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d",
+          "bytes": 15773,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d.mjs"
+        },
+        {
+          "name": "ink-device.mjs",
+          "sha256": "21d76d0742970670ecea83b122cd4e071f747b3a0c2d39616be4c19b55853b13",
+          "bytes": 34689,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/21d76d0742970670ecea83b122cd4e071f747b3a0c2d39616be4c19b55853b13.mjs"
+        },
+        {
+          "name": "ink-gpu.mjs",
+          "sha256": "d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc",
+          "bytes": 46856,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc.mjs"
+        },
+        {
+          "name": "ink-selection.mjs",
+          "sha256": "bbd63dfd959c06658dde1f5da743af125e5394171202e865a07de7826166afd5",
+          "bytes": 1148,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bbd63dfd959c06658dde1f5da743af125e5394171202e865a07de7826166afd5.mjs"
+        },
+        {
+          "name": "ink-selection.wasm",
+          "sha256": "1597f63e25b60e0b0b92486c5b370a01f3828603a47149efe9f953099bb1e6b0",
+          "bytes": 554195
+        },
+        {
+          "name": "manifest.after.json",
+          "sha256": "e4b31f37bde5ddd903e231e85802460e6b20104af1b710f5a7028125237e010d",
+          "bytes": 10253,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/e4b31f37bde5ddd903e231e85802460e6b20104af1b710f5a7028125237e010d.json"
+        },
+        {
+          "name": "manifest.before.json",
+          "sha256": "185853199f7a64dcc105e7dedf25b9e336ead2f744cfc673e376af976f94dc7f",
+          "bytes": 10253,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/185853199f7a64dcc105e7dedf25b9e336ead2f744cfc673e376af976f94dc7f.json"
+        },
+        {
+          "name": "manifest.control.json",
+          "sha256": "f5faf70d3616a5518cec1dfbc7effface7c0d576fe484f25495ba0ace28cff3e",
+          "bytes": 10253,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/f5faf70d3616a5518cec1dfbc7effface7c0d576fe484f25495ba0ace28cff3e.json"
+        },
+        {
+          "name": "manifest.json",
+          "sha256": "c5e82b756162737e74253644932ca78f44b3dd2eed8b25eade8c58f0e476d94c",
+          "bytes": 10252,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c5e82b756162737e74253644932ca78f44b3dd2eed8b25eade8c58f0e476d94c.json"
+        },
+        {
+          "name": "pipeline-contract.mjs",
+          "sha256": "40c347af629cf19ceb35a197343bfa0057daa54fe618e47ac784e0e2b59b63a5",
+          "bytes": 3264,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/40c347af629cf19ceb35a197343bfa0057daa54fe618e47ac784e0e2b59b63a5.mjs"
+        },
+        {
+          "name": "pipeline-profile.mjs",
+          "sha256": "6e302b624979c317a47d2413d84b9ebfc4ea9ffffe756d45cf82a51f2d101cfe",
+          "bytes": 5457,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6e302b624979c317a47d2413d84b9ebfc4ea9ffffe756d45cf82a51f2d101cfe.mjs"
+        },
+        {
+          "name": "pipeline-selection.mjs",
+          "sha256": "7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0",
+          "bytes": 10114,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0.mjs"
+        },
+        {
+          "name": "pipeline-worker.mjs",
+          "sha256": "eb7609cd6751c276f7edb1c9b56aec08b6d15ee955917362b174db9516d77336",
+          "bytes": 884,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/eb7609cd6751c276f7edb1c9b56aec08b6d15ee955917362b174db9516d77336.mjs"
+        },
+        {
+          "name": "pipeline-workers.mjs",
+          "sha256": "ce2acfcfb75d6c8c6c5ae4e03727ffa3a1a6160782f691ae9dd6449655119430",
+          "bytes": 2829,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ce2acfcfb75d6c8c6c5ae4e03727ffa3a1a6160782f691ae9dd6449655119430.mjs"
+        },
+        {
+          "name": "plan.json",
+          "sha256": "af7458b20eb3d44a8bd0bf043a93e8b3e4876851c06ddd850c673e78c5dabbed",
+          "bytes": 654,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/af7458b20eb3d44a8bd0bf043a93e8b3e4876851c06ddd850c673e78c5dabbed.json"
+        },
+        {
+          "name": "prepared-wasm.mjs",
+          "sha256": "cfd128e081b2fab9c35012878255af7f79a7720427c7b94363b0112d67289f06",
+          "bytes": 1788,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/cfd128e081b2fab9c35012878255af7f79a7720427c7b94363b0112d67289f06.mjs"
+        },
+        {
+          "name": "program.mjs",
+          "sha256": "e1d431f435e4b97b20acbb1bf676467b7f38f62628bcad608c673e265c90503c",
+          "bytes": 146998,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/e1d431f435e4b97b20acbb1bf676467b7f38f62628bcad608c673e265c90503c.mjs"
+        },
+        {
+          "name": "usage-profile.mjs",
+          "sha256": "42087f6de268e704be5851654945f27c05bbd392930dd4a69045f6a5e34736bb",
+          "bytes": 2807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/42087f6de268e704be5851654945f27c05bbd392930dd4a69045f6a5e34736bb.mjs"
+        }
+      ],
+      "source": {
+        "path": "artifacts/generalization/typed-input/sources/matrix-columns.ink",
+        "sha256": "57e5d5293110b45ed29c01164c759d638b1c0b0c06e9ba2cd0f14a030abc8056"
+      }
+    },
+    {
+      "name": "potion-2m",
+      "files": [
+        {
+          "name": "backend-selection.mjs",
+          "sha256": "bb91138ead935b737c596edcf0ed1fe2aede064eb0d4ac51c50963c82ddcd07e",
+          "bytes": 7663,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bb91138ead935b737c596edcf0ed1fe2aede064eb0d4ac51c50963c82ddcd07e.mjs"
+        },
+        {
+          "name": "complete-session.mjs",
+          "sha256": "77553f3024bd17448eb17f3ad4c099893c50e203a341f4fa8fe4c01454b757cc",
+          "bytes": 1787,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/77553f3024bd17448eb17f3ad4c099893c50e203a341f4fa8fe4c01454b757cc.mjs"
+        },
+        {
+          "name": "compute-5.wgsl",
+          "sha256": "883687a1a7e1759ce4c10989526ab445f176c59bd3f203b408a82977905fa701",
+          "bytes": 10272,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/883687a1a7e1759ce4c10989526ab445f176c59bd3f203b408a82977905fa701.wgsl"
+        },
+        {
+          "name": "compute-7.wgsl",
+          "sha256": "8d59cecd67a04a00f02448b24b1230d506b71d66642daf0032523d431e7e7410",
+          "bytes": 9347,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/8d59cecd67a04a00f02448b24b1230d506b71d66642daf0032523d431e7e7410.wgsl"
+        },
+        {
+          "name": "compute-8.wgsl",
+          "sha256": "3dc281f9b1659b86c1c277ccd1f38803c775d0fc3c6fb3e44afc67d4bd5d7f50",
+          "bytes": 9159,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/3dc281f9b1659b86c1c277ccd1f38803c775d0fc3c6fb3e44afc67d4bd5d7f50.wgsl"
+        },
+        {
+          "name": "cpu.wasm",
+          "sha256": "49615b3f4c827be7210702fcb36207545bfc5b2817d9240df446642e4a57d6d8",
+          "bytes": 41396
+        },
+        {
+          "name": "graph-0-0.wgsl",
+          "sha256": "a90ca9d820e8ebd8abde93de84e1ce4ba038e82df6fbea0aa392c1cffac60009",
+          "bytes": 8991,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/a90ca9d820e8ebd8abde93de84e1ce4ba038e82df6fbea0aa392c1cffac60009.wgsl"
+        },
+        {
+          "name": "graph-0-1.wgsl",
+          "sha256": "4121ef94216eda7cce679f8c2f4d1043de2ab938cd24c4df0312fab6292b098a",
+          "bytes": 8997,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/4121ef94216eda7cce679f8c2f4d1043de2ab938cd24c4df0312fab6292b098a.wgsl"
+        },
+        {
+          "name": "graph-0-10.wgsl",
+          "sha256": "b2f911029fa9f0fb74bfe936c79eed8ebf916b2867b5a50c5744d69a88bda053",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2f911029fa9f0fb74bfe936c79eed8ebf916b2867b5a50c5744d69a88bda053.wgsl"
+        },
+        {
+          "name": "graph-0-11.wgsl",
+          "sha256": "4b487ac4592e0f5922482721fe4c805bd348da7c688e417765ce89f0df59cf4a",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/4b487ac4592e0f5922482721fe4c805bd348da7c688e417765ce89f0df59cf4a.wgsl"
+        },
+        {
+          "name": "graph-0-12-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-13-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-14-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-2-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-3.wgsl",
+          "sha256": "ea95c86d79e99cdb2a23adf920f1361f1605a84b8a632d119ae3a8e4f57bf75e",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ea95c86d79e99cdb2a23adf920f1361f1605a84b8a632d119ae3a8e4f57bf75e.wgsl"
+        },
+        {
+          "name": "graph-0-4.wgsl",
+          "sha256": "b1720d69435c128cd968bd049c8ee60584ae8eeb24aaa7f91a512808cca8f72f",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b1720d69435c128cd968bd049c8ee60584ae8eeb24aaa7f91a512808cca8f72f.wgsl"
+        },
+        {
+          "name": "graph-0-5-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-6-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-7.wgsl",
+          "sha256": "d5e30359ed3f63104dd103b9ce964a9122c34cfb00e9aff193811d48645a961a",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d5e30359ed3f63104dd103b9ce964a9122c34cfb00e9aff193811d48645a961a.wgsl"
+        },
+        {
+          "name": "graph-0-8.wgsl",
+          "sha256": "c28f35e2b3e62c8f0b7841bab912aaf83a74d88fabdb7b15a66523bcbbd0067a",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c28f35e2b3e62c8f0b7841bab912aaf83a74d88fabdb7b15a66523bcbbd0067a.wgsl"
+        },
+        {
+          "name": "graph-0-9-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-1-0.wgsl",
+          "sha256": "02dcf2066d99db642c9a5d839a41e58dcd4506b841778893cb8897ea574a1a1d",
+          "bytes": 8766,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/02dcf2066d99db642c9a5d839a41e58dcd4506b841778893cb8897ea574a1a1d.wgsl"
+        },
+        {
+          "name": "graph-2-0.wgsl",
+          "sha256": "cc2b2a1a4f0354f71a19d86b910eebbf0cf8931e4a1efbfab33d865150c0cf3c",
+          "bytes": 8946,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/cc2b2a1a4f0354f71a19d86b910eebbf0cf8931e4a1efbfab33d865150c0cf3c.wgsl"
+        },
+        {
+          "name": "graph-2-1.wgsl",
+          "sha256": "299fb1e250748528a8e1252e25d0ab1e30dd94ab8774563ffa7dc6094d6d3d82",
+          "bytes": 8564,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/299fb1e250748528a8e1252e25d0ab1e30dd94ab8774563ffa7dc6094d6d3d82.wgsl"
+        },
+        {
+          "name": "graph-2-2.wgsl",
+          "sha256": "d8bef00f08085941f85b96b9bb8b71414ba2b7b525e50541929b6f1f10765480",
+          "bytes": 8772,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d8bef00f08085941f85b96b9bb8b71414ba2b7b525e50541929b6f1f10765480.wgsl"
+        },
+        {
+          "name": "graph-2-3.wgsl",
+          "sha256": "96021a3974fdec96cfa251e03e2fa46b5c1f9d5fe5795a0f4f0df96a1b88f7da",
+          "bytes": 8738,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/96021a3974fdec96cfa251e03e2fa46b5c1f9d5fe5795a0f4f0df96a1b88f7da.wgsl"
+        },
+        {
+          "name": "graph-3-0.wgsl",
+          "sha256": "a90ca9d820e8ebd8abde93de84e1ce4ba038e82df6fbea0aa392c1cffac60009",
+          "bytes": 8991,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/a90ca9d820e8ebd8abde93de84e1ce4ba038e82df6fbea0aa392c1cffac60009.wgsl"
+        },
+        {
+          "name": "graph-3-1.wgsl",
+          "sha256": "4121ef94216eda7cce679f8c2f4d1043de2ab938cd24c4df0312fab6292b098a",
+          "bytes": 8997,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/4121ef94216eda7cce679f8c2f4d1043de2ab938cd24c4df0312fab6292b098a.wgsl"
+        },
+        {
+          "name": "graph-3-10.wgsl",
+          "sha256": "b2f911029fa9f0fb74bfe936c79eed8ebf916b2867b5a50c5744d69a88bda053",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2f911029fa9f0fb74bfe936c79eed8ebf916b2867b5a50c5744d69a88bda053.wgsl"
+        },
+        {
+          "name": "graph-3-11.wgsl",
+          "sha256": "4b487ac4592e0f5922482721fe4c805bd348da7c688e417765ce89f0df59cf4a",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/4b487ac4592e0f5922482721fe4c805bd348da7c688e417765ce89f0df59cf4a.wgsl"
+        },
+        {
+          "name": "graph-3-12-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-13-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-14-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-15.wgsl",
+          "sha256": "31f571d7fd400c35bfaae13bb78341189adb8c1597dbe342e801dc181f2f6b60",
+          "bytes": 10780,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/31f571d7fd400c35bfaae13bb78341189adb8c1597dbe342e801dc181f2f6b60.wgsl"
+        },
+        {
+          "name": "graph-3-2-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-3.wgsl",
+          "sha256": "ea95c86d79e99cdb2a23adf920f1361f1605a84b8a632d119ae3a8e4f57bf75e",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ea95c86d79e99cdb2a23adf920f1361f1605a84b8a632d119ae3a8e4f57bf75e.wgsl"
+        },
+        {
+          "name": "graph-3-4.wgsl",
+          "sha256": "b1720d69435c128cd968bd049c8ee60584ae8eeb24aaa7f91a512808cca8f72f",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b1720d69435c128cd968bd049c8ee60584ae8eeb24aaa7f91a512808cca8f72f.wgsl"
+        },
+        {
+          "name": "graph-3-5-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-6-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-7.wgsl",
+          "sha256": "d5e30359ed3f63104dd103b9ce964a9122c34cfb00e9aff193811d48645a961a",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d5e30359ed3f63104dd103b9ce964a9122c34cfb00e9aff193811d48645a961a.wgsl"
+        },
+        {
+          "name": "graph-3-8.wgsl",
+          "sha256": "c28f35e2b3e62c8f0b7841bab912aaf83a74d88fabdb7b15a66523bcbbd0067a",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c28f35e2b3e62c8f0b7841bab912aaf83a74d88fabdb7b15a66523bcbbd0067a.wgsl"
+        },
+        {
+          "name": "graph-3-9-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-4-0.wgsl",
+          "sha256": "48ddb3731def8ac4b42b8cc44706cf1fb5cdc74b62bcddbd6fb4fdd8fa5860ff",
+          "bytes": 8761,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/48ddb3731def8ac4b42b8cc44706cf1fb5cdc74b62bcddbd6fb4fdd8fa5860ff.wgsl"
+        },
+        {
+          "name": "graph-4-1.wgsl",
+          "sha256": "b0305191d2a49ab2813db16f7b97417a2d4631e9525b612046f1c5060347e0fc",
+          "bytes": 8761,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b0305191d2a49ab2813db16f7b97417a2d4631e9525b612046f1c5060347e0fc.wgsl"
+        },
+        {
+          "name": "graph-4-2.wgsl",
+          "sha256": "1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b",
+          "bytes": 8807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b.wgsl"
+        },
+        {
+          "name": "graph-4-3.wgsl",
+          "sha256": "1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b",
+          "bytes": 8807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b.wgsl"
+        },
+        {
+          "name": "graph-4-4.wgsl",
+          "sha256": "1364d975b0b4fe48ed693a907b5f9dc93c4cef848c91976011d2740dcd81c413",
+          "bytes": 9600,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/1364d975b0b4fe48ed693a907b5f9dc93c4cef848c91976011d2740dcd81c413.wgsl"
+        },
+        {
+          "name": "graph-4-5.wgsl",
+          "sha256": "6fcba5be9554f27a8189e2eaf5803910f02f7f0b81fedad9e074364f92e8200b",
+          "bytes": 8936,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6fcba5be9554f27a8189e2eaf5803910f02f7f0b81fedad9e074364f92e8200b.wgsl"
+        },
+        {
+          "name": "graph-5-0.wgsl",
+          "sha256": "d1384632b24316ba940555a68d9cef736ae5b208cdcd60dec0da2c50a1e16f10",
+          "bytes": 10169,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d1384632b24316ba940555a68d9cef736ae5b208cdcd60dec0da2c50a1e16f10.wgsl"
+        },
+        {
+          "name": "graph-6-0.wgsl",
+          "sha256": "4e2e97dad4c210eab5f4f4e71b6dae3e97513499aca81c225a8944f77c4fa217",
+          "bytes": 9121,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/4e2e97dad4c210eab5f4f4e71b6dae3e97513499aca81c225a8944f77c4fa217.wgsl"
+        },
+        {
+          "name": "graph-6-1.wgsl",
+          "sha256": "8f893925b5872d6f8d1189268158e0830590d8f3464e3ff0e0b37efb8ca6f2ac",
+          "bytes": 8687,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/8f893925b5872d6f8d1189268158e0830590d8f3464e3ff0e0b37efb8ca6f2ac.wgsl"
+        },
+        {
+          "name": "graph-7-0.wgsl",
+          "sha256": "780cc2b26d3f5e91994e432f4c9694a0ed3639facf26d23daa966a36dc48efc5",
+          "bytes": 9245,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/780cc2b26d3f5e91994e432f4c9694a0ed3639facf26d23daa966a36dc48efc5.wgsl"
+        },
+        {
+          "name": "graph-8-0.wgsl",
+          "sha256": "1c4fdc5a777d0428f0a38d0dbee18c0c40ddbb1427929230ced37490197f6b0b",
+          "bytes": 9073,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/1c4fdc5a777d0428f0a38d0dbee18c0c40ddbb1427929230ced37490197f6b0b.wgsl"
+        },
+        {
+          "name": "ink-abi.mjs",
+          "sha256": "c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d",
+          "bytes": 15773,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d.mjs"
+        },
+        {
+          "name": "ink-device.mjs",
+          "sha256": "21d76d0742970670ecea83b122cd4e071f747b3a0c2d39616be4c19b55853b13",
+          "bytes": 34689,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/21d76d0742970670ecea83b122cd4e071f747b3a0c2d39616be4c19b55853b13.mjs"
+        },
+        {
+          "name": "ink-gpu.mjs",
+          "sha256": "d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc",
+          "bytes": 46856,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc.mjs"
+        },
+        {
+          "name": "ink-selection.mjs",
+          "sha256": "bbd63dfd959c06658dde1f5da743af125e5394171202e865a07de7826166afd5",
+          "bytes": 1148,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bbd63dfd959c06658dde1f5da743af125e5394171202e865a07de7826166afd5.mjs"
+        },
+        {
+          "name": "ink-selection.wasm",
+          "sha256": "1597f63e25b60e0b0b92486c5b370a01f3828603a47149efe9f953099bb1e6b0",
+          "bytes": 554195
+        },
+        {
+          "name": "manifest.after.json",
+          "sha256": "de27b0092155b5989818cd140a209f46673727b90b2a70f9770405c793663249",
+          "bytes": 88374,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/de27b0092155b5989818cd140a209f46673727b90b2a70f9770405c793663249.json"
+        },
+        {
+          "name": "manifest.before.json",
+          "sha256": "28d3084064c47f3c802e47045c336a17c29969a64c3714585a8e2c2978b2fde1",
+          "bytes": 88374,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/28d3084064c47f3c802e47045c336a17c29969a64c3714585a8e2c2978b2fde1.json"
+        },
+        {
+          "name": "manifest.control.json",
+          "sha256": "2a878fa00ffc9d708d4563093dc1ae1e94ce7975e70c5b85768f4c1711208a18",
+          "bytes": 88374,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/2a878fa00ffc9d708d4563093dc1ae1e94ce7975e70c5b85768f4c1711208a18.json"
+        },
+        {
+          "name": "manifest.json",
+          "sha256": "82a226ce20aa819e01884642c9756f14c83f83f64e47a40ad275527ae9bae4f7",
+          "bytes": 88373,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/82a226ce20aa819e01884642c9756f14c83f83f64e47a40ad275527ae9bae4f7.json"
+        },
+        {
+          "name": "pipeline-contract.mjs",
+          "sha256": "40c347af629cf19ceb35a197343bfa0057daa54fe618e47ac784e0e2b59b63a5",
+          "bytes": 3264,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/40c347af629cf19ceb35a197343bfa0057daa54fe618e47ac784e0e2b59b63a5.mjs"
+        },
+        {
+          "name": "pipeline-profile.mjs",
+          "sha256": "6e302b624979c317a47d2413d84b9ebfc4ea9ffffe756d45cf82a51f2d101cfe",
+          "bytes": 5457,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6e302b624979c317a47d2413d84b9ebfc4ea9ffffe756d45cf82a51f2d101cfe.mjs"
+        },
+        {
+          "name": "pipeline-selection.mjs",
+          "sha256": "7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0",
+          "bytes": 10114,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0.mjs"
+        },
+        {
+          "name": "pipeline-worker.mjs",
+          "sha256": "eb7609cd6751c276f7edb1c9b56aec08b6d15ee955917362b174db9516d77336",
+          "bytes": 884,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/eb7609cd6751c276f7edb1c9b56aec08b6d15ee955917362b174db9516d77336.mjs"
+        },
+        {
+          "name": "pipeline-workers.mjs",
+          "sha256": "ce2acfcfb75d6c8c6c5ae4e03727ffa3a1a6160782f691ae9dd6449655119430",
+          "bytes": 2829,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ce2acfcfb75d6c8c6c5ae4e03727ffa3a1a6160782f691ae9dd6449655119430.mjs"
+        },
+        {
+          "name": "plan.json",
+          "sha256": "f4003063d765f944bda679f981e00ead0d0665502189026811cb478cbee22ee8",
+          "bytes": 638,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/f4003063d765f944bda679f981e00ead0d0665502189026811cb478cbee22ee8.json"
+        },
+        {
+          "name": "prepared-wasm.mjs",
+          "sha256": "cfd128e081b2fab9c35012878255af7f79a7720427c7b94363b0112d67289f06",
+          "bytes": 1788,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/cfd128e081b2fab9c35012878255af7f79a7720427c7b94363b0112d67289f06.mjs"
+        },
+        {
+          "name": "program.mjs",
+          "sha256": "d6e15e726e9b7f7bc90b197cef307de5d9f73e812e11a427f99d04c2c5c3aed9",
+          "bytes": 203100,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d6e15e726e9b7f7bc90b197cef307de5d9f73e812e11a427f99d04c2c5c3aed9.mjs"
+        },
+        {
+          "name": "usage-profile.mjs",
+          "sha256": "42087f6de268e704be5851654945f27c05bbd392930dd4a69045f6a5e34736bb",
+          "bytes": 2807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/42087f6de268e704be5851654945f27c05bbd392930dd4a69045f6a5e34736bb.mjs"
+        }
+      ],
+      "source": {
+        "path": "artifacts/generalization/typed-input/sources/potion-2m.ink",
+        "sha256": "a2be2d3d4be34c526eea211290013e3f135a1e8c909cbacc9e415aee690f953f"
+      }
+    },
+    {
+      "name": "potion-8m",
+      "files": [
+        {
+          "name": "backend-selection.mjs",
+          "sha256": "bb91138ead935b737c596edcf0ed1fe2aede064eb0d4ac51c50963c82ddcd07e",
+          "bytes": 7663,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bb91138ead935b737c596edcf0ed1fe2aede064eb0d4ac51c50963c82ddcd07e.mjs"
+        },
+        {
+          "name": "complete-session.mjs",
+          "sha256": "77553f3024bd17448eb17f3ad4c099893c50e203a341f4fa8fe4c01454b757cc",
+          "bytes": 1787,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/77553f3024bd17448eb17f3ad4c099893c50e203a341f4fa8fe4c01454b757cc.mjs"
+        },
+        {
+          "name": "compute-5.wgsl",
+          "sha256": "d063a04a906503b2ca5247c11eb0cb7b488ba119d86ed142c6fffc5233729ba3",
+          "bytes": 10275,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d063a04a906503b2ca5247c11eb0cb7b488ba119d86ed142c6fffc5233729ba3.wgsl"
+        },
+        {
+          "name": "compute-7.wgsl",
+          "sha256": "b30b959d2e4437f09da6ca451ab0dd35d928bf54f7a86ea200b091837648a53b",
+          "bytes": 9352,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b30b959d2e4437f09da6ca451ab0dd35d928bf54f7a86ea200b091837648a53b.wgsl"
+        },
+        {
+          "name": "compute-8.wgsl",
+          "sha256": "91e85adbb74506682976ce5307d69be5919be66a476d91e875ecdbd5e1ad04a3",
+          "bytes": 9160,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/91e85adbb74506682976ce5307d69be5919be66a476d91e875ecdbd5e1ad04a3.wgsl"
+        },
+        {
+          "name": "cpu.wasm",
+          "sha256": "ef5d2000363c3a3e8c8ad2eb33654e57326eb029db141a549d20d938e9e535ee",
+          "bytes": 45857
+        },
+        {
+          "name": "graph-0-0.wgsl",
+          "sha256": "a90ca9d820e8ebd8abde93de84e1ce4ba038e82df6fbea0aa392c1cffac60009",
+          "bytes": 8991,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/a90ca9d820e8ebd8abde93de84e1ce4ba038e82df6fbea0aa392c1cffac60009.wgsl"
+        },
+        {
+          "name": "graph-0-1.wgsl",
+          "sha256": "4121ef94216eda7cce679f8c2f4d1043de2ab938cd24c4df0312fab6292b098a",
+          "bytes": 8997,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/4121ef94216eda7cce679f8c2f4d1043de2ab938cd24c4df0312fab6292b098a.wgsl"
+        },
+        {
+          "name": "graph-0-10.wgsl",
+          "sha256": "b2f911029fa9f0fb74bfe936c79eed8ebf916b2867b5a50c5744d69a88bda053",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2f911029fa9f0fb74bfe936c79eed8ebf916b2867b5a50c5744d69a88bda053.wgsl"
+        },
+        {
+          "name": "graph-0-11.wgsl",
+          "sha256": "4b487ac4592e0f5922482721fe4c805bd348da7c688e417765ce89f0df59cf4a",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/4b487ac4592e0f5922482721fe4c805bd348da7c688e417765ce89f0df59cf4a.wgsl"
+        },
+        {
+          "name": "graph-0-12-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-13-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-14-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-15.wgsl",
+          "sha256": "4280f556b1abd790763b13ea4b0db635ae18380a43c99e52f31b01a2e70a3f7a",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/4280f556b1abd790763b13ea4b0db635ae18380a43c99e52f31b01a2e70a3f7a.wgsl"
+        },
+        {
+          "name": "graph-0-16.wgsl",
+          "sha256": "f70d57d6094bf9ff36bec1972e5696223b18037301fddcfc34be570ac13ad44c",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/f70d57d6094bf9ff36bec1972e5696223b18037301fddcfc34be570ac13ad44c.wgsl"
+        },
+        {
+          "name": "graph-0-17-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-18.wgsl",
+          "sha256": "40ba0e3a73bb19ed49f7a3ea8ccb657765db4928bcd03f2233149b1fbdc60e53",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/40ba0e3a73bb19ed49f7a3ea8ccb657765db4928bcd03f2233149b1fbdc60e53.wgsl"
+        },
+        {
+          "name": "graph-0-19.wgsl",
+          "sha256": "eb486f98b79a17989bc39fbf0d5c4d292e10c1b00546ab1010ddc961d553e115",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/eb486f98b79a17989bc39fbf0d5c4d292e10c1b00546ab1010ddc961d553e115.wgsl"
+        },
+        {
+          "name": "graph-0-2-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-20-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-21-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-22.wgsl",
+          "sha256": "ca7d6023599778cd9894b157f4d4f99f6c4d6bf749e176d7c5c2c8375f08e0b6",
+          "bytes": 9003,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ca7d6023599778cd9894b157f4d4f99f6c4d6bf749e176d7c5c2c8375f08e0b6.wgsl"
+        },
+        {
+          "name": "graph-0-23.wgsl",
+          "sha256": "0b178783970683564e4dbb77c8f4bd3ee95a8a052f3cfce72e968fc560edd202",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/0b178783970683564e4dbb77c8f4bd3ee95a8a052f3cfce72e968fc560edd202.wgsl"
+        },
+        {
+          "name": "graph-0-24-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-25.wgsl",
+          "sha256": "b8c06e2b361df2daa723f8c10f0e0992b97b6ad7ebae378482519ae42d97c7ef",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b8c06e2b361df2daa723f8c10f0e0992b97b6ad7ebae378482519ae42d97c7ef.wgsl"
+        },
+        {
+          "name": "graph-0-26.wgsl",
+          "sha256": "982a1c2413c7e83ebc9d04d9682277c606dd21e63351aedc102f20651f7185af",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/982a1c2413c7e83ebc9d04d9682277c606dd21e63351aedc102f20651f7185af.wgsl"
+        },
+        {
+          "name": "graph-0-27-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-28-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-29-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-3.wgsl",
+          "sha256": "ea95c86d79e99cdb2a23adf920f1361f1605a84b8a632d119ae3a8e4f57bf75e",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ea95c86d79e99cdb2a23adf920f1361f1605a84b8a632d119ae3a8e4f57bf75e.wgsl"
+        },
+        {
+          "name": "graph-0-30-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-31.wgsl",
+          "sha256": "6d7a41ab2a2e3288400d14ebd22d7a7d3c30c3af0c71e51eb082476e28f78faa",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6d7a41ab2a2e3288400d14ebd22d7a7d3c30c3af0c71e51eb082476e28f78faa.wgsl"
+        },
+        {
+          "name": "graph-0-32.wgsl",
+          "sha256": "57fadf2b21e7bf8cd81b9dcc1aef8cc19042ba394b3e9d91c9a37bbfb97cfddb",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/57fadf2b21e7bf8cd81b9dcc1aef8cc19042ba394b3e9d91c9a37bbfb97cfddb.wgsl"
+        },
+        {
+          "name": "graph-0-33-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-34.wgsl",
+          "sha256": "8abfc7a41200eb8e430fb5d1f1e4d0c69634579035738a41201e3330d66601ff",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/8abfc7a41200eb8e430fb5d1f1e4d0c69634579035738a41201e3330d66601ff.wgsl"
+        },
+        {
+          "name": "graph-0-35.wgsl",
+          "sha256": "51effa5750b0f8953bf6c5019c9acdceffc0461069f34a7a1cffaabc8d8ec556",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/51effa5750b0f8953bf6c5019c9acdceffc0461069f34a7a1cffaabc8d8ec556.wgsl"
+        },
+        {
+          "name": "graph-0-36-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-37-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-38.wgsl",
+          "sha256": "0effec549a51242587d7281817782da0c0cd3fbea33ffc2d1265ed2e8429fdba",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/0effec549a51242587d7281817782da0c0cd3fbea33ffc2d1265ed2e8429fdba.wgsl"
+        },
+        {
+          "name": "graph-0-39.wgsl",
+          "sha256": "c0b4ddbc8dc815b1372a02fac2923235862b3a633321cf8dcbfa5a953d4409ca",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c0b4ddbc8dc815b1372a02fac2923235862b3a633321cf8dcbfa5a953d4409ca.wgsl"
+        },
+        {
+          "name": "graph-0-4.wgsl",
+          "sha256": "b1720d69435c128cd968bd049c8ee60584ae8eeb24aaa7f91a512808cca8f72f",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b1720d69435c128cd968bd049c8ee60584ae8eeb24aaa7f91a512808cca8f72f.wgsl"
+        },
+        {
+          "name": "graph-0-40-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-41.wgsl",
+          "sha256": "7508dde2cdab9b550a2fb2bfdd087861a9c9fa32e39b22b2b076eb954b5208c8",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7508dde2cdab9b550a2fb2bfdd087861a9c9fa32e39b22b2b076eb954b5208c8.wgsl"
+        },
+        {
+          "name": "graph-0-42.wgsl",
+          "sha256": "64edaa26c6b673b7a3f7f947984ce4ea070843dae96a5007f7219ba88244fa50",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/64edaa26c6b673b7a3f7f947984ce4ea070843dae96a5007f7219ba88244fa50.wgsl"
+        },
+        {
+          "name": "graph-0-43-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-44-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-45-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-46.wgsl",
+          "sha256": "58061986dad74f7c2baf383c9c4ebfd3c1a7ee0c64cd14a638e5e13d451f76d1",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/58061986dad74f7c2baf383c9c4ebfd3c1a7ee0c64cd14a638e5e13d451f76d1.wgsl"
+        },
+        {
+          "name": "graph-0-47.wgsl",
+          "sha256": "fe8bc248736b85606bbecfe7f164ca05c04dd60444d5cc08aa9cad195963d27b",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/fe8bc248736b85606bbecfe7f164ca05c04dd60444d5cc08aa9cad195963d27b.wgsl"
+        },
+        {
+          "name": "graph-0-48-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-49.wgsl",
+          "sha256": "7f3192b749fdf8b4158618f0eb22cea0de8b6702230567c166a15d13965c7094",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7f3192b749fdf8b4158618f0eb22cea0de8b6702230567c166a15d13965c7094.wgsl"
+        },
+        {
+          "name": "graph-0-5-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-50.wgsl",
+          "sha256": "3f351a0912e5205260fd69eab613b73527722833709e30c1b8f1b45477f205d4",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/3f351a0912e5205260fd69eab613b73527722833709e30c1b8f1b45477f205d4.wgsl"
+        },
+        {
+          "name": "graph-0-51-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-52-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-53.wgsl",
+          "sha256": "f437554c6061bff442330e17e16cc4be0e5d308886de75a7275e9855f89edc27",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/f437554c6061bff442330e17e16cc4be0e5d308886de75a7275e9855f89edc27.wgsl"
+        },
+        {
+          "name": "graph-0-54.wgsl",
+          "sha256": "4cae1bbde0549976f0a67a0b420cc2845e7f0e2d3d3f0292e9fe26e952df598a",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/4cae1bbde0549976f0a67a0b420cc2845e7f0e2d3d3f0292e9fe26e952df598a.wgsl"
+        },
+        {
+          "name": "graph-0-55-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-56.wgsl",
+          "sha256": "2668fcc98ac77566cd0f414aa1d305e7023ce4c8f1ec2c2b92bd1cd7f283ed67",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/2668fcc98ac77566cd0f414aa1d305e7023ce4c8f1ec2c2b92bd1cd7f283ed67.wgsl"
+        },
+        {
+          "name": "graph-0-57.wgsl",
+          "sha256": "95dbf3dfdcdec285980d28b088be3df8ceb861b24687ef499ef83d61aba0c447",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/95dbf3dfdcdec285980d28b088be3df8ceb861b24687ef499ef83d61aba0c447.wgsl"
+        },
+        {
+          "name": "graph-0-58-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-59-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-6-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-60-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-61-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-62-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-0-7.wgsl",
+          "sha256": "d5e30359ed3f63104dd103b9ce964a9122c34cfb00e9aff193811d48645a961a",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d5e30359ed3f63104dd103b9ce964a9122c34cfb00e9aff193811d48645a961a.wgsl"
+        },
+        {
+          "name": "graph-0-8.wgsl",
+          "sha256": "c28f35e2b3e62c8f0b7841bab912aaf83a74d88fabdb7b15a66523bcbbd0067a",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c28f35e2b3e62c8f0b7841bab912aaf83a74d88fabdb7b15a66523bcbbd0067a.wgsl"
+        },
+        {
+          "name": "graph-0-9-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-1-0.wgsl",
+          "sha256": "02dcf2066d99db642c9a5d839a41e58dcd4506b841778893cb8897ea574a1a1d",
+          "bytes": 8766,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/02dcf2066d99db642c9a5d839a41e58dcd4506b841778893cb8897ea574a1a1d.wgsl"
+        },
+        {
+          "name": "graph-2-0.wgsl",
+          "sha256": "64fb981af05ecc90b38234908a812bd80f56ccc2b9e294948119aa025b66140f",
+          "bytes": 8947,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/64fb981af05ecc90b38234908a812bd80f56ccc2b9e294948119aa025b66140f.wgsl"
+        },
+        {
+          "name": "graph-2-1.wgsl",
+          "sha256": "299fb1e250748528a8e1252e25d0ab1e30dd94ab8774563ffa7dc6094d6d3d82",
+          "bytes": 8564,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/299fb1e250748528a8e1252e25d0ab1e30dd94ab8774563ffa7dc6094d6d3d82.wgsl"
+        },
+        {
+          "name": "graph-2-2.wgsl",
+          "sha256": "d8bef00f08085941f85b96b9bb8b71414ba2b7b525e50541929b6f1f10765480",
+          "bytes": 8772,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d8bef00f08085941f85b96b9bb8b71414ba2b7b525e50541929b6f1f10765480.wgsl"
+        },
+        {
+          "name": "graph-2-3.wgsl",
+          "sha256": "96021a3974fdec96cfa251e03e2fa46b5c1f9d5fe5795a0f4f0df96a1b88f7da",
+          "bytes": 8738,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/96021a3974fdec96cfa251e03e2fa46b5c1f9d5fe5795a0f4f0df96a1b88f7da.wgsl"
+        },
+        {
+          "name": "graph-3-0.wgsl",
+          "sha256": "a90ca9d820e8ebd8abde93de84e1ce4ba038e82df6fbea0aa392c1cffac60009",
+          "bytes": 8991,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/a90ca9d820e8ebd8abde93de84e1ce4ba038e82df6fbea0aa392c1cffac60009.wgsl"
+        },
+        {
+          "name": "graph-3-1.wgsl",
+          "sha256": "4121ef94216eda7cce679f8c2f4d1043de2ab938cd24c4df0312fab6292b098a",
+          "bytes": 8997,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/4121ef94216eda7cce679f8c2f4d1043de2ab938cd24c4df0312fab6292b098a.wgsl"
+        },
+        {
+          "name": "graph-3-10.wgsl",
+          "sha256": "b2f911029fa9f0fb74bfe936c79eed8ebf916b2867b5a50c5744d69a88bda053",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2f911029fa9f0fb74bfe936c79eed8ebf916b2867b5a50c5744d69a88bda053.wgsl"
+        },
+        {
+          "name": "graph-3-11.wgsl",
+          "sha256": "4b487ac4592e0f5922482721fe4c805bd348da7c688e417765ce89f0df59cf4a",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/4b487ac4592e0f5922482721fe4c805bd348da7c688e417765ce89f0df59cf4a.wgsl"
+        },
+        {
+          "name": "graph-3-12-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-13-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-14-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-15.wgsl",
+          "sha256": "4280f556b1abd790763b13ea4b0db635ae18380a43c99e52f31b01a2e70a3f7a",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/4280f556b1abd790763b13ea4b0db635ae18380a43c99e52f31b01a2e70a3f7a.wgsl"
+        },
+        {
+          "name": "graph-3-16.wgsl",
+          "sha256": "f70d57d6094bf9ff36bec1972e5696223b18037301fddcfc34be570ac13ad44c",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/f70d57d6094bf9ff36bec1972e5696223b18037301fddcfc34be570ac13ad44c.wgsl"
+        },
+        {
+          "name": "graph-3-17-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-18.wgsl",
+          "sha256": "40ba0e3a73bb19ed49f7a3ea8ccb657765db4928bcd03f2233149b1fbdc60e53",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/40ba0e3a73bb19ed49f7a3ea8ccb657765db4928bcd03f2233149b1fbdc60e53.wgsl"
+        },
+        {
+          "name": "graph-3-19.wgsl",
+          "sha256": "eb486f98b79a17989bc39fbf0d5c4d292e10c1b00546ab1010ddc961d553e115",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/eb486f98b79a17989bc39fbf0d5c4d292e10c1b00546ab1010ddc961d553e115.wgsl"
+        },
+        {
+          "name": "graph-3-2-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-20-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-21-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-22.wgsl",
+          "sha256": "ca7d6023599778cd9894b157f4d4f99f6c4d6bf749e176d7c5c2c8375f08e0b6",
+          "bytes": 9003,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ca7d6023599778cd9894b157f4d4f99f6c4d6bf749e176d7c5c2c8375f08e0b6.wgsl"
+        },
+        {
+          "name": "graph-3-23.wgsl",
+          "sha256": "0b178783970683564e4dbb77c8f4bd3ee95a8a052f3cfce72e968fc560edd202",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/0b178783970683564e4dbb77c8f4bd3ee95a8a052f3cfce72e968fc560edd202.wgsl"
+        },
+        {
+          "name": "graph-3-24-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-25.wgsl",
+          "sha256": "b8c06e2b361df2daa723f8c10f0e0992b97b6ad7ebae378482519ae42d97c7ef",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b8c06e2b361df2daa723f8c10f0e0992b97b6ad7ebae378482519ae42d97c7ef.wgsl"
+        },
+        {
+          "name": "graph-3-26.wgsl",
+          "sha256": "982a1c2413c7e83ebc9d04d9682277c606dd21e63351aedc102f20651f7185af",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/982a1c2413c7e83ebc9d04d9682277c606dd21e63351aedc102f20651f7185af.wgsl"
+        },
+        {
+          "name": "graph-3-27-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-28-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-29-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-3.wgsl",
+          "sha256": "ea95c86d79e99cdb2a23adf920f1361f1605a84b8a632d119ae3a8e4f57bf75e",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ea95c86d79e99cdb2a23adf920f1361f1605a84b8a632d119ae3a8e4f57bf75e.wgsl"
+        },
+        {
+          "name": "graph-3-30-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-31.wgsl",
+          "sha256": "6d7a41ab2a2e3288400d14ebd22d7a7d3c30c3af0c71e51eb082476e28f78faa",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6d7a41ab2a2e3288400d14ebd22d7a7d3c30c3af0c71e51eb082476e28f78faa.wgsl"
+        },
+        {
+          "name": "graph-3-32.wgsl",
+          "sha256": "57fadf2b21e7bf8cd81b9dcc1aef8cc19042ba394b3e9d91c9a37bbfb97cfddb",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/57fadf2b21e7bf8cd81b9dcc1aef8cc19042ba394b3e9d91c9a37bbfb97cfddb.wgsl"
+        },
+        {
+          "name": "graph-3-33-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-34.wgsl",
+          "sha256": "8abfc7a41200eb8e430fb5d1f1e4d0c69634579035738a41201e3330d66601ff",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/8abfc7a41200eb8e430fb5d1f1e4d0c69634579035738a41201e3330d66601ff.wgsl"
+        },
+        {
+          "name": "graph-3-35.wgsl",
+          "sha256": "51effa5750b0f8953bf6c5019c9acdceffc0461069f34a7a1cffaabc8d8ec556",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/51effa5750b0f8953bf6c5019c9acdceffc0461069f34a7a1cffaabc8d8ec556.wgsl"
+        },
+        {
+          "name": "graph-3-36-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-37-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-38.wgsl",
+          "sha256": "0effec549a51242587d7281817782da0c0cd3fbea33ffc2d1265ed2e8429fdba",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/0effec549a51242587d7281817782da0c0cd3fbea33ffc2d1265ed2e8429fdba.wgsl"
+        },
+        {
+          "name": "graph-3-39.wgsl",
+          "sha256": "c0b4ddbc8dc815b1372a02fac2923235862b3a633321cf8dcbfa5a953d4409ca",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c0b4ddbc8dc815b1372a02fac2923235862b3a633321cf8dcbfa5a953d4409ca.wgsl"
+        },
+        {
+          "name": "graph-3-4.wgsl",
+          "sha256": "b1720d69435c128cd968bd049c8ee60584ae8eeb24aaa7f91a512808cca8f72f",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b1720d69435c128cd968bd049c8ee60584ae8eeb24aaa7f91a512808cca8f72f.wgsl"
+        },
+        {
+          "name": "graph-3-40-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-41.wgsl",
+          "sha256": "7508dde2cdab9b550a2fb2bfdd087861a9c9fa32e39b22b2b076eb954b5208c8",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7508dde2cdab9b550a2fb2bfdd087861a9c9fa32e39b22b2b076eb954b5208c8.wgsl"
+        },
+        {
+          "name": "graph-3-42.wgsl",
+          "sha256": "64edaa26c6b673b7a3f7f947984ce4ea070843dae96a5007f7219ba88244fa50",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/64edaa26c6b673b7a3f7f947984ce4ea070843dae96a5007f7219ba88244fa50.wgsl"
+        },
+        {
+          "name": "graph-3-43-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-44-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-45-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-46.wgsl",
+          "sha256": "58061986dad74f7c2baf383c9c4ebfd3c1a7ee0c64cd14a638e5e13d451f76d1",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/58061986dad74f7c2baf383c9c4ebfd3c1a7ee0c64cd14a638e5e13d451f76d1.wgsl"
+        },
+        {
+          "name": "graph-3-47.wgsl",
+          "sha256": "fe8bc248736b85606bbecfe7f164ca05c04dd60444d5cc08aa9cad195963d27b",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/fe8bc248736b85606bbecfe7f164ca05c04dd60444d5cc08aa9cad195963d27b.wgsl"
+        },
+        {
+          "name": "graph-3-48-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-49.wgsl",
+          "sha256": "7f3192b749fdf8b4158618f0eb22cea0de8b6702230567c166a15d13965c7094",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7f3192b749fdf8b4158618f0eb22cea0de8b6702230567c166a15d13965c7094.wgsl"
+        },
+        {
+          "name": "graph-3-5-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-50.wgsl",
+          "sha256": "3f351a0912e5205260fd69eab613b73527722833709e30c1b8f1b45477f205d4",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/3f351a0912e5205260fd69eab613b73527722833709e30c1b8f1b45477f205d4.wgsl"
+        },
+        {
+          "name": "graph-3-51-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-52-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-53.wgsl",
+          "sha256": "f437554c6061bff442330e17e16cc4be0e5d308886de75a7275e9855f89edc27",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/f437554c6061bff442330e17e16cc4be0e5d308886de75a7275e9855f89edc27.wgsl"
+        },
+        {
+          "name": "graph-3-54.wgsl",
+          "sha256": "4cae1bbde0549976f0a67a0b420cc2845e7f0e2d3d3f0292e9fe26e952df598a",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/4cae1bbde0549976f0a67a0b420cc2845e7f0e2d3d3f0292e9fe26e952df598a.wgsl"
+        },
+        {
+          "name": "graph-3-55-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-56.wgsl",
+          "sha256": "2668fcc98ac77566cd0f414aa1d305e7023ce4c8f1ec2c2b92bd1cd7f283ed67",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/2668fcc98ac77566cd0f414aa1d305e7023ce4c8f1ec2c2b92bd1cd7f283ed67.wgsl"
+        },
+        {
+          "name": "graph-3-57.wgsl",
+          "sha256": "95dbf3dfdcdec285980d28b088be3df8ceb861b24687ef499ef83d61aba0c447",
+          "bytes": 9007,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/95dbf3dfdcdec285980d28b088be3df8ceb861b24687ef499ef83d61aba0c447.wgsl"
+        },
+        {
+          "name": "graph-3-58-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-59-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-6-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-60-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-61-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-62-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-3-63.wgsl",
+          "sha256": "0f3e986f4755e8c924b4b478d30d279fb982c199ea650f9650ccfd31ef6b8bb1",
+          "bytes": 10783,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/0f3e986f4755e8c924b4b478d30d279fb982c199ea650f9650ccfd31ef6b8bb1.wgsl"
+        },
+        {
+          "name": "graph-3-7.wgsl",
+          "sha256": "d5e30359ed3f63104dd103b9ce964a9122c34cfb00e9aff193811d48645a961a",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d5e30359ed3f63104dd103b9ce964a9122c34cfb00e9aff193811d48645a961a.wgsl"
+        },
+        {
+          "name": "graph-3-8.wgsl",
+          "sha256": "c28f35e2b3e62c8f0b7841bab912aaf83a74d88fabdb7b15a66523bcbbd0067a",
+          "bytes": 8999,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c28f35e2b3e62c8f0b7841bab912aaf83a74d88fabdb7b15a66523bcbbd0067a.wgsl"
+        },
+        {
+          "name": "graph-3-9-concat.wgsl",
+          "sha256": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+          "bytes": 550,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4.wgsl"
+        },
+        {
+          "name": "graph-4-0.wgsl",
+          "sha256": "b70f156c9149ac90107335c41b6afd1d7d87598b02023a4bd4aa117785170379",
+          "bytes": 8762,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b70f156c9149ac90107335c41b6afd1d7d87598b02023a4bd4aa117785170379.wgsl"
+        },
+        {
+          "name": "graph-4-1.wgsl",
+          "sha256": "57eb518d2a74ea2fb646063659ac722f6cb0c6a311c7aaec7004ddbca25e1996",
+          "bytes": 8762,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/57eb518d2a74ea2fb646063659ac722f6cb0c6a311c7aaec7004ddbca25e1996.wgsl"
+        },
+        {
+          "name": "graph-4-2.wgsl",
+          "sha256": "1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b",
+          "bytes": 8807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b.wgsl"
+        },
+        {
+          "name": "graph-4-3.wgsl",
+          "sha256": "1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b",
+          "bytes": 8807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b.wgsl"
+        },
+        {
+          "name": "graph-4-4.wgsl",
+          "sha256": "fe44bbe4a98531b0eecfdf1b2d109a6305376c3fbeaa68debd945c7a87c2f0d0",
+          "bytes": 9601,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/fe44bbe4a98531b0eecfdf1b2d109a6305376c3fbeaa68debd945c7a87c2f0d0.wgsl"
+        },
+        {
+          "name": "graph-4-5.wgsl",
+          "sha256": "6fcba5be9554f27a8189e2eaf5803910f02f7f0b81fedad9e074364f92e8200b",
+          "bytes": 8936,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6fcba5be9554f27a8189e2eaf5803910f02f7f0b81fedad9e074364f92e8200b.wgsl"
+        },
+        {
+          "name": "graph-5-0.wgsl",
+          "sha256": "7c947f088b66d39e2ac4d1e133e69a4bab60d2fe4cd0910faee7c50a39524f71",
+          "bytes": 10172,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7c947f088b66d39e2ac4d1e133e69a4bab60d2fe4cd0910faee7c50a39524f71.wgsl"
+        },
+        {
+          "name": "graph-6-0.wgsl",
+          "sha256": "e08afe509ad443129e5de60322673dd55561059dede3f051a51def235ca20ac2",
+          "bytes": 9126,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/e08afe509ad443129e5de60322673dd55561059dede3f051a51def235ca20ac2.wgsl"
+        },
+        {
+          "name": "graph-6-1.wgsl",
+          "sha256": "8f893925b5872d6f8d1189268158e0830590d8f3464e3ff0e0b37efb8ca6f2ac",
+          "bytes": 8687,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/8f893925b5872d6f8d1189268158e0830590d8f3464e3ff0e0b37efb8ca6f2ac.wgsl"
+        },
+        {
+          "name": "graph-7-0.wgsl",
+          "sha256": "be366f6383057604aa676b74bc61abae8edab9f7998b44dfc6573e34fd07225e",
+          "bytes": 9250,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/be366f6383057604aa676b74bc61abae8edab9f7998b44dfc6573e34fd07225e.wgsl"
+        },
+        {
+          "name": "graph-8-0.wgsl",
+          "sha256": "1b80b43854f3ed751b712da0308fa0770bea88a9fa870463fffe42220cec024f",
+          "bytes": 9074,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/1b80b43854f3ed751b712da0308fa0770bea88a9fa870463fffe42220cec024f.wgsl"
+        },
+        {
+          "name": "ink-abi.mjs",
+          "sha256": "c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d",
+          "bytes": 15773,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d.mjs"
+        },
+        {
+          "name": "ink-device.mjs",
+          "sha256": "21d76d0742970670ecea83b122cd4e071f747b3a0c2d39616be4c19b55853b13",
+          "bytes": 34689,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/21d76d0742970670ecea83b122cd4e071f747b3a0c2d39616be4c19b55853b13.mjs"
+        },
+        {
+          "name": "ink-gpu.mjs",
+          "sha256": "d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc",
+          "bytes": 46856,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc.mjs"
+        },
+        {
+          "name": "ink-selection.mjs",
+          "sha256": "bbd63dfd959c06658dde1f5da743af125e5394171202e865a07de7826166afd5",
+          "bytes": 1148,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bbd63dfd959c06658dde1f5da743af125e5394171202e865a07de7826166afd5.mjs"
+        },
+        {
+          "name": "ink-selection.wasm",
+          "sha256": "1597f63e25b60e0b0b92486c5b370a01f3828603a47149efe9f953099bb1e6b0",
+          "bytes": 554195
+        },
+        {
+          "name": "manifest.after.json",
+          "sha256": "dbc156ff00a7b0648cb62ad2115727c071ad1112325d1d75747b6acbf9711847",
+          "bytes": 192486,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/dbc156ff00a7b0648cb62ad2115727c071ad1112325d1d75747b6acbf9711847.json"
+        },
+        {
+          "name": "manifest.before.json",
+          "sha256": "dddfe8156e82ef8e1d8d980fe8ddf20564708145a9bc1159dfa4b063ba8e7ad9",
+          "bytes": 192486,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/dddfe8156e82ef8e1d8d980fe8ddf20564708145a9bc1159dfa4b063ba8e7ad9.json"
+        },
+        {
+          "name": "manifest.control.json",
+          "sha256": "2e9706412e3c6398c7fba949800c7e5b8f00699374d6b695214dfd884b661460",
+          "bytes": 192486,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/2e9706412e3c6398c7fba949800c7e5b8f00699374d6b695214dfd884b661460.json"
+        },
+        {
+          "name": "manifest.json",
+          "sha256": "7b4a0811ad6a80d3000cbcbab2b454dec5b169afa141f54b513130d1e295df40",
+          "bytes": 192485,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7b4a0811ad6a80d3000cbcbab2b454dec5b169afa141f54b513130d1e295df40.json"
+        },
+        {
+          "name": "pipeline-contract.mjs",
+          "sha256": "40c347af629cf19ceb35a197343bfa0057daa54fe618e47ac784e0e2b59b63a5",
+          "bytes": 3264,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/40c347af629cf19ceb35a197343bfa0057daa54fe618e47ac784e0e2b59b63a5.mjs"
+        },
+        {
+          "name": "pipeline-profile.mjs",
+          "sha256": "6e302b624979c317a47d2413d84b9ebfc4ea9ffffe756d45cf82a51f2d101cfe",
+          "bytes": 5457,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6e302b624979c317a47d2413d84b9ebfc4ea9ffffe756d45cf82a51f2d101cfe.mjs"
+        },
+        {
+          "name": "pipeline-selection.mjs",
+          "sha256": "7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0",
+          "bytes": 10114,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0.mjs"
+        },
+        {
+          "name": "pipeline-worker.mjs",
+          "sha256": "eb7609cd6751c276f7edb1c9b56aec08b6d15ee955917362b174db9516d77336",
+          "bytes": 884,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/eb7609cd6751c276f7edb1c9b56aec08b6d15ee955917362b174db9516d77336.mjs"
+        },
+        {
+          "name": "pipeline-workers.mjs",
+          "sha256": "ce2acfcfb75d6c8c6c5ae4e03727ffa3a1a6160782f691ae9dd6449655119430",
+          "bytes": 2829,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ce2acfcfb75d6c8c6c5ae4e03727ffa3a1a6160782f691ae9dd6449655119430.mjs"
+        },
+        {
+          "name": "plan.json",
+          "sha256": "5a269780b6cb3cb202e830d42dbc710b8938aef24e016334a2d54e049792abaa",
+          "bytes": 638,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/5a269780b6cb3cb202e830d42dbc710b8938aef24e016334a2d54e049792abaa.json"
+        },
+        {
+          "name": "prepared-wasm.mjs",
+          "sha256": "cfd128e081b2fab9c35012878255af7f79a7720427c7b94363b0112d67289f06",
+          "bytes": 1788,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/cfd128e081b2fab9c35012878255af7f79a7720427c7b94363b0112d67289f06.mjs"
+        },
+        {
+          "name": "program.mjs",
+          "sha256": "75244bf705512b16c13b4a1df8d0d97537266755de84a6fac89a971febbe27a7",
+          "bytes": 222468,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/75244bf705512b16c13b4a1df8d0d97537266755de84a6fac89a971febbe27a7.mjs"
+        },
+        {
+          "name": "usage-profile.mjs",
+          "sha256": "42087f6de268e704be5851654945f27c05bbd392930dd4a69045f6a5e34736bb",
+          "bytes": 2807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/42087f6de268e704be5851654945f27c05bbd392930dd4a69045f6a5e34736bb.mjs"
+        }
+      ],
+      "source": {
+        "path": "artifacts/generalization/typed-input/sources/potion-8m.ink",
+        "sha256": "7e12aa5c2f1c172a3896030161a428f5549f471c77984817da62415fb718780b"
+      }
+    },
+    {
+      "name": "st-retrieval",
+      "files": [
+        {
+          "name": "backend-selection.mjs",
+          "sha256": "bb91138ead935b737c596edcf0ed1fe2aede064eb0d4ac51c50963c82ddcd07e",
+          "bytes": 7663,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bb91138ead935b737c596edcf0ed1fe2aede064eb0d4ac51c50963c82ddcd07e.mjs"
+        },
+        {
+          "name": "complete-session.mjs",
+          "sha256": "77553f3024bd17448eb17f3ad4c099893c50e203a341f4fa8fe4c01454b757cc",
+          "bytes": 1787,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/77553f3024bd17448eb17f3ad4c099893c50e203a341f4fa8fe4c01454b757cc.mjs"
+        },
+        {
+          "name": "compute-5.wgsl",
+          "sha256": "0eed45ef2d65ffdc4c379d811800da9b63ecff772de57e219ed2f2c1e63e1b07",
+          "bytes": 10278,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/0eed45ef2d65ffdc4c379d811800da9b63ecff772de57e219ed2f2c1e63e1b07.wgsl"
+        },
+        {
+          "name": "compute-7.wgsl",
+          "sha256": "931ac7b7e3852c78570ef9dfc30ad904b00e2b630f956fc081e8aeae7deeb23d",
+          "bytes": 9310,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/931ac7b7e3852c78570ef9dfc30ad904b00e2b630f956fc081e8aeae7deeb23d.wgsl"
+        },
+        {
+          "name": "compute-8.wgsl",
+          "sha256": "db8c2127bf863af9bf7e0d4ca68318abbceaa9f45606b2190e226bc34bd11f22",
+          "bytes": 9161,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/db8c2127bf863af9bf7e0d4ca68318abbceaa9f45606b2190e226bc34bd11f22.wgsl"
+        },
+        {
+          "name": "cpu.wasm",
+          "sha256": "5c45731716487ba32fbfe6bdf218c1fbc2f6361d741a6b6e6adb36db16d8ba05",
+          "bytes": 62800
+        },
+        {
+          "name": "graph-1-0.wgsl",
+          "sha256": "02dcf2066d99db642c9a5d839a41e58dcd4506b841778893cb8897ea574a1a1d",
+          "bytes": 8766,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/02dcf2066d99db642c9a5d839a41e58dcd4506b841778893cb8897ea574a1a1d.wgsl"
+        },
+        {
+          "name": "graph-2-0.wgsl",
+          "sha256": "b57e8d5c4263188e1481b4d718bef801521b016ff4bcfdb9416b3043e24fcf97",
+          "bytes": 8948,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b57e8d5c4263188e1481b4d718bef801521b016ff4bcfdb9416b3043e24fcf97.wgsl"
+        },
+        {
+          "name": "graph-2-1.wgsl",
+          "sha256": "299fb1e250748528a8e1252e25d0ab1e30dd94ab8774563ffa7dc6094d6d3d82",
+          "bytes": 8564,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/299fb1e250748528a8e1252e25d0ab1e30dd94ab8774563ffa7dc6094d6d3d82.wgsl"
+        },
+        {
+          "name": "graph-2-2.wgsl",
+          "sha256": "d8bef00f08085941f85b96b9bb8b71414ba2b7b525e50541929b6f1f10765480",
+          "bytes": 8772,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d8bef00f08085941f85b96b9bb8b71414ba2b7b525e50541929b6f1f10765480.wgsl"
+        },
+        {
+          "name": "graph-2-3.wgsl",
+          "sha256": "96021a3974fdec96cfa251e03e2fa46b5c1f9d5fe5795a0f4f0df96a1b88f7da",
+          "bytes": 8738,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/96021a3974fdec96cfa251e03e2fa46b5c1f9d5fe5795a0f4f0df96a1b88f7da.wgsl"
+        },
+        {
+          "name": "graph-4-0.wgsl",
+          "sha256": "b2ac80ba3221771f1aa15d7b24b72e341c4de134fdaa85c28bd8daadffe48f1d",
+          "bytes": 8763,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b2ac80ba3221771f1aa15d7b24b72e341c4de134fdaa85c28bd8daadffe48f1d.wgsl"
+        },
+        {
+          "name": "graph-4-1.wgsl",
+          "sha256": "3f2ecf11db6c77849a393d93aa20cbe4e92ce5e57e8d57d98c6f31c9d1657464",
+          "bytes": 8763,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/3f2ecf11db6c77849a393d93aa20cbe4e92ce5e57e8d57d98c6f31c9d1657464.wgsl"
+        },
+        {
+          "name": "graph-4-2.wgsl",
+          "sha256": "1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b",
+          "bytes": 8807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b.wgsl"
+        },
+        {
+          "name": "graph-4-3.wgsl",
+          "sha256": "1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b",
+          "bytes": 8807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b.wgsl"
+        },
+        {
+          "name": "graph-4-4.wgsl",
+          "sha256": "3ec40194081cf115fbd5716efddefdec8a464f1f5eb011cc1ffbc57f5a663e75",
+          "bytes": 9602,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/3ec40194081cf115fbd5716efddefdec8a464f1f5eb011cc1ffbc57f5a663e75.wgsl"
+        },
+        {
+          "name": "graph-4-5.wgsl",
+          "sha256": "6fcba5be9554f27a8189e2eaf5803910f02f7f0b81fedad9e074364f92e8200b",
+          "bytes": 8936,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6fcba5be9554f27a8189e2eaf5803910f02f7f0b81fedad9e074364f92e8200b.wgsl"
+        },
+        {
+          "name": "graph-5-0.wgsl",
+          "sha256": "585be8243d4237c5161822b4e1d695bb809628cbf605ecb3f5bf1e9b1636dbdb",
+          "bytes": 10175,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/585be8243d4237c5161822b4e1d695bb809628cbf605ecb3f5bf1e9b1636dbdb.wgsl"
+        },
+        {
+          "name": "graph-6-0.wgsl",
+          "sha256": "91f29a9298a2b053f25ef618fa8fe6e643c0db99c8124940583447f82a33552c",
+          "bytes": 9131,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/91f29a9298a2b053f25ef618fa8fe6e643c0db99c8124940583447f82a33552c.wgsl"
+        },
+        {
+          "name": "graph-6-1.wgsl",
+          "sha256": "ce0cb5472362a5d62e6d5bcf3af84f6d3d5dd605fbf4fa124ec1ed4c7606a959",
+          "bytes": 8573,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ce0cb5472362a5d62e6d5bcf3af84f6d3d5dd605fbf4fa124ec1ed4c7606a959.wgsl"
+        },
+        {
+          "name": "graph-7-0.wgsl",
+          "sha256": "041abf7fcdf187ab7c87c544a0543f6fd0d43388c2d560156dc652a54398f039",
+          "bytes": 9208,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/041abf7fcdf187ab7c87c544a0543f6fd0d43388c2d560156dc652a54398f039.wgsl"
+        },
+        {
+          "name": "graph-8-0.wgsl",
+          "sha256": "3d213fe636feaedfb09fb3f9edf0b17eb48604ee257a1495bce2969fee8d18f5",
+          "bytes": 9075,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/3d213fe636feaedfb09fb3f9edf0b17eb48604ee257a1495bce2969fee8d18f5.wgsl"
+        },
+        {
+          "name": "ink-abi.mjs",
+          "sha256": "c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d",
+          "bytes": 15773,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d.mjs"
+        },
+        {
+          "name": "ink-device.mjs",
+          "sha256": "21d76d0742970670ecea83b122cd4e071f747b3a0c2d39616be4c19b55853b13",
+          "bytes": 34689,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/21d76d0742970670ecea83b122cd4e071f747b3a0c2d39616be4c19b55853b13.mjs"
+        },
+        {
+          "name": "ink-gpu.mjs",
+          "sha256": "d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc",
+          "bytes": 46856,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc.mjs"
+        },
+        {
+          "name": "ink-selection.mjs",
+          "sha256": "bbd63dfd959c06658dde1f5da743af125e5394171202e865a07de7826166afd5",
+          "bytes": 1148,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bbd63dfd959c06658dde1f5da743af125e5394171202e865a07de7826166afd5.mjs"
+        },
+        {
+          "name": "ink-selection.wasm",
+          "sha256": "1597f63e25b60e0b0b92486c5b370a01f3828603a47149efe9f953099bb1e6b0",
+          "bytes": 554195
+        },
+        {
+          "name": "manifest.after.json",
+          "sha256": "03d9d855fa48c32c5eea95dd593e3742fc1c3b46b853d602bd669424c846a75b",
+          "bytes": 54030,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/03d9d855fa48c32c5eea95dd593e3742fc1c3b46b853d602bd669424c846a75b.json"
+        },
+        {
+          "name": "manifest.before.json",
+          "sha256": "f684411846fc3db81893f8a6be5004c521a562a06461b2cbb7c08cff4a46b8c6",
+          "bytes": 54030,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/f684411846fc3db81893f8a6be5004c521a562a06461b2cbb7c08cff4a46b8c6.json"
+        },
+        {
+          "name": "manifest.control.json",
+          "sha256": "31f3ed981876d12bac674c194be0f1789d2a4775a93100558841fc422e86755e",
+          "bytes": 54030,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/31f3ed981876d12bac674c194be0f1789d2a4775a93100558841fc422e86755e.json"
+        },
+        {
+          "name": "manifest.json",
+          "sha256": "c5436cc9ed9a4833dc04a5ec795a95d0dbe79740e00741d462767c4c1e098731",
+          "bytes": 54029,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c5436cc9ed9a4833dc04a5ec795a95d0dbe79740e00741d462767c4c1e098731.json"
+        },
+        {
+          "name": "pipeline-contract.mjs",
+          "sha256": "40c347af629cf19ceb35a197343bfa0057daa54fe618e47ac784e0e2b59b63a5",
+          "bytes": 3264,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/40c347af629cf19ceb35a197343bfa0057daa54fe618e47ac784e0e2b59b63a5.mjs"
+        },
+        {
+          "name": "pipeline-profile.mjs",
+          "sha256": "6e302b624979c317a47d2413d84b9ebfc4ea9ffffe756d45cf82a51f2d101cfe",
+          "bytes": 5457,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6e302b624979c317a47d2413d84b9ebfc4ea9ffffe756d45cf82a51f2d101cfe.mjs"
+        },
+        {
+          "name": "pipeline-selection.mjs",
+          "sha256": "7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0",
+          "bytes": 10114,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0.mjs"
+        },
+        {
+          "name": "pipeline-worker.mjs",
+          "sha256": "eb7609cd6751c276f7edb1c9b56aec08b6d15ee955917362b174db9516d77336",
+          "bytes": 884,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/eb7609cd6751c276f7edb1c9b56aec08b6d15ee955917362b174db9516d77336.mjs"
+        },
+        {
+          "name": "pipeline-workers.mjs",
+          "sha256": "ce2acfcfb75d6c8c6c5ae4e03727ffa3a1a6160782f691ae9dd6449655119430",
+          "bytes": 2829,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ce2acfcfb75d6c8c6c5ae4e03727ffa3a1a6160782f691ae9dd6449655119430.mjs"
+        },
+        {
+          "name": "plan.json",
+          "sha256": "8ba7d4f233487f70904278396909fd5ab188322dc3d55ce0a442354bc4cd4082",
+          "bytes": 641,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/8ba7d4f233487f70904278396909fd5ab188322dc3d55ce0a442354bc4cd4082.json"
+        },
+        {
+          "name": "prepared-wasm.mjs",
+          "sha256": "cfd128e081b2fab9c35012878255af7f79a7720427c7b94363b0112d67289f06",
+          "bytes": 1788,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/cfd128e081b2fab9c35012878255af7f79a7720427c7b94363b0112d67289f06.mjs"
+        },
+        {
+          "name": "program.mjs",
+          "sha256": "0b0e41ad25379533eaa7286cc763e9c47f8c9f25084e7e150a28c1d5469e582e",
+          "bytes": 300790,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/0b0e41ad25379533eaa7286cc763e9c47f8c9f25084e7e150a28c1d5469e582e.mjs"
+        },
+        {
+          "name": "usage-profile.mjs",
+          "sha256": "42087f6de268e704be5851654945f27c05bbd392930dd4a69045f6a5e34736bb",
+          "bytes": 2807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/42087f6de268e704be5851654945f27c05bbd392930dd4a69045f6a5e34736bb.mjs"
+        }
+      ],
+      "source": {
+        "path": "artifacts/generalization/typed-input/sources/st-retrieval.ink",
+        "sha256": "07699910fff20531f2f591854794d43fe4ad9ae4224dd29f2c340d28044e51f9"
+      }
+    },
+    {
+      "name": "unseen-clamp",
+      "files": [
+        {
+          "name": "backend-selection.mjs",
+          "sha256": "bb91138ead935b737c596edcf0ed1fe2aede064eb0d4ac51c50963c82ddcd07e",
+          "bytes": 7663,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bb91138ead935b737c596edcf0ed1fe2aede064eb0d4ac51c50963c82ddcd07e.mjs"
+        },
+        {
+          "name": "complete-session.mjs",
+          "sha256": "77553f3024bd17448eb17f3ad4c099893c50e203a341f4fa8fe4c01454b757cc",
+          "bytes": 1787,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/77553f3024bd17448eb17f3ad4c099893c50e203a341f4fa8fe4c01454b757cc.mjs"
+        },
+        {
+          "name": "compute-5.wgsl",
+          "sha256": "2a3b34c3761406fa9b3084c13687a10ad74ba542aab728376b9777ecb9296039",
+          "bytes": 10269,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/2a3b34c3761406fa9b3084c13687a10ad74ba542aab728376b9777ecb9296039.wgsl"
+        },
+        {
+          "name": "compute-7.wgsl",
+          "sha256": "7852d99fb04eeaef0a2a0ca1c263e37948306cad2c63b2ad2983ff63f272a075",
+          "bytes": 9415,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7852d99fb04eeaef0a2a0ca1c263e37948306cad2c63b2ad2983ff63f272a075.wgsl"
+        },
+        {
+          "name": "compute-8.wgsl",
+          "sha256": "e774eb6a68c5e96aeee7a2918dae0f9f24fa1f051f4a29e94f415f0d5ddf56fe",
+          "bytes": 9158,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/e774eb6a68c5e96aeee7a2918dae0f9f24fa1f051f4a29e94f415f0d5ddf56fe.wgsl"
+        },
+        {
+          "name": "cpu.wasm",
+          "sha256": "db7142412eff16b499c7f4bbc347901836213313a1a0cb129b2404737388c2f9",
+          "bytes": 39411
+        },
+        {
+          "name": "graph-0-0.wgsl",
+          "sha256": "8df8de1afd06766c09d52e0b9a1456f9990dcc6ac0f6c6b17f2042747034cd63",
+          "bytes": 8838,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/8df8de1afd06766c09d52e0b9a1456f9990dcc6ac0f6c6b17f2042747034cd63.wgsl"
+        },
+        {
+          "name": "graph-1-0.wgsl",
+          "sha256": "02dcf2066d99db642c9a5d839a41e58dcd4506b841778893cb8897ea574a1a1d",
+          "bytes": 8766,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/02dcf2066d99db642c9a5d839a41e58dcd4506b841778893cb8897ea574a1a1d.wgsl"
+        },
+        {
+          "name": "graph-2-0.wgsl",
+          "sha256": "8aee1ddd1fc5e8d14293e0856b1bb561991966e0f7fbfea4039ddc1200fe1e87",
+          "bytes": 8945,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/8aee1ddd1fc5e8d14293e0856b1bb561991966e0f7fbfea4039ddc1200fe1e87.wgsl"
+        },
+        {
+          "name": "graph-2-1.wgsl",
+          "sha256": "299fb1e250748528a8e1252e25d0ab1e30dd94ab8774563ffa7dc6094d6d3d82",
+          "bytes": 8564,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/299fb1e250748528a8e1252e25d0ab1e30dd94ab8774563ffa7dc6094d6d3d82.wgsl"
+        },
+        {
+          "name": "graph-2-2.wgsl",
+          "sha256": "d8bef00f08085941f85b96b9bb8b71414ba2b7b525e50541929b6f1f10765480",
+          "bytes": 8772,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d8bef00f08085941f85b96b9bb8b71414ba2b7b525e50541929b6f1f10765480.wgsl"
+        },
+        {
+          "name": "graph-2-3.wgsl",
+          "sha256": "96021a3974fdec96cfa251e03e2fa46b5c1f9d5fe5795a0f4f0df96a1b88f7da",
+          "bytes": 8738,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/96021a3974fdec96cfa251e03e2fa46b5c1f9d5fe5795a0f4f0df96a1b88f7da.wgsl"
+        },
+        {
+          "name": "graph-3-0.wgsl",
+          "sha256": "8df8de1afd06766c09d52e0b9a1456f9990dcc6ac0f6c6b17f2042747034cd63",
+          "bytes": 8838,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/8df8de1afd06766c09d52e0b9a1456f9990dcc6ac0f6c6b17f2042747034cd63.wgsl"
+        },
+        {
+          "name": "graph-3-1.wgsl",
+          "sha256": "105fd1a556befd2ef84410dae7afc477a36cf20fe6193239a57bb4cea7136155",
+          "bytes": 10929,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/105fd1a556befd2ef84410dae7afc477a36cf20fe6193239a57bb4cea7136155.wgsl"
+        },
+        {
+          "name": "graph-4-0.wgsl",
+          "sha256": "c48439cb0233e84c5bff036eb26fae4e1f264ea87e83b3d53b4c18dfd2020132",
+          "bytes": 8760,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c48439cb0233e84c5bff036eb26fae4e1f264ea87e83b3d53b4c18dfd2020132.wgsl"
+        },
+        {
+          "name": "graph-4-1.wgsl",
+          "sha256": "aab709889e556d9d0ab2a19f67e5619733a097b57c5df826f772d0f22b06a9ee",
+          "bytes": 8760,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/aab709889e556d9d0ab2a19f67e5619733a097b57c5df826f772d0f22b06a9ee.wgsl"
+        },
+        {
+          "name": "graph-4-2.wgsl",
+          "sha256": "1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b",
+          "bytes": 8807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b.wgsl"
+        },
+        {
+          "name": "graph-4-3.wgsl",
+          "sha256": "1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b",
+          "bytes": 8807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b.wgsl"
+        },
+        {
+          "name": "graph-4-4.wgsl",
+          "sha256": "d7bd726686b0c515c4a9fd9fdac3dbb19f7ca4d786cbe4735e5680ed381acef0",
+          "bytes": 9599,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d7bd726686b0c515c4a9fd9fdac3dbb19f7ca4d786cbe4735e5680ed381acef0.wgsl"
+        },
+        {
+          "name": "graph-4-5.wgsl",
+          "sha256": "6fcba5be9554f27a8189e2eaf5803910f02f7f0b81fedad9e074364f92e8200b",
+          "bytes": 8936,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6fcba5be9554f27a8189e2eaf5803910f02f7f0b81fedad9e074364f92e8200b.wgsl"
+        },
+        {
+          "name": "graph-5-0.wgsl",
+          "sha256": "2f48c65033b73d4fbc832326ea14ecc9b8453e0ea68bd7b01f4e3e364633aa7f",
+          "bytes": 10166,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/2f48c65033b73d4fbc832326ea14ecc9b8453e0ea68bd7b01f4e3e364633aa7f.wgsl"
+        },
+        {
+          "name": "graph-6-0.wgsl",
+          "sha256": "04dee7f3b2d957a95b0e27301c9abff031a3240d4d22d3abc8d67b545c23475a",
+          "bytes": 9116,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/04dee7f3b2d957a95b0e27301c9abff031a3240d4d22d3abc8d67b545c23475a.wgsl"
+        },
+        {
+          "name": "graph-6-1.wgsl",
+          "sha256": "ccb50be30faed2fb017c3da10f073a1ce2b924120d0f48cc5d20027c94002a1f",
+          "bytes": 8770,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ccb50be30faed2fb017c3da10f073a1ce2b924120d0f48cc5d20027c94002a1f.wgsl"
+        },
+        {
+          "name": "graph-7-0.wgsl",
+          "sha256": "5e06e7036c2b2a3d5abae7dbe777af7f40f2d89ffa9d90159b069176ac6d0124",
+          "bytes": 9313,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/5e06e7036c2b2a3d5abae7dbe777af7f40f2d89ffa9d90159b069176ac6d0124.wgsl"
+        },
+        {
+          "name": "graph-8-0.wgsl",
+          "sha256": "05f609db954e4e679cdc2278f0e18ced6591ef9a18c396c131caa144a2af189d",
+          "bytes": 9072,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/05f609db954e4e679cdc2278f0e18ced6591ef9a18c396c131caa144a2af189d.wgsl"
+        },
+        {
+          "name": "ink-abi.mjs",
+          "sha256": "c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d",
+          "bytes": 15773,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d.mjs"
+        },
+        {
+          "name": "ink-device.mjs",
+          "sha256": "21d76d0742970670ecea83b122cd4e071f747b3a0c2d39616be4c19b55853b13",
+          "bytes": 34689,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/21d76d0742970670ecea83b122cd4e071f747b3a0c2d39616be4c19b55853b13.mjs"
+        },
+        {
+          "name": "ink-gpu.mjs",
+          "sha256": "d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc",
+          "bytes": 46856,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc.mjs"
+        },
+        {
+          "name": "ink-selection.mjs",
+          "sha256": "bbd63dfd959c06658dde1f5da743af125e5394171202e865a07de7826166afd5",
+          "bytes": 1148,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bbd63dfd959c06658dde1f5da743af125e5394171202e865a07de7826166afd5.mjs"
+        },
+        {
+          "name": "ink-selection.wasm",
+          "sha256": "1597f63e25b60e0b0b92486c5b370a01f3828603a47149efe9f953099bb1e6b0",
+          "bytes": 554195
+        },
+        {
+          "name": "manifest.after.json",
+          "sha256": "2406e6a328710bb4ef8d288db5b5cdd069ad74a2e341ae37be00147e80ebef43",
+          "bytes": 58076,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/2406e6a328710bb4ef8d288db5b5cdd069ad74a2e341ae37be00147e80ebef43.json"
+        },
+        {
+          "name": "manifest.before.json",
+          "sha256": "0435e0909f2f28553c409646850064c60ed5f59fe24630aaf70e3121e39b185e",
+          "bytes": 58076,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/0435e0909f2f28553c409646850064c60ed5f59fe24630aaf70e3121e39b185e.json"
+        },
+        {
+          "name": "manifest.control.json",
+          "sha256": "b5e2b3ebd3e633bab0e45212176208b91d33f9d45b8463943e4a9e54e5cf3a68",
+          "bytes": 58076,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b5e2b3ebd3e633bab0e45212176208b91d33f9d45b8463943e4a9e54e5cf3a68.json"
+        },
+        {
+          "name": "manifest.json",
+          "sha256": "7ed090619ea313e043d25fe376045ff05d5b7bbed948ddadc758b419d8880db1",
+          "bytes": 58075,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7ed090619ea313e043d25fe376045ff05d5b7bbed948ddadc758b419d8880db1.json"
+        },
+        {
+          "name": "pipeline-contract.mjs",
+          "sha256": "40c347af629cf19ceb35a197343bfa0057daa54fe618e47ac784e0e2b59b63a5",
+          "bytes": 3264,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/40c347af629cf19ceb35a197343bfa0057daa54fe618e47ac784e0e2b59b63a5.mjs"
+        },
+        {
+          "name": "pipeline-profile.mjs",
+          "sha256": "6e302b624979c317a47d2413d84b9ebfc4ea9ffffe756d45cf82a51f2d101cfe",
+          "bytes": 5457,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6e302b624979c317a47d2413d84b9ebfc4ea9ffffe756d45cf82a51f2d101cfe.mjs"
+        },
+        {
+          "name": "pipeline-selection.mjs",
+          "sha256": "7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0",
+          "bytes": 10114,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0.mjs"
+        },
+        {
+          "name": "pipeline-worker.mjs",
+          "sha256": "eb7609cd6751c276f7edb1c9b56aec08b6d15ee955917362b174db9516d77336",
+          "bytes": 884,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/eb7609cd6751c276f7edb1c9b56aec08b6d15ee955917362b174db9516d77336.mjs"
+        },
+        {
+          "name": "pipeline-workers.mjs",
+          "sha256": "ce2acfcfb75d6c8c6c5ae4e03727ffa3a1a6160782f691ae9dd6449655119430",
+          "bytes": 2829,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ce2acfcfb75d6c8c6c5ae4e03727ffa3a1a6160782f691ae9dd6449655119430.mjs"
+        },
+        {
+          "name": "plan.json",
+          "sha256": "ff6a25e78aea45480133309f0357e1040c396da2314d0b92d229acbe7190ee38",
+          "bytes": 641,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ff6a25e78aea45480133309f0357e1040c396da2314d0b92d229acbe7190ee38.json"
+        },
+        {
+          "name": "prepared-wasm.mjs",
+          "sha256": "cfd128e081b2fab9c35012878255af7f79a7720427c7b94363b0112d67289f06",
+          "bytes": 1788,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/cfd128e081b2fab9c35012878255af7f79a7720427c7b94363b0112d67289f06.mjs"
+        },
+        {
+          "name": "program.mjs",
+          "sha256": "c3f677a16ce3ef47d35c5642dfe0888607396e797dcd7537fbfc106a8749aa17",
+          "bytes": 198387,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c3f677a16ce3ef47d35c5642dfe0888607396e797dcd7537fbfc106a8749aa17.mjs"
+        },
+        {
+          "name": "usage-profile.mjs",
+          "sha256": "42087f6de268e704be5851654945f27c05bbd392930dd4a69045f6a5e34736bb",
+          "bytes": 2807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/42087f6de268e704be5851654945f27c05bbd392930dd4a69045f6a5e34736bb.mjs"
+        }
+      ],
+      "source": {
+        "path": "artifacts/generalization/typed-input/sources/unseen-clamp.ink",
+        "sha256": "0a3027fee6c5f17e53737f1f9540d57586d6d69584c576fed8f277ae1580776c"
+      }
+    },
+    {
+      "name": "unseen-weighted",
+      "files": [
+        {
+          "name": "backend-selection.mjs",
+          "sha256": "bb91138ead935b737c596edcf0ed1fe2aede064eb0d4ac51c50963c82ddcd07e",
+          "bytes": 7663,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bb91138ead935b737c596edcf0ed1fe2aede064eb0d4ac51c50963c82ddcd07e.mjs"
+        },
+        {
+          "name": "complete-session.mjs",
+          "sha256": "77553f3024bd17448eb17f3ad4c099893c50e203a341f4fa8fe4c01454b757cc",
+          "bytes": 1787,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/77553f3024bd17448eb17f3ad4c099893c50e203a341f4fa8fe4c01454b757cc.mjs"
+        },
+        {
+          "name": "compute-5.wgsl",
+          "sha256": "d9dbc5b6ecc6911619d98f33af0ad4ceecba3d39acbe45a8c0641caf94835be7",
+          "bytes": 10269,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d9dbc5b6ecc6911619d98f33af0ad4ceecba3d39acbe45a8c0641caf94835be7.wgsl"
+        },
+        {
+          "name": "compute-7.wgsl",
+          "sha256": "6ebdf0a1f80e914820368951c7f12b446679a9d8350f29f7e2f1a49aba49a3c7",
+          "bytes": 9342,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6ebdf0a1f80e914820368951c7f12b446679a9d8350f29f7e2f1a49aba49a3c7.wgsl"
+        },
+        {
+          "name": "compute-8.wgsl",
+          "sha256": "63927857257b58522cbd3c1cdea0f52a33911fb516e0c27260081245e1a03eae",
+          "bytes": 9158,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/63927857257b58522cbd3c1cdea0f52a33911fb516e0c27260081245e1a03eae.wgsl"
+        },
+        {
+          "name": "cpu.wasm",
+          "sha256": "fb64d0e2dd44cd958920fb7dc43c1c143d539985bb414012ea3e0ae364febb37",
+          "bytes": 40412
+        },
+        {
+          "name": "graph-0-0.wgsl",
+          "sha256": "5dbfd185a04971bc8ad7b09184e53b735e49aab1cf0778b57bbdec8cb6086e7a",
+          "bytes": 8940,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/5dbfd185a04971bc8ad7b09184e53b735e49aab1cf0778b57bbdec8cb6086e7a.wgsl"
+        },
+        {
+          "name": "graph-1-0.wgsl",
+          "sha256": "02dcf2066d99db642c9a5d839a41e58dcd4506b841778893cb8897ea574a1a1d",
+          "bytes": 8766,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/02dcf2066d99db642c9a5d839a41e58dcd4506b841778893cb8897ea574a1a1d.wgsl"
+        },
+        {
+          "name": "graph-2-0.wgsl",
+          "sha256": "6301d1311c51e90f4dd6bf084e0234a7b7bcf0dc2c5785151e6c3908d9567574",
+          "bytes": 8945,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6301d1311c51e90f4dd6bf084e0234a7b7bcf0dc2c5785151e6c3908d9567574.wgsl"
+        },
+        {
+          "name": "graph-2-1.wgsl",
+          "sha256": "299fb1e250748528a8e1252e25d0ab1e30dd94ab8774563ffa7dc6094d6d3d82",
+          "bytes": 8564,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/299fb1e250748528a8e1252e25d0ab1e30dd94ab8774563ffa7dc6094d6d3d82.wgsl"
+        },
+        {
+          "name": "graph-2-2.wgsl",
+          "sha256": "d8bef00f08085941f85b96b9bb8b71414ba2b7b525e50541929b6f1f10765480",
+          "bytes": 8772,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d8bef00f08085941f85b96b9bb8b71414ba2b7b525e50541929b6f1f10765480.wgsl"
+        },
+        {
+          "name": "graph-2-3.wgsl",
+          "sha256": "96021a3974fdec96cfa251e03e2fa46b5c1f9d5fe5795a0f4f0df96a1b88f7da",
+          "bytes": 8738,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/96021a3974fdec96cfa251e03e2fa46b5c1f9d5fe5795a0f4f0df96a1b88f7da.wgsl"
+        },
+        {
+          "name": "graph-3-0.wgsl",
+          "sha256": "5dbfd185a04971bc8ad7b09184e53b735e49aab1cf0778b57bbdec8cb6086e7a",
+          "bytes": 8940,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/5dbfd185a04971bc8ad7b09184e53b735e49aab1cf0778b57bbdec8cb6086e7a.wgsl"
+        },
+        {
+          "name": "graph-3-1.wgsl",
+          "sha256": "95a7fa5ef39b89029de41fefba73f03c251e024e56fbb25f4003b62864389b8c",
+          "bytes": 10777,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/95a7fa5ef39b89029de41fefba73f03c251e024e56fbb25f4003b62864389b8c.wgsl"
+        },
+        {
+          "name": "graph-4-0.wgsl",
+          "sha256": "b7051902e1c227add9acd029fe07d42573e0e9966465eb243093d026ec7e3b00",
+          "bytes": 8760,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b7051902e1c227add9acd029fe07d42573e0e9966465eb243093d026ec7e3b00.wgsl"
+        },
+        {
+          "name": "graph-4-1.wgsl",
+          "sha256": "62bfcccb7e29444d6668aead9f93df2b4c8c91f2a2ffd653867f08abc1241ecb",
+          "bytes": 8760,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/62bfcccb7e29444d6668aead9f93df2b4c8c91f2a2ffd653867f08abc1241ecb.wgsl"
+        },
+        {
+          "name": "graph-4-2.wgsl",
+          "sha256": "1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b",
+          "bytes": 8807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b.wgsl"
+        },
+        {
+          "name": "graph-4-3.wgsl",
+          "sha256": "1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b",
+          "bytes": 8807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b.wgsl"
+        },
+        {
+          "name": "graph-4-4.wgsl",
+          "sha256": "714b5e5a1b24e00fd5776c01ce946ecf5a51d6c7efe771f6fcba8d758c346570",
+          "bytes": 9599,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/714b5e5a1b24e00fd5776c01ce946ecf5a51d6c7efe771f6fcba8d758c346570.wgsl"
+        },
+        {
+          "name": "graph-4-5.wgsl",
+          "sha256": "6fcba5be9554f27a8189e2eaf5803910f02f7f0b81fedad9e074364f92e8200b",
+          "bytes": 8936,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6fcba5be9554f27a8189e2eaf5803910f02f7f0b81fedad9e074364f92e8200b.wgsl"
+        },
+        {
+          "name": "graph-5-0.wgsl",
+          "sha256": "6ebc0aff5d4d8fb7621e30a1e5749d0ade605fdc25db6866fd4acce98400c8eb",
+          "bytes": 10166,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6ebc0aff5d4d8fb7621e30a1e5749d0ade605fdc25db6866fd4acce98400c8eb.wgsl"
+        },
+        {
+          "name": "graph-6-0.wgsl",
+          "sha256": "b8ceb3ac49a1c1e86bbff39bad9b5ee82c4b0aaa60b2c53a4eb4a5861eae4f85",
+          "bytes": 9116,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b8ceb3ac49a1c1e86bbff39bad9b5ee82c4b0aaa60b2c53a4eb4a5861eae4f85.wgsl"
+        },
+        {
+          "name": "graph-6-1.wgsl",
+          "sha256": "8f893925b5872d6f8d1189268158e0830590d8f3464e3ff0e0b37efb8ca6f2ac",
+          "bytes": 8687,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/8f893925b5872d6f8d1189268158e0830590d8f3464e3ff0e0b37efb8ca6f2ac.wgsl"
+        },
+        {
+          "name": "graph-7-0.wgsl",
+          "sha256": "7848af5c737059ca0d40fd2512a6e301d2ee1923ccb8bc9f3d75fcb5cd7d1494",
+          "bytes": 9240,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7848af5c737059ca0d40fd2512a6e301d2ee1923ccb8bc9f3d75fcb5cd7d1494.wgsl"
+        },
+        {
+          "name": "graph-8-0.wgsl",
+          "sha256": "0af007f8d03d02228593f89716643ff63bd3d65b285da8c9d9bf0c7fa47c1b03",
+          "bytes": 9072,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/0af007f8d03d02228593f89716643ff63bd3d65b285da8c9d9bf0c7fa47c1b03.wgsl"
+        },
+        {
+          "name": "ink-abi.mjs",
+          "sha256": "c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d",
+          "bytes": 15773,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d.mjs"
+        },
+        {
+          "name": "ink-device.mjs",
+          "sha256": "21d76d0742970670ecea83b122cd4e071f747b3a0c2d39616be4c19b55853b13",
+          "bytes": 34689,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/21d76d0742970670ecea83b122cd4e071f747b3a0c2d39616be4c19b55853b13.mjs"
+        },
+        {
+          "name": "ink-gpu.mjs",
+          "sha256": "d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc",
+          "bytes": 46856,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc.mjs"
+        },
+        {
+          "name": "ink-selection.mjs",
+          "sha256": "bbd63dfd959c06658dde1f5da743af125e5394171202e865a07de7826166afd5",
+          "bytes": 1148,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/bbd63dfd959c06658dde1f5da743af125e5394171202e865a07de7826166afd5.mjs"
+        },
+        {
+          "name": "ink-selection.wasm",
+          "sha256": "1597f63e25b60e0b0b92486c5b370a01f3828603a47149efe9f953099bb1e6b0",
+          "bytes": 554195
+        },
+        {
+          "name": "manifest.after.json",
+          "sha256": "b0b43a06deb1786f0b1d81244bf6716550a96edae9482210a32f781c49e9b006",
+          "bytes": 58076,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/b0b43a06deb1786f0b1d81244bf6716550a96edae9482210a32f781c49e9b006.json"
+        },
+        {
+          "name": "manifest.before.json",
+          "sha256": "8a24226ea7cb923d16aff0099d62f71241981a8421350931a160ffad1a6278f3",
+          "bytes": 58076,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/8a24226ea7cb923d16aff0099d62f71241981a8421350931a160ffad1a6278f3.json"
+        },
+        {
+          "name": "manifest.control.json",
+          "sha256": "227036a1643d44386b66762de3b849870bd5dc326c36d000ada5e9095d4076ec",
+          "bytes": 58076,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/227036a1643d44386b66762de3b849870bd5dc326c36d000ada5e9095d4076ec.json"
+        },
+        {
+          "name": "manifest.json",
+          "sha256": "08868f698558659cf7cf688f69fa3638ff3d4fe492996f37f469859a165ab9ff",
+          "bytes": 58075,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/08868f698558659cf7cf688f69fa3638ff3d4fe492996f37f469859a165ab9ff.json"
+        },
+        {
+          "name": "pipeline-contract.mjs",
+          "sha256": "40c347af629cf19ceb35a197343bfa0057daa54fe618e47ac784e0e2b59b63a5",
+          "bytes": 3264,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/40c347af629cf19ceb35a197343bfa0057daa54fe618e47ac784e0e2b59b63a5.mjs"
+        },
+        {
+          "name": "pipeline-profile.mjs",
+          "sha256": "6e302b624979c317a47d2413d84b9ebfc4ea9ffffe756d45cf82a51f2d101cfe",
+          "bytes": 5457,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/6e302b624979c317a47d2413d84b9ebfc4ea9ffffe756d45cf82a51f2d101cfe.mjs"
+        },
+        {
+          "name": "pipeline-selection.mjs",
+          "sha256": "7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0",
+          "bytes": 10114,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0.mjs"
+        },
+        {
+          "name": "pipeline-worker.mjs",
+          "sha256": "eb7609cd6751c276f7edb1c9b56aec08b6d15ee955917362b174db9516d77336",
+          "bytes": 884,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/eb7609cd6751c276f7edb1c9b56aec08b6d15ee955917362b174db9516d77336.mjs"
+        },
+        {
+          "name": "pipeline-workers.mjs",
+          "sha256": "ce2acfcfb75d6c8c6c5ae4e03727ffa3a1a6160782f691ae9dd6449655119430",
+          "bytes": 2829,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/ce2acfcfb75d6c8c6c5ae4e03727ffa3a1a6160782f691ae9dd6449655119430.mjs"
+        },
+        {
+          "name": "plan.json",
+          "sha256": "54a9ba2e7ad692bbd50ff2e908beac15290cd76470d47b027f20bcdc2eeb2f4c",
+          "bytes": 644,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/54a9ba2e7ad692bbd50ff2e908beac15290cd76470d47b027f20bcdc2eeb2f4c.json"
+        },
+        {
+          "name": "prepared-wasm.mjs",
+          "sha256": "cfd128e081b2fab9c35012878255af7f79a7720427c7b94363b0112d67289f06",
+          "bytes": 1788,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/cfd128e081b2fab9c35012878255af7f79a7720427c7b94363b0112d67289f06.mjs"
+        },
+        {
+          "name": "program.mjs",
+          "sha256": "a5d93f99660f2428e1048e3baf547b56b47209c3cc9f54f45b265133cba5c87a",
+          "bytes": 197813,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/a5d93f99660f2428e1048e3baf547b56b47209c3cc9f54f45b265133cba5c87a.mjs"
+        },
+        {
+          "name": "usage-profile.mjs",
+          "sha256": "42087f6de268e704be5851654945f27c05bbd392930dd4a69045f6a5e34736bb",
+          "bytes": 2807,
+          "artifact": "artifacts/generalization/typed-input/compiled/objects/42087f6de268e704be5851654945f27c05bbd392930dd4a69045f6a5e34736bb.mjs"
+        }
+      ],
+      "source": {
+        "path": "artifacts/generalization/typed-input/sources/unseen-weighted.ink",
+        "sha256": "daace6eb7720584505189bf27e09f935ce73bf7333b69bcd7c954e6b32d57982"
+      }
+    }
+  ],
+  "measured_abi_sha256": "c5a1863bfc8fc82b2c191a11a02a204e5045dcb1cc370e1de7427df321d2c13d",
+  "measured_runtime_host_sha256": "d29ef2aefb82c67f3f72f6cf8719f7803eee7d951e5ecdd4bc7b46df87bc59cc"
+}

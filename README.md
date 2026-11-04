@@ -220,6 +220,16 @@ be imported for CPU targets without fitting the GPU budget; vocabulary expansion
 may increase their effective table size. GPU sessions default to at most 4096
 tokens per document; `build_model.py --max-tokens N` changes the explicit bound.
 
+## Typed input preparation
+
+The shared Ink ABI/runtime also has a separate
+[typed-input transport study](results/generalization/typed-input/REPORT.md).
+Public Potion 2M batch-16 ready-session setup fell from **27.6 ms to 4.4 ms
+(6.27×)** through direct validated typed-float transport. This is an Ink runtime
+setup benefit, not a 7× embedding inference claim. Warm inference showed no
+established comparable gain; the report retains small-input regressions and
+unchanged mixed-record controls alongside the gains.
+
 ## Packed-row JavaScript
 
 After importing a schema-2 model, build the optional readable row layout using

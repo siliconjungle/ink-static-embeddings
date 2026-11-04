@@ -1,0 +1,2197 @@
+{
+  "abi": "packed little-endian 32-bit lanes; GPU lists carry a length header; records in declaration order; vectors unpadded",
+  "backend": "webgpu-wgpu-v2",
+  "collection_strategy": "parallel graph schedules for integer scan, sum and radix sort, stable filter and concat; other stages retain literal source order; profitability must be measured",
+  "core_semantics": "ink-executable-core-v11",
+  "core_sha256": "4edfabcb4631e2eb97f6cd7e6b46137d7f7c3ea810d112aacd31ad9d0199deb6",
+  "cpu_rust_sha256": "d224a01f547025a9539de69e95d67c37820ed345b97f86dfb831c12971f43f0f",
+  "destination_abi": {
+    "aliasing": "destination-disjoint-from-all-reachable-inputs",
+    "alignment": 8,
+    "capacity": "trusted",
+    "count": "words32",
+    "name": "ink-packed-into-v1",
+    "ownership": "caller-owned",
+    "prepared_instance": "exclusive",
+    "scratch_lifetime": "call-mark-rewind",
+    "symbol": "ink_compute_into"
+  },
+  "float_contract": "integer-lane binary32; round-to-nearest ties-to-even, gradual underflow, signed zero, source operation order and canonical arithmetic NaN; pass-through/negation retain payload bits",
+  "functions": [
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 7
+            },
+            "id": 0,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-0.wgsl",
+            "workgroup_size": 64
+          }
+        ],
+        "output": {
+          "node": 0
+        },
+        "result": {
+          "element": {
+            "kind": "u32"
+          },
+          "kind": "list"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": true,
+      "index": 0,
+      "lengths": [],
+      "name": "coordinates",
+      "params": [],
+      "precondition": null,
+      "result": {
+        "element": {
+          "kind": "u32"
+        },
+        "kind": "list"
+      },
+      "shader": null
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              },
+              {
+                "kind": "u32"
+              }
+            ],
+            "args": [
+              {
+                "param": 0
+              },
+              {
+                "param": 1
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 0,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "f32"
+            },
+            "shader": "graph-1-0.wgsl",
+            "workgroup_size": 1
+          }
+        ],
+        "output": {
+          "node": 0
+        },
+        "result": {
+          "kind": "f32"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": true,
+      "index": 1,
+      "lengths": [],
+      "name": "lookup",
+      "params": [
+        {
+          "name": "weights",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "position",
+          "type": {
+            "kind": "u32"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "kind": "f32"
+      },
+      "shader": null
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "kind": "u32"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "param": 2
+              },
+              {
+                "param": 1
+              },
+              {
+                "param": 0
+              }
+            ],
+            "capacity": {
+              "args": [
+                1
+              ],
+              "kind": "same"
+            },
+            "id": 0,
+            "op": "map",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-2-0.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 1,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "f32"
+            },
+            "shader": "graph-2-1.wgsl",
+            "workgroup_size": 1
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              },
+              {
+                "kind": "f32"
+              }
+            ],
+            "args": [
+              {
+                "node": 0
+              },
+              {
+                "node": 1
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 2,
+            "op": "foldl",
+            "ordered": true,
+            "result": {
+              "kind": "f32"
+            },
+            "shader": "graph-2-2.wgsl",
+            "workgroup_size": 1
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "kind": "f32"
+              }
+            ],
+            "args": [
+              {
+                "param": 1
+              },
+              {
+                "node": 2
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 3,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "f32"
+            },
+            "shader": "graph-2-3.wgsl",
+            "workgroup_size": 1
+          }
+        ],
+        "output": {
+          "node": 3
+        },
+        "result": {
+          "kind": "f32"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": true,
+      "index": 2,
+      "lengths": [],
+      "name": "coordinate",
+      "params": [
+        {
+          "name": "weights",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "ids",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "dimension",
+          "type": {
+            "kind": "u32"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "kind": "f32"
+      },
+      "shader": null
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 7
+            },
+            "id": 0,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-0.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 0
+              },
+              {
+                "param": 1
+              },
+              {
+                "param": 0
+              }
+            ],
+            "capacity": {
+              "args": [
+                0
+              ],
+              "kind": "max"
+            },
+            "id": 1,
+            "op": "literal",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-1.wgsl",
+            "workgroup_size": 64
+          }
+        ],
+        "output": {
+          "node": 1
+        },
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": true,
+      "index": 3,
+      "lengths": [],
+      "name": "encode",
+      "params": [
+        {
+          "name": "weights",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "ids",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "element": {
+          "kind": "f32"
+        },
+        "kind": "list"
+      },
+      "shader": null
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "kind": "u32"
+              }
+            ],
+            "args": [
+              {
+                "param": 4
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 0,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "u32"
+            },
+            "shader": "graph-4-0.wgsl",
+            "workgroup_size": 1
+          },
+          {
+            "arg_types": [
+              {
+                "kind": "u32"
+              }
+            ],
+            "args": [
+              {
+                "param": 4
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 1,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "u32"
+            },
+            "shader": "graph-4-1.wgsl",
+            "workgroup_size": 1
+          },
+          {
+            "arg_types": [
+              {
+                "kind": "u32"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 0
+              },
+              {
+                "param": 3
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 2,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "u32"
+            },
+            "shader": "graph-4-2.wgsl",
+            "workgroup_size": 1
+          },
+          {
+            "arg_types": [
+              {
+                "kind": "u32"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 0
+              },
+              {
+                "param": 2
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 3,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "u32"
+            },
+            "shader": "graph-4-3.wgsl",
+            "workgroup_size": 1
+          },
+          {
+            "arg_types": [
+              {
+                "kind": "u32"
+              },
+              {
+                "kind": "u32"
+              },
+              {
+                "kind": "u32"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 2
+              },
+              {
+                "node": 1
+              },
+              {
+                "node": 3
+              },
+              {
+                "param": 1
+              },
+              {
+                "param": 0
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 4,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "fields": [
+                {
+                  "name": "index",
+                  "type": {
+                    "kind": "u32"
+                  }
+                },
+                {
+                  "name": "total",
+                  "type": {
+                    "kind": "f32"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "Accumulator"
+            },
+            "shader": "graph-4-4.wgsl",
+            "workgroup_size": 1
+          },
+          {
+            "arg_types": [
+              {
+                "fields": [
+                  {
+                    "name": "index",
+                    "type": {
+                      "kind": "u32"
+                    }
+                  },
+                  {
+                    "name": "total",
+                    "type": {
+                      "kind": "f32"
+                    }
+                  }
+                ],
+                "kind": "record",
+                "name": "Accumulator"
+              },
+              {
+                "kind": "u32"
+              }
+            ],
+            "args": [
+              {
+                "node": 4
+              },
+              {
+                "node": 2
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 5,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "f32"
+            },
+            "shader": "graph-4-5.wgsl",
+            "workgroup_size": 1
+          }
+        ],
+        "output": {
+          "node": 5
+        },
+        "result": {
+          "kind": "f32"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": true,
+      "index": 4,
+      "lengths": [],
+      "name": "pool_one",
+      "params": [
+        {
+          "name": "weights",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "tokens",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "starts",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "lengths",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "position",
+          "type": {
+            "kind": "u32"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "kind": "f32"
+      },
+      "shader": null
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "param": 4
+              },
+              {
+                "param": 3
+              },
+              {
+                "param": 2
+              },
+              {
+                "param": 1
+              },
+              {
+                "param": 0
+              }
+            ],
+            "capacity": {
+              "args": [
+                0
+              ],
+              "kind": "same"
+            },
+            "id": 0,
+            "op": "map",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-5-0.wgsl",
+            "workgroup_size": 64
+          }
+        ],
+        "output": {
+          "node": 0
+        },
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": false,
+      "index": 5,
+      "lengths": [
+        4
+      ],
+      "name": "pool_batch",
+      "params": [
+        {
+          "name": "weights",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "tokens",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "starts",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "lengths",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "positions",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "element": {
+          "kind": "f32"
+        },
+        "kind": "list"
+      },
+      "shader": "compute-5.wgsl"
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "kind": "u32"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "param": 1
+              },
+              {
+                "param": 0
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 0,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "f32"
+            },
+            "shader": "graph-6-0.wgsl",
+            "workgroup_size": 1
+          },
+          {
+            "arg_types": [
+              {
+                "kind": "f32"
+              }
+            ],
+            "args": [
+              {
+                "node": 0
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 1,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "f32"
+            },
+            "shader": "graph-6-1.wgsl",
+            "workgroup_size": 1
+          }
+        ],
+        "output": {
+          "node": 1
+        },
+        "result": {
+          "kind": "f32"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": true,
+      "index": 6,
+      "lengths": [],
+      "name": "norm_one",
+      "params": [
+        {
+          "name": "means",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "document",
+          "type": {
+            "kind": "u32"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "kind": "f32"
+      },
+      "shader": null
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "param": 1
+              },
+              {
+                "param": 0
+              }
+            ],
+            "capacity": {
+              "args": [
+                0
+              ],
+              "kind": "same"
+            },
+            "id": 0,
+            "op": "map",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-7-0.wgsl",
+            "workgroup_size": 64
+          }
+        ],
+        "output": {
+          "node": 0
+        },
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": false,
+      "index": 7,
+      "lengths": [
+        1
+      ],
+      "name": "norm_batch",
+      "params": [
+        {
+          "name": "means",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "documents",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "element": {
+          "kind": "f32"
+        },
+        "kind": "list"
+      },
+      "shader": "compute-7.wgsl"
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "param": 2
+              },
+              {
+                "param": 0
+              },
+              {
+                "param": 1
+              }
+            ],
+            "capacity": {
+              "args": [
+                0
+              ],
+              "kind": "same"
+            },
+            "id": 0,
+            "op": "map",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-8-0.wgsl",
+            "workgroup_size": 64
+          }
+        ],
+        "output": {
+          "node": 0
+        },
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": false,
+      "index": 8,
+      "lengths": [
+        2
+      ],
+      "name": "normalize_batch",
+      "params": [
+        {
+          "name": "means",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "norms",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "positions",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "element": {
+          "kind": "f32"
+        },
+        "kind": "list"
+      },
+      "shader": "compute-8.wgsl"
+    }
+  ],
+  "gpu_list_abi": "ink-gpu-list-v3",
+  "javascript": {
+    "abi": "ink-javascript-trusted-values-v2",
+    "backend": "javascript",
+    "caller_contract": "trusted, well-typed target-native values; no input validation, snapshot capture or host resource budgets",
+    "core_semantics": "ink-executable-core-v11",
+    "core_sha256": "4edfabcb4631e2eb97f6cd7e6b46137d7f7c3ea810d112aacd31ad9d0199deb6",
+    "destination_abi": {
+      "aliasing": "destination-disjoint-from-all-reachable-inputs",
+      "capacity": "trusted",
+      "count_unit": "elements",
+      "name": "ink-javascript-into-v1",
+      "ownership": "caller-owned",
+      "tail": "unwritten"
+    },
+    "f32_computation": "native-number-with-exact-nonfinite-tags",
+    "f32_storage": "native-number-with-exact-nonfinite-tags",
+    "functions": [
+      {
+        "destination": {
+          "abi": "ink-javascript-into-v1",
+          "count_unit": "elements",
+          "ownership": "caller-owned"
+        },
+        "index": 0,
+        "internal": false,
+        "name": "coordinates",
+        "parallel": false,
+        "params": [],
+        "precondition": null,
+        "result": {
+          "element": {
+            "kind": "u32"
+          },
+          "kind": "list"
+        }
+      },
+      {
+        "destination": null,
+        "index": 1,
+        "internal": false,
+        "name": "lookup",
+        "parallel": false,
+        "params": [
+          {
+            "name": "weights",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "position",
+            "type": {
+              "kind": "u32"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "kind": "f32"
+        }
+      },
+      {
+        "destination": null,
+        "index": 2,
+        "internal": false,
+        "name": "coordinate",
+        "parallel": false,
+        "params": [
+          {
+            "name": "weights",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "ids",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "dimension",
+            "type": {
+              "kind": "u32"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "kind": "f32"
+        }
+      },
+      {
+        "destination": {
+          "abi": "ink-javascript-into-v1",
+          "count_unit": "elements",
+          "ownership": "caller-owned"
+        },
+        "index": 3,
+        "internal": false,
+        "name": "encode",
+        "parallel": false,
+        "params": [
+          {
+            "name": "weights",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "ids",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        }
+      },
+      {
+        "destination": null,
+        "index": 4,
+        "internal": false,
+        "name": "pool_one",
+        "parallel": false,
+        "params": [
+          {
+            "name": "weights",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "tokens",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "starts",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "lengths",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "position",
+            "type": {
+              "kind": "u32"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "kind": "f32"
+        }
+      },
+      {
+        "destination": {
+          "abi": "ink-javascript-into-v1",
+          "count_unit": "elements",
+          "ownership": "caller-owned"
+        },
+        "index": 5,
+        "internal": false,
+        "name": "pool_batch",
+        "parallel": false,
+        "params": [
+          {
+            "name": "weights",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "tokens",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "starts",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "lengths",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "positions",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        }
+      },
+      {
+        "destination": null,
+        "index": 6,
+        "internal": false,
+        "name": "norm_one",
+        "parallel": false,
+        "params": [
+          {
+            "name": "means",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "document",
+            "type": {
+              "kind": "u32"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "kind": "f32"
+        }
+      },
+      {
+        "destination": {
+          "abi": "ink-javascript-into-v1",
+          "count_unit": "elements",
+          "ownership": "caller-owned"
+        },
+        "index": 7,
+        "internal": false,
+        "name": "norm_batch",
+        "parallel": false,
+        "params": [
+          {
+            "name": "means",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "documents",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        }
+      },
+      {
+        "destination": {
+          "abi": "ink-javascript-into-v1",
+          "count_unit": "elements",
+          "ownership": "caller-owned"
+        },
+        "index": 8,
+        "internal": false,
+        "name": "normalize_batch",
+        "parallel": false,
+        "params": [
+          {
+            "name": "means",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "norms",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "positions",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        }
+      }
+    ],
+    "javascript_sha256": "a5d93f99660f2428e1048e3baf547b56b47209c3cc9f54f45b265133cba5c87a",
+    "named_types": {
+      "Accumulator": {
+        "fields": [
+          {
+            "name": "index",
+            "type": {
+              "kind": "u32"
+            }
+          },
+          {
+            "name": "total",
+            "type": {
+              "kind": "f32"
+            }
+          }
+        ],
+        "kind": "record",
+        "name": "Accumulator"
+      }
+    },
+    "owned_result_contract": {
+      "functions": 9,
+      "inputs": "same trusted caller contract",
+      "results": "canonical detached values with ABI byte/node/depth limits",
+      "unsupported": []
+    },
+    "prepared_compiled": {
+      "destination": {
+        "call": "callPreparedCompiledInto",
+        "capacity": "trusted",
+        "failure": "destination may be partially written",
+        "float_values": "trusted public representation",
+        "inputs": "sealed compiled values",
+        "ownership": "caller-owned",
+        "structured_elements": "detached",
+        "tail": "unwritten"
+      },
+      "evaluation": "lazy source-order; successful bindings only",
+      "functions": [
+        {
+          "factory": false,
+          "function": "coordinates",
+          "reason": "no reusable captured work"
+        },
+        {
+          "factory": false,
+          "function": "lookup",
+          "reason": "no reusable captured work"
+        },
+        {
+          "delegated_calls": 0,
+          "factory": true,
+          "function": "coordinate",
+          "retained_bindings": 1
+        },
+        {
+          "delegated_calls": 0,
+          "factory": true,
+          "function": "encode",
+          "retained_bindings": 2
+        },
+        {
+          "delegated_calls": 0,
+          "factory": true,
+          "function": "pool_one",
+          "retained_bindings": 1
+        },
+        {
+          "factory": false,
+          "function": "pool_batch",
+          "reason": "no reusable captured work"
+        },
+        {
+          "factory": false,
+          "function": "norm_one",
+          "reason": "no reusable captured work"
+        },
+        {
+          "factory": false,
+          "function": "norm_batch",
+          "reason": "no reusable captured work"
+        },
+        {
+          "factory": false,
+          "function": "normalize_batch",
+          "reason": "no reusable captured work"
+        }
+      ],
+      "lifetime": "prepared token",
+      "semantics": "sealed-value-residual-v1"
+    },
+    "private_record_elisions": [],
+    "private_sum_spines": [],
+    "schema": 1,
+    "scope": "trusted pure functions and temporary collections; state/actions with portable snapshots and ordered transaction events",
+    "state": null,
+    "trusted": [
+      "Ink checker and source correspondence",
+      "JavaScript emitter and representation conversion",
+      "JavaScript engine and host"
+    ],
+    "wire": {
+      "format": "ink-value-wire-v1",
+      "functions": {
+        "coordinate": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "5db5d7579dcfaf2743aec51d57b838fad45c3640904b8d397db6ea18f95a6d20",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "weights",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "ids",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "dimension",
+                  "type": {
+                    "kind": "u32"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "fde3b27ba939906c22dbea906c407580e89648dd4d5a55c4f4001e45157ebe45",
+            "named": {},
+            "root": {
+              "kind": "f32"
+            }
+          }
+        },
+        "coordinates": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "3720cf83cb9a672c0c70e7f80cfe0abe0bf9b7df73d40a9def0c7436234026b2",
+            "named": {},
+            "root": {
+              "fields": [],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "69ebf947aa59a2546656d1976b0baa6e56e7182d989425379b31e3bff74168ca",
+            "named": {},
+            "root": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          }
+        },
+        "encode": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "52f976941e79f0070d35cc31ade4645a48d4b845dc29ce0f3580aea8b22af5c7",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "weights",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "ids",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "0cbb9d1ff6b72318080ea11a6297b384d97178624f821e3901cca51ec8ad4477",
+            "named": {},
+            "root": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          }
+        },
+        "lookup": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "5d9cf4151df36b52a5113a37cc9f3e07a1338831f163bddcaacbaa2df6a26c23",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "weights",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "position",
+                  "type": {
+                    "kind": "u32"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "fde3b27ba939906c22dbea906c407580e89648dd4d5a55c4f4001e45157ebe45",
+            "named": {},
+            "root": {
+              "kind": "f32"
+            }
+          }
+        },
+        "norm_batch": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "4006eec9db14c303ad8be89dfcadb07733365c43ff2c45b768284691991378c0",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "means",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "documents",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "0cbb9d1ff6b72318080ea11a6297b384d97178624f821e3901cca51ec8ad4477",
+            "named": {},
+            "root": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          }
+        },
+        "norm_one": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "a2747c9fc9074f532462d28a925c3e2c609c8aff9c933eef98e99344cd2e8dea",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "means",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "document",
+                  "type": {
+                    "kind": "u32"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "fde3b27ba939906c22dbea906c407580e89648dd4d5a55c4f4001e45157ebe45",
+            "named": {},
+            "root": {
+              "kind": "f32"
+            }
+          }
+        },
+        "normalize_batch": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "37ed4d2bc0c73b6b901739518e77cc9a32bf42a5cea9a5a22b322cbdd77bd413",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "means",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "norms",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "positions",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "0cbb9d1ff6b72318080ea11a6297b384d97178624f821e3901cca51ec8ad4477",
+            "named": {},
+            "root": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          }
+        },
+        "pool_batch": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "ddadf6beffbc9045b63cea0bfff0074a68c141bf796b482f13238a0b95e88217",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "weights",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "tokens",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "starts",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "lengths",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "positions",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "0cbb9d1ff6b72318080ea11a6297b384d97178624f821e3901cca51ec8ad4477",
+            "named": {},
+            "root": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          }
+        },
+        "pool_one": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "b9388922ac8bca163fda433f9b68e33ab6dbca5368e0041959f1760ef1d65d60",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "weights",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "tokens",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "starts",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "lengths",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "position",
+                  "type": {
+                    "kind": "u32"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "fde3b27ba939906c22dbea906c407580e89648dd4d5a55c4f4001e45157ebe45",
+            "named": {},
+            "root": {
+              "kind": "f32"
+            }
+          }
+        }
+      }
+    }
+  },
+  "javascript_sha256": "a5d93f99660f2428e1048e3baf547b56b47209c3cc9f54f45b265133cba5c87a",
+  "pipeline_planner_sha256": "7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0",
+  "proof_claim": "no backend correctness proof or optimisation theorem; saved profiles estimate profitability only",
+  "runtime_abi": "ink-packed-pipeline-v2",
+  "runtime_host_sha256": "4f914c07ad9a9a8a9b88117c858b445c83ead3433d445a1760e00a30c393cebe",
+  "schema": 2,
+  "shaders": {
+    "compute-5.wgsl": "d9dbc5b6ecc6911619d98f33af0ad4ceecba3d39acbe45a8c0641caf94835be7",
+    "compute-7.wgsl": "6ebdf0a1f80e914820368951c7f12b446679a9d8350f29f7e2f1a49aba49a3c7",
+    "compute-8.wgsl": "63927857257b58522cbd3c1cdea0f52a33911fb516e0c27260081245e1a03eae",
+    "graph-0-0.wgsl": "5dbfd185a04971bc8ad7b09184e53b735e49aab1cf0778b57bbdec8cb6086e7a",
+    "graph-1-0.wgsl": "02dcf2066d99db642c9a5d839a41e58dcd4506b841778893cb8897ea574a1a1d",
+    "graph-2-0.wgsl": "6301d1311c51e90f4dd6bf084e0234a7b7bcf0dc2c5785151e6c3908d9567574",
+    "graph-2-1.wgsl": "299fb1e250748528a8e1252e25d0ab1e30dd94ab8774563ffa7dc6094d6d3d82",
+    "graph-2-2.wgsl": "d8bef00f08085941f85b96b9bb8b71414ba2b7b525e50541929b6f1f10765480",
+    "graph-2-3.wgsl": "96021a3974fdec96cfa251e03e2fa46b5c1f9d5fe5795a0f4f0df96a1b88f7da",
+    "graph-3-0.wgsl": "5dbfd185a04971bc8ad7b09184e53b735e49aab1cf0778b57bbdec8cb6086e7a",
+    "graph-3-1.wgsl": "95a7fa5ef39b89029de41fefba73f03c251e024e56fbb25f4003b62864389b8c",
+    "graph-4-0.wgsl": "b7051902e1c227add9acd029fe07d42573e0e9966465eb243093d026ec7e3b00",
+    "graph-4-1.wgsl": "62bfcccb7e29444d6668aead9f93df2b4c8c91f2a2ffd653867f08abc1241ecb",
+    "graph-4-2.wgsl": "1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b",
+    "graph-4-3.wgsl": "1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b",
+    "graph-4-4.wgsl": "714b5e5a1b24e00fd5776c01ce946ecf5a51d6c7efe771f6fcba8d758c346570",
+    "graph-4-5.wgsl": "6fcba5be9554f27a8189e2eaf5803910f02f7f0b81fedad9e074364f92e8200b",
+    "graph-5-0.wgsl": "6ebc0aff5d4d8fb7621e30a1e5749d0ade605fdc25db6866fd4acce98400c8eb",
+    "graph-6-0.wgsl": "b8ceb3ac49a1c1e86bbff39bad9b5ee82c4b0aaa60b2c53a4eb4a5861eae4f85",
+    "graph-6-1.wgsl": "8f893925b5872d6f8d1189268158e0830590d8f3464e3ff0e0b37efb8ca6f2ac",
+    "graph-7-0.wgsl": "7848af5c737059ca0d40fd2512a6e301d2ee1923ccb8bc9f3d75fcb5cd7d1494",
+    "graph-8-0.wgsl": "0af007f8d03d02228593f89716643ff63bd3d65b285da8c9d9bf0c7fa47c1b03"
+  },
+  "trust": [
+    "type checker",
+    "literal C and WGSL lowering",
+    "packed ABI and host pipeline execution",
+    "C/LLVM, WebGPU/wgpu and drivers"
+  ]
+}

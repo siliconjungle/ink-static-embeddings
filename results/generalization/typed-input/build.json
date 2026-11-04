@@ -1,0 +1,53 @@
+{
+  "compiler_sha256": "c533301369f5f04452ee6f4bca64da5a7ee5a914b7b580c36f1bed78b3c67a5b",
+  "programs": [
+    {
+      "name": "matrix-columns",
+      "source": "experiments/generalization/sources/matrix-columns.ink",
+      "source_sha256": "57e5d5293110b45ed29c01164c759d638b1c0b0c06e9ba2cd0f14a030abc8056",
+      "manifest_sha256": "c5e82b756162737e74253644932ca78f44b3dd2eed8b25eade8c58f0e476d94c"
+    },
+    {
+      "name": "filter-bank",
+      "source": "experiments/generalization/sources/filter-bank.ink",
+      "source_sha256": "615de2a4e5e9f922be14c794f6de8cb9cedc1afa3365e9875e99d78398ebbd98",
+      "manifest_sha256": "8f3872ddf7891fb9b12f2b85ff42e397d0713e641891b577ef70691219803fe6"
+    },
+    {
+      "name": "channel-energy",
+      "source": "experiments/generalization/sources/channel-energy.ink",
+      "source_sha256": "0c8e0258e34b6b348b625d8f332b3c8112e34c41d04cc3558095450edc40a876",
+      "manifest_sha256": "6043e20387033f06bf46f68dcd12c703797058e725f8c564843e48cfc926e79b"
+    },
+    {
+      "name": "potion-2m",
+      "source": "build/general/potion-2m/gpu-model.ink",
+      "source_sha256": "a2be2d3d4be34c526eea211290013e3f135a1e8c909cbacc9e415aee690f953f",
+      "manifest_sha256": "82a226ce20aa819e01884642c9756f14c83f83f64e47a40ad275527ae9bae4f7"
+    },
+    {
+      "name": "potion-8m",
+      "source": "build/general/potion-8m/gpu-model.ink",
+      "source_sha256": "7e12aa5c2f1c172a3896030161a428f5549f471c77984817da62415fb718780b",
+      "manifest_sha256": "7b4a0811ad6a80d3000cbcbab2b454dec5b169afa141f54b513130d1e295df40"
+    },
+    {
+      "name": "st-retrieval",
+      "source": "build/general/st-retrieval/gpu-model.ink",
+      "source_sha256": "07699910fff20531f2f591854794d43fe4ad9ae4224dd29f2c340d28044e51f9",
+      "manifest_sha256": "c5436cc9ed9a4833dc04a5ec795a95d0dbe79740e00741d462767c4c1e098731"
+    },
+    {
+      "name": "unseen-weighted",
+      "source": "build/general/unseen-weighted/gpu-model.ink",
+      "source_sha256": "daace6eb7720584505189bf27e09f935ce73bf7333b69bcd7c954e6b32d57982",
+      "manifest_sha256": "08868f698558659cf7cf688f69fa3638ff3d4fe492996f37f469859a165ab9ff"
+    },
+    {
+      "name": "unseen-clamp",
+      "source": "build/general/unseen-clamp/gpu-model.ink",
+      "source_sha256": "0a3027fee6c5f17e53737f1f9540d57586d6d69584c576fed8f277ae1580776c",
+      "manifest_sha256": "7ed090619ea313e043d25fe376045ff05d5b7bbed948ddadc758b419d8880db1"
+    }
+  ]
+}

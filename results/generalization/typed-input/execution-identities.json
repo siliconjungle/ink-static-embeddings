@@ -1,0 +1,74 @@
+[
+  {
+    "name": "channel-energy",
+    "runtime_host_sha256": {
+      "before": "4f914c07ad9a9a8a9b88117c858b445c83ead3433d445a1760e00a30c393cebe",
+      "control": "5bade95ca4ef309017eb09d50e7914e0fd6f0c1e22ef86622cdde2b832b3bbfe",
+      "after": "3d24209d6a4bd27a7696e58f1d2558e6e51e0d1da63caa8882c37c7ccc8195af"
+    },
+    "scope": "Existing ink-complete-call-v2 aggregate binds every host asset, including the exact packed codec. No price is transferable between the two scopes."
+  },
+  {
+    "name": "filter-bank",
+    "runtime_host_sha256": {
+      "before": "4f914c07ad9a9a8a9b88117c858b445c83ead3433d445a1760e00a30c393cebe",
+      "control": "5bade95ca4ef309017eb09d50e7914e0fd6f0c1e22ef86622cdde2b832b3bbfe",
+      "after": "3d24209d6a4bd27a7696e58f1d2558e6e51e0d1da63caa8882c37c7ccc8195af"
+    },
+    "scope": "Existing ink-complete-call-v2 aggregate binds every host asset, including the exact packed codec. No price is transferable between the two scopes."
+  },
+  {
+    "name": "matrix-columns",
+    "runtime_host_sha256": {
+      "before": "4f914c07ad9a9a8a9b88117c858b445c83ead3433d445a1760e00a30c393cebe",
+      "control": "5bade95ca4ef309017eb09d50e7914e0fd6f0c1e22ef86622cdde2b832b3bbfe",
+      "after": "3d24209d6a4bd27a7696e58f1d2558e6e51e0d1da63caa8882c37c7ccc8195af"
+    },
+    "scope": "Existing ink-complete-call-v2 aggregate binds every host asset, including the exact packed codec. No price is transferable between the two scopes."
+  },
+  {
+    "name": "potion-2m",
+    "runtime_host_sha256": {
+      "before": "4f914c07ad9a9a8a9b88117c858b445c83ead3433d445a1760e00a30c393cebe",
+      "control": "5bade95ca4ef309017eb09d50e7914e0fd6f0c1e22ef86622cdde2b832b3bbfe",
+      "after": "3d24209d6a4bd27a7696e58f1d2558e6e51e0d1da63caa8882c37c7ccc8195af"
+    },
+    "scope": "Existing ink-complete-call-v2 aggregate binds every host asset, including the exact packed codec. No price is transferable between the two scopes."
+  },
+  {
+    "name": "potion-8m",
+    "runtime_host_sha256": {
+      "before": "4f914c07ad9a9a8a9b88117c858b445c83ead3433d445a1760e00a30c393cebe",
+      "control": "5bade95ca4ef309017eb09d50e7914e0fd6f0c1e22ef86622cdde2b832b3bbfe",
+      "after": "3d24209d6a4bd27a7696e58f1d2558e6e51e0d1da63caa8882c37c7ccc8195af"
+    },
+    "scope": "Existing ink-complete-call-v2 aggregate binds every host asset, including the exact packed codec. No price is transferable between the two scopes."
+  },
+  {
+    "name": "st-retrieval",
+    "runtime_host_sha256": {
+      "before": "4f914c07ad9a9a8a9b88117c858b445c83ead3433d445a1760e00a30c393cebe",
+      "control": "5bade95ca4ef309017eb09d50e7914e0fd6f0c1e22ef86622cdde2b832b3bbfe",
+      "after": "3d24209d6a4bd27a7696e58f1d2558e6e51e0d1da63caa8882c37c7ccc8195af"
+    },
+    "scope": "Existing ink-complete-call-v2 aggregate binds every host asset, including the exact packed codec. No price is transferable between the two scopes."
+  },
+  {
+    "name": "unseen-clamp",
+    "runtime_host_sha256": {
+      "before": "4f914c07ad9a9a8a9b88117c858b445c83ead3433d445a1760e00a30c393cebe",
+      "control": "5bade95ca4ef309017eb09d50e7914e0fd6f0c1e22ef86622cdde2b832b3bbfe",
+      "after": "3d24209d6a4bd27a7696e58f1d2558e6e51e0d1da63caa8882c37c7ccc8195af"
+    },
+    "scope": "Existing ink-complete-call-v2 aggregate binds every host asset, including the exact packed codec. No price is transferable between the two scopes."
+  },
+  {
+    "name": "unseen-weighted",
+    "runtime_host_sha256": {
+      "before": "4f914c07ad9a9a8a9b88117c858b445c83ead3433d445a1760e00a30c393cebe",
+      "control": "5bade95ca4ef309017eb09d50e7914e0fd6f0c1e22ef86622cdde2b832b3bbfe",
+      "after": "3d24209d6a4bd27a7696e58f1d2558e6e51e0d1da63caa8882c37c7ccc8195af"
+    },
+    "scope": "Existing ink-complete-call-v2 aggregate binds every host asset, including the exact packed codec. No price is transferable between the two scopes."
+  }
+]

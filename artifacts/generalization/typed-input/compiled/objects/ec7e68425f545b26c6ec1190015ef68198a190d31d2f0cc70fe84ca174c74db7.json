@@ -1,0 +1,17 @@
+{
+  "applied_rule_ids": [],
+  "checked_implementation": null,
+  "checked_replacement": null,
+  "checked_source_route": null,
+  "database_closure": null,
+  "database_lock": null,
+  "initial_state": null,
+  "input_core_sha256": "ad41dc34e5325094d581c86256fd65c5e942b104d0ca8fa06c86fcf95e882818",
+  "selected_core_sha256": "ad41dc34e5325094d581c86256fd65c5e942b104d0ca8fa06c86fcf95e882818",
+  "semantic_package": null,
+  "semantic_selection": null,
+  "source": "experiments/generalization/sources/channel-energy.ink",
+  "source_route_equivalence": null,
+  "target": "webgpu",
+  "trust": "GPU backend and physical routing remain trusted; see manifest.json"
+}

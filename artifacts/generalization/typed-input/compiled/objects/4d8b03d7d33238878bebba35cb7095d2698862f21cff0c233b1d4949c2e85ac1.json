@@ -1,0 +1,683 @@
+{
+  "abi": "packed little-endian 32-bit lanes; GPU lists carry a length header; records in declaration order; vectors unpadded",
+  "backend": "webgpu-wgpu-v2",
+  "collection_strategy": "parallel graph schedules for integer scan, sum and radix sort, stable filter and concat; other stages retain literal source order; profitability must be measured",
+  "core_semantics": "ink-executable-core-v11",
+  "core_sha256": "ad41dc34e5325094d581c86256fd65c5e942b104d0ca8fa06c86fcf95e882818",
+  "cpu_rust_sha256": "66d0957b77214c973d32cdfca518e2671daf2702f3063d55cb5faa1ce25a067f",
+  "destination_abi": {
+    "aliasing": "destination-disjoint-from-all-reachable-inputs",
+    "alignment": 8,
+    "capacity": "trusted",
+    "count": "words32",
+    "name": "ink-packed-into-v1",
+    "ownership": "caller-owned",
+    "prepared_instance": "exclusive",
+    "scratch_lifetime": "call-mark-rewind",
+    "symbol": "ink_compute_into"
+  },
+  "float_contract": "integer-lane binary32; round-to-nearest ties-to-even, gradual underflow, signed zero, source operation order and canonical arithmetic NaN; pass-through/negation retain payload bits",
+  "functions": [
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "kind": "u32"
+              },
+              {
+                "fields": [
+                  {
+                    "name": "red",
+                    "type": {
+                      "kind": "f32"
+                    }
+                  },
+                  {
+                    "name": "green",
+                    "type": {
+                      "kind": "f32"
+                    }
+                  },
+                  {
+                    "name": "blue",
+                    "type": {
+                      "kind": "f32"
+                    }
+                  }
+                ],
+                "kind": "record",
+                "name": "Pixel"
+              }
+            ],
+            "args": [
+              {
+                "param": 1
+              },
+              {
+                "param": 0
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 0,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "f32"
+            },
+            "shader": "graph-0-0.wgsl",
+            "workgroup_size": 1
+          }
+        ],
+        "output": {
+          "node": 0
+        },
+        "result": {
+          "kind": "f32"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": true,
+      "index": 0,
+      "lengths": [],
+      "name": "channel",
+      "params": [
+        {
+          "name": "pixel",
+          "type": {
+            "fields": [
+              {
+                "name": "red",
+                "type": {
+                  "kind": "f32"
+                }
+              },
+              {
+                "name": "green",
+                "type": {
+                  "kind": "f32"
+                }
+              },
+              {
+                "name": "blue",
+                "type": {
+                  "kind": "f32"
+                }
+              }
+            ],
+            "kind": "record",
+            "name": "Pixel"
+          }
+        },
+        {
+          "name": "index",
+          "type": {
+            "kind": "u32"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "kind": "f32"
+      },
+      "shader": null
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "fields": [
+                    {
+                      "name": "red",
+                      "type": {
+                        "kind": "f32"
+                      }
+                    },
+                    {
+                      "name": "green",
+                      "type": {
+                        "kind": "f32"
+                      }
+                    },
+                    {
+                      "name": "blue",
+                      "type": {
+                        "kind": "f32"
+                      }
+                    }
+                  ],
+                  "kind": "record",
+                  "name": "Pixel"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "param": 1
+              },
+              {
+                "param": 0
+              }
+            ],
+            "capacity": {
+              "args": [
+                0
+              ],
+              "kind": "same"
+            },
+            "id": 0,
+            "op": "map",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-1-0.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "fields": [
+                    {
+                      "name": "red",
+                      "type": {
+                        "kind": "f32"
+                      }
+                    },
+                    {
+                      "name": "green",
+                      "type": {
+                        "kind": "f32"
+                      }
+                    },
+                    {
+                      "name": "blue",
+                      "type": {
+                        "kind": "f32"
+                      }
+                    }
+                  ],
+                  "kind": "record",
+                  "name": "Pixel"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 0
+              },
+              {
+                "param": 0
+              }
+            ],
+            "capacity": {
+              "args": [
+                0
+              ],
+              "kind": "same"
+            },
+            "id": 1,
+            "op": "map",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-1-1.wgsl",
+            "workgroup_size": 64
+          }
+        ],
+        "output": {
+          "node": 1
+        },
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": false,
+      "index": 1,
+      "lengths": [
+        1
+      ],
+      "name": "run",
+      "params": [
+        {
+          "name": "pixels",
+          "type": {
+            "element": {
+              "fields": [
+                {
+                  "name": "red",
+                  "type": {
+                    "kind": "f32"
+                  }
+                },
+                {
+                  "name": "green",
+                  "type": {
+                    "kind": "f32"
+                  }
+                },
+                {
+                  "name": "blue",
+                  "type": {
+                    "kind": "f32"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "Pixel"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "channels",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "element": {
+          "kind": "f32"
+        },
+        "kind": "list"
+      },
+      "shader": "compute-1.wgsl"
+    }
+  ],
+  "gpu_list_abi": "ink-gpu-list-v3",
+  "javascript": {
+    "abi": "ink-javascript-trusted-values-v2",
+    "backend": "javascript",
+    "caller_contract": "trusted, well-typed target-native values; no input validation, snapshot capture or host resource budgets",
+    "core_semantics": "ink-executable-core-v11",
+    "core_sha256": "ad41dc34e5325094d581c86256fd65c5e942b104d0ca8fa06c86fcf95e882818",
+    "destination_abi": {
+      "aliasing": "destination-disjoint-from-all-reachable-inputs",
+      "capacity": "trusted",
+      "count_unit": "elements",
+      "name": "ink-javascript-into-v1",
+      "ownership": "caller-owned",
+      "tail": "unwritten"
+    },
+    "f32_computation": "native-number-with-exact-nonfinite-tags",
+    "f32_storage": "native-number-with-exact-nonfinite-tags",
+    "functions": [
+      {
+        "destination": null,
+        "index": 0,
+        "internal": false,
+        "name": "channel",
+        "parallel": false,
+        "params": [
+          {
+            "name": "pixel",
+            "type": {
+              "fields": [
+                {
+                  "name": "red",
+                  "type": {
+                    "kind": "f32"
+                  }
+                },
+                {
+                  "name": "green",
+                  "type": {
+                    "kind": "f32"
+                  }
+                },
+                {
+                  "name": "blue",
+                  "type": {
+                    "kind": "f32"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "Pixel"
+            }
+          },
+          {
+            "name": "index",
+            "type": {
+              "kind": "u32"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "kind": "f32"
+        }
+      },
+      {
+        "destination": {
+          "abi": "ink-javascript-into-v1",
+          "count_unit": "elements",
+          "ownership": "caller-owned"
+        },
+        "index": 1,
+        "internal": false,
+        "name": "run",
+        "parallel": false,
+        "params": [
+          {
+            "name": "pixels",
+            "type": {
+              "element": {
+                "fields": [
+                  {
+                    "name": "red",
+                    "type": {
+                      "kind": "f32"
+                    }
+                  },
+                  {
+                    "name": "green",
+                    "type": {
+                      "kind": "f32"
+                    }
+                  },
+                  {
+                    "name": "blue",
+                    "type": {
+                      "kind": "f32"
+                    }
+                  }
+                ],
+                "kind": "record",
+                "name": "Pixel"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "channels",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        }
+      }
+    ],
+    "javascript_sha256": "b072094019f592859bfd6839bf960edc947679c85afd43816d1e248b62031ad0",
+    "named_types": {
+      "Pixel": {
+        "fields": [
+          {
+            "name": "red",
+            "type": {
+              "kind": "f32"
+            }
+          },
+          {
+            "name": "green",
+            "type": {
+              "kind": "f32"
+            }
+          },
+          {
+            "name": "blue",
+            "type": {
+              "kind": "f32"
+            }
+          }
+        ],
+        "kind": "record",
+        "name": "Pixel"
+      }
+    },
+    "owned_result_contract": {
+      "functions": 2,
+      "inputs": "same trusted caller contract",
+      "results": "canonical detached values with ABI byte/node/depth limits",
+      "unsupported": []
+    },
+    "prepared_compiled": {
+      "destination": {
+        "call": "callPreparedCompiledInto",
+        "capacity": "trusted",
+        "failure": "destination may be partially written",
+        "float_values": "trusted public representation",
+        "inputs": "sealed compiled values",
+        "ownership": "caller-owned",
+        "structured_elements": "detached",
+        "tail": "unwritten"
+      },
+      "evaluation": "lazy source-order; successful bindings only",
+      "functions": [
+        {
+          "factory": false,
+          "function": "channel",
+          "reason": "no reusable captured work"
+        },
+        {
+          "delegated_calls": 0,
+          "factory": true,
+          "function": "run",
+          "retained_bindings": 1
+        }
+      ],
+      "lifetime": "prepared token",
+      "semantics": "sealed-value-residual-v1"
+    },
+    "private_record_elisions": [],
+    "private_sum_spines": [],
+    "schema": 1,
+    "scope": "trusted pure functions and temporary collections; state/actions with portable snapshots and ordered transaction events",
+    "state": null,
+    "trusted": [
+      "Ink checker and source correspondence",
+      "JavaScript emitter and representation conversion",
+      "JavaScript engine and host"
+    ],
+    "wire": {
+      "format": "ink-value-wire-v1",
+      "functions": {
+        "channel": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "6e24a0fae0567fb5ca23f6bcec9ce0727f9fe1d2042933f9fcc5bf229387e5b3",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "pixel",
+                  "type": {
+                    "fields": [
+                      {
+                        "name": "red",
+                        "type": {
+                          "kind": "f32"
+                        }
+                      },
+                      {
+                        "name": "green",
+                        "type": {
+                          "kind": "f32"
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "type": {
+                          "kind": "f32"
+                        }
+                      }
+                    ],
+                    "kind": "record",
+                    "name": "Pixel"
+                  }
+                },
+                {
+                  "name": "index",
+                  "type": {
+                    "kind": "u32"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "fde3b27ba939906c22dbea906c407580e89648dd4d5a55c4f4001e45157ebe45",
+            "named": {},
+            "root": {
+              "kind": "f32"
+            }
+          }
+        },
+        "run": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "db7e2248faf7bd3a95529744fa6077828fc8c922eb7466b842150debe1e78eb3",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "pixels",
+                  "type": {
+                    "element": {
+                      "fields": [
+                        {
+                          "name": "red",
+                          "type": {
+                            "kind": "f32"
+                          }
+                        },
+                        {
+                          "name": "green",
+                          "type": {
+                            "kind": "f32"
+                          }
+                        },
+                        {
+                          "name": "blue",
+                          "type": {
+                            "kind": "f32"
+                          }
+                        }
+                      ],
+                      "kind": "record",
+                      "name": "Pixel"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "channels",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "0cbb9d1ff6b72318080ea11a6297b384d97178624f821e3901cca51ec8ad4477",
+            "named": {},
+            "root": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          }
+        }
+      }
+    }
+  },
+  "javascript_sha256": "b072094019f592859bfd6839bf960edc947679c85afd43816d1e248b62031ad0",
+  "pipeline_planner_sha256": "7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0",
+  "proof_claim": "no backend correctness proof or optimisation theorem; saved profiles estimate profitability only",
+  "runtime_abi": "ink-packed-pipeline-v2",
+  "runtime_host_sha256": "5bade95ca4ef309017eb09d50e7914e0fd6f0c1e22ef86622cdde2b832b3bbfe",
+  "schema": 2,
+  "shaders": {
+    "compute-1.wgsl": "173cb76ef750d436d27b8984b8d8562e0f305830616279d18790609d6b8313dc",
+    "graph-0-0.wgsl": "001db43af9b924c7ef78965890dd51d89202294ba3477eef687d38e6b5c526b6",
+    "graph-1-0.wgsl": "4d13a11149abf770b1aefa8136285be7aca40e696bd99690d1c0bd7753e01a1c",
+    "graph-1-1.wgsl": "0ece46de1bf8571f7b41ab3123c4031de2f6492a1d42f1985630c188197b71ac"
+  },
+  "trust": [
+    "type checker",
+    "literal C and WGSL lowering",
+    "packed ABI and host pipeline execution",
+    "C/LLVM, WebGPU/wgpu and drivers"
+  ]
+}

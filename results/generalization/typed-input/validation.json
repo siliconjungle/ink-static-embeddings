@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "measured_core_revision": "e9056193b9cf465bd92dd4bd349e082c0407f520",
+  "integration_core_revision": "6229997ba04f3e00068583e3ca225b88da1373e0",
+  "checks": {
+    "abi_tests": 27,
+    "runtime_rust_tests": 9,
+    "runtime_node_tests": 121,
+    "merged_distribution_gpu_numeric_destination_tests": 26,
+    "project_tests_with_compiler": 26,
+    "hardware_processes": 3,
+    "frozen_workload_cases_per_process": 12,
+    "frozen_workload_outputs": "all bits exact",
+    "actual_public_loader_models": 5,
+    "public_model_versions_checked": 3,
+    "counters": "before/control/after identical for every workload and mode",
+    "caller_mutation": "private prepared snapshots retained",
+    "invalid_fresh_writes": "rejected; previous session values unchanged",
+    "pre_merge_gpu_numeric_storage_tests": 33
+  },
+  "full_distribution_ci": "pending; never inferred from local checks",
+  "logs": [
+    {
+      "path": "results/generalization/typed-input/validation/abi.log",
+      "sha256": "7833b45258f8030090d45389a5941dc6896195449c2ddf15149ff3fa61d1ca4d"
+    },
+    {
+      "path": "results/generalization/typed-input/validation/merged-integration.log",
+      "sha256": "a6e13192ea597d8aae79638cd962dd995bd02fe2ab3ed8373b4a0b411f6fa601"
+    },
+    {
+      "path": "results/generalization/typed-input/validation/pre-merge-gpu-numeric-storage.log",
+      "sha256": "e24964a5337e095ddff15a837bbcadf193f1bd2a0dc93c993310a348231a85e6"
+    },
+    {
+      "path": "results/generalization/typed-input/validation/project.log",
+      "sha256": "93dea898db3662b3e6019a6f2e1e42a3a272ef007613122cf73b8f859d7c087f"
+    },
+    {
+      "path": "results/generalization/typed-input/validation/runtime-node.log",
+      "sha256": "fb923fafb3a9f1656536d717048405911e69c4b55088904cf12ada3cd7e7cb64"
+    },
+    {
+      "path": "results/generalization/typed-input/validation/runtime-rust.log",
+      "sha256": "d575b76eceb4d4eca2b4097dcd008720b2424f72aa003f92fdd217bed4cad7c2"
+    }
+  ]
+}

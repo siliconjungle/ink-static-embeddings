@@ -1,0 +1,170 @@
+{
+  "schema": 1,
+  "scope": "Codec phase only: pack, owned capture + GPU/CPU transport materialization, or owned capture + native JS carrier (F32 Array or the existing U32 typed carrier). All output bits checked after every timed batch; outputs retained until checked. Three fresh Node processes rotate mode order. Adaptive warmup counts retained per case. Same frozen descriptor and changed finite input arrays; no inference, uploads or readback timed. These medians must not be added to GPU medians.",
+  "codec_sha256": {
+    "before": "9e8da6373393af3fbb459fdf2c8c419ac3d4857b28d259a8a109738b69fd9d13",
+    "after": "e41b054fc1acc4cb96355e859898e730d9ead785b03b0d22fc3b243bfed49b48"
+  },
+  "source_sha256": {
+    "scripts/typed_input_codec_worker.mjs": "d28257edd6c1a0c0554d089327022d283a3ad51dfe80fca9fc6d8bf6de12e139",
+    "scripts/typed_input_codec_benchmark.py": "ebe98cb619835c0fb3f09b346f2a9fd6659c28bebbdd7a908858606398a256d9"
+  },
+  "summary": [
+    {
+      "carrier": "typed",
+      "count": 0,
+      "median_ns": {
+        "before/pack": 449.21875,
+        "before/capture-gpu": 622.40625,
+        "before/capture-js": 196.625,
+        "after/pack": 446.59375,
+        "after/capture-gpu": 657.5625,
+        "after/capture-js": 196.625
+      }
+    },
+    {
+      "carrier": "typed",
+      "count": 8,
+      "median_ns": {
+        "before/pack": 462.25,
+        "before/capture-gpu": 480.46875,
+        "before/capture-js": 78.125,
+        "after/pack": 682.3125,
+        "after/capture-gpu": 605.46875,
+        "after/capture-js": 76.8125
+      }
+    },
+    {
+      "carrier": "typed",
+      "count": 64,
+      "median_ns": {
+        "before/pack": 1192.71875,
+        "before/capture-gpu": 1542.96875,
+        "before/capture-js": 317.6875,
+        "after/pack": 431,
+        "after/capture-gpu": 1691.40625,
+        "after/capture-js": 309.90625
+      }
+    },
+    {
+      "carrier": "typed",
+      "count": 512,
+      "median_ns": {
+        "before/pack": 8136.71875,
+        "before/capture-gpu": 10907.5625,
+        "before/capture-js": 2838.53125,
+        "after/pack": 695.3125,
+        "after/capture-gpu": 916.6875,
+        "after/capture-js": 2578.125
+      }
+    },
+    {
+      "carrier": "typed",
+      "count": 4096,
+      "median_ns": {
+        "before/pack": 59333.25,
+        "before/capture-gpu": 81770.75,
+        "before/capture-js": 20864.5,
+        "after/pack": 3437.5,
+        "after/capture-gpu": 3875,
+        "after/capture-js": 20385.5
+      }
+    },
+    {
+      "carrier": "typed",
+      "count": 65536,
+      "median_ns": {
+        "before/pack": 906021,
+        "before/capture-gpu": 1390875,
+        "before/capture-js": 425896,
+        "after/pack": 52021,
+        "after/capture-gpu": 50979,
+        "after/capture-js": 418750
+      }
+    },
+    {
+      "carrier": "typed",
+      "count": 1889792,
+      "median_ns": {
+        "before/pack": 28276958,
+        "before/capture-gpu": 40049333,
+        "before/capture-js": 12011458,
+        "after/pack": 1784291,
+        "after/capture-gpu": 1774209,
+        "after/capture-js": 12106458
+      }
+    },
+    {
+      "carrier": "array",
+      "count": 8,
+      "median_ns": {
+        "before/pack": 348.96875,
+        "before/capture-gpu": 519.53125,
+        "before/capture-js": 174.46875,
+        "after/pack": 367.1875,
+        "after/capture-gpu": 733.0625,
+        "after/capture-js": 339.84375
+      }
+    },
+    {
+      "carrier": "array",
+      "count": 512,
+      "median_ns": {
+        "before/pack": 6992.1875,
+        "before/capture-gpu": 10380.21875,
+        "before/capture-js": 3406.25,
+        "after/pack": 7083.34375,
+        "after/capture-gpu": 11329.4375,
+        "after/capture-js": 3355.46875
+      }
+    },
+    {
+      "carrier": "array",
+      "count": 4096,
+      "median_ns": {
+        "before/pack": 50208.25,
+        "before/capture-gpu": 76583.25,
+        "before/capture-js": 25687.5,
+        "after/pack": 51843.75,
+        "after/capture-gpu": 86500,
+        "after/capture-js": 25937.5
+      }
+    },
+    {
+      "carrier": "u32",
+      "count": 8,
+      "median_ns": {
+        "before/pack": 199.21875,
+        "before/capture-gpu": 273.4375,
+        "before/capture-js": 263,
+        "after/pack": 192.71875,
+        "after/capture-gpu": 544.25,
+        "after/capture-js": 268.21875
+      }
+    },
+    {
+      "carrier": "u32",
+      "count": 512,
+      "median_ns": {
+        "before/pack": 431,
+        "before/capture-gpu": 343.75,
+        "before/capture-js": 335.9375,
+        "after/pack": 427.09375,
+        "after/capture-gpu": 429.6875,
+        "after/capture-js": 337.25
+      }
+    },
+    {
+      "carrier": "u32",
+      "count": 4096,
+      "median_ns": {
+        "before/pack": 1468.75,
+        "before/capture-gpu": 1323,
+        "before/capture-js": 1375,
+        "after/pack": 1541.5,
+        "after/capture-gpu": 1510.5,
+        "after/capture-js": 1333.25
+      }
+    }
+  ]
+}

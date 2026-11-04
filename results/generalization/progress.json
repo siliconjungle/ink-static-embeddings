@@ -44,7 +44,7 @@
       }
     },
     "prepared-typed-boundaries": {
-      "status": "typed output benefit published; input/capture ablations still pending",
+      "status": "typed output and finite typed input transport implemented, measured and published on main; full distribution CI pending",
       "batch_1024_before_us": 3.503,
       "batch_1024_after_us": 1.697,
       "packages": {
@@ -60,6 +60,30 @@
       "full_ci": {
         "status": "queued",
         "url": "https://github.com/siliconjungle/ink-lang/actions/runs/41798892989"
+      },
+      "input_followup": {
+        "status": "published on main; local package/integration checks pass; full distribution CI queued",
+        "scope": "Shared Ink ABI/runtime setup representation, not an arithmetic optimization or a 7x inference claim",
+        "potion_2m_batch16_ready_session_open_ms": {
+          "before": 27.6,
+          "new_host_old_codec": 27.9,
+          "after": 4.4
+        },
+        "setup_speedup": 6.27,
+        "warm_inference": "no established robust gain",
+        "frozen_matrix_columns_ordinary_complete_gpu_speedup_range": [
+          1.23,
+          1.27
+        ],
+        "unchanged_controls": "mixed records, warm prepared/resident paths largely unchanged; small input regressions retained",
+        "report": "typed-input/REPORT.md",
+        "validation": "typed-input/validation.json",
+        "packages": "typed-input/packages.json",
+        "full_ci": {
+          "status": "queued",
+          "url": "https://github.com/siliconjungle/ink-lang/actions/runs/41818907259",
+          "head_sha": "f44ca165191c0327790efc61ba71b08f45a71727"
+        }
       }
     },
     "checked-access-layouts": {

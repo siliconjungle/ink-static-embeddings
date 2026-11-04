@@ -1,0 +1,17 @@
+{
+  "applied_rule_ids": [],
+  "checked_implementation": null,
+  "checked_replacement": null,
+  "checked_source_route": null,
+  "database_closure": null,
+  "database_lock": null,
+  "initial_state": null,
+  "input_core_sha256": "46874a50f9df4d3a01c90421c307c38877656d344f86bcc73c324c636333af50",
+  "selected_core_sha256": "46874a50f9df4d3a01c90421c307c38877656d344f86bcc73c324c636333af50",
+  "semantic_package": null,
+  "semantic_selection": null,
+  "source": "build/general/unseen-clamp/gpu-model.ink",
+  "source_route_equivalence": null,
+  "target": "webgpu",
+  "trust": "GPU backend and physical routing remain trusted; see manifest.json"
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "scope": "Controlled ABI-only comparison. Before source is the currently pinned ABI; retained emitted hosts and devices equal current package sources. No shader edits. The same bundles, weights and inputs serve both codecs.",
+  "ink_revision": "2debcb76593d4dea7329e8f610f55c4c6f34ab55",
+  "abi_revision": "d4c9e1a9d9d1a2d1f9fc2956e0136fbed4b28331",
+  "bundles": [
+    {
+      "name": "potion-2m",
+      "abi_sha256": "9e8da6373393af3fbb459fdf2c8c419ac3d4857b28d259a8a109738b69fd9d13",
+      "manifest_sha256": "dbb403144ea6f16d1f887e36073018b24626bb4ce2968b21a8388cb71237e9dd"
+    },
+    {
+      "name": "matrix-columns",
+      "abi_sha256": "9e8da6373393af3fbb459fdf2c8c419ac3d4857b28d259a8a109738b69fd9d13",
+      "manifest_sha256": "b931ec8b314e9ee6f6a18a5deb2682c640a90099519edb7c78c7549b44a84bba"
+    },
+    {
+      "name": "filter-bank",
+      "abi_sha256": "9e8da6373393af3fbb459fdf2c8c419ac3d4857b28d259a8a109738b69fd9d13",
+      "manifest_sha256": "f8a40a313ffe68b62f3b2a4840f13a4e5d87d5532499c459f9132faafd87a283"
+    },
+    {
+      "name": "channel-energy",
+      "abi_sha256": "9e8da6373393af3fbb459fdf2c8c419ac3d4857b28d259a8a109738b69fd9d13",
+      "manifest_sha256": "aa537a83ad2c50c35694c3e5fd205306549fd05161a8f5ac07de44cb24f4f7d0"
+    }
+  ]
+}

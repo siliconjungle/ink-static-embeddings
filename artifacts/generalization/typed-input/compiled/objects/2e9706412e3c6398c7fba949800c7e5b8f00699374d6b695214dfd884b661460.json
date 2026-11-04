@@ -1,0 +1,7467 @@
+{
+  "abi": "packed little-endian 32-bit lanes; GPU lists carry a length header; records in declaration order; vectors unpadded",
+  "backend": "webgpu-wgpu-v2",
+  "collection_strategy": "parallel graph schedules for integer scan, sum and radix sort, stable filter and concat; other stages retain literal source order; profitability must be measured",
+  "core_semantics": "ink-executable-core-v11",
+  "core_sha256": "d3677b4a238693c6b74aec8399e79ab9782bdefe1c991b05402ee19bcf0f9959",
+  "cpu_rust_sha256": "dd25661d3cc3310276dbccfd6d6e7a5ec732310ba4bc984d0a460f88f85f0714",
+  "destination_abi": {
+    "aliasing": "destination-disjoint-from-all-reachable-inputs",
+    "alignment": 8,
+    "capacity": "trusted",
+    "count": "words32",
+    "name": "ink-packed-into-v1",
+    "ownership": "caller-owned",
+    "prepared_instance": "exclusive",
+    "scratch_lifetime": "call-mark-rewind",
+    "symbol": "ink_compute_into"
+  },
+  "float_contract": "integer-lane binary32; round-to-nearest ties-to-even, gradual underflow, signed zero, source operation order and canonical arithmetic NaN; pass-through/negation retain payload bits",
+  "functions": [
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 0,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-0.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 1,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-1.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 0
+              },
+              {
+                "node": 1
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 2,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-2-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 3,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-3.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 4,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-4.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 3
+              },
+              {
+                "node": 4
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 5,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-5-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 2
+              },
+              {
+                "node": 5
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 6,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-6-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 7,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-7.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 8,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-8.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 7
+              },
+              {
+                "node": 8
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 9,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-9-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 10,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-10.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 11,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-11.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 10
+              },
+              {
+                "node": 11
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 12,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-12-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 12
+              },
+              {
+                "node": 9
+              }
+            ],
+            "capacity": {
+              "args": [
+                1,
+                0
+              ],
+              "kind": "sum"
+            },
+            "id": 13,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-13-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 13
+              },
+              {
+                "node": 6
+              }
+            ],
+            "capacity": {
+              "args": [
+                1,
+                0
+              ],
+              "kind": "sum"
+            },
+            "id": 14,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-14-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 15,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-15.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 16,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-16.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 15
+              },
+              {
+                "node": 16
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 17,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-17-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 18,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-18.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 19,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-19.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 18
+              },
+              {
+                "node": 19
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 20,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-20-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 17
+              },
+              {
+                "node": 20
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 21,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-21-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 22,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-22.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 23,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-23.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 22
+              },
+              {
+                "node": 23
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 24,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-24-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 25,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-25.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 26,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-26.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 25
+              },
+              {
+                "node": 26
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 27,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-27-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 24
+              },
+              {
+                "node": 27
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 28,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-28-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 21
+              },
+              {
+                "node": 28
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 29,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-29-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 14
+              },
+              {
+                "node": 29
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 30,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-30-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 31,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-31.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 32,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-32.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 31
+              },
+              {
+                "node": 32
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 33,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-33-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 34,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-34.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 35,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-35.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 34
+              },
+              {
+                "node": 35
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 36,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-36-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 33
+              },
+              {
+                "node": 36
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 37,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-37-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 38,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-38.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 39,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-39.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 38
+              },
+              {
+                "node": 39
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 40,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-40-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 41,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-41.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 42,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-42.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 41
+              },
+              {
+                "node": 42
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 43,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-43-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 40
+              },
+              {
+                "node": 43
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 44,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-44-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 37
+              },
+              {
+                "node": 44
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 45,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-45-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 46,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-46.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 47,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-47.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 46
+              },
+              {
+                "node": 47
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 48,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-48-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 49,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-49.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 50,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-50.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 49
+              },
+              {
+                "node": 50
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 51,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-51-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 48
+              },
+              {
+                "node": 51
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 52,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-52-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 53,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-53.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 54,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-54.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 53
+              },
+              {
+                "node": 54
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 55,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-55-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 56,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-56.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 57,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-0-57.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 56
+              },
+              {
+                "node": 57
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 58,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-58-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 55
+              },
+              {
+                "node": 58
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 59,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-59-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 52
+              },
+              {
+                "node": 59
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 60,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-60-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 45
+              },
+              {
+                "node": 60
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 61,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-61-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 30
+              },
+              {
+                "node": 61
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 62,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-0-62-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          }
+        ],
+        "output": {
+          "node": 62
+        },
+        "result": {
+          "element": {
+            "kind": "u32"
+          },
+          "kind": "list"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": true,
+      "index": 0,
+      "lengths": [],
+      "name": "coordinates",
+      "params": [],
+      "precondition": null,
+      "result": {
+        "element": {
+          "kind": "u32"
+        },
+        "kind": "list"
+      },
+      "shader": null
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              },
+              {
+                "kind": "u32"
+              }
+            ],
+            "args": [
+              {
+                "param": 0
+              },
+              {
+                "param": 1
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 0,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "f32"
+            },
+            "shader": "graph-1-0.wgsl",
+            "workgroup_size": 1
+          }
+        ],
+        "output": {
+          "node": 0
+        },
+        "result": {
+          "kind": "f32"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": true,
+      "index": 1,
+      "lengths": [],
+      "name": "lookup",
+      "params": [
+        {
+          "name": "weights",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "position",
+          "type": {
+            "kind": "u32"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "kind": "f32"
+      },
+      "shader": null
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "kind": "u32"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "param": 2
+              },
+              {
+                "param": 1
+              },
+              {
+                "param": 0
+              }
+            ],
+            "capacity": {
+              "args": [
+                1
+              ],
+              "kind": "same"
+            },
+            "id": 0,
+            "op": "map",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-2-0.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 1,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "f32"
+            },
+            "shader": "graph-2-1.wgsl",
+            "workgroup_size": 1
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              },
+              {
+                "kind": "f32"
+              }
+            ],
+            "args": [
+              {
+                "node": 0
+              },
+              {
+                "node": 1
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 2,
+            "op": "foldl",
+            "ordered": true,
+            "result": {
+              "kind": "f32"
+            },
+            "shader": "graph-2-2.wgsl",
+            "workgroup_size": 1
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "kind": "f32"
+              }
+            ],
+            "args": [
+              {
+                "param": 1
+              },
+              {
+                "node": 2
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 3,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "f32"
+            },
+            "shader": "graph-2-3.wgsl",
+            "workgroup_size": 1
+          }
+        ],
+        "output": {
+          "node": 3
+        },
+        "result": {
+          "kind": "f32"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": true,
+      "index": 2,
+      "lengths": [],
+      "name": "coordinate",
+      "params": [
+        {
+          "name": "weights",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "ids",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "dimension",
+          "type": {
+            "kind": "u32"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "kind": "f32"
+      },
+      "shader": null
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 0,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-0.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 1,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-1.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 0
+              },
+              {
+                "node": 1
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 2,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-2-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 3,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-3.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 4,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-4.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 3
+              },
+              {
+                "node": 4
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 5,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-5-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 2
+              },
+              {
+                "node": 5
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 6,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-6-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 7,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-7.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 8,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-8.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 7
+              },
+              {
+                "node": 8
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 9,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-9-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 10,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-10.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 11,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-11.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 10
+              },
+              {
+                "node": 11
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 12,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-12-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 12
+              },
+              {
+                "node": 9
+              }
+            ],
+            "capacity": {
+              "args": [
+                1,
+                0
+              ],
+              "kind": "sum"
+            },
+            "id": 13,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-13-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 13
+              },
+              {
+                "node": 6
+              }
+            ],
+            "capacity": {
+              "args": [
+                1,
+                0
+              ],
+              "kind": "sum"
+            },
+            "id": 14,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-14-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 15,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-15.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 16,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-16.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 15
+              },
+              {
+                "node": 16
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 17,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-17-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 18,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-18.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 19,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-19.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 18
+              },
+              {
+                "node": 19
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 20,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-20-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 17
+              },
+              {
+                "node": 20
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 21,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-21-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 22,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-22.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 23,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-23.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 22
+              },
+              {
+                "node": 23
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 24,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-24-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 25,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-25.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 26,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-26.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 25
+              },
+              {
+                "node": 26
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 27,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-27-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 24
+              },
+              {
+                "node": 27
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 28,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-28-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 21
+              },
+              {
+                "node": 28
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 29,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-29-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 14
+              },
+              {
+                "node": 29
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 30,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-30-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 31,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-31.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 32,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-32.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 31
+              },
+              {
+                "node": 32
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 33,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-33-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 34,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-34.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 35,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-35.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 34
+              },
+              {
+                "node": 35
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 36,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-36-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 33
+              },
+              {
+                "node": 36
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 37,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-37-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 38,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-38.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 39,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-39.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 38
+              },
+              {
+                "node": 39
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 40,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-40-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 41,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-41.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 42,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-42.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 41
+              },
+              {
+                "node": 42
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 43,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-43-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 40
+              },
+              {
+                "node": 43
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 44,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-44-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 37
+              },
+              {
+                "node": 44
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 45,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-45-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 46,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-46.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 47,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-47.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 46
+              },
+              {
+                "node": 47
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 48,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-48-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 49,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-49.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 50,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-50.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 49
+              },
+              {
+                "node": 50
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 51,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-51-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 48
+              },
+              {
+                "node": 51
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 52,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-52-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 53,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-53.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 54,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-54.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 53
+              },
+              {
+                "node": 54
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 55,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-55-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 56,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-56.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [],
+            "args": [],
+            "capacity": {
+              "args": [],
+              "kind": "fixed",
+              "value": 8
+            },
+            "id": 57,
+            "op": "list",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-57.wgsl",
+            "workgroup_size": 64
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 56
+              },
+              {
+                "node": 57
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 58,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-58-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 55
+              },
+              {
+                "node": 58
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 59,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-59-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 52
+              },
+              {
+                "node": 59
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 60,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-60-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 45
+              },
+              {
+                "node": 60
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 61,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-61-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 30
+              },
+              {
+                "node": 61
+              }
+            ],
+            "capacity": {
+              "args": [
+                0,
+                1
+              ],
+              "kind": "sum"
+            },
+            "id": 62,
+            "op": "concat",
+            "ordered": false,
+            "parallel": true,
+            "result": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            },
+            "schedule": {
+              "passes": [
+                {
+                  "bind": [
+                    {
+                      "arg": 0
+                    },
+                    {
+                      "arg": 1
+                    },
+                    {
+                      "out": true
+                    }
+                  ],
+                  "groups": "b1",
+                  "shader": "graph-3-62-concat.wgsl"
+                }
+              ],
+              "scratch": []
+            },
+            "shader": null,
+            "workgroup_size": 256
+          },
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 62
+              },
+              {
+                "param": 1
+              },
+              {
+                "param": 0
+              }
+            ],
+            "capacity": {
+              "args": [
+                0
+              ],
+              "kind": "max"
+            },
+            "id": 63,
+            "op": "literal",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-3-63.wgsl",
+            "workgroup_size": 64
+          }
+        ],
+        "output": {
+          "node": 63
+        },
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": true,
+      "index": 3,
+      "lengths": [],
+      "name": "encode",
+      "params": [
+        {
+          "name": "weights",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "ids",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "element": {
+          "kind": "f32"
+        },
+        "kind": "list"
+      },
+      "shader": null
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "kind": "u32"
+              }
+            ],
+            "args": [
+              {
+                "param": 4
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 0,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "u32"
+            },
+            "shader": "graph-4-0.wgsl",
+            "workgroup_size": 1
+          },
+          {
+            "arg_types": [
+              {
+                "kind": "u32"
+              }
+            ],
+            "args": [
+              {
+                "param": 4
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 1,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "u32"
+            },
+            "shader": "graph-4-1.wgsl",
+            "workgroup_size": 1
+          },
+          {
+            "arg_types": [
+              {
+                "kind": "u32"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 0
+              },
+              {
+                "param": 3
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 2,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "u32"
+            },
+            "shader": "graph-4-2.wgsl",
+            "workgroup_size": 1
+          },
+          {
+            "arg_types": [
+              {
+                "kind": "u32"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 0
+              },
+              {
+                "param": 2
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 3,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "u32"
+            },
+            "shader": "graph-4-3.wgsl",
+            "workgroup_size": 1
+          },
+          {
+            "arg_types": [
+              {
+                "kind": "u32"
+              },
+              {
+                "kind": "u32"
+              },
+              {
+                "kind": "u32"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "node": 2
+              },
+              {
+                "node": 1
+              },
+              {
+                "node": 3
+              },
+              {
+                "param": 1
+              },
+              {
+                "param": 0
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 4,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "fields": [
+                {
+                  "name": "index",
+                  "type": {
+                    "kind": "u32"
+                  }
+                },
+                {
+                  "name": "total",
+                  "type": {
+                    "kind": "f32"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "Accumulator"
+            },
+            "shader": "graph-4-4.wgsl",
+            "workgroup_size": 1
+          },
+          {
+            "arg_types": [
+              {
+                "fields": [
+                  {
+                    "name": "index",
+                    "type": {
+                      "kind": "u32"
+                    }
+                  },
+                  {
+                    "name": "total",
+                    "type": {
+                      "kind": "f32"
+                    }
+                  }
+                ],
+                "kind": "record",
+                "name": "Accumulator"
+              },
+              {
+                "kind": "u32"
+              }
+            ],
+            "args": [
+              {
+                "node": 4
+              },
+              {
+                "node": 2
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 5,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "f32"
+            },
+            "shader": "graph-4-5.wgsl",
+            "workgroup_size": 1
+          }
+        ],
+        "output": {
+          "node": 5
+        },
+        "result": {
+          "kind": "f32"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": true,
+      "index": 4,
+      "lengths": [],
+      "name": "pool_one",
+      "params": [
+        {
+          "name": "weights",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "tokens",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "starts",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "lengths",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "position",
+          "type": {
+            "kind": "u32"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "kind": "f32"
+      },
+      "shader": null
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "param": 4
+              },
+              {
+                "param": 3
+              },
+              {
+                "param": 2
+              },
+              {
+                "param": 1
+              },
+              {
+                "param": 0
+              }
+            ],
+            "capacity": {
+              "args": [
+                0
+              ],
+              "kind": "same"
+            },
+            "id": 0,
+            "op": "map",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-5-0.wgsl",
+            "workgroup_size": 64
+          }
+        ],
+        "output": {
+          "node": 0
+        },
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": false,
+      "index": 5,
+      "lengths": [
+        4
+      ],
+      "name": "pool_batch",
+      "params": [
+        {
+          "name": "weights",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "tokens",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "starts",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "lengths",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "positions",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "element": {
+          "kind": "f32"
+        },
+        "kind": "list"
+      },
+      "shader": "compute-5.wgsl"
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "kind": "u32"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "param": 1
+              },
+              {
+                "param": 0
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 0,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "f32"
+            },
+            "shader": "graph-6-0.wgsl",
+            "workgroup_size": 1
+          },
+          {
+            "arg_types": [
+              {
+                "kind": "f32"
+              }
+            ],
+            "args": [
+              {
+                "node": 0
+              }
+            ],
+            "capacity": {
+              "args": [],
+              "kind": "one"
+            },
+            "id": 1,
+            "op": "scalar",
+            "ordered": true,
+            "result": {
+              "kind": "f32"
+            },
+            "shader": "graph-6-1.wgsl",
+            "workgroup_size": 1
+          }
+        ],
+        "output": {
+          "node": 1
+        },
+        "result": {
+          "kind": "f32"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": true,
+      "index": 6,
+      "lengths": [],
+      "name": "norm_one",
+      "params": [
+        {
+          "name": "means",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "document",
+          "type": {
+            "kind": "u32"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "kind": "f32"
+      },
+      "shader": null
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "param": 1
+              },
+              {
+                "param": 0
+              }
+            ],
+            "capacity": {
+              "args": [
+                0
+              ],
+              "kind": "same"
+            },
+            "id": 0,
+            "op": "map",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-7-0.wgsl",
+            "workgroup_size": 64
+          }
+        ],
+        "output": {
+          "node": 0
+        },
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": false,
+      "index": 7,
+      "lengths": [
+        1
+      ],
+      "name": "norm_batch",
+      "params": [
+        {
+          "name": "means",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "documents",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "element": {
+          "kind": "f32"
+        },
+        "kind": "list"
+      },
+      "shader": "compute-7.wgsl"
+    },
+    {
+      "capacity_mode": "max",
+      "fallback_reason": null,
+      "gpu_max_elements": null,
+      "graph": {
+        "limitations": [
+          "bounded 64 stages and 24 traversal depth",
+          "parallel schedules support capacities up to 256^3 elements",
+          "ordered float reductions and folds run serially",
+          "exact integer-lane binary32; canonical arithmetic NaN",
+          "feedback requires matching bounded capacities and all stages to have graph descriptors"
+        ],
+        "nodes": [
+          {
+            "arg_types": [
+              {
+                "element": {
+                  "kind": "u32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              },
+              {
+                "element": {
+                  "kind": "f32"
+                },
+                "kind": "list"
+              }
+            ],
+            "args": [
+              {
+                "param": 2
+              },
+              {
+                "param": 0
+              },
+              {
+                "param": 1
+              }
+            ],
+            "capacity": {
+              "args": [
+                0
+              ],
+              "kind": "same"
+            },
+            "id": 0,
+            "op": "map",
+            "ordered": false,
+            "result": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            },
+            "shader": "graph-8-0.wgsl",
+            "workgroup_size": 64
+          }
+        ],
+        "output": {
+          "node": 0
+        },
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        },
+        "schema": 1,
+        "semantics": "eager array stages; integer scans/sums (exactly wrapping), stable filters, integer radix sorts and concatenation run as parallel multi-pass schedules; float scans/sums, foldr, foldl and fold_until keep their ordered serial stage; no float reassociation or fusion"
+      },
+      "graph_required": false,
+      "index": 8,
+      "lengths": [
+        2
+      ],
+      "name": "normalize_batch",
+      "params": [
+        {
+          "name": "means",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "norms",
+          "type": {
+            "element": {
+              "kind": "f32"
+            },
+            "kind": "list"
+          }
+        },
+        {
+          "name": "positions",
+          "type": {
+            "element": {
+              "kind": "u32"
+            },
+            "kind": "list"
+          }
+        }
+      ],
+      "precondition": null,
+      "result": {
+        "element": {
+          "kind": "f32"
+        },
+        "kind": "list"
+      },
+      "shader": "compute-8.wgsl"
+    }
+  ],
+  "gpu_list_abi": "ink-gpu-list-v3",
+  "javascript": {
+    "abi": "ink-javascript-trusted-values-v2",
+    "backend": "javascript",
+    "caller_contract": "trusted, well-typed target-native values; no input validation, snapshot capture or host resource budgets",
+    "core_semantics": "ink-executable-core-v11",
+    "core_sha256": "d3677b4a238693c6b74aec8399e79ab9782bdefe1c991b05402ee19bcf0f9959",
+    "destination_abi": {
+      "aliasing": "destination-disjoint-from-all-reachable-inputs",
+      "capacity": "trusted",
+      "count_unit": "elements",
+      "name": "ink-javascript-into-v1",
+      "ownership": "caller-owned",
+      "tail": "unwritten"
+    },
+    "f32_computation": "native-number-with-exact-nonfinite-tags",
+    "f32_storage": "native-number-with-exact-nonfinite-tags",
+    "functions": [
+      {
+        "destination": {
+          "abi": "ink-javascript-into-v1",
+          "count_unit": "elements",
+          "ownership": "caller-owned"
+        },
+        "index": 0,
+        "internal": false,
+        "name": "coordinates",
+        "parallel": false,
+        "params": [],
+        "precondition": null,
+        "result": {
+          "element": {
+            "kind": "u32"
+          },
+          "kind": "list"
+        }
+      },
+      {
+        "destination": null,
+        "index": 1,
+        "internal": false,
+        "name": "lookup",
+        "parallel": false,
+        "params": [
+          {
+            "name": "weights",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "position",
+            "type": {
+              "kind": "u32"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "kind": "f32"
+        }
+      },
+      {
+        "destination": null,
+        "index": 2,
+        "internal": false,
+        "name": "coordinate",
+        "parallel": false,
+        "params": [
+          {
+            "name": "weights",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "ids",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "dimension",
+            "type": {
+              "kind": "u32"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "kind": "f32"
+        }
+      },
+      {
+        "destination": {
+          "abi": "ink-javascript-into-v1",
+          "count_unit": "elements",
+          "ownership": "caller-owned"
+        },
+        "index": 3,
+        "internal": false,
+        "name": "encode",
+        "parallel": false,
+        "params": [
+          {
+            "name": "weights",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "ids",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        }
+      },
+      {
+        "destination": null,
+        "index": 4,
+        "internal": false,
+        "name": "pool_one",
+        "parallel": false,
+        "params": [
+          {
+            "name": "weights",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "tokens",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "starts",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "lengths",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "position",
+            "type": {
+              "kind": "u32"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "kind": "f32"
+        }
+      },
+      {
+        "destination": {
+          "abi": "ink-javascript-into-v1",
+          "count_unit": "elements",
+          "ownership": "caller-owned"
+        },
+        "index": 5,
+        "internal": false,
+        "name": "pool_batch",
+        "parallel": false,
+        "params": [
+          {
+            "name": "weights",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "tokens",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "starts",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "lengths",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "positions",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        }
+      },
+      {
+        "destination": null,
+        "index": 6,
+        "internal": false,
+        "name": "norm_one",
+        "parallel": false,
+        "params": [
+          {
+            "name": "means",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "document",
+            "type": {
+              "kind": "u32"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "kind": "f32"
+        }
+      },
+      {
+        "destination": {
+          "abi": "ink-javascript-into-v1",
+          "count_unit": "elements",
+          "ownership": "caller-owned"
+        },
+        "index": 7,
+        "internal": false,
+        "name": "norm_batch",
+        "parallel": false,
+        "params": [
+          {
+            "name": "means",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "documents",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        }
+      },
+      {
+        "destination": {
+          "abi": "ink-javascript-into-v1",
+          "count_unit": "elements",
+          "ownership": "caller-owned"
+        },
+        "index": 8,
+        "internal": false,
+        "name": "normalize_batch",
+        "parallel": false,
+        "params": [
+          {
+            "name": "means",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "norms",
+            "type": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          },
+          {
+            "name": "positions",
+            "type": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          }
+        ],
+        "precondition": null,
+        "result": {
+          "element": {
+            "kind": "f32"
+          },
+          "kind": "list"
+        }
+      }
+    ],
+    "javascript_sha256": "75244bf705512b16c13b4a1df8d0d97537266755de84a6fac89a971febbe27a7",
+    "named_types": {
+      "Accumulator": {
+        "fields": [
+          {
+            "name": "index",
+            "type": {
+              "kind": "u32"
+            }
+          },
+          {
+            "name": "total",
+            "type": {
+              "kind": "f32"
+            }
+          }
+        ],
+        "kind": "record",
+        "name": "Accumulator"
+      }
+    },
+    "owned_result_contract": {
+      "functions": 9,
+      "inputs": "same trusted caller contract",
+      "results": "canonical detached values with ABI byte/node/depth limits",
+      "unsupported": []
+    },
+    "prepared_compiled": {
+      "destination": {
+        "call": "callPreparedCompiledInto",
+        "capacity": "trusted",
+        "failure": "destination may be partially written",
+        "float_values": "trusted public representation",
+        "inputs": "sealed compiled values",
+        "ownership": "caller-owned",
+        "structured_elements": "detached",
+        "tail": "unwritten"
+      },
+      "evaluation": "lazy source-order; successful bindings only",
+      "functions": [
+        {
+          "factory": false,
+          "function": "coordinates",
+          "reason": "no reusable captured work"
+        },
+        {
+          "factory": false,
+          "function": "lookup",
+          "reason": "no reusable captured work"
+        },
+        {
+          "delegated_calls": 0,
+          "factory": true,
+          "function": "coordinate",
+          "retained_bindings": 1
+        },
+        {
+          "delegated_calls": 0,
+          "factory": true,
+          "function": "encode",
+          "retained_bindings": 3
+        },
+        {
+          "delegated_calls": 0,
+          "factory": true,
+          "function": "pool_one",
+          "retained_bindings": 1
+        },
+        {
+          "factory": false,
+          "function": "pool_batch",
+          "reason": "no reusable captured work"
+        },
+        {
+          "factory": false,
+          "function": "norm_one",
+          "reason": "no reusable captured work"
+        },
+        {
+          "factory": false,
+          "function": "norm_batch",
+          "reason": "no reusable captured work"
+        },
+        {
+          "factory": false,
+          "function": "normalize_batch",
+          "reason": "no reusable captured work"
+        }
+      ],
+      "lifetime": "prepared token",
+      "semantics": "sealed-value-residual-v1"
+    },
+    "private_record_elisions": [],
+    "private_sum_spines": [],
+    "schema": 1,
+    "scope": "trusted pure functions and temporary collections; state/actions with portable snapshots and ordered transaction events",
+    "state": null,
+    "trusted": [
+      "Ink checker and source correspondence",
+      "JavaScript emitter and representation conversion",
+      "JavaScript engine and host"
+    ],
+    "wire": {
+      "format": "ink-value-wire-v1",
+      "functions": {
+        "coordinate": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "5db5d7579dcfaf2743aec51d57b838fad45c3640904b8d397db6ea18f95a6d20",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "weights",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "ids",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "dimension",
+                  "type": {
+                    "kind": "u32"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "fde3b27ba939906c22dbea906c407580e89648dd4d5a55c4f4001e45157ebe45",
+            "named": {},
+            "root": {
+              "kind": "f32"
+            }
+          }
+        },
+        "coordinates": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "3720cf83cb9a672c0c70e7f80cfe0abe0bf9b7df73d40a9def0c7436234026b2",
+            "named": {},
+            "root": {
+              "fields": [],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "69ebf947aa59a2546656d1976b0baa6e56e7182d989425379b31e3bff74168ca",
+            "named": {},
+            "root": {
+              "element": {
+                "kind": "u32"
+              },
+              "kind": "list"
+            }
+          }
+        },
+        "encode": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "52f976941e79f0070d35cc31ade4645a48d4b845dc29ce0f3580aea8b22af5c7",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "weights",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "ids",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "0cbb9d1ff6b72318080ea11a6297b384d97178624f821e3901cca51ec8ad4477",
+            "named": {},
+            "root": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          }
+        },
+        "lookup": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "5d9cf4151df36b52a5113a37cc9f3e07a1338831f163bddcaacbaa2df6a26c23",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "weights",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "position",
+                  "type": {
+                    "kind": "u32"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "fde3b27ba939906c22dbea906c407580e89648dd4d5a55c4f4001e45157ebe45",
+            "named": {},
+            "root": {
+              "kind": "f32"
+            }
+          }
+        },
+        "norm_batch": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "4006eec9db14c303ad8be89dfcadb07733365c43ff2c45b768284691991378c0",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "means",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "documents",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "0cbb9d1ff6b72318080ea11a6297b384d97178624f821e3901cca51ec8ad4477",
+            "named": {},
+            "root": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          }
+        },
+        "norm_one": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "a2747c9fc9074f532462d28a925c3e2c609c8aff9c933eef98e99344cd2e8dea",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "means",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "document",
+                  "type": {
+                    "kind": "u32"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "fde3b27ba939906c22dbea906c407580e89648dd4d5a55c4f4001e45157ebe45",
+            "named": {},
+            "root": {
+              "kind": "f32"
+            }
+          }
+        },
+        "normalize_batch": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "37ed4d2bc0c73b6b901739518e77cc9a32bf42a5cea9a5a22b322cbdd77bd413",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "means",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "norms",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "positions",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "0cbb9d1ff6b72318080ea11a6297b384d97178624f821e3901cca51ec8ad4477",
+            "named": {},
+            "root": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          }
+        },
+        "pool_batch": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "ddadf6beffbc9045b63cea0bfff0074a68c141bf796b482f13238a0b95e88217",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "weights",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "tokens",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "starts",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "lengths",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "positions",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "0cbb9d1ff6b72318080ea11a6297b384d97178624f821e3901cca51ec8ad4477",
+            "named": {},
+            "root": {
+              "element": {
+                "kind": "f32"
+              },
+              "kind": "list"
+            }
+          }
+        },
+        "pool_one": {
+          "arguments": {
+            "format": "ink-value-wire-v1",
+            "identity": "b9388922ac8bca163fda433f9b68e33ab6dbca5368e0041959f1760ef1d65d60",
+            "named": {},
+            "root": {
+              "fields": [
+                {
+                  "name": "weights",
+                  "type": {
+                    "element": {
+                      "kind": "f32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "tokens",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "starts",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "lengths",
+                  "type": {
+                    "element": {
+                      "kind": "u32"
+                    },
+                    "kind": "list"
+                  }
+                },
+                {
+                  "name": "position",
+                  "type": {
+                    "kind": "u32"
+                  }
+                }
+              ],
+              "kind": "record",
+              "name": "arguments"
+            }
+          },
+          "result": {
+            "format": "ink-value-wire-v1",
+            "identity": "fde3b27ba939906c22dbea906c407580e89648dd4d5a55c4f4001e45157ebe45",
+            "named": {},
+            "root": {
+              "kind": "f32"
+            }
+          }
+        }
+      }
+    }
+  },
+  "javascript_sha256": "75244bf705512b16c13b4a1df8d0d97537266755de84a6fac89a971febbe27a7",
+  "pipeline_planner_sha256": "7011d6da8f4bdd27d78011be19f2f1bb38bb748611553b2ec2206bd7fd1b74e0",
+  "proof_claim": "no backend correctness proof or optimisation theorem; saved profiles estimate profitability only",
+  "runtime_abi": "ink-packed-pipeline-v2",
+  "runtime_host_sha256": "5bade95ca4ef309017eb09d50e7914e0fd6f0c1e22ef86622cdde2b832b3bbfe",
+  "schema": 2,
+  "shaders": {
+    "compute-5.wgsl": "d063a04a906503b2ca5247c11eb0cb7b488ba119d86ed142c6fffc5233729ba3",
+    "compute-7.wgsl": "b30b959d2e4437f09da6ca451ab0dd35d928bf54f7a86ea200b091837648a53b",
+    "compute-8.wgsl": "91e85adbb74506682976ce5307d69be5919be66a476d91e875ecdbd5e1ad04a3",
+    "graph-0-0.wgsl": "a90ca9d820e8ebd8abde93de84e1ce4ba038e82df6fbea0aa392c1cffac60009",
+    "graph-0-1.wgsl": "4121ef94216eda7cce679f8c2f4d1043de2ab938cd24c4df0312fab6292b098a",
+    "graph-0-10.wgsl": "b2f911029fa9f0fb74bfe936c79eed8ebf916b2867b5a50c5744d69a88bda053",
+    "graph-0-11.wgsl": "4b487ac4592e0f5922482721fe4c805bd348da7c688e417765ce89f0df59cf4a",
+    "graph-0-12-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-13-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-14-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-15.wgsl": "4280f556b1abd790763b13ea4b0db635ae18380a43c99e52f31b01a2e70a3f7a",
+    "graph-0-16.wgsl": "f70d57d6094bf9ff36bec1972e5696223b18037301fddcfc34be570ac13ad44c",
+    "graph-0-17-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-18.wgsl": "40ba0e3a73bb19ed49f7a3ea8ccb657765db4928bcd03f2233149b1fbdc60e53",
+    "graph-0-19.wgsl": "eb486f98b79a17989bc39fbf0d5c4d292e10c1b00546ab1010ddc961d553e115",
+    "graph-0-2-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-20-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-21-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-22.wgsl": "ca7d6023599778cd9894b157f4d4f99f6c4d6bf749e176d7c5c2c8375f08e0b6",
+    "graph-0-23.wgsl": "0b178783970683564e4dbb77c8f4bd3ee95a8a052f3cfce72e968fc560edd202",
+    "graph-0-24-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-25.wgsl": "b8c06e2b361df2daa723f8c10f0e0992b97b6ad7ebae378482519ae42d97c7ef",
+    "graph-0-26.wgsl": "982a1c2413c7e83ebc9d04d9682277c606dd21e63351aedc102f20651f7185af",
+    "graph-0-27-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-28-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-29-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-3.wgsl": "ea95c86d79e99cdb2a23adf920f1361f1605a84b8a632d119ae3a8e4f57bf75e",
+    "graph-0-30-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-31.wgsl": "6d7a41ab2a2e3288400d14ebd22d7a7d3c30c3af0c71e51eb082476e28f78faa",
+    "graph-0-32.wgsl": "57fadf2b21e7bf8cd81b9dcc1aef8cc19042ba394b3e9d91c9a37bbfb97cfddb",
+    "graph-0-33-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-34.wgsl": "8abfc7a41200eb8e430fb5d1f1e4d0c69634579035738a41201e3330d66601ff",
+    "graph-0-35.wgsl": "51effa5750b0f8953bf6c5019c9acdceffc0461069f34a7a1cffaabc8d8ec556",
+    "graph-0-36-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-37-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-38.wgsl": "0effec549a51242587d7281817782da0c0cd3fbea33ffc2d1265ed2e8429fdba",
+    "graph-0-39.wgsl": "c0b4ddbc8dc815b1372a02fac2923235862b3a633321cf8dcbfa5a953d4409ca",
+    "graph-0-4.wgsl": "b1720d69435c128cd968bd049c8ee60584ae8eeb24aaa7f91a512808cca8f72f",
+    "graph-0-40-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-41.wgsl": "7508dde2cdab9b550a2fb2bfdd087861a9c9fa32e39b22b2b076eb954b5208c8",
+    "graph-0-42.wgsl": "64edaa26c6b673b7a3f7f947984ce4ea070843dae96a5007f7219ba88244fa50",
+    "graph-0-43-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-44-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-45-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-46.wgsl": "58061986dad74f7c2baf383c9c4ebfd3c1a7ee0c64cd14a638e5e13d451f76d1",
+    "graph-0-47.wgsl": "fe8bc248736b85606bbecfe7f164ca05c04dd60444d5cc08aa9cad195963d27b",
+    "graph-0-48-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-49.wgsl": "7f3192b749fdf8b4158618f0eb22cea0de8b6702230567c166a15d13965c7094",
+    "graph-0-5-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-50.wgsl": "3f351a0912e5205260fd69eab613b73527722833709e30c1b8f1b45477f205d4",
+    "graph-0-51-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-52-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-53.wgsl": "f437554c6061bff442330e17e16cc4be0e5d308886de75a7275e9855f89edc27",
+    "graph-0-54.wgsl": "4cae1bbde0549976f0a67a0b420cc2845e7f0e2d3d3f0292e9fe26e952df598a",
+    "graph-0-55-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-56.wgsl": "2668fcc98ac77566cd0f414aa1d305e7023ce4c8f1ec2c2b92bd1cd7f283ed67",
+    "graph-0-57.wgsl": "95dbf3dfdcdec285980d28b088be3df8ceb861b24687ef499ef83d61aba0c447",
+    "graph-0-58-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-59-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-6-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-60-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-61-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-62-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-0-7.wgsl": "d5e30359ed3f63104dd103b9ce964a9122c34cfb00e9aff193811d48645a961a",
+    "graph-0-8.wgsl": "c28f35e2b3e62c8f0b7841bab912aaf83a74d88fabdb7b15a66523bcbbd0067a",
+    "graph-0-9-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-1-0.wgsl": "02dcf2066d99db642c9a5d839a41e58dcd4506b841778893cb8897ea574a1a1d",
+    "graph-2-0.wgsl": "64fb981af05ecc90b38234908a812bd80f56ccc2b9e294948119aa025b66140f",
+    "graph-2-1.wgsl": "299fb1e250748528a8e1252e25d0ab1e30dd94ab8774563ffa7dc6094d6d3d82",
+    "graph-2-2.wgsl": "d8bef00f08085941f85b96b9bb8b71414ba2b7b525e50541929b6f1f10765480",
+    "graph-2-3.wgsl": "96021a3974fdec96cfa251e03e2fa46b5c1f9d5fe5795a0f4f0df96a1b88f7da",
+    "graph-3-0.wgsl": "a90ca9d820e8ebd8abde93de84e1ce4ba038e82df6fbea0aa392c1cffac60009",
+    "graph-3-1.wgsl": "4121ef94216eda7cce679f8c2f4d1043de2ab938cd24c4df0312fab6292b098a",
+    "graph-3-10.wgsl": "b2f911029fa9f0fb74bfe936c79eed8ebf916b2867b5a50c5744d69a88bda053",
+    "graph-3-11.wgsl": "4b487ac4592e0f5922482721fe4c805bd348da7c688e417765ce89f0df59cf4a",
+    "graph-3-12-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-13-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-14-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-15.wgsl": "4280f556b1abd790763b13ea4b0db635ae18380a43c99e52f31b01a2e70a3f7a",
+    "graph-3-16.wgsl": "f70d57d6094bf9ff36bec1972e5696223b18037301fddcfc34be570ac13ad44c",
+    "graph-3-17-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-18.wgsl": "40ba0e3a73bb19ed49f7a3ea8ccb657765db4928bcd03f2233149b1fbdc60e53",
+    "graph-3-19.wgsl": "eb486f98b79a17989bc39fbf0d5c4d292e10c1b00546ab1010ddc961d553e115",
+    "graph-3-2-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-20-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-21-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-22.wgsl": "ca7d6023599778cd9894b157f4d4f99f6c4d6bf749e176d7c5c2c8375f08e0b6",
+    "graph-3-23.wgsl": "0b178783970683564e4dbb77c8f4bd3ee95a8a052f3cfce72e968fc560edd202",
+    "graph-3-24-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-25.wgsl": "b8c06e2b361df2daa723f8c10f0e0992b97b6ad7ebae378482519ae42d97c7ef",
+    "graph-3-26.wgsl": "982a1c2413c7e83ebc9d04d9682277c606dd21e63351aedc102f20651f7185af",
+    "graph-3-27-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-28-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-29-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-3.wgsl": "ea95c86d79e99cdb2a23adf920f1361f1605a84b8a632d119ae3a8e4f57bf75e",
+    "graph-3-30-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-31.wgsl": "6d7a41ab2a2e3288400d14ebd22d7a7d3c30c3af0c71e51eb082476e28f78faa",
+    "graph-3-32.wgsl": "57fadf2b21e7bf8cd81b9dcc1aef8cc19042ba394b3e9d91c9a37bbfb97cfddb",
+    "graph-3-33-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-34.wgsl": "8abfc7a41200eb8e430fb5d1f1e4d0c69634579035738a41201e3330d66601ff",
+    "graph-3-35.wgsl": "51effa5750b0f8953bf6c5019c9acdceffc0461069f34a7a1cffaabc8d8ec556",
+    "graph-3-36-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-37-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-38.wgsl": "0effec549a51242587d7281817782da0c0cd3fbea33ffc2d1265ed2e8429fdba",
+    "graph-3-39.wgsl": "c0b4ddbc8dc815b1372a02fac2923235862b3a633321cf8dcbfa5a953d4409ca",
+    "graph-3-4.wgsl": "b1720d69435c128cd968bd049c8ee60584ae8eeb24aaa7f91a512808cca8f72f",
+    "graph-3-40-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-41.wgsl": "7508dde2cdab9b550a2fb2bfdd087861a9c9fa32e39b22b2b076eb954b5208c8",
+    "graph-3-42.wgsl": "64edaa26c6b673b7a3f7f947984ce4ea070843dae96a5007f7219ba88244fa50",
+    "graph-3-43-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-44-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-45-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-46.wgsl": "58061986dad74f7c2baf383c9c4ebfd3c1a7ee0c64cd14a638e5e13d451f76d1",
+    "graph-3-47.wgsl": "fe8bc248736b85606bbecfe7f164ca05c04dd60444d5cc08aa9cad195963d27b",
+    "graph-3-48-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-49.wgsl": "7f3192b749fdf8b4158618f0eb22cea0de8b6702230567c166a15d13965c7094",
+    "graph-3-5-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-50.wgsl": "3f351a0912e5205260fd69eab613b73527722833709e30c1b8f1b45477f205d4",
+    "graph-3-51-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-52-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-53.wgsl": "f437554c6061bff442330e17e16cc4be0e5d308886de75a7275e9855f89edc27",
+    "graph-3-54.wgsl": "4cae1bbde0549976f0a67a0b420cc2845e7f0e2d3d3f0292e9fe26e952df598a",
+    "graph-3-55-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-56.wgsl": "2668fcc98ac77566cd0f414aa1d305e7023ce4c8f1ec2c2b92bd1cd7f283ed67",
+    "graph-3-57.wgsl": "95dbf3dfdcdec285980d28b088be3df8ceb861b24687ef499ef83d61aba0c447",
+    "graph-3-58-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-59-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-6-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-60-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-61-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-62-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-3-63.wgsl": "0f3e986f4755e8c924b4b478d30d279fb982c199ea650f9650ccfd31ef6b8bb1",
+    "graph-3-7.wgsl": "d5e30359ed3f63104dd103b9ce964a9122c34cfb00e9aff193811d48645a961a",
+    "graph-3-8.wgsl": "c28f35e2b3e62c8f0b7841bab912aaf83a74d88fabdb7b15a66523bcbbd0067a",
+    "graph-3-9-concat.wgsl": "b2cd3d7f3584d510dc67abc6207208d14473c8864ed23b8573456d91771d89c4",
+    "graph-4-0.wgsl": "b70f156c9149ac90107335c41b6afd1d7d87598b02023a4bd4aa117785170379",
+    "graph-4-1.wgsl": "57eb518d2a74ea2fb646063659ac722f6cb0c6a311c7aaec7004ddbca25e1996",
+    "graph-4-2.wgsl": "1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b",
+    "graph-4-3.wgsl": "1c623d0db3eb3def588b24ad1b8ec80608ed13fd2d3841db2a4844328b82ef9b",
+    "graph-4-4.wgsl": "fe44bbe4a98531b0eecfdf1b2d109a6305376c3fbeaa68debd945c7a87c2f0d0",
+    "graph-4-5.wgsl": "6fcba5be9554f27a8189e2eaf5803910f02f7f0b81fedad9e074364f92e8200b",
+    "graph-5-0.wgsl": "7c947f088b66d39e2ac4d1e133e69a4bab60d2fe4cd0910faee7c50a39524f71",
+    "graph-6-0.wgsl": "e08afe509ad443129e5de60322673dd55561059dede3f051a51def235ca20ac2",
+    "graph-6-1.wgsl": "8f893925b5872d6f8d1189268158e0830590d8f3464e3ff0e0b37efb8ca6f2ac",
+    "graph-7-0.wgsl": "be366f6383057604aa676b74bc61abae8edab9f7998b44dfc6573e34fd07225e",
+    "graph-8-0.wgsl": "1b80b43854f3ed751b712da0308fa0770bea88a9fa870463fffe42220cec024f"
+  },
+  "trust": [
+    "type checker",
+    "literal C and WGSL lowering",
+    "packed ABI and host pipeline execution",
+    "C/LLVM, WebGPU/wgpu and drivers"
+  ]
+}
