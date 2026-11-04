@@ -1,0 +1,29 @@
+{
+  "scope": "Final published compiler reproduces the exact measured JS bytes and all five compatibility artifacts. Measurements originally used identical JS emitted by a debug compiler.",
+  "toolchain": {
+    "ink_repository": "https://github.com/siliconjungle/ink-lang",
+    "ink_revision": "fba4c054b030048eb957517bd7b67803d05eb69f",
+    "planner_revision": "e6eafa79170ae1fc7a7e1cf27ffcee4f71dd6037",
+    "knowledge_revision": "0f6633380156133a5e928fccf27eccf1cd307efe",
+    "javascript_revision": "d04af9c2eddbd3e60194c7e45f5257d3e6d6d414"
+  },
+  "compiler_sha256": "3c0f0661464d9bb2182d1472283efef085fc14a871b4c0954ecf367856638eb3",
+  "packages": {
+    "lowerings/js": "d04af9c2eddbd3e60194c7e45f5257d3e6d6d414",
+    "lowerings/gpu": "5813f2dfdeb79293238784e5bb6e2515304c2df8",
+    "runtime": "6e3da3c2ddb028942ba90113a542e5d387561e98",
+    "knowledge": "0f6633380156133a5e928fccf27eccf1cd307efe",
+    "planner": "e6eafa79170ae1fc7a7e1cf27ffcee4f71dd6037"
+  },
+  "artifacts": {
+    "artifacts/javascript/before.mjs": "00e2a96a4d4a0a86c6d80ab4acdb944b196d65e0d52824dab4ce7490b21ed735",
+    "artifacts/javascript/after.mjs": "9d619f516e4ec74a1bd4063c1a28f19eb673cc5de010b7a03c6a2440dc3a0291"
+  },
+  "local_checks": {
+    "javascript_standalone_tests": 71,
+    "distribution_regressions": 32,
+    "importer_tests": 23,
+    "compatibility_models": 5
+  },
+  "full_distribution_ci": "Not yet verified; all jobs must finish green."
+}

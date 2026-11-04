@@ -1,0 +1,55 @@
+{
+  "scope": "Current JS mechanism regression on the retained five-model compatibility fixtures; no new performance claim for these fixtures.",
+  "models": [
+    {
+      "model_id": "minishlab/potion-base-2M",
+      "revision": "389b9f64be5aa4ae7a6bc6fe95ef20ce485ae5da",
+      "cases": 16,
+      "dimensions": 64,
+      "all_outputs_bit_exact": true,
+      "source_sha256": "cc89cb00728fd61866e5535879badd6a19d0ca0f482b410e33d92b8ad9b9cebb",
+      "artifact_sha256": "3638fe7278299e0ff5bb64f94fb1c94656f9eae18f9bede12bd5d9cd93f8c50d",
+      "outputs_sha256": "f9e2c2e89fd98847b32f0fffe23a4ddc9eb664eea1d3624e7c5ddfb1bd532bd3"
+    },
+    {
+      "model_id": "minishlab/potion-base-8M",
+      "revision": "bf8b056651a2c21b8d2565580b8569da283cab23",
+      "cases": 16,
+      "dimensions": 256,
+      "all_outputs_bit_exact": true,
+      "source_sha256": "aa79d293e787228dbf0b5f6d985751d7cf322419d916c2f83133aafd1e626dce",
+      "artifact_sha256": "2b451221bc43e3d1a0ef402c36907c4368f35f1551f3e020fcc3e8d608df7b15",
+      "outputs_sha256": "a06ca64f2c4d9f389fa8b7bb18a7551cc4ff6c25b2f11f6ebbd0745468fdfdf0"
+    },
+    {
+      "model_id": "sentence-transformers/static-retrieval-mrl-en-v1",
+      "revision": "f60985c706f192d45d218078e49e5a8b6f15283a",
+      "cases": 16,
+      "dimensions": 1024,
+      "all_outputs_bit_exact": true,
+      "source_sha256": "e1363f7f036ec87a636bd46369e09a6ea8173f262e8eb75798f07350f631858b",
+      "artifact_sha256": "5dfc2d5d7a6cec60ad21fa415e86201f28b81e00c74639c67fd1103ddf51c894",
+      "outputs_sha256": "5b8fcfdffdc6b21a32536ba8a17174e2e680faf87077aff6f2ff4d96ba62cbba"
+    },
+    {
+      "model_id": "fixture/unseen-weighted",
+      "revision": "seed-91837",
+      "cases": 16,
+      "dimensions": 7,
+      "all_outputs_bit_exact": true,
+      "source_sha256": "49a59e997680b6ee571470ce909c6006548b8a928595500255712698f2a4fa48",
+      "artifact_sha256": "182eb9a0dd4c158499aa4695a2a82704115525bcd9c2be39087aa5c0e85bf0ce",
+      "outputs_sha256": "152d53794300c1ab56f80026ec14049092cc605f7617d894c74f90fce7c2ea4f"
+    },
+    {
+      "model_id": "fixture/unseen-clamp",
+      "revision": "seed-91837",
+      "cases": 16,
+      "dimensions": 5,
+      "all_outputs_bit_exact": true,
+      "source_sha256": "c5663228fe62641d00aa244dcb5108f1b2e7ac9dc1da139fa93238369fa1f47b",
+      "artifact_sha256": "c5713a881442775bbd39068b1081975fb43aca53c33966ec0682c27a9fd1d350",
+      "outputs_sha256": "3baba815fce5b2ee73c4d80a722fbe4bf082840ebb0f8cb66ecf8bb20191a1f6"
+    }
+  ]
+}

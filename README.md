@@ -1,9 +1,11 @@
 # Ink Static Embeddings
 
-Import static embedding inference into readable Ink, retain learned weights as
-data, and benchmark JavaScript, Rust and WebGPU execution. The tokenizer remains
-host-side. This is an architecture-aware importer, not a decompiler that recovers
-algorithms or concepts from learned weights.
+Compile static embedding inference written in Ink to JavaScript, Rust and
+WebGPU, using existing learned weight tables as data. Model adapters read
+metadata and emit the supported lookup/pooling/normalization pipeline; they do
+not translate arbitrary library source code. The tokenizer remains host-side.
+This is an architecture-aware importer, not a decompiler that recovers algorithms
+or concepts from learned weights.
 
 The supported architecture is **static token embeddings with mean pooling and
 optional L2 normalization**. The importer reads model metadata and weights;
@@ -12,6 +14,10 @@ StaticEmbedding exports. Tokenization stays host-side; generated numeric
 inference runs independently of the original library. Transformer/LLM import and
 discovery of hidden symbolic algorithms are future work.
 
+Potion 2M and 8M are Model2Vec models. Sentence Transformers compatibility covers
+its `StaticEmbedding` module with optional `Normalize`, rather than its
+transformer-based models.
+
 ## Tested models
 
 **Three pretrained models and two synthetic fixtures** have passed JavaScript,
@@ -19,7 +25,7 @@ Rust and hardware WebGPU correctness checks:
 
 | Pretrained model | Dimensions | F32 table values | Correctness | Performance data |
 | --- | ---: | ---: | --- | --- |
-| [minishlab/potion-base-2M](https://huggingface.co/minishlab/potion-base-2M) | 64 | 1,889,792 | JS / Rust / WebGPU | [CPU](results/compiler/REPORT.md), [native GPU](results/targets/REPORT.md), [browser WebGPU](results/browser/REPORT.md) |
+| [minishlab/potion-base-2M](https://huggingface.co/minishlab/potion-base-2M) | 64 | 1,889,792 | JS / Rust / WebGPU | [JS CPU](results/javascript/REPORT.md), [Rust CPU](results/compiler/REPORT.md), [native GPU](results/targets/REPORT.md), [browser WebGPU](results/browser/REPORT.md) |
 | [minishlab/potion-base-8M](https://huggingface.co/minishlab/potion-base-8M) | 256 | 7,559,168 | JS / Rust / WebGPU | Not benchmarked |
 | [sentence-transformers/static-retrieval-mrl-en-v1](https://huggingface.co/sentence-transformers/static-retrieval-mrl-en-v1) | 1,024 | 31,254,528 | JS / Rust / WebGPU | Not benchmarked |
 
@@ -32,6 +38,29 @@ Performance claims currently apply **only to Potion 2M**. Correctness results fo
 the other models do not establish their speed or embedding quality.
 
 ## Results
+
+**Current result: faster for short CPU queries and large GPU batches; slower for
+the mixed CPU corpus.** All measured performance results use Potion 2M on an
+Apple M4 Pro. Loading and tokenization are excluded.
+
+| Measurement | Ink | Original NumPy CPU | Result |
+| --- | ---: | ---: | --- |
+| [JS CPU, 1–16 tokens](results/javascript/REPORT.md) | 1.84 µs/query | 4.85 µs/query | **2.63× faster** |
+| [JS CPU, mixed 64-case corpus](results/javascript/REPORT.md) | 16.84 µs/query | 8.77 µs/query | **1.92× slower** |
+| [Native GPU, batch 1,024](results/targets/REPORT.md) | 3.77 µs/embedding | 6.87 µs/embedding | **1.82× CPU throughput** |
+| [Browser WebGPU, batch 1,024](results/browser/REPORT.md) | 4.10 µs/embedding | 6.87 µs/embedding | **1.68× CPU throughput** |
+
+CPU rows are single-query latency. GPU rows are amortized batch throughput with
+resident weights, new-query uploads and complete readback; **no upstream GPU
+baseline has been measured**. The browser comparison uses a separately measured
+CPU baseline. The latest JS changes improve the previous checked JS compilation
+by 1.31× on short inputs and 1.05× on the mixed corpus; one-time weight preparation
+increases from 17.56 to 29.05 ms. Every output still matches the ordered F32 oracle
+bit for bit. See the linked reports for raw samples and measurement boundaries.
+
+![Potion 2M CPU speed comparison](media/potion-2m-speed.gif)
+
+[Download the animation as GIF or MP4](media/README.md).
 
 **Initial result:** conversion and fidelity checks pass, but this workload shows
 no clear compiler-optimization speedup. The original NumPy kernel is faster than
@@ -218,6 +247,24 @@ Current general builds with `--optimize` use `knowledge/static-pipelines.json`;
 historical builds retain `knowledge/laws.json`. The compiler/planner/knowledge
 revision pins are explicit, and original reports keep their original identities.
 
+### Reproduce the current JavaScript latency study
+
+With the historical `build/` model and corpus prepared above, the exact measured
+before/after JavaScript modules are retained in `artifacts/javascript/`:
+
+```sh
+uv run python scripts/js_latency_benchmark.py \
+  --before artifacts/javascript/before.mjs --after artifacts/javascript/after.mjs \
+  --output work/repeated-js-latency
+```
+
+To regenerate the current module, build the distribution at `toolchain.lock.json`
+and run its `ink build build/model.ink --selection results/compiler/selection.json
+--target javascript -o build/js-dense-inline.mjs`. The retained checked selection
+is unchanged. [Compiler/artifact identities](results/javascript/toolchain.json)
+and [five-model JS regression results](results/javascript/compatibility.json)
+are recorded separately from the performance samples.
+
 ## Measurement boundaries
 
 Three warm numeric paths receive the **same token IDs** and return complete
@@ -247,14 +294,14 @@ not an embedding-quality benchmark such as MTEB.
 Model weights are redownloaded from an immutable revision and hash-checked.
 No credentials or model caches are committed.
 
-## Boundaries and next steps
+## Historical boundaries and follow-up
 
 This experiment establishes a full small-model conversion and checked optimization
 attempt. It does not demonstrate a speedup, general network import, neural
 architecture discovery, or a universal proof of the compiler/importer.
-Next useful work is wider operator coverage and
-external source-bound laws for ordered pooling, followed by measurements under
-the same explicit boundaries. Ink remains an independently pinned dependency.
+The later compiler follow-up makes existing checked ordered-pooling fusion
+reachable, and the current short-input JS result is recorded above. Wider
+operator coverage remains future work. Ink remains an independently pinned dependency.
 
 ## Native Rust and GPU follow-up
 

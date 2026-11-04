@@ -1,0 +1,50 @@
+{
+  "scope": "Fresh-process CPU comparison on the retained 64-query, 64-dimension fixture.\n\nTokenization, loading and immutable-weight preparation are outside steady state.\nEach timed call consumes all output dimensions. This measures single-query\nlatency, not batch throughput. NumPy retains its own reduction order; generated\nJavaScript must match the independent ordered-F32 oracle exactly.\n",
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "processor": "arm",
+  "groups": 6,
+  "rounds": 9,
+  "repetitions": 100,
+  "median_ns_per_embedding": {
+    "all": {
+      "numpy": 8767.389296875,
+      "before": 17692.122421875,
+      "after": 16841.487656250003
+    },
+    "empty": {
+      "numpy": 775.10375,
+      "before": 1616.0412499999666,
+      "after": 1469.4262500000832
+    },
+    "short": {
+      "numpy": 4847.656458333333,
+      "before": 2417.2133333333554,
+      "after": 1844.3056249999754
+    },
+    "medium": {
+      "numpy": 7387.6355,
+      "before": 12133.062499999938,
+      "after": 11104.280999999959
+    },
+    "long": {
+      "numpy": 17126.393125000002,
+      "before": 50303.789374999964,
+      "after": 49246.653749999896
+    }
+  },
+  "file_sha256": {
+    "build/compiler-optimized.mjs": "00e2a96a4d4a0a86c6d80ab4acdb944b196d65e0d52824dab4ce7490b21ed735",
+    "build/js-dense-inline.mjs": "9d619f516e4ec74a1bd4063c1a28f19eb673cc5de010b7a03c6a2440dc3a0291",
+    "build/model.ink": "ad07220e6e86adfcba0977c6dd6abe73a1fb6df2cde7841577cfbaa5999e17dc",
+    "build/model.json": "8769919475ed22b0bd71d0cd7e1017e1615f0aa555900f9af68793f952dedeef",
+    "build/weights.f32": "a0d8dd289307213f53db86d5c5368be6ae0e69b5c2536dc0352f9c188587d938",
+    "build/corpus.json": "c5e1d0d975f89d751f7e774780fd67cf0273bd5775a723505774f48f23e9425f",
+    "results/compiler/selection.json": "8c16c3d81eedd630d67c1fc3086ae99e6c7bc969d22767e5ff6310fc7f044a19",
+    "scripts/js_latency_benchmark.py": "68ed01526021c1ebf701e306d0dbc893167299a0260a9f4dce7cec84d6b44ef3",
+    "scripts/js_latency_worker.mjs": "22b920ded14af7c809401943cc74aab68db1b4099cca58bc993f60c6bc02e819"
+  },
+  "javascript_weight_capture_prepare_ms": {
+    "before": 17.561978500000002,
+    "after": 29.050770999999997
+  }
+}

@@ -8,7 +8,7 @@ checks. Performance measurements currently cover **Potion 2M only**.
 
 | Model | Architecture / export | Vocabulary rows | Dimensions | Imported F32 table values | Evidence |
 | --- | --- | ---: | ---: | ---: | --- |
-| [minishlab/potion-base-2M](https://huggingface.co/minishlab/potion-base-2M) | Model2Vec; token lookup → mean → L2 with epsilon | 29,528 | 64 | 1,889,792 | [Correctness](results/general/potion-2m/validation-report.json), [CPU](results/compiler/REPORT.md), [native GPU](results/targets/REPORT.md), [browser WebGPU](results/browser/REPORT.md) |
+| [minishlab/potion-base-2M](https://huggingface.co/minishlab/potion-base-2M) | Model2Vec; token lookup → mean → L2 with epsilon | 29,528 | 64 | 1,889,792 | [Correctness](results/general/potion-2m/validation-report.json), [JS CPU](results/javascript/REPORT.md), [Rust CPU](results/compiler/REPORT.md), [native GPU](results/targets/REPORT.md), [browser WebGPU](results/browser/REPORT.md) |
 | [minishlab/potion-base-8M](https://huggingface.co/minishlab/potion-base-8M) | Model2Vec; token lookup → mean → L2 with epsilon | 29,528 | 256 | 7,559,168 | [Correctness](results/general/potion-8m/validation-report.json) |
 | [sentence-transformers/static-retrieval-mrl-en-v1](https://huggingface.co/sentence-transformers/static-retrieval-mrl-en-v1) | Sentence Transformers StaticEmbedding; token lookup → mean; no Normalize module in this export | 30,522 | 1,024 | 31,254,528 | [Correctness](results/general/st-retrieval/validation-report.json) |
 
@@ -69,6 +69,8 @@ measurement boundaries and raw process/round samples, including slower results.
 
 | Study | Measured result | Interpretation |
 | --- | --- | --- |
+| [Current JS CPU, 1–16 tokens](results/javascript/REPORT.md) | Ink 1.84 µs/query; NumPy 4.85 µs/query | **2.63× faster** than NumPy; 1.31× faster than the previous checked JS compilation. |
+| [Current JS CPU, mixed corpus](results/javascript/REPORT.md) | Ink 16.84 µs/query; NumPy 8.77 µs/query | **1.92× slower** than NumPy; 1.05× faster than the previous checked JS compilation. One-time JS weight capture/preparation increases from 17.56 to 29.05 ms. |
 | [Checked compiler follow-up](results/compiler/REPORT.md) | JS 32.18 → 18.94 µs/embedding; Rust borrowed entrypoint 10.97 µs | JS improves 1.70× against the previous JS compilation. Both remain slower than the historical NumPy CPU result of 8.51 µs on the mixed corpus. |
 | [Native GPU, batch 1,024](results/targets/REPORT.md) | Ink GPU 3.77 µs/embedding; NumPy CPU 6.87 µs/embedding | About 1.82× the CPU baseline's throughput, including new-query uploads and decoded readback. CPU versus GPU; no upstream GPU baseline. |
 | [Browser WebGPU, batch 1,024](results/browser/REPORT.md) | 4.10 µs/embedding; about 4.20 ms for the batch | Hardware WebGPU with resident weights in installed Chrome. About 1.68× the separately measured NumPy CPU batch baseline; not a matched browser/GPU comparison. |
