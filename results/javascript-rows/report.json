@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "scope": "Matched CPU latency: NumPy, previous/current JS host and row-layout controls.",
+  "groups": 6,
+  "rounds": 9,
+  "repetitions": 100,
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "summary_ns_per_embedding": {
+    "all": {
+      "numpy": 8723.030546875001,
+      "previous": 17342.12890625,
+      "reference": 17504.518281249988,
+      "rows-array": 16819.033203125007,
+      "rows": 9895.638124999998
+    },
+    "empty": {
+      "numpy": 790.26,
+      "previous": 1614.4274999999197,
+      "reference": 1719.7912500003554,
+      "rows-array": 1763.5412499998893,
+      "rows": 1674.1137499998617
+    },
+    "short": {
+      "numpy": 4930.850833333334,
+      "previous": 2102.717083333374,
+      "reference": 2178.072916666641,
+      "rows-array": 2115.9897916666637,
+      "rows": 2094.0712499999845
+    },
+    "medium": {
+      "numpy": 7598.86475,
+      "previous": 11583.708250000029,
+      "reference": 11792.08349999999,
+      "rows-array": 11942.479250000019,
+      "rows": 7839.218750000015
+    },
+    "long": {
+      "numpy": 17183.815000000002,
+      "previous": 50954.987187499864,
+      "reference": 50941.627499999944,
+      "rows-array": 47262.968749999956,
+      "rows": 25774.46625
+    }
+  },
+  "capture_prepare_ms": {
+    "previous": 37.58625,
+    "reference": 37.284499499999995,
+    "rows-array": 37.076771,
+    "rows": 36.695353499999996
+  },
+  "source_sha256": {
+    "scripts/js_rows_worker.mjs": "ae4e257cba43226338c44bd76691fc22d2209ef30f10c8eab3bf8797786b40f8",
+    "scripts/js_rows_benchmark.py": "fda83bd3d286d1aa1d371748892e4f4af9ed360a72b6a5d46fdf842e4023ff41",
+    "scripts/js_latency_benchmark.py": "68ed01526021c1ebf701e306d0dbc893167299a0260a9f4dce7cec84d6b44ef3",
+    "runtime/static-embedding.mjs": "2e1c97b5a1c8ff790d8433d147d96663edd95ef7ad8ddae0784447295c6efc44",
+    "src/ink_static_embeddings/javascript.py": "0a3a66b9f5d76986a28021be732feda9ee9067523de8304f78ca2edfd5e76b36",
+    "artifacts/javascript-rows/runtime-before.mjs": "75e638efba8f6184f23e8c2b7daaf02c01c9997dc2172a06cbcfaedd6e61c089",
+    "build/general/potion-2m/optimized.mjs": "0984646c0163e2af1c95fba0f5ab53c09df96b40d17f6356f335615ea41e2705",
+    "build/general/potion-2m/javascript/packed-rows/model.ink": "217aa6851fe734ea1bf5da43e8bd9ea04747243a0fe994e280007d5d21cd7c50",
+    "build/general/potion-2m/javascript/packed-rows/model.mjs": "6ed4dd277bd83e3f52670a0cd0497fe778561b04b206e8e1c3eeb2a1c163414b",
+    "build/general/potion-2m/javascript/packed-rows/array-reference.mjs": "8f77784d10d6ea8f3c6d59a8da51c860589934572dc4e3250ebe9c01470edcb5",
+    "build/general/potion-2m/javascript/packed-rows/layout.json": "357dea614262909520758204f17d060c411486e5ec8e979eabcc4120cb850f7f",
+    "build/corpus.json": "c5e1d0d975f89d751f7e774780fd67cf0273bd5775a723505774f48f23e9425f",
+    "build/general/potion-2m/weights.f32": "a0d8dd289307213f53db86d5c5368be6ae0e69b5c2536dc0352f9c188587d938"
+  }
+}

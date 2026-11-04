@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "kind": "row-packed-f32",
+  "base_source_sha256": "c5663228fe62641d00aa244dcb5108f1b2e7ac9dc1da139fa93238369fa1f47b",
+  "weights_sha256": "6bee504388e52e687df573bd76624a1c6651f22343fe6316e5da15581f24e86c",
+  "dimensions": 5,
+  "vocabulary_size": 17,
+  "shards": [
+    {
+      "name": "rows_0",
+      "row_offset": 0,
+      "rows": 17
+    }
+  ],
+  "scope": "Authored row-oriented Ink layout; weights remain bit-identical table data.\n\nEach token selects a row once, then visits adjacent dimensions. Every dimension\nstill adds tokens in source order. The compiler implements the numeric Buffer;\nthis adapter supplies no target-code rewrite or equality/profitability proof.\n",
+  "source_sha256": "54de814807939d670ef2a16e3af1a81727c06a58a9502125acdb1bda1c53f8a6",
+  "module_sha256": "7d3ecbd82cd4d47ebf9e75b1c5d8feb25353324d5bd3d3a48f322ca879415864",
+  "compiler_sha256": "f2fbf95e23b6cba1525faa2f0c6c012b58b580518ae4e8bceb6a2a74ce443c42"
+}

@@ -1,0 +1,59 @@
+{
+  "scope": "Published pinned release reproduces the exact measured target bytes. The Buffer carrier is generic compiler machinery; the row layout and <=16-token branch are authored Ink, not newly proof-selected rewrites.",
+  "toolchain": {
+    "ink_repository": "https://github.com/siliconjungle/ink-lang",
+    "ink_revision": "c29e23d4ef2c9b4a0aa99abf05bfedb954b25b7d",
+    "planner_revision": "e6eafa79170ae1fc7a7e1cf27ffcee4f71dd6037",
+    "knowledge_revision": "0f6633380156133a5e928fccf27eccf1cd307efe",
+    "javascript_revision": "5466464bff657a77074607a88131a82c473f8493"
+  },
+  "before_toolchain": {
+    "ink_repository": "https://github.com/siliconjungle/ink-lang",
+    "ink_revision": "fba4c054b030048eb957517bd7b67803d05eb69f",
+    "planner_revision": "e6eafa79170ae1fc7a7e1cf27ffcee4f71dd6037",
+    "knowledge_revision": "0f6633380156133a5e928fccf27eccf1cd307efe",
+    "javascript_revision": "d04af9c2eddbd3e60194c7e45f5257d3e6d6d414"
+  },
+  "compiler_sha256": "edab3d49df81ea87572f6769d28fe5d1f83b58ff13cbd8393624ddfe5ff06797",
+  "packages": {
+    "lowerings/js": "5466464bff657a77074607a88131a82c473f8493",
+    "lowerings/gpu": "d65af36d45ff26db7e230000badace36b3018a43",
+    "runtime": "7e456294edaac6d810b3e6bb35c04910388dad23",
+    "knowledge": "0f6633380156133a5e928fccf27eccf1cd307efe",
+    "planner": "e6eafa79170ae1fc7a7e1cf27ffcee4f71dd6037"
+  },
+  "reproduced_models": [
+    {
+      "name": "potion-2m",
+      "byte_identical_to_measured_target": true,
+      "module_sha256": "6ed4dd277bd83e3f52670a0cd0497fe778561b04b206e8e1c3eeb2a1c163414b"
+    },
+    {
+      "name": "potion-8m",
+      "byte_identical_to_measured_target": true,
+      "module_sha256": "822f4130b7228755d08ef16306c0ea2a092cfb15c7c795fb67069fc98e8c2222"
+    },
+    {
+      "name": "st-retrieval",
+      "byte_identical_to_measured_target": true,
+      "module_sha256": "6c8907428edc64fa9237d5efc17554fbe77cc81b42058082bf47c9bffb5ec9c5"
+    },
+    {
+      "name": "unseen-weighted",
+      "byte_identical_to_measured_target": true,
+      "module_sha256": "85599c33d432c23976c8a23463ee9f366241f0a323a18545b3dd7303d92152e8"
+    },
+    {
+      "name": "unseen-clamp",
+      "byte_identical_to_measured_target": true,
+      "module_sha256": "7d3ecbd82cd4d47ebf9e75b1c5d8feb25353324d5bd3d3a48f322ca879415864"
+    }
+  ],
+  "local_checks": {
+    "standalone_js": 72,
+    "distribution": 36,
+    "importer": 26,
+    "browser_models": 5
+  },
+  "full_distribution_ci": "Not verified; all jobs must finish green."
+}

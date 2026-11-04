@@ -26,19 +26,47 @@ function validateWeights(weights,m){
   for(const value of weights)if(!Number.isFinite(value))throw Error('Nonfinite weight');
 }
 
-export function createJavascriptEncoder(module,manifest,weights){
+export function createJavascriptEncoder(module,manifest,weights,{layout=null}={}){
   validateWeights(weights,manifest);
-  const codec=module.compiledValues.encode,count=manifest.shards.length;
+  const codec=module.compiledValues.encode;
+  let captured,count;
+  if(layout===null){
+    count=manifest.shards.length;
+    if(codec.params.length!==count+1)throw Error('Compiled module/manifest ABI mismatch');
+    captured=manifest.shards.map((s,i)=>[i,codec.params[i].capture(weights.subarray(s.offset,s.offset+s.elements))]);
+  }else{
+    if(layout.schema!==1||layout.kind!=='row-packed-f32'||layout.base_source_sha256!==manifest.source_sha256||
+       layout.weights_sha256!==manifest.weights_sha256||layout.dimensions!==manifest.dimensions||layout.vocabulary_size!==manifest.vocabulary_size||
+       !Array.isArray(layout.shards)||!layout.shards.length)throw Error('Packed row layout/model mismatch');
+    count=layout.shards.length;
+    if(codec.params.length!==count+1)throw Error('Compiled row module/manifest ABI mismatch');
+    let start=0;captured=[];
+    for(let i=0;i<count;i++){
+      const s=layout.shards[i];
+      if(s.name!==`rows_${i}`||s.row_offset!==start||!Number.isInteger(s.rows)||s.rows<1||
+         s.rows*(manifest.dimensions+1)>999000||start+s.rows>manifest.vocabulary_size)throw Error('Invalid packed row shard');
+      const rows=Array.from({length:s.rows},(_,r)=>weights.subarray((start+r)*manifest.dimensions,(start+r+1)*manifest.dimensions));
+      captured.push([i,codec.params[i].capture(rows)]);start+=s.rows;
+    }
+    if(start!==manifest.vocabulary_size)throw Error('Incomplete packed row table');
+  }
   if(codec.params.length!==count+1)throw Error('Compiled module/manifest ABI mismatch');
-  const captured=manifest.shards.map((s,i)=>[i,codec.params[i].capture(weights.subarray(s.offset,s.offset+s.elements))]);
   const prepared=module.prepareCompiled('encode',captured);
   return {
     backend:'javascript',manifest,
     encode(ids){
       validateIds(ids,manifest);
-      const result=new Float32Array(manifest.dimensions);
-      const n=module.callPreparedCompiledInto(prepared,[codec.params[count].capture(ids)],result);
+      // Into's public F32 carrier can contain exact {F32Bits} values. Convert
+      // those through a word view, preserving infinities and NaN payloads.
+      const values=new Array(manifest.dimensions),result=new Float32Array(manifest.dimensions);
+      const n=module.callPreparedCompiledInto(prepared,[codec.params[count].capture(ids)],values);
       if(n!==result.length)throw Error('Unexpected embedding dimension');
+      let bits;
+      for(let i=0;i<n;i++){
+        const x=values[i];
+        if(typeof x==='number')result[i]=x;
+        else (bits??=new Uint32Array(result.buffer))[i]=x.F32Bits;
+      }
       return result;
     },
     encodeBatch(queries){
@@ -48,12 +76,13 @@ export function createJavascriptEncoder(module,manifest,weights){
   };
 }
 
-export async function loadStaticEmbedding(base,{backend='javascript',device=null,optimized=false}={}){
+export async function loadStaticEmbedding(base,{backend='javascript',device=null,optimized=false,javascriptLayout='reference'}={}){
   const root=new URL(base,globalThis.location?.href);
   if(!root.pathname.endsWith('/'))root.pathname+='/';
   const json=async name=>{const r=await fetch(new URL(name,root));if(!r.ok)throw Error(`Cannot load ${name}: ${r.status}`);return r.json();};
   const manifest=await json('model.json');validateManifest(manifest);
   if(!['javascript','gpu'].includes(backend))throw Error('Backend must be javascript or gpu');
+  if(!['reference','packed-rows'].includes(javascriptLayout))throw Error('Unsupported JavaScript layout');
   if(backend==='gpu'&&manifest.parameters*4+4>256*1024*1024)throw Error('Model exceeds existing Ink GPU buffer budget; use JavaScript or Rust');
   const response=await fetch(new URL('weights.f32',root));
   if(!response.ok)throw Error('Cannot load model weights');
@@ -62,6 +91,11 @@ export async function loadStaticEmbedding(base,{backend='javascript',device=null
   if(hash!==manifest.weights_sha256)throw Error('Weight checksum mismatch');
   const weights=new Float32Array(bytes);validateWeights(weights,manifest);
   if(backend==='javascript'){
+    if(javascriptLayout==='packed-rows'){
+      const layout=await json('javascript/packed-rows/layout.json');
+      const module=await import(new URL('javascript/packed-rows/model.mjs',root));
+      return createJavascriptEncoder(module,manifest,weights,{layout});
+    }
     const compilation=await json('target-compilation.json');
     if(compilation.source_sha256!==manifest.source_sha256)throw Error('Compiled source/model mismatch');
     const module=await import(new URL(optimized?'optimized.mjs':'literal.mjs',root));

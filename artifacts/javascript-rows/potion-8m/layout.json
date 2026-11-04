@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "kind": "row-packed-f32",
+  "base_source_sha256": "aa79d293e787228dbf0b5f6d985751d7cf322419d916c2f83133aafd1e626dce",
+  "weights_sha256": "581e7655d306b7c1f8a17bd1dff99375d30caa9c2ab7e833586597239a89f05e",
+  "dimensions": 256,
+  "vocabulary_size": 29528,
+  "shards": [
+    {
+      "name": "rows_0",
+      "row_offset": 0,
+      "rows": 3887
+    },
+    {
+      "name": "rows_1",
+      "row_offset": 3887,
+      "rows": 3887
+    },
+    {
+      "name": "rows_2",
+      "row_offset": 7774,
+      "rows": 3887
+    },
+    {
+      "name": "rows_3",
+      "row_offset": 11661,
+      "rows": 3887
+    },
+    {
+      "name": "rows_4",
+      "row_offset": 15548,
+      "rows": 3887
+    },
+    {
+      "name": "rows_5",
+      "row_offset": 19435,
+      "rows": 3887
+    },
+    {
+      "name": "rows_6",
+      "row_offset": 23322,
+      "rows": 3887
+    },
+    {
+      "name": "rows_7",
+      "row_offset": 27209,
+      "rows": 2319
+    }
+  ],
+  "scope": "Authored row-oriented Ink layout; weights remain bit-identical table data.\n\nEach token selects a row once, then visits adjacent dimensions. Every dimension\nstill adds tokens in source order. The compiler implements the numeric Buffer;\nthis adapter supplies no target-code rewrite or equality/profitability proof.\n",
+  "source_sha256": "ad5f4f0784c85e9f9c4e8090591a8d6e41ebdf5f243d6496a99ec1b1e25726d0",
+  "module_sha256": "822f4130b7228755d08ef16306c0ea2a092cfb15c7c795fb67069fc98e8c2222",
+  "compiler_sha256": "f2fbf95e23b6cba1525faa2f0c6c012b58b580518ae4e8bceb6a2a74ce443c42"
+}

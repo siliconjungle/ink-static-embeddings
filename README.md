@@ -39,7 +39,22 @@ the other models do not establish their speed or embedding quality.
 
 ## Results
 
-**Current result: faster for short CPU queries and large GPU batches; slower for
+The latest [packed-row JavaScript study](results/javascript-rows/REPORT.md)
+reduces mixed-corpus public-API latency from **17.34 to 9.90 µs/query (1.75×)**;
+long inputs improve from **50.96 to 25.77 µs (1.98×)**. Short-input latency stays
+roughly unchanged at **2.09 µs**, versus **4.93 µs for NumPy (2.35× faster)**.
+NumPy still wins on the mixed corpus: **8.72 versus 9.90 µs**; the new JS path
+takes about 13% longer.
+The new JS path also improves **1.80× in installed Chrome**, and all five
+models/fixtures pass its browser correctness checks. Only Potion 2M has timing
+data. Sources, controls, setup costs and adverse results are retained.
+
+The row layout is an explicit option. Its authored Ink selects a token row once,
+then visits adjacent dimensions using a dense F32 accumulation buffer. The
+compiler improvement is generic Buffer execution support; this is not a newly
+discovered/equality-selected algorithm. See [how to build and load it](#packed-row-javascript).
+
+**Earlier study: faster for short CPU queries and large GPU batches; slower for
 the mixed CPU corpus.** All measured performance results use Potion 2M on an
 Apple M4 Pro. Loading and tokenization are excluded.
 
@@ -60,7 +75,9 @@ bit for bit. See the linked reports for raw samples and measurement boundaries.
 
 ![Potion 2M CPU speed comparison](media/potion-2m-speed.gif)
 
-[Download the animation as GIF or MP4](media/README.md).
+[Download the animation as GIF or MP4](media/README.md). Its CPU panels retain the
+earlier direct-destination study; the latest row-layout measurements above use
+the public API with freshly allocated, detached results.
 
 The [Rust/Wasm browser experiment](results/wasm/REPORT.md) compares CPU paths in
 the same Chrome session: optimized JS **22.43 µs/query**, unchanged Ink → Rust/Wasm
@@ -155,6 +172,67 @@ layers and other pooling operations are rejected. GPU limits remain Ink's existi
 be imported for CPU targets without fitting the GPU budget; vocabulary expansion
 may increase their effective table size. GPU sessions default to at most 4096
 tokens per document; `build_model.py --max-tokens N` changes the explicit bound.
+
+## Packed-row JavaScript
+
+After importing a schema-2 model, build the optional readable row layout using
+the current pinned compiler (bootstrap it into a new directory with
+`--output work/row-toolchain`):
+
+```sh
+uv run python scripts/build_js_rows.py --build build/my-model --compiler work/row-toolchain/ink
+```
+
+This emits `javascript/packed-rows/model.ink`, its compiled `model.mjs`, and a
+layout receipt. Existing weight files and token IDs stay unchanged. The host
+captures typed rows once; no learned weights are converted into source literals.
+
+```js
+import {loadStaticEmbedding} from '/runtime/static-embedding.mjs';
+const model = await loadStaticEmbedding('/build/my-model/', {
+  backend: 'javascript',
+  javascriptLayout: 'packed-rows',
+});
+const embeddings = model.encodeBatch([[1, 2, 3], [4, 5]]);
+```
+
+Node can import the generated module and call
+`createJavascriptEncoder(module, manifest, weights, {layout})`, where `layout`
+is the emitted receipt. The reference layout remains available through the
+existing default API. The packed source prefetches row references for up to 16
+tokens and uses row-oriented accumulation for longer inputs. Every dimension
+retains token-sum order and the norm retains its right fold.
+
+The compiler uses dense private Number storage for native F32 Buffer fill;
+exact NaN tags retain ordinary slots, tagged writes promote only their owner's
+range, and growth/freezing preserve source List semantics. Map traversal caches
+the private range and refreshes it on promotion. It does not infer finite values,
+reassociate arithmetic or grant ownership to shared inputs. The public output
+bridge also preserves infinity/NaN bit carriers in Float32Array results.
+
+The [Node/NumPy report](results/javascript-rows/REPORT.md) separates the authored
+layout, compiler storage changes, and public output-boundary control. In
+[Chrome](results/javascript-rows/browser/REPORT.md), the source layout delivers
+most of the gain: old array storage nearly ties dense storage overall, and is
+faster for the medium bucket. This is not a universal storage-policy win.
+Row packing also allocates one captured typed array per vocabulary row; its
+setup/memory cost can outweigh inference gains for short-lived models.
+
+Both JS storage implementations use the identical row Ink source. All 64
+measured outputs and all five retained model/fixture suites match the independent
+ordered F32 oracle bit for bit. Additional 1/7/17-dimensional integration cases
+exercise overflow, subnormals, signed zero, infinities and NaNs. See the
+[retained sources and targets](artifacts/javascript-rows),
+[validation receipt](results/javascript-rows/validation.json), and
+[compiler receipt](results/javascript-rows/toolchain.json).
+
+```sh
+uv run python scripts/js_rows_benchmark.py
+PLAYWRIGHT_MODULE=../work/browser-tools/node_modules/playwright/index.mjs node scripts/js_rows_browser.mjs
+```
+
+These reproduction harnesses use the retained Potion 2M corpus and build paths;
+the model importer, row generator and loader use metadata rather than model names.
 
 To reproduce the validation matrix (PyTorch is only a validation dependency):
 

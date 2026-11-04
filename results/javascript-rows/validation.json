@@ -1,0 +1,88 @@
+{
+  "scope": "Hardware Chrome CPU validation of public packed-row loader; ordered F32, not an embedding-quality benchmark.",
+  "models": [
+    {
+      "model_id": "minishlab/potion-base-2M",
+      "dimensions": 64,
+      "cases": 16,
+      "all_outputs_bit_exact": true,
+      "reordered_queries": true,
+      "detached_outputs": true,
+      "invalid_ids_rejected": true,
+      "row_shards": 2,
+      "artifacts": "artifacts/javascript-rows/potion-2m",
+      "retained_sha256": {
+        "array-reference.mjs": "8f77784d10d6ea8f3c6d59a8da51c860589934572dc4e3250ebe9c01470edcb5",
+        "model.ink": "217aa6851fe734ea1bf5da43e8bd9ea04747243a0fe994e280007d5d21cd7c50",
+        "layout.json": "357dea614262909520758204f17d060c411486e5ec8e979eabcc4120cb850f7f",
+        "reference-selection.json": "ac98379a7d2fab594e31ac67b0e2213ead3700286deb5c9e4a954d6bdce02971",
+        "model.mjs": "6ed4dd277bd83e3f52670a0cd0497fe778561b04b206e8e1c3eeb2a1c163414b",
+        "reference.mjs": "0984646c0163e2af1c95fba0f5ab53c09df96b40d17f6356f335615ea41e2705"
+      }
+    },
+    {
+      "model_id": "minishlab/potion-base-8M",
+      "dimensions": 256,
+      "cases": 16,
+      "all_outputs_bit_exact": true,
+      "reordered_queries": true,
+      "detached_outputs": true,
+      "invalid_ids_rejected": true,
+      "row_shards": 8,
+      "artifacts": "artifacts/javascript-rows/potion-8m",
+      "retained_sha256": {
+        "model.ink": "ad5f4f0784c85e9f9c4e8090591a8d6e41ebdf5f243d6496a99ec1b1e25726d0",
+        "layout.json": "e4492e9c45813a2dae8be7f2420c3b4c1c45426e18dff37c883c2c6042eb00ba",
+        "model.mjs": "822f4130b7228755d08ef16306c0ea2a092cfb15c7c795fb67069fc98e8c2222"
+      }
+    },
+    {
+      "model_id": "sentence-transformers/static-retrieval-mrl-en-v1",
+      "dimensions": 1024,
+      "cases": 16,
+      "all_outputs_bit_exact": true,
+      "reordered_queries": true,
+      "detached_outputs": true,
+      "invalid_ids_rejected": true,
+      "row_shards": 32,
+      "artifacts": "artifacts/javascript-rows/st-retrieval",
+      "retained_sha256": {
+        "model.ink": "2c4543e3d347bb875fffa4ac0d27cb8dbb3f48397f1e41d75644931e42af3d08",
+        "layout.json": "d61d5e1fa32bc7d7a39a5a3bce1a776a2be89626acbcf9e507ceb8d4f990365e",
+        "model.mjs": "6c8907428edc64fa9237d5efc17554fbe77cc81b42058082bf47c9bffb5ec9c5"
+      }
+    },
+    {
+      "model_id": "fixture/unseen-weighted",
+      "dimensions": 7,
+      "cases": 16,
+      "all_outputs_bit_exact": true,
+      "reordered_queries": true,
+      "detached_outputs": true,
+      "invalid_ids_rejected": true,
+      "row_shards": 1,
+      "artifacts": "artifacts/javascript-rows/unseen-weighted",
+      "retained_sha256": {
+        "model.ink": "7984bc9c93aad045ebe41054a5ad31e9bcafc755b2490d211fb8e227df8012b2",
+        "layout.json": "f17880dedd7233d0d11f30c76b82f04cb7d3d3f00b7169c7e1341a1bd6095e64",
+        "model.mjs": "85599c33d432c23976c8a23463ee9f366241f0a323a18545b3dd7303d92152e8"
+      }
+    },
+    {
+      "model_id": "fixture/unseen-clamp",
+      "dimensions": 5,
+      "cases": 16,
+      "all_outputs_bit_exact": true,
+      "reordered_queries": true,
+      "detached_outputs": true,
+      "invalid_ids_rejected": true,
+      "row_shards": 1,
+      "artifacts": "artifacts/javascript-rows/unseen-clamp",
+      "retained_sha256": {
+        "model.ink": "54de814807939d670ef2a16e3af1a81727c06a58a9502125acdb1bda1c53f8a6",
+        "layout.json": "e7e88b86b067cc01ce158de8bca81516aca824aee284b8989fead474bbc06f69",
+        "model.mjs": "7d3ecbd82cd4d47ebf9e75b1c5d8feb25353324d5bd3d3a48f322ca879415864"
+      }
+    }
+  ]
+}

@@ -62,6 +62,12 @@ links retained reference outputs, target checks and browser/device identities.
 These tests cover inference compatibility. We have not run an MTEB/retrieval
 quality evaluation, a transformer/LLM importer or a universal equivalence proof.
 
+The [packed-row JS loader](results/javascript-rows/validation.json) also passes
+all five model/fixture suites in installed Chrome. It reshapes the original
+weight data into captured rows and runs an authored row-oriented Ink variant.
+Tiny 1/7/17-dimensional integration cases additionally check overflow and the
+Float32Array infinity/NaN output boundary.
+
 The later [Rust/Wasm validation](results/wasm/validation.json) additionally checks
 the original and authored four-dimension Ink layouts in installed Chrome on all
 five models/fixtures. It checks every ordered-oracle case, repeated/reordered
@@ -76,6 +82,8 @@ measurement boundaries and raw process/round samples, including slower results.
 
 | Study | Measured result | Interpretation |
 | --- | --- | --- |
+| [Latest packed-row JS, Node](results/javascript-rows/REPORT.md) | Previous JS 17.34 → packed rows 9.90 µs/query over the mixed corpus | **1.75× faster than previous JS**, still about 13% slower than matched NumPy at 8.72 µs. Short queries: JS 2.09 vs NumPy 4.93 µs (**2.35× faster**). Public API with freshly allocated, detached output. |
+| [Latest packed-row JS, Chrome](results/javascript-rows/browser/REPORT.md) | Previous JS 16.78 → packed rows 9.31 µs/query over the mixed corpus | **1.80× faster** in the same browser. This is not a NumPy comparison. The source layout gives most of the gain in Chrome; the compiler storage change is engine/workload dependent. |
 | [Current JS CPU, 1–16 tokens](results/javascript/REPORT.md) | Ink 1.84 µs/query; NumPy 4.85 µs/query | **2.63× faster** than NumPy; 1.31× faster than the previous checked JS compilation. |
 | [Current JS CPU, mixed corpus](results/javascript/REPORT.md) | Ink 16.84 µs/query; NumPy 8.77 µs/query | **1.92× slower** than NumPy; 1.05× faster than the previous checked JS compilation. One-time JS weight capture/preparation increases from 17.56 to 29.05 ms. |
 | [Browser Rust/Wasm, mixed corpus](results/wasm/REPORT.md) | Optimized Ink JS 22.43 µs/query; original Ink → Rust/Wasm 11.55 µs; authored quads → Rust/Wasm 9.29 µs | Quads is **2.41× faster than optimized JS in the same Chrome benchmark**. Both Wasm paths keep weights resident. This is not a NumPy comparison. |

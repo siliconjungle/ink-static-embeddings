@@ -1,0 +1,174 @@
+{
+  "schema": 1,
+  "kind": "row-packed-f32",
+  "base_source_sha256": "e1363f7f036ec87a636bd46369e09a6ea8173f262e8eb75798f07350f631858b",
+  "weights_sha256": "26946bbc5605eadd0663b6196c6b7a7baf4a2c92658abc44bb34024cfa603aab",
+  "dimensions": 1024,
+  "vocabulary_size": 30522,
+  "shards": [
+    {
+      "name": "rows_0",
+      "row_offset": 0,
+      "rows": 974
+    },
+    {
+      "name": "rows_1",
+      "row_offset": 974,
+      "rows": 974
+    },
+    {
+      "name": "rows_2",
+      "row_offset": 1948,
+      "rows": 974
+    },
+    {
+      "name": "rows_3",
+      "row_offset": 2922,
+      "rows": 974
+    },
+    {
+      "name": "rows_4",
+      "row_offset": 3896,
+      "rows": 974
+    },
+    {
+      "name": "rows_5",
+      "row_offset": 4870,
+      "rows": 974
+    },
+    {
+      "name": "rows_6",
+      "row_offset": 5844,
+      "rows": 974
+    },
+    {
+      "name": "rows_7",
+      "row_offset": 6818,
+      "rows": 974
+    },
+    {
+      "name": "rows_8",
+      "row_offset": 7792,
+      "rows": 974
+    },
+    {
+      "name": "rows_9",
+      "row_offset": 8766,
+      "rows": 974
+    },
+    {
+      "name": "rows_10",
+      "row_offset": 9740,
+      "rows": 974
+    },
+    {
+      "name": "rows_11",
+      "row_offset": 10714,
+      "rows": 974
+    },
+    {
+      "name": "rows_12",
+      "row_offset": 11688,
+      "rows": 974
+    },
+    {
+      "name": "rows_13",
+      "row_offset": 12662,
+      "rows": 974
+    },
+    {
+      "name": "rows_14",
+      "row_offset": 13636,
+      "rows": 974
+    },
+    {
+      "name": "rows_15",
+      "row_offset": 14610,
+      "rows": 974
+    },
+    {
+      "name": "rows_16",
+      "row_offset": 15584,
+      "rows": 974
+    },
+    {
+      "name": "rows_17",
+      "row_offset": 16558,
+      "rows": 974
+    },
+    {
+      "name": "rows_18",
+      "row_offset": 17532,
+      "rows": 974
+    },
+    {
+      "name": "rows_19",
+      "row_offset": 18506,
+      "rows": 974
+    },
+    {
+      "name": "rows_20",
+      "row_offset": 19480,
+      "rows": 974
+    },
+    {
+      "name": "rows_21",
+      "row_offset": 20454,
+      "rows": 974
+    },
+    {
+      "name": "rows_22",
+      "row_offset": 21428,
+      "rows": 974
+    },
+    {
+      "name": "rows_23",
+      "row_offset": 22402,
+      "rows": 974
+    },
+    {
+      "name": "rows_24",
+      "row_offset": 23376,
+      "rows": 974
+    },
+    {
+      "name": "rows_25",
+      "row_offset": 24350,
+      "rows": 974
+    },
+    {
+      "name": "rows_26",
+      "row_offset": 25324,
+      "rows": 974
+    },
+    {
+      "name": "rows_27",
+      "row_offset": 26298,
+      "rows": 974
+    },
+    {
+      "name": "rows_28",
+      "row_offset": 27272,
+      "rows": 974
+    },
+    {
+      "name": "rows_29",
+      "row_offset": 28246,
+      "rows": 974
+    },
+    {
+      "name": "rows_30",
+      "row_offset": 29220,
+      "rows": 974
+    },
+    {
+      "name": "rows_31",
+      "row_offset": 30194,
+      "rows": 328
+    }
+  ],
+  "scope": "Authored row-oriented Ink layout; weights remain bit-identical table data.\n\nEach token selects a row once, then visits adjacent dimensions. Every dimension\nstill adds tokens in source order. The compiler implements the numeric Buffer;\nthis adapter supplies no target-code rewrite or equality/profitability proof.\n",
+  "source_sha256": "2c4543e3d347bb875fffa4ac0d27cb8dbb3f48397f1e41d75644931e42af3d08",
+  "module_sha256": "6c8907428edc64fa9237d5efc17554fbe77cc81b42058082bf47c9bffb5ec9c5",
+  "compiler_sha256": "f2fbf95e23b6cba1525faa2f0c6c012b58b580518ae4e8bceb6a2a74ce443c42"
+}
