@@ -44,7 +44,7 @@ def main():
     (retained / 'identities.json').write_text(json.dumps(identities,indent=2)+'\n')
     rows = (result / 'REPORT.md').read_text().split('\n## Matched controls')[0].rstrip().splitlines()
     rows += ['', '## Matched controls and variation', '',
-             'The baseline is the previous public Ink GPU loader, frozen at project commit `9b37148`. The experimental adapter packs query metadata into one upload, bypasses the general packed-value runtime and reuses staging storage. The matched strict split control uses the same experimental host and arithmetic as strict fusion, with three dispatches. These differences are retained separately; the full speedup is not evidence that dispatch fusion alone caused the gain.', '',
+             'The baseline is the previous public Ink GPU loader, frozen at project commit `9b37148`. The experimental adapter packs query metadata into one upload and bypasses the general packed-value runtime. Both paths already reuse device buffers and readback staging. The matched strict split control uses the same experimental host and arithmetic as strict fusion, with three dispatches. Host/ABI and shader-emission differences from the baseline remain bundled; their individual contributions were not isolated. The full speedup is not evidence that dispatch fusion alone caused the gain.', '',
              '| Mode, batch 1,024 | Median of process medians (µs/embedding) | Process-median range |',
              '| --- | ---: | ---: |']
     for mode in ['ink','split-strict','fused-strict','split-native','fused-native']:

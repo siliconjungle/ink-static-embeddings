@@ -58,9 +58,10 @@ The [experimental GPU adapter](results/gpu-fusion/REPORT.md) takes the previous
 browser GPU path from **3.61 to 1.30 µs/embedding (2.77×)** at batch 1,024 with
 strict arithmetic, or **0.82 µs (4.39×)** using opt-in native float. These are
 median results from three fresh Chrome processes; timings vary substantially
-between processes. Most of the strict gain comes from the simpler host/ABI and
-reused readback storage: fusion adds only about 1% against its matched
-three-dispatch control at this batch size. This adapter generates authored WGSL
+between processes. Most of the strict gain is already present in the adapter's
+three-dispatch control: fusion adds only about 1% at this batch size. Host/ABI
+and shader-emission differences remain bundled; both paths already reuse device
+and readback staging buffers. This adapter generates authored WGSL
 schedules; it is **not an Ink compiler optimization**. Native float changes
 some top-k results despite small embedding errors. See [usage and contracts](#experimental-gpu-schedules).
 
