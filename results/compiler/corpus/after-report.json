@@ -1,0 +1,556 @@
+{
+  "schema": 1,
+  "semantics": "ink-planning-corpus-report-v1",
+  "scope": "Observed default planning on a fixed corpus; no proof, applicability or profitability authority",
+  "headline": {
+    "programs": 3,
+    "compiled": 3,
+    "programs_with_rewrite_alternative": 3,
+    "programs_with_any_alternative": 3,
+    "programs_selecting_alternative": 0,
+    "median_seconds": 38.225,
+    "stopped_by_time": 2,
+    "laws_admitted": 7,
+    "laws_admitted_in_multiple_programs": 0,
+    "representations_admitted": 0,
+    "last_gates": {
+      "measurement_budget": 3
+    }
+  },
+  "programs": [
+    {
+      "name": "sequence-every",
+      "split": "heldout",
+      "status": 0,
+      "seconds": 37.981,
+      "stop_reason": "states",
+      "admitted_states": 32,
+      "candidates": 32,
+      "admitted_edges": {
+        "physical": 1,
+        "rewrite": 31
+      },
+      "semantic": {
+        "matched": 0,
+        "checked": 0,
+        "admitted": 0,
+        "rejected": 0,
+        "unchecked": 0
+      },
+      "alternatives_with_knowledge": 30,
+      "rewrite_alternatives": 30,
+      "selected_alternative": false,
+      "last_gate": "measurement_budget",
+      "selection_reason": "baseline retained; no robust measured lifecycle improvement"
+    },
+    {
+      "name": "ast-ancestor",
+      "split": "heldout",
+      "status": 0,
+      "seconds": 38.225,
+      "stop_reason": "time",
+      "admitted_states": 17,
+      "candidates": 17,
+      "admitted_edges": {
+        "physical": 76,
+        "rewrite": 15
+      },
+      "semantic": {
+        "matched": 438,
+        "checked": 438,
+        "admitted": 30,
+        "rejected": 408,
+        "unchecked": 0
+      },
+      "alternatives_with_knowledge": 12,
+      "rewrite_alternatives": 12,
+      "selected_alternative": false,
+      "last_gate": "measurement_budget",
+      "selection_reason": "baseline retained; no robust measured lifecycle improvement"
+    },
+    {
+      "name": "text-lines",
+      "split": "heldout",
+      "status": 0,
+      "seconds": 38.421,
+      "stop_reason": "time",
+      "admitted_states": 31,
+      "candidates": 31,
+      "admitted_edges": {
+        "physical": 1,
+        "rewrite": 29
+      },
+      "semantic": {
+        "matched": 0,
+        "checked": 0,
+        "admitted": 0,
+        "rejected": 0,
+        "unchecked": 0
+      },
+      "alternatives_with_knowledge": 29,
+      "rewrite_alternatives": 29,
+      "selected_alternative": false,
+      "last_gate": "measurement_budget",
+      "selection_reason": "baseline retained; no robust measured lifecycle improvement"
+    }
+  ],
+  "attribution": {
+    "67945ed9ba849de3e6619f9ed933b30ef0f147d406b173d1c024f3dda2d2d845": {
+      "kind": "law",
+      "name": null,
+      "programs": [
+        "sequence-every"
+      ]
+    },
+    "b4bdd6f06eb1fac4cf44a28ba312b73c2fd5c9b1ddb2c4c5648e88c5a823ccf1": {
+      "kind": "law",
+      "name": null,
+      "programs": [
+        "ast-ancestor"
+      ]
+    },
+    "b0de50753ae48f24acd69477735b842c38f99e4469b92f0ce19a37e7ebf8b166": {
+      "kind": "law",
+      "name": null,
+      "programs": [
+        "ast-ancestor"
+      ]
+    },
+    "d772b42ab196c50768f0387df7eadeee8769e139fa65515ce6ff07b2e815ca93": {
+      "kind": "law",
+      "name": null,
+      "programs": [
+        "ast-ancestor"
+      ]
+    },
+    "8c2dc4e9d4ed881c25334035c007745be5b390e074102773e898c99871fb243c": {
+      "kind": "law",
+      "name": null,
+      "programs": [
+        "text-lines"
+      ]
+    },
+    "b912e8d070f87a106987dd93f68d3314429b086515285e997c6efc185016f317": {
+      "kind": "law",
+      "name": null,
+      "programs": [
+        "text-lines"
+      ]
+    },
+    "85e3e0c622235b10f7c2bf2263c6fdd9e861feb5bebfa59d8f23bcef586d0ee0": {
+      "kind": "law",
+      "name": null,
+      "programs": [
+        "text-lines"
+      ]
+    }
+  },
+  "near_misses": {
+    "reasons": {
+      "closure": 204,
+      "premise": 204
+    },
+    "premise_shapes": [
+      {
+        "shape": "binary:==(field:key(_), _) = Bool:False",
+        "rejections": 80,
+        "programs": [
+          "ast-ancestor"
+        ]
+      },
+      {
+        "shape": "binary:==(field:key(_), _) = Bool:True",
+        "rejections": 80,
+        "programs": [
+          "ast-ancestor"
+        ]
+      },
+      {
+        "shape": "apply(fn.binary:==(..), _) = Bool:False",
+        "rejections": 22,
+        "programs": [
+          "ast-ancestor"
+        ]
+      },
+      {
+        "shape": "apply(fn.binary:==(..), _) = Bool:True",
+        "rejections": 22,
+        "programs": [
+          "ast-ancestor"
+        ]
+      }
+    ],
+    "instance_shapes": [
+      {
+        "shape": "binary:==(field:key(bound), free) = Bool:False",
+        "rejections": 80,
+        "programs": [
+          "ast-ancestor"
+        ]
+      },
+      {
+        "shape": "binary:==(field:key(bound), free) = Bool:True",
+        "rejections": 80,
+        "programs": [
+          "ast-ancestor"
+        ]
+      },
+      {
+        "shape": "apply(fn.binary:==(field:key(..), free), bound) = Bool:False",
+        "rejections": 22,
+        "programs": [
+          "ast-ancestor"
+        ]
+      },
+      {
+        "shape": "apply(fn.binary:==(field:key(..), free), bound) = Bool:True",
+        "rejections": 22,
+        "programs": [
+          "ast-ancestor"
+        ]
+      }
+    ],
+    "laws": [
+      {
+        "law": "2be39920999a9f573762eaeeb31f71ee4cde07ef3d792ac29a74274657766a51",
+        "name": null,
+        "rejected": 80,
+        "programs": [
+          "ast-ancestor"
+        ],
+        "premises": {}
+      },
+      {
+        "law": "4733f25ad00cc6a8e73af859e502f8ee2763e477ebdea672b924c75c36bc0633",
+        "name": null,
+        "rejected": 80,
+        "programs": [
+          "ast-ancestor"
+        ],
+        "premises": {
+          "binary:==(field:key(_), _) = Bool:False": 80
+        }
+      },
+      {
+        "law": "c16c04bf1231bdc2e44839557d6a49bd480450c7d614bebeef7c3964af807c08",
+        "name": null,
+        "rejected": 80,
+        "programs": [
+          "ast-ancestor"
+        ],
+        "premises": {}
+      },
+      {
+        "law": "f521b710b0ca2b172251be7cbaa05f95eef78445b3f3cdb996f8de67d3505c56",
+        "name": null,
+        "rejected": 80,
+        "programs": [
+          "ast-ancestor"
+        ],
+        "premises": {
+          "binary:==(field:key(_), _) = Bool:True": 80
+        }
+      },
+      {
+        "law": "17ee7207ae65a06c7024f0c40e79b2f0cfd0f7b74d152c32b4198c714fd47af1",
+        "name": null,
+        "rejected": 22,
+        "programs": [
+          "ast-ancestor"
+        ],
+        "premises": {}
+      },
+      {
+        "law": "4a6eb88affb78e12f6a9c9864674174ca49c5d32dd37709b2674e76d8c2a80bc",
+        "name": null,
+        "rejected": 22,
+        "programs": [
+          "ast-ancestor"
+        ],
+        "premises": {}
+      },
+      {
+        "law": "c69d9f0419eb7ad5092b964bb6beff821a35cf5ac8c4b2320927d4ed336e1f85",
+        "name": null,
+        "rejected": 22,
+        "programs": [
+          "ast-ancestor"
+        ],
+        "premises": {
+          "apply(fn.binary:==(..), _) = Bool:True": 22
+        }
+      },
+      {
+        "law": "e37845f71fc8c038bc9e19b7ce248b9cb698b1e962beb4f0308e353d6570b53c",
+        "name": null,
+        "rejected": 22,
+        "programs": [
+          "ast-ancestor"
+        ],
+        "premises": {
+          "apply(fn.binary:==(..), _) = Bool:False": 22
+        }
+      }
+    ]
+  },
+  "recipe_seconds": [
+    {
+      "recipe": "semantic-laws",
+      "seconds": 1.57,
+      "share": 0.101
+    },
+    {
+      "recipe": "modular-semantic-laws",
+      "seconds": 1.51,
+      "share": 0.097
+    },
+    {
+      "recipe": "boundary-readers",
+      "seconds": 0.82,
+      "share": 0.052
+    },
+    {
+      "recipe": "whole-state-protocols",
+      "seconds": 0.77,
+      "share": 0.049
+    },
+    {
+      "recipe": "private-record-elision",
+      "seconds": 0.65,
+      "share": 0.042
+    },
+    {
+      "recipe": "proved-capacities",
+      "seconds": 0.64,
+      "share": 0.041
+    },
+    {
+      "recipe": "private-sum-spines",
+      "seconds": 0.6,
+      "share": 0.039
+    },
+    {
+      "recipe": "string-key-dictionaries",
+      "seconds": 0.6,
+      "share": 0.038
+    },
+    {
+      "recipe": "literal-physical-alternatives",
+      "seconds": 0.33,
+      "share": 0.021
+    },
+    {
+      "recipe": "proved-observations",
+      "seconds": 0.33,
+      "share": 0.021
+    },
+    {
+      "recipe": "contextual-properties",
+      "seconds": 0.31,
+      "share": 0.02
+    },
+    {
+      "recipe": "maintained-folds",
+      "seconds": 0.31,
+      "share": 0.02
+    },
+    {
+      "recipe": "pure-routing",
+      "seconds": 0.31,
+      "share": 0.02
+    },
+    {
+      "recipe": "all-published-packages",
+      "seconds": 0.28,
+      "share": 0.018
+    },
+    {
+      "recipe": "database-source-algorithms",
+      "seconds": 0.27,
+      "share": 0.017
+    },
+    {
+      "recipe": "guarded-parameter-cache",
+      "seconds": 0.26,
+      "share": 0.017
+    },
+    {
+      "recipe": "scalar-observation-arguments",
+      "seconds": 0.24,
+      "share": 0.015
+    },
+    {
+      "recipe": "index",
+      "seconds": 0.18,
+      "share": 0.011
+    },
+    {
+      "recipe": "contract-witnesses",
+      "seconds": 0.18,
+      "share": 0.011
+    },
+    {
+      "recipe": "direct",
+      "seconds": 0.17,
+      "share": 0.011
+    },
+    {
+      "recipe": "grouped-index",
+      "seconds": 0.17,
+      "share": 0.011
+    },
+    {
+      "recipe": "indexed-ordered-dedup",
+      "seconds": 0.16,
+      "share": 0.01
+    },
+    {
+      "recipe": "whole-action-coalescing",
+      "seconds": 0.16,
+      "share": 0.01
+    },
+    {
+      "recipe": "bit-guards",
+      "seconds": 0.16,
+      "share": 0.01
+    },
+    {
+      "recipe": "whole-entry-placement",
+      "seconds": 0.15,
+      "share": 0.01
+    }
+  ],
+  "context": {
+    "target": "javascript",
+    "planning_effort": "quick",
+    "expansion_limit": 32,
+    "environment": {
+      "controls": {},
+      "host": {
+        "machine": "arm64",
+        "node": "Jamess-MacBook-Pro.local",
+        "processor": "arm",
+        "release": "24.6.0",
+        "system": "Darwin"
+      },
+      "python": {
+        "base_prefix": "/Users/jamesaddison/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none",
+        "cache_tag": "cpython-312",
+        "distributions": {
+          "hnswlib": {
+            "available": false
+          },
+          "numpy": {
+            "available": true,
+            "content": {
+              "files": 927,
+              "sha256": "05b971dd9063cb5b584b1ed7698c4fe410251e5cff4f61bf3cb4841b47400f0d"
+            },
+            "files_recorded": true,
+            "version": "2.5.4"
+          },
+          "python-sat": {
+            "available": false
+          },
+          "six": {
+            "available": false
+          }
+        },
+        "executable": "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/neural-to-ink/.venv/bin/python3",
+        "implementation": "cpython",
+        "modules": {
+          "hnswlib": {
+            "available": false
+          },
+          "numpy": {
+            "available": true,
+            "content": {
+              "files": 902,
+              "sha256": "4af292dce56bb8354d92184c6968700183108be5d6ffe953b962a543db7c6544"
+            },
+            "locations": [
+              "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/neural-to-ink/.venv/lib/python3.12/site-packages/numpy"
+            ],
+            "origin": "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/neural-to-ink/.venv/lib/python3.12/site-packages/numpy/__init__.py"
+          },
+          "pysat": {
+            "available": false
+          },
+          "pysolvers": {
+            "available": false
+          },
+          "six": {
+            "available": false
+          }
+        },
+        "prefix": "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/neural-to-ink/.venv",
+        "resolved": "/Users/jamesaddison/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+        "sha256": "71720f1fc66989ebd691e81c96111b47ae6ff3f1a478666084d1cacbf0fccbf2",
+        "soabi": "cpython-312-darwin",
+        "sqlite": "3.53.1",
+        "version": "3.12.13 (main, Aug  7 2026, 02:15:23) [Clang 22.1.3 ]"
+      },
+      "schema": 1,
+      "tools": {
+        "node": {
+          "available": true,
+          "executable": "/Users/jamesaddison/.nvm/versions/node/v22.22.1/bin/node",
+          "resolved": "/Users/jamesaddison/.nvm/versions/node/v22.22.1/bin/node",
+          "sha256": "245e0321af97d3c21dd4e7104457334dfe3c3ba7982d0db75363e354565f8cbb",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "d757d43c53951704e32c04b9b1e6b4cc65713b659e72fcdbb02f5200675c7fd8",
+          "version_status": 0
+        }
+      }
+    },
+    "timeout": 180,
+    "planner_source_sha256": "998218cf301885c9619c78557b8695c422adeb35832dd6cb66a9c11f56c9fc91",
+    "compiler_sha256": "5e64707e9b7bea6bccd74460f8d75e4250777038be12eb983600db11106cfcaa",
+    "snapshot": "84cc9d047fcf5f5ad7fdb7f84df37a5bba1b91b41a4b628e470968791fceff9f",
+    "registry_sha256": "fc0a1c4045076c83b720a42e17a9fbb9d44a381672e5b0e450d1a4b37919113a",
+    "producer_source_sha256": "21d4fc44ff5d9519b18400b600d66d2054bacaba3efa1af7456aef8402928fef",
+    "manifest_sha256": "0ef84889c791b917b8bcbaf7e1f57bed3ec9fb3fbcb852f391cf1fcda5f62120",
+    "corpus_inputs": {
+      "sequence-every": {
+        "core_sha256": "44dc64a74456ff85189fc9d8969a5d23ca8b1fdfc43db8a28b18656980a840b3",
+        "capture_sha256": "358faf8ac03365846094be56b4d0f76efa100971cb429e48e2b68884d2c7edab"
+      },
+      "ast-ancestor": {
+        "core_sha256": "c0d643d6882adf3fb46e55fcfd2f1ac9c58bdc6ea6b54a4deb5096bcfa70a68a",
+        "capture_sha256": "0c894aadf2b74e253efa683f61b30ff646f12d65a86cc13a3f2d1dbbe3122f2c"
+      },
+      "text-lines": {
+        "core_sha256": "0634958705c7abf328f46a587248b142ecc0b787c8f6adc86e7caaec25e98971",
+        "capture_sha256": "06e23d54abcf9e43c7dd10ca93ab44f8bf25ec4e08e2cfaf0a4110bb8949df5e"
+      },
+      "drawing-hit": {
+        "core_sha256": "4353976cdb705e415e24e54597fcc71b87812fcff845d5d66e13aa13c678fc12",
+        "capture_sha256": "d1444aaf9cc9adaf1efb48787a8fbac2e54538d21737a3eba17710e8efb5906a"
+      },
+      "particle-step": {
+        "core_sha256": "de0b37ddb9679078d9aa6030d4faabfee76e27d389ab1952329aefb2be9a0ea8",
+        "capture_sha256": "1868f3c32df73743dd64101daefb5175e42fa180e695824fcc82801aa3a2ff10"
+      },
+      "spatial-collision": {
+        "core_sha256": "d7ec714b376b0d6ef96de74d4c82a11f2e5fe1f69741e3a16c3769994167c14f",
+        "capture_sha256": "09a054b1174f9c8ff51d28dbc9455adfe3c62922e0f1aadc7af22e3bd813ec74"
+      },
+      "index-membership": {
+        "core_sha256": "3dd1622462455584f5c70eac19f035c668ceedb440472462a006ff6070959693",
+        "capture_sha256": "946dd7fa58a116970d1c84eba7dd01c2342a3286d4ce0298b623466dbe3a4a9a"
+      },
+      "incremental-distinct": {
+        "core_sha256": "57abb3fd09d2310f001759da691b0514a45611ddadc5c11d7a0f0f9094d2b29b",
+        "capture_sha256": "7ec637ae72323cdc5557c94212023698e22bff2eb9f08940f2a5d79acb3c212a"
+      },
+      "bulk-update": {
+        "core_sha256": "4974307099a2517e44d06e4cb6b5e2e8e64aefde0157c06cff2934fc58d01a37",
+        "capture_sha256": "7e2059e809fac2a7fa46f8be3a45d7bbad0387b91e1b7fb3b6b8ea2ff7c1b6d6"
+      },
+      "compact-set": {
+        "core_sha256": "eddeb5f9ed8754afd2bb466ff9eab47821ae3aaa79ecaf776f85d6db593a65db",
+        "capture_sha256": "42e3f37984b2a8806bf066bcf99f4be237882597e51cc757dc38041f32ba2e87"
+      }
+    }
+  }
+}

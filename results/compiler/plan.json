@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "semantics": "ink-compiled-plan-v1",
+  "input_core_sha256": "bd036750dc2730d393d321fbe4b33f290e92fb14394a8c2921bea2cda125e383",
+  "steps": [
+    {
+      "kind": "physical",
+      "package": {
+        "schema": 1,
+        "semantics": "ink-physical-plan-v1",
+        "input_core_sha256": "bd036750dc2730d393d321fbe4b33f290e92fb14394a8c2921bea2cda125e383",
+        "tables": "ordered",
+        "buffers": "direct",
+        "definitions": "shared",
+        "borrow_reads": [
+          "03b4785fcb4ebea2a5a08b972d9b47a60e4d7dd116cffda96de583f76c85a34d",
+          "0fb611529462b207db68ff21e14cffa3bd2a2204eb0edc8959a028fbd813f756",
+          "59c3e13c238ea9c3a8ec6d5f6bfd8a6e740f2fc81a59b0975f3e7009e5d92f2e",
+          "718e87a2fa8def3ebaac844a158780a32cdc513d1f2fb84794794459bb7e6162",
+          "728b0b7085d8bbf87191d8f17ecc26b7d20ade3913ed3b4edcae755fd38688f6",
+          "788d9e5b664ce9eb5610a0eb0a6f593ab7d81c48110a2a6764a68d2ce0d64d21",
+          "7ff0fb4e687b7205324809100273930a51417b14d271cf940e7bfb730e5d21e5",
+          "9a4e4ee037a9b21711e2a1e1f678502b8755489ad4afcd9fcc0858b7566a1d56",
+          "aa919fc30c645901aa3c7e0a25a60e2d1795608530c19196d6998ced04fbf816",
+          "ade4b3602e7ee8f24ac173a4b40f58c2c075f18372b842cdc36d212620501a23",
+          "ae565d3bd588a047b181027595aa98bcc4ffbae54043a7de4cc9bd0285d73b14",
+          "b9d336e508162b046fe3df7528afa8f93533cc87bde29be1d25c5cc6649c45c3",
+          "bb39bb7b1386ee34d0266e8cdebf5a61982a8e854a35ba2dab82d4b8c5faa6d6",
+          "c163538fc1b168b0029c0231805a12fdeaf7099a2415bea5fdf627d0db4e752d",
+          "c2d04c69f678f849e3890c2c342ce663aee634ce00baf141d94d3dbbadcd4228",
+          "ca13b848f2c75e0ba21fcc3983af154973f59b046a46e1cb24267f5018545801",
+          "de1f8160509db1af7765fecfc239b7e17de23efab3a7b879a3770388ea9b85b7",
+          "e63f0e47b040096c1f85b907218043dc8c7665da112eb0f23f97307eb4258069"
+        ],
+        "borrow_rows": [],
+        "packed_datatypes": [],
+        "memo_functions": [],
+        "columns": []
+      }
+    }
+  ]
+}

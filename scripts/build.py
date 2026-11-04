@@ -14,11 +14,12 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--toolchain',type=Path,required=True,help='directory containing ink, planner/, knowledge/')
     parser.add_argument('--build',type=Path,default=Path('build'))
+    parser.add_argument('--catalogue',type=Path,default=Path('knowledge/laws.json'))
     args=parser.parse_args()
     tc=args.toolchain.resolve();build=args.build.resolve();build.mkdir(exist_ok=True,parents=True)
     sys.path[:0]=[str(tc/'knowledge'),str(tc/'planner')]
     from ink_knowledge import Store, identity
-    bundle=json.loads(Path('knowledge/laws.json').read_text())
+    bundle=json.loads(args.catalogue.read_text())
     for ident,obj in bundle['objects'].items():
         if identity(obj)!=ident:raise ValueError('changed vendored law')
     catalogue=build/'catalogue'

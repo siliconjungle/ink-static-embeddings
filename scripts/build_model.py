@@ -37,7 +37,7 @@ def main():
             raise RuntimeError(result.stderr[-4000:])
         print(target, round(phases[-1]['seconds'], 3), 'seconds', flush=True)
     if args.optimize:
-        subprocess.run([sys.executable, 'scripts/build.py', '--build', str(build), '--toolchain', str(args.toolchain)], check=True)
+        subprocess.run([sys.executable, 'scripts/build.py', '--build', str(build), '--toolchain', str(args.toolchain), '--catalogue', 'knowledge/static-pipelines.json'], check=True)
     record = {'schema': 2, 'compiler_sha256': digest(ink), 'source_sha256': digest(build / 'model.ink'), 'phases': phases,
               'scope': 'Metadata-driven target layouts; unchanged Ink. Authored layout changes are not optimizer-discovered rewrites.'}
     (build / 'target-compilation.json').write_text(json.dumps(record, indent=2) + '\n')

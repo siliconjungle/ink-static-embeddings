@@ -21,6 +21,14 @@ finds a throughput benefit from large GPU batches, against a CPU baseline.
 See [the initial measured report](results/REPORT.md)
 and [raw evidence](results/report.json). Adverse results are part of the experiment.
 
+The [checked compiler follow-up](results/compiler/REPORT.md) makes the existing
+ordered pooling fusion reachable and fixes its structural search price. The same
+unchanged model source now runs **1.70× faster in JavaScript** than the prior
+checked result (32.18 → 18.94 µs/embedding). Rust with a checked borrowed
+entrypoint averages 10.97 µs over the same mixed corpus. Both CPU results remain
+slower than the historical NumPy 8.51 µs baseline. These are CPU improvements;
+GPU gains are recorded separately.
+
 ```mermaid
 flowchart LR
   M[Pretrained model] --> I[Generated Ink + complete weights]
@@ -41,6 +49,8 @@ below. The default CLI emits schema 2 metadata and a complete F32 table:
 
 ```sh
 uv sync --dev
+# With the distribution at toolchain.lock.json, built using cargo build --release --locked:
+uv run python scripts/bootstrap_toolchain.py /absolute/path/to/ink-lang
 uv run neural-to-ink /path/to/model build/my-model --model-id OWNER/MODEL --revision COMMIT
 uv run python scripts/build_model.py --build build/my-model --toolchain work/toolchain
 # Add --optimize to also run the existing proof-checked JavaScript optimizer.
@@ -114,6 +124,7 @@ possible models or a new performance claim.
 The sections below retain the original schema 1 benchmark and its reproduction
 scripts. `prepare_model.py` explicitly selects that historical importer. Its
 measured results do not apply automatically to other models or the new layouts.
+Use `toolchain.legacy.lock.json` for this historical reproduction.
 
 ## What is converted
 
@@ -146,9 +157,9 @@ Rust/Cargo are needed only when building that compiler yourself.
 ```sh
 uv sync --dev
 uv run python scripts/prepare_model.py
-# Start from a recursive ink-lang checkout at the revision in toolchain.lock.json.
+# Start from a recursive ink-lang checkout at toolchain.legacy.lock.json's revision.
 # Build it normally with cargo build --release --locked, without source patches.
-uv run python scripts/bootstrap_toolchain.py /absolute/path/to/ink-lang
+uv run python scripts/bootstrap_toolchain.py /absolute/path/to/ink-lang --lock toolchain.legacy.lock.json
 uv run python scripts/build.py --toolchain work/toolchain
 INK="$PWD/work/toolchain/ink" uv run pytest -q
 uv run python scripts/benchmark.py --processes 6 --rounds 9
@@ -166,6 +177,27 @@ grouping. The source-order pooling loop currently remains unchanged.
 
 The historical importer supports normalized, unquantized two-shard Model2Vec.
 The default CLI now uses the generalized schema 2 importer described above.
+
+## Reproduce the compiler follow-up
+
+Keep the historical `build/` fixture and compiler available, and supply a checkout
+with the current pinned planner/knowledge packages. Rust/Cargo must be on PATH.
+
+```sh
+uv run python scripts/compiler_improvements.py --ink-checkout /absolute/path/to/current/ink-lang
+```
+
+This offers existing polymorphic pipeline laws, replays the selected equality
+proofs, and replays a source-bound read-only physical plan. It times the original
+model source, with no handwritten replacement kernel. Rust's generated
+`ink_borrowed_function_l_encode` borrows weights and IDs; the owning entrypoint
+remains available. A borrowed call evaluates new inputs afresh and returns owned
+output. The report separates this boundary choice from the semantic fusion.
+All 64 complete outputs match the ordered F32 oracle bit for bit.
+
+Current general builds with `--optimize` use `knowledge/static-pipelines.json`;
+historical builds retain `knowledge/laws.json`. The compiler/planner/knowledge
+revision pins are explicit, and original reports keep their original identities.
 
 ## Measurement boundaries
 

@@ -1,0 +1,28 @@
+{
+  "schema": 2,
+  "model_id": "minishlab/potion-base-8M",
+  "revision": "bf8b056651a2c21b8d2565580b8569da283cab23",
+  "source_format": "model2vec",
+  "dimensions": 256,
+  "parameters": 7559168,
+  "shards": 8,
+  "normalization": {
+    "kind": "l2-add-epsilon",
+    "epsilon": "1.0e-32"
+  },
+  "cases": 16,
+  "upstream_reference": "upstream Model2Vec 0.7.0 tokenize/encode and numeric helper",
+  "upstream_max_abs_error": 6.73685449648076e-08,
+  "rtol": 2e-05,
+  "atol": 2e-06,
+  "backends": {
+    "literal": "bit-exact ordered F32 oracle",
+    "optimized": "bit-exact ordered F32 oracle"
+  },
+  "identities": {
+    "model.json": "fa006c38436ba0d799f3bcad4dd8275153c2cf12624db06cf512e2ce2a118aa9",
+    "model.ink": "aa79d293e787228dbf0b5f6d985751d7cf322419d916c2f83133aafd1e626dce",
+    "weights.f32": "581e7655d306b7c1f8a17bd1dff99375d30caa9c2ab7e833586597239a89f05e",
+    "validation.json": "387191fed69282f19e137baba8e4fdaccc354af9358fe72df3b943c9caca3b74"
+  }
+}

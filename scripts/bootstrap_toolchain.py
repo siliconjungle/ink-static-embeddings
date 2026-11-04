@@ -15,8 +15,9 @@ import tarfile
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('distribution',type=Path)
+    p.add_argument('--lock',type=Path,default=Path('toolchain.lock.json'))
     p.add_argument('--output',type=Path,default=Path('work/toolchain'));args=p.parse_args()
-    lock=json.loads(Path('toolchain.lock.json').read_text());root=args.distribution.resolve()
+    lock=json.loads(args.lock.read_text());root=args.distribution.resolve()
     for folder,expected in [('.',lock['ink_revision']),('planner',lock['planner_revision']),('knowledge',lock['knowledge_revision'])]:
         actual=subprocess.check_output(['git','-C',str(root/folder),'rev-parse','HEAD'],text=True).strip()
         if actual!=expected:raise ValueError(f'{folder}: expected {expected}, got {actual}')

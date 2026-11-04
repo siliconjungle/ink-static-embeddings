@@ -1,0 +1,292 @@
+{
+  "schema": 1,
+  "scope": "Reproduce checked fusion/borrowing on the unchanged historical model source.\n\nThis is a two-shard schema-1 benchmark fixture, not an importer restriction.\nAll before/after paths execute the same source and weights on CPU. Proof search\nfinishes before measurements. No hand-edited arithmetic or GPU path is timed.\n",
+  "model": {
+    "schema": 1,
+    "architecture": "model2vec-static-mean-l2",
+    "model_id": "minishlab/potion-base-2M",
+    "revision": "389b9f64be5aa4ae7a6bc6fe95ef20ce485ae5da",
+    "vocabulary_size": 29528,
+    "dimensions": 64,
+    "dtype": "float32-le",
+    "parameters": 1889792,
+    "shard_elements": 944896,
+    "source_sha256": "ad07220e6e86adfcba0977c6dd6abe73a1fb6df2cde7841577cfbaa5999e17dc",
+    "weights_sha256": "a0d8dd289307213f53db86d5c5368be6ae0e69b5c2536dc0352f9c188587d938",
+    "upstream_safetensors_sha256": "f95ffde02ad06f63ae38eb9d400038cd5ccaf8411ec3cb650c6025113f96cbb8",
+    "tokenizer_sha256": "e67e803f624fb4d67dea1c730d06e1067e1b14d830e2c2202569e3ef0f70bb50",
+    "numerics": "source-order F32; upstream NumPy reductions validated with explicit tolerance"
+  },
+  "summary_ns_per_embedding": {
+    "literal": 32011.39062499997,
+    "optimized": 32180.33593749997,
+    "compiler-optimized": 18938.15625000006,
+    "rust-owning": 506369.125,
+    "rust-borrowed": 10965.609375
+  },
+  "process_medians": [
+    {
+      "process": 0,
+      "mode": "literal",
+      "median_ns": 32106.109374999913
+    },
+    {
+      "process": 0,
+      "mode": "optimized",
+      "median_ns": 32087.89062499995
+    },
+    {
+      "process": 0,
+      "mode": "compiler-optimized",
+      "median_ns": 19057.953125000025
+    },
+    {
+      "process": 1,
+      "mode": "compiler-optimized",
+      "median_ns": 19550.78124999998
+    },
+    {
+      "process": 1,
+      "mode": "optimized",
+      "median_ns": 32479.171874999935
+    },
+    {
+      "process": 1,
+      "mode": "literal",
+      "median_ns": 32902.98437499994
+    },
+    {
+      "process": 2,
+      "mode": "literal",
+      "median_ns": 31916.671875000025
+    },
+    {
+      "process": 2,
+      "mode": "optimized",
+      "median_ns": 31701.828124999996
+    },
+    {
+      "process": 2,
+      "mode": "compiler-optimized",
+      "median_ns": 18782.54687500003
+    },
+    {
+      "process": 3,
+      "mode": "compiler-optimized",
+      "median_ns": 19226.56249999999
+    },
+    {
+      "process": 3,
+      "mode": "optimized",
+      "median_ns": 32312.499999999967
+    },
+    {
+      "process": 3,
+      "mode": "literal",
+      "median_ns": 32358.078125000022
+    },
+    {
+      "process": 4,
+      "mode": "literal",
+      "median_ns": 31871.734374999905
+    },
+    {
+      "process": 4,
+      "mode": "optimized",
+      "median_ns": 32272.781249999993
+    },
+    {
+      "process": 4,
+      "mode": "compiler-optimized",
+      "median_ns": 18766.921875000065
+    },
+    {
+      "process": 5,
+      "mode": "compiler-optimized",
+      "median_ns": 18818.359375000095
+    },
+    {
+      "process": 5,
+      "mode": "optimized",
+      "median_ns": 32016.28125
+    },
+    {
+      "process": 5,
+      "mode": "literal",
+      "median_ns": 31642.578125000044
+    },
+    {
+      "process": 0,
+      "mode": "rust-owning",
+      "median_ns": 506369.125,
+      "first_eight_token_ns": 482583.0
+    },
+    {
+      "process": 0,
+      "mode": "rust-borrowed",
+      "median_ns": 10838.671875,
+      "first_eight_token_ns": 750.0
+    },
+    {
+      "process": 1,
+      "mode": "rust-borrowed",
+      "median_ns": 10965.609375,
+      "first_eight_token_ns": 750.0
+    },
+    {
+      "process": 1,
+      "mode": "rust-owning",
+      "median_ns": 499613.3125,
+      "first_eight_token_ns": 503333.0
+    },
+    {
+      "process": 2,
+      "mode": "rust-owning",
+      "median_ns": 506598.890625,
+      "first_eight_token_ns": 498042.0
+    },
+    {
+      "process": 2,
+      "mode": "rust-borrowed",
+      "median_ns": 10970.765625,
+      "first_eight_token_ns": 750.0
+    }
+  ],
+  "compiler_sha256": "5e64707e9b7bea6bccd74460f8d75e4250777038be12eb983600db11106cfcaa",
+  "source_sha256": "ad07220e6e86adfcba0977c6dd6abe73a1fb6df2cde7841577cfbaa5999e17dc",
+  "selection_applications": [
+    {
+      "function": "coordinate",
+      "path": [],
+      "law": "353edbfac90cc7b1b9d8d068e0783d2e9160a3ac91cbad35999ed43128a5f5c0",
+      "arguments": {
+        "dimension": {
+          "sort": {
+            "Value": "U32"
+          },
+          "node": {
+            "Free": "dimension"
+          }
+        },
+        "first": {
+          "sort": {
+            "Value": {
+              "List": "F32"
+            }
+          },
+          "node": {
+            "Free": "first"
+          }
+        },
+        "ids": {
+          "sort": {
+            "Value": {
+              "List": "U32"
+            }
+          },
+          "node": {
+            "Free": "ids"
+          }
+        },
+        "second": {
+          "sort": {
+            "Value": {
+              "List": "F32"
+            }
+          },
+          "node": {
+            "Free": "second"
+          }
+        }
+      },
+      "premises": []
+    },
+    {
+      "function": "encode",
+      "path": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "law": "22775690dbd944eaa057bca35f7e1b76d0660ddabe1b57bbeb5ee246ea8a8796",
+      "arguments": {
+        "f": {
+          "sort": {
+            "Arrow": [
+              {
+                "Value": "F32"
+              },
+              {
+                "Value": "F32"
+              }
+            ]
+          },
+          "node": {
+            "Lambda": {
+              "sort": {
+                "Value": "F32"
+              },
+              "node": {
+                "Op": [
+                  "binary:*",
+                  [
+                    {
+                      "sort": {
+                        "Value": "F32"
+                      },
+                      "node": {
+                        "Bound": 0
+                      }
+                    },
+                    {
+                      "sort": {
+                        "Value": "F32"
+                      },
+                      "node": {
+                        "Bound": 0
+                      }
+                    }
+                  ]
+                ]
+              }
+            }
+          }
+        },
+        "initial": {
+          "sort": {
+            "Value": "F32"
+          },
+          "node": {
+            "Float": 0
+          }
+        },
+        "xs": {
+          "sort": {
+            "Value": {
+              "List": "F32"
+            }
+          },
+          "node": {
+            "Bound": 0
+          }
+        }
+      },
+      "premises": []
+    }
+  ],
+  "package_revisions": {
+    "knowledge": "985b1fbb58dd79f5b780be81f0c8152ab4218e7f",
+    "planner": "37fa38d8971ca755e79efc802b34663fbaab5162"
+  },
+  "source_sha256_files": {
+    "scripts/compiler_improvements.py": "198a0f64ab5105af96433fc013f1816c894c9fd00bd661558c1716cad350735c",
+    "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/work/ink-compiler-src/knowledge/ink_knowledge/law_templates.py": "ef273b008496f7383bb73aec0cbf360fbb6a979a67ccba735eaa7dc2e26f2968",
+    "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/work/ink-compiler-src/planner/ink_planner/semantic_search.py": "a30e983fdfbacc0a01a2773910676500c177b567350123c888a2fb00c0d019a5"
+  },
+  "comparison": "JS paths include changing-ID capture and complete output consumption. Rust owning/borrowed differ at the caller boundary; both use the identical checked physical plan. Startup/loading excluded. NumPy is a separate runtime, not an isolated compiler comparison. Original unplanned Rust is retained in the earlier target report; it is deliberately not run over the full long-sequence corpus."
+}
