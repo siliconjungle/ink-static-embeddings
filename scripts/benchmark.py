@@ -60,7 +60,7 @@ def main():
     ratios=[a/b for a,b in zip(medians['literal'],medians['optimized'])]
     compile_info=json.loads((args.build/'compilation.json').read_text())
     provenance_paths=['scripts/node_bench.mjs','scripts/python_bench.py','scripts/benchmark.py',
-      'src/neural_to_ink/converter.py','uv.lock','toolchain.lock.json']
+      'src/ink_static_embeddings/converter.py','uv.lock','toolchain.lock.json']
     report={'schema':1,'platform':platform.platform(),'machine':platform.machine(),
       'harness_sha256':{f:hashlib.sha256(Path(f).read_bytes()).hexdigest() for f in provenance_paths},
       'processes':args.processes,'rounds':args.rounds,'cases':len(corpus),

@@ -6,8 +6,8 @@ import subprocess
 import sys
 import time
 
-from neural_to_ink.static_model import digest
-from neural_to_ink.targets import prepare_targets
+from ink_static_embeddings.static_model import digest
+from ink_static_embeddings.targets import prepare_targets
 
 
 def main():

@@ -5,7 +5,7 @@ from pathlib import Path
 import argparse
 from huggingface_hub import snapshot_download
 from model2vec import StaticModel
-from neural_to_ink.converter import convert
+from ink_static_embeddings.converter import convert
 
 MODEL_ID='minishlab/potion-base-2M'
 REVISION='389b9f64be5aa4ae7a6bc6fe95ef20ce485ae5da'

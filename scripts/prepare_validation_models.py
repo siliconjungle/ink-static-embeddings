@@ -8,7 +8,7 @@ import numpy as np
 from safetensors.numpy import save_file
 from tokenizers import Tokenizer, models, pre_tokenizers
 
-from neural_to_ink.converter import convert
+from ink_static_embeddings.converter import convert
 
 MODELS = [
     ('potion-2m', 'minishlab/potion-base-2M', '389b9f64be5aa4ae7a6bc6fe95ef20ce485ae5da'),

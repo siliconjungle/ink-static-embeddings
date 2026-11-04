@@ -1,7 +1,9 @@
-# Neural → Ink
+# Ink Static Embeddings
 
-Convert a pretrained embedding model into ordinary Ink source and weight data,
-compile it with **unchanged Ink**, and measure whether checked optimization helps.
+Import static embedding inference into readable Ink, retain learned weights as
+data, and benchmark JavaScript, Rust and WebGPU execution. The tokenizer remains
+host-side. This is an architecture-aware importer, not a decompiler that recovers
+algorithms or concepts from learned weights.
 
 The supported architecture is **static token embeddings with mean pooling and
 optional L2 normalization**. The importer reads model metadata and weights;
@@ -51,7 +53,7 @@ below. The default CLI emits schema 2 metadata and a complete F32 table:
 uv sync --dev
 # With the distribution at toolchain.lock.json, built using cargo build --release --locked:
 uv run python scripts/bootstrap_toolchain.py /absolute/path/to/ink-lang
-uv run neural-to-ink /path/to/model build/my-model --model-id OWNER/MODEL --revision COMMIT
+uv run ink-static-embeddings /path/to/model build/my-model --model-id OWNER/MODEL --revision COMMIT
 uv run python scripts/build_model.py --build build/my-model --toolchain work/toolchain
 # Add --optimize to also run the existing proof-checked JavaScript optimizer.
 ```
@@ -128,7 +130,7 @@ Use `toolchain.legacy.lock.json` for this historical reproduction.
 
 ## What is converted
 
-`src/neural_to_ink/converter.py` reads the model's config and safetensors.
+`src/ink_static_embeddings/converter.py` reads the model's config and safetensors.
 It emits [readable Ink](generated/model.ink), a little-endian F32 weight asset,
 and a [hash/shape manifest](generated/model.json). All numeric inference runs
 inside the generated Ink program; there is no Python model call inside Ink.

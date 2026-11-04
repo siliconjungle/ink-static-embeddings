@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 import shutil
 
-from neural_to_ink.static_model import digest
+from ink_static_embeddings.static_model import digest
 
 
 def main():
@@ -28,7 +28,7 @@ def main():
         for name in names:shutil.copyfile(directory/name,destination/name)
         records.append({**report,'browser':browser,'retained_directory':directory.name,
                         'retained_sha256':{name:digest(destination/name)for name in names}})
-    sources=['src/neural_to_ink/static_model.py','src/neural_to_ink/targets.py',
+    sources=['src/ink_static_embeddings/static_model.py','src/ink_static_embeddings/targets.py',
              'runtime/static-embedding.mjs','scripts/prepare_validation_models.py',
              'scripts/build_model.py','scripts/validate_model.py','scripts/validate_native.rs',
              'scripts/validate_browser.mjs','scripts/retain_validation.py']

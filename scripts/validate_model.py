@@ -13,7 +13,7 @@ import subprocess
 
 import numpy as np
 
-from neural_to_ink.static_model import digest, load_model
+from ink_static_embeddings.static_model import digest, load_model
 
 
 TEXTS = ['', '   ', 'A cat sleeps on the sofa.', 'The kitten naps on a couch.',

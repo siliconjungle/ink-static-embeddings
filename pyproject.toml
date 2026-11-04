@@ -1,12 +1,12 @@
 [project]
-name = "neural-to-ink"
+name = "ink-static-embeddings"
 version = "0.2.0"
 description = "Convert static embedding architectures to Ink with JavaScript, Rust and WebGPU targets."
 requires-python = ">=3.12"
 dependencies = ["model2vec==0.7.0", "numpy==2.5.4", "safetensors==0.8.0", "huggingface-hub==2.4.0", "tokenizers==0.23.3"]
 
 [project.scripts]
-neural-to-ink = "neural_to_ink.__main__:main"
+ink-static-embeddings = "ink_static_embeddings.__main__:main"
 
 [dependency-groups]
 dev = ["pytest==9.2.0"]

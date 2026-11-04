@@ -6,7 +6,7 @@ import numpy as np
 import pytest
 from safetensors.numpy import save_file
 from tokenizers import Tokenizer, models
-from neural_to_ink.converter import convert, emit_source
+from ink_static_embeddings.converter import convert, emit_source
 
 
 def test_complete_weights_are_preserved(tmp_path):

@@ -194,6 +194,39 @@ wheels = [
 ]
 
 [[package]]
+name = "ink-static-embeddings"
+version = "0.2.0"
+source = { editable = "." }
+dependencies = [
+    { name = "huggingface-hub" },
+    { name = "model2vec" },
+    { name = "numpy" },
+    { name = "safetensors" },
+    { name = "tokenizers" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "pytest" },
+]
+validation = [
+    { name = "torch" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "huggingface-hub", specifier = "==2.4.0" },
+    { name = "model2vec", specifier = "==0.7.0" },
+    { name = "numpy", specifier = "==2.5.4" },
+    { name = "safetensors", specifier = "==0.8.0" },
+    { name = "tokenizers", specifier = "==0.23.3" },
+]
+
+[package.metadata.requires-dev]
+dev = [{ name = "pytest", specifier = "==9.2.0" }]
+validation = [{ name = "torch", specifier = "==2.10.0" }]
+
+[[package]]
 name = "jinja2"
 version = "3.1.6"
 source = { registry = "https://pypi.org/simple" }
@@ -387,39 +420,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/dc/76/3af777226b63a5e64
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7e/cd/fe58041e9011f307c490e3e17dd48cc516448f7c698a3f2d9d9d65d7e6a8/networkx-3.7-py3-none-any.whl", hash = "sha256:e3fd2c13a7814cee3746340d8d7f8598a67f16a58bf47fb7f8793fab6efca1b0", size = 2142205, upload-time = "2026-09-21T16:45:14.609Z" },
 ]
-
-[[package]]
-name = "neural-to-ink"
-version = "0.2.0"
-source = { editable = "." }
-dependencies = [
-    { name = "huggingface-hub" },
-    { name = "model2vec" },
-    { name = "numpy" },
-    { name = "safetensors" },
-    { name = "tokenizers" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "pytest" },
-]
-validation = [
-    { name = "torch" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "huggingface-hub", specifier = "==2.4.0" },
-    { name = "model2vec", specifier = "==0.7.0" },
-    { name = "numpy", specifier = "==2.5.4" },
-    { name = "safetensors", specifier = "==0.8.0" },
-    { name = "tokenizers", specifier = "==0.23.3" },
-]
-
-[package.metadata.requires-dev]
-dev = [{ name = "pytest", specifier = "==9.2.0" }]
-validation = [{ name = "torch", specifier = "==2.10.0" }]
 
 [[package]]
 name = "numpy"

@@ -8,9 +8,9 @@ import pytest
 from safetensors.numpy import save_file
 from tokenizers import Tokenizer, models, pre_tokenizers
 
-from neural_to_ink.converter import convert
-from neural_to_ink.static_model import load_model
-from neural_to_ink.targets import prepare_targets
+from ink_static_embeddings.converter import convert
+from ink_static_embeddings.static_model import load_model
+from ink_static_embeddings.targets import prepare_targets
 
 
 def model(directory, *, dimensions=3, normalize=True, st=False, tensors=None):
