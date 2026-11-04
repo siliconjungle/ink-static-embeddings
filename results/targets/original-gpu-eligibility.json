@@ -1,0 +1,22 @@
+[
+  {
+    "function": "coordinates",
+    "fallback_reason": "GPU temporary loop may grow its buffer bound; CPU fallback; literal graph: packed compute values must be flat numeric components; literal body: GPU temporary loop may grow its buffer bound; CPU fallback",
+    "device_graph": false
+  },
+  {
+    "function": "lookup",
+    "fallback_reason": null,
+    "device_graph": true
+  },
+  {
+    "function": "coordinate",
+    "fallback_reason": null,
+    "device_graph": true
+  },
+  {
+    "function": "encode",
+    "fallback_reason": "GPU temporary loop may grow its buffer bound; CPU fallback; literal graph: packed compute values must be flat numeric components; literal body: GPU temporary loop may grow its buffer bound; CPU fallback",
+    "device_graph": false
+  }
+]

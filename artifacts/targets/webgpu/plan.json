@@ -1,0 +1,17 @@
+{
+  "applied_rule_ids": [],
+  "checked_implementation": null,
+  "checked_replacement": null,
+  "checked_source_route": null,
+  "database_closure": null,
+  "database_lock": null,
+  "initial_state": null,
+  "input_core_sha256": "7daac4412d1e904ed1d92344d22ec97adfe780b76370ce2b38cf89c76b307174",
+  "selected_core_sha256": "7daac4412d1e904ed1d92344d22ec97adfe780b76370ce2b38cf89c76b307174",
+  "semantic_package": null,
+  "semantic_selection": null,
+  "source": "build/batch-model.ink",
+  "source_route_equivalence": null,
+  "target": "webgpu",
+  "trust": "GPU backend and physical routing remain trusted; see manifest.json"
+}

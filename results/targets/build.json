@@ -1,0 +1,56 @@
+{
+  "phases": [
+    {
+      "name": "target-sources",
+      "seconds": 0.07080833404324949,
+      "exit_code": 0
+    },
+    {
+      "name": "original-rust",
+      "seconds": 0.1022419580258429,
+      "exit_code": 0
+    },
+    {
+      "name": "original-gpu",
+      "seconds": 4.467878375027794,
+      "exit_code": 0
+    },
+    {
+      "name": "owned-rust",
+      "seconds": 0.24580083298496902,
+      "exit_code": 0
+    },
+    {
+      "name": "batch-gpu",
+      "seconds": 4.307372167007998,
+      "exit_code": 0
+    },
+    {
+      "name": "embedding-bench-build",
+      "seconds": 3.157881917024497,
+      "exit_code": 0
+    },
+    {
+      "name": "native-batch-build",
+      "seconds": 3.167733957991004,
+      "exit_code": 0
+    },
+    {
+      "name": "adapter-info-build",
+      "seconds": 12.146364249987528,
+      "exit_code": 0
+    },
+    {
+      "name": "adapter",
+      "seconds": 0.1408339999616146,
+      "exit_code": 0
+    },
+    {
+      "name": "original-rust-probe",
+      "seconds": 0.5145180000108667,
+      "exit_code": 0
+    }
+  ],
+  "compiler_sha256": "5e64707e9b7bea6bccd74460f8d75e4250777038be12eb983600db11106cfcaa",
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)"
+}

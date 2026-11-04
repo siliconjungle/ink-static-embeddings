@@ -1,0 +1,265 @@
+{
+  "reports": [
+    {
+      "batch": 1,
+      "rounds": 7,
+      "open": {
+        "backend": "gpu",
+        "counters": {
+          "upload_bytes": 7559496
+        },
+        "reason": "resident GPU session",
+        "seconds": 0.036415041,
+        "session": 1
+      },
+      "compute_ns_per_embedding": [
+        254459.0,
+        531834.0,
+        219333.0,
+        246499.99999999997,
+        203500.0,
+        291125.0,
+        249459.0
+      ],
+      "read_ns_per_embedding": [
+        183291.0,
+        145833.0,
+        140958.0,
+        124083.00000000001,
+        152083.0,
+        560583.0,
+        182541.0
+      ],
+      "new_query_ns_per_embedding": [
+        504334.0,
+        728709.0,
+        393666.0,
+        414833.0,
+        385499.0,
+        884834.0,
+        477709.0
+      ],
+      "output_sha256": [
+        "bcbf702b01e5b5e6deef394132d36cc901bcfb3a682cc6f9fcf9f8d07f2df704",
+        "15cb07408d8900b7086245e0796c07b242aa3dc6a5314ecd1d6d2e28e2c1ab99",
+        "bcbf702b01e5b5e6deef394132d36cc901bcfb3a682cc6f9fcf9f8d07f2df704",
+        "15cb07408d8900b7086245e0796c07b242aa3dc6a5314ecd1d6d2e28e2c1ab99",
+        "bcbf702b01e5b5e6deef394132d36cc901bcfb3a682cc6f9fcf9f8d07f2df704",
+        "15cb07408d8900b7086245e0796c07b242aa3dc6a5314ecd1d6d2e28e2c1ab99",
+        "bcbf702b01e5b5e6deef394132d36cc901bcfb3a682cc6f9fcf9f8d07f2df704"
+      ],
+      "all_outputs_bit_exact": true,
+      "wall_seconds": 0.15384995803469792,
+      "stderr": ""
+    },
+    {
+      "batch": 16,
+      "rounds": 7,
+      "open": {
+        "backend": "gpu",
+        "counters": {
+          "upload_bytes": 7565112
+        },
+        "reason": "resident GPU session",
+        "seconds": 0.035333333,
+        "session": 1
+      },
+      "compute_ns_per_embedding": [
+        15963.562500000002,
+        17322.9375,
+        15356.750000000002,
+        18960.9375,
+        14612.0,
+        14877.5625,
+        14812.5
+      ],
+      "read_ns_per_embedding": [
+        10776.0625,
+        10830.6875,
+        9901.0,
+        10190.125,
+        9497.4375,
+        8854.1875,
+        9054.6875
+      ],
+      "new_query_ns_per_embedding": [
+        29510.437500000004,
+        30742.1875,
+        27140.5625,
+        30999.9375,
+        25833.4375,
+        25630.1875,
+        25406.1875
+      ],
+      "output_sha256": [
+        "5a249932b6b35449f20f5db924abcde7bbd75c84a26c6bdf82ee62160d6718d5",
+        "a8d89e520497b2e2dbbc811fb23804018f9240847b0b6dd4603ce6011219bec6",
+        "5a249932b6b35449f20f5db924abcde7bbd75c84a26c6bdf82ee62160d6718d5",
+        "a8d89e520497b2e2dbbc811fb23804018f9240847b0b6dd4603ce6011219bec6",
+        "5a249932b6b35449f20f5db924abcde7bbd75c84a26c6bdf82ee62160d6718d5",
+        "a8d89e520497b2e2dbbc811fb23804018f9240847b0b6dd4603ce6011219bec6",
+        "5a249932b6b35449f20f5db924abcde7bbd75c84a26c6bdf82ee62160d6718d5"
+      ],
+      "all_outputs_bit_exact": true,
+      "wall_seconds": 0.1267236249987036,
+      "stderr": ""
+    },
+    {
+      "batch": 64,
+      "rounds": 7,
+      "open": {
+        "backend": "gpu",
+        "counters": {
+          "upload_bytes": 7604176
+        },
+        "reason": "resident GPU session",
+        "seconds": 0.046078,
+        "session": 1
+      },
+      "compute_ns_per_embedding": [
+        16255.203125,
+        20340.5,
+        16502.609375,
+        11890.625,
+        13034.5,
+        11227.21875,
+        10047.53125
+      ],
+      "read_ns_per_embedding": [
+        11244.140625,
+        4344.390625,
+        5369.796875,
+        4364.59375,
+        4805.34375,
+        7325.515625,
+        3755.859375
+      ],
+      "new_query_ns_per_embedding": [
+        41855.453125,
+        29294.28125,
+        23624.375,
+        17906.265625,
+        20743.515625,
+        20100.90625,
+        15563.15625
+      ],
+      "output_sha256": [
+        "906a716e1d73d3d4e6e2a3ad0806332c16fcaa1425555c68e96a949d44fc644c",
+        "6ac346be2c4fd2ac529ff515a3caa2f7ae4e7c69d8bec393dfcc93126fe5537f",
+        "906a716e1d73d3d4e6e2a3ad0806332c16fcaa1425555c68e96a949d44fc644c",
+        "6ac346be2c4fd2ac529ff515a3caa2f7ae4e7c69d8bec393dfcc93126fe5537f",
+        "906a716e1d73d3d4e6e2a3ad0806332c16fcaa1425555c68e96a949d44fc644c",
+        "6ac346be2c4fd2ac529ff515a3caa2f7ae4e7c69d8bec393dfcc93126fe5537f",
+        "906a716e1d73d3d4e6e2a3ad0806332c16fcaa1425555c68e96a949d44fc644c"
+      ],
+      "all_outputs_bit_exact": true,
+      "wall_seconds": 0.15616033400874585,
+      "stderr": ""
+    },
+    {
+      "batch": 256,
+      "rounds": 7,
+      "open": {
+        "backend": "gpu",
+        "counters": {
+          "upload_bytes": 7739116
+        },
+        "reason": "resident GPU session",
+        "seconds": 0.039025458,
+        "session": 1
+      },
+      "compute_ns_per_embedding": [
+        2150.87890625,
+        2450.03515625,
+        2475.09765625,
+        4444.98828125,
+        2394.37109375,
+        2479.4921875,
+        5286.1328125
+      ],
+      "read_ns_per_embedding": [
+        2003.7421875,
+        2037.2734374999998,
+        1620.93359375,
+        1645.18359375,
+        1986.3281249999998,
+        1756.51171875,
+        1621.09375
+      ],
+      "new_query_ns_per_embedding": [
+        5437.828125,
+        5791.671875,
+        5596.03125,
+        7355.6328125,
+        5754.23828125,
+        6143.39453125,
+        8206.21875
+      ],
+      "output_sha256": [
+        "da3f64e3b4d8350de4c8d11bbd911ade08c229fac7dab0c6bb064d6fae548dfa",
+        "aac7c293752a99f6b1cc42a284ab7497ec399b66c852e9556945b3343bec0b9e",
+        "da3f64e3b4d8350de4c8d11bbd911ade08c229fac7dab0c6bb064d6fae548dfa",
+        "aac7c293752a99f6b1cc42a284ab7497ec399b66c852e9556945b3343bec0b9e",
+        "da3f64e3b4d8350de4c8d11bbd911ade08c229fac7dab0c6bb064d6fae548dfa",
+        "aac7c293752a99f6b1cc42a284ab7497ec399b66c852e9556945b3343bec0b9e",
+        "da3f64e3b4d8350de4c8d11bbd911ade08c229fac7dab0c6bb064d6fae548dfa"
+      ],
+      "all_outputs_bit_exact": true,
+      "wall_seconds": 0.18123679095879197,
+      "stderr": ""
+    },
+    {
+      "batch": 1024,
+      "rounds": 7,
+      "open": {
+        "backend": "gpu",
+        "counters": {
+          "upload_bytes": 8278876
+        },
+        "reason": "resident GPU session",
+        "seconds": 0.0362575,
+        "session": 1
+      },
+      "compute_ns_per_embedding": [
+        1007.3242187500001,
+        1242.228515625,
+        875.1220703125,
+        980.2656250000001,
+        942.626953125,
+        929.646484375,
+        943.9287109375
+      ],
+      "read_ns_per_embedding": [
+        1207.03125,
+        1297.0791015625,
+        1253.0517578125,
+        1460.490234375,
+        1385.986328125,
+        1343.1806640625,
+        1278.4423828125
+      ],
+      "new_query_ns_per_embedding": [
+        3321.1269531250005,
+        3672.568359375,
+        3326.171875,
+        3691.935546875,
+        3593.6689453125,
+        3461.384765625,
+        3536.98828125
+      ],
+      "output_sha256": [
+        "9f7f2f7a4fa1606d47d6e2fa82023b0bd19b1a44d3e67b160d98ba0cc3d9139d",
+        "7de0527af8d02268aca95860a5ff639837a98054e9c64ba03bc24f4f6194159c",
+        "9f7f2f7a4fa1606d47d6e2fa82023b0bd19b1a44d3e67b160d98ba0cc3d9139d",
+        "7de0527af8d02268aca95860a5ff639837a98054e9c64ba03bc24f4f6194159c",
+        "9f7f2f7a4fa1606d47d6e2fa82023b0bd19b1a44d3e67b160d98ba0cc3d9139d",
+        "7de0527af8d02268aca95860a5ff639837a98054e9c64ba03bc24f4f6194159c",
+        "9f7f2f7a4fa1606d47d6e2fa82023b0bd19b1a44d3e67b160d98ba0cc3d9139d"
+      ],
+      "all_outputs_bit_exact": true,
+      "wall_seconds": 0.26632187503855675,
+      "stderr": ""
+    }
+  ],
+  "scope": "gpu-required; weights resident; three actual dispatches per query batch; new-query cost includes writes of token IDs/start/lengths plus completed GPU work and decoded complete output; device startup/model upload recorded separately."
+}

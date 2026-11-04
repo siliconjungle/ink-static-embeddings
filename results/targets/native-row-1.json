@@ -1,0 +1,92 @@
+{
+  "checksum": -284.4641774847405,
+  "reports": [
+    {
+      "batch": 1,
+      "samples_ns_per_embedding": [
+        439625.0,
+        453917.0,
+        428709.0,
+        439083.0,
+        465291.0,
+        515500.0,
+        426375.0,
+        436583.0,
+        394416.0
+      ],
+      "output_sha256": "bcbf702b01e5b5e6deef394132d36cc901bcfb3a682cc6f9fcf9f8d07f2df704",
+      "all_outputs_bit_exact": true,
+      "output_b_sha256": "15cb07408d8900b7086245e0796c07b242aa3dc6a5314ecd1d6d2e28e2c1ab99"
+    },
+    {
+      "batch": 16,
+      "samples_ns_per_embedding": [
+        29697.875,
+        30947.875,
+        31369.8125,
+        33721.3125,
+        30101.5625,
+        33856.8125,
+        32515.625,
+        33328.125,
+        35966.125
+      ],
+      "output_sha256": "5a249932b6b35449f20f5db924abcde7bbd75c84a26c6bdf82ee62160d6718d5",
+      "all_outputs_bit_exact": true,
+      "output_b_sha256": "a8d89e520497b2e2dbbc811fb23804018f9240847b0b6dd4603ce6011219bec6"
+    },
+    {
+      "batch": 64,
+      "samples_ns_per_embedding": [
+        29809.890625,
+        29817.703125,
+        30160.15625,
+        30667.3125,
+        30055.34375,
+        30292.96875,
+        29996.734375,
+        30472.65625,
+        30625.65625
+      ],
+      "output_sha256": "906a716e1d73d3d4e6e2a3ad0806332c16fcaa1425555c68e96a949d44fc644c",
+      "all_outputs_bit_exact": true,
+      "output_b_sha256": "6ac346be2c4fd2ac529ff515a3caa2f7ae4e7c69d8bec393dfcc93126fe5537f"
+    },
+    {
+      "batch": 256,
+      "samples_ns_per_embedding": [
+        24989.58203125,
+        24902.5078125,
+        25173.33984375,
+        25248.53515625,
+        25563.15234375,
+        25812.98828125,
+        25903.3203125,
+        25436.8515625,
+        24866.046875
+      ],
+      "output_sha256": "da3f64e3b4d8350de4c8d11bbd911ade08c229fac7dab0c6bb064d6fae548dfa",
+      "all_outputs_bit_exact": true,
+      "output_b_sha256": "aac7c293752a99f6b1cc42a284ab7497ec399b66c852e9556945b3343bec0b9e"
+    },
+    {
+      "batch": 1024,
+      "samples_ns_per_embedding": [
+        24108.9677734375,
+        24089.5595703125,
+        24072.3876953125,
+        23085.3271484375,
+        23822.3466796875,
+        23738.1591796875,
+        23679.849609375,
+        23602.294921875,
+        23206.1357421875
+      ],
+      "output_sha256": "9f7f2f7a4fa1606d47d6e2fa82023b0bd19b1a44d3e67b160d98ba0cc3d9139d",
+      "all_outputs_bit_exact": true,
+      "output_b_sha256": "7de0527af8d02268aca95860a5ff639837a98054e9c64ba03bc24f4f6194159c"
+    }
+  ],
+  "row_mode": true,
+  "scope": "Public generated batch function; existing owned buffers are internal to one pure call; complete model copy-in and all output computation included, parsing/loading excluded."
+}

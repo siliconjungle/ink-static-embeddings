@@ -1,0 +1,86 @@
+{
+  "reports": [
+    {
+      "batch": 1,
+      "samples_ns_per_embedding": [
+        11334.0,
+        9916.0,
+        8875.0,
+        8625.0,
+        8417.0,
+        8250.0,
+        8708.0,
+        8000.0,
+        7792.0
+      ],
+      "output_sha256": "bcbf702b01e5b5e6deef394132d36cc901bcfb3a682cc6f9fcf9f8d07f2df704",
+      "max_absolute_error": 0.0
+    },
+    {
+      "batch": 16,
+      "samples_ns_per_embedding": [
+        4263.0,
+        4424.5,
+        4208.375,
+        4364.625,
+        4171.875,
+        4408.875,
+        4164.0625,
+        4447.875,
+        4195.3125
+      ],
+      "output_sha256": "d0a51dfa1069a0cf4332c16978f9fe80fea2bc31efb0bdc9018fce41398421c7",
+      "max_absolute_error": 5.960464477539063e-08
+    },
+    {
+      "batch": 64,
+      "samples_ns_per_embedding": [
+        7005.203125,
+        7013.015625,
+        7119.796875,
+        8405.59375,
+        7634.765625,
+        7040.375,
+        7059.890625,
+        7018.21875,
+        7014.3125
+      ],
+      "output_sha256": "e8b5680af4b742a77adf4f70d4a8da4896c3a5aa13230c60dbbdf43e8cb69145",
+      "max_absolute_error": 5.589539253669784e-08
+    },
+    {
+      "batch": 256,
+      "samples_ns_per_embedding": [
+        6978.6796875,
+        6923.17578125,
+        6953.44921875,
+        6934.2421875,
+        6949.3828125,
+        6953.125,
+        6839.68359375,
+        6945.80078125,
+        6947.1015625
+      ],
+      "output_sha256": "e72bae5c7e0c463b9aaf1a694f74f6402bfe4317597d8a38af7a15cf5354550a",
+      "max_absolute_error": 5.589539253669784e-08
+    },
+    {
+      "batch": 1024,
+      "samples_ns_per_embedding": [
+        6775.634765625,
+        7251.1396484375,
+        6814.0869140625,
+        6796.38671875,
+        6817.830078125,
+        7087.4833984375,
+        7019.5712890625,
+        6773.2744140625,
+        6696.3701171875
+      ],
+      "output_sha256": "4e5f14c7751c9e832cf86a9c83c7654133af863e7b7335d5e0b0aa9ce22332b9",
+      "max_absolute_error": 5.589539253669784e-08
+    }
+  ],
+  "checksum": -284.46418518526207,
+  "scope": "Matched token-ID batches, original Model2Vec lookup/mean, stack and vectorized batch normalization; tokenization and loading excluded."
+}

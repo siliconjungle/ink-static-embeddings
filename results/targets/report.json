@@ -1,0 +1,278 @@
+{
+  "schema": 1,
+  "processes": 3,
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "corpus_sha256": "c5e1d0d975f89d751f7e774780fd67cf0273bd5775a723505774f48f23e9425f",
+  "adapter": {
+    "backend": "Metal",
+    "device_type": "IntegratedGpu",
+    "driver": "",
+    "driver_info": "",
+    "name": "Apple M4 Pro"
+  },
+  "summary": [
+    {
+      "batch": 1,
+      "mode": "upstream",
+      "median_ns_per_embedding": 8583.0,
+      "process_medians_ns": [
+        8625.0,
+        8083.0,
+        8583.0
+      ]
+    },
+    {
+      "batch": 1,
+      "mode": "native-column",
+      "median_ns_per_embedding": 550083.0,
+      "process_medians_ns": [
+        649000.0,
+        420708.0,
+        550083.0
+      ]
+    },
+    {
+      "batch": 1,
+      "mode": "native-row",
+      "median_ns_per_embedding": 482708.0,
+      "process_medians_ns": [
+        482708.0,
+        439083.0,
+        535292.0
+      ]
+    },
+    {
+      "batch": 1,
+      "mode": "gpu",
+      "median_ns_per_embedding": 477709.0,
+      "process_medians_ns": [
+        348417.0,
+        477709.0,
+        499459.0
+      ]
+    },
+    {
+      "batch": 1,
+      "mode": "gpu-compute",
+      "median_ns_per_embedding": 235542.0,
+      "process_medians_ns": [
+        190291.0,
+        249459.0,
+        235542.0
+      ]
+    },
+    {
+      "batch": 16,
+      "mode": "upstream",
+      "median_ns_per_embedding": 4223.9375,
+      "process_medians_ns": [
+        4263.0,
+        4138.0625,
+        4223.9375
+      ]
+    },
+    {
+      "batch": 16,
+      "mode": "native-column",
+      "median_ns_per_embedding": 32085.9375,
+      "process_medians_ns": [
+        44497.375,
+        28109.375,
+        32085.9375
+      ]
+    },
+    {
+      "batch": 16,
+      "mode": "native-row",
+      "median_ns_per_embedding": 32515.625,
+      "process_medians_ns": [
+        39289.0625,
+        32515.625,
+        31875.0
+      ]
+    },
+    {
+      "batch": 16,
+      "mode": "gpu",
+      "median_ns_per_embedding": 31666.6875,
+      "process_medians_ns": [
+        31666.6875,
+        27140.5625,
+        53890.625
+      ]
+    },
+    {
+      "batch": 16,
+      "mode": "gpu-compute",
+      "median_ns_per_embedding": 17963.5625,
+      "process_medians_ns": [
+        17963.5625,
+        15356.750000000002,
+        33859.375
+      ]
+    },
+    {
+      "batch": 64,
+      "mode": "upstream",
+      "median_ns_per_embedding": 7040.375,
+      "process_medians_ns": [
+        7040.375,
+        6791.015625,
+        8360.03125
+      ]
+    },
+    {
+      "batch": 64,
+      "mode": "native-column",
+      "median_ns_per_embedding": 18349.609375,
+      "process_medians_ns": [
+        18847.0,
+        17984.375,
+        18349.609375
+      ]
+    },
+    {
+      "batch": 64,
+      "mode": "native-row",
+      "median_ns_per_embedding": 30160.15625,
+      "process_medians_ns": [
+        31136.0625,
+        30160.15625,
+        29923.171875
+      ]
+    },
+    {
+      "batch": 64,
+      "mode": "gpu",
+      "median_ns_per_embedding": 19119.796875,
+      "process_medians_ns": [
+        15999.34375,
+        20743.515625,
+        19119.796875
+      ]
+    },
+    {
+      "batch": 64,
+      "mode": "gpu-compute",
+      "median_ns_per_embedding": 12272.78125,
+      "process_medians_ns": [
+        9390.625,
+        13034.5,
+        12272.78125
+      ]
+    },
+    {
+      "batch": 256,
+      "mode": "upstream",
+      "median_ns_per_embedding": 6947.1015625,
+      "process_medians_ns": [
+        6947.1015625,
+        6749.51171875,
+        8014.32421875
+      ]
+    },
+    {
+      "batch": 256,
+      "mode": "native-column",
+      "median_ns_per_embedding": 13179.19921875,
+      "process_medians_ns": [
+        13078.44921875,
+        13179.19921875,
+        13462.7265625
+      ]
+    },
+    {
+      "batch": 256,
+      "mode": "native-row",
+      "median_ns_per_embedding": 25176.10546875,
+      "process_medians_ns": [
+        25118.32421875,
+        25248.53515625,
+        25176.10546875
+      ]
+    },
+    {
+      "batch": 256,
+      "mode": "gpu",
+      "median_ns_per_embedding": 6493.484375,
+      "process_medians_ns": [
+        6493.484375,
+        5791.671875,
+        6978.02734375
+      ]
+    },
+    {
+      "batch": 256,
+      "mode": "gpu-compute",
+      "median_ns_per_embedding": 3463.5390625,
+      "process_medians_ns": [
+        3463.5390625,
+        2475.09765625,
+        3739.74609375
+      ]
+    },
+    {
+      "batch": 1024,
+      "mode": "upstream",
+      "median_ns_per_embedding": 6868.9375,
+      "process_medians_ns": [
+        6814.0869140625,
+        6868.9375,
+        7031.900390625
+      ]
+    },
+    {
+      "batch": 1024,
+      "mode": "native-column",
+      "median_ns_per_embedding": 11759.27734375,
+      "process_medians_ns": [
+        11759.27734375,
+        11739.013671875,
+        11892.9853515625
+      ]
+    },
+    {
+      "batch": 1024,
+      "mode": "native-row",
+      "median_ns_per_embedding": 23738.1591796875,
+      "process_medians_ns": [
+        23656.8603515625,
+        23738.1591796875,
+        24091.064453125
+      ]
+    },
+    {
+      "batch": 1024,
+      "mode": "gpu",
+      "median_ns_per_embedding": 3766.560546875,
+      "process_medians_ns": [
+        3895.306640625,
+        3536.98828125,
+        3766.560546875
+      ]
+    },
+    {
+      "batch": 1024,
+      "mode": "gpu-compute",
+      "median_ns_per_embedding": 1264.5263671875,
+      "process_medians_ns": [
+        1535.1162109375,
+        943.9287109375,
+        1264.5263671875
+      ]
+    }
+  ],
+  "source_sha256": {
+    "scripts/target_variants.py": "f2687166c68f9ca46aaacb6ac4302d5cc427589789de4ebb8dc4dc1fe93bf585",
+    "scripts/native_bench.rs": "c62811a64b937a3a1ead27c8f3087e65923a731deaeb9521b935478d3bb263be",
+    "scripts/native_batch_bench.rs": "96a54a20fd8e815143a3ae3b90703cbf82aa578a7d30455d0d61ceb513cc8bc2",
+    "scripts/gpu_benchmark.py": "c42fad7415aaf0b621b219dde722fbca484acb2e6425a157844b3824f7745eb8",
+    "scripts/upstream_batch_bench.py": "9cb5dcd705da39de63237a332fc9cae463b93470dca87f954c0b003e596e99c8",
+    "scripts/target_benchmark.py": "1d89bd54dbba07d10a74e18577dffdb3828313034ae9c8583acb060571ccdc66",
+    "build/native-owned-model.ink": "f6e6ed0784fdca05466bb36460c6701a69543d3170d22bcccb8046594918dfab",
+    "build/batch-model.ink": "1617758efa7a414879c46aaad1330c8a0dbe69b80c110da166992ac7e0023cbf",
+    "build/rust-owned/src/lib.rs": "309a5fcdd6ef606048dec64b4c3ece7a0d56e61f1f1289a84bc29db5d3226051",
+    "build/gpu-batch/manifest.json": "e9991d4e845da62acbc73d6e9540a11c885c9fe997665056557e6ef3bb9e61ee"
+  },
+  "scope": "Importer variants compiled with unchanged Ink; these source layout/ownership changes are authored transformations, not newly discovered/proof-admitted Ink optimizer rewrites. Native includes full model copy-in once per batch. GPU keeps model resident and includes changing query uploads, three completed dispatches and decoded output. Startup/loading excluded and GPU session upload/open recorded separately. NumPy runs on CPU; there is no upstream GPU baseline in this experiment, so GPU gains are not an isolated compiler effect. Batched per-embedding times are amortized throughput, not single-request latency."
+}
