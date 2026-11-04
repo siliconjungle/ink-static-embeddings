@@ -1,0 +1,202 @@
+[
+  {
+    "minimum_items": 1,
+    "minimum_lanes": 1,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 77579.61,
+    "enabled_cases": 27
+  },
+  {
+    "minimum_items": 1,
+    "minimum_lanes": 4,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 77579.61,
+    "enabled_cases": 27
+  },
+  {
+    "minimum_items": 1,
+    "minimum_lanes": 16,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 83315.04,
+    "enabled_cases": 18
+  },
+  {
+    "minimum_items": 1,
+    "minimum_lanes": 64,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 109785.86,
+    "enabled_cases": 9
+  },
+  {
+    "minimum_items": 1,
+    "minimum_lanes": 65,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 219783.37,
+    "enabled_cases": 0
+  },
+  {
+    "minimum_items": 8,
+    "minimum_lanes": 1,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 77579.61,
+    "enabled_cases": 27
+  },
+  {
+    "minimum_items": 8,
+    "minimum_lanes": 4,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 77579.61,
+    "enabled_cases": 27
+  },
+  {
+    "minimum_items": 8,
+    "minimum_lanes": 16,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 83315.04,
+    "enabled_cases": 18
+  },
+  {
+    "minimum_items": 8,
+    "minimum_lanes": 64,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 109785.86,
+    "enabled_cases": 9
+  },
+  {
+    "minimum_items": 8,
+    "minimum_lanes": 65,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 219783.37,
+    "enabled_cases": 0
+  },
+  {
+    "minimum_items": 64,
+    "minimum_lanes": 1,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 77111.28,
+    "enabled_cases": 18
+  },
+  {
+    "minimum_items": 64,
+    "minimum_lanes": 4,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 77111.28,
+    "enabled_cases": 18
+  },
+  {
+    "minimum_items": 64,
+    "minimum_lanes": 16,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 83025.45,
+    "enabled_cases": 12
+  },
+  {
+    "minimum_items": 64,
+    "minimum_lanes": 64,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 109619.19,
+    "enabled_cases": 6
+  },
+  {
+    "minimum_items": 64,
+    "minimum_lanes": 65,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 219783.37,
+    "enabled_cases": 0
+  },
+  {
+    "minimum_items": 512,
+    "minimum_lanes": 1,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 85068.37,
+    "enabled_cases": 9
+  },
+  {
+    "minimum_items": 512,
+    "minimum_lanes": 4,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 85068.37,
+    "enabled_cases": 9
+  },
+  {
+    "minimum_items": 512,
+    "minimum_lanes": 16,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 90736.72,
+    "enabled_cases": 6
+  },
+  {
+    "minimum_items": 512,
+    "minimum_lanes": 64,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 115881.29,
+    "enabled_cases": 3
+  },
+  {
+    "minimum_items": 512,
+    "minimum_lanes": 65,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 219783.37,
+    "enabled_cases": 0
+  },
+  {
+    "minimum_items": 513,
+    "minimum_lanes": 1,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 219783.37,
+    "enabled_cases": 0
+  },
+  {
+    "minimum_items": 513,
+    "minimum_lanes": 4,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 219783.37,
+    "enabled_cases": 0
+  },
+  {
+    "minimum_items": 513,
+    "minimum_lanes": 16,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 219783.37,
+    "enabled_cases": 0
+  },
+  {
+    "minimum_items": 513,
+    "minimum_lanes": 64,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 219783.37,
+    "enabled_cases": 0
+  },
+  {
+    "minimum_items": 513,
+    "minimum_lanes": 65,
+    "maximum_items": 512,
+    "maximum_lanes": 64,
+    "predicted_ns": 219783.37,
+    "enabled_cases": 0
+  }
+]

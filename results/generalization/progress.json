@@ -4,7 +4,7 @@
   "complete": false,
   "requirements": {
     "ordered-independent-folds": {
-      "status": "measured; ordinary planner acquisition in progress",
+      "status": "measured; ordinary planner conservatively retains baseline; conditional proposal measured and not installed",
       "rust_mean_nonempty_speedups": {
         "matrix-columns": 3.03,
         "filter-bank": 8.03,
@@ -19,6 +19,11 @@
         "holdout": "rejected by existing uncertainty/minimum-gain guard; no policy loosened",
         "selected_steps": 0,
         "report": "planning/selected.json.receipt.json"
+      },
+      "guarded_proposal": {
+        "status": "exact proof checked; development Rust regression versus unconditional; JavaScript still regresses",
+        "report": "guarded-folds/NOTES.md",
+        "knowledge_changed": false
       }
     },
     "prepared-typed-boundaries": {
@@ -47,10 +52,46 @@
       "status": "pending; all three unrelated frozen programs are already GPU eligible, generalized cooperative fusion remains to implement/measure"
     },
     "resident-result-placement": {
-      "status": "pending; existing buffer views/reuse are not a new implementation"
+      "status": "implemented, measured and published on main; full distribution CI pending",
+      "scope": "Explicit same-runtime browser List snapshot composition, not automatic placement or new arithmetic law",
+      "unrelated_programs": 3,
+      "hardware_processes": 3,
+      "warm_speedup_range": [
+        1.28,
+        1.71
+      ],
+      "potion_16_queries_256_documents_us_per_query": {
+        "typed_roundtrip": 62.5,
+        "resident_copy": 48.4375,
+        "combined_session_control": 40.625
+      },
+      "report": "resident/REPORT.md",
+      "lifecycle": "resident/LIFECYCLE.md",
+      "artifacts": "resident/artifacts.json",
+      "packages": {
+        "ink_revision": "7f0d3659143e5d47f5ee6ea5ffc1d38f803246be",
+        "gpu_revision": "2d08acaa2f294f2a5aab244e60da52abe095bbcf",
+        "runtime_revision": "d8a71fb84341cedc7aba629cf9c32a28f50c993d"
+      },
+      "checks": {
+        "runtime_node_passed": 119,
+        "runtime_rust_passed": 9,
+        "gpu_rust_passed": 33,
+        "gpu_device_adapter": "passed",
+        "distribution_gpu_numeric_storage_passed": 26,
+        "project_with_compiler_passed": 26,
+        "hardware_full_output": "all bits exact",
+        "mixed_cpu_gpu": "both directions checked",
+        "source_close_snapshot": "checked"
+      },
+      "full_ci": {
+        "status": "queued",
+        "url": "https://github.com/siliconjungle/ink-lang/actions/runs/41804828380"
+      }
     },
     "certified-ranking-refinement": {
-      "status": "pending; requires certified bounds and strict refinement, not observed error maxima"
+      "status": "pending; two exact interval-separation laws kernel checked, concrete certified numerical bounds and ranking refinement remain unimplemented",
+      "report": "ranking/README.md"
     }
   },
   "baseline_freeze": "experiments/generalization/frozen.json"

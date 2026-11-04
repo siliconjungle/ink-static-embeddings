@@ -72,6 +72,17 @@ Ordinary planner acquisition found a 2.63× calibration gain but correctly
 retained the baseline when a smaller independent holdout failed its uncertainty
 and minimum-gain guard. These observations do not install an unconditional policy.
 
+The [resident-composition study](results/generalization/resident/REPORT.md)
+compares typed CPU round-tripping with the new general browser
+`session.writeFrom(...)` API. Keeping intermediates on-device improves three
+unrelated producer/consumer pipelines by **1.28–1.71×**, with exact complete
+results. Potion embedding -> similarity improves **1.29×** at 16 queries x 256
+documents (62.50 to 48.44 µs/query); the existing combined-session control takes
+40.63 µs/query. These are warm pipeline comparisons, not NumPy comparisons.
+[Setup and corpus preparation costs](results/generalization/resident/LIFECYCLE.md)
+are retained separately. The GPU/runtime mechanism is published in the pinned
+Ink distribution; it grants no automatic placement policy.
+
 The [experimental GPU adapter](results/gpu-fusion/REPORT.md) takes the previous
 browser GPU path from **3.61 to 1.30 µs/embedding (2.77×)** at batch 1,024 with
 strict arithmetic, or **0.82 µs (4.39×)** using opt-in native float. These are

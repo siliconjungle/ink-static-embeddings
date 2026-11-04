@@ -1,0 +1,17 @@
+{
+  "applied_rule_ids": [],
+  "checked_implementation": null,
+  "checked_replacement": null,
+  "checked_source_route": null,
+  "database_closure": null,
+  "database_lock": null,
+  "initial_state": null,
+  "input_core_sha256": "404d647d30c41cd9023a8b73be0166e8cbf1b2aae45040110554187c35ee5ba1",
+  "selected_core_sha256": "404d647d30c41cd9023a8b73be0166e8cbf1b2aae45040110554187c35ee5ba1",
+  "semantic_package": null,
+  "semantic_selection": null,
+  "source": "build/generalization/resident/potion-2m.ink",
+  "source_route_equivalence": null,
+  "target": "webgpu",
+  "trust": "GPU backend and physical routing remain trusted; see manifest.json"
+}

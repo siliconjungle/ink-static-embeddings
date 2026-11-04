@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';import {pathToFileURL} from 'node:url';import {createHash} from 'node:crypto';
-const group=Number(process.argv[2]??0),root='results/generalization/folds',rounds=9,repetitions=20;
+const group=Number(process.argv[2]??0),root=process.argv[3]??'results/generalization/folds',rounds=9,repetitions=20;
 const raw=await fs.readFile('work/generalization/inputs.json'),cases=JSON.parse(raw),discovery=JSON.parse(await fs.readFile(root+'/discovery.json','utf8'));
 const modules={};
 for(const w of discovery.workloads){

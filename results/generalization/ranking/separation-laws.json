@@ -1,0 +1,868 @@
+{
+  "membership": {
+    "4ea6d3c44d45402befa3e414ca038cc8fefce1ae28f1431e89e90ec4d754281a": {
+      "entries": [
+        "4ea6d3c44d45402befa3e414ca038cc8fefce1ae28f1431e89e90ec4d754281a",
+        "f55ce0b7bd31908fbe3ee7d92169bfd98d31cf3ea5c67cad335daafbd0c3560a"
+      ],
+      "path": []
+    },
+    "f55ce0b7bd31908fbe3ee7d92169bfd98d31cf3ea5c67cad335daafbd0c3560a": {
+      "entries": [
+        "4ea6d3c44d45402befa3e414ca038cc8fefce1ae28f1431e89e90ec4d754281a",
+        "f55ce0b7bd31908fbe3ee7d92169bfd98d31cf3ea5c67cad335daafbd0c3560a"
+      ],
+      "path": []
+    }
+  },
+  "objects": {
+    "4ea6d3c44d45402befa3e414ca038cc8fefce1ae28f1431e89e90ec4d754281a": {
+      "dependencies": [],
+      "interface": {
+        "conditions": [
+          {
+            "from": {
+              "node": {
+                "Op": [
+                  "binary:<=",
+                  [
+                    {
+                      "node": {
+                        "Op": [
+                          "binary:-",
+                          [
+                            {
+                              "node": {
+                                "Free": "estimate_a"
+                              },
+                              "sort": {
+                                "Value": "Int"
+                              }
+                            },
+                            {
+                              "node": {
+                                "Free": "error_a"
+                              },
+                              "sort": {
+                                "Value": "Int"
+                              }
+                            }
+                          ]
+                        ]
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    },
+                    {
+                      "node": {
+                        "Free": "a"
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    }
+                  ]
+                ]
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            },
+            "to": {
+              "node": {
+                "Bool": true
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            }
+          },
+          {
+            "from": {
+              "node": {
+                "Op": [
+                  "binary:<=",
+                  [
+                    {
+                      "node": {
+                        "Free": "b"
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    },
+                    {
+                      "node": {
+                        "Op": [
+                          "binary:+",
+                          [
+                            {
+                              "node": {
+                                "Free": "estimate_b"
+                              },
+                              "sort": {
+                                "Value": "Int"
+                              }
+                            },
+                            {
+                              "node": {
+                                "Free": "error_b"
+                              },
+                              "sort": {
+                                "Value": "Int"
+                              }
+                            }
+                          ]
+                        ]
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    }
+                  ]
+                ]
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            },
+            "to": {
+              "node": {
+                "Bool": true
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            }
+          },
+          {
+            "from": {
+              "node": {
+                "Op": [
+                  "binary:<",
+                  [
+                    {
+                      "node": {
+                        "Op": [
+                          "binary:+",
+                          [
+                            {
+                              "node": {
+                                "Free": "estimate_b"
+                              },
+                              "sort": {
+                                "Value": "Int"
+                              }
+                            },
+                            {
+                              "node": {
+                                "Free": "error_b"
+                              },
+                              "sort": {
+                                "Value": "Int"
+                              }
+                            }
+                          ]
+                        ]
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    },
+                    {
+                      "node": {
+                        "Op": [
+                          "binary:-",
+                          [
+                            {
+                              "node": {
+                                "Free": "estimate_a"
+                              },
+                              "sort": {
+                                "Value": "Int"
+                              }
+                            },
+                            {
+                              "node": {
+                                "Free": "error_a"
+                              },
+                              "sort": {
+                                "Value": "Int"
+                              }
+                            }
+                          ]
+                        ]
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    }
+                  ]
+                ]
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            },
+            "to": {
+              "node": {
+                "Bool": true
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            }
+          }
+        ],
+        "effects": [],
+        "operations": [
+          "binary:+",
+          "binary:-",
+          "binary:<",
+          "binary:<="
+        ],
+        "parameters": {
+          "a": {
+            "Value": "Int"
+          },
+          "b": {
+            "Value": "Int"
+          },
+          "error_a": {
+            "Value": "Int"
+          },
+          "error_b": {
+            "Value": "Int"
+          },
+          "estimate_a": {
+            "Value": "Int"
+          },
+          "estimate_b": {
+            "Value": "Int"
+          }
+        },
+        "result": {
+          "Value": "Bool"
+        }
+      },
+      "kind": "rewrite",
+      "payload": {
+        "conditions": [
+          {
+            "from": {
+              "node": {
+                "Op": [
+                  "binary:<=",
+                  [
+                    {
+                      "node": {
+                        "Op": [
+                          "binary:-",
+                          [
+                            {
+                              "node": {
+                                "Free": "estimate_a"
+                              },
+                              "sort": {
+                                "Value": "Int"
+                              }
+                            },
+                            {
+                              "node": {
+                                "Free": "error_a"
+                              },
+                              "sort": {
+                                "Value": "Int"
+                              }
+                            }
+                          ]
+                        ]
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    },
+                    {
+                      "node": {
+                        "Free": "a"
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    }
+                  ]
+                ]
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            },
+            "to": {
+              "node": {
+                "Bool": true
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            }
+          },
+          {
+            "from": {
+              "node": {
+                "Op": [
+                  "binary:<=",
+                  [
+                    {
+                      "node": {
+                        "Free": "b"
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    },
+                    {
+                      "node": {
+                        "Op": [
+                          "binary:+",
+                          [
+                            {
+                              "node": {
+                                "Free": "estimate_b"
+                              },
+                              "sort": {
+                                "Value": "Int"
+                              }
+                            },
+                            {
+                              "node": {
+                                "Free": "error_b"
+                              },
+                              "sort": {
+                                "Value": "Int"
+                              }
+                            }
+                          ]
+                        ]
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    }
+                  ]
+                ]
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            },
+            "to": {
+              "node": {
+                "Bool": true
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            }
+          },
+          {
+            "from": {
+              "node": {
+                "Op": [
+                  "binary:<",
+                  [
+                    {
+                      "node": {
+                        "Op": [
+                          "binary:+",
+                          [
+                            {
+                              "node": {
+                                "Free": "estimate_b"
+                              },
+                              "sort": {
+                                "Value": "Int"
+                              }
+                            },
+                            {
+                              "node": {
+                                "Free": "error_b"
+                              },
+                              "sort": {
+                                "Value": "Int"
+                              }
+                            }
+                          ]
+                        ]
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    },
+                    {
+                      "node": {
+                        "Op": [
+                          "binary:-",
+                          [
+                            {
+                              "node": {
+                                "Free": "estimate_a"
+                              },
+                              "sort": {
+                                "Value": "Int"
+                              }
+                            },
+                            {
+                              "node": {
+                                "Free": "error_a"
+                              },
+                              "sort": {
+                                "Value": "Int"
+                              }
+                            }
+                          ]
+                        ]
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    }
+                  ]
+                ]
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            },
+            "to": {
+              "node": {
+                "Bool": true
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            }
+          }
+        ],
+        "from": {
+          "node": {
+            "Op": [
+              "binary:<",
+              [
+                {
+                  "node": {
+                    "Free": "b"
+                  },
+                  "sort": {
+                    "Value": "Int"
+                  }
+                },
+                {
+                  "node": {
+                    "Free": "a"
+                  },
+                  "sort": {
+                    "Value": "Int"
+                  }
+                }
+              ]
+            ]
+          },
+          "sort": {
+            "Value": "Bool"
+          }
+        },
+        "params": {
+          "a": {
+            "Value": "Int"
+          },
+          "b": {
+            "Value": "Int"
+          },
+          "error_a": {
+            "Value": "Int"
+          },
+          "error_b": {
+            "Value": "Int"
+          },
+          "estimate_a": {
+            "Value": "Int"
+          },
+          "estimate_b": {
+            "Value": "Int"
+          }
+        },
+        "proof": {
+          "Linear": {
+            "premises": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          }
+        },
+        "to": {
+          "node": {
+            "Bool": true
+          },
+          "sort": {
+            "Value": "Bool"
+          }
+        }
+      },
+      "schema": 1,
+      "semantics": "ink-conditional-laws-v1"
+    },
+    "f55ce0b7bd31908fbe3ee7d92169bfd98d31cf3ea5c67cad335daafbd0c3560a": {
+      "dependencies": [],
+      "interface": {
+        "conditions": [
+          {
+            "from": {
+              "node": {
+                "Op": [
+                  "binary:<=",
+                  [
+                    {
+                      "node": {
+                        "Free": "lower"
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    },
+                    {
+                      "node": {
+                        "Free": "a"
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    }
+                  ]
+                ]
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            },
+            "to": {
+              "node": {
+                "Bool": true
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            }
+          },
+          {
+            "from": {
+              "node": {
+                "Op": [
+                  "binary:<=",
+                  [
+                    {
+                      "node": {
+                        "Free": "b"
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    },
+                    {
+                      "node": {
+                        "Free": "upper"
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    }
+                  ]
+                ]
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            },
+            "to": {
+              "node": {
+                "Bool": true
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            }
+          },
+          {
+            "from": {
+              "node": {
+                "Op": [
+                  "binary:<",
+                  [
+                    {
+                      "node": {
+                        "Free": "upper"
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    },
+                    {
+                      "node": {
+                        "Free": "lower"
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    }
+                  ]
+                ]
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            },
+            "to": {
+              "node": {
+                "Bool": true
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            }
+          }
+        ],
+        "effects": [],
+        "operations": [
+          "binary:<",
+          "binary:<="
+        ],
+        "parameters": {
+          "a": {
+            "Value": "Int"
+          },
+          "b": {
+            "Value": "Int"
+          },
+          "lower": {
+            "Value": "Int"
+          },
+          "upper": {
+            "Value": "Int"
+          }
+        },
+        "result": {
+          "Value": "Bool"
+        }
+      },
+      "kind": "rewrite",
+      "payload": {
+        "conditions": [
+          {
+            "from": {
+              "node": {
+                "Op": [
+                  "binary:<=",
+                  [
+                    {
+                      "node": {
+                        "Free": "lower"
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    },
+                    {
+                      "node": {
+                        "Free": "a"
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    }
+                  ]
+                ]
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            },
+            "to": {
+              "node": {
+                "Bool": true
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            }
+          },
+          {
+            "from": {
+              "node": {
+                "Op": [
+                  "binary:<=",
+                  [
+                    {
+                      "node": {
+                        "Free": "b"
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    },
+                    {
+                      "node": {
+                        "Free": "upper"
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    }
+                  ]
+                ]
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            },
+            "to": {
+              "node": {
+                "Bool": true
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            }
+          },
+          {
+            "from": {
+              "node": {
+                "Op": [
+                  "binary:<",
+                  [
+                    {
+                      "node": {
+                        "Free": "upper"
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    },
+                    {
+                      "node": {
+                        "Free": "lower"
+                      },
+                      "sort": {
+                        "Value": "Int"
+                      }
+                    }
+                  ]
+                ]
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            },
+            "to": {
+              "node": {
+                "Bool": true
+              },
+              "sort": {
+                "Value": "Bool"
+              }
+            }
+          }
+        ],
+        "from": {
+          "node": {
+            "Op": [
+              "binary:<",
+              [
+                {
+                  "node": {
+                    "Free": "b"
+                  },
+                  "sort": {
+                    "Value": "Int"
+                  }
+                },
+                {
+                  "node": {
+                    "Free": "a"
+                  },
+                  "sort": {
+                    "Value": "Int"
+                  }
+                }
+              ]
+            ]
+          },
+          "sort": {
+            "Value": "Bool"
+          }
+        },
+        "params": {
+          "a": {
+            "Value": "Int"
+          },
+          "b": {
+            "Value": "Int"
+          },
+          "lower": {
+            "Value": "Int"
+          },
+          "upper": {
+            "Value": "Int"
+          }
+        },
+        "proof": {
+          "Linear": {
+            "premises": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          }
+        },
+        "to": {
+          "node": {
+            "Bool": true
+          },
+          "sort": {
+            "Value": "Bool"
+          }
+        }
+      },
+      "schema": 1,
+      "semantics": "ink-conditional-laws-v1"
+    }
+  },
+  "roots": [
+    "4ea6d3c44d45402befa3e414ca038cc8fefce1ae28f1431e89e90ec4d754281a",
+    "f55ce0b7bd31908fbe3ee7d92169bfd98d31cf3ea5c67cad335daafbd0c3560a"
+  ],
+  "schema": 1,
+  "snapshot": {
+    "root": "ae1c8b3b75810654c1739537d52d7e8c5823513fd8f820e2628fb944973d1bf2",
+    "schema": 1,
+    "semantics": "ink-knowledge-snapshot-v1"
+  }
+}

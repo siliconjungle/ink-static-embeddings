@@ -1,0 +1,4 @@
+{
+  "interval_separation": {"proof": {"Linear": {"premises": [[0, 1], [1, 1], [2, 1]]}}},
+  "approximate_separation": {"proof": {"Linear": {"premises": [[0, 1], [1, 1], [2, 1]]}}}
+}

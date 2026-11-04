@@ -12,13 +12,15 @@ def main():
     parser.add_argument('--ink-checkout',type=Path,required=True)
     parser.add_argument('--compiler',type=Path,required=True)
     parser.add_argument('--buffered',action='store_true')
+    parser.add_argument('--guard-profile',type=Path)
+    parser.add_argument('--output',type=Path,default=Path('results/generalization/folds'))
     args=parser.parse_args()
     checkout=args.ink_checkout.resolve();compiler=str(args.compiler.resolve())
     sys.path[:0]=[str(checkout/'knowledge'),str(checkout/'planner')]
     from ink_knowledge import Store,canonical
     from ink_knowledge.source_algorithms import propose
     from producers.captured_fold_batching import templates
-    root=Path('experiments/generalization');destination=Path('results/generalization/folds');destination.mkdir(parents=True,exist_ok=True)
+    root=Path('experiments/generalization');destination=args.output;destination.mkdir(parents=True,exist_ok=True)
     frozen=json.loads((root/'frozen.json').read_text())
     for name,expected in frozen['sha256'].items():
         if hashlib.sha256(Path(name).read_bytes()).hexdigest()!=expected:raise ValueError(f'Frozen input changed: {name}')
@@ -31,6 +33,9 @@ def main():
     bundle=json.loads(laws.read_text())
     bank=Store.publish(Path('work/generalization/knowledge'),bundle['objects'].values())
     bank=bank.extend([row['object']for row in templates(receipt['names']['map_fusion'])])
+    if args.guard_profile:
+        from scripts.guarded_fold_template import templates as guarded
+        bank=bank.extend([row['object']for row in guarded(receipt['names']['map_fusion'],json.loads(args.guard_profile.read_text()))])
     if args.buffered:
         from scripts.buffered_fold_template import templates as buffered
         buffered_laws=destination/'buffered-laws.json'

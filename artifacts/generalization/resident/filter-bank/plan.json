@@ -1,0 +1,17 @@
+{
+  "applied_rule_ids": [],
+  "checked_implementation": null,
+  "checked_replacement": null,
+  "checked_source_route": null,
+  "database_closure": null,
+  "database_lock": null,
+  "initial_state": null,
+  "input_core_sha256": "a1b26ca40443b2939610b03199e5c9eb347626e67b69cf012994293af4992998",
+  "selected_core_sha256": "a1b26ca40443b2939610b03199e5c9eb347626e67b69cf012994293af4992998",
+  "semantic_package": null,
+  "semantic_selection": null,
+  "source": "build/generalization/resident/filter-bank.ink",
+  "source_route_equivalence": null,
+  "target": "webgpu",
+  "trust": "GPU backend and physical routing remain trusted; see manifest.json"
+}

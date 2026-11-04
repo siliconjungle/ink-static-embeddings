@@ -1,0 +1,1277 @@
+{
+  "schema": 1,
+  "scope": "Frozen unrelated source, existing checked general independent-fold knowledge, same compiler. All results bit-exact to independent ordered F32, including edge cases and changed query order. Complete detached output consumed. Ordinary versus prepared modes retain different ingress/setup contracts and are compared within their own kind. Warm capture/preparation excluded and reported separately. No source rewrite is automatically profitable.",
+  "processes": 3,
+  "summary": [
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 0,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 16952.04999999973,
+        "literal/prepared": 1233.3500000003994,
+        "batched-0/ordinary": 17391.699999999586,
+        "batched-0/prepared": 1239.6000000002516,
+        "batched-1/ordinary": 17458.34999999971,
+        "batched-1/prepared": 1202.0999999997173
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 4,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 19724.999999999683,
+        "literal/prepared": 1502.0999999997287,
+        "batched-0/ordinary": 21010.400000000118,
+        "batched-0/prepared": 2085.399999999993,
+        "batched-1/ordinary": 19781.249999999774,
+        "batched-1/prepared": 1445.8500000003482
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 16,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 20656.2500000004,
+        "literal/prepared": 1750.0000000012508,
+        "batched-0/ordinary": 22870.84999999962,
+        "batched-0/prepared": 4195.800000000816,
+        "batched-1/ordinary": 21624.999999998807,
+        "batched-1/prepared": 1962.5000000004889
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 64,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 23912.50000000014,
+        "literal/prepared": 2314.6000000011213,
+        "batched-0/ordinary": 27172.90000000077,
+        "batched-0/prepared": 2766.699999999389,
+        "batched-1/ordinary": 23012.500000000102,
+        "batched-1/prepared": 2666.649999999038
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 0,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 19779.14999999939,
+        "literal/prepared": 1408.349999999814,
+        "batched-0/ordinary": 20637.49999999942,
+        "batched-0/prepared": 1620.8499999990522,
+        "batched-1/ordinary": 19635.449999999822,
+        "batched-1/prepared": 1422.900000000027
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 4,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 22145.850000001134,
+        "literal/prepared": 3310.450000000742,
+        "batched-0/ordinary": 26254.149999999754,
+        "batched-0/prepared": 2166.6500000009137,
+        "batched-1/ordinary": 21558.30000000094,
+        "batched-1/prepared": 3541.7000000009584
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 16,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 21175.00000000092,
+        "literal/prepared": 1679.1999999995255,
+        "batched-0/ordinary": 21570.85000000052,
+        "batched-0/prepared": 2224.999999999966,
+        "batched-1/ordinary": 21629.149999999696,
+        "batched-1/prepared": 1854.1999999996508
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 64,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 23597.900000000038,
+        "literal/prepared": 3133.3500000002346,
+        "batched-0/ordinary": 25491.65000000073,
+        "batched-0/prepared": 4247.94999999989,
+        "batched-1/ordinary": 25731.24999999976,
+        "batched-1/prepared": 3195.800000000304
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 0,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 19656.249999999887,
+        "literal/prepared": 1016.6499999996859,
+        "batched-0/ordinary": 19964.60000000013,
+        "batched-0/prepared": 1102.0999999999503,
+        "batched-1/ordinary": 20006.25000000014,
+        "batched-1/prepared": 1020.7999999991556
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 4,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 20456.24999999802,
+        "literal/prepared": 1689.5500000003951,
+        "batched-0/ordinary": 23181.250000000375,
+        "batched-0/prepared": 2127.100000001292,
+        "batched-1/ordinary": 22412.500000001502,
+        "batched-1/prepared": 2143.749999999045
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 16,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 21022.899999999823,
+        "literal/prepared": 2937.5000000015916,
+        "batched-0/ordinary": 23512.49999999823,
+        "batched-0/prepared": 4724.999999999113,
+        "batched-1/ordinary": 22545.850000000202,
+        "batched-1/prepared": 4614.599999999314
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 64,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 26806.25000000134,
+        "literal/prepared": 8804.150000000276,
+        "batched-0/ordinary": 37218.74999999955,
+        "batched-0/prepared": 17483.300000000665,
+        "batched-1/ordinary": 36218.75000000045,
+        "batched-1/prepared": 15629.199999997922
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 0,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 19056.24999999986,
+        "literal/prepared": 1879.1999999990592,
+        "batched-0/ordinary": 20289.549999998257,
+        "batched-0/prepared": 2658.3000000016455,
+        "batched-1/ordinary": 19114.600000000337,
+        "batched-1/prepared": 1864.5499999990989
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 4,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 23739.549999999097,
+        "literal/prepared": 6364.599999997722,
+        "batched-0/ordinary": 27595.85000000016,
+        "batched-0/prepared": 8927.049999999781,
+        "batched-1/ordinary": 26489.549999999443,
+        "batched-1/prepared": 9227.100000001086
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 16,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 37091.64999999928,
+        "literal/prepared": 20083.350000001585,
+        "batched-0/ordinary": 48547.899999999805,
+        "batched-0/prepared": 33131.24999999957,
+        "batched-1/ordinary": 48339.599999999904,
+        "batched-1/prepared": 30739.600000001134
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 64,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 90166.65000000331,
+        "literal/prepared": 74635.44999999953,
+        "batched-0/ordinary": 131137.49999999983,
+        "batched-0/prepared": 108152.05000000105,
+        "batched-1/ordinary": 128752.09999999698,
+        "batched-1/prepared": 111633.3499999996
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 0,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 151677.0500000007,
+        "literal/prepared": 774.9999999987267,
+        "batched-0/ordinary": 152897.9500000048,
+        "batched-0/prepared": 760.4000000014821,
+        "batched-1/ordinary": 154454.20000000353,
+        "batched-1/prepared": 802.0499999986441
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 4,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 151762.50000000096,
+        "literal/prepared": 922.9000000004817,
+        "batched-0/ordinary": 153027.09999999707,
+        "batched-0/prepared": 997.9000000043925,
+        "batched-1/ordinary": 152216.65000000258,
+        "batched-1/prepared": 943.7499999989996
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 153387.50000000233,
+        "literal/prepared": 1218.749999998181,
+        "batched-0/ordinary": 151579.15000000346,
+        "batched-0/prepared": 1345.8500000012918,
+        "batched-1/ordinary": 151545.84999999654,
+        "batched-1/prepared": 1181.25000000191
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 159527.1000000025,
+        "literal/prepared": 2204.150000000027,
+        "batched-0/ordinary": 159302.09999999646,
+        "batched-0/prepared": 2281.2499999986358,
+        "batched-1/ordinary": 155891.64999999525,
+        "batched-1/prepared": 2141.6999999985364
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 0,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 154131.25000000038,
+        "literal/prepared": 993.7499999978172,
+        "batched-0/ordinary": 158666.64999999784,
+        "batched-0/prepared": 918.7499999995907,
+        "batched-1/ordinary": 154141.65000000253,
+        "batched-1/prepared": 854.1500000035285
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 4,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 152327.10000000225,
+        "literal/prepared": 914.5999999986998,
+        "batched-0/ordinary": 153450.00000000367,
+        "batched-0/prepared": 1008.3500000064305,
+        "batched-1/ordinary": 149468.75000000544,
+        "batched-1/prepared": 900.0000000014552
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 153943.74999999627,
+        "literal/prepared": 1295.8499999967898,
+        "batched-0/ordinary": 153277.04999999696,
+        "batched-0/prepared": 1429.1500000013002,
+        "batched-1/ordinary": 152470.84999999742,
+        "batched-1/prepared": 1237.500000002001
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 153091.7000000045,
+        "literal/prepared": 2147.899999999936,
+        "batched-0/ordinary": 160083.35000000216,
+        "batched-0/prepared": 3208.299999994324,
+        "batched-1/ordinary": 155002.05000000732,
+        "batched-1/prepared": 1993.7499999969077
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 0,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 154979.19999999113,
+        "literal/prepared": 1341.6499999948428,
+        "batched-0/ordinary": 154920.84999999634,
+        "batched-0/prepared": 1687.5000000027285,
+        "batched-1/ordinary": 152699.999999993,
+        "batched-1/prepared": 1318.7499999958163
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 4,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 153270.85000000126,
+        "literal/prepared": 1712.5000000078217,
+        "batched-0/ordinary": 153516.70000000013,
+        "batched-0/prepared": 2468.7500000027285,
+        "batched-1/ordinary": 155804.1499999945,
+        "batched-1/prepared": 2299.999999991087
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 155643.75000000154,
+        "literal/prepared": 3229.149999992842,
+        "batched-0/ordinary": 160160.40000000657,
+        "batched-0/prepared": 4783.350000002429,
+        "batched-1/ordinary": 158712.50000000146,
+        "batched-1/prepared": 4724.999999996271
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 159739.60000000033,
+        "literal/prepared": 9450.00000000391,
+        "batched-0/ordinary": 169318.75000000218,
+        "batched-0/prepared": 14929.15000000039,
+        "batched-1/ordinary": 171756.24999999854,
+        "batched-1/prepared": 16450.000000008913
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 0,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 155354.15000000512,
+        "literal/prepared": 2112.5000000097316,
+        "batched-0/ordinary": 156904.15000000258,
+        "batched-0/prepared": 2791.6500000060296,
+        "batched-1/ordinary": 155243.74999999962,
+        "batched-1/prepared": 2022.9500000027656
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 4,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 159354.15000000148,
+        "literal/prepared": 7225.000000005367,
+        "batched-0/ordinary": 166083.3499999967,
+        "batched-0/prepared": 9889.5500000026,
+        "batched-1/ordinary": 171983.35000000498,
+        "batched-1/prepared": 9689.55000000733
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 176187.4999999918,
+        "literal/prepared": 20310.399999993933,
+        "batched-0/ordinary": 190808.29999999196,
+        "batched-0/prepared": 34031.24999999818,
+        "batched-1/ordinary": 193722.9000000002,
+        "batched-1/prepared": 32729.150000000118
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 225316.6500000134,
+        "literal/prepared": 76154.15000000212,
+        "batched-0/ordinary": 287274.99999999965,
+        "batched-0/prepared": 135204.14999998137,
+        "batched-1/ordinary": 285610.40000001865,
+        "batched-1/prepared": 134760.40000000465
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 0,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 326904.19999998994,
+        "literal/prepared": 1272.9499999977634,
+        "batched-0/ordinary": 327172.90000000503,
+        "batched-0/prepared": 1333.2999999875028,
+        "batched-1/ordinary": 327549.99999999657,
+        "batched-1/prepared": 1343.7500000009095
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 4,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 317852.10000000463,
+        "literal/prepared": 1154.1500000021188,
+        "batched-0/ordinary": 322656.25,
+        "batched-0/prepared": 1437.4999999972715,
+        "batched-1/ordinary": 316929.20000000414,
+        "batched-1/prepared": 1218.749999998181
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 16,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 318306.2500000006,
+        "literal/prepared": 1389.5999999931519,
+        "batched-0/ordinary": 320841.6499999885,
+        "batched-0/prepared": 1331.249999998363,
+        "batched-1/ordinary": 317739.6000000044,
+        "batched-1/prepared": 1383.3499999918786
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 64,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 317493.7499999942,
+        "literal/prepared": 1541.6499999901134,
+        "batched-0/ordinary": 317643.750000002,
+        "batched-0/prepared": 1781.2499999990905,
+        "batched-1/ordinary": 313562.5000000118,
+        "batched-1/prepared": 1516.700000001947
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 0,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 312897.90000000724,
+        "literal/prepared": 883.3000000095126,
+        "batched-0/ordinary": 316883.35000001185,
+        "batched-0/prepared": 889.6000000049753,
+        "batched-1/ordinary": 315752.04999999184,
+        "batched-1/prepared": 868.7499999950887
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 4,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 316179.14999999356,
+        "literal/prepared": 999.9999999990905,
+        "batched-0/ordinary": 319556.25000000506,
+        "batched-0/prepared": 1056.2500000105501,
+        "batched-1/ordinary": 316925.0000000147,
+        "batched-1/prepared": 1052.0999999926062
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 16,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 320562.5000000055,
+        "literal/prepared": 1262.4999999843567,
+        "batched-0/ordinary": 316020.8499999953,
+        "batched-0/prepared": 1502.1000000160711,
+        "batched-1/ordinary": 316579.200000001,
+        "batched-1/prepared": 1168.750000010732
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 64,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 319268.74999999197,
+        "literal/prepared": 2041.6500000010274,
+        "batched-0/ordinary": 321927.0999999935,
+        "batched-0/prepared": 3343.7499999990905,
+        "batched-1/ordinary": 316902.099999993,
+        "batched-1/prepared": 2089.600000022074
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 0,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 310943.7500000013,
+        "literal/prepared": 1099.9999999967258,
+        "batched-0/ordinary": 315791.6999999998,
+        "batched-0/prepared": 1085.4500000050393,
+        "batched-1/ordinary": 314224.9999999876,
+        "batched-1/prepared": 1241.699999991397
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 4,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 308527.1000000375,
+        "literal/prepared": 1493.7500000087311,
+        "batched-0/ordinary": 310039.5499999877,
+        "batched-0/prepared": 1997.9000000148517,
+        "batched-1/ordinary": 310291.6499999992,
+        "batched-1/prepared": 2024.9999999805368
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 16,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 311818.7499999749,
+        "literal/prepared": 2939.5999999906053,
+        "batched-0/ordinary": 315050.00000001927,
+        "batched-0/prepared": 4612.500000030195,
+        "batched-1/ordinary": 311066.69999999215,
+        "batched-1/prepared": 4714.5999999884225
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 64,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 320820.8000000013,
+        "literal/prepared": 8737.499999961074,
+        "batched-0/ordinary": 335420.85000003676,
+        "batched-0/prepared": 14249.999999992724,
+        "batched-1/ordinary": 334662.5000000131,
+        "batched-1/prepared": 16062.499999998181
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 0,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 312008.3499999964,
+        "literal/prepared": 1814.5499999718595,
+        "batched-0/ordinary": 310072.8999999774,
+        "batched-0/prepared": 2602.100000012797,
+        "batched-1/ordinary": 319445.8499999655,
+        "batched-1/prepared": 1845.8500000178901
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 4,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 314550.0000000084,
+        "literal/prepared": 6504.20000001759,
+        "batched-0/ordinary": 319099.9999999803,
+        "batched-0/prepared": 9368.74999997599,
+        "batched-1/ordinary": 315397.9000000163,
+        "batched-1/prepared": 9108.299999979863
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 16,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 328695.85000003094,
+        "literal/prepared": 19920.799999999872,
+        "batched-0/ordinary": 344129.19999999757,
+        "batched-0/prepared": 31768.750000037475,
+        "batched-1/ordinary": 347839.55000002607,
+        "batched-1/prepared": 32585.40000001631
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 64,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 381010.40000001376,
+        "literal/prepared": 73852.09999997642,
+        "batched-0/ordinary": 426310.4500000281,
+        "batched-0/prepared": 113995.85000003754,
+        "batched-1/ordinary": 430189.5999999942,
+        "batched-1/prepared": 114537.49999996035
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 0,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 762.4999999734428,
+        "literal/prepared": 1120.7999999896856,
+        "batched-0/ordinary": 754.1499999661028,
+        "batched-0/prepared": 1137.5000000043656,
+        "batched-1/ordinary": 752.0499999827734,
+        "batched-1/prepared": 1114.5500000111497
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 0,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 1483.3000000180618,
+        "literal/prepared": 1502.0999999705964,
+        "batched-0/ordinary": 2187.499999990905,
+        "batched-0/prepared": 2302.0999999971536,
+        "batched-1/ordinary": 1418.7499999934516,
+        "batched-1/prepared": 1558.3500000047934
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 0,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 2481.2500000280124,
+        "literal/prepared": 2093.749999994543,
+        "batched-0/ordinary": 4758.349999974598,
+        "batched-0/prepared": 4737.499999964712,
+        "batched-1/ordinary": 2058.3500000157073,
+        "batched-1/prepared": 2102.100000001883
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 0,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 4439.599999977872,
+        "literal/prepared": 2522.899999985384,
+        "batched-0/ordinary": 4670.850000002247,
+        "batched-0/prepared": 2666.6499999919324,
+        "batched-1/ordinary": 5410.400000027948,
+        "batched-1/prepared": 4312.500000014552
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 8,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 918.7499999825377,
+        "literal/prepared": 2341.6500000166707,
+        "batched-0/ordinary": 1056.2500000105501,
+        "batched-0/prepared": 2660.4499999848485,
+        "batched-1/ordinary": 887.4999999989086,
+        "batched-1/prepared": 2416.7000000034022
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 8,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 2700.0000000043656,
+        "literal/prepared": 3660.3999999897496,
+        "batched-0/ordinary": 8862.49999998654,
+        "batched-0/prepared": 10004.149999986112,
+        "batched-1/ordinary": 2849.99999998945,
+        "batched-1/prepared": 3843.750000032742
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 8,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 2177.1000000171625,
+        "literal/prepared": 1856.2499999916326,
+        "batched-0/ordinary": 2539.550000028612,
+        "batched-0/prepared": 2418.749999969805,
+        "batched-1/ordinary": 2154.149999978472,
+        "batched-1/prepared": 1854.1999999797554
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 8,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 5458.3500000262575,
+        "literal/prepared": 3597.9000000224914,
+        "batched-0/ordinary": 7241.700000031415,
+        "batched-0/prepared": 5566.649999991569,
+        "batched-1/ordinary": 5331.250000017462,
+        "batched-1/prepared": 3524.9999999905413
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 64,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 1943.749999963984,
+        "literal/prepared": 2585.399999998117,
+        "batched-0/ordinary": 2097.8999999897496,
+        "batched-0/prepared": 2672.900000015943,
+        "batched-1/ordinary": 1943.7500000094587,
+        "batched-1/prepared": 2560.399999993024
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 64,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 3041.6499999773805,
+        "literal/prepared": 2239.5999999844207,
+        "batched-0/ordinary": 3424.9999999701686,
+        "batched-0/prepared": 2637.4999999916326,
+        "batched-1/ordinary": 3527.1000000193453,
+        "batched-1/prepared": 2754.149999964284
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 64,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 5600.000000004002,
+        "literal/prepared": 4464.5999999829655,
+        "batched-0/ordinary": 7256.250000000364,
+        "batched-0/prepared": 5904.150000014852,
+        "batched-1/ordinary": 7239.600000002611,
+        "batched-1/prepared": 6458.350000002611
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 64,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 14970.84999996332,
+        "literal/prepared": 12608.350000027713,
+        "batched-0/ordinary": 23358.300000018062,
+        "batched-0/prepared": 21460.449999995035,
+        "batched-1/ordinary": 24289.550000003146,
+        "batched-1/prepared": 21793.750000006185
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 512,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 9560.450000026322,
+        "literal/prepared": 3116.64999999266,
+        "batched-0/ordinary": 10633.350000034625,
+        "batched-0/prepared": 3970.7999999791355,
+        "batched-1/ordinary": 9637.499999962529,
+        "batched-1/prepared": 3145.8500000098866
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 512,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 19279.14999996574,
+        "literal/prepared": 12318.749999985812,
+        "batched-0/ordinary": 21449.99999995889,
+        "batched-0/prepared": 11904.150000009395,
+        "batched-1/ordinary": 19272.899999987203,
+        "batched-1/prepared": 11602.100000027349
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 512,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 46583.35000003717,
+        "literal/prepared": 39639.60000000952,
+        "batched-0/ordinary": 44122.90000000212,
+        "batched-0/prepared": 36608.350000005885,
+        "batched-1/ordinary": 44020.79999999842,
+        "batched-1/prepared": 38081.25000000473
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 512,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 151208.35000002445,
+        "literal/prepared": 136837.50000000146,
+        "batched-0/ordinary": 142591.64999998576,
+        "batched-0/prepared": 133195.8499999928,
+        "batched-1/ordinary": 142685.40000002758,
+        "batched-1/prepared": 135427.04999999842
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 0,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 422.9000000123051,
+        "literal/prepared": 1004.1500000170345,
+        "batched-0/ordinary": 433.2999999860476,
+        "batched-0/prepared": 1002.0500000337051,
+        "batched-1/ordinary": 441.6499999933876,
+        "batched-1/prepared": 993.7499999978172,
+        "batched-2/ordinary": 420.8500000004278,
+        "batched-2/prepared": 1014.549999990777,
+        "batched-3/ordinary": 433.2999999860476,
+        "batched-3/prepared": 995.8499999811465
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 0,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 1010.3999999955704,
+        "literal/prepared": 1518.7499999683496,
+        "batched-0/ordinary": 1733.3499999949709,
+        "batched-0/prepared": 2304.150000009031,
+        "batched-1/ordinary": 1677.0499999893218,
+        "batched-1/prepared": 2210.4500000295957,
+        "batched-2/ordinary": 964.5999999975174,
+        "batched-2/prepared": 1512.4999999898137,
+        "batched-3/ordinary": 997.8999999930238,
+        "batched-3/prepared": 1487.4999999847205
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 0,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 2104.1499999682856,
+        "literal/prepared": 2520.8500000189815,
+        "batched-0/ordinary": 4787.500000020373,
+        "batched-0/prepared": 5087.500000036016,
+        "batched-1/ordinary": 4895.850000002611,
+        "batched-1/prepared": 5106.249999971624,
+        "batched-2/ordinary": 2079.150000008667,
+        "batched-2/prepared": 2462.500000001455,
+        "batched-3/ordinary": 2095.8000000064203,
+        "batched-3/prepared": 2664.550000008603
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 0,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 3016.650000017762,
+        "literal/prepared": 2656.25000001819,
+        "batched-0/ordinary": 3260.450000016135,
+        "batched-0/prepared": 2904.199999966295,
+        "batched-1/ordinary": 3210.4000000344968,
+        "batched-1/prepared": 2935.399999978472,
+        "batched-2/ordinary": 3010.3999999937514,
+        "batched-2/prepared": 2683.3500000066124,
+        "batched-3/ordinary": 2927.0999999880587,
+        "batched-3/prepared": 2672.8999999704683
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 8,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 339.6000000066124,
+        "literal/prepared": 6091.7000000245025,
+        "batched-0/ordinary": 481.2499999843567,
+        "batched-0/prepared": 5695.849999983693,
+        "batched-1/ordinary": 485.4500000419648,
+        "batched-1/prepared": 5645.800000002055,
+        "batched-2/ordinary": 347.8999999970256,
+        "batched-2/prepared": 5664.600000000064,
+        "batched-3/ordinary": 339.59999996113766,
+        "batched-3/prepared": 5552.099999977145
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 8,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 2268.7499999847205,
+        "literal/prepared": 5875.000000014552,
+        "batched-0/ordinary": 8410.400000002483,
+        "batched-0/prepared": 11637.500000006185,
+        "batched-1/ordinary": 8427.100000017163,
+        "batched-1/prepared": 11443.74999998945,
+        "batched-2/ordinary": 2297.8999999850203,
+        "batched-2/prepared": 5610.399999977744,
+        "batched-3/ordinary": 2335.39999999266,
+        "batched-3/prepared": 5672.899999990477
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 8,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 1139.5500000162428,
+        "literal/prepared": 1908.3499999851483,
+        "batched-0/ordinary": 1600.0000000076398,
+        "batched-0/prepared": 3141.649999997753,
+        "batched-1/ordinary": 1595.7999999955064,
+        "batched-1/prepared": 3062.500000032742,
+        "batched-2/ordinary": 1174.9999999665306,
+        "batched-2/prepared": 1860.450000003766,
+        "batched-3/ordinary": 1168.7499999879947,
+        "batched-3/prepared": 2060.39999998211
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 8,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 3112.4999999974534,
+        "literal/prepared": 3260.4499999706604,
+        "batched-0/ordinary": 5002.049999984592,
+        "batched-0/prepared": 7856.249999986176,
+        "batched-1/ordinary": 4858.299999978044,
+        "batched-1/prepared": 7791.649999990113,
+        "batched-2/ordinary": 3033.3000000155153,
+        "batched-2/prepared": 3137.5000000025466,
+        "batched-3/ordinary": 3064.5499999991443,
+        "batched-3/prepared": 3177.049999976589
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 64,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 306.24999999417923,
+        "literal/prepared": 3777.0499999624008,
+        "batched-0/ordinary": 404.1999999571999,
+        "batched-0/prepared": 3875.000000016371,
+        "batched-1/ordinary": 414.6000000218919,
+        "batched-1/prepared": 3852.099999994607,
+        "batched-2/ordinary": 352.100000009159,
+        "batched-2/prepared": 3883.300000006784,
+        "batched-3/ordinary": 337.50000002328306,
+        "batched-3/prepared": 3712.50000002874
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 64,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 1029.149999976653,
+        "literal/prepared": 4639.550000001691,
+        "batched-0/ordinary": 1824.9999999625288,
+        "batched-0/prepared": 6689.59999998151,
+        "batched-1/ordinary": 1839.5499999769527,
+        "batched-1/prepared": 6925.000000001091,
+        "batched-2/ordinary": 3591.649999998481,
+        "batched-2/prepared": 8158.350000030623,
+        "batched-3/ordinary": 3549.9999999956344,
+        "batched-3/prepared": 8283.350000010614
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 64,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 2914.599999985512,
+        "literal/prepared": 6412.499999987631,
+        "batched-0/ordinary": 5660.399999987931,
+        "batched-0/prepared": 14664.600000014616,
+        "batched-1/ordinary": 5658.349999976053,
+        "batched-1/prepared": 14516.700000012861,
+        "batched-2/ordinary": 12579.149999965011,
+        "batched-2/prepared": 17927.099999997154,
+        "batched-3/ordinary": 11935.399999993024,
+        "batched-3/prepared": 18058.29999998423
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 64,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 10310.450000042692,
+        "literal/prepared": 12993.749999986903,
+        "batched-0/ordinary": 24362.499999961074,
+        "batched-0/prepared": 45906.250000007276,
+        "batched-1/ordinary": 24622.899999985748,
+        "batched-1/prepared": 45583.29999999842,
+        "batched-2/ordinary": 49870.800000007875,
+        "batched-2/prepared": 60383.350000029175,
+        "batched-3/ordinary": 48170.79999997986,
+        "batched-3/prepared": 60306.25000003056
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 512,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 314.6000000015192,
+        "literal/prepared": 26960.400000007212,
+        "batched-0/ordinary": 1052.1000000153435,
+        "batched-0/prepared": 28241.650000018126,
+        "batched-1/ordinary": 1047.9000000032102,
+        "batched-1/prepared": 28204.15000001049,
+        "batched-2/ordinary": 349.9999999803549,
+        "batched-2/prepared": 26616.700000022316,
+        "batched-3/ordinary": 341.65000001848966,
+        "batched-3/prepared": 26556.24999997599
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 512,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 5120.8499999575,
+        "literal/prepared": 28549.999999995634,
+        "batched-0/ordinary": 10443.750000013097,
+        "batched-0/prepared": 43612.49999997199,
+        "batched-1/ordinary": 10589.549999986048,
+        "batched-1/prepared": 46160.399999962465,
+        "batched-2/ordinary": 23629.200000004857,
+        "batched-2/prepared": 54064.599999992424,
+        "batched-3/ordinary": 23416.650000035588,
+        "batched-3/prepared": 56516.65000000321
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 512,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 19139.6000000168,
+        "literal/prepared": 42927.04999998023,
+        "batched-0/ordinary": 43377.049999980954,
+        "batched-0/prepared": 102764.60000000043,
+        "batched-1/ordinary": 43020.79999997659,
+        "batched-1/prepared": 105435.44999995902,
+        "batched-2/ordinary": 93008.34999999097,
+        "batched-2/prepared": 136102.10000001645,
+        "batched-3/ordinary": 94495.79999995876,
+        "batched-3/prepared": 136485.39999999228
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 512,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 75212.50000004329,
+        "literal/prepared": 96212.50000000146,
+        "batched-0/ordinary": 166995.85000001205,
+        "batched-0/prepared": 337656.2500000091,
+        "batched-1/ordinary": 168022.94999997684,
+        "batched-1/prepared": 340818.74999997125,
+        "batched-2/ordinary": 362233.2999999799,
+        "batched-2/prepared": 456006.2500000185,
+        "batched-3/ordinary": 362797.8999999868,
+        "batched-3/prepared": 464333.2999999984
+      }
+    }
+  ],
+  "input_sha256": "ca19991dc8a77383048650bea873281e76a434a037b764005da5073498c0d9d4",
+  "source_sha256": {
+    "scripts/generalization_inputs.py": "36e0288c97c3d3ca33173174f49df9b9008e1a3ccc2a72dbc13d937b1a33fe94",
+    "scripts/generalization_folds_worker.mjs": "ae7f825da0fecc32f1b3128b3e41171c4d6e40adb679da2a97d0acf1e586c0bf",
+    "scripts/generalization_folds_benchmark.py": "bd0c25e55055b6652a79f9cafa36d66ee471d42e0480b2bb32c613eb86836c72"
+  }
+}

@@ -1,0 +1,932 @@
+{
+  "scope": "Same checked source/plan candidates, generated Rust typed owning API. Input vector clones and detached complete output consumption included; JSON parsing, build and validation excluded. No borrowed/prepared Rust claim. Each target owns a fresh executable/process; their order rotates between groups.",
+  "processes": 3,
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+  "driver_sha256": {
+    "matrix_columns_literal": "4915cd5e6978f302d78c9d6bc9f0021bab80b6c3e71fbd4c054ad8e0a3f2e17b",
+    "matrix_columns_batched_0": "34b436f0e2d1aeb9c0ef2f4490ee31534fd7ba76c4519cf495a2ff58c0aba199",
+    "matrix_columns_batched_1": "31bd0c43638c3055d298ec6e64923253b1305157e525fe7e1b81f7a4ce466a76",
+    "filter_bank_literal": "52a64795e2072f85f92ec8f5facefd4aa083b32fc1fcf3746d2a888d30c9f81c",
+    "filter_bank_batched_0": "c46b4c465e23b086ecf182098d2ffb5020624f4d9ae2b465590e7caf70ed4a97",
+    "filter_bank_batched_1": "d53dd07ac92e0437dee766e21aef53659786a05d26e45f03b2425dd302fb66ad",
+    "channel_energy_literal": "3bee783057c8c4de99beb26a4d06b87cf1e8f636aa848fe4f2d0974c03d00a3e",
+    "channel_energy_batched_0": "60552d6d298503f2ac3386d726d6bd3a516b8c4095a72c93c1377ca302da2b5f",
+    "channel_energy_batched_1": "67169f587530dfb9935a04aed5c2a32f840eca2d84a6e3409b3426084addac9b",
+    "channel_energy_batched_2": "84646eb02c920a81fb414f4c0bab600464585aee45e1db8446af6e97f33fb36b",
+    "channel_energy_batched_3": "d12e2e63e38931002915305bac6adae25b3c6b8d6b792c5dd9cdeac7fd956fe5"
+  },
+  "summary": [
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 0,
+      "width": 8,
+      "median_ns": {
+        "literal": 56.25,
+        "batched_0": 61.67,
+        "batched_1": 57.5
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 4,
+      "width": 8,
+      "median_ns": {
+        "literal": 73.33,
+        "batched_0": 104.58,
+        "batched_1": 77.5
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 16,
+      "width": 8,
+      "median_ns": {
+        "literal": 75.42,
+        "batched_0": 107.5,
+        "batched_1": 84.17
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 64,
+      "width": 8,
+      "median_ns": {
+        "literal": 109.16,
+        "batched_0": 156.25,
+        "batched_1": 130.83
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 0,
+      "width": 8,
+      "median_ns": {
+        "literal": 72.5,
+        "batched_0": 74.59,
+        "batched_1": 72.5
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 4,
+      "width": 8,
+      "median_ns": {
+        "literal": 118.75,
+        "batched_0": 167.5,
+        "batched_1": 117.08
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 16,
+      "width": 8,
+      "median_ns": {
+        "literal": 165.0,
+        "batched_0": 192.5,
+        "batched_1": 168.75
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 64,
+      "width": 8,
+      "median_ns": {
+        "literal": 330.0,
+        "batched_0": 371.67,
+        "batched_1": 342.5
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 0,
+      "width": 8,
+      "median_ns": {
+        "literal": 90.0,
+        "batched_0": 94.17,
+        "batched_1": 90.84
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 4,
+      "width": 8,
+      "median_ns": {
+        "literal": 367.5,
+        "batched_0": 290.0,
+        "batched_1": 292.08
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 16,
+      "width": 8,
+      "median_ns": {
+        "literal": 1016.66,
+        "batched_0": 548.34,
+        "batched_1": 781.66
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 64,
+      "width": 8,
+      "median_ns": {
+        "literal": 3903.33,
+        "batched_0": 1719.58,
+        "batched_1": 2425.83
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 0,
+      "width": 8,
+      "median_ns": {
+        "literal": 99.16,
+        "batched_0": 97.5,
+        "batched_1": 93.75
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 4,
+      "width": 8,
+      "median_ns": {
+        "literal": 3071.66,
+        "batched_0": 1057.91,
+        "batched_1": 1301.67
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 16,
+      "width": 8,
+      "median_ns": {
+        "literal": 11854.58,
+        "batched_0": 3375.84,
+        "batched_1": 4848.75
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 64,
+      "width": 8,
+      "median_ns": {
+        "literal": 46990.0,
+        "batched_0": 12440.42,
+        "batched_1": 17540.0
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 0,
+      "width": 64,
+      "median_ns": {
+        "literal": 300.42,
+        "batched_0": 323.75,
+        "batched_1": 323.33
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 4,
+      "width": 64,
+      "median_ns": {
+        "literal": 342.5,
+        "batched_0": 361.67,
+        "batched_1": 345.0
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "literal": 348.34,
+        "batched_0": 369.58,
+        "batched_1": 350.84
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "literal": 365.42,
+        "batched_0": 409.16,
+        "batched_1": 387.5
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 0,
+      "width": 64,
+      "median_ns": {
+        "literal": 345.42,
+        "batched_0": 340.41,
+        "batched_1": 338.34
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 4,
+      "width": 64,
+      "median_ns": {
+        "literal": 396.25,
+        "batched_0": 431.67,
+        "batched_1": 396.25
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "literal": 432.92,
+        "batched_0": 463.33,
+        "batched_1": 442.91
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "literal": 624.16,
+        "batched_0": 660.0,
+        "batched_1": 640.42
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 0,
+      "width": 64,
+      "median_ns": {
+        "literal": 369.58,
+        "batched_0": 350.0,
+        "batched_1": 360.0
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 4,
+      "width": 64,
+      "median_ns": {
+        "literal": 713.34,
+        "batched_0": 599.58,
+        "batched_1": 647.5
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "literal": 1428.33,
+        "batched_0": 885.42,
+        "batched_1": 1066.67
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "literal": 4143.75,
+        "batched_0": 2082.5,
+        "batched_1": 2717.5
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 0,
+      "width": 64,
+      "median_ns": {
+        "literal": 385.42,
+        "batched_0": 357.08,
+        "batched_1": 372.09
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 4,
+      "width": 64,
+      "median_ns": {
+        "literal": 3447.09,
+        "batched_0": 1460.84,
+        "batched_1": 1670.83
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "literal": 12214.58,
+        "batched_0": 3784.58,
+        "batched_1": 5239.58
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "literal": 47297.92,
+        "batched_0": 12703.33,
+        "batched_1": 17818.34
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 0,
+      "width": 128,
+      "median_ns": {
+        "literal": 619.17,
+        "batched_0": 631.67,
+        "batched_1": 627.09
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 4,
+      "width": 128,
+      "median_ns": {
+        "literal": 655.42,
+        "batched_0": 687.5,
+        "batched_1": 647.09
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 16,
+      "width": 128,
+      "median_ns": {
+        "literal": 661.25,
+        "batched_0": 700.0,
+        "batched_1": 658.75
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 64,
+      "width": 128,
+      "median_ns": {
+        "literal": 670.41,
+        "batched_0": 722.92,
+        "batched_1": 685.42
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 0,
+      "width": 128,
+      "median_ns": {
+        "literal": 621.67,
+        "batched_0": 625.0,
+        "batched_1": 622.5
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 4,
+      "width": 128,
+      "median_ns": {
+        "literal": 666.25,
+        "batched_0": 732.92,
+        "batched_1": 677.08
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 16,
+      "width": 128,
+      "median_ns": {
+        "literal": 748.33,
+        "batched_0": 749.58,
+        "batched_1": 723.75
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 64,
+      "width": 128,
+      "median_ns": {
+        "literal": 910.42,
+        "batched_0": 944.17,
+        "batched_1": 941.25
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 0,
+      "width": 128,
+      "median_ns": {
+        "literal": 653.33,
+        "batched_0": 651.66,
+        "batched_1": 661.66
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 4,
+      "width": 128,
+      "median_ns": {
+        "literal": 975.83,
+        "batched_0": 848.33,
+        "batched_1": 886.25
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 16,
+      "width": 128,
+      "median_ns": {
+        "literal": 1730.83,
+        "batched_0": 1147.5,
+        "batched_1": 1321.25
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 64,
+      "width": 128,
+      "median_ns": {
+        "literal": 4579.16,
+        "batched_0": 2363.75,
+        "batched_1": 3080.42
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 0,
+      "width": 128,
+      "median_ns": {
+        "literal": 675.0,
+        "batched_0": 662.5,
+        "batched_1": 692.92
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 4,
+      "width": 128,
+      "median_ns": {
+        "literal": 3677.08,
+        "batched_0": 2148.34,
+        "batched_1": 1970.0
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 16,
+      "width": 128,
+      "median_ns": {
+        "literal": 12445.42,
+        "batched_0": 4132.5,
+        "batched_1": 5539.17
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 64,
+      "width": 128,
+      "median_ns": {
+        "literal": 47812.5,
+        "batched_0": 13613.75,
+        "batched_1": 18770.42
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 0,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal": 3.33,
+        "batched_0": 5.0,
+        "batched_1": 3.33
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 0,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal": 23.33,
+        "batched_0": 46.25,
+        "batched_1": 22.91
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 0,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal": 30.42,
+        "batched_0": 56.25,
+        "batched_1": 26.67
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 0,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal": 68.75,
+        "batched_0": 96.67,
+        "batched_1": 58.34
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 8,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal": 21.66,
+        "batched_0": 20.84,
+        "batched_1": 20.83
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 8,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal": 74.59,
+        "batched_0": 137.08,
+        "batched_1": 70.83
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 8,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal": 144.17,
+        "batched_0": 168.75,
+        "batched_1": 141.67
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 8,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal": 493.33,
+        "batched_0": 320.0,
+        "batched_1": 445.0
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 64,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal": 34.17,
+        "batched_0": 38.33,
+        "batched_1": 34.17
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 64,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal": 652.92,
+        "batched_0": 550.0,
+        "batched_1": 539.58
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 64,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal": 2213.75,
+        "batched_0": 625.42,
+        "batched_1": 631.67
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 64,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal": 8530.42,
+        "batched_0": 1164.17,
+        "batched_1": 1156.67
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 512,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal": 28.75,
+        "batched_0": 35.42,
+        "batched_1": 36.25
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 512,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal": 6592.91,
+        "batched_0": 3992.92,
+        "batched_1": 3986.67
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 512,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal": 26130.84,
+        "batched_0": 4245.83,
+        "batched_1": 4252.5
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 512,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal": 104313.75,
+        "batched_0": 7703.33,
+        "batched_1": 7617.08
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 0,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal": 3.33,
+        "batched_0": 5.0,
+        "batched_1": 4.59,
+        "batched_2": 2.92,
+        "batched_3": 2.91
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 0,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal": 21.67,
+        "batched_0": 57.91,
+        "batched_1": 54.58,
+        "batched_2": 22.5,
+        "batched_3": 22.92
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 0,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal": 27.5,
+        "batched_0": 57.5,
+        "batched_1": 58.75,
+        "batched_2": 25.41,
+        "batched_3": 25.42
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 0,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal": 72.5,
+        "batched_0": 100.41,
+        "batched_1": 100.84,
+        "batched_2": 58.33,
+        "batched_3": 60.0
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 8,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal": 18.75,
+        "batched_0": 21.67,
+        "batched_1": 20.84,
+        "batched_2": 19.16,
+        "batched_3": 20.42
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 8,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal": 70.83,
+        "batched_0": 113.75,
+        "batched_1": 116.25,
+        "batched_2": 67.5,
+        "batched_3": 70.0
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 8,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal": 113.33,
+        "batched_0": 175.83,
+        "batched_1": 182.09,
+        "batched_2": 115.0,
+        "batched_3": 115.0
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 8,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal": 327.5,
+        "batched_0": 392.92,
+        "batched_1": 407.09,
+        "batched_2": 330.0,
+        "batched_3": 330.42
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 64,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal": 49.59,
+        "batched_0": 50.83,
+        "batched_1": 53.33,
+        "batched_2": 52.91,
+        "batched_3": 51.66
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 64,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal": 329.16,
+        "batched_0": 234.17,
+        "batched_1": 238.33,
+        "batched_2": 230.42,
+        "batched_3": 240.0
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 64,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal": 990.42,
+        "batched_0": 745.0,
+        "batched_1": 787.09,
+        "batched_2": 748.75,
+        "batched_3": 758.75
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 64,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal": 3747.09,
+        "batched_0": 2284.17,
+        "batched_1": 2301.67,
+        "batched_2": 2273.33,
+        "batched_3": 2272.08
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 512,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal": 145.0,
+        "batched_0": 162.91,
+        "batched_1": 157.92,
+        "batched_2": 161.66,
+        "batched_3": 162.5
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 512,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal": 3135.0,
+        "batched_0": 1239.16,
+        "batched_1": 1230.0,
+        "batched_2": 1237.09,
+        "batched_3": 1245.0
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 512,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal": 11891.25,
+        "batched_0": 5165.83,
+        "batched_1": 5192.5,
+        "batched_2": 5147.92,
+        "batched_3": 5193.75
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 512,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal": 47259.59,
+        "batched_0": 17093.34,
+        "batched_1": 16745.0,
+        "batched_2": 17230.0,
+        "batched_3": 17232.5
+      }
+    }
+  ]
+}

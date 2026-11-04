@@ -1,0 +1,1249 @@
+{
+  "records": [
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 16,
+      "width": 64,
+      "setup_ms": {
+        "shared_runtime_load": 7.800000011920929,
+        "producer_open": 5.699999988079071,
+        "consumer_open": 3.400000035762787,
+        "combined_open": 1.0999999642372131
+      },
+      "samples_ns": {
+        "roundtrip": [
+          925000.011920929,
+          875000,
+          924999.9970197678,
+          649999.9910593033,
+          875000,
+          875000,
+          850000.0089406967,
+          899999.9910593033,
+          875000
+        ],
+        "resident-copy": [
+          625000,
+          625000,
+          525000.0059604645,
+          525000.0059604645,
+          600000.0089406967,
+          625000,
+          875000,
+          674999.9970197678,
+          724999.9940395355
+        ],
+        "combined": [
+          500000,
+          474999.9940395355,
+          500000,
+          424999.99701976776,
+          449999.98807907104,
+          475000.0089406967,
+          474999.9940395355,
+          425000.01192092896,
+          500000
+        ]
+      },
+      "receipts": {
+        "combined": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 2
+        },
+        "resident-copy": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 68
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 1
+        },
+        "roundtrip": {
+          "intermediate": {
+            "readback_bytes": 68,
+            "upload_bytes": 68,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 1
+        }
+      },
+      "all_bits_exact": true,
+      "source_close_snapshot": true
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 64,
+      "width": 64,
+      "setup_ms": {
+        "shared_runtime_load": 7.800000011920929,
+        "producer_open": 0.8999999761581421,
+        "consumer_open": 0.10000002384185791,
+        "combined_open": 0.5999999642372131
+      },
+      "samples_ns": {
+        "roundtrip": [
+          875000,
+          924999.9970197678,
+          824999.988079071,
+          875000,
+          824999.988079071,
+          1000000,
+          1074999.988079071,
+          850000.0089406967,
+          875000.0149011612
+        ],
+        "resident-copy": [
+          674999.9970197678,
+          625000,
+          599999.9940395355,
+          625000,
+          650000.0059604645,
+          625000,
+          700000.0029802322,
+          700000.0029802322,
+          600000.0089406967
+        ],
+        "combined": [
+          1125000,
+          400000.0059604645,
+          400000.0059604645,
+          400000.0059604645,
+          500000,
+          525000.0059604645,
+          450000.00298023224,
+          424999.99701976776,
+          424999.99701976776
+        ]
+      },
+      "receipts": {
+        "combined": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 2
+        },
+        "resident-copy": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 260
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 1
+        },
+        "roundtrip": {
+          "intermediate": {
+            "readback_bytes": 260,
+            "upload_bytes": 260,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 1
+        }
+      },
+      "all_bits_exact": true,
+      "source_close_snapshot": true
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 16,
+      "width": 64,
+      "setup_ms": {
+        "shared_runtime_load": 7.800000011920929,
+        "producer_open": 0.699999988079071,
+        "consumer_open": 0.10000002384185791,
+        "combined_open": 0.5
+      },
+      "samples_ns": {
+        "roundtrip": [
+          949999.988079071,
+          1000000,
+          1000000,
+          1000000,
+          950000.0029802322,
+          1000000,
+          950000.0029802322,
+          1024999.9910593033,
+          975000.0089406967
+        ],
+        "resident-copy": [
+          599999.9940395355,
+          600000.0089406967,
+          724999.9940395355,
+          574999.988079071,
+          600000.0089406967,
+          600000.0089406967,
+          649999.9910593033,
+          600000.0089406967,
+          625000
+        ],
+        "combined": [
+          625000,
+          575000.0029802322,
+          599999.9940395355,
+          550000.011920929,
+          599999.9940395355,
+          525000.0059604645,
+          549999.9970197678,
+          625000,
+          625000
+        ]
+      },
+      "receipts": {
+        "combined": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 2
+        },
+        "resident-copy": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 68
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 1
+        },
+        "roundtrip": {
+          "intermediate": {
+            "readback_bytes": 68,
+            "upload_bytes": 68,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 1
+        }
+      },
+      "all_bits_exact": true,
+      "source_close_snapshot": true
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 64,
+      "width": 64,
+      "setup_ms": {
+        "shared_runtime_load": 7.800000011920929,
+        "producer_open": 0.5,
+        "consumer_open": 0.10000002384185791,
+        "combined_open": 0.8999999761581421
+      },
+      "samples_ns": {
+        "roundtrip": [
+          1075000.0029802322,
+          975000.0089406967,
+          925000.011920929,
+          1000000,
+          1025000.0059604645,
+          975000.0089406967,
+          974999.9940395355,
+          1049999.9970197678,
+          950000.0029802322
+        ],
+        "resident-copy": [
+          650000.0059604645,
+          649999.9910593033,
+          599999.9940395355,
+          625000,
+          575000.0029802322,
+          625000,
+          600000.0089406967,
+          575000.0029802322,
+          599999.9940395355
+        ],
+        "combined": [
+          625000,
+          674999.9970197678,
+          575000.0029802322,
+          549999.9970197678,
+          574999.988079071,
+          575000.0029802322,
+          549999.9970197678,
+          549999.9970197678,
+          525000.0059604645
+        ]
+      },
+      "receipts": {
+        "combined": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 2
+        },
+        "resident-copy": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 260
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 1
+        },
+        "roundtrip": {
+          "intermediate": {
+            "readback_bytes": 260,
+            "upload_bytes": 260,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 1
+        }
+      },
+      "all_bits_exact": true,
+      "source_close_snapshot": true
+    },
+    {
+      "name": "filter-bank",
+      "length": 64,
+      "lanes": 16,
+      "width": null,
+      "setup_ms": {
+        "shared_runtime_load": 6.5,
+        "producer_open": 4.699999988079071,
+        "consumer_open": 1.100000023841858,
+        "combined_open": 0.2999999523162842
+      },
+      "samples_ns": {
+        "roundtrip": [
+          825000.0029802322,
+          799999.9970197678,
+          924999.9970197678,
+          824999.988079071,
+          775000.0059604645,
+          799999.9970197678,
+          799999.9970197678,
+          799999.9970197678,
+          849999.9940395355
+        ],
+        "resident-copy": [
+          625000,
+          625000,
+          675000.011920929,
+          625000,
+          625000,
+          625000,
+          650000.0059604645,
+          700000.0029802322,
+          674999.9970197678
+        ],
+        "combined": [
+          400000.0059604645,
+          425000.01192092896,
+          375000,
+          375000,
+          424999.99701976776,
+          424999.99701976776,
+          424999.99701976776,
+          400000.0059604645,
+          350000.0089406967
+        ]
+      },
+      "receipts": {
+        "combined": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 2
+        },
+        "resident-copy": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 68
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 1
+        },
+        "roundtrip": {
+          "intermediate": {
+            "readback_bytes": 68,
+            "upload_bytes": 68,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 1
+        }
+      },
+      "all_bits_exact": true,
+      "source_close_snapshot": true
+    },
+    {
+      "name": "filter-bank",
+      "length": 64,
+      "lanes": 64,
+      "width": null,
+      "setup_ms": {
+        "shared_runtime_load": 6.5,
+        "producer_open": 0.30000001192092896,
+        "consumer_open": 0.19999998807907104,
+        "combined_open": 0.19999998807907104
+      },
+      "samples_ns": {
+        "roundtrip": [
+          750000,
+          799999.9970197678,
+          775000.0059604645,
+          774999.9910593033,
+          775000.0059604645,
+          875000,
+          750000,
+          774999.9910593033,
+          824999.988079071
+        ],
+        "resident-copy": [
+          625000,
+          625000,
+          625000,
+          650000.0059604645,
+          799999.9970197678,
+          625000,
+          625000,
+          650000.0059604645,
+          575000.0029802322
+        ],
+        "combined": [
+          375000,
+          349999.9940395355,
+          399999.9910593033,
+          400000.0059604645,
+          375000,
+          375000,
+          375000,
+          350000.0089406967,
+          375000
+        ]
+      },
+      "receipts": {
+        "combined": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 2
+        },
+        "resident-copy": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 260
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 1
+        },
+        "roundtrip": {
+          "intermediate": {
+            "readback_bytes": 260,
+            "upload_bytes": 260,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 1
+        }
+      },
+      "all_bits_exact": true,
+      "source_close_snapshot": true
+    },
+    {
+      "name": "filter-bank",
+      "length": 512,
+      "lanes": 16,
+      "width": null,
+      "setup_ms": {
+        "shared_runtime_load": 6.5,
+        "producer_open": 0.30000001192092896,
+        "consumer_open": 0.10000002384185791,
+        "combined_open": 0.19999998807907104
+      },
+      "samples_ns": {
+        "roundtrip": [
+          974999.9940395355,
+          1000000,
+          1074999.988079071,
+          1024999.9910593033,
+          1000000,
+          1000000,
+          1024999.9910593033,
+          1025000.0059604645,
+          1175000.011920929
+        ],
+        "resident-copy": [
+          575000.0029802322,
+          625000,
+          625000,
+          625000,
+          599999.9940395355,
+          599999.9940395355,
+          600000.0089406967,
+          575000.0029802322,
+          625000
+        ],
+        "combined": [
+          599999.9940395355,
+          600000.0089406967,
+          575000.0029802322,
+          600000.0089406967,
+          625000,
+          600000.0089406967,
+          599999.9940395355,
+          649999.9910593033,
+          599999.9940395355
+        ]
+      },
+      "receipts": {
+        "combined": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 2
+        },
+        "resident-copy": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 68
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 1
+        },
+        "roundtrip": {
+          "intermediate": {
+            "readback_bytes": 68,
+            "upload_bytes": 68,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 1
+        }
+      },
+      "all_bits_exact": true,
+      "source_close_snapshot": true
+    },
+    {
+      "name": "filter-bank",
+      "length": 512,
+      "lanes": 64,
+      "width": null,
+      "setup_ms": {
+        "shared_runtime_load": 6.5,
+        "producer_open": 0.2999999523162842,
+        "consumer_open": 0.10000002384185791,
+        "combined_open": 0.19999998807907104
+      },
+      "samples_ns": {
+        "roundtrip": [
+          1024999.9910593033,
+          1049999.9970197678,
+          1000000,
+          1025000.0059604645,
+          1049999.9970197678,
+          1024999.9910593033,
+          1000000,
+          1025000.0059604645,
+          1024999.9910593033
+        ],
+        "resident-copy": [
+          650000.0059604645,
+          600000.0089406967,
+          625000,
+          649999.9910593033,
+          625000,
+          599999.9940395355,
+          674999.9970197678,
+          625000,
+          625000
+        ],
+        "combined": [
+          700000.0029802322,
+          649999.9910593033,
+          599999.9940395355,
+          600000.0089406967,
+          600000.0089406967,
+          650000.0059604645,
+          625000,
+          575000.0029802322,
+          600000.0089406967
+        ]
+      },
+      "receipts": {
+        "combined": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 2
+        },
+        "resident-copy": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 260
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 1
+        },
+        "roundtrip": {
+          "intermediate": {
+            "readback_bytes": 260,
+            "upload_bytes": 260,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 1
+        }
+      },
+      "all_bits_exact": true,
+      "source_close_snapshot": true
+    },
+    {
+      "name": "channel-energy",
+      "length": 64,
+      "lanes": 16,
+      "width": null,
+      "setup_ms": {
+        "shared_runtime_load": 6.100000023841858,
+        "producer_open": 5,
+        "consumer_open": 1.5,
+        "combined_open": 0.3999999761581421
+      },
+      "samples_ns": {
+        "roundtrip": [
+          849999.9940395355,
+          825000.0029802322,
+          875000,
+          875000,
+          850000.0089406967,
+          824999.988079071,
+          825000.0029802322,
+          2950000.0029802322,
+          825000.0029802322
+        ],
+        "resident-copy": [
+          650000.0059604645,
+          625000,
+          649999.9910593033,
+          674999.9970197678,
+          674999.9970197678,
+          650000.0059604645,
+          650000.0059604645,
+          724999.9940395355,
+          700000.0029802322
+        ],
+        "combined": [
+          400000.0059604645,
+          375000,
+          450000.00298023224,
+          450000.00298023224,
+          450000.00298023224,
+          400000.0059604645,
+          524999.9910593033,
+          424999.99701976776,
+          424999.99701976776
+        ]
+      },
+      "receipts": {
+        "combined": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 2
+        },
+        "resident-copy": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 68
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 1
+        },
+        "roundtrip": {
+          "intermediate": {
+            "readback_bytes": 68,
+            "upload_bytes": 68,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 1
+        }
+      },
+      "all_bits_exact": true,
+      "source_close_snapshot": true
+    },
+    {
+      "name": "channel-energy",
+      "length": 64,
+      "lanes": 64,
+      "width": null,
+      "setup_ms": {
+        "shared_runtime_load": 6.100000023841858,
+        "producer_open": 0.30000001192092896,
+        "consumer_open": 0.19999998807907104,
+        "combined_open": 0.30000001192092896
+      },
+      "samples_ns": {
+        "roundtrip": [
+          849999.9940395355,
+          799999.9970197678,
+          825000.0029802322,
+          1000000,
+          849999.9940395355,
+          799999.9970197678,
+          850000.0089406967,
+          850000.0089406967,
+          875000
+        ],
+        "resident-copy": [
+          650000.0059604645,
+          650000.0059604645,
+          599999.9940395355,
+          649999.9910593033,
+          650000.0059604645,
+          625000,
+          649999.9910593033,
+          649999.9910593033,
+          674999.9970197678
+        ],
+        "combined": [
+          400000.0059604645,
+          424999.99701976776,
+          424999.99701976776,
+          475000.0089406967,
+          425000.01192092896,
+          399999.9910593033,
+          425000.01192092896,
+          350000.0089406967,
+          474999.9940395355
+        ]
+      },
+      "receipts": {
+        "combined": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 2
+        },
+        "resident-copy": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 260
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 1
+        },
+        "roundtrip": {
+          "intermediate": {
+            "readback_bytes": 260,
+            "upload_bytes": 260,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 1
+        }
+      },
+      "all_bits_exact": true,
+      "source_close_snapshot": true
+    },
+    {
+      "name": "channel-energy",
+      "length": 512,
+      "lanes": 16,
+      "width": null,
+      "setup_ms": {
+        "shared_runtime_load": 6.100000023841858,
+        "producer_open": 0.30000001192092896,
+        "consumer_open": 0.19999998807907104,
+        "combined_open": 0.30000001192092896
+      },
+      "samples_ns": {
+        "roundtrip": [
+          1000000,
+          1000000,
+          1025000.0059604645,
+          1024999.9910593033,
+          1025000.0059604645,
+          1049999.9970197678,
+          1200000.0029802322,
+          1475000.0089406967,
+          1125000
+        ],
+        "resident-copy": [
+          674999.9970197678,
+          700000.0029802322,
+          699999.988079071,
+          700000.0029802322,
+          649999.9910593033,
+          900000.0059604645,
+          1000000,
+          625000,
+          799999.9970197678
+        ],
+        "combined": [
+          599999.9940395355,
+          574999.988079071,
+          650000.0059604645,
+          600000.0089406967,
+          625000,
+          674999.9970197678,
+          724999.9940395355,
+          799999.9970197678,
+          724999.9940395355
+        ]
+      },
+      "receipts": {
+        "combined": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 2
+        },
+        "resident-copy": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 68
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 1
+        },
+        "roundtrip": {
+          "intermediate": {
+            "readback_bytes": 68,
+            "upload_bytes": 68,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 68
+          },
+          "producer_dispatches": 1
+        }
+      },
+      "all_bits_exact": true,
+      "source_close_snapshot": true
+    },
+    {
+      "name": "channel-energy",
+      "length": 512,
+      "lanes": 64,
+      "width": null,
+      "setup_ms": {
+        "shared_runtime_load": 6.100000023841858,
+        "producer_open": 0.3999999761581421,
+        "consumer_open": 0,
+        "combined_open": 0.3999999761581421
+      },
+      "samples_ns": {
+        "roundtrip": [
+          1075000.0029802322,
+          1024999.9910593033,
+          1049999.9970197678,
+          1075000.0029802322,
+          1075000.0029802322,
+          1099999.9940395355,
+          1000000,
+          1000000,
+          1025000.0059604645
+        ],
+        "resident-copy": [
+          775000.0059604645,
+          775000.0059604645,
+          750000,
+          724999.9940395355,
+          700000.0029802322,
+          700000.0029802322,
+          700000.0029802322,
+          724999.9940395355,
+          674999.9970197678
+        ],
+        "combined": [
+          625000,
+          600000.0089406967,
+          599999.9940395355,
+          600000.0089406967,
+          724999.9940395355,
+          700000.0029802322,
+          625000,
+          674999.9970197678,
+          575000.0029802322
+        ]
+      },
+      "receipts": {
+        "combined": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 2
+        },
+        "resident-copy": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 260
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 1
+        },
+        "roundtrip": {
+          "intermediate": {
+            "readback_bytes": 260,
+            "upload_bytes": 260,
+            "resident_copy_bytes": 0
+          },
+          "final_read": {
+            "readback_bytes": 260
+          },
+          "producer_dispatches": 1
+        }
+      },
+      "all_bits_exact": true,
+      "source_close_snapshot": true
+    }
+  ],
+  "checks": [],
+  "embeddings": [
+    {
+      "batch": 1,
+      "documents": 64,
+      "weights_bytes": 7559168,
+      "setup_ms": {
+        "shared_runtime_load": 7.099999964237213,
+        "producer_open": 55.5,
+        "corpus_open": 38,
+        "corpus_upload_and_encode": 1.699999988079071,
+        "consumer_open": 4.5,
+        "combined_open": 46.09999996423721,
+        "two_corpus_copies": 0.7000000476837158
+      },
+      "samples_ns_per_query": {
+        "roundtrip": [
+          950000.0029802322,
+          975000.0089406967,
+          975000.0089406967,
+          950000.0029802322,
+          924999.9970197678,
+          950000.0029802322,
+          900000.0059604645,
+          900000.0059604645,
+          900000.0059604645
+        ],
+        "resident-copy": [
+          724999.9940395355,
+          799999.9970197678,
+          750000,
+          725000.0089406967,
+          724999.9940395355,
+          750000,
+          750000,
+          750000,
+          724999.9940395355
+        ],
+        "combined": [
+          574999.988079071,
+          599999.9940395355,
+          574999.988079071,
+          625000,
+          575000.0029802322,
+          575000.0029802322,
+          599999.9940395355,
+          599999.9940395355,
+          575000.0029802322
+        ]
+      },
+      "receipts": {
+        "combined": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 0
+          },
+          "final_readback_bytes": 256
+        },
+        "resident-copy": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 260
+          },
+          "final_readback_bytes": 256
+        },
+        "roundtrip": {
+          "intermediate": {
+            "readback_bytes": 260,
+            "upload_bytes": 260,
+            "resident_copy_bytes": 0
+          },
+          "final_readback_bytes": 256
+        }
+      },
+      "all_bits_exact": true
+    },
+    {
+      "batch": 16,
+      "documents": 256,
+      "weights_bytes": 7559168,
+      "setup_ms": {
+        "shared_runtime_load": 7.099999964237213,
+        "producer_open": 35.19999998807907,
+        "corpus_open": 34,
+        "corpus_upload_and_encode": 1.5999999642372131,
+        "consumer_open": 0.3999999761581421,
+        "combined_open": 34.69999998807907,
+        "two_corpus_copies": 0.5
+      },
+      "samples_ns_per_query": {
+        "roundtrip": [
+          59375.000186264515,
+          59375.00111758709,
+          57812.50074505806,
+          62500,
+          57812.501676380634,
+          60937.49962747097,
+          57812.49888241291,
+          60937.49962747097,
+          60937.49962747097
+        ],
+        "resident-copy": [
+          48437.499441206455,
+          48437.50037252903,
+          45312.49962747097,
+          45312.49962747097,
+          46875,
+          46875,
+          43749.99925494194,
+          43749.99925494194,
+          54687.499068677425
+        ],
+        "combined": [
+          39062.5,
+          40624.999441206455,
+          35937.49925494194,
+          39062.5,
+          34374.999813735485,
+          37499.99962747097,
+          39062.500931322575,
+          37499.99962747097,
+          42187.499813735485
+        ]
+      },
+      "receipts": {
+        "combined": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 0
+          },
+          "final_readback_bytes": 16384
+        },
+        "resident-copy": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 4100
+          },
+          "final_readback_bytes": 16384
+        },
+        "roundtrip": {
+          "intermediate": {
+            "readback_bytes": 4100,
+            "upload_bytes": 4100,
+            "resident_copy_bytes": 0
+          },
+          "final_readback_bytes": 16384
+        }
+      },
+      "all_bits_exact": true
+    },
+    {
+      "batch": 64,
+      "documents": 256,
+      "weights_bytes": 7559168,
+      "setup_ms": {
+        "shared_runtime_load": 7.099999964237213,
+        "producer_open": 36.30000001192093,
+        "corpus_open": 34.30000001192093,
+        "corpus_upload_and_encode": 1.5999999642372131,
+        "consumer_open": 0.5,
+        "combined_open": 33.10000002384186,
+        "two_corpus_copies": 0.699999988079071
+      },
+      "samples_ns_per_query": {
+        "roundtrip": [
+          21484.375,
+          20312.49995343387,
+          21484.374534338713,
+          20703.125279396772,
+          21484.374767169356,
+          21484.374534338713,
+          21093.749441206455,
+          21484.374767169356,
+          22656.25004656613
+        ],
+        "resident-copy": [
+          16406.25041909516,
+          14062.500325962901,
+          15234.375139698386,
+          15234.374906867743,
+          14843.749813735485,
+          15625,
+          15234.374906867743,
+          14453.125186264515,
+          15625.000232830644
+        ],
+        "combined": [
+          16015.625093132257,
+          14062.49962747097,
+          16015.625093132257,
+          16015.625093132257,
+          15625,
+          16015.625093132257,
+          16015.624860301614,
+          15624.999767169356,
+          15234.374906867743
+        ]
+      },
+      "receipts": {
+        "combined": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 0
+          },
+          "final_readback_bytes": 65536
+        },
+        "resident-copy": {
+          "intermediate": {
+            "upload_bytes": 0,
+            "readback_bytes": 0,
+            "resident_copy_bytes": 16388
+          },
+          "final_readback_bytes": 65536
+        },
+        "roundtrip": {
+          "intermediate": {
+            "readback_bytes": 16388,
+            "upload_bytes": 16388,
+            "resident_copy_bytes": 0
+          },
+          "final_readback_bytes": 65536
+        }
+      },
+      "all_bits_exact": true
+    }
+  ],
+  "adapter": {
+    "vendor": "apple",
+    "architecture": "metal-3",
+    "isFallbackAdapter": false
+  },
+  "browser_version": "156.0.8078.80"
+}

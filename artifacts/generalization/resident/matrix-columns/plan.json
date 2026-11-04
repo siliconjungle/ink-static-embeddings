@@ -1,0 +1,17 @@
+{
+  "applied_rule_ids": [],
+  "checked_implementation": null,
+  "checked_replacement": null,
+  "checked_source_route": null,
+  "database_closure": null,
+  "database_lock": null,
+  "initial_state": null,
+  "input_core_sha256": "8d2de3ed77065b784665d8baa8cea68d689f78c1d4a537c898269c84b3a00b44",
+  "selected_core_sha256": "8d2de3ed77065b784665d8baa8cea68d689f78c1d4a537c898269c84b3a00b44",
+  "semantic_package": null,
+  "semantic_selection": null,
+  "source": "build/generalization/resident/matrix-columns.ink",
+  "source_route_equivalence": null,
+  "target": "webgpu",
+  "trust": "GPU backend and physical routing remain trusted; see manifest.json"
+}

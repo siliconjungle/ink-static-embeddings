@@ -10,12 +10,12 @@ from scripts.generalization_inputs import cases
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--processes',type=int,default=3);args=parser.parse_args()
-    destination=Path('results/generalization/folds');inputs=Path('work/generalization/inputs.json')
+    parser=argparse.ArgumentParser();parser.add_argument('--processes',type=int,default=3);parser.add_argument('--study',type=Path,default=Path('results/generalization/folds'));args=parser.parse_args()
+    destination=args.study;inputs=Path('work/generalization/inputs.json')
     inputs.write_text(json.dumps(cases(),separators=(',',':'))+'\n')
     runs=[]
     for group in range(args.processes):
-        result=subprocess.run(['node','scripts/generalization_folds_worker.mjs',str(group)],capture_output=True,text=True,timeout=300)
+        result=subprocess.run(['node','scripts/generalization_folds_worker.mjs',str(group),str(destination)],capture_output=True,text=True,timeout=300)
         if result.returncode:raise RuntimeError(result.stderr[-4000:])
         run=json.loads(result.stdout);runs.append(run)
         (destination/f'measurement-{group}.json').write_text(json.dumps(run,indent=2)+'\n')

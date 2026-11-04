@@ -9,8 +9,8 @@ import subprocess
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--compiler',type=Path,required=True);parser.add_argument('--processes',type=int,default=3);args=parser.parse_args()
-    compiler=str(args.compiler.resolve());destination=Path('results/generalization/folds');project=Path('work/generalization/rust-bench');project.mkdir(exist_ok=True)
+    parser=argparse.ArgumentParser();parser.add_argument('--compiler',type=Path,required=True);parser.add_argument('--processes',type=int,default=3);parser.add_argument('--study',type=Path,default=Path('results/generalization/folds'));args=parser.parse_args()
+    compiler=str(args.compiler.resolve());destination=args.study;project=Path('work/generalization')/(destination.name+'-rust-bench');project.mkdir(exist_ok=True)
     discovery=json.loads((destination/'discovery.json').read_text());declarations=[];functions=[];variants=[]
     def invoke(*command):
         result=subprocess.run(list(map(str,command)),capture_output=True,text=True,timeout=300)

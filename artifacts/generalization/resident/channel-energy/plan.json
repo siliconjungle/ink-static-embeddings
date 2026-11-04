@@ -1,0 +1,17 @@
+{
+  "applied_rule_ids": [],
+  "checked_implementation": null,
+  "checked_replacement": null,
+  "checked_source_route": null,
+  "database_closure": null,
+  "database_lock": null,
+  "initial_state": null,
+  "input_core_sha256": "ac712e94bd0f9cf13d2a8522fdc7dfe2428d5f08305d03f80dc65aa1633e2181",
+  "selected_core_sha256": "ac712e94bd0f9cf13d2a8522fdc7dfe2428d5f08305d03f80dc65aa1633e2181",
+  "semantic_package": null,
+  "semantic_selection": null,
+  "source": "build/generalization/resident/channel-energy.ink",
+  "source_route_equivalence": null,
+  "target": "webgpu",
+  "trust": "GPU backend and physical routing remain trusted; see manifest.json"
+}
