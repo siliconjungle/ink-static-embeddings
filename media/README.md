@@ -20,8 +20,8 @@ execution; displayed timings are the recorded measurements. Empty inputs are exc
 from the short group and included in the mixed corpus.
 
 The source timings and shared motion scale are recorded in
-[animation.json](animation.json). At James's request, the earlier forced
-alignment and independently scaled panels have been removed.
+[animation.json](animation.json). The motion has no forced alignment, independently
+scaled panels or reset fade.
 
 The first two panels are single-query CPU results. Loading/tokenization are excluded; changing
 ID capture and complete output consumption are included. Same weights and IDs;
@@ -52,8 +52,10 @@ containing `Arial.ttf` and `Arial Bold.ttf`. Font files are not included.
 
 Suggested post:
 
-> I ported static embedding inference to Ink and built tooling to load existing model weights and compile the inference code to JS, Rust & WebGPU.
+> i ported static embedding inference to ink, then compiled it to js, rust & webgpu. same weights.
 >
-> On Potion 2M, JS beats NumPy by 2.6× for short inputs. NumPy wins on longer ones.
+> potion 2m: js is 2.6× faster than numpy for short inputs. gpu batches of 1024 reach 1.8× numpy cpu throughput.
 >
-> Code + benchmarks: [github.com/siliconjungle/ink-static-embeddings](https://github.com/siliconjungle/ink-static-embeddings)
+> numpy still wins on longer cpu inputs.
+>
+> [github.com/siliconjungle/ink-static-embeddings](https://github.com/siliconjungle/ink-static-embeddings)

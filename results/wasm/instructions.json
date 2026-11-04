@@ -1,0 +1,71 @@
+{
+  "scope": "Static instruction counts in the complete two-variant module, not dynamic execution counts or speedup attribution.",
+  "interpretation": "SIMD division is emitted. No SIMD pooling addition is present in these builds; do not describe pooling as SIMD-vectorized.",
+  "llvm_objdump_version": "LLVM (http://llvm.org/):",
+  "models": [
+    {
+      "model_id": "minishlab/potion-base-2M",
+      "wasm_sha256": "569d6ce25f34c1fd2d240754579cb39023761162d94d55f161b6f60dd01ce6c1",
+      "f32x4_instruction_counts": {
+        "f32x4.div": 3,
+        "f32x4.ne": 3,
+        "f32x4.replace_lane": 3,
+        "f32x4.splat": 4
+      },
+      "f32x4_add_instructions": 0,
+      "f32x4_div_instructions": 3
+    },
+    {
+      "model_id": "minishlab/potion-base-8M",
+      "wasm_sha256": "028b1235947c1b32dbbc92a873c853757f268d6f33cfabecb0df00f22b674805",
+      "f32x4_instruction_counts": {
+        "f32x4.div": 3,
+        "f32x4.ne": 3,
+        "f32x4.replace_lane": 3,
+        "f32x4.splat": 4
+      },
+      "f32x4_add_instructions": 0,
+      "f32x4_div_instructions": 3
+    },
+    {
+      "model_id": "sentence-transformers/static-retrieval-mrl-en-v1",
+      "wasm_sha256": "e4b33e772b6af6c830b4b67bbf67eb55acaf7ad1276808d6cb8004cd66961081",
+      "f32x4_instruction_counts": {
+        "f32x4.div": 1,
+        "f32x4.ne": 1,
+        "f32x4.replace_lane": 3,
+        "f32x4.splat": 2
+      },
+      "f32x4_add_instructions": 0,
+      "f32x4_div_instructions": 1
+    },
+    {
+      "model_id": "fixture/unseen-weighted",
+      "wasm_sha256": "2f5e4aa43a97b49375e7136e7c7704e65ba5e536035e7e35df67a01dc6762f2f",
+      "f32x4_instruction_counts": {
+        "f32x4.div": 3,
+        "f32x4.extract_lane": 8,
+        "f32x4.mul": 2,
+        "f32x4.ne": 5,
+        "f32x4.replace_lane": 3,
+        "f32x4.splat": 4
+      },
+      "f32x4_add_instructions": 0,
+      "f32x4_div_instructions": 3
+    },
+    {
+      "model_id": "fixture/unseen-clamp",
+      "wasm_sha256": "cd9f33598fdaa5092748299a9c78aa16d5b43c331a63ecaf42b2e13708b26e5e",
+      "f32x4_instruction_counts": {
+        "f32x4.div": 3,
+        "f32x4.extract_lane": 4,
+        "f32x4.mul": 1,
+        "f32x4.ne": 4,
+        "f32x4.replace_lane": 6,
+        "f32x4.splat": 5
+      },
+      "f32x4_add_instructions": 0,
+      "f32x4_div_instructions": 3
+    }
+  ]
+}

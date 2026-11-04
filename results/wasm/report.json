@@ -1,0 +1,1797 @@
+{
+  "schema": 1,
+  "processes": 6,
+  "rounds": 9,
+  "repetitions": 100,
+  "scope": "Visible installed Chrome, single-query CPU latency, resident immutable weights. JavaScript uses the checked selection with ordered pooling/norm fusion. Public encode allocates detached F32 output; ID validation/upload and complete output consumption included. Loading, network, compilation and one-time capture/preparation excluded and setup recorded separately. Ink-quads is an authored Vec4 source layout, not a proof-selected optimizer rewrite. SIMD enabled; exact instruction coverage is recorded separately.",
+  "summary_ns_per_embedding": {
+    "all": {
+      "javascript": 22428.124994039536,
+      "ink": 11554.687498137355,
+      "ink-quads": 9289.062502793968
+    },
+    "empty": {
+      "javascript": 1287.4999642372131,
+      "ink": 825.0000327825546,
+      "ink-quads": 856.2500029802322
+    },
+    "short": {
+      "javascript": 2757.291669646899,
+      "ink": 1232.2916711370149,
+      "ink-quads": 1402.0833373069763
+    },
+    "medium": {
+      "javascript": 15483.750000596046,
+      "ink": 6586.249992251396,
+      "ink-quads": 6506.249979138374
+    },
+    "long": {
+      "javascript": 64746.87499925494,
+      "ink": 35906.24997392297,
+      "ink-quads": 26804.68751117587
+    }
+  },
+  "validation": [
+    {
+      "model_id": "minishlab/potion-base-2M",
+      "revision": "389b9f64be5aa4ae7a6bc6fe95ef20ce485ae5da",
+      "dimensions": 64,
+      "reports": [
+        {
+          "variant": "ink",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 16318464,
+            "resident_weight_bytes": 7559168,
+            "maxTokens": 512
+          }
+        },
+        {
+          "variant": "ink-quads",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 16318464,
+            "resident_weight_bytes": 7559168,
+            "maxTokens": 512
+          }
+        }
+      ],
+      "source_mismatch_rejected": true
+    },
+    {
+      "model_id": "minishlab/potion-base-8M",
+      "revision": "bf8b056651a2c21b8d2565580b8569da283cab23",
+      "dimensions": 256,
+      "reports": [
+        {
+          "variant": "ink",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 61669376,
+            "resident_weight_bytes": 30236672,
+            "maxTokens": 512
+          }
+        },
+        {
+          "variant": "ink-quads",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 61669376,
+            "resident_weight_bytes": 30236672,
+            "maxTokens": 512
+          }
+        }
+      ],
+      "source_mismatch_rejected": true
+    },
+    {
+      "model_id": "sentence-transformers/static-retrieval-mrl-en-v1",
+      "revision": "f60985c706f192d45d218078e49e5a8b6f15283a",
+      "dimensions": 1024,
+      "reports": [
+        {
+          "variant": "ink",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 251265024,
+            "resident_weight_bytes": 125018112,
+            "maxTokens": 512
+          }
+        },
+        {
+          "variant": "ink-quads",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 251265024,
+            "resident_weight_bytes": 125018112,
+            "maxTokens": 512
+          }
+        }
+      ],
+      "source_mismatch_rejected": true
+    },
+    {
+      "model_id": "fixture/unseen-weighted",
+      "revision": "seed-91837",
+      "dimensions": 7,
+      "reports": [
+        {
+          "variant": "ink",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 1179648,
+            "resident_weight_bytes": 532,
+            "maxTokens": 512
+          }
+        },
+        {
+          "variant": "ink-quads",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 1179648,
+            "resident_weight_bytes": 532,
+            "maxTokens": 512
+          }
+        }
+      ],
+      "source_mismatch_rejected": true
+    },
+    {
+      "model_id": "fixture/unseen-clamp",
+      "revision": "seed-91837",
+      "dimensions": 5,
+      "reports": [
+        {
+          "variant": "ink",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 1179648,
+            "resident_weight_bytes": 340,
+            "maxTokens": 512
+          }
+        },
+        {
+          "variant": "ink-quads",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 1179648,
+            "resident_weight_bytes": 340,
+            "maxTokens": 512
+          }
+        }
+      ],
+      "source_mismatch_rejected": true
+    }
+  ],
+  "source_sha256": {
+    "scripts/build_wasm.py": "f7d372466cff39c11f86db98c799bdb5ef1007bc8d00c3ecd9be26a572fe0ac0",
+    "scripts/wasm_browser_benchmark.mjs": "6998d7b0275bd9abe99398fbeccf77ecf08244d63d456787c531fc69bba0b7cf",
+    "scripts/wasm_conformance.mjs": "87bfab1f81742c45ad5a242d2182826ada61678635e916cb3ae07f86dd2211c4",
+    "wasm/resident.rs": "fab2f8c5cfabeafaf79c93de654d0d974af401fffe885a481767058ec0f61697",
+    "runtime/static-embedding-wasm.mjs": "986d14a2b4a45e767eb1424b53cd320e73876c8faef0b164f1912ffec938dcbe",
+    "build/general/potion-2m/model.ink": "cc89cb00728fd61866e5535879badd6a19d0ca0f482b410e33d92b8ad9b9cebb",
+    "build/general/potion-2m/model.json": "66fd487759e1cea585af7c6205e72bce8e349436e86c3e48ecaa8579873eb292",
+    "build/general/potion-2m/wasm/model.ink": "9663aec00cc300896e364d94dd68a6fd7cbef06e9215bc199337fcc58815eb06",
+    "build/general/potion-2m/wasm/model.wasm": "569d6ce25f34c1fd2d240754579cb39023761162d94d55f161b6f60dd01ce6c1",
+    "build/general/potion-2m/wasm/plan.json": "2173cb4b842ef8e61426bc8410bb71b84f13423c2df8cf704880615d43887b6b",
+    "build/general/potion-2m/optimized.mjs": "0984646c0163e2af1c95fba0f5ab53c09df96b40d17f6356f335615ea41e2705",
+    "build/general/potion-2m/selection.json": "ac98379a7d2fab594e31ac67b0e2213ead3700286deb5c9e4a954d6bdce02971",
+    "build/corpus.json": "c5e1d0d975f89d751f7e774780fd67cf0273bd5775a723505774f48f23e9425f"
+  },
+  "runs": [
+    {
+      "modes": {
+        "javascript": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                22384.374998509884,
+                22177.34375037253,
+                22163.28125447035,
+                22381.250001490116,
+                22425.781255587935,
+                22521.874997764826,
+                22174.999993294477,
+                21956.249997019768,
+                22284.375000745058
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                1287.4999642372131,
+                1537.500023841858,
+                1587.499976158142,
+                1550.000011920929,
+                1312.5000894069672,
+                1324.9999284744263,
+                1300.0001013278961,
+                3637.4999582767487,
+                1262.499988079071
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                2704.16667064031,
+                2722.916677594185,
+                3181.249996026357,
+                2791.6666865348816,
+                3183.333327372869,
+                2827.0833442608514,
+                3129.1666626930237,
+                2737.4999970197678,
+                3210.4166597127914
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                15379.999995231628,
+                15960.00000834465,
+                15482.5000166893,
+                15360.000014305115,
+                16090.000003576279,
+                15600.000023841858,
+                15870.000004768372,
+                15474.999994039536,
+                16327.499985694885
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                67881.2499716878,
+                65721.87501937151,
+                66081.24997466803,
+                66365.62500149012,
+                65843.75001490116,
+                66821.87501341105,
+                66087.50000596046,
+                65221.874974668026,
+                64315.62501937151
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        },
+        "ink": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                11692.968746647239,
+                11654.68749590218,
+                11789.062498137355,
+                11714.062495157123,
+                11830.46874590218,
+                11789.843756705523,
+                11722.65624627471,
+                11660.937499254942,
+                11785.937501117587
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                887.4998986721039,
+                900.0000357627869,
+                875.0000596046448,
+                849.9999344348907,
+                912.5000238418579,
+                849.9999344348907,
+                862.5000715255737,
+                887.5000476837158,
+                874.9999105930328
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                1297.9166706403096,
+                1262.5000129143398,
+                1243.7500059604645,
+                1391.6666557391484,
+                1204.1666607062023,
+                1220.8333363135655,
+                1237.500011920929,
+                1277.0833323399227,
+                1247.9166686534882
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                6634.999990463257,
+                6490.000009536743,
+                6617.500007152557,
+                6552.500009536743,
+                6619.999974966049,
+                6542.500019073486,
+                6564.999997615814,
+                6787.4999940395355,
+                6659.999996423721
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                35737.50000447035,
+                35996.87498062849,
+                36081.25001192093,
+                36149.99998360872,
+                36481.25000298023,
+                36200.00001043081,
+                35784.37499701977,
+                35603.12498360872,
+                35865.62503129244
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        },
+        "ink-quads": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                9396.093748509884,
+                9335.156250745058,
+                9260.937497019768,
+                9325.781250372529,
+                9296.875,
+                9314.843751490116,
+                9307.812498882413,
+                9271.875005215406,
+                9309.374997392297
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                887.5000476837158,
+                887.4998986721039,
+                1337.5000655651093,
+                974.9999642372131,
+                824.9999582767487,
+                800.0001311302185,
+                799.9999821186066,
+                799.9999821186066,
+                824.9999582767487
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                1400.0000059604645,
+                1402.0833373069763,
+                1431.2500009934108,
+                1408.3333313465118,
+                1499.9999850988388,
+                1412.5000188748043,
+                1397.916649778684,
+                1418.7500129143398,
+                1443.7499890724819
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                6562.5,
+                6400.0000059604645,
+                6455.000013113022,
+                6465.000003576279,
+                6482.499986886978,
+                6577.499985694885,
+                6477.500021457672,
+                6472.499996423721,
+                6495.000004768372
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                26534.374989569187,
+                26596.87500447035,
+                26715.625002980232,
+                26809.37498807907,
+                26606.24999552965,
+                26700.000017881393,
+                26806.249991059303,
+                26578.12502235174,
+                26906.249970197678
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        }
+      },
+      "setup": {
+        "javascript": {
+          "capture_prepare_ms": 62.689999997615814
+        },
+        "ink": {
+          "capture_prepare_ms": 18.37000000476837,
+          "statistics": {
+            "linear_memory_bytes": 16318464,
+            "resident_weight_bytes": 7559168,
+            "maxTokens": 4096
+          }
+        },
+        "ink-quads": {
+          "capture_prepare_ms": 16.7399999499321,
+          "statistics": {
+            "linear_memory_bytes": 16318464,
+            "resident_weight_bytes": 7559168,
+            "maxTokens": 4096
+          }
+        }
+      },
+      "order": [
+        "javascript",
+        "ink",
+        "ink-quads"
+      ],
+      "checksum": -7044.097347090428,
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "cross_origin_isolated": true,
+      "browser_version": "156.0.8078.80"
+    },
+    {
+      "modes": {
+        "javascript": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                22296.874998137355,
+                22114.06249552965,
+                22596.093751490116,
+                22461.718749254942,
+                22464.84374627471,
+                23252.34374962747,
+                22904.68749590218,
+                22694.531250745058,
+                22810.93749217689
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                1537.500023841858,
+                1787.5000834465027,
+                1887.499988079071,
+                1812.4999105930328,
+                1375.0000298023224,
+                1312.5000894069672,
+                1424.9999821186066,
+                1325.0000774860382,
+                1274.999976158142
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                3364.5833283662796,
+                2845.833326379458,
+                3397.9166795810065,
+                2939.5833363135657,
+                3316.66665772597,
+                2735.416665673256,
+                2908.3333164453506,
+                3308.3333323399224,
+                2831.250006953875
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                16457.499980926514,
+                15617.499977350235,
+                16324.999988079071,
+                15569.999992847443,
+                16545.0000166893,
+                15509.999990463257,
+                16234.999984502792,
+                15517.4999833107,
+                16567.50002503395
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                66246.87500298023,
+                66096.87499701977,
+                65856.25000298023,
+                65937.5,
+                65021.87501639128,
+                65671.87499254942,
+                65765.62501490116,
+                65078.125,
+                63784.37500447035
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        },
+        "ink-quads": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                9344.531251117587,
+                9322.656244039536,
+                9301.562504842877,
+                9260.937506332994,
+                9285.937501117587,
+                9302.34375409782,
+                9361.718744039536,
+                9325.000001117587,
+                9288.281248882413
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                837.4999463558197,
+                849.9999344348907,
+                887.5000476837158,
+                1325.0000774860382,
+                962.4999761581421,
+                824.9999582767487,
+                824.9999582767487,
+                799.9999821186066,
+                799.9999821186066
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                1399.9999811251957,
+                1408.3333561817806,
+                1439.5833263794582,
+                1420.8333194255829,
+                1545.8333492279053,
+                1383.333330353101,
+                1391.6666557391484,
+                1406.25,
+                1408.3333313465118
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                6492.499977350235,
+                6602.49999165535,
+                6482.499986886978,
+                6517.500013113022,
+                6507.499992847443,
+                6532.499998807907,
+                6432.500004768372,
+                6455.000013113022,
+                6454.9999833106995
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                26881.25003129244,
+                26756.250001490116,
+                26693.749986588955,
+                26606.24999552965,
+                26646.874994039536,
+                26609.375029802322,
+                26581.249982118607,
+                26646.874994039536,
+                26643.749997019768
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        },
+        "ink": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                11567.96875409782,
+                11567.96875409782,
+                11605.46874627471,
+                11520.312502980232,
+                11618.749992921948,
+                11507.031256332994,
+                11521.875001490116,
+                11516.406247392297,
+                11545.312497764826
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                862.5000715255737,
+                874.9999105930328,
+                850.0000834465027,
+                849.9999344348907,
+                850.0000834465027,
+                837.4999463558197,
+                887.5000476837158,
+                849.9999344348907,
+                837.4999463558197
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                1289.5833452542622,
+                1214.58334227403,
+                1245.8333124717076,
+                1239.5833432674408,
+                1229.1666616996129,
+                1316.6666775941849,
+                1220.8333363135655,
+                1214.5833174387615,
+                1206.2500168879826
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                6602.49999165535,
+                6602.49999165535,
+                6512.500017881393,
+                6542.499989271164,
+                6534.999996423721,
+                6582.500010728836,
+                6617.500007152557,
+                6500,
+                6495.000004768372
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                35621.87496572733,
+                35968.75000745058,
+                36184.375025331974,
+                36771.874986588955,
+                36006.2500089407,
+                36312.49997764826,
+                36034.37501937151,
+                36037.499979138374,
+                35809.37501043081
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        }
+      },
+      "setup": {
+        "javascript": {
+          "capture_prepare_ms": 61.139999985694885
+        },
+        "ink": {
+          "capture_prepare_ms": 19.07499998807907,
+          "statistics": {
+            "linear_memory_bytes": 16318464,
+            "resident_weight_bytes": 7559168,
+            "maxTokens": 4096
+          }
+        },
+        "ink-quads": {
+          "capture_prepare_ms": 18.9200000166893,
+          "statistics": {
+            "linear_memory_bytes": 16318464,
+            "resident_weight_bytes": 7559168,
+            "maxTokens": 4096
+          }
+        }
+      },
+      "order": [
+        "javascript",
+        "ink-quads",
+        "ink"
+      ],
+      "checksum": -7044.097347090428,
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "cross_origin_isolated": true,
+      "browser_version": "156.0.8078.80"
+    },
+    {
+      "modes": {
+        "ink-quads": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                9350.781245157123,
+                9476.56249627471,
+                9310.937505215406,
+                9210.937498137355,
+                9187.500001862645,
+                9220.312498509884,
+                9188.281251117587,
+                9189.062500372529,
+                9287.499999627471
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                1050.0000417232513,
+                1062.4998807907104,
+                1074.9998688697815,
+                1037.5000536441803,
+                837.4999463558197,
+                787.4999940395355,
+                799.9999821186066,
+                775.0000059604645,
+                1087.5000059604645
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                1364.5833482344945,
+                1495.8333472410839,
+                1445.8333204189937,
+                1375.0000049670537,
+                1360.4166607062023,
+                1377.083311478297,
+                1395.833318432172,
+                1333.3333532015483,
+                1360.4166607062023
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                6462.5000059604645,
+                6475.000023841858,
+                6560.000002384186,
+                6729.999989271164,
+                6527.499973773956,
+                6642.4999833106995,
+                6549.999982118607,
+                6505.000025033951,
+                6590.000003576279
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                27328.12501490116,
+                27093.74997764826,
+                26709.375008940697,
+                26987.50000447035,
+                27249.99997764826,
+                26931.249983608723,
+                27471.874989569187,
+                26878.124997019768,
+                27043.750025331974
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        },
+        "javascript": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                22749.999994412065,
+                22182.03124590218,
+                22260.156255215406,
+                22664.843751117587,
+                22945.312494412065,
+                22514.843745157123,
+                22426.562504842877,
+                22615.625001490116,
+                22178.12499962747
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                1250,
+                1212.5000357627869,
+                1212.5000357627869,
+                1224.999874830246,
+                1212.5000357627869,
+                1212.5000357627869,
+                1237.500011920929,
+                1225.000023841858,
+                1287.4999642372131
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                3220.833341280619,
+                2681.2500009934106,
+                2689.583326379458,
+                2997.9166636864343,
+                2668.7500129143395,
+                2991.6666696468988,
+                2674.9999821186066,
+                2979.1666815678277,
+                2629.1666676600776
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                15960.00000834465,
+                15097.499996423721,
+                15610.000014305115,
+                15034.999996423721,
+                15079.9999833107,
+                15537.500023841858,
+                15074.999988079071,
+                15625,
+                15099.999994039536
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                64778.12498807907,
+                64909.37501192093,
+                64737.49998956919,
+                63868.749998509884,
+                64712.500013411045,
+                64596.874974668026,
+                64084.37501639128,
+                64659.37498956919,
+                64762.50000298023
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        },
+        "ink": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                11498.437505215406,
+                11514.843748882413,
+                11549.218753352761,
+                11514.062499627471,
+                11507.81249627471,
+                11515.624998137355,
+                11485.156249254942,
+                11468.750005587935,
+                11549.218744039536
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                812.5001192092896,
+                799.9999821186066,
+                799.9999821186066,
+                812.4999701976776,
+                812.4999701976776,
+                799.9999821186066,
+                875.0000596046448,
+                849.9999344348907,
+                787.4999940395355
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                1354.1666666666667,
+                1266.6666756073635,
+                1208.333323399226,
+                1235.4166805744171,
+                1229.1666616996129,
+                1262.5000129143398,
+                1356.2499980131786,
+                1185.416653752327,
+                1216.6666736205418
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                6557.500004768372,
+                6557.500004768372,
+                6589.999973773956,
+                6590.000003576279,
+                6564.999997615814,
+                6802.500009536743,
+                6705.000013113022,
+                6532.499998807907,
+                6567.499995231628
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                35759.37498360872,
+                35634.375028312206,
+                35474.999994039536,
+                35490.624979138374,
+                35887.50001043081,
+                35978.124998509884,
+                35593.74999254942,
+                35856.25000298023,
+                35875.00002235174
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        }
+      },
+      "setup": {
+        "javascript": {
+          "capture_prepare_ms": 58.44499999284744
+        },
+        "ink": {
+          "capture_prepare_ms": 17.819999992847443,
+          "statistics": {
+            "linear_memory_bytes": 16318464,
+            "resident_weight_bytes": 7559168,
+            "maxTokens": 4096
+          }
+        },
+        "ink-quads": {
+          "capture_prepare_ms": 16.50499999523163,
+          "statistics": {
+            "linear_memory_bytes": 16318464,
+            "resident_weight_bytes": 7559168,
+            "maxTokens": 4096
+          }
+        }
+      },
+      "order": [
+        "ink-quads",
+        "javascript",
+        "ink"
+      ],
+      "checksum": -7044.097347090428,
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "cross_origin_isolated": true,
+      "browser_version": "156.0.8078.80"
+    },
+    {
+      "modes": {
+        "ink-quads": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                9320.312505587935,
+                9287.499999627471,
+                9282.81250409782,
+                9177.343752235174,
+                9232.031255960464,
+                9207.031251862645,
+                9246.875001117587,
+                9248.437499627471,
+                9410.15625372529
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                1237.500011920929,
+                1074.9998688697815,
+                1137.5001072883606,
+                1075.0000178813934,
+                899.9998867511749,
+                850.0000834465027,
+                812.4999701976776,
+                812.5001192092896,
+                1049.9998927116394
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                1335.4166597127914,
+                1533.3333363135655,
+                1412.5000188748043,
+                1400.0000059604645,
+                1354.1666666666667,
+                1364.583323399226,
+                1393.750011920929,
+                1345.8333412806194,
+                1372.9166487852733
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                6569.999992847443,
+                6475.000023841858,
+                6497.500002384186,
+                6550.000011920929,
+                6447.499990463257,
+                6474.9999940395355,
+                6395.000010728836,
+                6370.000004768372,
+                6459.999978542328
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                26806.249991059303,
+                27565.62501192093,
+                27512.49998807907,
+                26981.250010430813,
+                26612.499989569187,
+                26565.624997019768,
+                26868.750005960464,
+                27184.375002980232,
+                26909.37500447035
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        },
+        "ink": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                11546.87499627471,
+                11430.468745529652,
+                11506.250007078052,
+                11474.999999627471,
+                11485.156249254942,
+                11539.062494412065,
+                11468.750005587935,
+                11708.593750372529,
+                11735.156243667006
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                862.4999225139618,
+                1112.4999821186066,
+                837.5000953674316,
+                787.4999940395355,
+                799.9999821186066,
+                849.9999344348907,
+                912.5000238418579,
+                825.0001072883606,
+                824.9999582767487
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                1277.0833323399227,
+                1241.6666746139526,
+                1227.083330353101,
+                1250,
+                1241.6666746139526,
+                1243.7499811251957,
+                1210.4166795810063,
+                1241.666649778684,
+                1275.0000009934108
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                6685.000002384186,
+                6587.5000059604645,
+                6714.999973773956,
+                6547.500014305115,
+                6539.99999165535,
+                6677.500009536743,
+                6637.499988079071,
+                6735.000014305115,
+                6527.500003576279
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                36590.62501043081,
+                36556.250005960464,
+                36543.74998062849,
+                36515.62500745058,
+                36231.25001788139,
+                36778.12498062849,
+                36165.625005960464,
+                36293.74999552965,
+                35534.37501192093
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        },
+        "javascript": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                22428.906243294477,
+                22459.375001490116,
+                22195.312501862645,
+                22440.625000745058,
+                22571.87499664724,
+                22135.15625335276,
+                22046.093745157123,
+                22173.43750409782,
+                22221.09374590218
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                1262.499988079071,
+                1274.999976158142,
+                1262.499988079071,
+                1262.499988079071,
+                1437.4999701976776,
+                1424.9999821186066,
+                1337.5000655651093,
+                1449.9999582767487,
+                1312.4999403953552
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                3589.5833373069763,
+                2683.3333323399224,
+                3064.583341280619,
+                2677.083338300387,
+                2695.8333204189935,
+                3079.166685541471,
+                2693.7499890724816,
+                3043.7500029802322,
+                2693.7499890724816
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                15459.999978542328,
+                14955.000013113022,
+                15514.999985694885,
+                15422.500014305115,
+                16142.4999833107,
+                15092.500001192093,
+                15785.000026226044,
+                15057.49997496605,
+                15585.00000834465
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                64218.75,
+                64846.87499701977,
+                64768.74999701977,
+                64450.00000298023,
+                64965.62499552965,
+                64756.2500089407,
+                65368.750020861626,
+                64081.24998211861,
+                64968.74999254942
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        }
+      },
+      "setup": {
+        "javascript": {
+          "capture_prepare_ms": 61.060000002384186
+        },
+        "ink": {
+          "capture_prepare_ms": 18.105000019073486,
+          "statistics": {
+            "linear_memory_bytes": 16318464,
+            "resident_weight_bytes": 7559168,
+            "maxTokens": 4096
+          }
+        },
+        "ink-quads": {
+          "capture_prepare_ms": 16.790000021457672,
+          "statistics": {
+            "linear_memory_bytes": 16318464,
+            "resident_weight_bytes": 7559168,
+            "maxTokens": 4096
+          }
+        }
+      },
+      "order": [
+        "ink-quads",
+        "ink",
+        "javascript"
+      ],
+      "checksum": -7044.097347090428,
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "cross_origin_isolated": true,
+      "browser_version": "156.0.8078.80"
+    },
+    {
+      "modes": {
+        "ink": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                11748.437499627471,
+                11699.21875,
+                11679.6875,
+                11757.031250745058,
+                11696.875002235174,
+                11501.562502235174,
+                11641.406249254942,
+                11666.406253352761,
+                11613.281248137355
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                899.9998867511749,
+                1099.9999940395355,
+                1187.5000596046448,
+                1500.0000596046448,
+                775.0000059604645,
+                799.9999821186066,
+                775.0000059604645,
+                762.5000178813934,
+                775.0000059604645
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                1281.2500198682148,
+                1270.8333134651184,
+                1216.6666487852733,
+                1245.8333373069763,
+                1258.333350221316,
+                1189.5833412806194,
+                1189.5833164453506,
+                1212.4999860922496,
+                1222.9166676600773
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                6650.0000059604645,
+                6539.99999165535,
+                6620.000004768372,
+                6584.999978542328,
+                6477.500021457672,
+                6604.999989271164,
+                6662.4999940395355,
+                6592.500001192093,
+                6767.500013113022
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                36346.87501937151,
+                36165.625005960464,
+                36287.500001490116,
+                35690.624974668026,
+                35628.12499701977,
+                35737.50000447035,
+                35678.12502384186,
+                35712.4999910593,
+                35537.5000089407
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        },
+        "ink-quads": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                9299.218747764826,
+                9271.093746647239,
+                9280.468756332994,
+                9276.562500745058,
+                9380.46875409782,
+                9506.250005215406,
+                9333.593742921948,
+                9380.46875409782,
+                9477.343754842877
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                837.4999463558197,
+                812.4999701976776,
+                825.0001072883606,
+                874.9999105930328,
+                862.5000715255737,
+                862.4999225139618,
+                1125.0001192092896,
+                799.9999821186066,
+                799.9999821186066
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                1497.9166785875957,
+                1402.0833373069763,
+                1420.8333194255829,
+                1412.4999940395355,
+                1375.0000049670537,
+                1400.0000059604645,
+                1385.4166616996129,
+                1389.5833492279053,
+                1404.1666438182194
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                6592.500001192093,
+                6524.999976158142,
+                6777.500003576279,
+                6594.999998807907,
+                6450.000017881393,
+                6620.000004768372,
+                6532.499998807907,
+                6722.499996423721,
+                6479.999989271164
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                27318.749986588955,
+                27078.12499254942,
+                27253.12501192093,
+                26856.250017881393,
+                27196.874991059303,
+                27006.249986588955,
+                27178.125008940697,
+                26849.999986588955,
+                26496.875025331974
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        },
+        "javascript": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                22313.281251117587,
+                22356.249997392297,
+                22253.125002607703,
+                22321.093752980232,
+                22542.187497019768,
+                22571.875005960464,
+                22354.687498882413,
+                22341.40624292195,
+                22293.750001117587
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                1250,
+                1225.000023841858,
+                1212.5000357627869,
+                1250,
+                1237.500011920929,
+                1274.999976158142,
+                1350.0000536441803,
+                1550.000011920929,
+                1474.9999344348907
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                3408.3333363135657,
+                2637.499993046125,
+                2662.500018874804,
+                3070.833310484886,
+                2729.1666716337204,
+                2993.7500009934106,
+                2670.8333442608514,
+                3014.583339293798,
+                2718.7499900658927
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                15472.499996423721,
+                14977.49999165535,
+                15587.500005960464,
+                15015.000015497208,
+                15117.499977350235,
+                15705.000013113022,
+                15074.999988079071,
+                15475.000023841858,
+                15049.999982118607
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                64725.000001490116,
+                64725.000001490116,
+                64503.12498956919,
+                63912.50003129244,
+                64562.49997019768,
+                65703.125,
+                65403.125025331974,
+                65909.37498956919,
+                64834.3750089407
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        }
+      },
+      "setup": {
+        "javascript": {
+          "capture_prepare_ms": 63.280000030994415
+        },
+        "ink": {
+          "capture_prepare_ms": 18.44999998807907,
+          "statistics": {
+            "linear_memory_bytes": 16318464,
+            "resident_weight_bytes": 7559168,
+            "maxTokens": 4096
+          }
+        },
+        "ink-quads": {
+          "capture_prepare_ms": 18.0450000166893,
+          "statistics": {
+            "linear_memory_bytes": 16318464,
+            "resident_weight_bytes": 7559168,
+            "maxTokens": 4096
+          }
+        }
+      },
+      "order": [
+        "ink",
+        "ink-quads",
+        "javascript"
+      ],
+      "checksum": -7044.097347090428,
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "cross_origin_isolated": true,
+      "browser_version": "156.0.8078.80"
+    },
+    {
+      "modes": {
+        "ink": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                11702.343747019768,
+                11689.062500372529,
+                11685.937503352761,
+                11545.312497764826,
+                11494.531249627471,
+                11560.937501490116,
+                11521.875001490116,
+                11582.03125,
+                11564.062498509884
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                787.4999940395355,
+                1037.5000536441803,
+                1124.9999701976776,
+                1312.4999403953552,
+                862.5000715255737,
+                775.0000059604645,
+                775.0000059604645,
+                787.4999940395355,
+                775.0000059604645
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                1204.1666855414708,
+                1170.833334326744,
+                1160.4166527589161,
+                1189.5833412806194,
+                1172.916665673256,
+                1170.8333094914753,
+                1174.9999970197678,
+                1172.916665673256,
+                1193.750003973643
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                6500,
+                6597.499996423721,
+                6592.500001192093,
+                6637.499988079071,
+                6527.500003576279,
+                6497.499972581863,
+                6549.999982118607,
+                6474.9999940395355,
+                6519.999980926514
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                35912.499986588955,
+                35937.5,
+                36040.625013411045,
+                35356.24999552965,
+                36112.49998211861,
+                35656.25000745058,
+                35693.7500089407,
+                35371.87501788139,
+                35815.624967217445
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        },
+        "javascript": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                22683.593751862645,
+                23061.71875447035,
+                22658.593747764826,
+                22649.218747392297,
+                23114.062501117587,
+                22681.249994784594,
+                22144.531244412065,
+                22152.34374627471,
+                22258.593747392297
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                1300.0001013278961,
+                1250,
+                1274.999976158142,
+                1250,
+                1262.499988079071,
+                1274.999976158142,
+                1287.4999642372131,
+                1262.499988079071,
+                1250
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                3370.8333472410836,
+                2708.3333333333335,
+                3020.8333333333335,
+                2681.2500009934106,
+                2785.4166676600776,
+                3002.083326379458,
+                2716.6666835546494,
+                3024.999996026357,
+                2716.666658719381
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                15507.500022649765,
+                15234.999984502792,
+                15665.000021457672,
+                14992.499977350235,
+                15577.500015497208,
+                15289.99999165535,
+                15719.999998807907,
+                15292.500019073486,
+                15602.49999165535
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                64006.25001639128,
+                64928.124994039536,
+                64937.50002235174,
+                63903.12496572733,
+                64668.75001788139,
+                64662.499986588955,
+                64940.62501937151,
+                64093.75000745058,
+                64571.874998509884
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        },
+        "ink-quads": {
+          "samples": {
+            "all": {
+              "cases": 64,
+              "samples_ns_per_embedding": [
+                9275.781251490116,
+                9251.562496647239,
+                9314.062502235174,
+                9285.937501117587,
+                9292.187495157123,
+                9255.468752235174,
+                9268.749998882413,
+                9270.312497392297,
+                9285.937501117587
+              ]
+            },
+            "empty": {
+              "cases": 4,
+              "samples_ns_per_embedding": [
+                862.5000715255737,
+                849.9999344348907,
+                875.0000596046448,
+                937.5,
+                837.4999463558197,
+                900.0000357627869,
+                837.4999463558197,
+                900.0000357627869,
+                887.5000476837158
+              ]
+            },
+            "short": {
+              "cases": 24,
+              "samples_ns_per_embedding": [
+                1506.250003973643,
+                1402.0833373069763,
+                1397.916649778684,
+                1429.166669646899,
+                1427.0833383003871,
+                1472.9166527589161,
+                1400.0000059604645,
+                1381.2499990065892,
+                1400.0000059604645
+              ]
+            },
+            "medium": {
+              "cases": 20,
+              "samples_ns_per_embedding": [
+                6555.000007152557,
+                6567.499995231628,
+                6467.500001192093,
+                6472.499996423721,
+                6449.999988079071,
+                6557.500004768372,
+                6547.500014305115,
+                6519.999980926514,
+                6467.500001192093
+              ]
+            },
+            "long": {
+              "cases": 16,
+              "samples_ns_per_embedding": [
+                26740.624979138374,
+                26634.375005960464,
+                26640.625,
+                26840.62499552965,
+                26568.749994039536,
+                26700.000017881393,
+                26590.62497317791,
+                26678.125001490116,
+                26553.125008940697
+              ]
+            }
+          },
+          "all_64_outputs_bit_exact": true
+        }
+      },
+      "setup": {
+        "javascript": {
+          "capture_prepare_ms": 59.30000001192093
+        },
+        "ink": {
+          "capture_prepare_ms": 18.375,
+          "statistics": {
+            "linear_memory_bytes": 16318464,
+            "resident_weight_bytes": 7559168,
+            "maxTokens": 4096
+          }
+        },
+        "ink-quads": {
+          "capture_prepare_ms": 17.649999976158142,
+          "statistics": {
+            "linear_memory_bytes": 16318464,
+            "resident_weight_bytes": 7559168,
+            "maxTokens": 4096
+          }
+        }
+      },
+      "order": [
+        "ink",
+        "javascript",
+        "ink-quads"
+      ],
+      "checksum": -7044.097347090428,
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "cross_origin_isolated": true,
+      "browser_version": "156.0.8078.80"
+    }
+  ]
+}

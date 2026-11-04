@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "scope": "Compile two authored Ink layouts to Rust/Wasm with resident model storage.\n\nThe quads variant groups independent dimensions in Vec4 values. It is an\nauthored source variant, not a newly proof-selected compiler optimization.\nBoth variants use the existing checked read-only parameter plan.\n",
+  "model_id": "minishlab/potion-base-2M",
+  "source_sha256": "cc89cb00728fd61866e5535879badd6a19d0ca0f482b410e33d92b8ad9b9cebb",
+  "quad_source_sha256": "9663aec00cc300896e364d94dd68a6fd7cbef06e9215bc199337fcc58815eb06",
+  "compiler_sha256": "3c0f0661464d9bb2182d1472283efef085fc14a871b4c0954ecf367856638eb3",
+  "wasm_sha256": "569d6ce25f34c1fd2d240754579cb39023761162d94d55f161b6f60dd01ce6c1",
+  "rust_sha256": "6969fde7829c5b6e2023114aa2906137136f93aec77c28d070cef5ee4178db6a",
+  "plan_sha256": "2173cb4b842ef8e61426bc8410bb71b84f13423c2df8cf704880615d43887b6b",
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: aarch64-apple-darwin\nrelease: 1.99.1\nLLVM version: 23.1.1\n",
+  "rustflags": "-C target-feature=+simd128 -C link-arg=--max-memory=536870912",
+  "wasm_bytes": 29790,
+  "variants": [
+    "ink",
+    "ink-quads"
+  ],
+  "simd_status": "Compile-time enabled; instruction coverage must be inspected separately."
+}

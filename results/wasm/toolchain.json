@@ -1,0 +1,114 @@
+{
+  "toolchain": {
+    "ink_repository": "https://github.com/siliconjungle/ink-lang",
+    "ink_revision": "fba4c054b030048eb957517bd7b67803d05eb69f",
+    "planner_revision": "e6eafa79170ae1fc7a7e1cf27ffcee4f71dd6037",
+    "knowledge_revision": "0f6633380156133a5e928fccf27eccf1cd307efe",
+    "javascript_revision": "d04af9c2eddbd3e60194c7e45f5257d3e6d6d414"
+  },
+  "wasm_builds": {
+    "potion-2m": {
+      "schema": 1,
+      "scope": "Compile two authored Ink layouts to Rust/Wasm with resident model storage.\n\nThe quads variant groups independent dimensions in Vec4 values. It is an\nauthored source variant, not a newly proof-selected compiler optimization.\nBoth variants use the existing checked read-only parameter plan.\n",
+      "model_id": "minishlab/potion-base-2M",
+      "source_sha256": "cc89cb00728fd61866e5535879badd6a19d0ca0f482b410e33d92b8ad9b9cebb",
+      "quad_source_sha256": "9663aec00cc300896e364d94dd68a6fd7cbef06e9215bc199337fcc58815eb06",
+      "compiler_sha256": "3c0f0661464d9bb2182d1472283efef085fc14a871b4c0954ecf367856638eb3",
+      "wasm_sha256": "569d6ce25f34c1fd2d240754579cb39023761162d94d55f161b6f60dd01ce6c1",
+      "rust_sha256": "6969fde7829c5b6e2023114aa2906137136f93aec77c28d070cef5ee4178db6a",
+      "plan_sha256": "2173cb4b842ef8e61426bc8410bb71b84f13423c2df8cf704880615d43887b6b",
+      "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: aarch64-apple-darwin\nrelease: 1.99.1\nLLVM version: 23.1.1\n",
+      "rustflags": "-C target-feature=+simd128 -C link-arg=--max-memory=536870912",
+      "wasm_bytes": 29790,
+      "variants": [
+        "ink",
+        "ink-quads"
+      ],
+      "simd_status": "Compile-time enabled; instruction coverage must be inspected separately."
+    },
+    "unseen-weighted": {
+      "schema": 1,
+      "scope": "Compile two authored Ink layouts to Rust/Wasm with resident model storage.\n\nThe quads variant groups independent dimensions in Vec4 values. It is an\nauthored source variant, not a newly proof-selected compiler optimization.\nBoth variants use the existing checked read-only parameter plan.\n",
+      "model_id": "fixture/unseen-weighted",
+      "source_sha256": "49a59e997680b6ee571470ce909c6006548b8a928595500255712698f2a4fa48",
+      "quad_source_sha256": "77b8cb17198e9f9999852df407dbc56c05a344810e9eff943882cef7dbeea955",
+      "compiler_sha256": "3c0f0661464d9bb2182d1472283efef085fc14a871b4c0954ecf367856638eb3",
+      "wasm_sha256": "2f5e4aa43a97b49375e7136e7c7704e65ba5e536035e7e35df67a01dc6762f2f",
+      "rust_sha256": "b1c72fbc1573a8f14bcb28103f48c7c148d3d397b3bc526a074556fa5d7f1801",
+      "plan_sha256": "d8a702ff24168e90a3d6fee304fa1cace2dc51735d39ba0264a6f24104885aac",
+      "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: aarch64-apple-darwin\nrelease: 1.99.1\nLLVM version: 23.1.1\n",
+      "rustflags": "-C target-feature=+simd128 -C link-arg=--max-memory=536870912",
+      "wasm_bytes": 26818,
+      "variants": [
+        "ink",
+        "ink-quads"
+      ],
+      "simd_status": "Compile-time enabled; instruction coverage must be inspected separately."
+    },
+    "potion-8m": {
+      "schema": 1,
+      "scope": "Compile two authored Ink layouts to Rust/Wasm with resident model storage.\n\nThe quads variant groups independent dimensions in Vec4 values. It is an\nauthored source variant, not a newly proof-selected compiler optimization.\nBoth variants use the existing checked read-only parameter plan.\n",
+      "model_id": "minishlab/potion-base-8M",
+      "source_sha256": "aa79d293e787228dbf0b5f6d985751d7cf322419d916c2f83133aafd1e626dce",
+      "quad_source_sha256": "1092b8cadaac49dab525588c1d1631d6a38e3b5f32bc0561346acde04f0961c4",
+      "compiler_sha256": "3c0f0661464d9bb2182d1472283efef085fc14a871b4c0954ecf367856638eb3",
+      "wasm_sha256": "028b1235947c1b32dbbc92a873c853757f268d6f33cfabecb0df00f22b674805",
+      "rust_sha256": "9f6e9196bc6d3e0a4470535c2305cdf73a84c7c132c9cae2d0a25a73dd01c18b",
+      "plan_sha256": "4b40ca306434585b95774904f768cabbb3169edb434e0cdfa2d30c0849c1f06c",
+      "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: aarch64-apple-darwin\nrelease: 1.99.1\nLLVM version: 23.1.1\n",
+      "rustflags": "-C target-feature=+simd128 -C link-arg=--max-memory=536870912",
+      "wasm_bytes": 42432,
+      "variants": [
+        "ink",
+        "ink-quads"
+      ],
+      "simd_status": "Compile-time enabled; instruction coverage must be inspected separately."
+    },
+    "st-retrieval": {
+      "schema": 1,
+      "scope": "Compile two authored Ink layouts to Rust/Wasm with resident model storage.\n\nThe quads variant groups independent dimensions in Vec4 values. It is an\nauthored source variant, not a newly proof-selected compiler optimization.\nBoth variants use the existing checked read-only parameter plan.\n",
+      "model_id": "sentence-transformers/static-retrieval-mrl-en-v1",
+      "source_sha256": "e1363f7f036ec87a636bd46369e09a6ea8173f262e8eb75798f07350f631858b",
+      "quad_source_sha256": "335fd512e1ea86801aaac9df34f19c56ed0f448a87490da3c43948d7e5a09c0c",
+      "compiler_sha256": "3c0f0661464d9bb2182d1472283efef085fc14a871b4c0954ecf367856638eb3",
+      "wasm_sha256": "e4b33e772b6af6c830b4b67bbf67eb55acaf7ad1276808d6cb8004cd66961081",
+      "rust_sha256": "2cb817e4d1941d85fde0105247bcd692a14aaab6b5bad1c3bbb3bfb1e2f70498",
+      "plan_sha256": "322169d943f8a2ea9531f7db5f67fee12a77f09d11af44a6a3eb15ac28a630bf",
+      "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: aarch64-apple-darwin\nrelease: 1.99.1\nLLVM version: 23.1.1\n",
+      "rustflags": "-C target-feature=+simd128 -C link-arg=--max-memory=536870912",
+      "wasm_bytes": 88215,
+      "variants": [
+        "ink",
+        "ink-quads"
+      ],
+      "simd_status": "Compile-time enabled; instruction coverage must be inspected separately."
+    },
+    "unseen-clamp": {
+      "schema": 1,
+      "scope": "Compile two authored Ink layouts to Rust/Wasm with resident model storage.\n\nThe quads variant groups independent dimensions in Vec4 values. It is an\nauthored source variant, not a newly proof-selected compiler optimization.\nBoth variants use the existing checked read-only parameter plan.\n",
+      "model_id": "fixture/unseen-clamp",
+      "source_sha256": "c5663228fe62641d00aa244dcb5108f1b2e7ac9dc1da139fa93238369fa1f47b",
+      "quad_source_sha256": "778dca03fec920df1b7fac8af1c2b435a0012cffe648204e98d00eae2cda051e",
+      "compiler_sha256": "3c0f0661464d9bb2182d1472283efef085fc14a871b4c0954ecf367856638eb3",
+      "wasm_sha256": "cd9f33598fdaa5092748299a9c78aa16d5b43c331a63ecaf42b2e13708b26e5e",
+      "rust_sha256": "a1872fc7c2f245b6e0ae8e062adc6987f858305322911617120b190b9cbf2ea5",
+      "plan_sha256": "93116b778e5b5dce304d6c71744ba22f0ead2330322835ba908c381478f7daa1",
+      "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: aarch64-apple-darwin\nrelease: 1.99.1\nLLVM version: 23.1.1\n",
+      "rustflags": "-C target-feature=+simd128 -C link-arg=--max-memory=536870912",
+      "wasm_bytes": 27289,
+      "variants": [
+        "ink",
+        "ink-quads"
+      ],
+      "simd_status": "Compile-time enabled; instruction coverage must be inspected separately."
+    }
+  },
+  "wasm_source_sha256": {
+    "scripts/build_wasm.py": "f7d372466cff39c11f86db98c799bdb5ef1007bc8d00c3ecd9be26a572fe0ac0",
+    "wasm/resident.rs": "fab2f8c5cfabeafaf79c93de654d0d974af401fffe885a481767058ec0f61697",
+    "runtime/static-embedding-wasm.mjs": "986d14a2b4a45e767eb1424b53cd320e73876c8faef0b164f1912ffec938dcbe",
+    "scripts/wasm_browser_benchmark.mjs": "6998d7b0275bd9abe99398fbeccf77ecf08244d63d456787c531fc69bba0b7cf",
+    "scripts/wasm_conformance.mjs": "87bfab1f81742c45ad5a242d2182826ada61678635e916cb3ae07f86dd2211c4",
+    "scripts/inspect_wasm.py": "c945c4b2ade4ec8e9275b47f1e358a5d8276d2b187a07ba29205f03eb2daa2c4"
+  }
+}

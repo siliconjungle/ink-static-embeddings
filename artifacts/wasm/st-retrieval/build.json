@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "scope": "Compile two authored Ink layouts to Rust/Wasm with resident model storage.\n\nThe quads variant groups independent dimensions in Vec4 values. It is an\nauthored source variant, not a newly proof-selected compiler optimization.\nBoth variants use the existing checked read-only parameter plan.\n",
+  "model_id": "sentence-transformers/static-retrieval-mrl-en-v1",
+  "source_sha256": "e1363f7f036ec87a636bd46369e09a6ea8173f262e8eb75798f07350f631858b",
+  "quad_source_sha256": "335fd512e1ea86801aaac9df34f19c56ed0f448a87490da3c43948d7e5a09c0c",
+  "compiler_sha256": "3c0f0661464d9bb2182d1472283efef085fc14a871b4c0954ecf367856638eb3",
+  "wasm_sha256": "e4b33e772b6af6c830b4b67bbf67eb55acaf7ad1276808d6cb8004cd66961081",
+  "rust_sha256": "2cb817e4d1941d85fde0105247bcd692a14aaab6b5bad1c3bbb3bfb1e2f70498",
+  "plan_sha256": "322169d943f8a2ea9531f7db5f67fee12a77f09d11af44a6a3eb15ac28a630bf",
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: aarch64-apple-darwin\nrelease: 1.99.1\nLLVM version: 23.1.1\n",
+  "rustflags": "-C target-feature=+simd128 -C link-arg=--max-memory=536870912",
+  "wasm_bytes": 88215,
+  "variants": [
+    "ink",
+    "ink-quads"
+  ],
+  "simd_status": "Compile-time enabled; instruction coverage must be inspected separately."
+}

@@ -21,13 +21,13 @@ transformer-based models.
 ## Tested models
 
 **Three pretrained models and two synthetic fixtures** have passed JavaScript,
-Rust and hardware WebGPU correctness checks:
+native Rust, browser Rust/Wasm and hardware WebGPU correctness checks:
 
 | Pretrained model | Dimensions | F32 table values | Correctness | Performance data |
 | --- | ---: | ---: | --- | --- |
-| [minishlab/potion-base-2M](https://huggingface.co/minishlab/potion-base-2M) | 64 | 1,889,792 | JS / Rust / WebGPU | [JS CPU](results/javascript/REPORT.md), [Rust CPU](results/compiler/REPORT.md), [native GPU](results/targets/REPORT.md), [browser WebGPU](results/browser/REPORT.md) |
-| [minishlab/potion-base-8M](https://huggingface.co/minishlab/potion-base-8M) | 256 | 7,559,168 | JS / Rust / WebGPU | Not benchmarked |
-| [sentence-transformers/static-retrieval-mrl-en-v1](https://huggingface.co/sentence-transformers/static-retrieval-mrl-en-v1) | 1,024 | 31,254,528 | JS / Rust / WebGPU | Not benchmarked |
+| [minishlab/potion-base-2M](https://huggingface.co/minishlab/potion-base-2M) | 64 | 1,889,792 | JS / Rust / Wasm / WebGPU | [JS CPU](results/javascript/REPORT.md), [Rust CPU](results/compiler/REPORT.md), [Rust/Wasm](results/wasm/REPORT.md), [native GPU](results/targets/REPORT.md), [browser WebGPU](results/browser/REPORT.md) |
+| [minishlab/potion-base-8M](https://huggingface.co/minishlab/potion-base-8M) | 256 | 7,559,168 | JS / Rust / Wasm / WebGPU | Not benchmarked |
+| [sentence-transformers/static-retrieval-mrl-en-v1](https://huggingface.co/sentence-transformers/static-retrieval-mrl-en-v1) | 1,024 | 31,254,528 | JS / Rust / Wasm / WebGPU | Not benchmarked |
 
 The synthetic fixtures cover weighted/remapped 7-dimensional embeddings and
 5-dimensional embeddings with clamped normalization. They are test data, not
@@ -61,6 +61,14 @@ bit for bit. See the linked reports for raw samples and measurement boundaries.
 ![Potion 2M CPU speed comparison](media/potion-2m-speed.gif)
 
 [Download the animation as GIF or MP4](media/README.md).
+
+The [Rust/Wasm browser experiment](results/wasm/REPORT.md) compares CPU paths in
+the same Chrome session: optimized JS **22.43 µs/query**, unchanged Ink → Rust/Wasm
+**11.55 µs**, and an authored four-dimension Ink layout → Rust/Wasm **9.29 µs**
+over the mixed corpus. The latter is **2.41× faster than optimized JS**. Weights
+stay resident in Wasm; this is a different benchmark from the Node/NumPy table
+above. SIMD division is present; pooling additions remain scalar. The four-lane
+layout is authored source, not a newly discovered compiler rewrite.
 
 **Initial result:** conversion and fidelity checks pass, but this workload shows
 no clear compiler-optimization speedup. The original NumPy kernel is faster than
@@ -358,5 +366,65 @@ The harness serves only on loopback, uses isolated browser profiles, checks for 
 hardware adapter and closes its browsers/server afterwards. The retained report
 includes the browser version, GPU adapter information, startup costs, raw round
 timings and output hashes. No upstream browser GPU implementation is benchmarked.
+
+## Rust in the browser
+
+The experimental Wasm host compiles the original generated Ink plus an optional
+four-dimension `Vec4<f32>` variant through Ink's existing Rust backend and a
+checked read-only parameter plan. Rust is then compiled to `wasm32-unknown-unknown`
+with `simd128` enabled. It uses no wasm-bindgen model-copy adapter and requires
+no Ink compiler changes.
+
+Weights cross into Wasm once, are split into resident Rust vectors once, and are
+borrowed for each inference call. Changing IDs cross in and a complete detached
+embedding crosses out. Initialization, loading and preparation are recorded
+outside the warm inference measurements. Temporary loading storage is freed
+after splitting; linear memory retains its high-water allocation.
+
+```sh
+rustup target add wasm32-unknown-unknown
+uv run python scripts/build_wasm.py --build build/general/potion-2m --toolchain work/js-toolchain
+```
+
+`work/js-toolchain` is a private compiler copy bootstrapped at `toolchain.lock.json`;
+use `--output work/js-toolchain` when running `bootstrap_toolchain.py`. Repeat the
+Wasm build command for any schema-2 import. All five compatibility models/fixtures
+were built and checked in installed Chrome. Source, binary and checked-plan
+artifacts are retained in [artifacts/wasm](artifacts/wasm), with the
+[validation matrix](results/wasm/validation.json).
+
+Serve the repository over HTTP(S) and call it with tokenizer IDs:
+
+```js
+import {loadWasmStaticEmbedding} from '/runtime/static-embedding-wasm.mjs';
+const model = await loadWasmStaticEmbedding('/build/general/potion-2m/', {
+  variant: 'ink-quads', // 'ink' runs the original generated source layout
+  maxTokens: 4096,
+});
+const embedding = model.encode([1, 2, 3]);
+model.close();
+```
+
+The adapter also exposes `encodeInto(ids, destination)` and `encodeBatch(queries)`.
+Batch currently loops over per-document Wasm calls; it is not a fused Rust batch.
+Invalid IDs, over-capacity inputs, incompatible modules and calls after close
+reject. Unsupported SIMD engines fail at module instantiation.
+
+To repeat the retained browser benchmark, first prepare all five Wasm builds and
+the optimized Potion 2M JS build, then run:
+
+```sh
+uv run python scripts/build.py --build build/general/potion-2m --toolchain work/js-toolchain --catalogue knowledge/static-pipelines.json
+PLAYWRIGHT_MODULE=../work/browser-tools/node_modules/playwright/index.mjs node scripts/wasm_browser_benchmark.mjs
+```
+
+Six fresh headed Chrome processes compare public APIs with identical IDs and
+complete output consumption. All 64 benchmark outputs and both Wasm variants on
+all five compatibility fixtures match the ordered F32 oracle bit for bit.
+The [instruction inspection](results/wasm/instructions.json) records actual
+`f32x4.div` instructions and **zero `f32x4.add` instructions**. SIMD enabled at
+compile time does not establish SIMD pooling or attribute the speedup to SIMD.
+The original literal-JS probe remains in [results/wasm/literal-probe](results/wasm/literal-probe);
+the headline comparison uses checked-optimized JavaScript.
 
 MIT. Model and dependency provenance: [THIRD_PARTY.md](THIRD_PARTY.md).

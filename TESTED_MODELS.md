@@ -1,8 +1,9 @@
 # Tested models and available evidence
 
 We tested **three real pretrained models**, plus **two deterministic synthetic
-fixtures**. All five pass JavaScript, Rust and actual hardware WebGPU correctness
-checks. Performance measurements currently cover **Potion 2M only**.
+fixtures**. All five pass JavaScript, native Rust, browser Rust/Wasm and actual
+hardware WebGPU correctness checks. Performance measurements currently cover
+**Potion 2M only**.
 
 ## Pretrained models
 
@@ -61,6 +62,12 @@ links retained reference outputs, target checks and browser/device identities.
 These tests cover inference compatibility. We have not run an MTEB/retrieval
 quality evaluation, a transformer/LLM importer or a universal equivalence proof.
 
+The later [Rust/Wasm validation](results/wasm/validation.json) additionally checks
+the original and authored four-dimension Ink layouts in installed Chrome on all
+five models/fixtures. It checks every ordered-oracle case, repeated/reordered
+queries, detached results, caller mutations, capacity/ID errors and lifecycle
+boundaries. Source/plan/binary artifacts are retained in [artifacts/wasm](artifacts/wasm).
+
 ## Performance evidence
 
 All performance results below use **Potion 2M, 64 dimensions, on an Apple M4 Pro**.
@@ -71,6 +78,7 @@ measurement boundaries and raw process/round samples, including slower results.
 | --- | --- | --- |
 | [Current JS CPU, 1–16 tokens](results/javascript/REPORT.md) | Ink 1.84 µs/query; NumPy 4.85 µs/query | **2.63× faster** than NumPy; 1.31× faster than the previous checked JS compilation. |
 | [Current JS CPU, mixed corpus](results/javascript/REPORT.md) | Ink 16.84 µs/query; NumPy 8.77 µs/query | **1.92× slower** than NumPy; 1.05× faster than the previous checked JS compilation. One-time JS weight capture/preparation increases from 17.56 to 29.05 ms. |
+| [Browser Rust/Wasm, mixed corpus](results/wasm/REPORT.md) | Optimized Ink JS 22.43 µs/query; original Ink → Rust/Wasm 11.55 µs; authored quads → Rust/Wasm 9.29 µs | Quads is **2.41× faster than optimized JS in the same Chrome benchmark**. Both Wasm paths keep weights resident. This is not a NumPy comparison. |
 | [Checked compiler follow-up](results/compiler/REPORT.md) | JS 32.18 → 18.94 µs/embedding; Rust borrowed entrypoint 10.97 µs | JS improves 1.70× against the previous JS compilation. Both remain slower than the historical NumPy CPU result of 8.51 µs on the mixed corpus. |
 | [Native GPU, batch 1,024](results/targets/REPORT.md) | Ink GPU 3.77 µs/embedding; NumPy CPU 6.87 µs/embedding | About 1.82× the CPU baseline's throughput, including new-query uploads and decoded readback. CPU versus GPU; no upstream GPU baseline. |
 | [Browser WebGPU, batch 1,024](results/browser/REPORT.md) | 4.10 µs/embedding; about 4.20 ms for the batch | Hardware WebGPU with resident weights in installed Chrome. About 1.68× the separately measured NumPy CPU batch baseline; not a matched browser/GPU comparison. |

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "semantics": "ink-compiled-plan-v1",
+  "input_core_sha256": "9c43868f962bae96e743737034bbc45deda079f351e6f291c3180f04d1709539",
+  "steps": [
+    {
+      "kind": "physical",
+      "package": {
+        "schema": 1,
+        "semantics": "ink-physical-plan-v1",
+        "input_core_sha256": "9c43868f962bae96e743737034bbc45deda079f351e6f291c3180f04d1709539",
+        "tables": "ordered",
+        "buffers": "direct",
+        "definitions": "shared",
+        "borrow_reads": [
+          "0c66b392326b18416dd3942202958c8368a209cfaba2dbbae0cdeed7b305100e",
+          "1a1367f3a4768aba627ead016968054216c1731beb9dc9025c9fe6430e56fd6e",
+          "1cbef990443b5e0c8668854e5c0ac7a1322b0f59319986d4c9f8669ac24c1877",
+          "1ddee9023380624c3b683c37505bb7ed72f9e9206f7c4167367a48708a641a91",
+          "3062d12ffd55b6c358a654b21b74d99c569382ae738a4f7afeec4eebac8cc85d",
+          "4dd5c650533502d6fe6e3e4cac45fffbdf8ee2dd7649a5d8c6c73cd04b017140",
+          "5531d4dde32bb368b46d8aeb9346510fcba73e1b1b8530d746df01e445d7ab28",
+          "63d5992f8e605f019b968bd40e4f262541df16a1c277e5f83b1ef09c10e4b291",
+          "6d8bbb5f07a8ce64f00bf6035a1193a9e1dc325e5f505185751c3f72a52afda2",
+          "718e87a2fa8def3ebaac844a158780a32cdc513d1f2fb84794794459bb7e6162",
+          "72463f88ff35e237bfef363884dbef64dd3a1847203e946dfd0f25a31bee921e",
+          "788d9e5b664ce9eb5610a0eb0a6f593ab7d81c48110a2a6764a68d2ce0d64d21",
+          "7ff0fb4e687b7205324809100273930a51417b14d271cf940e7bfb730e5d21e5",
+          "881ba8991e0be88de97bb330f146332a6b6c53d8dbd4a00265084ce81d0395fa",
+          "9137e949b7832f8d9e9db996d4d28939172aae08e738884c98c1c99fc1365787",
+          "97feef5b63ab02342aba923eb366af17ef7b2469a08347844bfd1a375ed153f4",
+          "a2d1eb2c075bd0842a4bd263a43b4abd20e4f1f27af7814429c7c9296b1534bf",
+          "a452bbb8be64d754611992ff2b0fa222409525e2197ebb9aafbd038e6b3a7534",
+          "ae3677cbfc3363a951e1b567a91c43c06909cb2fcc92ae589e2d7792137e88cf",
+          "b0be3ce0ddb1299fef8a619166280b563f741f2d297a9505a6778444f73172c3",
+          "b3a00f7b195e3e975d20290d46e3be6115bed7c946ed830bf6de50993da2fc9a",
+          "b9d336e508162b046fe3df7528afa8f93533cc87bde29be1d25c5cc6649c45c3",
+          "ba311e538d0c13df0a3a2fd689f47a634670f8f4c44387ba0536d60bda2fc136",
+          "c163538fc1b168b0029c0231805a12fdeaf7099a2415bea5fdf627d0db4e752d",
+          "c3024d1bf4977c6181e5af98ad0a989566ebbb0792552d79b908ea16e0f49b9d",
+          "c75a90d168c93e32fcdfb8cc9020ab6d422e9030e367e968165180fc48a7b506",
+          "c7931d15b00a24cd9079a3cbf1be8d8b0e2cfa34b1905b139f1cbcb8587be116",
+          "ca13b848f2c75e0ba21fcc3983af154973f59b046a46e1cb24267f5018545801",
+          "d9144c4d90e002ee9bacb22c705d2a4c7c288a5ddedff7a1991e7ed75bde97c4",
+          "db4f3afffa148268ef769bfbdd260a144abaa49186081b3fc64d84cb51d97e01",
+          "e45caedc023db16169d495ff95349bb295bb2cfbc4d22619a9f0aa6d7cdd7e1c",
+          "fc0d5ed32700c484cdfe9c7b8510e49ed71181f4138ac11ef21ebebfedd9a3c7",
+          "fe4a716c946ee79efd5b4a259c79ab573c14b11f94226a744a954b0792ab2ebe"
+        ],
+        "borrow_rows": [],
+        "packed_datatypes": [],
+        "memo_functions": [],
+        "columns": []
+      }
+    }
+  ]
+}

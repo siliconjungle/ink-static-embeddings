@@ -1,0 +1,248 @@
+{
+  "scope": "Both Ink/Rust/Wasm layouts validated in installed Chrome; inference compatibility, not embedding-quality evaluation.",
+  "models": [
+    {
+      "model_id": "minishlab/potion-base-2M",
+      "revision": "389b9f64be5aa4ae7a6bc6fe95ef20ce485ae5da",
+      "dimensions": 64,
+      "reports": [
+        {
+          "variant": "ink",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 16318464,
+            "resident_weight_bytes": 7559168,
+            "maxTokens": 512
+          }
+        },
+        {
+          "variant": "ink-quads",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 16318464,
+            "resident_weight_bytes": 7559168,
+            "maxTokens": 512
+          }
+        }
+      ],
+      "source_mismatch_rejected": true,
+      "artifacts": "artifacts/wasm/potion-2m",
+      "wasm_sha256": "569d6ce25f34c1fd2d240754579cb39023761162d94d55f161b6f60dd01ce6c1",
+      "retained_sha256": {
+        "js-selection.json": "ac98379a7d2fab594e31ac67b0e2213ead3700286deb5c9e4a954d6bdce02971",
+        "model.ink": "9663aec00cc300896e364d94dd68a6fd7cbef06e9215bc199337fcc58815eb06",
+        "resident.rs": "c19095b014d8ab0c5b1d019c9e494c07e91a49ea3ae959d164dd86dc76c30fad",
+        "plan.json": "2173cb4b842ef8e61426bc8410bb71b84f13423c2df8cf704880615d43887b6b",
+        "optimized.mjs": "0984646c0163e2af1c95fba0f5ab53c09df96b40d17f6356f335615ea41e2705",
+        "Cargo.lock": "40d8e7b45787ed1343304daa106a2582ea433ca32af109d46b4250c0bc85d22e",
+        "literal.mjs": "3638fe7278299e0ff5bb64f94fb1c94656f9eae18f9bede12bd5d9cd93f8c50d",
+        "model.wasm": "569d6ce25f34c1fd2d240754579cb39023761162d94d55f161b6f60dd01ce6c1",
+        "build.json": "4fbb392f738dcf05e7735e5f671fa055b338bc4528df7191bc7a0892732c8329"
+      }
+    },
+    {
+      "model_id": "minishlab/potion-base-8M",
+      "revision": "bf8b056651a2c21b8d2565580b8569da283cab23",
+      "dimensions": 256,
+      "reports": [
+        {
+          "variant": "ink",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 61669376,
+            "resident_weight_bytes": 30236672,
+            "maxTokens": 512
+          }
+        },
+        {
+          "variant": "ink-quads",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 61669376,
+            "resident_weight_bytes": 30236672,
+            "maxTokens": 512
+          }
+        }
+      ],
+      "source_mismatch_rejected": true,
+      "artifacts": "artifacts/wasm/potion-8m",
+      "wasm_sha256": "028b1235947c1b32dbbc92a873c853757f268d6f33cfabecb0df00f22b674805",
+      "retained_sha256": {
+        "model.ink": "1092b8cadaac49dab525588c1d1631d6a38e3b5f32bc0561346acde04f0961c4",
+        "resident.rs": "4ca62c764fd963ddc637cba742bde9b53e5345d727647706efcaba756d54903c",
+        "plan.json": "4b40ca306434585b95774904f768cabbb3169edb434e0cdfa2d30c0849c1f06c",
+        "Cargo.lock": "40d8e7b45787ed1343304daa106a2582ea433ca32af109d46b4250c0bc85d22e",
+        "model.wasm": "028b1235947c1b32dbbc92a873c853757f268d6f33cfabecb0df00f22b674805",
+        "build.json": "33f34da68dc5d7f58aa354b8783809cf4f04d082bb4893145bf01e3eb8bd150e"
+      }
+    },
+    {
+      "model_id": "sentence-transformers/static-retrieval-mrl-en-v1",
+      "revision": "f60985c706f192d45d218078e49e5a8b6f15283a",
+      "dimensions": 1024,
+      "reports": [
+        {
+          "variant": "ink",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 251265024,
+            "resident_weight_bytes": 125018112,
+            "maxTokens": 512
+          }
+        },
+        {
+          "variant": "ink-quads",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 251265024,
+            "resident_weight_bytes": 125018112,
+            "maxTokens": 512
+          }
+        }
+      ],
+      "source_mismatch_rejected": true,
+      "artifacts": "artifacts/wasm/st-retrieval",
+      "wasm_sha256": "e4b33e772b6af6c830b4b67bbf67eb55acaf7ad1276808d6cb8004cd66961081",
+      "retained_sha256": {
+        "model.ink": "335fd512e1ea86801aaac9df34f19c56ed0f448a87490da3c43948d7e5a09c0c",
+        "resident.rs": "84720c0d8a778c9421cd71e3e838642049b953e94c419820fa461592241476b3",
+        "plan.json": "322169d943f8a2ea9531f7db5f67fee12a77f09d11af44a6a3eb15ac28a630bf",
+        "Cargo.lock": "40d8e7b45787ed1343304daa106a2582ea433ca32af109d46b4250c0bc85d22e",
+        "model.wasm": "e4b33e772b6af6c830b4b67bbf67eb55acaf7ad1276808d6cb8004cd66961081",
+        "build.json": "d8ef24f1ed510fd974c34386b8f381b1e0c3881efef32a23e078660b4b732a38"
+      }
+    },
+    {
+      "model_id": "fixture/unseen-weighted",
+      "revision": "seed-91837",
+      "dimensions": 7,
+      "reports": [
+        {
+          "variant": "ink",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 1179648,
+            "resident_weight_bytes": 532,
+            "maxTokens": 512
+          }
+        },
+        {
+          "variant": "ink-quads",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 1179648,
+            "resident_weight_bytes": 532,
+            "maxTokens": 512
+          }
+        }
+      ],
+      "source_mismatch_rejected": true,
+      "artifacts": "artifacts/wasm/unseen-weighted",
+      "wasm_sha256": "2f5e4aa43a97b49375e7136e7c7704e65ba5e536035e7e35df67a01dc6762f2f",
+      "retained_sha256": {
+        "model.ink": "77b8cb17198e9f9999852df407dbc56c05a344810e9eff943882cef7dbeea955",
+        "resident.rs": "8db70e898dc564ac8552b402757ce3c023c6e156b33dc6c572786e5e8d0a991b",
+        "plan.json": "d8a702ff24168e90a3d6fee304fa1cace2dc51735d39ba0264a6f24104885aac",
+        "Cargo.lock": "40d8e7b45787ed1343304daa106a2582ea433ca32af109d46b4250c0bc85d22e",
+        "model.wasm": "2f5e4aa43a97b49375e7136e7c7704e65ba5e536035e7e35df67a01dc6762f2f",
+        "build.json": "78b62baa289bc61395fdaadd831db3d22e51a0df8834bf2247873b8f3b8d9a10"
+      }
+    },
+    {
+      "model_id": "fixture/unseen-clamp",
+      "revision": "seed-91837",
+      "dimensions": 5,
+      "reports": [
+        {
+          "variant": "ink",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 1179648,
+            "resident_weight_bytes": 340,
+            "maxTokens": 512
+          }
+        },
+        {
+          "variant": "ink-quads",
+          "cases": 16,
+          "all_outputs_bit_exact": true,
+          "reordered_calls": 48,
+          "invalid_calls_rejected": true,
+          "outputs_detached": true,
+          "weights_captured_once": true,
+          "manifest_captured": true,
+          "statistics": {
+            "linear_memory_bytes": 1179648,
+            "resident_weight_bytes": 340,
+            "maxTokens": 512
+          }
+        }
+      ],
+      "source_mismatch_rejected": true,
+      "artifacts": "artifacts/wasm/unseen-clamp",
+      "wasm_sha256": "cd9f33598fdaa5092748299a9c78aa16d5b43c331a63ecaf42b2e13708b26e5e",
+      "retained_sha256": {
+        "model.ink": "778dca03fec920df1b7fac8af1c2b435a0012cffe648204e98d00eae2cda051e",
+        "resident.rs": "0bd29ce5ee68e34333305c7a28ce39f0e3a07ed0f3ccc4794a4f74b8aae1d7b9",
+        "plan.json": "93116b778e5b5dce304d6c71744ba22f0ead2330322835ba908c381478f7daa1",
+        "Cargo.lock": "40d8e7b45787ed1343304daa106a2582ea433ca32af109d46b4250c0bc85d22e",
+        "model.wasm": "cd9f33598fdaa5092748299a9c78aa16d5b43c331a63ecaf42b2e13708b26e5e",
+        "build.json": "528d133c6b7c8a6acb72a6b62ba4ce710ffee2955916eff3087c2b80eaefca2a"
+      }
+    }
+  ]
+}
