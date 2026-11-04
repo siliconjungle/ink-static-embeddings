@@ -1,0 +1,13 @@
+{
+  "schema": 2,
+  "compiler_sha256": "0e4159ba151bf33df1b556479c186fc5b4d5edb3be9756280db437bbf25bbd76",
+  "source_sha256": "aa79d293e787228dbf0b5f6d985751d7cf322419d916c2f83133aafd1e626dce",
+  "phases": [
+    {
+      "target": "javascript",
+      "seconds": 0.37068829097552225,
+      "exit_code": 0
+    }
+  ],
+  "scope": "Metadata-driven target layouts; unchanged Ink. Authored layout changes are not optimizer-discovered rewrites."
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "kind": "authored-cooperative-static-embedding-gpu",
+  "model_source_sha256": "aa79d293e787228dbf0b5f6d985751d7cf322419d916c2f83133aafd1e626dce",
+  "weights_sha256": "581e7655d306b7c1f8a17bd1dff99375d30caa9c2ab7e833586597239a89f05e",
+  "dimensions": 256,
+  "normalization": {
+    "kind": "l2-add-epsilon",
+    "epsilon": "1.0e-32"
+  },
+  "ink_manifest_sha256": "dfc939e3ec752533d6b22963b52cbf2dbc041eed37bfb410986bb90a7524e6af",
+  "ink_pool_shader_sha256": "d063a04a906503b2ca5247c11eb0cb7b488ba119d86ed142c6fffc5233729ba3",
+  "shaders": {
+    "strict-fused.wgsl": "61eaa67bd95cfa4211ad3b56260654cf9e9f75d0f5dba937e9b0ff7af7e4f0fa",
+    "strict-pool.wgsl": "9ccd94e5adea9417f64f3c7bdb182a4ddf084dfb1674d165b26f32941804403a",
+    "strict-norm.wgsl": "06458e3a48ef9fd1e8874d40ebb763b8811aa579217855fb82d884566fe7a6d9",
+    "strict-output.wgsl": "692bcd9d7023b90368ed7fbe06a085b303dbb06391cdc3aeef37df4aed83e9c8",
+    "strict-scores.wgsl": "75a717f1734a5aef3041825dc412b3a64b601dc19bf2bb824f92a9dfe8fd1962",
+    "strict-topk.wgsl": "f864b69f9273851cd2a7a219c41fb7545f7961bb30d9ef11f419d86742be8c08",
+    "native-fused.wgsl": "754eee52efa827d73990f65ca7873b30675d85f815f8896a1e2f6df38277864e",
+    "native-pool.wgsl": "5a2a76d40af6024fb6a2a8b2c1dc5cd73d7626a037e9cd7e76e43aa08f2eb2aa",
+    "native-norm.wgsl": "e5530df0d3c90cf5532886c7a3e678d64625ae8d6d146aa30473cf179becd8fb",
+    "native-output.wgsl": "ae5ea4cd80c42251aa2140a8cc803c09749494e295e19c5bb53962433157a689",
+    "native-scores.wgsl": "8c987334f016e64b33b564aa4f39e73c833fa6509a9ef471d982a1581e142d10",
+    "native-topk.wgsl": "813bc42884d25676094a43571bb4c0454e62c4e91d7666db14e4a3d1cb9d31fe"
+  },
+  "strict_contract": "integer-lane binary32; round-to-nearest ties-to-even, gradual underflow, signed zero, source operation order and canonical arithmetic NaN; pass-through/negation retain payload bits",
+  "native_contract": "Opt-in approximate WGSL f32. Source token/reduction order authored; device rounding, contraction, subnormal flushing and sqrt/division precision may differ. No exact equivalence or quality improvement claim.",
+  "scope": "Experimental host/schedule generator, NOT output of the Ink compiler or a proof-selected compiler optimization. Strict arithmetic helpers copied verbatim from the pinned Ink-emitted shader."
+}

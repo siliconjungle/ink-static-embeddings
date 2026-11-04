@@ -1,0 +1,43 @@
+{
+  "records": [
+    {
+      "mode": "fused-strict",
+      "top_k_sizes": [
+        1,
+        7,
+        32,
+        3,
+        32
+      ],
+      "stable_ties_checked": true,
+      "detached_results": true,
+      "foreign_invalid_and_closed_handles_rejected": true,
+      "queued_close": true,
+      "bytes_before_close": 13348,
+      "bytes_after_close": 0
+    },
+    {
+      "mode": "fused-native",
+      "top_k_sizes": [
+        1,
+        7,
+        32,
+        3,
+        32
+      ],
+      "stable_ties_checked": false,
+      "detached_results": true,
+      "foreign_invalid_and_closed_handles_rejected": true,
+      "queued_close": true,
+      "bytes_before_close": 13348,
+      "bytes_after_close": 0
+    }
+  ],
+  "scope": "Actual hardware lifecycle/search conformance, no performance claim.",
+  "browser_version": "156.0.8078.80",
+  "sha256": {
+    "scripts/gpu_fusion_conformance.mjs": "c25978f8c320e58e78565b109248226fa9a1af335077b1ec0b7f216039275f3f",
+    "runtime/static-embedding.mjs": "0ef1db2df93b28a37630cd77b629c7f8ebd607368d3eb388bf0f1e6c32cbc32e",
+    "runtime/static-embedding-gpu.mjs": "75a76e645bf9c0714cf26b42e9b30a6695cde7b7f0e51ca73279d59eec84de9c"
+  }
+}

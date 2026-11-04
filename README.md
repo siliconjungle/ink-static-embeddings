@@ -54,6 +54,16 @@ then visits adjacent dimensions using a dense F32 accumulation buffer. The
 compiler improvement is generic Buffer execution support; this is not a newly
 discovered/equality-selected algorithm. See [how to build and load it](#packed-row-javascript).
 
+The [experimental GPU adapter](results/gpu-fusion/REPORT.md) takes the previous
+browser GPU path from **3.61 to 1.30 µs/embedding (2.77×)** at batch 1,024 with
+strict arithmetic, or **0.82 µs (4.39×)** using opt-in native float. These are
+median results from three fresh Chrome processes; timings vary substantially
+between processes. Most of the strict gain comes from the simpler host/ABI and
+reused readback storage: fusion adds only about 1% against its matched
+three-dispatch control at this batch size. This adapter generates authored WGSL
+schedules; it is **not an Ink compiler optimization**. Native float changes
+some top-k results despite small embedding errors. See [usage and contracts](#experimental-gpu-schedules).
+
 **Earlier study: faster for short CPU queries and large GPU batches; slower for
 the mixed CPU corpus.** All measured performance results use Potion 2M on an
 Apple M4 Pro. Loading and tokenization are excluded.
@@ -233,6 +243,63 @@ PLAYWRIGHT_MODULE=../work/browser-tools/node_modules/playwright/index.mjs node s
 
 These reproduction harnesses use the retained Potion 2M corpus and build paths;
 the model importer, row generator and loader use metadata rather than model names.
+
+## Experimental GPU schedules
+
+After building a model's existing WebGPU target, generate the optional schedules:
+
+```sh
+uv run python scripts/build_gpu_fusion.py --build build/my-model
+```
+
+This writes `gpu-experimental/` shader files and hash receipts. The generator
+uses model dimensions and normalization metadata, with unchanged learned weights.
+Its strict shaders reuse the pinned Ink-emitted integer arithmetic helpers.
+The workgroup fusion, flat host ABI and search kernels are authored here; they
+have not been added to Ink's lowering or admitted as compiler rewrites. The
+existing `gpuKernel: 'ink'` default remains the compiled Ink path.
+
+```js
+const model = await loadStaticEmbedding('/build/my-model/', {
+  backend: 'gpu', device,
+  gpuKernel: 'fused-strict', // 'fused-native' explicitly selects approximate math
+});
+const queries = await model.createSession({batchSize: 2, tokenCapacity: 32});
+const corpus = await model.createSession({batchSize: 3, tokenCapacity: 32});
+const corpusEmbeddings = await corpus.encodeBatchResident([[1, 2], [3, 4], [5]]);
+const queryEmbeddings = await queries.encodeBatchResident([[1, 3], [5]]);
+const matches = await queryEmbeddings.search(corpusEmbeddings, {k: 2});
+// Flat, detached matches.indices / matches.scores; no embedding readback.
+const embeddings = await queryEmbeddings.read(); // optional complete download
+await model.close(); // waits for queued operations and releases all sessions
+```
+
+Supply a WebGPU device with sufficient storage binding/buffer and workgroup
+storage limits for the model. Resident leases expire when their session encodes
+again or closes. Sessions on one model serialize operations; search requires
+both leases to belong to that model. `encodeBatch()` remains available for a
+complete fresh `Float32Array`. No fallback is performed by this experimental
+adapter. The 256 MiB allocation budget and actual device limits are enforced.
+
+Search computes a dense dot-product score matrix followed by top-k selection
+(`1 <= k <= min(32, corpus size)`); it is a bounded brute-force path, not an ANN
+index. Equal scores retain the lower document index; NaNs sort last. Unnormalized
+models use dot product, not cosine similarity. `gpuSchedule: 'split'` exposes the
+matched three-dispatch benchmark control.
+
+Strict mode passed bit-exact checks on all five models/fixtures and four extra
+edge shapes, including overflow, subnormals and 4,096-token documents. Native
+mode uses approximate WGSL float arithmetic, with finite-intermediate weight and
+epsilon bounds. On the five validation suites it passed `atol=2e-6, rtol=2e-5`,
+but this is not a guarantee for unseen queries/devices. The small resident search
+fixture has **95% native top-10 ID agreement**, versus 100% strict, against ordered
+F32 dot products of the same embeddings. This is numerical ranking agreement,
+not a semantic retrieval-quality benchmark.
+
+The [full report](results/gpu-fusion/REPORT.md) includes process ranges, adverse
+fusion results, readback costs, resident-search controls and reproduction commands.
+Pretrained weights remain external data; [measured shaders and receipts](artifacts/gpu-fusion)
+are retained. Only Potion 2M has timing data.
 
 To reproduce the validation matrix (PyTorch is only a validation dependency):
 

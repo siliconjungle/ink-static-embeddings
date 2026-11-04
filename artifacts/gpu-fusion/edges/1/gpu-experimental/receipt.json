@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "kind": "authored-cooperative-static-embedding-gpu",
+  "model_source_sha256": "c04ce4f2e37493ecdcea7fb85095f1f2793addae1adab6f9a29aebc71fa77cac",
+  "weights_sha256": "53b0f040384028d7e5925c0bc617414a8128fb7e83b68b8b480273000875ba5c",
+  "dimensions": 1,
+  "normalization": {
+    "kind": "none"
+  },
+  "shaders": {
+    "strict-fused.wgsl": "7b7c63a7c1ac58dc8fdd0b76f1ae6320b91f9cf2e889510cfca52535964b1220",
+    "strict-pool.wgsl": "515058f219d8902a25e4033c9b3c78111796002b7dd37b2ce29337bb4dca9797",
+    "strict-norm.wgsl": "eb5e7e28161bf70c2bbf81fae63b5d9c018e4deb5d4bdc99e14a56c8059162a1",
+    "strict-output.wgsl": "eea92b21bb6ba8ad876358aaf564f03a357f9cb734a4ecc6ba66cc90c9eb9b48",
+    "strict-scores.wgsl": "5f0183ca959bd0b913592d8ef90b1aab873e51e52f1cce337a3f91be8c10b59b",
+    "strict-topk.wgsl": "f864b69f9273851cd2a7a219c41fb7545f7961bb30d9ef11f419d86742be8c08",
+    "native-fused.wgsl": "d173a8f4fef7a1403b7d86c0c4073ece30e168de8471b458f40b060ab04a8798",
+    "native-pool.wgsl": "e1907786e9d3d288a527f033ff96f3bd6fc5f6f2ca0824a2bd447035e3446f8c",
+    "native-norm.wgsl": "43ee518484421d456d345cf9a7f705e4da4f7400c1fffa95bd206872023a1a1a",
+    "native-output.wgsl": "551b1beb030844b1b8c64e9900e22e95bd2d1370891588c47efa371121919d35",
+    "native-scores.wgsl": "1e5ca986eae05c9b386beaa38e82220636dc690df2f8c420a98877e5f6be6b89",
+    "native-topk.wgsl": "813bc42884d25676094a43571bb4c0454e62c4e91d7666db14e4a3d1cb9d31fe"
+  },
+  "strict_contract": "integer-lane binary32; round-to-nearest ties-to-even, gradual underflow, signed zero, source operation order and canonical arithmetic NaN; pass-through/negation retain payload bits",
+  "native_contract": "approximate",
+  "scope": "Adversarial generated fixture, not an Ink compilation",
+  "ink_manifest_sha256": "3d9442e5351e30207041f5c3c05498ccff070a53ef62690d498257c28f0da6af",
+  "ink_pool_shader_sha256": "883687a1a7e1759ce4c10989526ab445f176c59bd3f203b408a82977905fa701"
+}

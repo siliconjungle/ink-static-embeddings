@@ -1,0 +1,21 @@
+{
+  "schema": 2,
+  "architecture": "static-embedding-mean",
+  "dtype": "float32-le",
+  "dimensions": 7,
+  "vocabulary_size": 8,
+  "parameters": 56,
+  "shards": [
+    {
+      "name": "weight_0",
+      "offset": 0,
+      "elements": 56
+    }
+  ],
+  "normalization": {
+    "kind": "l2-add-epsilon",
+    "epsilon": "1e-32"
+  },
+  "source_sha256": "c14cdb8584dc8c2787906ded8c593ff787e77c27cafb454615a602ef3c69b782",
+  "weights_sha256": "3fcdc3dea85996a79a0c65aa2e99d9858e99c859aeb34771e8b908398996a1b8"
+}

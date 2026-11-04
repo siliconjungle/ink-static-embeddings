@@ -1,0 +1,190 @@
+{
+  "schema": 2,
+  "architecture": "static-embedding-mean",
+  "source_format": "sentence-transformers",
+  "model_id": "sentence-transformers/static-retrieval-mrl-en-v1",
+  "revision": "f60985c706f192d45d218078e49e5a8b6f15283a",
+  "vocabulary_size": 30522,
+  "dimensions": 1024,
+  "parameters": 31254528,
+  "dtype": "float32-le",
+  "normalization": {
+    "kind": "none"
+  },
+  "shards": [
+    {
+      "name": "weight_0",
+      "offset": 0,
+      "elements": 999000
+    },
+    {
+      "name": "weight_1",
+      "offset": 999000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_2",
+      "offset": 1998000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_3",
+      "offset": 2997000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_4",
+      "offset": 3996000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_5",
+      "offset": 4995000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_6",
+      "offset": 5994000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_7",
+      "offset": 6993000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_8",
+      "offset": 7992000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_9",
+      "offset": 8991000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_10",
+      "offset": 9990000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_11",
+      "offset": 10989000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_12",
+      "offset": 11988000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_13",
+      "offset": 12987000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_14",
+      "offset": 13986000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_15",
+      "offset": 14985000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_16",
+      "offset": 15984000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_17",
+      "offset": 16983000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_18",
+      "offset": 17982000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_19",
+      "offset": 18981000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_20",
+      "offset": 19980000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_21",
+      "offset": 20979000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_22",
+      "offset": 21978000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_23",
+      "offset": 22977000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_24",
+      "offset": 23976000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_25",
+      "offset": 24975000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_26",
+      "offset": 25974000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_27",
+      "offset": 26973000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_28",
+      "offset": 27972000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_29",
+      "offset": 28971000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_30",
+      "offset": 29970000,
+      "elements": 999000
+    },
+    {
+      "name": "weight_31",
+      "offset": 30969000,
+      "elements": 285528
+    }
+  ],
+  "tokenization": {
+    "add_special_tokens": false,
+    "skip_unknown": false
+  },
+  "transformations": [],
+  "source_sha256": "e1363f7f036ec87a636bd46369e09a6ea8173f262e8eb75798f07350f631858b",
+  "weights_sha256": "26946bbc5605eadd0663b6196c6b7a7baf4a2c92658abc44bb34024cfa603aab",
+  "tokenizer_sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+  "upstream_files": {
+    "modules.json": "bbae5b9edb81bf37718a6b45d921a404d129ccafb5918d2dc13146ef0e8ede34",
+    "0_StaticEmbedding/model.safetensors": "164fc63ee9f9267be7378fcbd7df99d09788a2f45244c92aa99ae5a574925716",
+    "0_StaticEmbedding/tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
+  },
+  "numerics": "ordered binary32 pooling and right-fold norm; upstream reductions checked with explicit tolerance"
+}

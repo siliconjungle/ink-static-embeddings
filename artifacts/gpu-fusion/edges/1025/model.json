@@ -1,0 +1,20 @@
+{
+  "schema": 2,
+  "architecture": "static-embedding-mean",
+  "dtype": "float32-le",
+  "dimensions": 1025,
+  "vocabulary_size": 8,
+  "parameters": 8200,
+  "shards": [
+    {
+      "name": "weight_0",
+      "offset": 0,
+      "elements": 8200
+    }
+  ],
+  "normalization": {
+    "kind": "none"
+  },
+  "source_sha256": "bd287ea1a3ea56707bf95f6c983d1df043e9e8b19ea3c4f41f0739bc3d443560",
+  "weights_sha256": "bdd42546f0bab8ab7f11dd30e9ac1720fc120294767668e0329f407e716a9128"
+}

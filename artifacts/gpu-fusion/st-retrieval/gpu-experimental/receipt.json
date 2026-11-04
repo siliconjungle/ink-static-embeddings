@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "kind": "authored-cooperative-static-embedding-gpu",
+  "model_source_sha256": "e1363f7f036ec87a636bd46369e09a6ea8173f262e8eb75798f07350f631858b",
+  "weights_sha256": "26946bbc5605eadd0663b6196c6b7a7baf4a2c92658abc44bb34024cfa603aab",
+  "dimensions": 1024,
+  "normalization": {
+    "kind": "none"
+  },
+  "ink_manifest_sha256": "94ed4e34c59617fe58955c396c6d85a96571ad2736881f5edd7c6ed7113345eb",
+  "ink_pool_shader_sha256": "0eed45ef2d65ffdc4c379d811800da9b63ecff772de57e219ed2f2c1e63e1b07",
+  "shaders": {
+    "strict-fused.wgsl": "726a473454cde0ac4d56465655d23b604fab0afd3dbe6d3201e5e7a8922bff60",
+    "strict-pool.wgsl": "cd86a00b4a18709123677fbf505f1e1c0e2c7fc731b2db74385db9d687f5d748",
+    "strict-norm.wgsl": "ed938fbe1e4d30a2311e12f0fb3b4df9e2390e7d66274befb641ab77d56be0e7",
+    "strict-output.wgsl": "deab56af2a7608029320c79350a015dd99e2e34171e6a411b67397e29d0bcfaa",
+    "strict-scores.wgsl": "ab5f3d95301b9077f3ee0713c46408667d5961f866236dbc2e6e031a8a6568a4",
+    "strict-topk.wgsl": "f864b69f9273851cd2a7a219c41fb7545f7961bb30d9ef11f419d86742be8c08",
+    "native-fused.wgsl": "26e0338e4f682116a8d3a0bd07924875d1f019f4a6f8a685c898e40832b53182",
+    "native-pool.wgsl": "3cf530e8f99c7bc052a1373de86ad2a7b0b04a7ce65cf2de11f434e472c050f4",
+    "native-norm.wgsl": "549fdc80c6971f5fca2800d9a0c20ba7b39ecc9866b0d53c36d18bc8bcb2be2b",
+    "native-output.wgsl": "f1a1ef8577c590a83b9c2f87a7fad854282bf23435b8e979890fa0c496ec03e8",
+    "native-scores.wgsl": "e30bc751d67982afc3d6c63b1d90f53ec1f630b130896df6daf1152cb73beaa7",
+    "native-topk.wgsl": "813bc42884d25676094a43571bb4c0454e62c4e91d7666db14e4a3d1cb9d31fe"
+  },
+  "strict_contract": "integer-lane binary32; round-to-nearest ties-to-even, gradual underflow, signed zero, source operation order and canonical arithmetic NaN; pass-through/negation retain payload bits",
+  "native_contract": "Opt-in approximate WGSL f32. Source token/reduction order authored; device rounding, contraction, subnormal flushing and sqrt/division precision may differ. No exact equivalence or quality improvement claim.",
+  "scope": "Experimental host/schedule generator, NOT output of the Ink compiler or a proof-selected compiler optimization. Strict arithmetic helpers copied verbatim from the pinned Ink-emitted shader."
+}

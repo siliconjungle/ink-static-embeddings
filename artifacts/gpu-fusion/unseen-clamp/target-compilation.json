@@ -1,0 +1,23 @@
+{
+  "schema": 2,
+  "compiler_sha256": "5e64707e9b7bea6bccd74460f8d75e4250777038be12eb983600db11106cfcaa",
+  "source_sha256": "c5663228fe62641d00aa244dcb5108f1b2e7ac9dc1da139fa93238369fa1f47b",
+  "phases": [
+    {
+      "target": "javascript",
+      "seconds": 0.01062583300517872,
+      "exit_code": 0
+    },
+    {
+      "target": "rust",
+      "seconds": 0.010099624982103705,
+      "exit_code": 0
+    },
+    {
+      "target": "webgpu",
+      "seconds": 4.763048249995336,
+      "exit_code": 0
+    }
+  ],
+  "scope": "Metadata-driven target layouts; unchanged Ink. Authored layout changes are not optimizer-discovered rewrites."
+}

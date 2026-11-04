@@ -76,12 +76,13 @@ export function createJavascriptEncoder(module,manifest,weights,{layout=null}={}
   };
 }
 
-export async function loadStaticEmbedding(base,{backend='javascript',device=null,optimized=false,javascriptLayout='reference'}={}){
+export async function loadStaticEmbedding(base,{backend='javascript',device=null,optimized=false,javascriptLayout='reference',gpuKernel='ink',gpuSchedule='fused'}={}){
   const root=new URL(base,globalThis.location?.href);
   if(!root.pathname.endsWith('/'))root.pathname+='/';
   const json=async name=>{const r=await fetch(new URL(name,root));if(!r.ok)throw Error(`Cannot load ${name}: ${r.status}`);return r.json();};
   const manifest=await json('model.json');validateManifest(manifest);
   if(!['javascript','gpu'].includes(backend))throw Error('Backend must be javascript or gpu');
+  if(!['ink','fused-strict','fused-native'].includes(gpuKernel)||!['fused','split'].includes(gpuSchedule))throw Error('Unknown GPU kernel or schedule');
   if(!['reference','packed-rows'].includes(javascriptLayout))throw Error('Unsupported JavaScript layout');
   if(backend==='gpu'&&manifest.parameters*4+4>256*1024*1024)throw Error('Model exceeds existing Ink GPU buffer budget; use JavaScript or Rust');
   const response=await fetch(new URL('weights.f32',root));
@@ -103,6 +104,15 @@ export async function loadStaticEmbedding(base,{backend='javascript',device=null
   }
   const targets=await json('targets.json');
   if(targets.schema!==2||targets.dimensions!==manifest.dimensions||targets.sources['model.ink']!==manifest.source_sha256)throw Error('Target/model mismatch');
+  if(gpuKernel!=='ink'){
+    const receipt=await json('gpu-experimental/receipt.json');
+    const sources=Object.fromEntries(await Promise.all(Object.keys(receipt.shaders??{}).map(async name=>{
+      if(!/^(strict|native)-(fused|pool|norm|output|scores|topk)\.wgsl$/.test(name))throw Error('Invalid experimental shader name');
+      const r=await fetch(new URL('gpu-experimental/'+name,root));if(!r.ok)throw Error('Cannot load experimental shader');return [name,await r.text()];
+    })));
+    const {createExperimentalGpuEncoder}=await import('./static-embedding-gpu.mjs');
+    return createExperimentalGpuEncoder(device,manifest,weights,receipt,sources,{mode:gpuKernel==='fused-native'?'native':'strict',schedule:gpuSchedule,maxTokens:targets.max_tokens});
+  }
   // Ink additionally enforces the entire live-allocation budget during open.
   const {loadInk}=await import(new URL('webgpu/ink-gpu.mjs',root));
   const runtime=await loadInk(new URL('webgpu/',root),{device,backend:'gpu',policy:'static',staticBackend:'gpu'});

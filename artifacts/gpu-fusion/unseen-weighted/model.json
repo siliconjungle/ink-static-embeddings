@@ -1,0 +1,99 @@
+{
+  "schema": 2,
+  "architecture": "static-embedding-mean",
+  "source_format": "model2vec",
+  "model_id": "fixture/unseen-weighted",
+  "revision": "seed-91837",
+  "vocabulary_size": 19,
+  "dimensions": 7,
+  "parameters": 133,
+  "dtype": "float32-le",
+  "normalization": {
+    "kind": "l2-add-epsilon",
+    "epsilon": "1.0e-32"
+  },
+  "shards": [
+    {
+      "name": "weight_0",
+      "offset": 0,
+      "elements": 11
+    },
+    {
+      "name": "weight_1",
+      "offset": 11,
+      "elements": 11
+    },
+    {
+      "name": "weight_2",
+      "offset": 22,
+      "elements": 11
+    },
+    {
+      "name": "weight_3",
+      "offset": 33,
+      "elements": 11
+    },
+    {
+      "name": "weight_4",
+      "offset": 44,
+      "elements": 11
+    },
+    {
+      "name": "weight_5",
+      "offset": 55,
+      "elements": 11
+    },
+    {
+      "name": "weight_6",
+      "offset": 66,
+      "elements": 11
+    },
+    {
+      "name": "weight_7",
+      "offset": 77,
+      "elements": 11
+    },
+    {
+      "name": "weight_8",
+      "offset": 88,
+      "elements": 11
+    },
+    {
+      "name": "weight_9",
+      "offset": 99,
+      "elements": 11
+    },
+    {
+      "name": "weight_10",
+      "offset": 110,
+      "elements": 11
+    },
+    {
+      "name": "weight_11",
+      "offset": 121,
+      "elements": 11
+    },
+    {
+      "name": "weight_12",
+      "offset": 132,
+      "elements": 1
+    }
+  ],
+  "tokenization": {
+    "add_special_tokens": false,
+    "skip_unknown": true
+  },
+  "transformations": [
+    "expanded token_mapping into per-token rows",
+    "folded per-token F32 weights into rows"
+  ],
+  "source_sha256": "49a59e997680b6ee571470ce909c6006548b8a928595500255712698f2a4fa48",
+  "weights_sha256": "a7909581d82eac08f0d4fa2ec55a773f4d0a64810eeff26962e5b1adc7b981b6",
+  "tokenizer_sha256": "209eee15d9a1f2e1bcd47576126a7a722bf1ed3538c4b84cfcf2852a94db5b90",
+  "upstream_files": {
+    "config.json": "4e8b73d3045b5d2f4f4bdd66372a8158ee8689f691282ddea6b5527c93a5dbaa",
+    "model.safetensors": "acd0ce286c0da54af1eadf4d63f17fa249389c0cf72a4fc30e26f9de39044191",
+    "tokenizer.json": "209eee15d9a1f2e1bcd47576126a7a722bf1ed3538c4b84cfcf2852a94db5b90"
+  },
+  "numerics": "ordered binary32 pooling and right-fold norm; upstream reductions checked with explicit tolerance"
+}
