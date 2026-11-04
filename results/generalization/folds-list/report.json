@@ -1,0 +1,1085 @@
+{
+  "schema": 1,
+  "scope": "Frozen unrelated source, existing checked general independent-fold knowledge, same compiler. All results bit-exact to independent ordered F32, including edge cases and changed query order. Complete detached output consumed. Ordinary versus prepared modes retain different ingress/setup contracts and are compared within their own kind. Warm capture/preparation excluded and reported separately. No source rewrite is automatically profitable.",
+  "processes": 3,
+  "summary": [
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 0,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 16868.74999999972,
+        "literal/prepared": 1241.6500000000497,
+        "batched-0/ordinary": 16635.399999999834,
+        "batched-0/prepared": 1158.3500000000413
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 4,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 19343.749999999458,
+        "literal/prepared": 1529.1500000003566,
+        "batched-0/ordinary": 20241.649999999823,
+        "batched-0/prepared": 2195.8000000005027
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 16,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 19827.10000000054,
+        "literal/prepared": 1652.0499999998606,
+        "batched-0/ordinary": 22366.65000000002,
+        "batched-0/prepared": 4072.9499999997643
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 64,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 21941.649999999412,
+        "literal/prepared": 2185.399999999049,
+        "batched-0/ordinary": 24431.24999999995,
+        "batched-0/prepared": 2906.250000000199
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 0,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 18850.000000000477,
+        "literal/prepared": 1352.099999999723,
+        "batched-0/ordinary": 19458.30000000086,
+        "batched-0/prepared": 1545.8500000008257
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 4,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 20847.94999999957,
+        "literal/prepared": 3189.6000000003255,
+        "batched-0/ordinary": 26041.69999999897,
+        "batched-0/prepared": 2077.100000001053
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 16,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 19677.049999999952,
+        "literal/prepared": 1604.1500000000042,
+        "batched-0/ordinary": 20552.09999999903,
+        "batched-0/prepared": 1874.9999999997158
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 64,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 22408.349999999187,
+        "literal/prepared": 3100.000000000591,
+        "batched-0/ordinary": 25664.600000000348,
+        "batched-0/prepared": 4274.999999999806
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 0,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 19116.6999999993,
+        "literal/prepared": 947.9000000013115,
+        "batched-0/ordinary": 18818.749999999796,
+        "batched-0/prepared": 1064.599999999416
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 4,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 19808.349999999562,
+        "literal/prepared": 1545.8499999994046,
+        "batched-0/ordinary": 20804.14999999931,
+        "batched-0/prepared": 1993.7499999997497
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 16,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 21347.900000000664,
+        "literal/prepared": 3168.7500000003865,
+        "batched-0/ordinary": 26214.550000000258,
+        "batched-0/prepared": 4597.900000000265
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 64,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 26477.09999999961,
+        "literal/prepared": 9533.35000000095,
+        "batched-0/ordinary": 35810.39999999973,
+        "batched-0/prepared": 16747.900000000016
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 0,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 19072.95000000033,
+        "literal/prepared": 1820.8500000000072,
+        "batched-0/ordinary": 19970.849999999984,
+        "batched-0/prepared": 2606.250000000898
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 4,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 23350.000000000648,
+        "literal/prepared": 6324.999999999648,
+        "batched-0/ordinary": 25897.950000000947,
+        "batched-0/prepared": 8660.399999999414
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 16,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 36322.9500000017,
+        "literal/prepared": 19714.600000000362,
+        "batched-0/ordinary": 47964.550000000374,
+        "batched-0/prepared": 29966.65000000007
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 64,
+      "width": 8,
+      "median_ns": {
+        "literal/ordinary": 85781.24999999943,
+        "literal/prepared": 70852.09999999905,
+        "batched-0/ordinary": 125183.30000000048,
+        "batched-0/prepared": 109897.95000000128
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 0,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 146968.7499999992,
+        "literal/prepared": 841.6999999980135,
+        "batched-0/ordinary": 147572.9000000001,
+        "batched-0/prepared": 847.899999999413
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 4,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 148235.4000000015,
+        "literal/prepared": 845.8499999989044,
+        "batched-0/ordinary": 149533.34999999867,
+        "batched-0/prepared": 854.2000000005601
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 152002.09999999855,
+        "literal/prepared": 1043.7500000023192,
+        "batched-0/ordinary": 149835.40000000063,
+        "batched-0/prepared": 958.3499999990863
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 152029.14999999848,
+        "literal/prepared": 1312.5000000002274,
+        "batched-0/ordinary": 150860.39999999912,
+        "batched-0/prepared": 1495.8499999977448
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 0,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 147964.60000000027,
+        "literal/prepared": 806.2499999994088,
+        "batched-0/ordinary": 148481.25000000323,
+        "batched-0/prepared": 797.8999999977532
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 4,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 150772.90000000404,
+        "literal/prepared": 908.3499999974265,
+        "batched-0/ordinary": 148504.15000000226,
+        "batched-0/prepared": 977.0500000001903
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 151608.29999999804,
+        "literal/prepared": 1077.0999999976993,
+        "batched-0/ordinary": 150958.35000000193,
+        "batched-0/prepared": 1368.7500000003183
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 151949.99999999936,
+        "literal/prepared": 2058.3499999986543,
+        "batched-0/ordinary": 156535.40000000136,
+        "batched-0/prepared": 3308.3500000032013
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 0,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 150914.60000000437,
+        "literal/prepared": 908.3000000032371,
+        "batched-0/ordinary": 149283.35000000175,
+        "batched-0/prepared": 968.7500000040927
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 4,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 150947.94999999978,
+        "literal/prepared": 1433.3499999963806,
+        "batched-0/ordinary": 148914.6000000005,
+        "batched-0/prepared": 1829.1499999975258
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 149845.7999999914,
+        "literal/prepared": 2852.100000001201,
+        "batched-0/ordinary": 154416.6999999959,
+        "batched-0/prepared": 4279.2000000019925
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 156475.00000000038,
+        "literal/prepared": 8702.099999993607,
+        "batched-0/ordinary": 166839.54999999743,
+        "batched-0/prepared": 17352.099999993698
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 0,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 149197.94999999568,
+        "literal/prepared": 1800.0000000029104,
+        "batched-0/ordinary": 151904.2000000013,
+        "batched-0/prepared": 2545.799999995779
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 4,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 154025.00000000146,
+        "literal/prepared": 6368.750000001455,
+        "batched-0/ordinary": 158281.25000000454,
+        "batched-0/prepared": 9152.099999994334
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 165047.94999999605,
+        "literal/prepared": 19597.89999999657,
+        "batched-0/ordinary": 180360.39999999502,
+        "batched-0/prepared": 29760.399999997848
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "literal/ordinary": 217579.20000000013,
+        "literal/prepared": 71164.59999999733,
+        "batched-0/ordinary": 255479.20000000205,
+        "batched-0/prepared": 109799.99999999562
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 0,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 308287.49999999447,
+        "literal/prepared": 816.6500000015731,
+        "batched-0/ordinary": 310616.64999999723,
+        "batched-0/prepared": 727.0500000004176
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 4,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 308310.40000000485,
+        "literal/prepared": 779.150000005302,
+        "batched-0/ordinary": 311166.65000000695,
+        "batched-0/prepared": 829.1999999983091
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 16,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 304631.2499999999,
+        "literal/prepared": 877.0499999968706,
+        "batched-0/ordinary": 304618.7499999973,
+        "batched-0/prepared": 968.749999992724
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 0,
+      "lanes": 64,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 304639.60000000725,
+        "literal/prepared": 1256.2500000058208,
+        "batched-0/ordinary": 307760.4000000065,
+        "batched-0/prepared": 1402.0999999956985
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 0,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 299293.7500000039,
+        "literal/prepared": 699.9999999948159,
+        "batched-0/ordinary": 302362.50000000384,
+        "batched-0/prepared": 785.4500000007647
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 4,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 303360.3999999968,
+        "literal/prepared": 889.5999999822379,
+        "batched-0/ordinary": 303718.7500000073,
+        "batched-0/prepared": 933.2999999969616
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 16,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 310293.75000000524,
+        "literal/prepared": 1429.1499999899315,
+        "batched-0/ordinary": 307097.90000000794,
+        "batched-0/prepared": 1695.849999987331
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 8,
+      "lanes": 64,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 305554.20000000595,
+        "literal/prepared": 1972.950000003948,
+        "batched-0/ordinary": 306902.1000000021,
+        "batched-0/prepared": 3137.5000000025466
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 0,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 307027.1000000048,
+        "literal/prepared": 949.9999999889042,
+        "batched-0/ordinary": 306712.50000000326,
+        "batched-0/prepared": 1014.549999990777
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 4,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 305412.5000000113,
+        "literal/prepared": 1706.2500000065484,
+        "batched-0/ordinary": 306066.65000000247,
+        "batched-0/prepared": 2041.6500000010274
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 16,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 303439.60000000155,
+        "literal/prepared": 2866.649999987203,
+        "batched-0/ordinary": 307641.65000000503,
+        "batched-0/prepared": 4322.950000005221
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 64,
+      "lanes": 64,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 308312.5000000109,
+        "literal/prepared": 8716.649999996662,
+        "batched-0/ordinary": 315593.7500000164,
+        "batched-0/prepared": 14079.199999991944
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 0,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 301270.7999999975,
+        "literal/prepared": 1789.5499999895037,
+        "batched-0/ordinary": 302931.2499999833,
+        "batched-0/prepared": 2554.150000014488
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 4,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 301970.8499999979,
+        "literal/prepared": 6347.900000014306,
+        "batched-0/ordinary": 314302.100000009,
+        "batched-0/prepared": 15595.8499999997
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 16,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 319408.35000000335,
+        "literal/prepared": 19822.900000008303,
+        "batched-0/ordinary": 336104.1999999998,
+        "batched-0/prepared": 31745.850000015704
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "length": 512,
+      "lanes": 64,
+      "width": 128,
+      "median_ns": {
+        "literal/ordinary": 369166.650000011,
+        "literal/prepared": 71616.6499999872,
+        "batched-0/ordinary": 409791.650000011,
+        "batched-0/prepared": 111249.99999999546
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 0,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 718.7499999872671,
+        "literal/prepared": 1085.40000001085,
+        "batched-0/ordinary": 727.0999999946071,
+        "batched-0/prepared": 1087.5000000169166
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 0,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 1393.7500000110958,
+        "literal/prepared": 1508.349999994607,
+        "batched-0/ordinary": 2343.75,
+        "batched-0/prepared": 2354.14999999648
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 0,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 2500.000000009095,
+        "literal/prepared": 1977.050000004965,
+        "batched-0/ordinary": 4789.600000003702,
+        "batched-0/prepared": 4656.250000016371
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 0,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 4331.249999995634,
+        "literal/prepared": 2425.000000016553,
+        "batched-0/ordinary": 4500.000000007276,
+        "batched-0/prepared": 2670.850000004066
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 8,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 854.1500000092128,
+        "literal/prepared": 2399.9999999887223,
+        "batched-0/ordinary": 1033.3499999887863,
+        "batched-0/prepared": 2722.9499999975815
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 8,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 2531.249999992724,
+        "literal/prepared": 3897.9499999868494,
+        "batched-0/ordinary": 8995.849999996608,
+        "batched-0/prepared": 9916.65000001376
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 8,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 2114.6000000044296,
+        "literal/prepared": 1954.1499999832013,
+        "batched-0/ordinary": 2616.6500000044834,
+        "batched-0/prepared": 2581.2500000029104
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 8,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 5312.499999990905,
+        "literal/prepared": 3377.0500000173342,
+        "batched-0/ordinary": 7168.750000005275,
+        "batched-0/prepared": 5310.450000001765
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 64,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 1849.9999999903594,
+        "literal/prepared": 2427.0500000056927,
+        "batched-0/ordinary": 1977.0999999991545,
+        "batched-0/prepared": 2504.1500000043015
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 64,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 2929.149999999936,
+        "literal/prepared": 2047.94999999649,
+        "batched-0/ordinary": 3314.5999999987907,
+        "batched-0/prepared": 2493.7499999850843
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 64,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 5662.500000016735,
+        "literal/prepared": 4400.000000009641,
+        "batched-0/ordinary": 6975.000000011278,
+        "batched-0/prepared": 5877.050000003692
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 64,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 15174.999999999272,
+        "literal/prepared": 12975.00000000582,
+        "batched-0/ordinary": 24331.250000000182,
+        "batched-0/prepared": 19652.099999984785
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 512,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 9775.000000013279,
+        "literal/prepared": 3085.400000009031,
+        "batched-0/ordinary": 10420.85000001407,
+        "batched-0/prepared": 3910.4500000121334
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 512,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 18706.250000013824,
+        "literal/prepared": 12149.999999996908,
+        "batched-0/ordinary": 17566.69999999758,
+        "batched-0/prepared": 11377.100000004248
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 512,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 43727.04999998405,
+        "literal/prepared": 36285.399999997026,
+        "batched-0/ordinary": 42443.74999998399,
+        "batched-0/prepared": 36024.99999999509
+      }
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "length": 512,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 142235.40000000413,
+        "literal/prepared": 133120.85000000027,
+        "batched-0/ordinary": 140195.85000000914,
+        "batched-0/prepared": 128522.89999998447
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 0,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 372.90000000211876,
+        "literal/prepared": 970.8499999987907,
+        "batched-0/ordinary": 402.09999999660795,
+        "batched-0/prepared": 1012.5000000016371,
+        "batched-1/ordinary": 391.65000000593864,
+        "batched-1/prepared": 991.6499999917505
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 0,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 1079.1500000095766,
+        "literal/prepared": 1587.5000000050932,
+        "batched-0/ordinary": 1779.1499999930238,
+        "batched-0/prepared": 2310.400000010304,
+        "batched-1/ordinary": 1847.90000000703,
+        "batched-1/prepared": 2339.6000000047934
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 0,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 1981.2499999943611,
+        "literal/prepared": 2537.4999999939973,
+        "batched-0/ordinary": 4537.500000014916,
+        "batched-0/prepared": 5139.599999984057,
+        "batched-1/ordinary": 4618.749999985994,
+        "batched-1/prepared": 5099.999999993088
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 0,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 2922.9500000155895,
+        "literal/prepared": 2695.850000009159,
+        "batched-0/ordinary": 3227.100000003702,
+        "batched-0/prepared": 2899.999999999636,
+        "batched-1/ordinary": 3170.8499999922424,
+        "batched-1/prepared": 2872.9000000112137
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 8,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 391.65000000593864,
+        "literal/prepared": 5593.7500000027285,
+        "batched-0/ordinary": 531.2500000172804,
+        "batched-0/prepared": 5904.200000009041,
+        "batched-1/ordinary": 552.0500000102402,
+        "batched-1/prepared": 6270.79999999296
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 8,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 2481.250000005275,
+        "literal/prepared": 5593.7500000027285,
+        "batched-0/ordinary": 8527.100000014798,
+        "batched-0/prepared": 11831.250000000182,
+        "batched-1/ordinary": 8477.100000004612,
+        "batched-1/prepared": 11583.300000006602
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 8,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 1350.0000000021828,
+        "literal/prepared": 2308.3500000211643,
+        "batched-0/ordinary": 1729.1499999828375,
+        "batched-0/prepared": 3245.850000007522,
+        "batched-1/ordinary": 1768.749999996544,
+        "batched-1/prepared": 3358.350000007704
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 8,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 3887.49999999618,
+        "literal/prepared": 3933.35000001116,
+        "batched-0/ordinary": 5883.3499999991545,
+        "batched-0/prepared": 7543.7500000134605,
+        "batched-1/ordinary": 5679.1499999917505,
+        "batched-1/prepared": 8193.750000009459
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 64,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 343.750000001819,
+        "literal/prepared": 3597.899999999754,
+        "batched-0/ordinary": 441.6499999933876,
+        "batched-0/prepared": 3810.4499999917607,
+        "batched-1/ordinary": 450.0000000007276,
+        "batched-1/prepared": 3762.4999999934516
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 64,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 1137.5000000043656,
+        "literal/prepared": 4243.750000000546,
+        "batched-0/ordinary": 1841.6500000057567,
+        "batched-0/prepared": 6214.599999998427,
+        "batched-1/ordinary": 1864.5999999989726,
+        "batched-1/prepared": 6454.200000007404
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 64,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 3156.2500000063665,
+        "literal/prepared": 6252.100000006067,
+        "batched-0/ordinary": 5968.749999988177,
+        "batched-0/prepared": 12893.750000012005,
+        "batched-1/ordinary": 5812.500000001819,
+        "batched-1/prepared": 14808.349999998429
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 64,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 10979.200000019773,
+        "literal/prepared": 14139.550000004418,
+        "batched-0/ordinary": 22679.149999999026,
+        "batched-0/prepared": 41929.15000000994,
+        "batched-1/ordinary": 24833.349999994425,
+        "batched-1/prepared": 46497.900000008485
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 512,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 331.2499999992724,
+        "literal/prepared": 23729.150000008303,
+        "batched-0/ordinary": 1025.0000000041837,
+        "batched-0/prepared": 24364.54999999569,
+        "batched-1/ordinary": 1035.449999994853,
+        "batched-1/prepared": 24047.94999999922
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 512,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 5052.049999994779,
+        "literal/prepared": 31791.649999991023,
+        "batched-0/ordinary": 10047.899999995025,
+        "batched-0/prepared": 45033.34999999424,
+        "batched-1/ordinary": 10158.350000006067,
+        "batched-1/prepared": 49025.000000006
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 512,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 18929.149999985384,
+        "literal/prepared": 42564.549999997325,
+        "batched-0/ordinary": 42864.60000000716,
+        "batched-0/prepared": 94122.90000000212,
+        "batched-1/ordinary": 42108.35000001225,
+        "batched-1/prepared": 108237.49999999562
+      }
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "length": 512,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "literal/ordinary": 74200.00000001892,
+        "literal/prepared": 96264.59999999497,
+        "batched-0/ordinary": 163643.75000000565,
+        "batched-0/prepared": 295274.9999999924,
+        "batched-1/ordinary": 163281.25,
+        "batched-1/prepared": 334752.0999999688
+      }
+    }
+  ],
+  "input_sha256": "ca19991dc8a77383048650bea873281e76a434a037b764005da5073498c0d9d4",
+  "source_sha256": {
+    "scripts/generalization_inputs.py": "36e0288c97c3d3ca33173174f49df9b9008e1a3ccc2a72dbc13d937b1a33fe94",
+    "scripts/generalization_folds_worker.mjs": "d6a5affaf5fe1c90f77689ad48c995e55d79d885a9d81d3ed8cbbce00a94d537",
+    "scripts/generalization_folds_benchmark.py": "6468b1cabff68b915d7b91c1bb04f70565c22d845ade87111aed8cf7d3d8d449"
+  }
+}

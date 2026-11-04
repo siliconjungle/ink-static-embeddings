@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "scope": "Existing generic captured-independent-fold law replayed through ordinary source extension/rewrite compilation. Candidates are not automatically profitable.",
+  "compiler_sha256": "edab3d49df81ea87572f6769d28fe5d1f83b58ff13cbd8393624ddfe5ff06797",
+  "knowledge_snapshot": "b3e4fe5dd4a364ac3996fa734a8cca90441e1b48a18249af28618eba3c1bb3fb",
+  "workloads": [
+    {
+      "name": "matrix-columns",
+      "role": "development",
+      "accepted": [
+        0
+      ],
+      "proposals": 1,
+      "declines": [],
+      "source_sha256": "57e5d5293110b45ed29c01164c759d638b1c0b0c06e9ba2cd0f14a030abc8056"
+    },
+    {
+      "name": "filter-bank",
+      "role": "held-out",
+      "accepted": [
+        0
+      ],
+      "proposals": 1,
+      "declines": [],
+      "source_sha256": "615de2a4e5e9f922be14c794f6de8cb9cedc1afa3365e9875e99d78398ebbd98"
+    },
+    {
+      "name": "channel-energy",
+      "role": "held-out",
+      "accepted": [
+        0,
+        1
+      ],
+      "proposals": 2,
+      "declines": [],
+      "source_sha256": "0c8e0258e34b6b348b625d8f332b3c8112e34c41d04cc3558095450edc40a876"
+    }
+  ]
+}

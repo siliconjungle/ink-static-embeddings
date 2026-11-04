@@ -54,6 +54,24 @@ then visits adjacent dimensions using a dense F32 accumulation buffer. The
 compiler improvement is generic Buffer execution support; this is not a newly
 discovered/equality-selected algorithm. See [how to build and load it](#packed-row-javascript).
 
+The [general typed GPU boundary study](results/generalization/gpu-boundary/REPORT.md)
+improves batch-1,024 throughput from **3.50 to 1.70 µs/embedding (2.06×)** using
+the same Ink source and byte-identical shaders. This compiler/runtime improvement
+copies exact output words into a fresh typed result, avoiding intermediate
+Number arrays. Batch-one latency is unchanged. The public GPU loader uses this
+path when targets are rebuilt with the current pinned compiler; older bundles
+retain the ordinary-read fallback. All five models pass actual-loader hardware
+checks. This is a GPU-versus-GPU comparison, separate from the NumPy studies.
+
+The broader [generalization work](results/generalization/progress.json) remains
+in progress. Frozen matrix-column, feedback-filter and channel-energy programs
+show **3.03× / 8.03× / 2.48× Rust gains** from the existing checked independent-fold
+law, while JavaScript regresses. A new generic Buffer law is checked but has no
+additional robust gain and is retained only as an experimental candidate.
+Ordinary planner acquisition found a 2.63× calibration gain but correctly
+retained the baseline when a smaller independent holdout failed its uncertainty
+and minimum-gain guard. These observations do not install an unconditional policy.
+
 The [experimental GPU adapter](results/gpu-fusion/REPORT.md) takes the previous
 browser GPU path from **3.61 to 1.30 µs/embedding (2.77×)** at batch 1,024 with
 strict arithmetic, or **0.82 µs (4.39×)** using opt-in native float. These are

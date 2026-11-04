@@ -1,0 +1,3515 @@
+{
+  "attempts": 8,
+  "admitted_states": 8,
+  "edges": [
+    {
+      "source": "7ca8cbaa0da144177436378d8716c1ee6862e6a6436eec031a688926ac5aad5f",
+      "target": "b544e1528c0e2ca567395f3d42b2115fca3b77c6c51147463077be0a1cc712ef",
+      "step": "06e92ac2c47a3ae1b50de9ce68e3a5ea9f0f5daf34f9e54e798207a8318f6b73",
+      "kinds": [
+        "extension",
+        "rewrite"
+      ],
+      "recipe": "database-source-algorithms"
+    },
+    {
+      "source": "7ca8cbaa0da144177436378d8716c1ee6862e6a6436eec031a688926ac5aad5f",
+      "target": "f22247018cf1df8ca8c14c08f8845636e6bdd775f8f2908ecbc539b481f2d49b",
+      "step": "0b5a37957e89541471633e9232af3cf1dbe2cb20ba3322a1f4d5d0c10a2bd7a3",
+      "kinds": [
+        "physical"
+      ],
+      "recipe": "literal-physical-alternatives"
+    },
+    {
+      "source": "7ca8cbaa0da144177436378d8716c1ee6862e6a6436eec031a688926ac5aad5f",
+      "target": "2f5d4b11ffb1dc91de1f4298918c1fe2a71c22631b6858b8d9616645d7d17522",
+      "step": "7230338ad49ffd77cca4834843bdb6c1b83207a957fb7224d9bd15bbeaaf6a99",
+      "kinds": [
+        "physical"
+      ],
+      "recipe": "source-capabilities"
+    },
+    {
+      "source": "7ca8cbaa0da144177436378d8716c1ee6862e6a6436eec031a688926ac5aad5f",
+      "target": "714e439ab059ad438a96dc6c72faebbd879aec4018435775be83c897e5a5e89b",
+      "step": "b23d695b09e988febac6da06367648cab0805b9e9b750e1d3c0c838d5c0513f0",
+      "kinds": [
+        "physical"
+      ],
+      "recipe": "scoped-readonly-borrows"
+    },
+    {
+      "source": "7ca8cbaa0da144177436378d8716c1ee6862e6a6436eec031a688926ac5aad5f",
+      "target": "872b7d234715f27a1cad57be3c15a38af4dabd31a0a30b1a675f6ff12363df69",
+      "step": "123c5a6261f5da61a492ebfc1c6938a164f1c18130cfa8afbfecb27321fa5030",
+      "kinds": [
+        "extension",
+        "rewrite"
+      ],
+      "recipe": "database-source-algorithms"
+    },
+    {
+      "source": "7ca8cbaa0da144177436378d8716c1ee6862e6a6436eec031a688926ac5aad5f",
+      "target": "d198de1981cdedc0ee2b55d04d8b13aa7e9f7ef95af1af0efe82919be7fd41b4",
+      "step": "de333392e091739d728df3caec136352a1b4bd49d95de3cc50673afa5b5e7d6b",
+      "kinds": [
+        "physical"
+      ],
+      "recipe": "literal-physical-alternatives"
+    },
+    {
+      "source": "7ca8cbaa0da144177436378d8716c1ee6862e6a6436eec031a688926ac5aad5f",
+      "target": "09c9548423ad3e2222242793d9f9609977f85c0122b2c5f536d66b669a4512f8",
+      "step": "ea6e9856499228767e923f38072c53502c0e8e4ee492b691c9565e4d9a2c81fe",
+      "kinds": [
+        "physical"
+      ],
+      "recipe": "source-capabilities"
+    },
+    {
+      "source": "7ca8cbaa0da144177436378d8716c1ee6862e6a6436eec031a688926ac5aad5f",
+      "target": "57053f0b6c2f61553cd6ddfd2380b3dbf295c93220dd34ba007626f70a2fac46",
+      "step": "8bf6e44e3010f3b84bd25372146d7525af61e4a6200019aa4ce9703aafed7cca",
+      "kinds": [
+        "physical"
+      ],
+      "recipe": "scoped-readonly-borrows"
+    }
+  ],
+  "rejected": [],
+  "stop_reason": "states",
+  "unchecked_checks": 0,
+  "memory_deferred": 0,
+  "remaining": 7,
+  "retained_bytes": 112814,
+  "expanded_states": 1,
+  "expansion_limit": 8,
+  "truncated_expansions": [],
+  "priority_rebuilds": 0,
+  "elapsed_seconds": "3.38319445803063",
+  "scope": "Exact typed states and checked edges; bounded compilation, no runtime optimisation probes",
+  "schema": 1,
+  "semantics": "ink-compiled-plan-v1",
+  "status": "checked",
+  "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+  "compiler_sha256": "edab3d49df81ea87572f6769d28fe5d1f83b58ff13cbd8393624ddfe5ff06797",
+  "registry_sha256": "fc0a1c4045076c83b720a42e17a9fbb9d44a381672e5b0e450d1a4b37919113a",
+  "producer_sha256": "5ef92b27db3251309b7db95859a22cf0f87d855b8496a461730686a4f199c66d",
+  "planning_budgets": {
+    "effort": "quick",
+    "recipe_workers": 2,
+    "expansion_limit": 8,
+    "budget": 64,
+    "state_limit": 8,
+    "time_seconds": 180,
+    "semantic_budget": 2048,
+    "semantic_seconds": 8,
+    "proposal_timeout": 60
+  },
+  "reused_proof_steps": 0,
+  "recipe_cache_hits": 0,
+  "source_snapshot": "d6d65f9d0f3e156423798857314689e9ad4f7f1e459540b1cfa1f664ae826f68",
+  "publication_snapshot": "28debcdbc16496f10615660665f2f08b9b959f6362a3d0c051e90cb37febc59f",
+  "coverage": {
+    "schema": 1,
+    "snapshot": "d6d65f9d0f3e156423798857314689e9ad4f7f1e459540b1cfa1f664ae826f68",
+    "entries": 7,
+    "roles": {
+      "general-proof-dependency": 5,
+      "source-algorithm-discovery": 2
+    },
+    "operations": {
+      "apply": [
+        "general-proof-dependency",
+        "source-algorithm-discovery"
+      ],
+      "binary:*": [
+        "general-proof-dependency"
+      ],
+      "binary:+": [
+        "general-proof-dependency"
+      ],
+      "call:buffer": [
+        "general-proof-dependency",
+        "source-algorithm-discovery"
+      ],
+      "call:foldl": [
+        "general-proof-dependency",
+        "source-algorithm-discovery"
+      ],
+      "field:environment": [
+        "source-algorithm-discovery"
+      ],
+      "field:state": [
+        "source-algorithm-discovery"
+      ],
+      "method:freeze": [
+        "general-proof-dependency",
+        "source-algorithm-discovery"
+      ],
+      "method:map": [
+        "general-proof-dependency",
+        "source-algorithm-discovery"
+      ],
+      "record:Lane": [
+        "source-algorithm-discovery"
+      ]
+    },
+    "unhandled": [],
+    "scope": "Untrusted indexed discovery diagnostics with authenticated active ID set; selected proof closures replay independently; use coverage() for canonical per-object audit"
+  },
+  "recipes": [
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "compact-observer",
+      "status": "declined",
+      "reason": "missing inputs: representation"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-products",
+      "status": "declined",
+      "reason": "missing inputs: representation"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "first-order-choices",
+      "status": "declined",
+      "reason": "missing inputs: representation,definitions"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "migration-bridges",
+      "status": "declined",
+      "reason": "missing inputs: representation"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "residual-execution-carriers",
+      "status": "declined",
+      "reason": "missing inputs: representation"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "graph-resources",
+      "status": "declined",
+      "reason": "missing inputs: route"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "maintained-folds",
+      "label": "maintained-folds",
+      "reason": "no source keeps",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "maintained-folds",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.09302966698305681"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "all-published-packages",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.04977533296914771"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "semantic-laws",
+      "label": "semantic search",
+      "reason": "fixed point within supplied search budget",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "semantic-laws",
+      "status": "diagnostic",
+      "label": "semantic search",
+      "diagnostics": {
+        "attempts": 1,
+        "catalogue_rewrites": 8,
+        "complete": true,
+        "discovered_roots": 8,
+        "exhausted": false,
+        "instance_shapes": {
+          "call:word_and(binary:*(bound, free), bound) = Word:0": 1
+        },
+        "laws": {
+          "824a46f9363a81bb48e1b336e399f5c978d306f1e5c5e221e1be6ae5e36739f6": {
+            "admitted": 0,
+            "checked": 1,
+            "conditions": 1,
+            "duplicate": 0,
+            "instances": {
+              "call:word_and(binary:*(bound, free), bound) = Word:0": 1
+            },
+            "matched": 1,
+            "premises": {
+              "call:word_and(_, _) = Word:0": 1
+            },
+            "reasons": {
+              "premise": 1
+            },
+            "rejected": 1,
+            "samples": [
+              "premise 0 of 824a46f9363a81bb48e1b336e399f5c978d306f1e5c5e221e1be6ae5e36739f6: semantic normal forms differ"
+            ],
+            "unchecked": 0
+          }
+        },
+        "laws_only_rejected": 1,
+        "laws_with_admission": 0,
+        "matched_laws": 1,
+        "memory_exhausted": false,
+        "premise_shapes": {
+          "call:word_and(_, _) = Word:0": 1
+        },
+        "reasons": {
+          "premise": 1
+        },
+        "reported_laws": 1,
+        "rounds": 1,
+        "schema": 1,
+        "scope": "Untrusted search observations; no proof, applicability or profitability authority",
+        "semantics": "ink-search-near-misses-v1",
+        "timed_out": false,
+        "totals": {
+          "checked": 1,
+          "matched": 1,
+          "rejected": 1,
+          "unchecked": 0
+        },
+        "unavailable_functions": 0
+      }
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "semantic-laws",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1,
+        "diagnostic": 1
+      },
+      "elapsed_seconds": "0.639702791988384"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "proved-observations",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.09558058303082362"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "database-source-algorithms",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "proposal": 2
+      },
+      "elapsed_seconds": "0.8542282080161385"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "literal-physical-alternatives",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "proposal": 4
+      },
+      "elapsed_seconds": "0.10530674998881295"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "pure-routing",
+      "label": "routing",
+      "reason": "placement capability requires a GPU host target",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "pure-routing",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.054881874995771796"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "whole-state-protocols",
+      "label": "state-protocols",
+      "reason": "requires JavaScript source state",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "whole-state-protocols",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.05834537500049919"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "guarded-parameter-cache",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.05478066700743511"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "scalar-observation-arguments",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.051359416043851525"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "contextual-properties",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.09632745903218165"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "modular-semantic-laws",
+      "label": "semantic search",
+      "reason": "fixed point within supplied search budget",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "modular-semantic-laws",
+      "status": "diagnostic",
+      "label": "semantic search",
+      "diagnostics": {
+        "attempts": 1,
+        "catalogue_rewrites": 8,
+        "complete": true,
+        "discovered_roots": 8,
+        "exhausted": false,
+        "instance_shapes": {
+          "call:word_and(binary:*(bound, free), bound) = Word:0": 1
+        },
+        "laws": {
+          "824a46f9363a81bb48e1b336e399f5c978d306f1e5c5e221e1be6ae5e36739f6": {
+            "admitted": 0,
+            "checked": 1,
+            "conditions": 1,
+            "duplicate": 0,
+            "instances": {
+              "call:word_and(binary:*(bound, free), bound) = Word:0": 1
+            },
+            "matched": 1,
+            "premises": {
+              "call:word_and(_, _) = Word:0": 1
+            },
+            "reasons": {
+              "premise": 1
+            },
+            "rejected": 1,
+            "samples": [
+              "premise 0 of 824a46f9363a81bb48e1b336e399f5c978d306f1e5c5e221e1be6ae5e36739f6: semantic normal forms differ"
+            ],
+            "unchecked": 0
+          }
+        },
+        "laws_only_rejected": 1,
+        "laws_with_admission": 0,
+        "matched_laws": 1,
+        "memory_exhausted": false,
+        "premise_shapes": {
+          "call:word_and(_, _) = Word:0": 1
+        },
+        "reasons": {
+          "premise": 1
+        },
+        "reported_laws": 1,
+        "rounds": 1,
+        "schema": 1,
+        "scope": "Untrusted search observations; no proof, applicability or profitability authority",
+        "semantics": "ink-search-near-misses-v1",
+        "timed_out": false,
+        "totals": {
+          "checked": 1,
+          "matched": 1,
+          "rejected": 1,
+          "unchecked": 0
+        },
+        "unavailable_functions": 0
+      }
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "modular-semantic-laws",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1,
+        "diagnostic": 1
+      },
+      "elapsed_seconds": "0.5425994590041228"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "source-capabilities",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "proposal": 4
+      },
+      "elapsed_seconds": "0.39716054196469486"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "whole-entry-placement",
+      "label": "routing",
+      "reason": "placement capability requires a GPU host target",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "whole-entry-placement",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.045325292041525245"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "index",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "index",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.04910745803499594"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "frame-projection",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.04410970798926428"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "whole-action-coalescing",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.04973137495107949"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "proved-capacities",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.05995754204923287"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "grouped-index",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "grouped-index",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.06569333298830315"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "contract-witnesses",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.052175457996781915"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "indexed-ordered-dedup",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.10855808400083333"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "private-record-elision",
+      "label": "record-elision",
+      "reason": "requires source JavaScript carrier",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "direct",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "private-record-elision",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.04751187498914078"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "direct",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.04575691698119044"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "whole-action-early-return",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.05951808299869299"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "guarded-whole-call-8",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.10204983304720372"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "private-sum-spines",
+      "label": "sum-spine",
+      "reason": "requires source JavaScript carrier",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "private-sum-spines",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.06378904200391844"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "refresh-on-query",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "refresh-on-query",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.05059537501074374"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "whole-action-single-upsert",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.053380750003270805"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "guarded-whole-call-128",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.10418737499276176"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "string-key-dictionaries",
+      "label": "string-tables",
+      "reason": "requires source JavaScript storage",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "string-key-dictionaries",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.05266195797594264"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-5",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-5",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.05146662500919774"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "small-carrier-inline",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.08080554200569168"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "guarded-whole-call-2048",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.15473054198082536"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "boundary-readers",
+      "label": "boundary-readers",
+      "reason": "requires source JavaScript boundary capability",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "boundary-readers",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.06542654195800424"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-6",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-6",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.04446308396290988"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "fold-state-projection",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.05621562502346933"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "bit-guards",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.06903645797865465"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "scoped-readonly-borrows",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "proposal": 3
+      },
+      "elapsed_seconds": "0.06589404202532023"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-7",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-7",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.05046058300649747"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "loop-state-embedding",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.04812729195691645"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-8",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-8",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.04560775001300499"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-9",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-9",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.059452124987728894"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "proved-scalar-observation-hoists",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.11200783296953887"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-10",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-10",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.04285700002219528"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-11",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-11",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.052728166978340596"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-12",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-12",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.04969833296490833"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-13",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-13",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.05082708300324157"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-14",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-14",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.05333120800787583"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-15",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-15",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.05198062502313405"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-16",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-16",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.05308229097863659"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-17",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-17",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.051885582972317934"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-18",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-18",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.050155291974078864"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-19",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "representation-19",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.05090545798884705"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "partition-index",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "partition-index",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.05807087500579655"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "packed-rows",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "packed-rows",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.054802667000330985"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "sequence-tree",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "sequence-tree",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.061686959001235664"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "scalar-Bool",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "scalar-Bool",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.044577999971807"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "scalar-U64",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "scalar-U64",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.05814729200210422"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "precise-point-cache",
+      "status": "visited",
+      "reason": null,
+      "counts": {},
+      "elapsed_seconds": "0.0984214170021005"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "invariant-representations",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "invariant-representations",
+      "status": "visited",
+      "reason": null,
+      "counts": {
+        "declined": 1
+      },
+      "elapsed_seconds": "0.07140237500425428"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "invariant-observations",
+      "label": "stateful representations",
+      "reason": "source has no state/action roots; pure replacements require source-function equality",
+      "status": "declined"
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "discovery-scheduling",
+      "status": "diagnostic",
+      "diagnostics": {
+        "first_response_reservation": true,
+        "ready_families": 61,
+        "eligible_families": 61,
+        "buffered_proposals": 9,
+        "dropped_proposals": 0,
+        "buffer_byte_limit": 16000000,
+        "buffered_order": "round-robin recipe families; FIFO within each family",
+        "scope": "Bounded proposal ordering only; full-chain admission and global resource limits unchanged"
+      }
+    },
+    {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "recipe": "invariant-observations",
+      "status": "deferred",
+      "reason": "expansion closed before recipe completion"
+    }
+  ],
+  "selection": {
+    "total_ns": {
+      "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95": "64767000",
+      "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80": "24603000",
+      "757085deb11e7112a4cecb81c63e204180bef72f52dbb86d789c0b93f374e187": "70345000",
+      "08f3e5571ab928419baef2b74112a147a92008e12c6f318b1afef19f41d541f0": "70687000",
+      "f493aba8fa4ec5671cfd9fe94435e6c42e1f2e000fae770adb672a45dab26a41": "70781000",
+      "bcb342635261ba9938b50b8c8abc803325fa5e4193cbd253233ac6797946d851": "27567000",
+      "6410e527acb3155d51e40120c05f7eccb5a9cd1cc8969c47fa248b449185d765": "64984000",
+      "36b3f598bedf433110f2b1ad5a0720a2c44ec6d496ceab3f372d81a97c951406": "70528000"
+    },
+    "excluded": {},
+    "observations": {
+      "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95": [
+        "142536a640d1cd7144be5d95a6955fa0b33afd2bad1aa85cd36690be45410ffa",
+        "1c6897de03df116b65e931900902d29ebe74e609b068aed07235523384e5bb93",
+        "9bb8d9b6ba4278938e975e85ad56ebc294839e20b7d4326788b147630ab704f8"
+      ],
+      "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80": [
+        "745ed58110a2a2331e11d37bb66a954a7eb5073043571c7a0ac164236c33cc0e",
+        "b263dacf917e3030bf0b64e9ff515b4cfc6d47e12bc3143de50bbd952ad40963",
+        "f7a4eadd347d4d9e4b858cb4950820603f58250799ef59308ddae96fcfe0f4d6"
+      ],
+      "757085deb11e7112a4cecb81c63e204180bef72f52dbb86d789c0b93f374e187": [
+        "01a91ae2c320bbb8c8e997516cbd55d3aa7113c787c5ab2a23361ae95e65f94d",
+        "98abc25288a8da186dfd896f562301360e477e401ae113b4153971f6c3946083",
+        "b933f6b80a044747a29309d15c906dce6d1aa7928e52d2fff0d64b32b6640658"
+      ],
+      "08f3e5571ab928419baef2b74112a147a92008e12c6f318b1afef19f41d541f0": [
+        "22e43e22969abe0ecfd5e4d3e2a04573b808a72fc7b1ff7e5eb20ae7538ff4a4",
+        "70659a84f327d3926bc7b113b0789c3c3518ef3e6d70bf7122b62365d43d7b78",
+        "ded60fa9ae3cc5fe1b7a8d26e0c6af23bcbbf3b4acc0312086766d1e88e6d63e"
+      ],
+      "f493aba8fa4ec5671cfd9fe94435e6c42e1f2e000fae770adb672a45dab26a41": [
+        "0fccf5d44d5bfe401fd92927ec2cba7d39a34bd299abbb34117d779979d3fe6d",
+        "cce51fb4b8f8a69fe4ebf04048ab4f1d5ebdb859dc9ccfb451a493c13c7f5cc3",
+        "dff5b58748a80d12466dd11b2fe006950c8a57a4b97df55ae4c6cc18a0bc42e2"
+      ],
+      "bcb342635261ba9938b50b8c8abc803325fa5e4193cbd253233ac6797946d851": [
+        "07d87a463aa732ce28eb5180031b7554d153ff854e9fcfd32709cd05978449ea",
+        "af4406a4dd9be0e4fdb8f0e9053dde19d40880fc490a73b5e590f28f22340ba4",
+        "f6c6ba3c17e1eeca39c2b83ba5d1f9e0f9905920313e307ccc8d9b0c7fd10665"
+      ],
+      "6410e527acb3155d51e40120c05f7eccb5a9cd1cc8969c47fa248b449185d765": [
+        "59155af1c1c0c3e0d81af5f9f94f388448b8b78917877671e8b0db4ca48c97ab",
+        "95c03817f952d66ae34210f8d525ae6017350e97bbc427102b93876f8e6671b0",
+        "d65fba3a81e91f4d09dfdae036e081e649057af7533f96d0f23bdb43b429d3df"
+      ],
+      "36b3f598bedf433110f2b1ad5a0720a2c44ec6d496ceab3f372d81a97c951406": [
+        "09f376b5815c93867eec1e886dfeda06ad35c51418b571c6df019f123fb333b7",
+        "2f8d5009daa95d354b81cfa3fd88d88333d3f0c85d3840cb829c53dbad90a41c",
+        "db16c387d00feb8a1186aa502c3f9e3a65993bdecad5bad50d2dc1e271ab662c"
+      ]
+    },
+    "baseline_comparable": true,
+    "uncertainty_guard": {
+      "minimum_gain_ppm": 100000,
+      "estimates": {
+        "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95": {
+          "lower": 63916000,
+          "upper": 82859000
+        },
+        "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80": {
+          "lower": 23892000,
+          "upper": 29088000
+        },
+        "757085deb11e7112a4cecb81c63e204180bef72f52dbb86d789c0b93f374e187": {
+          "lower": 69143000,
+          "upper": 76017000
+        },
+        "08f3e5571ab928419baef2b74112a147a92008e12c6f318b1afef19f41d541f0": {
+          "lower": 69397000,
+          "upper": 76128000
+        },
+        "f493aba8fa4ec5671cfd9fe94435e6c42e1f2e000fae770adb672a45dab26a41": {
+          "lower": 69495000,
+          "upper": 78859000
+        },
+        "bcb342635261ba9938b50b8c8abc803325fa5e4193cbd253233ac6797946d851": {
+          "lower": 26755000,
+          "upper": 31759000
+        },
+        "6410e527acb3155d51e40120c05f7eccb5a9cd1cc8969c47fa248b449185d765": {
+          "lower": 63914000,
+          "upper": 76652000
+        },
+        "36b3f598bedf433110f2b1ad5a0720a2c44ec6d496ceab3f372d81a97c951406": {
+          "lower": 69347000,
+          "upper": 84263000
+        }
+      },
+      "excluded": {
+        "757085deb11e7112a4cecb81c63e204180bef72f52dbb86d789c0b93f374e187": "uncertainty or minimum gain guard",
+        "08f3e5571ab928419baef2b74112a147a92008e12c6f318b1afef19f41d541f0": "uncertainty or minimum gain guard",
+        "f493aba8fa4ec5671cfd9fe94435e6c42e1f2e000fae770adb672a45dab26a41": "uncertainty or minimum gain guard",
+        "6410e527acb3155d51e40120c05f7eccb5a9cd1cc8969c47fa248b449185d765": "uncertainty or minimum gain guard",
+        "36b3f598bedf433110f2b1ad5a0720a2c44ec6d496ceab3f372d81a97c951406": "uncertainty or minimum gain guard"
+      },
+      "scope": "Observed sample extrema over weighted lifecycle phases; conservative empirical guard, not statistical confidence or extrapolation"
+    },
+    "holdout": {
+      "proposed": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+      "accepted": false,
+      "selection": {
+        "total_ns": {
+          "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95": "4892000",
+          "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80": "4338000"
+        },
+        "excluded": {},
+        "observations": {
+          "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95": [
+            "65652facbcbb860ed2874efc56bcb3e8b99eba892fa84352022e8bd268c802e3",
+            "80d1b0ca6921a3a131692d1747e50ac2db504cab43642c70cc0217f290f5c03f",
+            "86e17d0dbabb948806ba231f5272ca77f0dd8f448c4703096e12155310d19e37"
+          ],
+          "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80": [
+            "63068bd73fd2166ae75e992b3c5938260f57a9adb6a09ec7367cd37612b50e1f",
+            "92648197ab2bfb3f9ee9617b07c097d6970d46ec6b5ca73eed6360e99b989e8a",
+            "f2aceb4c4aeb3b58468b3adf6bb21e1093a28b1fb40f5f00e67e1efbe6e37cfd"
+          ]
+        },
+        "baseline_comparable": true,
+        "uncertainty_guard": {
+          "minimum_gain_ppm": 100000,
+          "estimates": {
+            "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95": {
+              "lower": 4750000,
+              "upper": 6065000
+            },
+            "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80": {
+              "lower": 4181000,
+              "upper": 4851000
+            }
+          },
+          "excluded": {
+            "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80": "uncertainty or minimum gain guard"
+          },
+          "scope": "Observed sample extrema over weighted lifecycle phases; conservative empirical guard, not statistical confidence or extrapolation"
+        }
+      },
+      "acquisition": {
+        "schema": 1,
+        "adapter": "generated-json-call-v3;reference-typed-inputs-v1;sealed-request-v1;mean-complete-call;full-bit-aware-output-consumption;whole-host-peak-rss-wait4-v1",
+        "execution_context": {
+          "schema": 1,
+          "target": "rust",
+          "controls": {
+            "CARGO_HOME": "e8e03a813a0861a2a134124a4690096426fb8692c00cf0572a897107d8084a06",
+            "RUSTUP_HOME": "b3b709f9b2f3b7fa35df59bea6438d4b6e88ae8b341b4c67af86d20a177e5e47"
+          },
+          "build": {
+            "profile": "release",
+            "offline": true,
+            "jobs": 2
+          },
+          "configuration_files": {
+            "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/neural-to-ink/.cargo/config": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/neural-to-ink/.cargo/config.toml": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/neural-to-ink/rust-toolchain": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/neural-to-ink/rust-toolchain.toml": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/.cargo/config": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/.cargo/config.toml": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/rust-toolchain": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/rust-toolchain.toml": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/.cargo/config": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/.cargo/config.toml": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/rust-toolchain": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/rust-toolchain.toml": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-03/.cargo/config": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-03/.cargo/config.toml": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-03/rust-toolchain": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-03/rust-toolchain.toml": null,
+            "/Users/jamesaddison/Documents/Codex/.cargo/config": null,
+            "/Users/jamesaddison/Documents/Codex/.cargo/config.toml": null,
+            "/Users/jamesaddison/Documents/Codex/rust-toolchain": null,
+            "/Users/jamesaddison/Documents/Codex/rust-toolchain.toml": null,
+            "/Users/jamesaddison/Documents/.cargo/config": null,
+            "/Users/jamesaddison/Documents/.cargo/config.toml": null,
+            "/Users/jamesaddison/Documents/rust-toolchain": null,
+            "/Users/jamesaddison/Documents/rust-toolchain.toml": null,
+            "/Users/jamesaddison/.cargo/config": null,
+            "/Users/jamesaddison/.cargo/config.toml": null,
+            "/Users/jamesaddison/rust-toolchain": null,
+            "/Users/jamesaddison/rust-toolchain.toml": null,
+            "/Users/.cargo/config": null,
+            "/Users/.cargo/config.toml": null,
+            "/Users/rust-toolchain": null,
+            "/Users/rust-toolchain.toml": null,
+            "/.cargo/config": null,
+            "/.cargo/config.toml": null,
+            "/rust-toolchain": null,
+            "/rust-toolchain.toml": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-04/i-w/work/toolchain/cargo/config": null,
+            "/Users/jamesaddison/Documents/Codex/2026-11-04/i-w/work/toolchain/cargo/config.toml": null
+          },
+          "selected_executables": {},
+          "tools": {
+            "cargo": {
+              "available": true,
+              "executable": "/Users/jamesaddison/Documents/Codex/2026-11-04/i-w/work/toolchain/cargo/bin/cargo",
+              "resolved": "/Users/jamesaddison/Documents/Codex/2026-11-04/i-w/work/toolchain/cargo/bin/rustup",
+              "sha256": "63752a1919a3a4793173ec70f8f212621a7ce38ba6a246095984482f4de20f9f",
+              "version_status": 0,
+              "stdout_sha256": "c35608815f43d0b8788a9b826fad2bb17384f49fb328dc4fe64da9db5f5ef4d6",
+              "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            "rustc": {
+              "available": true,
+              "executable": "/Users/jamesaddison/Documents/Codex/2026-11-04/i-w/work/toolchain/cargo/bin/rustc",
+              "resolved": "/Users/jamesaddison/Documents/Codex/2026-11-04/i-w/work/toolchain/cargo/bin/rustup",
+              "sha256": "63752a1919a3a4793173ec70f8f212621a7ce38ba6a246095984482f4de20f9f",
+              "version_status": 0,
+              "stdout_sha256": "e003fd3d385fcd0de16bc6b049124efb20207831dd810fd4ab39ff079bbb12a5",
+              "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          }
+        },
+        "workload_sha256": "fccf5e5aa54d60c907c1b71453974c9422072505d20e068621fd00bd442c2ef6",
+        "reference_seconds": "0.011104667035397142",
+        "reference_budget": 100000000,
+        "acquisition_seconds": "4.428750041988678",
+        "observations": [
+          "86e17d0dbabb948806ba231f5272ca77f0dd8f448c4703096e12155310d19e37",
+          "f2aceb4c4aeb3b58468b3adf6bb21e1093a28b1fb40f5f00e67e1efbe6e37cfd",
+          "80d1b0ca6921a3a131692d1747e50ac2db504cab43642c70cc0217f290f5c03f",
+          "92648197ab2bfb3f9ee9617b07c097d6970d46ec6b5ca73eed6360e99b989e8a",
+          "65652facbcbb860ed2874efc56bcb3e8b99eba892fa84352022e8bd268c802e3",
+          "63068bd73fd2166ae75e992b3c5938260f57a9adb6a09ec7367cd37612b50e1f"
+        ],
+        "validated_measurements": [
+          "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+          "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95"
+        ],
+        "artifacts": [
+          {
+            "measurement": "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+            "path": "/var/folders/jh/p03z0_b15js0x_4c67zgnf140000gn/T/ink-compiled-planning-e14_7sbi/measurement-xqug1voc/d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95.native",
+            "package": "ink-observed-d3232068286c1037fd6d2adc",
+            "artifact_sha256": "e2de21d6d7d29b73b9ae89757c2b69a6bdf638a399d61abd89a9ce2941823ee9",
+            "emission_seconds": "0.005678541027009487"
+          },
+          {
+            "measurement": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+            "path": "/var/folders/jh/p03z0_b15js0x_4c67zgnf140000gn/T/ink-compiled-planning-e14_7sbi/measurement-xqug1voc/665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80.native",
+            "package": "ink-observed-665a34341c6f65c55c26d9f1",
+            "artifact_sha256": "5c8d7ed093e56440c989fdc5ca76c14af019c0f2c6cdb506e4d38bec4af54ba6",
+            "emission_seconds": "0.014623916998971254"
+          }
+        ],
+        "native_build": {
+          "project_path": "/var/folders/jh/p03z0_b15js0x_4c67zgnf140000gn/T/ink-compiled-planning-e14_7sbi/native-measurements-jzv3flkc",
+          "build_seconds": "3.299846708017867",
+          "lockfile_sha256": "022fe808bf762eefabc6b102fd6840e1bb7f139d47e439bf9c05d234b19323f6",
+          "executable_sha256": "c550a8dee22818a8a79cab421ff770ae759ae647d14d2b72443d5def252756f9",
+          "scope": "Exact dependency versions, offline build; existing generated JSON call and portable snapshot ABIs; OS wait4 peak RSS for each complete host launch, including all variants and adapter; not per-candidate heap"
+        },
+        "rejected": [],
+        "acquisition": {
+          "schema": 1,
+          "processes": 3,
+          "rows": [
+            {
+              "calls_per_sample": 512,
+              "complete_call_ns": [
+                "6065",
+                "4998",
+                "4790",
+                "4801",
+                "4825",
+                "4831",
+                "5154",
+                "4985",
+                "4885",
+                "4847",
+                "4912"
+              ],
+              "measurement": "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+              "phase": "call:run",
+              "phase_calls": 2,
+              "peak_rss_bytes": 2031616,
+              "process": 0
+            },
+            {
+              "calls_per_sample": 512,
+              "complete_call_ns": [
+                "4851",
+                "4664",
+                "4210",
+                "4195",
+                "4205",
+                "4260",
+                "4378",
+                "4345",
+                "4361",
+                "4426",
+                "4286"
+              ],
+              "measurement": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+              "phase": "call:run",
+              "phase_calls": 2,
+              "peak_rss_bytes": 2031616,
+              "process": 0
+            },
+            {
+              "calls_per_sample": 512,
+              "complete_call_ns": [
+                "4858",
+                "4845",
+                "4920",
+                "4912",
+                "4949",
+                "4909",
+                "4968",
+                "4980",
+                "4883",
+                "4892",
+                "4919"
+              ],
+              "measurement": "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+              "phase": "call:run",
+              "phase_calls": 2,
+              "peak_rss_bytes": 2015232,
+              "process": 1
+            },
+            {
+              "calls_per_sample": 1024,
+              "complete_call_ns": [
+                "4293",
+                "4326",
+                "4281",
+                "4496",
+                "4334",
+                "4350",
+                "4431",
+                "4375",
+                "4284",
+                "4338",
+                "4339"
+              ],
+              "measurement": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+              "phase": "call:run",
+              "phase_calls": 2,
+              "peak_rss_bytes": 2015232,
+              "process": 1
+            },
+            {
+              "calls_per_sample": 512,
+              "complete_call_ns": [
+                "4900",
+                "4931",
+                "4872",
+                "4754",
+                "4918",
+                "4784",
+                "4751",
+                "4771",
+                "4750",
+                "4907",
+                "4808"
+              ],
+              "measurement": "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+              "phase": "call:run",
+              "phase_calls": 2,
+              "peak_rss_bytes": 1949696,
+              "process": 2
+            },
+            {
+              "calls_per_sample": 1024,
+              "complete_call_ns": [
+                "4405",
+                "4403",
+                "4392",
+                "4185",
+                "4204",
+                "4405",
+                "4197",
+                "4182",
+                "4181",
+                "4320",
+                "4366"
+              ],
+              "measurement": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+              "phase": "call:run",
+              "phase_calls": 2,
+              "peak_rss_bytes": 1949696,
+              "process": 2
+            }
+          ],
+          "rejected": [],
+          "module_load": [
+            {
+              "measurement": "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+              "setup_ns": "84",
+              "process": 0
+            },
+            {
+              "measurement": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+              "setup_ns": "42",
+              "process": 0
+            },
+            {
+              "measurement": "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+              "setup_ns": "42",
+              "process": 1
+            },
+            {
+              "measurement": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+              "setup_ns": "42",
+              "process": 1
+            },
+            {
+              "measurement": "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+              "setup_ns": "0",
+              "process": 2
+            },
+            {
+              "measurement": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+              "setup_ns": "166",
+              "process": 2
+            }
+          ],
+          "input_fingerprints": [
+            "246fc0387ba255c9ae2fff962dd5b4a769315bf7e73a117dcb3dcebbe16b2580",
+            "8dbbaa6ba8730d34d17eae7f34a16138209f39472cfede8f6c065c793b418169"
+          ]
+        },
+        "scope": "Offline selection inputs; average whole call and full result consumption; separate setup; conservative whole-process peak RSS including all candidates and adapter; not per-candidate heap; no runtime probes"
+      },
+      "scope": "Independent rejection gate; holdout does not rank new alternatives"
+    }
+  },
+  "automatic_probe": null,
+  "measurement_acquisition": {
+    "schema": 1,
+    "adapter": "generated-json-call-v3;reference-typed-inputs-v1;sealed-request-v1;mean-complete-call;full-bit-aware-output-consumption;whole-host-peak-rss-wait4-v1",
+    "execution_context": {
+      "schema": 1,
+      "target": "rust",
+      "controls": {
+        "CARGO_HOME": "e8e03a813a0861a2a134124a4690096426fb8692c00cf0572a897107d8084a06",
+        "RUSTUP_HOME": "b3b709f9b2f3b7fa35df59bea6438d4b6e88ae8b341b4c67af86d20a177e5e47"
+      },
+      "build": {
+        "profile": "release",
+        "offline": true,
+        "jobs": 2
+      },
+      "configuration_files": {
+        "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/neural-to-ink/.cargo/config": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/neural-to-ink/.cargo/config.toml": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/neural-to-ink/rust-toolchain": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/neural-to-ink/rust-toolchain.toml": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/.cargo/config": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/.cargo/config.toml": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/rust-toolchain": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/outputs/rust-toolchain.toml": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/.cargo/config": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/.cargo/config.toml": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/rust-toolchain": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/rust-toolchain.toml": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-03/.cargo/config": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-03/.cargo/config.toml": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-03/rust-toolchain": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-03/rust-toolchain.toml": null,
+        "/Users/jamesaddison/Documents/Codex/.cargo/config": null,
+        "/Users/jamesaddison/Documents/Codex/.cargo/config.toml": null,
+        "/Users/jamesaddison/Documents/Codex/rust-toolchain": null,
+        "/Users/jamesaddison/Documents/Codex/rust-toolchain.toml": null,
+        "/Users/jamesaddison/Documents/.cargo/config": null,
+        "/Users/jamesaddison/Documents/.cargo/config.toml": null,
+        "/Users/jamesaddison/Documents/rust-toolchain": null,
+        "/Users/jamesaddison/Documents/rust-toolchain.toml": null,
+        "/Users/jamesaddison/.cargo/config": null,
+        "/Users/jamesaddison/.cargo/config.toml": null,
+        "/Users/jamesaddison/rust-toolchain": null,
+        "/Users/jamesaddison/rust-toolchain.toml": null,
+        "/Users/.cargo/config": null,
+        "/Users/.cargo/config.toml": null,
+        "/Users/rust-toolchain": null,
+        "/Users/rust-toolchain.toml": null,
+        "/.cargo/config": null,
+        "/.cargo/config.toml": null,
+        "/rust-toolchain": null,
+        "/rust-toolchain.toml": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-04/i-w/work/toolchain/cargo/config": null,
+        "/Users/jamesaddison/Documents/Codex/2026-11-04/i-w/work/toolchain/cargo/config.toml": null
+      },
+      "selected_executables": {},
+      "tools": {
+        "cargo": {
+          "available": true,
+          "executable": "/Users/jamesaddison/Documents/Codex/2026-11-04/i-w/work/toolchain/cargo/bin/cargo",
+          "resolved": "/Users/jamesaddison/Documents/Codex/2026-11-04/i-w/work/toolchain/cargo/bin/rustup",
+          "sha256": "63752a1919a3a4793173ec70f8f212621a7ce38ba6a246095984482f4de20f9f",
+          "version_status": 0,
+          "stdout_sha256": "c35608815f43d0b8788a9b826fad2bb17384f49fb328dc4fe64da9db5f5ef4d6",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "rustc": {
+          "available": true,
+          "executable": "/Users/jamesaddison/Documents/Codex/2026-11-04/i-w/work/toolchain/cargo/bin/rustc",
+          "resolved": "/Users/jamesaddison/Documents/Codex/2026-11-04/i-w/work/toolchain/cargo/bin/rustup",
+          "sha256": "63752a1919a3a4793173ec70f8f212621a7ce38ba6a246095984482f4de20f9f",
+          "version_status": 0,
+          "stdout_sha256": "e003fd3d385fcd0de16bc6b049124efb20207831dd810fd4ab39ff079bbb12a5",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    "workload_sha256": "07c63a23909f7b7546802e9bac9b879c9c287b692686de4716846a732e4f7c42",
+    "reference_seconds": "0.04511291696690023",
+    "reference_budget": 100000000,
+    "acquisition_seconds": "20.008521540963557",
+    "observations": [
+      "9bb8d9b6ba4278938e975e85ad56ebc294839e20b7d4326788b147630ab704f8",
+      "b263dacf917e3030bf0b64e9ff515b4cfc6d47e12bc3143de50bbd952ad40963",
+      "b933f6b80a044747a29309d15c906dce6d1aa7928e52d2fff0d64b32b6640658",
+      "ded60fa9ae3cc5fe1b7a8d26e0c6af23bcbbf3b4acc0312086766d1e88e6d63e",
+      "dff5b58748a80d12466dd11b2fe006950c8a57a4b97df55ae4c6cc18a0bc42e2",
+      "af4406a4dd9be0e4fdb8f0e9053dde19d40880fc490a73b5e590f28f22340ba4",
+      "59155af1c1c0c3e0d81af5f9f94f388448b8b78917877671e8b0db4ca48c97ab",
+      "09f376b5815c93867eec1e886dfeda06ad35c51418b571c6df019f123fb333b7",
+      "142536a640d1cd7144be5d95a6955fa0b33afd2bad1aa85cd36690be45410ffa",
+      "745ed58110a2a2331e11d37bb66a954a7eb5073043571c7a0ac164236c33cc0e",
+      "01a91ae2c320bbb8c8e997516cbd55d3aa7113c787c5ab2a23361ae95e65f94d",
+      "22e43e22969abe0ecfd5e4d3e2a04573b808a72fc7b1ff7e5eb20ae7538ff4a4",
+      "0fccf5d44d5bfe401fd92927ec2cba7d39a34bd299abbb34117d779979d3fe6d",
+      "07d87a463aa732ce28eb5180031b7554d153ff854e9fcfd32709cd05978449ea",
+      "d65fba3a81e91f4d09dfdae036e081e649057af7533f96d0f23bdb43b429d3df",
+      "2f8d5009daa95d354b81cfa3fd88d88333d3f0c85d3840cb829c53dbad90a41c",
+      "1c6897de03df116b65e931900902d29ebe74e609b068aed07235523384e5bb93",
+      "f7a4eadd347d4d9e4b858cb4950820603f58250799ef59308ddae96fcfe0f4d6",
+      "98abc25288a8da186dfd896f562301360e477e401ae113b4153971f6c3946083",
+      "70659a84f327d3926bc7b113b0789c3c3518ef3e6d70bf7122b62365d43d7b78",
+      "cce51fb4b8f8a69fe4ebf04048ab4f1d5ebdb859dc9ccfb451a493c13c7f5cc3",
+      "f6c6ba3c17e1eeca39c2b83ba5d1f9e0f9905920313e307ccc8d9b0c7fd10665",
+      "95c03817f952d66ae34210f8d525ae6017350e97bbc427102b93876f8e6671b0",
+      "db16c387d00feb8a1186aa502c3f9e3a65993bdecad5bad50d2dc1e271ab662c"
+    ],
+    "validated_measurements": [
+      "08f3e5571ab928419baef2b74112a147a92008e12c6f318b1afef19f41d541f0",
+      "36b3f598bedf433110f2b1ad5a0720a2c44ec6d496ceab3f372d81a97c951406",
+      "6410e527acb3155d51e40120c05f7eccb5a9cd1cc8969c47fa248b449185d765",
+      "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+      "757085deb11e7112a4cecb81c63e204180bef72f52dbb86d789c0b93f374e187",
+      "bcb342635261ba9938b50b8c8abc803325fa5e4193cbd253233ac6797946d851",
+      "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+      "f493aba8fa4ec5671cfd9fe94435e6c42e1f2e000fae770adb672a45dab26a41"
+    ],
+    "artifacts": [
+      {
+        "measurement": "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+        "path": "/var/folders/jh/p03z0_b15js0x_4c67zgnf140000gn/T/ink-compiled-planning-e14_7sbi/measurement-vado6beo/d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95.native",
+        "package": "ink-observed-d3232068286c1037fd6d2adc",
+        "artifact_sha256": "e2de21d6d7d29b73b9ae89757c2b69a6bdf638a399d61abd89a9ce2941823ee9",
+        "emission_seconds": "0.03198887495091185"
+      },
+      {
+        "measurement": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+        "path": "/var/folders/jh/p03z0_b15js0x_4c67zgnf140000gn/T/ink-compiled-planning-e14_7sbi/measurement-vado6beo/665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80.native",
+        "package": "ink-observed-665a34341c6f65c55c26d9f1",
+        "artifact_sha256": "5c8d7ed093e56440c989fdc5ca76c14af019c0f2c6cdb506e4d38bec4af54ba6",
+        "emission_seconds": "0.030925833038054407"
+      },
+      {
+        "measurement": "757085deb11e7112a4cecb81c63e204180bef72f52dbb86d789c0b93f374e187",
+        "path": "/var/folders/jh/p03z0_b15js0x_4c67zgnf140000gn/T/ink-compiled-planning-e14_7sbi/measurement-vado6beo/757085deb11e7112a4cecb81c63e204180bef72f52dbb86d789c0b93f374e187.native",
+        "package": "ink-observed-757085deb11e7112a4cecb81",
+        "artifact_sha256": "b246383e8d803f57b43f380c3b53187766580e41567c1368c3212eb23a5f4b9a",
+        "emission_seconds": "0.02216216700617224"
+      },
+      {
+        "measurement": "08f3e5571ab928419baef2b74112a147a92008e12c6f318b1afef19f41d541f0",
+        "path": "/var/folders/jh/p03z0_b15js0x_4c67zgnf140000gn/T/ink-compiled-planning-e14_7sbi/measurement-vado6beo/08f3e5571ab928419baef2b74112a147a92008e12c6f318b1afef19f41d541f0.native",
+        "package": "ink-observed-08f3e5571ab928419baef2b7",
+        "artifact_sha256": "75369cb952856c384ad521e4f2dca697fc3aa55829a619e6a7ef0c4d70e63071",
+        "emission_seconds": "0.025688958005048335"
+      },
+      {
+        "measurement": "f493aba8fa4ec5671cfd9fe94435e6c42e1f2e000fae770adb672a45dab26a41",
+        "path": "/var/folders/jh/p03z0_b15js0x_4c67zgnf140000gn/T/ink-compiled-planning-e14_7sbi/measurement-vado6beo/f493aba8fa4ec5671cfd9fe94435e6c42e1f2e000fae770adb672a45dab26a41.native",
+        "package": "ink-observed-f493aba8fa4ec5671cfd9fe9",
+        "artifact_sha256": "4b4c68f3d8a179857d14029222d1ffd8eeed89e96a823a66a7ca435b87caaa4d",
+        "emission_seconds": "0.029286624980159104"
+      },
+      {
+        "measurement": "bcb342635261ba9938b50b8c8abc803325fa5e4193cbd253233ac6797946d851",
+        "path": "/var/folders/jh/p03z0_b15js0x_4c67zgnf140000gn/T/ink-compiled-planning-e14_7sbi/measurement-vado6beo/bcb342635261ba9938b50b8c8abc803325fa5e4193cbd253233ac6797946d851.native",
+        "package": "ink-observed-bcb342635261ba9938b50b8c",
+        "artifact_sha256": "51f41c78ba27de3e88d37e8dbd33d560a38d0a1ee4ff45344b6685507cf4c9f3",
+        "emission_seconds": "0.031906416988931596"
+      },
+      {
+        "measurement": "6410e527acb3155d51e40120c05f7eccb5a9cd1cc8969c47fa248b449185d765",
+        "path": "/var/folders/jh/p03z0_b15js0x_4c67zgnf140000gn/T/ink-compiled-planning-e14_7sbi/measurement-vado6beo/6410e527acb3155d51e40120c05f7eccb5a9cd1cc8969c47fa248b449185d765.native",
+        "package": "ink-observed-6410e527acb3155d51e40120",
+        "artifact_sha256": "4b47da26e74245d49f31135f2c3810f609e1f9034e8f4b42c3c1b0a84345d7ec",
+        "emission_seconds": "0.012161499995272607"
+      },
+      {
+        "measurement": "36b3f598bedf433110f2b1ad5a0720a2c44ec6d496ceab3f372d81a97c951406",
+        "path": "/var/folders/jh/p03z0_b15js0x_4c67zgnf140000gn/T/ink-compiled-planning-e14_7sbi/measurement-vado6beo/36b3f598bedf433110f2b1ad5a0720a2c44ec6d496ceab3f372d81a97c951406.native",
+        "package": "ink-observed-36b3f598bedf433110f2b1ad",
+        "artifact_sha256": "ad854105435f4766691e0b0c9aec2bff43608242471282dbca00fa0ac5ed5835",
+        "emission_seconds": "0.016463166975881904"
+      }
+    ],
+    "native_build": {
+      "project_path": "/var/folders/jh/p03z0_b15js0x_4c67zgnf140000gn/T/ink-compiled-planning-e14_7sbi/native-measurements-lxnte215",
+      "build_seconds": "16.57115995802451",
+      "lockfile_sha256": "76fbff1d1df1d28d20ccdd7ef7d3a37eb30dcd7f91ccf2d04deeaf4a1f44f06f",
+      "executable_sha256": "b1cc40217642f53bf55c258431321c0de6e0a740fc1d911dbcdf926325a45978",
+      "scope": "Exact dependency versions, offline build; existing generated JSON call and portable snapshot ABIs; OS wait4 peak RSS for each complete host launch, including all variants and adapter; not per-candidate heap"
+    },
+    "rejected": [],
+    "acquisition": {
+      "schema": 1,
+      "processes": 3,
+      "rows": [
+        {
+          "calls_per_sample": 64,
+          "complete_call_ns": [
+            "64666",
+            "82859",
+            "64394",
+            "64322",
+            "64583",
+            "64453",
+            "64051",
+            "64779",
+            "64688",
+            "63916",
+            "64431"
+          ],
+          "measurement": "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2899968,
+          "process": 0
+        },
+        {
+          "calls_per_sample": 128,
+          "complete_call_ns": [
+            "27021",
+            "25303",
+            "24400",
+            "24032",
+            "24118",
+            "24242",
+            "24122",
+            "24320",
+            "24013",
+            "23992",
+            "23892"
+          ],
+          "measurement": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2899968,
+          "process": 0
+        },
+        {
+          "calls_per_sample": 32,
+          "complete_call_ns": [
+            "69678",
+            "70141",
+            "71189",
+            "70076",
+            "69143",
+            "70476",
+            "70216",
+            "71710",
+            "69643",
+            "69478",
+            "69814"
+          ],
+          "measurement": "757085deb11e7112a4cecb81c63e204180bef72f52dbb86d789c0b93f374e187",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2899968,
+          "process": 0
+        },
+        {
+          "calls_per_sample": 64,
+          "complete_call_ns": [
+            "69478",
+            "74850",
+            "69580",
+            "69955",
+            "70321",
+            "70642",
+            "69492",
+            "69722",
+            "69603",
+            "69401",
+            "69397"
+          ],
+          "measurement": "08f3e5571ab928419baef2b74112a147a92008e12c6f318b1afef19f41d541f0",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2899968,
+          "process": 0
+        },
+        {
+          "calls_per_sample": 32,
+          "complete_call_ns": [
+            "70106",
+            "70280",
+            "69642",
+            "69769",
+            "69636",
+            "70209",
+            "70337",
+            "69495",
+            "69742",
+            "69794",
+            "69768"
+          ],
+          "measurement": "f493aba8fa4ec5671cfd9fe94435e6c42e1f2e000fae770adb672a45dab26a41",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2899968,
+          "process": 0
+        },
+        {
+          "calls_per_sample": 128,
+          "complete_call_ns": [
+            "26794",
+            "27164",
+            "27530",
+            "27130",
+            "26979",
+            "27158",
+            "26975",
+            "27399",
+            "26755",
+            "27394",
+            "26846"
+          ],
+          "measurement": "bcb342635261ba9938b50b8c8abc803325fa5e4193cbd253233ac6797946d851",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2899968,
+          "process": 0
+        },
+        {
+          "calls_per_sample": 64,
+          "complete_call_ns": [
+            "64151",
+            "64984",
+            "65768",
+            "64230",
+            "64446",
+            "64452",
+            "64458",
+            "64618",
+            "64915",
+            "64042",
+            "64318"
+          ],
+          "measurement": "6410e527acb3155d51e40120c05f7eccb5a9cd1cc8969c47fa248b449185d765",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2899968,
+          "process": 0
+        },
+        {
+          "calls_per_sample": 64,
+          "complete_call_ns": [
+            "69828",
+            "70687",
+            "69791",
+            "69726",
+            "70135",
+            "69891",
+            "69766",
+            "69985",
+            "69453",
+            "69499",
+            "69347"
+          ],
+          "measurement": "36b3f598bedf433110f2b1ad5a0720a2c44ec6d496ceab3f372d81a97c951406",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2899968,
+          "process": 0
+        },
+        {
+          "calls_per_sample": 64,
+          "complete_call_ns": [
+            "64498",
+            "64877",
+            "64664",
+            "64099",
+            "64876",
+            "65270",
+            "65604",
+            "64473",
+            "66849",
+            "66858",
+            "66479"
+          ],
+          "measurement": "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2899968,
+          "process": 1
+        },
+        {
+          "calls_per_sample": 128,
+          "complete_call_ns": [
+            "24785",
+            "24052",
+            "24713",
+            "24648",
+            "24314",
+            "27030",
+            "25156",
+            "24833",
+            "23957",
+            "24599",
+            "24303"
+          ],
+          "measurement": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2899968,
+          "process": 1
+        },
+        {
+          "calls_per_sample": 64,
+          "complete_call_ns": [
+            "69898",
+            "70345",
+            "70250",
+            "69778",
+            "70833",
+            "72466",
+            "72018",
+            "72000",
+            "69651",
+            "71473",
+            "70816"
+          ],
+          "measurement": "757085deb11e7112a4cecb81c63e204180bef72f52dbb86d789c0b93f374e187",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2899968,
+          "process": 1
+        },
+        {
+          "calls_per_sample": 64,
+          "complete_call_ns": [
+            "69523",
+            "69831",
+            "70089",
+            "69927",
+            "71496",
+            "74421",
+            "73476",
+            "72153",
+            "70687",
+            "70700",
+            "71582"
+          ],
+          "measurement": "08f3e5571ab928419baef2b74112a147a92008e12c6f318b1afef19f41d541f0",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2899968,
+          "process": 1
+        },
+        {
+          "calls_per_sample": 32,
+          "complete_call_ns": [
+            "70973",
+            "70781",
+            "70029",
+            "69994",
+            "71953",
+            "72934",
+            "74331",
+            "71117",
+            "72929",
+            "71031",
+            "69969"
+          ],
+          "measurement": "f493aba8fa4ec5671cfd9fe94435e6c42e1f2e000fae770adb672a45dab26a41",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2899968,
+          "process": 1
+        },
+        {
+          "calls_per_sample": 128,
+          "complete_call_ns": [
+            "26876",
+            "27664",
+            "27655",
+            "27696",
+            "28517",
+            "29313",
+            "27689",
+            "27832",
+            "27542",
+            "29024",
+            "28429"
+          ],
+          "measurement": "bcb342635261ba9938b50b8c8abc803325fa5e4193cbd253233ac6797946d851",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2899968,
+          "process": 1
+        },
+        {
+          "calls_per_sample": 64,
+          "complete_call_ns": [
+            "65396",
+            "64377",
+            "65703",
+            "65099",
+            "65423",
+            "67643",
+            "67681",
+            "65655",
+            "66042",
+            "67508",
+            "66793"
+          ],
+          "measurement": "6410e527acb3155d51e40120c05f7eccb5a9cd1cc8969c47fa248b449185d765",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2899968,
+          "process": 1
+        },
+        {
+          "calls_per_sample": 64,
+          "complete_call_ns": [
+            "70269",
+            "70528",
+            "70052",
+            "71426",
+            "70660",
+            "73349",
+            "72872",
+            "70326",
+            "71000",
+            "71143",
+            "71921"
+          ],
+          "measurement": "36b3f598bedf433110f2b1ad5a0720a2c44ec6d496ceab3f372d81a97c951406",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2899968,
+          "process": 1
+        },
+        {
+          "calls_per_sample": 64,
+          "complete_call_ns": [
+            "64845",
+            "65070",
+            "66607",
+            "64767",
+            "64337",
+            "64071",
+            "72529",
+            "71204",
+            "64485",
+            "71694",
+            "65826"
+          ],
+          "measurement": "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2981888,
+          "process": 2
+        },
+        {
+          "calls_per_sample": 128,
+          "complete_call_ns": [
+            "24816",
+            "24603",
+            "25348",
+            "24823",
+            "24524",
+            "25683",
+            "29088",
+            "28954",
+            "25428",
+            "24522",
+            "24682"
+          ],
+          "measurement": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2981888,
+          "process": 2
+        },
+        {
+          "calls_per_sample": 64,
+          "complete_call_ns": [
+            "70909",
+            "71827",
+            "69894",
+            "69778",
+            "69316",
+            "71226",
+            "75567",
+            "76017",
+            "70332",
+            "71498",
+            "75986"
+          ],
+          "measurement": "757085deb11e7112a4cecb81c63e204180bef72f52dbb86d789c0b93f374e187",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2981888,
+          "process": 2
+        },
+        {
+          "calls_per_sample": 64,
+          "complete_call_ns": [
+            "72710",
+            "72202",
+            "71190",
+            "71219",
+            "69667",
+            "70898",
+            "70600",
+            "76128",
+            "75389",
+            "70787",
+            "70892"
+          ],
+          "measurement": "08f3e5571ab928419baef2b74112a147a92008e12c6f318b1afef19f41d541f0",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2981888,
+          "process": 2
+        },
+        {
+          "calls_per_sample": 64,
+          "complete_call_ns": [
+            "77135",
+            "70982",
+            "70880",
+            "71445",
+            "69974",
+            "69669",
+            "78859",
+            "72104",
+            "76669",
+            "75637",
+            "70991"
+          ],
+          "measurement": "f493aba8fa4ec5671cfd9fe94435e6c42e1f2e000fae770adb672a45dab26a41",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2981888,
+          "process": 2
+        },
+        {
+          "calls_per_sample": 128,
+          "complete_call_ns": [
+            "27876",
+            "27895",
+            "27467",
+            "27567",
+            "27254",
+            "27207",
+            "30178",
+            "31759",
+            "29064",
+            "29793",
+            "27801"
+          ],
+          "measurement": "bcb342635261ba9938b50b8c8abc803325fa5e4193cbd253233ac6797946d851",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2981888,
+          "process": 2
+        },
+        {
+          "calls_per_sample": 64,
+          "complete_call_ns": [
+            "63914",
+            "64527",
+            "63929",
+            "64225",
+            "64318",
+            "64981",
+            "76652",
+            "75079",
+            "68093",
+            "75916",
+            "65962"
+          ],
+          "measurement": "6410e527acb3155d51e40120c05f7eccb5a9cd1cc8969c47fa248b449185d765",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2981888,
+          "process": 2
+        },
+        {
+          "calls_per_sample": 64,
+          "complete_call_ns": [
+            "73414",
+            "70335",
+            "69812",
+            "70613",
+            "71068",
+            "70040",
+            "84263",
+            "75486",
+            "71342",
+            "78394",
+            "70795"
+          ],
+          "measurement": "36b3f598bedf433110f2b1ad5a0720a2c44ec6d496ceab3f372d81a97c951406",
+          "phase": "call:run",
+          "phase_calls": 2,
+          "peak_rss_bytes": 2981888,
+          "process": 2
+        }
+      ],
+      "rejected": [],
+      "module_load": [
+        {
+          "measurement": "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+          "setup_ns": "41",
+          "process": 0
+        },
+        {
+          "measurement": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+          "setup_ns": "42",
+          "process": 0
+        },
+        {
+          "measurement": "757085deb11e7112a4cecb81c63e204180bef72f52dbb86d789c0b93f374e187",
+          "setup_ns": "41",
+          "process": 0
+        },
+        {
+          "measurement": "08f3e5571ab928419baef2b74112a147a92008e12c6f318b1afef19f41d541f0",
+          "setup_ns": "42",
+          "process": 0
+        },
+        {
+          "measurement": "f493aba8fa4ec5671cfd9fe94435e6c42e1f2e000fae770adb672a45dab26a41",
+          "setup_ns": "42",
+          "process": 0
+        },
+        {
+          "measurement": "bcb342635261ba9938b50b8c8abc803325fa5e4193cbd253233ac6797946d851",
+          "setup_ns": "83",
+          "process": 0
+        },
+        {
+          "measurement": "6410e527acb3155d51e40120c05f7eccb5a9cd1cc8969c47fa248b449185d765",
+          "setup_ns": "84",
+          "process": 0
+        },
+        {
+          "measurement": "36b3f598bedf433110f2b1ad5a0720a2c44ec6d496ceab3f372d81a97c951406",
+          "setup_ns": "41",
+          "process": 0
+        },
+        {
+          "measurement": "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+          "setup_ns": "83",
+          "process": 1
+        },
+        {
+          "measurement": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+          "setup_ns": "0",
+          "process": 1
+        },
+        {
+          "measurement": "757085deb11e7112a4cecb81c63e204180bef72f52dbb86d789c0b93f374e187",
+          "setup_ns": "41",
+          "process": 1
+        },
+        {
+          "measurement": "08f3e5571ab928419baef2b74112a147a92008e12c6f318b1afef19f41d541f0",
+          "setup_ns": "0",
+          "process": 1
+        },
+        {
+          "measurement": "f493aba8fa4ec5671cfd9fe94435e6c42e1f2e000fae770adb672a45dab26a41",
+          "setup_ns": "42",
+          "process": 1
+        },
+        {
+          "measurement": "bcb342635261ba9938b50b8c8abc803325fa5e4193cbd253233ac6797946d851",
+          "setup_ns": "42",
+          "process": 1
+        },
+        {
+          "measurement": "6410e527acb3155d51e40120c05f7eccb5a9cd1cc8969c47fa248b449185d765",
+          "setup_ns": "42",
+          "process": 1
+        },
+        {
+          "measurement": "36b3f598bedf433110f2b1ad5a0720a2c44ec6d496ceab3f372d81a97c951406",
+          "setup_ns": "125",
+          "process": 1
+        },
+        {
+          "measurement": "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+          "setup_ns": "83",
+          "process": 2
+        },
+        {
+          "measurement": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+          "setup_ns": "0",
+          "process": 2
+        },
+        {
+          "measurement": "757085deb11e7112a4cecb81c63e204180bef72f52dbb86d789c0b93f374e187",
+          "setup_ns": "42",
+          "process": 2
+        },
+        {
+          "measurement": "08f3e5571ab928419baef2b74112a147a92008e12c6f318b1afef19f41d541f0",
+          "setup_ns": "42",
+          "process": 2
+        },
+        {
+          "measurement": "f493aba8fa4ec5671cfd9fe94435e6c42e1f2e000fae770adb672a45dab26a41",
+          "setup_ns": "0",
+          "process": 2
+        },
+        {
+          "measurement": "bcb342635261ba9938b50b8c8abc803325fa5e4193cbd253233ac6797946d851",
+          "setup_ns": "42",
+          "process": 2
+        },
+        {
+          "measurement": "6410e527acb3155d51e40120c05f7eccb5a9cd1cc8969c47fa248b449185d765",
+          "setup_ns": "42",
+          "process": 2
+        },
+        {
+          "measurement": "36b3f598bedf433110f2b1ad5a0720a2c44ec6d496ceab3f372d81a97c951406",
+          "setup_ns": "42",
+          "process": 2
+        }
+      ],
+      "input_fingerprints": [
+        "9464b25f37269677adbde204da46746ace63041e9c435eb72d869f262544ba88",
+        "ba4cd4a1f887f7a4abf37212e0599381d4e457670eaece6ddb53b02f933af8c0"
+      ]
+    },
+    "scope": "Offline selection inputs; average whole call and full result consumption; separate setup; conservative whole-process peak RSS including all candidates and adapter; not per-candidate heap; no runtime probes",
+    "shortlist": {
+      "measured_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "admitted": 8,
+      "limit": 8,
+      "measured_families": [
+        "database-source-algorithms",
+        "literal-physical-alternatives",
+        "scoped-readonly-borrows",
+        "source-capabilities"
+      ],
+      "admitted_families": [
+        "database-source-algorithms",
+        "literal-physical-alternatives",
+        "scoped-readonly-borrows",
+        "source-capabilities"
+      ],
+      "allocation": "all admitted candidates",
+      "unmeasured_reason": "bounded automatic measurement candidate budget"
+    }
+  },
+  "work_acquisition": null,
+  "selected": "816366abe7eeb9346be242f4b5096f9761c81745d7a0cf75772757f7f98fba50",
+  "candidates": [
+    {
+      "candidate": "83165ced9ecc1e48c89ecb909e60ecdb336753f51f53b66572f708e983b8a854",
+      "measurement": "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+      "plan": "816366abe7eeb9346be242f4b5096f9761c81745d7a0cf75772757f7f98fba50",
+      "state": "7ca8cbaa0da144177436378d8716c1ee6862e6a6436eec031a688926ac5aad5f",
+      "capability": {
+        "emittable": true
+      }
+    },
+    {
+      "candidate": "3fd75e183754f8e9ede03674467bac77e31e5a296611334b3b2b0fdb11fd1082",
+      "measurement": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+      "plan": "5e543662e8d637539d8ea589ab7f7c0607c72b8c7a199dd1a9b11663eb411c64",
+      "state": "b544e1528c0e2ca567395f3d42b2115fca3b77c6c51147463077be0a1cc712ef",
+      "capability": {
+        "emittable": true
+      }
+    },
+    {
+      "candidate": "4db30e755ed1bb24ba92ca508d6ef14f3dec118efb39d454d783f3e592f37273",
+      "measurement": "757085deb11e7112a4cecb81c63e204180bef72f52dbb86d789c0b93f374e187",
+      "plan": "411905444e1b851edb266ae07269f59d6e639f8a401172655998e67414f57f38",
+      "state": "f22247018cf1df8ca8c14c08f8845636e6bdd775f8f2908ecbc539b481f2d49b",
+      "capability": {
+        "emittable": true
+      }
+    },
+    {
+      "candidate": "b752600a5540c2d746e40b704133beab1e8c91f895350e8ec1028200b240f926",
+      "measurement": "08f3e5571ab928419baef2b74112a147a92008e12c6f318b1afef19f41d541f0",
+      "plan": "8c25a177820a439d3ccb1b8f5555d9ed077043eb87b1048126fc29880c417b4c",
+      "state": "2f5d4b11ffb1dc91de1f4298918c1fe2a71c22631b6858b8d9616645d7d17522",
+      "capability": {
+        "emittable": true
+      }
+    },
+    {
+      "candidate": "af6231b3d279535e5350c3b2632a170e0450ee2bdf230d78e802b930369e1643",
+      "measurement": "f493aba8fa4ec5671cfd9fe94435e6c42e1f2e000fae770adb672a45dab26a41",
+      "plan": "8cf4567284f1aa10a093995be29298f78bdf715372a138d1b05db7ce61dc7766",
+      "state": "714e439ab059ad438a96dc6c72faebbd879aec4018435775be83c897e5a5e89b",
+      "capability": {
+        "emittable": true
+      }
+    },
+    {
+      "candidate": "5bc5fabae975d0288e51b9be26ca494f0cd29b9f76fa012fdffddcc0897155b4",
+      "measurement": "bcb342635261ba9938b50b8c8abc803325fa5e4193cbd253233ac6797946d851",
+      "plan": "11505d35b4a5f29853d7780821b8e8545fc9f75baa33db79ebf3e1365ace4ce1",
+      "state": "872b7d234715f27a1cad57be3c15a38af4dabd31a0a30b1a675f6ff12363df69",
+      "capability": {
+        "emittable": true
+      }
+    },
+    {
+      "candidate": "064632bcd8f1aa9a5eda12bf61d79e802b35ba4867d3f844edf5e22c06936ad1",
+      "measurement": "6410e527acb3155d51e40120c05f7eccb5a9cd1cc8969c47fa248b449185d765",
+      "plan": "b384c3138263024472fb993baaa4f2a894179bdbb9043499b62aed8ddd679b8d",
+      "state": "d198de1981cdedc0ee2b55d04d8b13aa7e9f7ef95af1af0efe82919be7fd41b4",
+      "capability": {
+        "emittable": true
+      }
+    },
+    {
+      "candidate": "c04be65a30db9168b3f7928f45e07732dc1a7baf49ab6ed1464ad1d7b421998e",
+      "measurement": "36b3f598bedf433110f2b1ad5a0720a2c44ec6d496ceab3f372d81a97c951406",
+      "plan": "1089c66c2b4715fb994bee24dfc6e4b7627eca6209612bedee6ea000e086dbdf",
+      "state": "09c9548423ad3e2222242793d9f9609977f85c0122b2c5f536d66b669a4512f8",
+      "capability": {
+        "emittable": true
+      }
+    }
+  ],
+  "recipe_scheduling": {
+    "dispatches": {
+      "maintained-folds": 1,
+      "all-published-packages": 1,
+      "database-source-algorithms": 1,
+      "semantic-laws": 1,
+      "proved-observations": 1,
+      "literal-physical-alternatives": 1,
+      "pure-routing": 1,
+      "whole-state-protocols": 1,
+      "guarded-parameter-cache": 1,
+      "scalar-observation-arguments": 1,
+      "modular-semantic-laws": 1,
+      "contextual-properties": 1,
+      "source-capabilities": 1,
+      "whole-entry-placement": 1,
+      "index": 1,
+      "frame-projection": 1,
+      "whole-action-coalescing": 1,
+      "proved-capacities": 1,
+      "grouped-index": 1,
+      "indexed-ordered-dedup": 1,
+      "contract-witnesses": 1,
+      "private-record-elision": 1,
+      "direct": 1,
+      "guarded-whole-call-8": 1,
+      "whole-action-early-return": 1,
+      "private-sum-spines": 1,
+      "refresh-on-query": 1,
+      "guarded-whole-call-128": 1,
+      "whole-action-single-upsert": 1,
+      "string-key-dictionaries": 1,
+      "representation-5": 1,
+      "guarded-whole-call-2048": 1,
+      "small-carrier-inline": 1,
+      "boundary-readers": 1,
+      "representation-6": 1,
+      "fold-state-projection": 1,
+      "bit-guards": 1,
+      "scoped-readonly-borrows": 1,
+      "representation-7": 1,
+      "loop-state-embedding": 1,
+      "representation-8": 1,
+      "proved-scalar-observation-hoists": 1,
+      "representation-9": 1,
+      "representation-10": 1,
+      "representation-11": 1,
+      "representation-12": 1,
+      "representation-13": 1,
+      "representation-14": 1,
+      "representation-15": 1,
+      "representation-16": 1,
+      "representation-17": 1,
+      "representation-18": 1,
+      "representation-19": 1,
+      "partition-index": 1,
+      "packed-rows": 1,
+      "sequence-tree": 1,
+      "scalar-Bool": 1,
+      "scalar-U64": 1,
+      "precise-point-cache": 1,
+      "invariant-representations": 1,
+      "invariant-observations": 1
+    },
+    "scope": "Actual worker/cache dispatch opportunities across expansions; least-served families within database priorities. No proof or profitability authority."
+  },
+  "diagnostics": {
+    "schema": 1,
+    "semantics": "ink-planning-diagnostics-v1",
+    "scope": "Recorded gates only; no proof authority, no exhaustive applicability claim, no profitability claim on unseen inputs",
+    "provenance": "recorded planning invocation",
+    "fresh_work": {
+      "search": true,
+      "measurements": true,
+      "selected_replay_reported": true
+    },
+    "binding": {
+      "source": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+      "compiler_sha256": "edab3d49df81ea87572f6769d28fe5d1f83b58ff13cbd8393624ddfe5ff06797",
+      "producer_sha256": "5ef92b27db3251309b7db95859a22cf0f87d855b8496a461730686a4f199c66d",
+      "source_snapshot": "d6d65f9d0f3e156423798857314689e9ad4f7f1e459540b1cfa1f664ae826f68",
+      "selected": "816366abe7eeb9346be242f4b5096f9761c81745d7a0cf75772757f7f98fba50"
+    },
+    "search": {
+      "stop_reason": "states",
+      "exhausted": true,
+      "attempts": 8,
+      "admitted_states": 8,
+      "rejected_proofs": 0,
+      "checked_edges": 8,
+      "remaining": 7,
+      "elapsed_seconds": "3.38319445803063",
+      "recipes": {
+        "all-published-packages": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "bit-guards": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "boundary-readers": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "requires source JavaScript boundary capability": 1
+          }
+        },
+        "compact-observer": {
+          "statuses": {
+            "declined": 1
+          },
+          "results": {},
+          "reasons": {
+            "missing inputs: representation": 1
+          }
+        },
+        "contextual-properties": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "contract-witnesses": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "database-source-algorithms": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {
+            "proposal": 2
+          },
+          "reasons": {}
+        },
+        "direct": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "discovery-scheduling": {
+          "statuses": {
+            "diagnostic": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "first-order-choices": {
+          "statuses": {
+            "declined": 1
+          },
+          "results": {},
+          "reasons": {
+            "missing inputs: representation,definitions": 1
+          }
+        },
+        "fold-state-projection": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "frame-projection": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "graph-resources": {
+          "statuses": {
+            "declined": 1
+          },
+          "results": {},
+          "reasons": {
+            "missing inputs: route": 1
+          }
+        },
+        "grouped-index": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "guarded-parameter-cache": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "guarded-whole-call-128": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "guarded-whole-call-2048": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "guarded-whole-call-8": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "index": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "indexed-ordered-dedup": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "invariant-observations": {
+          "statuses": {
+            "declined": 1,
+            "deferred": 1
+          },
+          "results": {},
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1,
+            "expansion closed before recipe completion": 1
+          }
+        },
+        "invariant-representations": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "literal-physical-alternatives": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {
+            "proposal": 4
+          },
+          "reasons": {}
+        },
+        "loop-state-embedding": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "maintained-folds": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "no source keeps": 1
+          }
+        },
+        "migration-bridges": {
+          "statuses": {
+            "declined": 1
+          },
+          "results": {},
+          "reasons": {
+            "missing inputs: representation": 1
+          }
+        },
+        "modular-semantic-laws": {
+          "statuses": {
+            "declined": 1,
+            "diagnostic": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1,
+            "diagnostic": 1
+          },
+          "reasons": {
+            "fixed point within supplied search budget": 1
+          }
+        },
+        "packed-rows": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "partition-index": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "precise-point-cache": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "private-record-elision": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "requires source JavaScript carrier": 1
+          }
+        },
+        "private-sum-spines": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "requires source JavaScript carrier": 1
+          }
+        },
+        "proved-capacities": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "proved-observations": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "proved-scalar-observation-hoists": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "pure-routing": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "placement capability requires a GPU host target": 1
+          }
+        },
+        "refresh-on-query": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "representation-10": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "representation-11": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "representation-12": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "representation-13": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "representation-14": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "representation-15": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "representation-16": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "representation-17": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "representation-18": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "representation-19": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "representation-5": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "representation-6": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "representation-7": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "representation-8": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "representation-9": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "representation-products": {
+          "statuses": {
+            "declined": 1
+          },
+          "results": {},
+          "reasons": {
+            "missing inputs: representation": 1
+          }
+        },
+        "residual-execution-carriers": {
+          "statuses": {
+            "declined": 1
+          },
+          "results": {},
+          "reasons": {
+            "missing inputs: representation": 1
+          }
+        },
+        "scalar-Bool": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "scalar-U64": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "scalar-observation-arguments": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "scoped-readonly-borrows": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {
+            "proposal": 3
+          },
+          "reasons": {}
+        },
+        "semantic-laws": {
+          "statuses": {
+            "declined": 1,
+            "diagnostic": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1,
+            "diagnostic": 1
+          },
+          "reasons": {
+            "fixed point within supplied search budget": 1
+          }
+        },
+        "sequence-tree": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "source has no state/action roots; pure replacements require source-function equality": 1
+          }
+        },
+        "small-carrier-inline": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "source-capabilities": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {
+            "proposal": 4
+          },
+          "reasons": {}
+        },
+        "string-key-dictionaries": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "requires source JavaScript storage": 1
+          }
+        },
+        "whole-action-coalescing": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "whole-action-early-return": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "whole-action-single-upsert": {
+          "statuses": {
+            "visited": 1
+          },
+          "results": {},
+          "reasons": {}
+        },
+        "whole-entry-placement": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "placement capability requires a GPU host target": 1
+          }
+        },
+        "whole-state-protocols": {
+          "statuses": {
+            "declined": 1,
+            "visited": 1
+          },
+          "results": {
+            "declined": 1
+          },
+          "reasons": {
+            "requires JavaScript source state": 1
+          }
+        }
+      }
+    },
+    "delivery": {
+      "baseline_retained": true,
+      "reason": null,
+      "admitted_candidates": 8,
+      "gates": {
+        "selected_baseline": 1,
+        "measured_not_selected": 2,
+        "profitability": 5
+      },
+      "cache": null,
+      "probe": null
+    },
+    "candidates": [
+      {
+        "index": 0,
+        "candidate": "83165ced9ecc1e48c89ecb909e60ecdb336753f51f53b66572f708e983b8a854",
+        "plan": "816366abe7eeb9346be242f4b5096f9761c81745d7a0cf75772757f7f98fba50",
+        "measurement": "d3232068286c1037fd6d2adcb3ee25c88b004255784af25d47e1ce709bec7d95",
+        "gate": "selected_baseline",
+        "reason": null,
+        "measured": true,
+        "sample_rows": 3
+      },
+      {
+        "index": 1,
+        "candidate": "3fd75e183754f8e9ede03674467bac77e31e5a296611334b3b2b0fdb11fd1082",
+        "plan": "5e543662e8d637539d8ea589ab7f7c0607c72b8c7a199dd1a9b11663eb411c64",
+        "measurement": "665a34341c6f65c55c26d9f1aa0867f75e443e5620649053f3037930ec200a80",
+        "gate": "measured_not_selected",
+        "reason": "comparable evidence recorded; another implementation selected",
+        "measured": true,
+        "sample_rows": 3
+      },
+      {
+        "index": 2,
+        "candidate": "4db30e755ed1bb24ba92ca508d6ef14f3dec118efb39d454d783f3e592f37273",
+        "plan": "411905444e1b851edb266ae07269f59d6e639f8a401172655998e67414f57f38",
+        "measurement": "757085deb11e7112a4cecb81c63e204180bef72f52dbb86d789c0b93f374e187",
+        "gate": "profitability",
+        "reason": "uncertainty or minimum gain guard",
+        "measured": true,
+        "sample_rows": 3
+      },
+      {
+        "index": 3,
+        "candidate": "b752600a5540c2d746e40b704133beab1e8c91f895350e8ec1028200b240f926",
+        "plan": "8c25a177820a439d3ccb1b8f5555d9ed077043eb87b1048126fc29880c417b4c",
+        "measurement": "08f3e5571ab928419baef2b74112a147a92008e12c6f318b1afef19f41d541f0",
+        "gate": "profitability",
+        "reason": "uncertainty or minimum gain guard",
+        "measured": true,
+        "sample_rows": 3
+      },
+      {
+        "index": 4,
+        "candidate": "af6231b3d279535e5350c3b2632a170e0450ee2bdf230d78e802b930369e1643",
+        "plan": "8cf4567284f1aa10a093995be29298f78bdf715372a138d1b05db7ce61dc7766",
+        "measurement": "f493aba8fa4ec5671cfd9fe94435e6c42e1f2e000fae770adb672a45dab26a41",
+        "gate": "profitability",
+        "reason": "uncertainty or minimum gain guard",
+        "measured": true,
+        "sample_rows": 3
+      },
+      {
+        "index": 5,
+        "candidate": "5bc5fabae975d0288e51b9be26ca494f0cd29b9f76fa012fdffddcc0897155b4",
+        "plan": "11505d35b4a5f29853d7780821b8e8545fc9f75baa33db79ebf3e1365ace4ce1",
+        "measurement": "bcb342635261ba9938b50b8c8abc803325fa5e4193cbd253233ac6797946d851",
+        "gate": "measured_not_selected",
+        "reason": "comparable evidence recorded; another implementation selected",
+        "measured": true,
+        "sample_rows": 3
+      },
+      {
+        "index": 6,
+        "candidate": "064632bcd8f1aa9a5eda12bf61d79e802b35ba4867d3f844edf5e22c06936ad1",
+        "plan": "b384c3138263024472fb993baaa4f2a894179bdbb9043499b62aed8ddd679b8d",
+        "measurement": "6410e527acb3155d51e40120c05f7eccb5a9cd1cc8969c47fa248b449185d765",
+        "gate": "profitability",
+        "reason": "uncertainty or minimum gain guard",
+        "measured": true,
+        "sample_rows": 3
+      },
+      {
+        "index": 7,
+        "candidate": "c04be65a30db9168b3f7928f45e07732dc1a7baf49ab6ed1464ad1d7b421998e",
+        "plan": "1089c66c2b4715fb994bee24dfc6e4b7627eca6209612bedee6ea000e086dbdf",
+        "measurement": "36b3f598bedf433110f2b1ad5a0720a2c44ec6d496ceab3f372d81a97c951406",
+        "gate": "profitability",
+        "reason": "uncertainty or minimum gain guard",
+        "measured": true,
+        "sample_rows": 3
+      }
+    ],
+    "expected_opportunities": [],
+    "rejected_proofs": [],
+    "funnel": {
+      "semantic_matched": 2,
+      "semantic_checked": 2,
+      "semantic_admitted": 0,
+      "semantic_rejected": 2,
+      "semantic_unchecked": 0,
+      "plan_attempts": 8,
+      "plan_admitted_states": 8,
+      "plan_rejected": 0,
+      "admitted_edges": {
+        "extension": 2,
+        "rewrite": 2,
+        "physical": 6
+      },
+      "candidates": 8,
+      "selected_alternative": false,
+      "last_gate": "profitability",
+      "scope": "Recorded stage counts for this compilation only"
+    },
+    "semantic": {
+      "receipts": 2,
+      "totals": {
+        "checked": 2,
+        "matched": 2,
+        "rejected": 2,
+        "unchecked": 0
+      },
+      "reasons": {
+        "premise": 2
+      },
+      "premise_shapes": {
+        "call:word_and(_, _) = Word:0": 2
+      },
+      "instance_shapes": {
+        "call:word_and(binary:*(bound, free), bound) = Word:0": 2
+      },
+      "laws_matched": 1,
+      "laws_admitted": 0,
+      "laws_only_rejected": 1,
+      "laws": {
+        "824a46f9363a81bb48e1b336e399f5c978d306f1e5c5e221e1be6ae5e36739f6": {
+          "matched": 2,
+          "checked": 2,
+          "admitted": 0,
+          "rejected": 2,
+          "unchecked": 0,
+          "reasons": {
+            "premise": 2
+          },
+          "premises": {
+            "call:word_and(_, _) = Word:0": 2
+          },
+          "samples": [
+            "premise 0 of 824a46f9363a81bb48e1b336e399f5c978d306f1e5c5e221e1be6ae5e36739f6: semantic normal forms differ"
+          ]
+        }
+      },
+      "scope": "Untrusted search observations merged across admitted states; not proof or applicability claims"
+    },
+    "recipe_seconds": {
+      "database-source-algorithms": 0.854,
+      "semantic-laws": 0.64,
+      "modular-semantic-laws": 0.543,
+      "source-capabilities": 0.397,
+      "guarded-whole-call-2048": 0.155,
+      "proved-scalar-observation-hoists": 0.112,
+      "indexed-ordered-dedup": 0.109,
+      "literal-physical-alternatives": 0.105,
+      "guarded-whole-call-128": 0.104,
+      "guarded-whole-call-8": 0.102,
+      "precise-point-cache": 0.098,
+      "contextual-properties": 0.096,
+      "proved-observations": 0.096,
+      "maintained-folds": 0.093,
+      "small-carrier-inline": 0.081,
+      "invariant-representations": 0.071,
+      "bit-guards": 0.069,
+      "scoped-readonly-borrows": 0.066,
+      "grouped-index": 0.066,
+      "boundary-readers": 0.065,
+      "private-sum-spines": 0.064,
+      "sequence-tree": 0.062,
+      "proved-capacities": 0.06,
+      "whole-action-early-return": 0.06,
+      "representation-9": 0.059,
+      "whole-state-protocols": 0.058,
+      "scalar-U64": 0.058,
+      "partition-index": 0.058,
+      "fold-state-projection": 0.056,
+      "pure-routing": 0.055,
+      "packed-rows": 0.055,
+      "guarded-parameter-cache": 0.055,
+      "whole-action-single-upsert": 0.053,
+      "representation-14": 0.053,
+      "representation-16": 0.053,
+      "representation-11": 0.053,
+      "string-key-dictionaries": 0.053,
+      "contract-witnesses": 0.052,
+      "representation-15": 0.052,
+      "representation-17": 0.052,
+      "representation-5": 0.051,
+      "scalar-observation-arguments": 0.051,
+      "representation-19": 0.051,
+      "representation-13": 0.051,
+      "refresh-on-query": 0.051,
+      "representation-7": 0.05,
+      "representation-18": 0.05,
+      "all-published-packages": 0.05,
+      "whole-action-coalescing": 0.05,
+      "representation-12": 0.05,
+      "index": 0.049,
+      "loop-state-embedding": 0.048,
+      "private-record-elision": 0.048,
+      "direct": 0.046,
+      "representation-8": 0.046,
+      "whole-entry-placement": 0.045,
+      "scalar-Bool": 0.045,
+      "representation-6": 0.044,
+      "frame-projection": 0.044,
+      "representation-10": 0.043,
+      "compact-observer": 0.0,
+      "representation-products": 0.0,
+      "first-order-choices": 0.0,
+      "migration-bridges": 0.0,
+      "residual-execution-carriers": 0.0,
+      "graph-resources": 0.0,
+      "invariant-observations": 0.0,
+      "discovery-scheduling": 0.0
+    }
+  }
+}

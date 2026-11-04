@@ -144,8 +144,17 @@ export async function loadStaticEmbedding(base,{backend='javascript',device=null
             await session.write('tokens',tokens);await session.write('starts',starts);await session.write('lengths',lengths);
             const receipt=await session.step();
             if(receipt.backend!=='gpu')throw Error('GPU fallback');
+            const result=new Float32Array(batchSize*manifest.dimensions);
+            if(typeof session.readInto==='function'){
+              const copied=await session.readInto('embeddings',result);
+              if(copied.count!==result.length)throw Error('Unexpected GPU embedding dimension');
+              return result;
+            }
             const out=await session.read({outputs:['embeddings']});
-            return Float32Array.from(out.values.embeddings);
+            const values=out.values.embeddings,bits=new Uint32Array(result.buffer);
+            if(values.length!==result.length)throw Error('Unexpected GPU embedding dimension');
+            for(let i=0;i<values.length;i++)typeof values[i]==='number'?result[i]=values[i]:bits[i]=values[i].F32Bits;
+            return result;
           };
           const result=pending.then(run);pending=result.catch(()=>{});return result;
         },

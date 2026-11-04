@@ -1,0 +1,5445 @@
+{
+  "group": 1,
+  "rows": [
+    {
+      "edge": false,
+      "index": 0,
+      "lanes": 0,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            55.41,
+            55.0,
+            56.25,
+            55.0,
+            54.59,
+            55.0,
+            54.58,
+            55.0,
+            55.0
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            59.17,
+            56.66,
+            56.25,
+            56.25,
+            56.25,
+            55.0,
+            50.83,
+            51.67,
+            50.42
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            57.5,
+            56.67,
+            56.25,
+            56.25,
+            56.25,
+            56.25,
+            56.25,
+            56.25,
+            56.25
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 8
+    },
+    {
+      "edge": false,
+      "index": 1,
+      "lanes": 4,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            73.75,
+            74.58,
+            73.33,
+            73.33,
+            73.34,
+            75.0,
+            75.41,
+            75.42,
+            74.59
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            95.41,
+            88.33,
+            87.92,
+            87.92,
+            90.83,
+            98.34,
+            97.92,
+            100.0,
+            98.33
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            110.42,
+            100.0,
+            92.5,
+            92.08,
+            92.08,
+            92.5,
+            92.5,
+            92.92,
+            92.5
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 8
+    },
+    {
+      "edge": false,
+      "index": 2,
+      "lanes": 16,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            77.08,
+            76.25,
+            76.67,
+            77.08,
+            77.09,
+            77.09,
+            75.84,
+            75.41,
+            75.42
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            106.25,
+            104.17,
+            104.17,
+            104.59,
+            104.16,
+            105.42,
+            105.41,
+            104.59,
+            130.0
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            109.59,
+            133.75,
+            126.67,
+            110.41,
+            110.42,
+            112.08,
+            118.75,
+            111.25,
+            120.0
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 8
+    },
+    {
+      "edge": false,
+      "index": 3,
+      "lanes": 64,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            97.5,
+            97.08,
+            98.75,
+            96.67,
+            97.92,
+            98.33,
+            99.58,
+            108.75,
+            108.33
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            156.67,
+            192.91,
+            197.09,
+            162.92,
+            154.58,
+            155.0,
+            154.17,
+            153.75,
+            154.58
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            169.17,
+            155.83,
+            154.58,
+            154.16,
+            154.17,
+            157.5,
+            155.83,
+            154.58,
+            155.84
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 8
+    },
+    {
+      "edge": false,
+      "index": 4,
+      "lanes": 0,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            70.42,
+            71.66,
+            71.67,
+            71.67,
+            70.42,
+            70.41,
+            71.25,
+            72.5,
+            71.66
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            72.92,
+            75.41,
+            74.58,
+            72.5,
+            72.5,
+            73.33,
+            72.92,
+            72.5,
+            72.5
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            73.75,
+            72.91,
+            72.5,
+            73.33,
+            72.08,
+            72.08,
+            72.5,
+            73.75,
+            72.5
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 8
+    },
+    {
+      "edge": false,
+      "index": 5,
+      "lanes": 4,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            112.09,
+            119.17,
+            119.58,
+            118.33,
+            120.0,
+            112.5,
+            112.09,
+            111.67,
+            110.41
+          ],
+          "sink": 587372988
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            157.5,
+            157.91,
+            142.5,
+            142.08,
+            141.66,
+            140.83,
+            142.08,
+            156.67,
+            157.5
+          ],
+          "sink": 587372988
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            168.34,
+            168.75,
+            168.34,
+            164.59,
+            152.92,
+            147.08,
+            147.08,
+            144.59,
+            144.58
+          ],
+          "sink": 587372988
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 8
+    },
+    {
+      "edge": false,
+      "index": 6,
+      "lanes": 16,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            162.91,
+            165.42,
+            165.83,
+            207.91,
+            204.58,
+            165.42,
+            162.5,
+            163.75,
+            162.5
+          ],
+          "sink": 3065285940
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            197.92,
+            196.25,
+            196.25,
+            199.17,
+            197.5,
+            192.5,
+            190.0,
+            189.17,
+            187.91
+          ],
+          "sink": 3065285940
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            194.17,
+            196.25,
+            194.58,
+            196.25,
+            193.75,
+            190.83,
+            190.41,
+            190.0,
+            187.08
+          ],
+          "sink": 3065285940
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 8
+    },
+    {
+      "edge": false,
+      "index": 7,
+      "lanes": 64,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            331.67,
+            298.33,
+            298.33,
+            321.67,
+            332.92,
+            327.08,
+            328.75,
+            328.33,
+            328.33
+          ],
+          "sink": 4293831936
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            370.42,
+            369.17,
+            369.16,
+            367.92,
+            369.16,
+            335.0,
+            345.41,
+            366.67,
+            369.17
+          ],
+          "sink": 4293831936
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            370.0,
+            370.0,
+            370.0,
+            369.16,
+            370.42,
+            368.34,
+            363.75,
+            362.08,
+            385.0
+          ],
+          "sink": 4293831936
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 8
+    },
+    {
+      "edge": false,
+      "index": 8,
+      "lanes": 0,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            90.42,
+            90.41,
+            90.0,
+            90.41,
+            90.42,
+            90.0,
+            90.0,
+            92.09,
+            90.41
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            94.58,
+            95.0,
+            92.92,
+            92.92,
+            92.92,
+            94.58,
+            94.17,
+            94.59,
+            94.16
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            92.92,
+            93.75,
+            93.75,
+            94.17,
+            93.75,
+            93.33,
+            93.33,
+            93.75,
+            93.75
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 8
+    },
+    {
+      "edge": false,
+      "index": 9,
+      "lanes": 4,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            365.42,
+            367.09,
+            366.25,
+            350.0,
+            328.33,
+            328.75,
+            327.08,
+            328.33,
+            327.5
+          ],
+          "sink": 161072414
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            252.92,
+            247.5,
+            247.92,
+            248.75,
+            249.16,
+            249.58,
+            250.0,
+            248.33,
+            249.17
+          ],
+          "sink": 161072414
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            258.75,
+            252.92,
+            255.0,
+            254.17,
+            254.16,
+            256.66,
+            257.09,
+            284.17,
+            257.5
+          ],
+          "sink": 161072414
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 8
+    },
+    {
+      "edge": false,
+      "index": 10,
+      "lanes": 16,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            1131.25,
+            1132.5,
+            1080.0,
+            1014.58,
+            1014.17,
+            1014.58,
+            1015.0,
+            1013.33,
+            1015.0
+          ],
+          "sink": 1732495612
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            497.5,
+            542.92,
+            547.08,
+            580.41,
+            553.33,
+            549.16,
+            546.25,
+            546.25,
+            550.42
+          ],
+          "sink": 1732495612
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            522.5,
+            547.5,
+            550.0,
+            551.25,
+            552.92,
+            554.17,
+            551.25,
+            552.92,
+            550.42
+          ],
+          "sink": 1732495612
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 8
+    },
+    {
+      "edge": false,
+      "index": 11,
+      "lanes": 64,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            3761.25,
+            3761.66,
+            3762.08,
+            3761.67,
+            3760.0,
+            3761.25,
+            3762.91,
+            4347.92,
+            4463.33
+          ],
+          "sink": 4289385424
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            1698.34,
+            1719.17,
+            1667.5,
+            1702.09,
+            1781.67,
+            1657.91,
+            1712.92,
+            1711.25,
+            1654.16
+          ],
+          "sink": 4289385424
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            1672.92,
+            1715.42,
+            1690.0,
+            1682.92,
+            1738.75,
+            1688.33,
+            1695.0,
+            1713.75,
+            1668.75
+          ],
+          "sink": 4289385424
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 8
+    },
+    {
+      "edge": false,
+      "index": 12,
+      "lanes": 0,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            83.75,
+            82.91,
+            84.17,
+            83.33,
+            83.75,
+            84.58,
+            105.0,
+            97.08,
+            85.83
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            95.83,
+            93.33,
+            96.67,
+            96.66,
+            95.84,
+            96.25,
+            95.83,
+            95.83,
+            96.67
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            96.67,
+            95.42,
+            95.83,
+            95.41,
+            95.42,
+            95.0,
+            95.41,
+            95.42,
+            95.41
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 8
+    },
+    {
+      "edge": false,
+      "index": 13,
+      "lanes": 4,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            3136.67,
+            3140.83,
+            3070.83,
+            3072.5,
+            3074.17,
+            3074.17,
+            3089.59,
+            3074.59,
+            3076.66
+          ],
+          "sink": 2750556778
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            1063.75,
+            1045.83,
+            1001.25,
+            1031.25,
+            1045.42,
+            1050.84,
+            1050.42,
+            1015.83,
+            1051.66
+          ],
+          "sink": 2750556778
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            1056.25,
+            1283.75,
+            1236.25,
+            1318.33,
+            1339.16,
+            1300.83,
+            1217.08,
+            1298.33,
+            1334.17
+          ],
+          "sink": 2750556778
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 8
+    },
+    {
+      "edge": false,
+      "index": 14,
+      "lanes": 16,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            11959.16,
+            11803.33,
+            11990.42,
+            12239.58,
+            11872.5,
+            11807.08,
+            11802.5,
+            11818.75,
+            11802.92
+          ],
+          "sink": 1681500656
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            3371.25,
+            3367.09,
+            3388.33,
+            3331.25,
+            3370.41,
+            3336.66,
+            3407.09,
+            3398.75,
+            3379.59
+          ],
+          "sink": 1681500656
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            3340.41,
+            3335.42,
+            3398.33,
+            3366.25,
+            3364.17,
+            3335.0,
+            3330.42,
+            3327.91,
+            3340.84
+          ],
+          "sink": 1681500656
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 8
+    },
+    {
+      "edge": false,
+      "index": 15,
+      "lanes": 64,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            48670.0,
+            47018.75,
+            46768.75,
+            48095.83,
+            46766.66,
+            47585.83,
+            46975.0,
+            47071.25,
+            47196.67
+          ],
+          "sink": 3026167904
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            12484.59,
+            12294.59,
+            12513.75,
+            12561.25,
+            12437.5,
+            12471.25,
+            12470.84,
+            12470.0,
+            12488.33
+          ],
+          "sink": 3026167904
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            12627.09,
+            12466.67,
+            12436.66,
+            12494.17,
+            12403.75,
+            12471.67,
+            12514.17,
+            12588.33,
+            12489.16
+          ],
+          "sink": 3026167904
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 8
+    },
+    {
+      "edge": false,
+      "index": 16,
+      "lanes": 0,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            295.0,
+            294.58,
+            297.08,
+            299.59,
+            295.83,
+            295.84,
+            295.42,
+            296.66,
+            295.42
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            329.58,
+            324.17,
+            351.66,
+            326.67,
+            341.67,
+            343.33,
+            325.42,
+            322.92,
+            323.75
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            335.0,
+            332.5,
+            333.75,
+            332.91,
+            332.08,
+            330.83,
+            334.58,
+            334.16,
+            334.17
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 64
+    },
+    {
+      "edge": false,
+      "index": 17,
+      "lanes": 4,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            313.33,
+            315.0,
+            309.58,
+            312.5,
+            313.33,
+            315.0,
+            312.08,
+            312.5,
+            311.25
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            365.0,
+            362.5,
+            360.0,
+            358.75,
+            362.08,
+            364.59,
+            364.16,
+            364.59,
+            362.92
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            370.41,
+            364.59,
+            366.25,
+            367.09,
+            362.5,
+            365.83,
+            367.08,
+            368.75,
+            398.33
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 64
+    },
+    {
+      "edge": false,
+      "index": 18,
+      "lanes": 16,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            330.0,
+            355.84,
+            358.33,
+            362.92,
+            355.0,
+            360.83,
+            359.16,
+            358.75,
+            360.84
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            370.83,
+            368.33,
+            368.33,
+            370.0,
+            370.0,
+            372.5,
+            368.75,
+            372.5,
+            401.25
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            375.83,
+            375.42,
+            423.33,
+            405.41,
+            373.33,
+            375.0,
+            372.08,
+            375.41,
+            377.08
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 64
+    },
+    {
+      "edge": false,
+      "index": 19,
+      "lanes": 64,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            370.0,
+            367.91,
+            358.75,
+            334.17,
+            334.17,
+            332.08,
+            333.75,
+            357.5,
+            366.67
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            409.17,
+            406.25,
+            407.5,
+            409.17,
+            408.75,
+            410.0,
+            407.5,
+            407.5,
+            407.5
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            412.08,
+            407.08,
+            407.92,
+            407.5,
+            405.83,
+            416.25,
+            442.91,
+            413.75,
+            412.91
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 64
+    },
+    {
+      "edge": false,
+      "index": 20,
+      "lanes": 0,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            352.92,
+            343.34,
+            346.67,
+            342.08,
+            349.58,
+            346.67,
+            344.16,
+            314.58,
+            314.17
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            354.17,
+            343.33,
+            349.17,
+            348.75,
+            349.58,
+            347.09,
+            350.41,
+            351.25,
+            348.75
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            340.83,
+            340.41,
+            342.92,
+            338.33,
+            339.16,
+            347.91,
+            342.5,
+            338.75,
+            345.41
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 64
+    },
+    {
+      "edge": false,
+      "index": 21,
+      "lanes": 4,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            383.33,
+            394.58,
+            395.42,
+            393.34,
+            395.0,
+            390.42,
+            392.91,
+            392.08,
+            392.5
+          ],
+          "sink": 2932882196
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            428.75,
+            430.0,
+            429.58,
+            427.92,
+            429.58,
+            435.42,
+            443.75,
+            425.42,
+            426.25
+          ],
+          "sink": 2932882196
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            457.91,
+            430.83,
+            431.67,
+            430.42,
+            430.41,
+            430.41,
+            429.17,
+            430.84,
+            430.84
+          ],
+          "sink": 2932882196
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 64
+    },
+    {
+      "edge": false,
+      "index": 22,
+      "lanes": 16,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            390.83,
+            392.5,
+            423.34,
+            435.0,
+            433.33,
+            431.25,
+            430.0,
+            430.83,
+            431.25
+          ],
+          "sink": 3931061952
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            472.5,
+            480.83,
+            510.41,
+            487.08,
+            520.83,
+            462.08,
+            461.67,
+            433.75,
+            418.33
+          ],
+          "sink": 3931061952
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            465.42,
+            472.09,
+            471.25,
+            423.33,
+            465.83,
+            455.42,
+            457.5,
+            452.5,
+            456.25
+          ],
+          "sink": 3931061952
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 64
+    },
+    {
+      "edge": false,
+      "index": 23,
+      "lanes": 64,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            627.5,
+            562.5,
+            575.42,
+            617.5,
+            620.0,
+            617.92,
+            618.34,
+            617.92,
+            618.33
+          ],
+          "sink": 4022421608
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            695.0,
+            703.34,
+            704.17,
+            703.33,
+            703.75,
+            645.83,
+            661.67,
+            692.08,
+            692.5
+          ],
+          "sink": 4022421608
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            682.08,
+            682.5,
+            650.0,
+            662.5,
+            677.5,
+            685.0,
+            682.5,
+            709.59,
+            679.17
+          ],
+          "sink": 4022421608
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 64
+    },
+    {
+      "edge": false,
+      "index": 24,
+      "lanes": 0,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            350.42,
+            352.91,
+            386.25,
+            386.67,
+            386.67,
+            387.09,
+            386.25,
+            386.67,
+            385.84
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            352.5,
+            352.08,
+            351.66,
+            351.67,
+            352.5,
+            349.16,
+            355.42,
+            344.16,
+            353.34
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            330.0,
+            316.67,
+            352.5,
+            351.25,
+            353.33,
+            352.5,
+            352.5,
+            350.83,
+            353.75
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 64
+    },
+    {
+      "edge": false,
+      "index": 25,
+      "lanes": 4,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            749.58,
+            649.58,
+            641.67,
+            677.08,
+            713.75,
+            759.58,
+            759.16,
+            759.17,
+            695.42
+          ],
+          "sink": 20691244
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            608.33,
+            594.17,
+            595.41,
+            597.5,
+            600.41,
+            570.0,
+            545.0,
+            616.25,
+            591.25
+          ],
+          "sink": 20691244
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            583.75,
+            571.67,
+            552.5,
+            542.91,
+            574.58,
+            601.66,
+            602.92,
+            599.16,
+            599.58
+          ],
+          "sink": 20691244
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 64
+    },
+    {
+      "edge": false,
+      "index": 26,
+      "lanes": 16,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            1323.34,
+            1322.09,
+            1321.67,
+            1340.41,
+            1473.34,
+            1475.83,
+            1379.58,
+            1325.0,
+            1322.92
+          ],
+          "sink": 4239923542
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            870.0,
+            872.08,
+            865.0,
+            948.75,
+            907.5,
+            875.84,
+            874.17,
+            876.67,
+            835.42
+          ],
+          "sink": 4239923542
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            945.83,
+            836.67,
+            868.34,
+            870.0,
+            870.83,
+            906.66,
+            866.25,
+            909.17,
+            912.91
+          ],
+          "sink": 4239923542
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 64
+    },
+    {
+      "edge": false,
+      "index": 27,
+      "lanes": 64,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            4127.92,
+            4090.84,
+            4090.84,
+            4090.84,
+            4090.0,
+            4097.5,
+            4725.0,
+            4550.83,
+            4112.09
+          ],
+          "sink": 961330214
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            2039.58,
+            2022.5,
+            2053.33,
+            2056.67,
+            2055.84,
+            2065.0,
+            2015.0,
+            2062.91,
+            2062.92
+          ],
+          "sink": 961330214
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            2031.66,
+            2088.33,
+            2054.58,
+            2186.67,
+            2067.09,
+            2101.67,
+            2077.08,
+            2070.83,
+            2027.5
+          ],
+          "sink": 961330214
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 64
+    },
+    {
+      "edge": false,
+      "index": 28,
+      "lanes": 0,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            339.17,
+            332.08,
+            330.0,
+            332.09,
+            330.42,
+            335.84,
+            337.5,
+            336.67,
+            370.0
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            354.17,
+            360.42,
+            356.66,
+            353.75,
+            354.16,
+            352.5,
+            351.67,
+            352.5,
+            353.75
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            361.67,
+            362.5,
+            361.67,
+            360.84,
+            362.08,
+            361.25,
+            365.0,
+            332.5,
+            338.75
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 64
+    },
+    {
+      "edge": false,
+      "index": 29,
+      "lanes": 4,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            3401.25,
+            3580.83,
+            3400.0,
+            3400.83,
+            3397.5,
+            3397.5,
+            3397.5,
+            3399.17,
+            3395.83
+          ],
+          "sink": 1263107080
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            2955.0,
+            2922.91,
+            2933.33,
+            3054.17,
+            3208.34,
+            2897.5,
+            2931.25,
+            2824.58,
+            2825.42
+          ],
+          "sink": 1263107080
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            2984.58,
+            2790.42,
+            2931.25,
+            2841.25,
+            2788.34,
+            2948.34,
+            2744.17,
+            2959.58,
+            2742.08
+          ],
+          "sink": 1263107080
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 64
+    },
+    {
+      "edge": false,
+      "index": 30,
+      "lanes": 16,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            12135.83,
+            15600.42,
+            14191.25,
+            13242.91,
+            12884.59,
+            12905.42,
+            12360.42,
+            12170.41,
+            12645.42
+          ],
+          "sink": 2192639762
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            3800.83,
+            3722.92,
+            3687.5,
+            3692.09,
+            3693.75,
+            3788.75,
+            3714.17,
+            3750.0,
+            3720.84
+          ],
+          "sink": 2192639762
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            3695.83,
+            3728.33,
+            3796.66,
+            3729.17,
+            3759.16,
+            3723.34,
+            3714.58,
+            3716.66,
+            3712.92
+          ],
+          "sink": 2192639762
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 64
+    },
+    {
+      "edge": false,
+      "index": 31,
+      "lanes": 64,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            47167.5,
+            48949.17,
+            47084.17,
+            48014.58,
+            47465.0,
+            47245.42,
+            47530.41,
+            47074.58,
+            47530.0
+          ],
+          "sink": 3426050976
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            12735.0,
+            12682.5,
+            13025.83,
+            12660.83,
+            12740.0,
+            12766.25,
+            12693.33,
+            12727.91,
+            12802.92
+          ],
+          "sink": 3426050976
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            12872.08,
+            12699.58,
+            12734.58,
+            12776.67,
+            12721.67,
+            12734.16,
+            12802.92,
+            12744.59,
+            12764.16
+          ],
+          "sink": 3426050976
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 64
+    },
+    {
+      "edge": false,
+      "index": 32,
+      "lanes": 0,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            553.75,
+            555.41,
+            557.08,
+            555.83,
+            552.08,
+            554.17,
+            552.91,
+            556.25,
+            726.66
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            632.91,
+            635.42,
+            635.42,
+            634.58,
+            630.83,
+            661.66,
+            650.0,
+            642.91,
+            655.0
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            639.16,
+            632.08,
+            646.25,
+            651.66,
+            628.33,
+            629.17,
+            630.84,
+            631.67,
+            632.91
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 128
+    },
+    {
+      "edge": false,
+      "index": 33,
+      "lanes": 4,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            594.17,
+            594.17,
+            584.58,
+            597.5,
+            588.33,
+            598.75,
+            582.5,
+            596.67,
+            579.17
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            710.0,
+            704.16,
+            702.09,
+            726.67,
+            705.83,
+            693.33,
+            697.5,
+            700.83,
+            705.83
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            695.83,
+            729.17,
+            704.17,
+            765.0,
+            688.75,
+            692.91,
+            690.42,
+            688.75,
+            718.75
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 128
+    },
+    {
+      "edge": false,
+      "index": 34,
+      "lanes": 16,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            603.75,
+            600.41,
+            599.59,
+            600.41,
+            587.5,
+            596.67,
+            586.25,
+            582.91,
+            580.84
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            723.75,
+            726.25,
+            733.33,
+            733.75,
+            723.34,
+            725.41,
+            712.5,
+            719.17,
+            714.59
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            698.34,
+            695.84,
+            696.67,
+            696.25,
+            695.42,
+            699.58,
+            698.33,
+            697.92,
+            700.0
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 128
+    },
+    {
+      "edge": false,
+      "index": 35,
+      "lanes": 64,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            667.91,
+            667.08,
+            644.58,
+            600.0,
+            602.08,
+            602.09,
+            595.84,
+            594.16,
+            608.33
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            741.25,
+            736.25,
+            730.41,
+            739.58,
+            730.0,
+            687.5,
+            729.58,
+            732.5,
+            735.41
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            722.5,
+            721.67,
+            721.67,
+            722.91,
+            729.17,
+            730.42,
+            725.83,
+            722.08,
+            724.16
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 128
+    },
+    {
+      "edge": false,
+      "index": 36,
+      "lanes": 0,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            614.59,
+            607.92,
+            548.75,
+            547.09,
+            544.17,
+            577.08,
+            610.0,
+            611.25,
+            607.09
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            633.75,
+            720.42,
+            597.92,
+            631.25,
+            642.09,
+            641.66,
+            643.75,
+            642.5,
+            687.08
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            628.75,
+            634.58,
+            641.25,
+            642.5,
+            650.84,
+            652.08,
+            655.83,
+            638.33,
+            590.41
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 128
+    },
+    {
+      "edge": false,
+      "index": 37,
+      "lanes": 4,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            605.41,
+            597.92,
+            593.75,
+            633.75,
+            665.0,
+            658.75,
+            658.33,
+            660.41,
+            595.0
+          ],
+          "sink": 18500676
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            707.92,
+            777.5,
+            732.5,
+            719.58,
+            749.58,
+            726.25,
+            718.34,
+            725.84,
+            756.67
+          ],
+          "sink": 18500676
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            758.33,
+            763.75,
+            775.42,
+            772.09,
+            757.5,
+            730.42,
+            754.59,
+            757.5,
+            766.66
+          ],
+          "sink": 18500676
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 128
+    },
+    {
+      "edge": false,
+      "index": 38,
+      "lanes": 16,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            701.67,
+            707.5,
+            709.17,
+            710.0,
+            710.42,
+            653.75,
+            633.75,
+            660.0,
+            710.83
+          ],
+          "sink": 1671055094
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            751.67,
+            750.0,
+            748.34,
+            747.5,
+            749.17,
+            763.75,
+            770.41,
+            767.92,
+            767.5
+          ],
+          "sink": 1671055094
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            768.34,
+            766.25,
+            774.17,
+            776.67,
+            768.75,
+            780.84,
+            777.5,
+            788.75,
+            781.25
+          ],
+          "sink": 1671055094
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 128
+    },
+    {
+      "edge": false,
+      "index": 39,
+      "lanes": 64,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            909.58,
+            920.83,
+            817.92,
+            827.5,
+            902.5,
+            903.75,
+            901.67,
+            845.42,
+            830.0
+          ],
+          "sink": 2128397774
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            962.92,
+            955.41,
+            957.92,
+            966.66,
+            961.25,
+            950.84,
+            953.75,
+            959.17,
+            962.5
+          ],
+          "sink": 2128397774
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            952.09,
+            969.59,
+            954.59,
+            956.67,
+            953.33,
+            947.09,
+            953.33,
+            949.58,
+            974.17
+          ],
+          "sink": 2128397774
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 128
+    },
+    {
+      "edge": false,
+      "index": 40,
+      "lanes": 0,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            657.92,
+            656.66,
+            660.0,
+            649.17,
+            602.09,
+            586.67,
+            640.83,
+            651.25,
+            684.59
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            661.67,
+            652.92,
+            646.66,
+            681.67,
+            647.5,
+            650.41,
+            650.83,
+            650.0,
+            654.58
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            684.17,
+            673.33,
+            697.09,
+            695.41,
+            704.17,
+            690.0,
+            672.08,
+            676.25,
+            682.92
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 128
+    },
+    {
+      "edge": false,
+      "index": 41,
+      "lanes": 4,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            1013.75,
+            1080.41,
+            1201.25,
+            1018.75,
+            1060.0,
+            975.0,
+            904.58,
+            944.58,
+            932.5
+          ],
+          "sink": 2392653948
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            848.33,
+            835.83,
+            836.25,
+            855.0,
+            1024.59,
+            979.16,
+            845.84,
+            849.59,
+            858.33
+          ],
+          "sink": 2392653948
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            1043.34,
+            966.67,
+            845.0,
+            843.75,
+            987.92,
+            1020.42,
+            869.59,
+            822.5,
+            1007.5
+          ],
+          "sink": 2392653948
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 128
+    },
+    {
+      "edge": false,
+      "index": 42,
+      "lanes": 16,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            1649.17,
+            1546.67,
+            1671.25,
+            1657.09,
+            1547.5,
+            1549.59,
+            1548.34,
+            1573.33,
+            1723.33
+          ],
+          "sink": 586398470
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            1155.42,
+            1153.33,
+            1240.0,
+            1150.0,
+            1159.17,
+            1159.58,
+            1149.17,
+            1147.92,
+            1154.16
+          ],
+          "sink": 586398470
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            1139.59,
+            1147.09,
+            1136.25,
+            1146.67,
+            1145.0,
+            1148.75,
+            1147.92,
+            1143.33,
+            1155.0
+          ],
+          "sink": 586398470
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 128
+    },
+    {
+      "edge": false,
+      "index": 43,
+      "lanes": 64,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            4420.0,
+            4437.09,
+            4388.75,
+            4399.17,
+            4399.58,
+            4385.42,
+            4431.25,
+            4383.75,
+            4578.75
+          ],
+          "sink": 3272211784
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            2428.75,
+            2367.5,
+            2362.08,
+            2360.83,
+            2356.25,
+            2420.0,
+            2362.08,
+            2356.67,
+            2359.17
+          ],
+          "sink": 3272211784
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            2422.92,
+            2367.5,
+            2367.92,
+            2372.09,
+            2377.5,
+            2373.75,
+            2373.33,
+            2366.66,
+            2372.92
+          ],
+          "sink": 3272211784
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 128
+    },
+    {
+      "edge": false,
+      "index": 44,
+      "lanes": 0,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            651.66,
+            720.42,
+            725.42,
+            726.25,
+            683.34,
+            662.5,
+            724.58,
+            726.25,
+            723.75
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            681.66,
+            676.25,
+            673.75,
+            657.08,
+            666.25,
+            672.09,
+            672.5,
+            661.25,
+            697.08
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            697.09,
+            696.67,
+            697.08,
+            695.41,
+            712.92,
+            710.42,
+            696.66,
+            692.92,
+            703.75
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 128
+    },
+    {
+      "edge": false,
+      "index": 45,
+      "lanes": 4,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            3687.91,
+            4015.42,
+            3680.41,
+            3676.67,
+            3675.0,
+            3680.41,
+            3676.25,
+            3676.25,
+            3674.17
+          ],
+          "sink": 4270775750
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            1762.91,
+            1793.33,
+            1744.17,
+            1952.5,
+            2994.16,
+            1750.42,
+            1716.66,
+            2137.08,
+            2832.5
+          ],
+          "sink": 4270775750
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            3203.75,
+            3175.42,
+            3366.67,
+            3181.25,
+            3199.59,
+            3252.08,
+            3180.83,
+            3357.5,
+            3183.75
+          ],
+          "sink": 4270775750
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 128
+    },
+    {
+      "edge": false,
+      "index": 46,
+      "lanes": 16,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            12417.92,
+            12431.25,
+            12411.25,
+            12413.75,
+            12825.84,
+            12434.17,
+            12427.92,
+            12622.08,
+            12436.25
+          ],
+          "sink": 3784647094
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            4158.75,
+            4222.08,
+            4276.25,
+            4224.17,
+            4191.25,
+            4237.92,
+            4287.5,
+            4267.5,
+            4197.92
+          ],
+          "sink": 3784647094
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            4113.34,
+            4104.59,
+            4097.08,
+            4154.16,
+            4150.42,
+            4130.84,
+            4124.17,
+            4120.41,
+            4112.5
+          ],
+          "sink": 3784647094
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 128
+    },
+    {
+      "edge": false,
+      "index": 47,
+      "lanes": 64,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            47796.25,
+            47817.5,
+            48754.17,
+            47941.67,
+            47730.41,
+            47913.75,
+            47901.25,
+            47806.66,
+            48012.92
+          ],
+          "sink": 3562445656
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            13556.66,
+            13594.17,
+            13522.08,
+            13572.92,
+            13618.75,
+            13553.75,
+            13618.33,
+            13572.92,
+            13524.58
+          ],
+          "sink": 3562445656
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            13595.42,
+            13568.75,
+            13692.08,
+            13616.25,
+            13711.25,
+            13657.5,
+            13628.75,
+            13598.75,
+            13778.75
+          ],
+          "sink": 3562445656
+        }
+      ],
+      "name": "matrix-columns",
+      "width": 128
+    },
+    {
+      "edge": true,
+      "index": 48,
+      "lanes": 1,
+      "length": 3,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": null
+    },
+    {
+      "edge": true,
+      "index": 49,
+      "lanes": 3,
+      "length": 4,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": null
+    },
+    {
+      "edge": true,
+      "index": 50,
+      "lanes": 2,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [],
+          "sink": 0
+        }
+      ],
+      "name": "matrix-columns",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 51,
+      "lanes": 0,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            6.67,
+            6.67,
+            6.66,
+            6.25,
+            6.25,
+            6.67,
+            6.25,
+            6.25,
+            6.25
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            5.84,
+            5.0,
+            4.58,
+            4.58,
+            4.58,
+            5.0,
+            5.0,
+            5.0,
+            5.0
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            4.16,
+            3.75,
+            3.75,
+            3.33,
+            2.92,
+            3.33,
+            2.92,
+            3.34,
+            3.33
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 52,
+      "lanes": 4,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            52.08,
+            51.66,
+            50.84,
+            50.83,
+            50.41,
+            51.25,
+            50.84,
+            50.83,
+            50.41
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            48.33,
+            47.92,
+            47.09,
+            47.08,
+            47.08,
+            47.5,
+            47.08,
+            47.5,
+            47.5
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            25.41,
+            25.83,
+            25.83,
+            26.25,
+            23.75,
+            21.66,
+            22.09,
+            20.83,
+            20.83
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 53,
+      "lanes": 16,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            60.84,
+            60.0,
+            60.0,
+            60.0,
+            60.42,
+            63.33,
+            61.25,
+            60.83,
+            60.41
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            57.91,
+            56.67,
+            56.25,
+            56.67,
+            56.25,
+            57.5,
+            57.5,
+            56.25,
+            56.25
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            29.17,
+            28.75,
+            28.75,
+            29.17,
+            29.16,
+            29.17,
+            28.75,
+            29.17,
+            28.75
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 54,
+      "lanes": 64,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            104.58,
+            103.75,
+            103.75,
+            102.91,
+            102.92,
+            103.34,
+            102.91,
+            102.5,
+            102.91
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            99.17,
+            96.67,
+            97.08,
+            96.66,
+            97.5,
+            96.67,
+            97.08,
+            94.17,
+            88.34
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            73.33,
+            72.5,
+            71.25,
+            70.84,
+            71.66,
+            70.0,
+            69.59,
+            69.58,
+            70.0
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 55,
+      "lanes": 0,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            50.83,
+            53.33,
+            53.33,
+            53.33,
+            52.92,
+            53.75,
+            54.58,
+            54.17,
+            54.59
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            18.75,
+            18.33,
+            18.33,
+            17.92,
+            17.91,
+            17.91,
+            17.92,
+            17.92,
+            17.92
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            20.0,
+            19.58,
+            19.58,
+            19.17,
+            18.75,
+            20.42,
+            19.17,
+            19.16,
+            18.75
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 56,
+      "lanes": 4,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            145.0,
+            130.0,
+            127.91,
+            127.92,
+            128.75,
+            127.5,
+            126.25,
+            128.33,
+            135.0
+          ],
+          "sink": 4122783968
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            123.33,
+            131.67,
+            134.17,
+            131.25,
+            133.33,
+            131.67,
+            131.25,
+            132.92,
+            132.5
+          ],
+          "sink": 4122783968
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            72.09,
+            75.41,
+            75.42,
+            74.58,
+            74.58,
+            72.91,
+            70.0,
+            78.75,
+            90.41
+          ],
+          "sink": 4122783968
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 57,
+      "lanes": 16,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            181.66,
+            178.33,
+            184.58,
+            199.17,
+            181.67,
+            180.84,
+            176.25,
+            179.17,
+            183.75
+          ],
+          "sink": 2361809280
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            168.75,
+            168.75,
+            169.16,
+            167.92,
+            169.59,
+            158.33,
+            157.5,
+            158.75,
+            156.67
+          ],
+          "sink": 2361809280
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            143.75,
+            149.16,
+            150.0,
+            149.58,
+            144.17,
+            127.5,
+            126.25,
+            126.67,
+            127.08
+          ],
+          "sink": 2361809280
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 58,
+      "lanes": 64,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            283.33,
+            272.92,
+            269.59,
+            270.42,
+            270.83,
+            270.0,
+            270.0,
+            266.25,
+            327.92
+          ],
+          "sink": 1377559510
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            321.67,
+            316.67,
+            318.75,
+            320.41,
+            317.09,
+            307.92,
+            282.5,
+            283.33,
+            309.16
+          ],
+          "sink": 1377559510
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            414.59,
+            441.67,
+            444.58,
+            439.58,
+            443.33,
+            439.17,
+            445.0,
+            438.75,
+            440.42
+          ],
+          "sink": 1377559510
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 59,
+      "lanes": 0,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            345.83,
+            360.83,
+            465.42,
+            416.67,
+            377.5,
+            378.75,
+            376.67,
+            430.41,
+            449.58
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            38.34,
+            39.17,
+            37.91,
+            37.92,
+            37.92,
+            39.17,
+            38.33,
+            38.34,
+            37.91
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            37.91,
+            37.08,
+            37.09,
+            36.67,
+            36.66,
+            37.09,
+            37.08,
+            37.08,
+            36.25
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 60,
+      "lanes": 4,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            650.83,
+            578.75,
+            577.91,
+            577.08,
+            613.34,
+            580.0,
+            608.75,
+            577.91,
+            576.25
+          ],
+          "sink": 2678434926
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            605.42,
+            607.92,
+            608.75,
+            606.67,
+            608.34,
+            592.09,
+            543.75,
+            545.83,
+            544.17
+          ],
+          "sink": 2678434926
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            643.33,
+            640.42,
+            647.5,
+            646.25,
+            651.25,
+            649.58,
+            648.33,
+            649.58,
+            644.17
+          ],
+          "sink": 2678434926
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 61,
+      "lanes": 16,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            699.59,
+            681.67,
+            733.75,
+            734.17,
+            730.0,
+            728.33,
+            740.0,
+            725.0,
+            653.33
+          ],
+          "sink": 768036314
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            567.5,
+            567.91,
+            569.59,
+            568.34,
+            568.75,
+            566.25,
+            563.75,
+            563.34,
+            618.75
+          ],
+          "sink": 768036314
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            2247.08,
+            2202.5,
+            2240.41,
+            2597.5,
+            2498.33,
+            2197.08,
+            2291.25,
+            2315.83,
+            2205.83
+          ],
+          "sink": 768036314
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 62,
+      "lanes": 64,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            1299.17,
+            1297.92,
+            1259.58,
+            1230.0,
+            1331.25,
+            1334.58,
+            1242.5,
+            1247.92,
+            1320.41
+          ],
+          "sink": 2810240804
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            1167.09,
+            1157.5,
+            1074.58,
+            1148.33,
+            1164.17,
+            1162.5,
+            1119.58,
+            1093.33,
+            1161.25
+          ],
+          "sink": 2810240804
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            8741.25,
+            8551.25,
+            8548.33,
+            8567.92,
+            8511.25,
+            8570.0,
+            8597.5,
+            8840.0,
+            8745.0
+          ],
+          "sink": 2810240804
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 63,
+      "lanes": 0,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            2577.91,
+            2516.67,
+            2565.42,
+            2523.33,
+            2643.33,
+            2435.83,
+            2439.58,
+            2552.5,
+            2550.41
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            34.59,
+            35.42,
+            34.58,
+            33.75,
+            34.59,
+            34.59,
+            34.59,
+            33.75,
+            34.17
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            30.0,
+            29.17,
+            28.75,
+            28.75,
+            28.33,
+            31.25,
+            28.75,
+            29.59,
+            29.16
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 64,
+      "lanes": 4,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            4215.84,
+            4515.0,
+            4417.5,
+            4516.66,
+            4297.5,
+            5154.16,
+            4438.33,
+            4368.33,
+            4385.42
+          ],
+          "sink": 305482498
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            4141.67,
+            3978.33,
+            3982.5,
+            3983.33,
+            3983.34,
+            3982.91,
+            3980.42,
+            3982.91,
+            3985.0
+          ],
+          "sink": 305482498
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            6595.83,
+            6599.58,
+            6593.75,
+            6594.58,
+            6645.83,
+            6644.58,
+            6837.5,
+            6593.33,
+            6595.42
+          ],
+          "sink": 305482498
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 65,
+      "lanes": 16,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            5056.66,
+            5198.75,
+            5866.25,
+            5741.67,
+            6042.5,
+            5459.58,
+            5041.67,
+            5085.83,
+            5757.5
+          ],
+          "sink": 4202690320
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            4271.25,
+            3987.08,
+            3984.58,
+            4173.75,
+            3983.75,
+            4190.83,
+            4100.0,
+            4053.33,
+            4325.42
+          ],
+          "sink": 4202690320
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            26667.5,
+            26227.92,
+            26099.58,
+            26710.42,
+            26447.08,
+            26138.33,
+            27505.41,
+            26155.84,
+            26371.25
+          ],
+          "sink": 4202690320
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 66,
+      "lanes": 64,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            9269.58,
+            9352.92,
+            9262.08,
+            9602.91,
+            8785.0,
+            8696.25,
+            8909.58,
+            9049.17,
+            9179.59
+          ],
+          "sink": 3320877578
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            7593.34,
+            7716.67,
+            7646.25,
+            7704.16,
+            7649.58,
+            7690.83,
+            8145.0,
+            7795.0,
+            7740.84
+          ],
+          "sink": 3320877578
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            104930.41,
+            105105.42,
+            105427.5,
+            104975.84,
+            105011.25,
+            105847.08,
+            104734.58,
+            105340.0,
+            105765.41
+          ],
+          "sink": 3320877578
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": true,
+      "index": 67,
+      "lanes": 3,
+      "length": 3,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [],
+          "sink": 0
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": true,
+      "index": 68,
+      "lanes": 2,
+      "length": 2,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [],
+          "sink": 0
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": true,
+      "index": 69,
+      "lanes": 2,
+      "length": 3,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [],
+          "sink": 0
+        }
+      ],
+      "name": "filter-bank",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 70,
+      "lanes": 0,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [
+            6.67,
+            5.83,
+            5.42,
+            5.42,
+            5.41,
+            5.42,
+            5.83,
+            5.83,
+            5.42
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [
+            6.25,
+            5.83,
+            5.83,
+            5.83,
+            5.83,
+            5.42,
+            5.83,
+            5.83,
+            5.83
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            5.0,
+            4.59,
+            4.59,
+            4.58,
+            4.58,
+            4.59,
+            4.59,
+            4.58,
+            4.58
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            6.25,
+            5.41,
+            5.0,
+            5.0,
+            5.0,
+            5.42,
+            5.0,
+            5.0,
+            5.0
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            3.34,
+            2.92,
+            2.5,
+            2.5,
+            2.5,
+            2.5,
+            2.5,
+            2.5,
+            2.5
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 71,
+      "lanes": 4,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [
+            56.25,
+            49.58,
+            48.75,
+            49.17,
+            48.34,
+            53.75,
+            54.17,
+            53.75,
+            53.75
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [
+            56.25,
+            51.67,
+            51.66,
+            50.83,
+            50.42,
+            56.25,
+            55.0,
+            56.25,
+            55.0
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            52.92,
+            47.08,
+            47.08,
+            46.67,
+            46.67,
+            51.67,
+            51.67,
+            52.08,
+            51.25
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            59.17,
+            55.41,
+            52.92,
+            52.92,
+            52.91,
+            56.25,
+            55.83,
+            55.84,
+            55.42
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            20.83,
+            18.75,
+            18.75,
+            18.33,
+            18.33,
+            18.75,
+            18.75,
+            18.33,
+            18.33
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 72,
+      "lanes": 16,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [
+            55.0,
+            54.17,
+            54.16,
+            53.75,
+            54.16,
+            53.75,
+            54.58,
+            54.58,
+            56.67
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [
+            56.25,
+            58.34,
+            57.09,
+            59.17,
+            57.92,
+            56.25,
+            57.08,
+            58.33,
+            58.75
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            54.58,
+            53.34,
+            52.92,
+            53.33,
+            52.5,
+            53.75,
+            52.5,
+            52.5,
+            52.92
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            55.84,
+            55.42,
+            54.59,
+            54.59,
+            54.17,
+            56.25,
+            55.0,
+            55.42,
+            56.25
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            25.0,
+            24.17,
+            23.75,
+            23.34,
+            22.92,
+            24.59,
+            23.75,
+            23.33,
+            23.75
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 73,
+      "lanes": 64,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [
+            97.92,
+            89.58,
+            87.5,
+            86.25,
+            87.5,
+            88.33,
+            86.67,
+            95.41,
+            96.67
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [
+            99.58,
+            97.91,
+            98.34,
+            97.5,
+            98.34,
+            99.17,
+            96.66,
+            96.67,
+            93.33
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            93.75,
+            93.34,
+            93.75,
+            92.92,
+            92.09,
+            93.33,
+            93.75,
+            94.17,
+            94.17
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            100.42,
+            98.34,
+            98.75,
+            98.33,
+            99.17,
+            97.5,
+            97.08,
+            96.67,
+            97.92
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            72.5,
+            70.84,
+            70.42,
+            70.42,
+            70.0,
+            70.42,
+            70.83,
+            69.16,
+            70.42
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 74,
+      "lanes": 0,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [
+            45.84,
+            44.59,
+            45.0,
+            44.17,
+            45.42,
+            44.58,
+            44.58,
+            44.59,
+            45.0
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [
+            40.42,
+            39.59,
+            39.59,
+            39.59,
+            40.0,
+            40.41,
+            40.0,
+            39.58,
+            39.58
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            20.83,
+            19.58,
+            19.16,
+            19.58,
+            19.59,
+            20.41,
+            19.59,
+            19.59,
+            19.58
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            21.25,
+            20.0,
+            19.58,
+            20.0,
+            19.58,
+            20.0,
+            19.58,
+            19.58,
+            19.58
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            20.0,
+            18.75,
+            18.33,
+            18.33,
+            18.75,
+            19.59,
+            18.75,
+            18.34,
+            18.34
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 75,
+      "lanes": 4,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [
+            122.92,
+            123.34,
+            123.75,
+            121.66,
+            120.83,
+            123.33,
+            121.25,
+            121.66,
+            121.67
+          ],
+          "sink": 3230888294
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [
+            124.59,
+            125.42,
+            124.58,
+            124.16,
+            124.59,
+            125.0,
+            123.33,
+            122.92,
+            124.17
+          ],
+          "sink": 3230888294
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            108.33,
+            107.5,
+            106.66,
+            107.08,
+            105.83,
+            97.91,
+            98.75,
+            99.17,
+            100.41
+          ],
+          "sink": 3230888294
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            101.25,
+            100.0,
+            103.75,
+            110.42,
+            110.0,
+            110.0,
+            109.58,
+            108.75,
+            111.25
+          ],
+          "sink": 3230888294
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            73.33,
+            72.92,
+            73.33,
+            73.75,
+            72.91,
+            65.42,
+            60.41,
+            68.75,
+            68.75
+          ],
+          "sink": 3230888294
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 76,
+      "lanes": 16,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [
+            187.09,
+            187.92,
+            187.5,
+            187.5,
+            187.92,
+            199.17,
+            197.09,
+            196.25,
+            196.67
+          ],
+          "sink": 3877920480
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [
+            189.17,
+            188.75,
+            187.08,
+            189.17,
+            187.5,
+            193.33,
+            190.41,
+            191.67,
+            194.58
+          ],
+          "sink": 3877920480
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            153.75,
+            162.09,
+            170.0,
+            169.58,
+            169.17,
+            177.5,
+            174.59,
+            174.16,
+            176.25
+          ],
+          "sink": 3877920480
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            177.09,
+            178.33,
+            175.42,
+            177.91,
+            179.17,
+            181.25,
+            176.25,
+            175.83,
+            177.08
+          ],
+          "sink": 3877920480
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            117.5,
+            114.17,
+            113.33,
+            113.34,
+            113.33,
+            113.75,
+            112.5,
+            112.91,
+            113.34
+          ],
+          "sink": 3877920480
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 77,
+      "lanes": 64,
+      "length": 8,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [
+            391.25,
+            388.75,
+            361.25,
+            390.84,
+            390.42,
+            393.34,
+            390.84,
+            390.84,
+            389.59
+          ],
+          "sink": 2735413216
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [
+            398.75,
+            397.5,
+            397.92,
+            383.75,
+            355.84,
+            396.25,
+            397.91,
+            397.5,
+            397.5
+          ],
+          "sink": 2735413216
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            388.33,
+            386.66,
+            385.83,
+            387.92,
+            386.25,
+            389.16,
+            387.5,
+            360.0,
+            356.66
+          ],
+          "sink": 2735413216
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            385.42,
+            385.84,
+            385.42,
+            385.83,
+            385.83,
+            350.41,
+            361.67,
+            384.16,
+            384.58
+          ],
+          "sink": 2735413216
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            333.75,
+            332.5,
+            331.67,
+            328.75,
+            295.83,
+            298.75,
+            297.5,
+            330.41,
+            332.09
+          ],
+          "sink": 2735413216
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 78,
+      "lanes": 0,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [
+            283.75,
+            281.66,
+            282.5,
+            280.84,
+            282.08,
+            282.5,
+            280.83,
+            270.42,
+            252.5
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [
+            281.66,
+            281.66,
+            280.42,
+            280.84,
+            281.25,
+            280.41,
+            280.83,
+            280.83,
+            279.58
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            54.17,
+            52.92,
+            52.5,
+            52.08,
+            52.5,
+            53.34,
+            53.34,
+            52.09,
+            52.09
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            53.75,
+            52.5,
+            51.67,
+            51.67,
+            51.25,
+            52.5,
+            52.08,
+            51.67,
+            52.09
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            49.16,
+            48.33,
+            47.92,
+            47.91,
+            48.75,
+            48.33,
+            47.92,
+            48.34,
+            48.75
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 79,
+      "lanes": 4,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [
+            341.25,
+            367.5,
+            366.25,
+            367.91,
+            367.09,
+            368.33,
+            367.5,
+            367.5,
+            369.16
+          ],
+          "sink": 2963056914
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [
+            344.58,
+            329.17,
+            327.91,
+            360.0,
+            367.5,
+            368.34,
+            368.33,
+            368.33,
+            367.91
+          ],
+          "sink": 2963056914
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            228.75,
+            229.58,
+            228.33,
+            227.5,
+            230.84,
+            227.5,
+            228.33,
+            228.33,
+            229.17
+          ],
+          "sink": 2963056914
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            227.92,
+            229.16,
+            227.08,
+            230.42,
+            230.0,
+            230.0,
+            227.5,
+            227.08,
+            227.08
+          ],
+          "sink": 2963056914
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            353.75,
+            342.91,
+            340.42,
+            373.75,
+            346.25,
+            355.0,
+            342.92,
+            341.66,
+            305.83
+          ],
+          "sink": 2963056914
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 80,
+      "lanes": 16,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [
+            804.58,
+            768.75,
+            801.25,
+            804.58,
+            805.42,
+            812.5,
+            805.42,
+            774.59,
+            797.5
+          ],
+          "sink": 1072329640
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [
+            801.66,
+            799.17,
+            740.0,
+            801.67,
+            800.83,
+            806.67,
+            811.25,
+            812.5,
+            758.33
+          ],
+          "sink": 1072329640
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            747.09,
+            745.83,
+            660.42,
+            742.5,
+            762.08,
+            770.84,
+            759.17,
+            752.08,
+            733.75
+          ],
+          "sink": 1072329640
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            748.34,
+            693.34,
+            739.59,
+            752.92,
+            745.0,
+            755.42,
+            752.08,
+            727.92,
+            741.67
+          ],
+          "sink": 1072329640
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            990.0,
+            988.33,
+            990.0,
+            989.16,
+            989.17,
+            990.0,
+            990.0,
+            997.5,
+            1181.25
+          ],
+          "sink": 1072329640
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 81,
+      "lanes": 64,
+      "length": 64,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [
+            2279.58,
+            2246.25,
+            2280.42,
+            2278.75,
+            2279.16,
+            2280.42,
+            2279.16,
+            2279.59,
+            2279.17
+          ],
+          "sink": 2329999040
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [
+            2327.09,
+            2292.09,
+            2326.25,
+            2299.17,
+            2319.58,
+            2326.25,
+            2291.67,
+            2325.42,
+            2291.25
+          ],
+          "sink": 2329999040
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            2275.0,
+            2298.75,
+            2250.83,
+            2309.58,
+            2216.67,
+            2273.75,
+            2427.5,
+            2274.16,
+            2215.42
+          ],
+          "sink": 2329999040
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            2305.41,
+            2223.33,
+            2393.33,
+            2228.75,
+            2276.25,
+            2247.08,
+            2275.83,
+            2327.5,
+            2312.08
+          ],
+          "sink": 2329999040
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            3790.0,
+            3755.0,
+            3776.25,
+            3744.17,
+            3745.42,
+            3747.09,
+            3744.17,
+            3793.75,
+            3746.25
+          ],
+          "sink": 2329999040
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 82,
+      "lanes": 0,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [
+            2022.5,
+            1891.66,
+            2017.92,
+            1931.25,
+            2247.91,
+            1975.83,
+            1895.42,
+            2019.59,
+            1915.83
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [
+            2023.75,
+            1860.0,
+            1972.91,
+            1982.09,
+            1855.0,
+            2016.25,
+            1892.08,
+            1951.66,
+            2076.25
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            158.75,
+            157.5,
+            157.5,
+            157.5,
+            157.08,
+            157.92,
+            157.91,
+            157.5,
+            157.5
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            166.25,
+            173.34,
+            165.0,
+            165.83,
+            172.92,
+            165.83,
+            163.75,
+            162.91,
+            162.92
+          ],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            145.83,
+            144.58,
+            145.83,
+            145.0,
+            144.59,
+            145.42,
+            144.17,
+            144.17,
+            144.58
+          ],
+          "sink": 0
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 83,
+      "lanes": 4,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [
+            2342.5,
+            2281.67,
+            2340.84,
+            2305.0,
+            2339.58,
+            2341.67,
+            2337.91,
+            2340.0,
+            2340.83
+          ],
+          "sink": 2232476168
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [
+            2324.59,
+            2291.67,
+            2325.83,
+            2332.5,
+            2287.5,
+            2424.17,
+            2283.75,
+            2337.5,
+            2305.42
+          ],
+          "sink": 2232476168
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            1234.17,
+            1182.92,
+            1231.25,
+            1228.75,
+            1227.5,
+            1196.66,
+            1226.25,
+            1227.91,
+            1231.67
+          ],
+          "sink": 2232476168
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            1273.33,
+            1251.66,
+            1252.92,
+            1235.0,
+            1262.5,
+            1267.08,
+            1236.66,
+            1231.25,
+            1240.0
+          ],
+          "sink": 2232476168
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            3134.58,
+            3182.91,
+            3411.67,
+            3172.5,
+            3133.33,
+            3780.41,
+            3151.25,
+            3263.75,
+            3132.5
+          ],
+          "sink": 2232476168
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 84,
+      "lanes": 16,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [
+            5755.42,
+            5719.58,
+            5672.08,
+            5774.59,
+            5742.08,
+            5795.42,
+            5730.83,
+            5732.5,
+            5804.16
+          ],
+          "sink": 734361296
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [
+            5689.16,
+            5749.17,
+            5685.84,
+            5714.16,
+            5705.42,
+            5715.0,
+            5712.5,
+            5706.25,
+            5718.75
+          ],
+          "sink": 734361296
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            5248.34,
+            5415.41,
+            5186.25,
+            5313.33,
+            5048.75,
+            5245.0,
+            5167.91,
+            5126.67,
+            5126.25
+          ],
+          "sink": 734361296
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            5164.58,
+            5156.67,
+            5311.25,
+            5233.75,
+            5088.34,
+            5090.0,
+            5302.5,
+            5122.5,
+            5080.0
+          ],
+          "sink": 734361296
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            11999.58,
+            12445.42,
+            12003.33,
+            11890.0,
+            12223.75,
+            12447.5,
+            13205.83,
+            11907.08,
+            12314.17
+          ],
+          "sink": 734361296
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": false,
+      "index": 85,
+      "lanes": 64,
+      "length": 512,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [
+            17354.17,
+            17231.25,
+            17250.84,
+            17230.83,
+            17360.0,
+            17230.83,
+            17348.75,
+            17230.0,
+            17245.83
+          ],
+          "sink": 823986848
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [
+            17623.75,
+            17542.5,
+            17545.83,
+            17526.66,
+            17943.75,
+            17544.16,
+            17610.0,
+            17609.17,
+            17623.33
+          ],
+          "sink": 823986848
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [
+            17126.67,
+            17102.5,
+            17302.09,
+            17195.84,
+            17167.5,
+            17261.66,
+            17296.67,
+            17375.0,
+            17259.17
+          ],
+          "sink": 823986848
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [
+            17196.25,
+            17152.5,
+            17402.5,
+            17225.84,
+            17232.92,
+            17511.25,
+            18004.16,
+            17297.5,
+            17285.83
+          ],
+          "sink": 823986848
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [
+            49535.0,
+            47284.17,
+            47550.83,
+            47009.58,
+            48330.42,
+            47385.42,
+            46916.66,
+            47228.33,
+            47204.17
+          ],
+          "sink": 823986848
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": true,
+      "index": 86,
+      "lanes": 5,
+      "length": 1,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [],
+          "sink": 0
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": true,
+      "index": 87,
+      "lanes": 2,
+      "length": 0,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [],
+          "sink": 0
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    },
+    {
+      "edge": true,
+      "index": 88,
+      "lanes": 3,
+      "length": 3,
+      "modes": [
+        {
+          "all_bits_exact": true,
+          "mode": "batched_3",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_2",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_1",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "batched_0",
+          "samples_ns": [],
+          "sink": 0
+        },
+        {
+          "all_bits_exact": true,
+          "mode": "literal",
+          "samples_ns": [],
+          "sink": 0
+        }
+      ],
+      "name": "channel-energy",
+      "width": null
+    }
+  ]
+}

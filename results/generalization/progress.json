@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "objective": "implement all six suggestions, measure gains and merge beneficial validated changes into main",
+  "complete": false,
+  "requirements": {
+    "ordered-independent-folds": {
+      "status": "measured; ordinary planner acquisition in progress",
+      "rust_mean_nonempty_speedups": {
+        "matrix-columns": 3.03,
+        "filter-bank": 8.03,
+        "channel-energy": 2.48
+      },
+      "javascript": "regresses; no unconditional selection",
+      "buffered_candidate": "generic proof passes, no additional robust gain, not published to knowledge",
+      "planner_result": {
+        "source": "matrix-columns",
+        "baseline_retained": true,
+        "calibration_speedup": 2.63,
+        "holdout": "rejected by existing uncertainty/minimum-gain guard; no policy loosened",
+        "selected_steps": 0,
+        "report": "planning/selected.json.receipt.json"
+      }
+    },
+    "prepared-typed-boundaries": {
+      "status": "typed output benefit published; input/capture ablations still pending",
+      "batch_1024_before_us": 3.503,
+      "batch_1024_after_us": 1.697,
+      "packages": {
+        "ink_repository": "https://github.com/siliconjungle/ink-lang",
+        "ink_revision": "d5234395b9ba9cced845abef5127971c84a26bdf",
+        "planner_revision": "e6eafa79170ae1fc7a7e1cf27ffcee4f71dd6037",
+        "knowledge_revision": "0f6633380156133a5e928fccf27eccf1cd307efe",
+        "javascript_revision": "5466464bff657a77074607a88131a82c473f8493",
+        "abi_revision": "d4c9e1a9d9d1a2d1f9fc2956e0136fbed4b28331",
+        "gpu_revision": "b88523eb05c0a376c9275b288b3536c29014510b",
+        "runtime_revision": "5faf2f04bbd419a22c3cfa668ca8bd15ed93febc"
+      },
+      "full_ci": {
+        "status": "queued",
+        "url": "https://github.com/siliconjungle/ink-lang/actions/runs/41798892989"
+      }
+    },
+    "checked-access-layouts": {
+      "status": "pending; buffer observation candidate alone does not complete this requirement"
+    },
+    "cooperative-gpu-pipeline": {
+      "status": "pending; all three unrelated frozen programs are already GPU eligible, generalized cooperative fusion remains to implement/measure"
+    },
+    "resident-result-placement": {
+      "status": "pending; existing buffer views/reuse are not a new implementation"
+    },
+    "certified-ranking-refinement": {
+      "status": "pending; requires certified bounds and strict refinement, not observed error maxima"
+    }
+  },
+  "baseline_freeze": "experiments/generalization/frozen.json"
+}

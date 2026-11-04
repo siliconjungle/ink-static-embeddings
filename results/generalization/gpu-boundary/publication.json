@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "published": {
+    "ink_repository": "https://github.com/siliconjungle/ink-lang",
+    "ink_revision": "d5234395b9ba9cced845abef5127971c84a26bdf",
+    "planner_revision": "e6eafa79170ae1fc7a7e1cf27ffcee4f71dd6037",
+    "knowledge_revision": "0f6633380156133a5e928fccf27eccf1cd307efe",
+    "javascript_revision": "5466464bff657a77074607a88131a82c473f8493",
+    "abi_revision": "d4c9e1a9d9d1a2d1f9fc2956e0136fbed4b28331",
+    "gpu_revision": "b88523eb05c0a376c9275b288b3536c29014510b",
+    "runtime_revision": "5faf2f04bbd419a22c3cfa668ca8bd15ed93febc"
+  },
+  "status": "Benefit measured, independent package and distribution main revisions published. Full distribution CI remains pending until every job is green.",
+  "local_checks": {
+    "abi": 27,
+    "gpu_rust": 33,
+    "gpu_adapter_node": "passed including copy-before-unmap/dtype/capacity/tails",
+    "runtime_node": 118,
+    "runtime_rust": 9,
+    "distribution": 26,
+    "project": 26,
+    "hardware_models": 5
+  },
+  "artifacts_sha256": {
+    "artifacts/generalization/gpu-boundary/before/compute-5.wgsl": "883687a1a7e1759ce4c10989526ab445f176c59bd3f203b408a82977905fa701",
+    "artifacts/generalization/gpu-boundary/before/compute-8.wgsl": "3dc281f9b1659b86c1c277ccd1f38803c775d0fc3c6fb3e44afc67d4bd5d7f50",
+    "artifacts/generalization/gpu-boundary/before/ink-device.mjs": "671e30ba8c3e94a5e7ff770e5eafbd651cbbbbc12d5364c1c6a49a9019cd6a89",
+    "artifacts/generalization/gpu-boundary/before/ink-abi.mjs": "e1477e35a3aeee301163ac477d0223dcb14b892fe0be0a4c9190779c1f9c2a4b",
+    "artifacts/generalization/gpu-boundary/before/manifest.json": "3d9442e5351e30207041f5c3c05498ccff070a53ef62690d498257c28f0da6af",
+    "artifacts/generalization/gpu-boundary/before/compute-7.wgsl": "8d59cecd67a04a00f02448b24b1230d506b71d66642daf0032523d431e7e7410",
+    "artifacts/generalization/gpu-boundary/before/ink-gpu.mjs": "2ee0932f7789262f87a3ea5f1de8a2bec0e512571228166d07b7e94d3793fed9",
+    "artifacts/generalization/gpu-boundary/after/compute-5.wgsl": "883687a1a7e1759ce4c10989526ab445f176c59bd3f203b408a82977905fa701",
+    "artifacts/generalization/gpu-boundary/after/compute-8.wgsl": "3dc281f9b1659b86c1c277ccd1f38803c775d0fc3c6fb3e44afc67d4bd5d7f50",
+    "artifacts/generalization/gpu-boundary/after/ink-device.mjs": "de0ae57405294e149ebfd20f5fcda29ba4652e3f818d625a4ba784006f3ac098",
+    "artifacts/generalization/gpu-boundary/after/ink-abi.mjs": "9e8da6373393af3fbb459fdf2c8c419ac3d4857b28d259a8a109738b69fd9d13",
+    "artifacts/generalization/gpu-boundary/after/manifest.json": "5f7311e799098ede05f9e22939a1b6bd7e99972c3b595588ee3d473b523fe4b0",
+    "artifacts/generalization/gpu-boundary/after/compute-7.wgsl": "8d59cecd67a04a00f02448b24b1230d506b71d66642daf0032523d431e7e7410",
+    "artifacts/generalization/gpu-boundary/after/ink-gpu.mjs": "97eb8e0325c714c98588fd0e9e73eb3565bd327e025fd692421ec6b89da4e466"
+  }
+}

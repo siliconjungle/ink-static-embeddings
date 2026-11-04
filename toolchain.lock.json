@@ -1,7 +1,10 @@
 {
   "ink_repository": "https://github.com/siliconjungle/ink-lang",
-  "ink_revision": "c29e23d4ef2c9b4a0aa99abf05bfedb954b25b7d",
+  "ink_revision": "d5234395b9ba9cced845abef5127971c84a26bdf",
   "planner_revision": "e6eafa79170ae1fc7a7e1cf27ffcee4f71dd6037",
   "knowledge_revision": "0f6633380156133a5e928fccf27eccf1cd307efe",
-  "javascript_revision": "5466464bff657a77074607a88131a82c473f8493"
+  "javascript_revision": "5466464bff657a77074607a88131a82c473f8493",
+  "abi_revision": "d4c9e1a9d9d1a2d1f9fc2956e0136fbed4b28331",
+  "gpu_revision": "b88523eb05c0a376c9275b288b3536c29014510b",
+  "runtime_revision": "5faf2f04bbd419a22c3cfa668ca8bd15ed93febc"
 }

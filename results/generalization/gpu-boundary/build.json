@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "compiler_sha256": "508e6e08dfebd46e6a9bd83d9f7a35d9e215628b6c5136e28390bf3cbc42cafd",
+  "workloads": [
+    {
+      "name": "potion-2m",
+      "shader_identity": [
+        {
+          "function": "pool_batch",
+          "sha256": "883687a1a7e1759ce4c10989526ab445f176c59bd3f203b408a82977905fa701"
+        },
+        {
+          "function": "norm_batch",
+          "sha256": "8d59cecd67a04a00f02448b24b1230d506b71d66642daf0032523d431e7e7410"
+        },
+        {
+          "function": "normalize_batch",
+          "sha256": "3dc281f9b1659b86c1c277ccd1f38803c775d0fc3c6fb3e44afc67d4bd5d7f50"
+        }
+      ],
+      "same_source": true,
+      "same_entry_shaders": true
+    },
+    {
+      "name": "potion-8m",
+      "shader_identity": [
+        {
+          "function": "pool_batch",
+          "sha256": "d063a04a906503b2ca5247c11eb0cb7b488ba119d86ed142c6fffc5233729ba3"
+        },
+        {
+          "function": "norm_batch",
+          "sha256": "b30b959d2e4437f09da6ca451ab0dd35d928bf54f7a86ea200b091837648a53b"
+        },
+        {
+          "function": "normalize_batch",
+          "sha256": "91e85adbb74506682976ce5307d69be5919be66a476d91e875ecdbd5e1ad04a3"
+        }
+      ],
+      "same_source": true,
+      "same_entry_shaders": true
+    },
+    {
+      "name": "st-retrieval",
+      "shader_identity": [
+        {
+          "function": "pool_batch",
+          "sha256": "0eed45ef2d65ffdc4c379d811800da9b63ecff772de57e219ed2f2c1e63e1b07"
+        },
+        {
+          "function": "norm_batch",
+          "sha256": "931ac7b7e3852c78570ef9dfc30ad904b00e2b630f956fc081e8aeae7deeb23d"
+        },
+        {
+          "function": "normalize_batch",
+          "sha256": "db8c2127bf863af9bf7e0d4ca68318abbceaa9f45606b2190e226bc34bd11f22"
+        }
+      ],
+      "same_source": true,
+      "same_entry_shaders": true
+    },
+    {
+      "name": "unseen-weighted",
+      "shader_identity": [
+        {
+          "function": "pool_batch",
+          "sha256": "d9dbc5b6ecc6911619d98f33af0ad4ceecba3d39acbe45a8c0641caf94835be7"
+        },
+        {
+          "function": "norm_batch",
+          "sha256": "6ebdf0a1f80e914820368951c7f12b446679a9d8350f29f7e2f1a49aba49a3c7"
+        },
+        {
+          "function": "normalize_batch",
+          "sha256": "63927857257b58522cbd3c1cdea0f52a33911fb516e0c27260081245e1a03eae"
+        }
+      ],
+      "same_source": true,
+      "same_entry_shaders": true
+    },
+    {
+      "name": "unseen-clamp",
+      "shader_identity": [
+        {
+          "function": "pool_batch",
+          "sha256": "2a3b34c3761406fa9b3084c13687a10ad74ba542aab728376b9777ecb9296039"
+        },
+        {
+          "function": "norm_batch",
+          "sha256": "7852d99fb04eeaef0a2a0ca1c263e37948306cad2c63b2ad2983ff63f272a075"
+        },
+        {
+          "function": "normalize_batch",
+          "sha256": "e774eb6a68c5e96aeee7a2918dae0f9f24fa1f051f4a29e94f415f0d5ddf56fe"
+        }
+      ],
+      "same_source": true,
+      "same_entry_shaders": true
+    },
+    {
+      "name": "matrix-columns",
+      "fallback_reason": null,
+      "graph_required": false,
+      "shader": "compute-0.wgsl"
+    },
+    {
+      "name": "filter-bank",
+      "fallback_reason": null,
+      "graph_required": false,
+      "shader": "compute-0.wgsl"
+    },
+    {
+      "name": "channel-energy",
+      "fallback_reason": null,
+      "graph_required": false,
+      "shader": "compute-1.wgsl"
+    }
+  ]
+}

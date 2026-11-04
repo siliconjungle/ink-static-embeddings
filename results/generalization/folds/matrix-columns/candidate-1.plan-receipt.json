@@ -1,0 +1,12 @@
+{
+  "input": "fbbf54de568ddddc3b86cb1e59160c0ca3d779b26bba477edeb080126e581183",
+  "physical": null,
+  "plan": "11505d35b4a5f29853d7780821b8e8545fc9f75baa33db79ebf3e1365ace4ce1",
+  "representation": null,
+  "schema": 1,
+  "selected": "d0baf6fafc95ce4390dfe9fe35b2de63f6de136109cfdcc00e8aec1c482f6dbd",
+  "status": "checked",
+  "steps": 2,
+  "target": "javascript",
+  "trust": "General proof admission; literal lowerers, ownership primitives, codecs and target toolchains remain trusted"
+}
