@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "scope": "Inputs frozen before new producers/lowering changes. Matrix is development; filter-bank and channel-energy are held-out generalization workloads. No performance outcome claimed.",
+  "sha256": {
+    "experiments/generalization/manifest.json": "83b12cd4a087d5af4c464ea70dd07db01d46ff9275dc97836d7f2b55f8cfc2c0",
+    "experiments/generalization/sources/channel-energy.ink": "0c8e0258e34b6b348b625d8f332b3c8112e34c41d04cc3558095450edc40a876",
+    "experiments/generalization/sources/filter-bank.ink": "615de2a4e5e9f922be14c794f6de8cb9cedc1afa3365e9875e99d78398ebbd98",
+    "experiments/generalization/sources/matrix-columns.ink": "57e5d5293110b45ed29c01164c759d638b1c0b0c06e9ba2cd0f14a030abc8056"
+  }
+}

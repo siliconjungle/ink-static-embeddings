@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "objective": "Implement all six generalized follow-ups, measure matched gains and regressions, and publish beneficial validated implementations to each affected main repository.",
+  "baseline": {
+    "project": "b632b0e",
+    "ink": "c29e23d4ef2c9b4a0aa99abf05bfedb954b25b7d",
+    "knowledge": "0f6633380156133a5e928fccf27eccf1cd307efe",
+    "planner": "e6eafa79170ae1fc7a7e1cf27ffcee4f71dd6037",
+    "javascript": "5466464bff657a77074607a88131a82c473f8493",
+    "gpu": "d65af36d45ff26db7e230000badace36b3018a43",
+    "runtime": "7e456294edaac6d810b3e6bb35c04910388dad23"
+  },
+  "frozen_workloads": {
+    "matrix-columns": {"role": "development", "source": "sources/matrix-columns.ink", "stable_parameters": [0, 2, 3]},
+    "filter-bank": {"role": "held-out", "source": "sources/filter-bank.ink", "stable_parameters": [1]},
+    "channel-energy": {"role": "held-out", "source": "sources/channel-energy.ink", "stable_parameters": [1]}
+  },
+  "frozen_cases": {
+    "seed": 2026110401,
+    "input_lengths": [0, 8, 64, 512],
+    "independent_lanes": [0, 4, 16, 64],
+    "matrix_widths": [8, 64, 128],
+    "correctness": ["empty", "duplicate lanes", "reordered inputs", "out-of-range default", "signed zero", "subnormal", "overflow/canonical NaN", "detached complete output"]
+  },
+  "requirements": [
+    {"id": "ordered-independent-folds", "status": "in-progress", "deliverable": "Ordinary source -> existing checked general fold law -> efficient lowering; no authored embedding layout required. Test immutable per-lane captures and negative varying-input cases."},
+    {"id": "prepared-typed-boundaries", "status": "pending", "deliverable": "General prepared typed GPU boundaries with fresh checks for changed inputs. Isolate conversion, upload count, read/decode and setup contributions using matched controls."},
+    {"id": "checked-access-layouts", "status": "pending", "deliverable": "Reusable exact access-oriented layout alternatives, preserving bits, indexing/defaults and migration costs. Selection requires compatible lifecycle evidence."},
+    {"id": "cooperative-gpu-pipeline", "status": "pending", "deliverable": "General bounded cooperative map/ordered-reduction/map GPU lowering, preserving operation order and resource fallback. Compare fused and unfused on unrelated workloads."},
+    {"id": "resident-result-placement", "status": "pending", "deliverable": "Compose observable pure consumers on resident GPU values using general runtime/placement machinery, while retaining required public outputs and lifetime checks."},
+    {"id": "certified-ranking-refinement", "status": "pending", "deliverable": "General interval/error-bound top-k certification and strict refinement of ambiguous candidates. Error bounds must be certified, not inferred from measured maximum errors."}
+  ],
+  "measurement_contract": {
+    "correctness": "Independent ordered F32 reference; ordinary and prepared calls; complete detached output consumption. Native approximate work must have an explicit contract and strict final ranking certification.",
+    "profitability": "Separate correctness, applicability and profitability. Retain setup/conversion/migration, complete-call samples, adverse results and host/device identities. Never add separately timed phase medians as an overlapped total.",
+    "cost_features": ["target and engine", "arithmetic contract", "input length", "independent lanes", "dimensions", "batch size", "upload bytes", "readback bytes", "dispatch count", "expected reuse", "setup and migration"],
+    "publication": "Publish only beneficial validated implementation changes; retain rejected experimental candidates and negative results. All changed independent packages and distribution pins/locks must agree, with required checks green."
+  }
+}
