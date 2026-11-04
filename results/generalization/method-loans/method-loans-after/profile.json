@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "target": "rust",
+  "status": "untrusted source-algorithm proposal, not an installed profitability model",
+  "training_program": "matrix-columns",
+  "held_out_programs": [
+    "filter-bank",
+    "channel-energy"
+  ],
+  "training_report_sha256": "cd4a18d5548964c58b8ddc0af57d7eb4d6f9698ce77362eff32a6fa11fedbce8",
+  "minimum_items": 64,
+  "minimum_lanes": 1,
+  "maximum_items": 512,
+  "maximum_lanes": 64,
+  "predicted_ns": 77111.28,
+  "enabled_cases": 18,
+  "baseline_ns": 219783.37,
+  "predicted_gain": 2.8502103712971696,
+  "scope": "Thresholds only propose an exact conditional alternative. Both branches require ordinary kernel proof replay; new source/ABI lifecycle measurements and independent held-out checks must establish profitability. Unknown feature extents fall back to the original source."
+}

@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "core_package": {
+    "schema": 1,
+    "commit": "e9056193b9cf465bd92dd4bd349e082c0407f520",
+    "parent": "71ca03305355d92601bf10676ef22a7f9dce9a74",
+    "source": "21c18964e68f8e28b8f909109fca78b469c70f42",
+    "core_tree": "d7f3449ad44983a8cc84bca6a8b0e67b43d1ccff",
+    "branch": "core-package-method-loans-20261104",
+    "scope": "Exact standalone core tree with synchronous method callback loan endings. 546 tests pass locally with a 16 MiB test-thread stack; default-stack large neural-projection overflow also reproduces on the unchanged package. No primitive, equality or profitability authority changes."
+  },
+  "exact_private_core": {
+    "schema": 1,
+    "status": "passed",
+    "package": "e9056193b9cf465bd92dd4bd349e082c0407f520",
+    "source": "21c18964e68f8e28b8f909109fca78b469c70f42",
+    "core_tree": "d7f3449ad44983a8cc84bca6a8b0e67b43d1ccff",
+    "archive_sha256": "34dea2c09a6f143a312dae2f50f140df27e662ba06f63f8f757020bbbc0f5765",
+    "log_sha256": "cb5bc66458a78c6d2988e1f50ba8a7efd02d02a79119c8345468a7b550bd48ee",
+    "cargo_version": "cargo 1.99.1 (5f94df478 2026-08-27)",
+    "private_checkout": true,
+    "private_target": true,
+    "scope": "Exact committed standalone core tree with complete tests and isolated compilation. No whole-checker, compiler, ABI or toolchain correctness proof."
+  },
+  "checks": {
+    "core_private_passed": 546,
+    "last_use_default_stack_passed": 18,
+    "rust_package_passed": 22,
+    "javascript_package_passed": 72,
+    "gpu_package_passed": 33,
+    "wasm_package": "build/check only; zero standalone tests; actual Wasm checked by cross-target integration",
+    "runtime_rust_passed": 9,
+    "runtime_node_passed": 119,
+    "state_ownership_integration_passed": 4,
+    "variant_ownership_integration_passed": 1,
+    "cross_targets": [
+      "reference",
+      "native Rust",
+      "Rust/Wasm",
+      "JavaScript",
+      "native GPU host with actual eligible particle dispatch"
+    ],
+    "javascript_byte_identical_outputs": 11,
+    "final_gpu_numeric_storage_passed": 26,
+    "native_gpu_host_calls": {
+      "cpu": 120,
+      "gpu": 1
+    },
+    "project_passed": 26
+  },
+  "limitations": [
+    "The unchanged standalone core also overflows the default Mac test-thread stack on the large staged-neural projection fixture; full core validation uses RUST_MIN_STACK=16777216. The final-use depth test passes at the default stack.",
+    "The 1.34x gain applies to the guarded matrix variant; held-out workloads are essentially unchanged. No source-algorithm or profitable-selection policy was installed."
+  ],
+  "sha256": {
+    "results/generalization/method-loans/validation/cross-target-gpu-script.json": "3f0d3e53b80f7c8ef1e1a58e00f366f6441ab7f2ce371de325c487f34e7df74b",
+    "results/generalization/method-loans/validation/gpu-package.log": "f4f91ee5abbfd9c76649c0e2d6a9078afa28ea59910959edb59da44c980351b4",
+    "results/generalization/method-loans/validation/core-default-unit.log": "119d78ff459f7feeb0f82b6556c6763e3b92b748f39fe68ec3beb89c123eb73b",
+    "results/generalization/method-loans/validation/wasm-package.log": "1726449867605ba5f49d18c8d0415ec03799144f8bdd5dd15d49b5fdef946ad3",
+    "results/generalization/method-loans/validation/cross-target.log": "288b56574b8562164d6cb99efd2c45bad105eeec3dd0ad7ef0a55611858ea5f1",
+    "results/generalization/method-loans/validation/runtime-node.log": "561ac1290defed082cfdfe96a4eacf23efa31654897b481a9135522dd0e95640",
+    "results/generalization/method-loans/validation/final-gpu-numeric-storage.log": "416f8683a1240b55b36afc0cedbe23c8be99c2b9a54d838d1b6a46081ed3dd0a",
+    "results/generalization/method-loans/validation/core-receipt.json": "b89c142093330ee1165d9a29e3bd5fb62759cb98dc0cabee36657989f501702e",
+    "results/generalization/method-loans/validation/rust-package.log": "877f3754161ae386b465601ddfb2acb379af29ff92313bee482f3889b5d68fa2",
+    "results/generalization/method-loans/validation/runtime-rust.log": "f2cc146173e18c93dccf8a2b29a97de13525cf864f8e8d8cc37a2d4a849d4c11",
+    "results/generalization/method-loans/validation/cross-target-expected.json": "3acfdcc0912d541d2cbc85b4c7d7a2ed2b1bd7aacd1798d01e094c4920c31c2c",
+    "results/generalization/method-loans/validation/baseline-default-stack.log": "7271265f76f49446d08743ba9ca3c87f378c2fb0e1cf6f2cb309be7dc7c426d6",
+    "results/generalization/method-loans/validation/cross-target-gpu-receipts.json": "9c08f397e923dc7ef4ac9f7bfc11713bb86cde813f94bcf40b0c441d3da63164",
+    "results/generalization/method-loans/validation/cross-target-script.json": "ca46ca274500f74b469f702135989f615113834222ddf2160e26dff18c7ab914",
+    "results/generalization/method-loans/validation/core-private.json": "25783243fbde169ded963a6d1ebe4f56740c4913078d0ec982a64eead9f7cde3",
+    "results/generalization/method-loans/validation/javascript-package.log": "68a7c79d43dd8b6545d1ac8a907194760475547963151b47abdac6d290369c38",
+    "results/generalization/method-loans/validation/core-private.log": "cb5bc66458a78c6d2988e1f50ba8a7efd02d02a79119c8345468a7b550bd48ee",
+    "results/generalization/method-loans/validation/cross-target-source.ink": "9522f7aca5801424c3b42293f67f1674a757b97e17257dd5e150a0a8e85818a4",
+    "results/generalization/method-loans/validation/ownership-integration.log": "6271eae663e877b48869d5f9907f997164426fca8a57ffcddef4de83edfa6d74",
+    "results/generalization/method-loans/validation/project-tests.log": "216b7946f0905a4b8e1fd21b18c42241b33796ef184f98d9e31bb2b38b0899bb"
+  },
+  "packages": {
+    "ink_repository": "https://github.com/siliconjungle/ink-lang",
+    "ink_revision": "2debcb76593d4dea7329e8f610f55c4c6f34ab55",
+    "planner_revision": "e6eafa79170ae1fc7a7e1cf27ffcee4f71dd6037",
+    "knowledge_revision": "0f6633380156133a5e928fccf27eccf1cd307efe",
+    "javascript_revision": "bcdaeb966a92e9c645a2734280498af149c64e9b",
+    "abi_revision": "d4c9e1a9d9d1a2d1f9fc2956e0136fbed4b28331",
+    "gpu_revision": "c15988b4dc87b6c87d7fade843144dfc61175da7",
+    "runtime_revision": "1c805496b8e95d9445e0b10516acee3c4f4f63f1",
+    "core_revision": "e9056193b9cf465bd92dd4bd349e082c0407f520",
+    "rust_revision": "4f4d9d5a6eb16a69270273728d229e759ed1348f",
+    "wasm_revision": "7e6fb5b5f655a8f5f314579215a37c0a0f5a6192"
+  },
+  "full_ci": {
+    "status": "queued",
+    "url": "https://github.com/siliconjungle/ink-lang/actions/runs/41808325985"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "scope": "Recompile every literal and checked candidate with the new compiler; complete emitted JavaScript is byte-identical to the retained old output. No JS speedup is claimed.",
+  "records": [
+    {
+      "program": "matrix-columns",
+      "variant": "literal",
+      "sha256": "e1d431f435e4b97b20acbb1bf676467b7f38f62628bcad608c673e265c90503c",
+      "identical": true
+    },
+    {
+      "program": "matrix-columns",
+      "variant": "candidate-0",
+      "sha256": "d27e9a92f1fc76aba60b04fd639e6fcddfbb5292e74037490c0ab068c1d5bd23",
+      "identical": true
+    },
+    {
+      "program": "matrix-columns",
+      "variant": "candidate-1",
+      "sha256": "46129cfea42dc2fc454749d315f6e95815dab15c94554f434420fa5b32db8d1f",
+      "identical": true
+    },
+    {
+      "program": "filter-bank",
+      "variant": "literal",
+      "sha256": "bc20d5dc659b6c39aaf824d4d0dc9fe9a59b6beb816f40258848012691e904e7",
+      "identical": true
+    },
+    {
+      "program": "filter-bank",
+      "variant": "candidate-0",
+      "sha256": "4a83054a91cd0bfe3f0e516676310b8f1e6f1e2aba332da10d2de03080d1e537",
+      "identical": true
+    },
+    {
+      "program": "filter-bank",
+      "variant": "candidate-1",
+      "sha256": "89bc7d688e3eb9f0bbb45513a221d393ad420209d422b15305a2038b2084b9f5",
+      "identical": true
+    },
+    {
+      "program": "channel-energy",
+      "variant": "literal",
+      "sha256": "b072094019f592859bfd6839bf960edc947679c85afd43816d1e248b62031ad0",
+      "identical": true
+    },
+    {
+      "program": "channel-energy",
+      "variant": "candidate-0",
+      "sha256": "eb7d1c0a0eac2a91fc106790d1a772c342d677fb5f0b4cf65160173126fae389",
+      "identical": true
+    },
+    {
+      "program": "channel-energy",
+      "variant": "candidate-1",
+      "sha256": "d4e845a09862faf27ac65f9aaab415fb8e36ca495b7c319b092421ff0495f408",
+      "identical": true
+    },
+    {
+      "program": "channel-energy",
+      "variant": "candidate-2",
+      "sha256": "a8a4b203565241ce2283dde286a7fe306333c058f2cdb0200a4244a1a2a31db1",
+      "identical": true
+    },
+    {
+      "program": "channel-energy",
+      "variant": "candidate-3",
+      "sha256": "7e31cd01cd5b1348f43d0e674931ad249e373f1c0249e2afe5a80e25fd268faa",
+      "identical": true
+    }
+  ]
+}

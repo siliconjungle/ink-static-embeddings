@@ -72,6 +72,13 @@ Ordinary planner acquisition found a 2.63× calibration gain but correctly
 retained the baseline when a smaller independent holdout failed its uncertainty
 and minimum-gain guard. These observations do not install an unconditional policy.
 
+The [callback-lifetime follow-up](results/generalization/method-loans/REPORT.md)
+adds a general Ink ownership-analysis improvement. The guarded Rust matrix
+candidate improves **1.34×** (3.43 to 2.56 µs), while its literal/unconditional
+controls and both held-out workloads remain essentially unchanged. All 11
+JavaScript outputs are byte-identical. The checked source algorithms and planner
+policy are unchanged; this gain is not an embedding benchmark result.
+
 The [resident-composition study](results/generalization/resident/REPORT.md)
 compares typed CPU round-tripping with the new general browser
 `session.writeFrom(...)` API. Keeping intermediates on-device improves three

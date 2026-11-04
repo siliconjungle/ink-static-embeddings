@@ -1,0 +1,46 @@
+   Compiling ink v0.1.0 (/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/work/ink-compiler-src)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.96s
+     Running tests/gpu.rs (target/debug/deps/gpu-7555d011cff35538)
+
+running 23 tests
+test entry_points::entry_transport_does_not_hide_strict_unsupported_helper_work ... ok
+test local_lists::literal_graph_wrapping_cannot_remove_direct_collection_work_limits ... ok
+test function_types::reachable_binary64_fields_and_strict_argument_work_stay_cpu_only ... ok
+test entry_points::private_helper_folds_cannot_grow_beyond_a_proven_temporary_bound ... ok
+test packed_wasm_parallel_fallback_preserves_captures_indices_and_nesting ... ok
+test local_lists::unchecked_helper_preconditions_reject_before_device_emission ... ok
+test entry_points::scalar_entries_keep_owned_helpers_local_and_preserve_lazy_work ... ok
+test local_lists::lazy_list_control_has_one_bounded_graph_stage_without_eager_arm_stages ... ok
+test record_buffers::loop_checks_cover_each_owned_record_field ... ok
+test entry_points::internal_owned_helpers_do_not_require_host_transport ... ok
+test function_types::unrelated_owned_and_binary64_records_do_not_block_literal_device_functions ... ok
+test record_buffers::private_scan_classification_does_not_relax_list_scan_work_limits ... ok
+test record_buffers::records_carry_private_buffer_bounds_through_helpers_fields_branches_and_loops ... ok
+test record_buffers::anonymous_record_and_vector_buffers_have_exact_private_declarations ... ok
+test function_types::local_annotations_and_helpers_retain_types_without_constructors ... ok
+test record_buffers::local_and_input_output_capacities_keep_static_floor_and_lazy_arms ... ok
+test local_lists::private_list_budget_includes_wgsl_record_and_vector_padding ... ok
+test complete_gpu_bundle_keeps_state_on_the_host ... ok
+test local_lists::local_lists_cross_helpers_loops_captures_and_scalar_record_elements ... ok
+test record_buffers::full_record_tape_observations_and_ordered_buffer_scans_are_device_eligible ... ok
+test capability_rejection_preserves_compiled_cpu_and_staged_lowering ... ok
+test scalar_and_packed_browser_bundles_have_complete_module_dependencies ... ok
+test local_lists::local_storage_exhaustion_retains_cpu_without_publishing_partial_shaders ... ok
+
+test result: ok. 23 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.14s
+
+     Running tests/numeric_text_primitives.rs (target/debug/deps/numeric_text_primitives-29fb4834d5f67d1d)
+
+running 1 test
+test primitives_match_reference_values_events_and_portable_snapshots_on_every_target ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.24s
+
+     Running tests/storage_destination_parity.rs (target/debug/deps/storage_destination_parity-03eec3d5935a3af9)
+
+running 2 tests
+test compaction_destination_needs_only_final_output_capacity ... ok
+test javascript::literal_collection_stages_preserve_full_outputs_lifetimes_and_eager_stages ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.39s
+

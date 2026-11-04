@@ -1,0 +1,21 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling ink v0.1.0 (/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/work/ink-compiler-src)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.17s
+     Running tests/state_field_ownership.rs (target/debug/deps/state_field_ownership-ef6300572aee22b0)
+
+running 1 test
+test disjoint_fields_move_without_breaking_aliases_or_transaction_rollback ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.30s
+
+     Running tests/state_ownership.rs (target/debug/deps/state_ownership-66182cde9778ee84)
+
+running 3 tests
+test rows_still_read_whole_after_a_write_are_cloned_before_it ... ok
+test ownership_lowering_matches_reference_and_borrows_rows ... ok
+test stored_row_closures_can_call_helpers_queries_and_derived_reads ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.97s
+

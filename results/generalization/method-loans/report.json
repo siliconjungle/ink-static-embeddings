@@ -1,0 +1,1194 @@
+{
+  "schema": 1,
+  "scope": "Matched old/new compiler, identical frozen source, checked plans, Rust toolchain and typed owning boundary. Input clones and complete detached output consumption included. Three fresh groups rotate compiler/variant executable order; each executable validates all output bits, including edge cases. Build, JSON parsing and validation excluded. The guard and source algorithms are unchanged.",
+  "compilers": {
+    "before": "edab3d49df81ea87572f6769d28fe5d1f83b58ff13cbd8393624ddfe5ff06797",
+    "after": "2989222d29515391de6cfcd68c5f04375b96d6f98135f460898a44438a92d3dd"
+  },
+  "summary": [
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 0,
+      "width": 8,
+      "median_ns": {
+        "before/literal": 54.59,
+        "before/batched_0": 59.16,
+        "before/batched_1": 55.0,
+        "after/literal": 56.25,
+        "after/batched_0": 57.5,
+        "after/batched_1": 56.25
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 4,
+      "width": 8,
+      "median_ns": {
+        "before/literal": 73.75,
+        "before/batched_0": 105.0,
+        "before/batched_1": 73.75,
+        "after/literal": 74.59,
+        "after/batched_0": 102.92,
+        "after/batched_1": 75.84
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 16,
+      "width": 8,
+      "median_ns": {
+        "before/literal": 74.58,
+        "before/batched_0": 109.16,
+        "before/batched_1": 80.83,
+        "after/literal": 77.5,
+        "after/batched_0": 107.09,
+        "after/batched_1": 76.67
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 64,
+      "width": 8,
+      "median_ns": {
+        "before/literal": 110.0,
+        "before/batched_0": 157.09,
+        "before/batched_1": 126.25,
+        "after/literal": 114.17,
+        "after/batched_0": 156.66,
+        "after/batched_1": 111.25
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 0,
+      "width": 8,
+      "median_ns": {
+        "before/literal": 70.42,
+        "before/batched_0": 75.41,
+        "before/batched_1": 72.5,
+        "after/literal": 72.5,
+        "after/batched_0": 73.75,
+        "after/batched_1": 72.5
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 4,
+      "width": 8,
+      "median_ns": {
+        "before/literal": 113.75,
+        "before/batched_0": 167.5,
+        "before/batched_1": 115.83,
+        "after/literal": 117.5,
+        "after/batched_0": 166.25,
+        "after/batched_1": 115.83
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 16,
+      "width": 8,
+      "median_ns": {
+        "before/literal": 160.84,
+        "before/batched_0": 195.42,
+        "before/batched_1": 167.09,
+        "after/literal": 166.25,
+        "after/batched_0": 192.92,
+        "after/batched_1": 160.83
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 64,
+      "width": 8,
+      "median_ns": {
+        "before/literal": 327.5,
+        "before/batched_0": 374.17,
+        "before/batched_1": 341.25,
+        "after/literal": 330.84,
+        "after/batched_0": 367.09,
+        "after/batched_1": 327.08
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 0,
+      "width": 8,
+      "median_ns": {
+        "before/literal": 90.42,
+        "before/batched_0": 100.0,
+        "before/batched_1": 92.5,
+        "after/literal": 92.91,
+        "after/batched_0": 92.5,
+        "after/batched_1": 92.5
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 4,
+      "width": 8,
+      "median_ns": {
+        "before/literal": 367.91,
+        "before/batched_0": 266.66,
+        "before/batched_1": 291.25,
+        "after/literal": 367.09,
+        "after/batched_0": 259.16,
+        "after/batched_1": 254.58
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 16,
+      "width": 8,
+      "median_ns": {
+        "before/literal": 1130.42,
+        "before/batched_0": 567.92,
+        "before/batched_1": 780.0,
+        "after/literal": 1132.09,
+        "after/batched_0": 550.0,
+        "after/batched_1": 550.83
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 64,
+      "width": 8,
+      "median_ns": {
+        "before/literal": 4195.41,
+        "before/batched_0": 1730.84,
+        "before/batched_1": 2360.0,
+        "after/literal": 4192.08,
+        "after/batched_0": 1714.58,
+        "after/batched_1": 1724.17
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 0,
+      "width": 8,
+      "median_ns": {
+        "before/literal": 93.75,
+        "before/batched_0": 96.25,
+        "before/batched_1": 95.0,
+        "after/literal": 96.67,
+        "after/batched_0": 96.25,
+        "after/batched_1": 95.83
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 4,
+      "width": 8,
+      "median_ns": {
+        "before/literal": 3297.5,
+        "before/batched_0": 1074.59,
+        "before/batched_1": 1297.91,
+        "after/literal": 3333.75,
+        "after/batched_0": 1055.42,
+        "after/batched_1": 1056.25
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 16,
+      "width": 8,
+      "median_ns": {
+        "before/literal": 12571.25,
+        "before/batched_0": 3377.09,
+        "before/batched_1": 4850.0,
+        "after/literal": 12554.58,
+        "after/batched_0": 3373.33,
+        "after/batched_1": 3366.25
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 64,
+      "width": 8,
+      "median_ns": {
+        "before/literal": 50036.25,
+        "before/batched_0": 12438.75,
+        "before/batched_1": 17712.09,
+        "after/literal": 49369.16,
+        "after/batched_0": 12437.5,
+        "after/batched_1": 12438.75
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 0,
+      "width": 64,
+      "median_ns": {
+        "before/literal": 328.33,
+        "before/batched_0": 325.0,
+        "before/batched_1": 322.92,
+        "after/literal": 322.92,
+        "after/batched_0": 322.5,
+        "after/batched_1": 325.42
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 4,
+      "width": 64,
+      "median_ns": {
+        "before/literal": 345.41,
+        "before/batched_0": 364.59,
+        "before/batched_1": 345.42,
+        "after/literal": 344.17,
+        "after/batched_0": 360.42,
+        "after/batched_1": 344.17
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "before/literal": 349.16,
+        "before/batched_0": 373.75,
+        "before/batched_1": 347.5,
+        "after/literal": 351.25,
+        "after/batched_0": 367.08,
+        "after/batched_1": 348.33
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "before/literal": 363.33,
+        "before/batched_0": 414.59,
+        "before/batched_1": 386.67,
+        "after/literal": 371.25,
+        "after/batched_0": 403.75,
+        "after/batched_1": 364.17
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 0,
+      "width": 64,
+      "median_ns": {
+        "before/literal": 344.17,
+        "before/batched_0": 347.08,
+        "before/batched_1": 339.17,
+        "after/literal": 349.58,
+        "after/batched_0": 342.91,
+        "after/batched_1": 339.17
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 4,
+      "width": 64,
+      "median_ns": {
+        "before/literal": 391.25,
+        "before/batched_0": 434.58,
+        "before/batched_1": 398.34,
+        "after/literal": 396.67,
+        "after/batched_0": 431.67,
+        "after/batched_1": 390.83
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "before/literal": 438.75,
+        "before/batched_0": 465.41,
+        "before/batched_1": 441.67,
+        "after/literal": 440.83,
+        "after/batched_0": 462.5,
+        "after/batched_1": 435.42
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "before/literal": 632.92,
+        "before/batched_0": 700.84,
+        "before/batched_1": 628.75,
+        "after/literal": 637.91,
+        "after/batched_0": 675.0,
+        "after/batched_1": 623.75
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 0,
+      "width": 64,
+      "median_ns": {
+        "before/literal": 385.0,
+        "before/batched_0": 355.0,
+        "before/batched_1": 372.5,
+        "after/literal": 383.34,
+        "after/batched_0": 347.08,
+        "after/batched_1": 395.0
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 4,
+      "width": 64,
+      "median_ns": {
+        "before/literal": 758.33,
+        "before/batched_0": 605.83,
+        "before/batched_1": 659.58,
+        "after/literal": 704.59,
+        "after/batched_0": 601.67,
+        "after/batched_1": 637.08
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "before/literal": 1479.58,
+        "before/batched_0": 878.34,
+        "before/batched_1": 1096.25,
+        "after/literal": 1493.75,
+        "after/batched_0": 879.17,
+        "after/batched_1": 908.75
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "before/literal": 4553.34,
+        "before/batched_0": 2089.59,
+        "before/batched_1": 2769.58,
+        "after/literal": 4512.08,
+        "after/batched_0": 2053.33,
+        "after/batched_1": 2122.91
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 0,
+      "width": 64,
+      "median_ns": {
+        "before/literal": 396.25,
+        "before/batched_0": 349.59,
+        "before/batched_1": 383.75,
+        "after/literal": 395.0,
+        "after/batched_0": 337.5,
+        "after/batched_1": 374.58
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 4,
+      "width": 64,
+      "median_ns": {
+        "before/literal": 3821.25,
+        "before/batched_0": 1484.17,
+        "before/batched_1": 1715.0,
+        "after/literal": 3691.25,
+        "after/batched_0": 1417.09,
+        "after/batched_1": 1452.08
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 16,
+      "width": 64,
+      "median_ns": {
+        "before/literal": 12225.83,
+        "before/batched_0": 3779.17,
+        "before/batched_1": 5279.58,
+        "after/literal": 12833.33,
+        "after/batched_0": 3730.42,
+        "after/batched_1": 3773.33
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 64,
+      "width": 64,
+      "median_ns": {
+        "before/literal": 49082.08,
+        "before/batched_0": 12712.08,
+        "before/batched_1": 17852.5,
+        "after/literal": 49000.83,
+        "after/batched_0": 12730.42,
+        "after/batched_1": 12694.16
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 0,
+      "width": 128,
+      "median_ns": {
+        "before/literal": 630.84,
+        "before/batched_0": 630.42,
+        "before/batched_1": 628.33,
+        "after/literal": 624.58,
+        "after/batched_0": 633.33,
+        "after/batched_1": 628.75
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 4,
+      "width": 128,
+      "median_ns": {
+        "before/literal": 664.16,
+        "before/batched_0": 686.66,
+        "before/batched_1": 654.17,
+        "after/literal": 657.5,
+        "after/batched_0": 688.33,
+        "after/batched_1": 651.25
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 16,
+      "width": 128,
+      "median_ns": {
+        "before/literal": 660.0,
+        "before/batched_0": 698.33,
+        "before/batched_1": 665.0,
+        "after/literal": 652.5,
+        "after/batched_0": 695.42,
+        "after/batched_1": 659.58
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 0,
+      "lanes": 64,
+      "width": 128,
+      "median_ns": {
+        "before/literal": 673.75,
+        "before/batched_0": 721.67,
+        "before/batched_1": 695.0,
+        "after/literal": 656.67,
+        "after/batched_0": 726.66,
+        "after/batched_1": 678.75
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 0,
+      "width": 128,
+      "median_ns": {
+        "before/literal": 621.25,
+        "before/batched_0": 626.67,
+        "before/batched_1": 621.66,
+        "after/literal": 622.5,
+        "after/batched_0": 625.83,
+        "after/batched_1": 622.5
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 4,
+      "width": 128,
+      "median_ns": {
+        "before/literal": 673.33,
+        "before/batched_0": 728.34,
+        "before/batched_1": 674.17,
+        "after/literal": 671.25,
+        "after/batched_0": 739.17,
+        "after/batched_1": 672.91
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 16,
+      "width": 128,
+      "median_ns": {
+        "before/literal": 719.59,
+        "before/batched_0": 767.91,
+        "before/batched_1": 735.41,
+        "after/literal": 719.58,
+        "after/batched_0": 759.17,
+        "after/batched_1": 723.33
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 8,
+      "lanes": 64,
+      "width": 128,
+      "median_ns": {
+        "before/literal": 908.34,
+        "before/batched_0": 953.33,
+        "before/batched_1": 922.92,
+        "after/literal": 907.08,
+        "after/batched_0": 957.92,
+        "after/batched_1": 907.09
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 0,
+      "width": 128,
+      "median_ns": {
+        "before/literal": 657.09,
+        "before/batched_0": 648.33,
+        "before/batched_1": 652.08,
+        "after/literal": 653.33,
+        "after/batched_0": 655.83,
+        "after/batched_1": 672.92
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 4,
+      "width": 128,
+      "median_ns": {
+        "before/literal": 983.33,
+        "before/batched_0": 858.75,
+        "before/batched_1": 894.17,
+        "after/literal": 977.09,
+        "after/batched_0": 842.5,
+        "after/batched_1": 848.33
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 16,
+      "width": 128,
+      "median_ns": {
+        "before/literal": 1748.33,
+        "before/batched_0": 1148.33,
+        "before/batched_1": 1319.17,
+        "after/literal": 1743.33,
+        "after/batched_0": 1158.75,
+        "after/batched_1": 1145.0
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 64,
+      "lanes": 64,
+      "width": 128,
+      "median_ns": {
+        "before/literal": 4933.75,
+        "before/batched_0": 2389.17,
+        "before/batched_1": 3052.5,
+        "after/literal": 4886.67,
+        "after/batched_0": 2384.17,
+        "after/batched_1": 2372.5
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 0,
+      "width": 128,
+      "median_ns": {
+        "before/literal": 668.75,
+        "before/batched_0": 665.0,
+        "before/batched_1": 655.42,
+        "after/literal": 673.34,
+        "after/batched_0": 658.75,
+        "after/batched_1": 665.83
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 4,
+      "width": 128,
+      "median_ns": {
+        "before/literal": 4105.0,
+        "before/batched_0": 2721.66,
+        "before/batched_1": 1972.5,
+        "after/literal": 4108.33,
+        "after/batched_0": 2347.5,
+        "after/batched_1": 1763.34
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 16,
+      "width": 128,
+      "median_ns": {
+        "before/literal": 13434.17,
+        "before/batched_0": 4172.08,
+        "before/batched_1": 5523.75,
+        "after/literal": 13376.67,
+        "after/batched_0": 4110.42,
+        "after/batched_1": 4170.42
+      }
+    },
+    {
+      "name": "matrix-columns",
+      "length": 512,
+      "lanes": 64,
+      "width": 128,
+      "median_ns": {
+        "before/literal": 50525.84,
+        "before/batched_0": 13649.59,
+        "before/batched_1": 18723.75,
+        "after/literal": 50896.25,
+        "after/batched_0": 13617.08,
+        "after/batched_1": 13548.33
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 0,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "before/literal": 3.33,
+        "before/batched_0": 4.58,
+        "before/batched_1": 3.34,
+        "after/literal": 3.33,
+        "after/batched_0": 4.59,
+        "after/batched_1": 3.75
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 0,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "before/literal": 21.25,
+        "before/batched_0": 46.25,
+        "before/batched_1": 20.42,
+        "after/literal": 22.5,
+        "after/batched_0": 48.75,
+        "after/batched_1": 22.5
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 0,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "before/literal": 28.75,
+        "before/batched_0": 56.67,
+        "before/batched_1": 22.92,
+        "after/literal": 29.58,
+        "after/batched_0": 58.33,
+        "after/batched_1": 25.83
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 0,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "before/literal": 70.0,
+        "before/batched_0": 98.75,
+        "before/batched_1": 55.83,
+        "after/literal": 72.09,
+        "after/batched_0": 98.33,
+        "after/batched_1": 55.42
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 8,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "before/literal": 19.17,
+        "before/batched_0": 21.25,
+        "before/batched_1": 18.75,
+        "after/literal": 20.83,
+        "after/batched_0": 22.92,
+        "after/batched_1": 19.59
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 8,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "before/literal": 73.33,
+        "before/batched_0": 131.67,
+        "before/batched_1": 72.92,
+        "after/literal": 71.67,
+        "after/batched_0": 135.41,
+        "after/batched_1": 75.83
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 8,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "before/literal": 142.92,
+        "before/batched_0": 165.0,
+        "before/batched_1": 141.67,
+        "after/literal": 143.75,
+        "after/batched_0": 165.0,
+        "after/batched_1": 142.5
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 8,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "before/literal": 443.75,
+        "before/batched_0": 321.25,
+        "before/batched_1": 443.34,
+        "after/literal": 445.0,
+        "after/batched_0": 321.25,
+        "after/batched_1": 445.0
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 64,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "before/literal": 36.25,
+        "before/batched_0": 37.91,
+        "before/batched_1": 35.84,
+        "after/literal": 37.92,
+        "after/batched_0": 39.17,
+        "after/batched_1": 37.5
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 64,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "before/literal": 719.17,
+        "before/batched_0": 605.41,
+        "before/batched_1": 601.66,
+        "after/literal": 723.34,
+        "after/batched_0": 607.09,
+        "after/batched_1": 604.58
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 64,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "before/literal": 2451.25,
+        "before/batched_0": 634.17,
+        "before/batched_1": 635.0,
+        "after/literal": 2463.33,
+        "after/batched_0": 633.34,
+        "after/batched_1": 636.25
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 64,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "before/literal": 8825.0,
+        "before/batched_0": 1161.67,
+        "before/batched_1": 1156.67,
+        "after/literal": 8790.42,
+        "after/batched_0": 1158.33,
+        "after/batched_1": 1163.33
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 512,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "before/literal": 29.58,
+        "before/batched_0": 35.0,
+        "before/batched_1": 36.25,
+        "after/literal": 28.33,
+        "after/batched_0": 35.83,
+        "after/batched_1": 36.67
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 512,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "before/literal": 6593.34,
+        "before/batched_0": 4267.5,
+        "before/batched_1": 4306.25,
+        "after/literal": 6592.5,
+        "after/batched_0": 4438.34,
+        "after/batched_1": 4320.83
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 512,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "before/literal": 26191.67,
+        "before/batched_0": 4446.25,
+        "before/batched_1": 4453.33,
+        "after/literal": 26238.75,
+        "after/batched_0": 4457.08,
+        "after/batched_1": 4452.5
+      }
+    },
+    {
+      "name": "filter-bank",
+      "length": 512,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "before/literal": 104786.25,
+        "before/batched_0": 7839.16,
+        "before/batched_1": 7807.09,
+        "after/literal": 104406.25,
+        "after/batched_0": 7810.83,
+        "after/batched_1": 7836.25
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 0,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "before/literal": 2.92,
+        "before/batched_0": 5.0,
+        "before/batched_1": 4.59,
+        "before/batched_2": 2.92,
+        "before/batched_3": 2.92,
+        "after/literal": 3.33,
+        "after/batched_0": 5.0,
+        "after/batched_1": 4.58,
+        "after/batched_2": 2.92,
+        "after/batched_3": 2.91
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 0,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "before/literal": 21.25,
+        "before/batched_0": 53.75,
+        "before/batched_1": 52.09,
+        "before/batched_2": 21.66,
+        "before/batched_3": 20.83,
+        "after/literal": 22.09,
+        "after/batched_0": 53.75,
+        "after/batched_1": 57.08,
+        "after/batched_2": 22.5,
+        "after/batched_3": 21.25
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 0,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "before/literal": 28.75,
+        "before/batched_0": 54.58,
+        "before/batched_1": 52.92,
+        "before/batched_2": 24.58,
+        "before/batched_3": 23.75,
+        "after/literal": 28.33,
+        "after/batched_0": 55.42,
+        "after/batched_1": 55.0,
+        "after/batched_2": 23.75,
+        "after/batched_3": 22.92
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 0,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "before/literal": 71.25,
+        "before/batched_0": 96.66,
+        "before/batched_1": 93.34,
+        "before/batched_2": 60.0,
+        "before/batched_3": 60.42,
+        "after/literal": 72.09,
+        "after/batched_0": 96.66,
+        "after/batched_1": 96.25,
+        "after/batched_2": 62.92,
+        "after/batched_3": 60.0
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 8,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "before/literal": 19.16,
+        "before/batched_0": 20.0,
+        "before/batched_1": 19.58,
+        "before/batched_2": 18.34,
+        "before/batched_3": 18.75,
+        "after/literal": 18.75,
+        "after/batched_0": 20.0,
+        "after/batched_1": 21.67,
+        "after/batched_2": 19.58,
+        "after/batched_3": 18.33
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 8,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "before/literal": 68.75,
+        "before/batched_0": 123.33,
+        "before/batched_1": 107.92,
+        "before/batched_2": 66.25,
+        "before/batched_3": 69.17,
+        "after/literal": 67.92,
+        "after/batched_0": 109.16,
+        "after/batched_1": 110.41,
+        "after/batched_2": 67.91,
+        "after/batched_3": 67.5
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 8,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "before/literal": 113.33,
+        "before/batched_0": 169.58,
+        "before/batched_1": 169.58,
+        "before/batched_2": 115.42,
+        "before/batched_3": 115.41,
+        "after/literal": 113.75,
+        "after/batched_0": 172.92,
+        "after/batched_1": 175.42,
+        "after/batched_2": 114.17,
+        "after/batched_3": 115.41
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 8,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "before/literal": 328.34,
+        "before/batched_0": 384.16,
+        "before/batched_1": 386.67,
+        "before/batched_2": 331.25,
+        "before/batched_3": 328.75,
+        "after/literal": 327.91,
+        "after/batched_0": 391.67,
+        "after/batched_1": 387.09,
+        "after/batched_2": 328.33,
+        "after/batched_3": 328.34
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 64,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "before/literal": 48.75,
+        "before/batched_0": 52.09,
+        "before/batched_1": 50.83,
+        "before/batched_2": 51.67,
+        "before/batched_3": 50.41,
+        "after/literal": 51.67,
+        "after/batched_0": 52.09,
+        "after/batched_1": 51.67,
+        "after/batched_2": 49.58,
+        "after/batched_3": 50.83
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 64,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "before/literal": 333.33,
+        "before/batched_0": 401.25,
+        "before/batched_1": 227.5,
+        "before/batched_2": 230.83,
+        "before/batched_3": 231.67,
+        "after/literal": 334.16,
+        "after/batched_0": 228.75,
+        "after/batched_1": 231.67,
+        "after/batched_2": 231.67,
+        "after/batched_3": 230.41
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 64,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "before/literal": 1104.58,
+        "before/batched_0": 737.5,
+        "before/batched_1": 748.75,
+        "before/batched_2": 747.08,
+        "before/batched_3": 739.17,
+        "after/literal": 1103.34,
+        "after/batched_0": 742.5,
+        "after/batched_1": 748.33,
+        "after/batched_2": 755.41,
+        "after/batched_3": 749.59
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 64,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "before/literal": 4178.34,
+        "before/batched_0": 2232.08,
+        "before/batched_1": 2273.75,
+        "before/batched_2": 2273.34,
+        "before/batched_3": 2273.75,
+        "after/literal": 4057.08,
+        "after/batched_0": 2274.58,
+        "after/batched_1": 2275.83,
+        "after/batched_2": 2276.25,
+        "after/batched_3": 2236.25
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 512,
+      "lanes": 0,
+      "width": null,
+      "median_ns": {
+        "before/literal": 160.83,
+        "before/batched_0": 162.91,
+        "before/batched_1": 162.92,
+        "before/batched_2": 161.25,
+        "before/batched_3": 161.66,
+        "after/literal": 162.5,
+        "after/batched_0": 164.58,
+        "after/batched_1": 160.83,
+        "after/batched_2": 161.66,
+        "after/batched_3": 160.84
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 512,
+      "lanes": 4,
+      "width": null,
+      "median_ns": {
+        "before/literal": 3337.91,
+        "before/batched_0": 1234.17,
+        "before/batched_1": 1237.09,
+        "before/batched_2": 1238.33,
+        "before/batched_3": 1238.34,
+        "after/literal": 3401.25,
+        "after/batched_0": 1235.0,
+        "after/batched_1": 1236.25,
+        "after/batched_2": 1242.08,
+        "after/batched_3": 1242.09
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 512,
+      "lanes": 16,
+      "width": null,
+      "median_ns": {
+        "before/literal": 12316.25,
+        "before/batched_0": 5205.42,
+        "before/batched_1": 5265.83,
+        "before/batched_2": 5239.58,
+        "before/batched_3": 5200.83,
+        "after/literal": 12228.34,
+        "after/batched_0": 5247.5,
+        "after/batched_1": 5234.17,
+        "after/batched_2": 5256.66,
+        "after/batched_3": 5207.5
+      }
+    },
+    {
+      "name": "channel-energy",
+      "length": 512,
+      "lanes": 64,
+      "width": null,
+      "median_ns": {
+        "before/literal": 48201.25,
+        "before/batched_0": 16951.25,
+        "before/batched_1": 17249.58,
+        "before/batched_2": 17232.5,
+        "before/batched_3": 17230.42,
+        "after/literal": 48047.92,
+        "after/batched_0": 17234.59,
+        "after/batched_1": 17231.67,
+        "after/batched_2": 17234.58,
+        "after/batched_3": 17232.5
+      }
+    }
+  ]
+}

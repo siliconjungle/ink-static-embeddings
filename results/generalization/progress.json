@@ -4,7 +4,7 @@
   "complete": false,
   "requirements": {
     "ordered-independent-folds": {
-      "status": "measured; ordinary planner conservatively retains baseline; conditional proposal measured and not installed",
+      "status": "ordinary source/checked fold alternatives measured; general callback lifetime benefit published; planner retains its conservative selection policy",
       "rust_mean_nonempty_speedups": {
         "matrix-columns": 3.03,
         "filter-bank": 8.03,
@@ -24,6 +24,23 @@
         "status": "exact proof checked; development Rust regression versus unconditional; JavaScript still regresses",
         "report": "guarded-folds/NOTES.md",
         "knowledge_changed": false
+      },
+      "ownership_followup": {
+        "status": "published on main; local package and integration checks pass; full distribution CI queued",
+        "matrix_guarded_before_us": 3.429,
+        "matrix_guarded_after_us": 2.562,
+        "speedup": 1.34,
+        "per_group_speedups": [
+          1.323,
+          1.383,
+          1.337
+        ],
+        "held_out": "essentially unchanged",
+        "javascript": "all 11 outputs byte-identical",
+        "report": "method-loans/REPORT.md",
+        "validation": "method-loans/validation.json",
+        "packages": "method-loans/packages.json",
+        "ink_revision": "2debcb76593d4dea7329e8f610f55c4c6f34ab55"
       }
     },
     "prepared-typed-boundaries": {

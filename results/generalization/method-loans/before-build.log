@@ -1,0 +1,17 @@
+Rust process 0
+Rust process 1
+Rust process 2
+# Rust independent-fold experiment
+
+Same checked source/plan candidates, generated Rust typed owning API. Input vector clones and detached complete output consumption included; JSON parsing, build and validation excluded. No borrowed/prepared Rust claim. Each target owns a fresh executable/process; their order rotates between groups.
+
+| Workload | Candidate | Literal mean µs | Candidate mean µs | Literal/candidate |
+| --- | --- | ---: | ---: | ---: |
+| matrix-columns | batched_0 | 8.770 | 2.633 | 3.33× |
+| matrix-columns | batched_1 | 8.770 | 3.611 | 2.43× |
+| filter-bank | batched_0 | 18.070 | 2.228 | 8.11× |
+| filter-bank | batched_1 | 18.070 | 2.212 | 8.17× |
+| channel-energy | batched_0 | 8.433 | 3.108 | 2.71× |
+| channel-energy | batched_1 | 8.433 | 3.104 | 2.72× |
+| channel-energy | batched_2 | 8.433 | 3.109 | 2.71× |
+| channel-energy | batched_3 | 8.433 | 3.047 | 2.77× |

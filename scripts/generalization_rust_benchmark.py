@@ -74,7 +74,7 @@ fn main(){let cases:Value=serde_json::from_slice(&fs::read("work/generalization/
         if row['edge']:continue
         modes={m['mode']:statistics.median(statistics.median(next(x for x in r['rows'][index]['modes']if x['mode']==m['mode'])['samples_ns'])for r in runs)for m in row['modes']}
         summary.append({k:row[k]for k in ['name','length','lanes','width']}|{'median_ns':modes})
-    report={'scope':'Same checked source/plan candidates, generated Rust typed owning API. Input vector clones and detached complete output consumption included; JSON parsing, build and validation excluded. No borrowed/prepared Rust claim. Each target owns a fresh executable/process; their order rotates between groups.','processes':args.processes,'rustc':invoke('rustc','--version').strip(),'driver_sha256':drivers,'summary':summary}
+    report={'scope':'Same checked source/plan candidates, generated Rust typed owning API. Input vector clones and detached complete output consumption included; JSON parsing, build and validation excluded. No borrowed/prepared Rust claim. Each target owns a fresh executable/process; their order rotates between groups.','processes':args.processes,'rustc':invoke('rustc','--version').strip(),'compiler_sha256':hashlib.sha256(Path(compiler).read_bytes()).hexdigest(),'discovery_sha256':hashlib.sha256((destination/'discovery.json').read_bytes()).hexdigest(),'driver_sha256':drivers,'summary':summary}
     (destination/'rust-report.json').write_text(json.dumps(report,indent=2)+'\n')
     rows=['# Rust independent-fold experiment','',report['scope'],'','| Workload | Candidate | Literal mean µs | Candidate mean µs | Literal/candidate |','| --- | --- | ---: | ---: | ---: |']
     for name in dict.fromkeys(r['name']for r in summary):

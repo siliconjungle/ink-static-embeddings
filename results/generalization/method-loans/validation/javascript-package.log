@@ -1,0 +1,394 @@
+    Blocking waiting for file lock on package cache
+   Compiling ink-core v0.1.0 (https://github.com/siliconjungle/ink-lang?rev=e9056193b9cf465bd92dd4bd349e082c0407f520#e9056193)
+   Compiling ink-lowering-js v0.1.0 (/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/work/ink-compiler-src/lowerings/js)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 51.95s
+     Running unittests src/lib.rs (target/debug/deps/ink_lowering_js-be42418804cf48ce)
+
+running 1 test
+test definition_native::tests::modular_regions_normalize_at_comparison_division_and_output_boundaries ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running tests/binary32_literals.rs (target/debug/deps/binary32_literals-0a433fb708d750ad)
+
+running 1 test
+test binary32_literals_retain_every_sampled_bit_in_both_carriers ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.79s
+
+     Running tests/binary64_literals.rs (target/debug/deps/binary64_literals-5793914cae9fe01d)
+
+running 1 test
+test binary64_literals_round_trip_raw_bits_in_pure_and_action_emission ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.25s
+
+     Running tests/call_boundaries.rs (target/debug/deps/call_boundaries-33680c07b3c792a5)
+
+running 3 tests
+test copier_namespaces_do_not_rename_source_fields_or_type_names ... ok
+test fixed_boundaries_and_prepared_destinations_preserve_exact_values_and_private_ownership ... ok
+test large_interfaces_keep_compact_adapters_when_fixed_arity_emission_is_exhausted ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.94s
+
+     Running tests/collection_memory.rs (target/debug/deps/collection_memory-22b5f7758f56d4e3)
+
+running 1 test
+test literal_collection_stages_preserve_full_outputs_lifetimes_and_eager_stages ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.48s
+
+     Running tests/combined_capabilities.rs (target/debug/deps/combined_capabilities-d57e19257101745f)
+
+running 1 test
+test checked_readers_compose_with_preflight_state_and_preserve_boundaries ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
+     Running tests/compiled_guarantees.rs (target/debug/deps/compiled_guarantees-1dad7263179c7596)
+
+running 3 tests
+test dense_private_f32_captures_preserve_bits_growth_aliasing_and_limits ... ok
+test immutable_handles_reuse_checked_type_facts_without_erasing_other_requires ... ok
+test dense_f32_owners_preserve_tags_ranges_growth_and_map_order ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+
+     Running tests/conversion_cache.rs (target/debug/deps/conversion_cache-60a4178bc691941d)
+
+running 1 test
+test schema_memoization_is_local_exact_and_preserves_record_data_properties ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/count_carrier.rs (target/debug/deps/count_carrier-6624c93b8fdb8628)
+
+running 1 test
+test finite_count_comparisons_preserve_exact_integers_and_public_values ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.88s
+
+     Running tests/dense_restore.rs (target/debug/deps/dense_restore-8d571769f2d3d7ed)
+
+running 1 test
+test dense_spares_preserve_order_owned_rows_failed_restore_and_bound_calls ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests/destination.rs (target/debug/deps/destination-cccb8b85479c1772)
+
+running 2 tests
+test nested_list_destinations_and_list_lookup_fallback_preserve_f32_bits ... ok
+test destination_outputs_match_interpreter_and_preserve_stage_allocations_without_mutating_inputs ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.04s
+
+     Running tests/differential.rs (target/debug/deps/differential-3bc9d9c0a53ba32f)
+
+running 4 tests
+test compile_time_checking_still_rejects_ill_typed_functions ... ok
+test word_only_output_binds_direct_functions_and_omits_unused_runtime_helpers ... ok
+test admits_stateful_and_opaque_values_without_changing_core_types ... ok
+test generated_javascript_matches_reference_for_trusted_native_inputs ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.56s
+
+     Running tests/early_exit.rs (target/debug/deps/early_exit-ea0f5eaab717626b)
+
+running 2 tests
+test demand_scan_evaluates_list_and_default_once_then_skips_tail_callbacks ... ok
+test literal_reverse_folds_match_interpreter ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.57s
+
+     Running tests/event_columns.rs (target/debug/deps/event_columns-88e73fb0a18aa1f6)
+
+running 1 test
+test column_event_log_preserves_order_truncation_acknowledgement_and_wide_values ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.26s
+
+     Running tests/f32_carriers.rs (target/debug/deps/f32_carriers-6176d523cdcb4ff6)
+
+running 1 test
+test normalized_carriers_preserve_every_read_rounding_payload_and_mutable_snapshot ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.19s
+
+     Running tests/float_islands.rs (target/debug/deps/float_islands-b9deef39b6410412)
+
+running 1 test
+test bit_state_arithmetic_preserves_rounding_bits_laziness_and_capture_protocols ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 19.56s
+
+     Running tests/generated_capture.rs (target/debug/deps/generated_capture-3743a2dbc88efb98)
+
+running 1 test
+test emitted_schema_capture_matches_reference_validation_and_resource_counts ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests/helper_records.rs (target/debug/deps/helper_records-056a1699dc8c79ef)
+
+running 1 test
+test local_record_helpers_preserve_aliases_composites_owned_fallback_and_all_bits ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.82s
+
+     Running tests/immutable_bindings.rs (target/debug/deps/immutable_bindings-b1b54113eb81542b)
+
+running 1 test
+test immutable_aliases_and_mutable_snapshots_preserve_every_binary64_bit ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.16s
+
+     Running tests/inlining.rs (target/debug/deps/inlining-9bc393d33680d9b7)
+
+running 2 tests
+test recursive_definitions_still_reject_at_compile_time ... ok
+test literal_known_calls_match_interpreter_and_keep_exports ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.97s
+
+     Running tests/input_projection.rs (target/debug/deps/input_projection-55842fb70bb626f7)
+
+running 1 test
+test pure_entry_conversion_uses_checked_fields_and_retains_whole_value_boundaries ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/keep_journal.rs (target/debug/deps/keep_journal-e2bdc675670c9dc8)
+
+running 1 test
+test cached_observations_restore_first_before_images_across_interleaved_reads_and_writes ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/lexical_records.rs (target/debug/deps/lexical_records-d6e7bea1df608b8b)
+
+running 1 test
+test lexical_records_preserve_bits_shadowing_whole_values_and_worker_captures ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.81s
+
+     Running tests/literal_equality.rs (target/debug/deps/literal_equality-70caad6c9eb0ed2f)
+
+running 1 test
+test literal_lists_preserve_structural_bits_nested_values_and_operand_evaluation ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/merged_interfaces.rs (target/debug/deps/merged_interfaces-0a05f717064ba932)
+
+running 1 test
+test upstream_owned_state_and_tagged_values_compose_with_trusted_direct_functions ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/native_f32.rs (target/debug/deps/native_f32-aac177ba76699e69)
+
+running 2 tests
+test native_float_tags_are_captured_once_and_borrowed_fields_stay_lazy ... ok
+test native_float_lane_preserves_binary32_bits_and_public_observations ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.30s
+
+     Running tests/ordered_keys.rs (target/debug/deps/ordered_keys-9c5bf70aef74120e)
+
+running 1 test
+test retained_key_view_matches_utf8_order_through_mutation_and_rollback ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/owned_parameters.rs (target/debug/deps/owned_parameters-9fad9ce1e66d3aa1)
+
+running 1 test
+test direct_owned_helpers_expand_without_borrowed_list_ownership_or_call_reordering ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.64s
+
+     Running tests/owned_records.rs (target/debug/deps/owned_records-541ce460a90b7708)
+
+running 1 test
+test owned_record_locals_preserve_moves_loans_shared_lists_and_transactions ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.88s
+
+     Running tests/ownership_aliases.rs (target/debug/deps/ownership_aliases-c667dc80f4ecabed)
+
+running 1 test
+test owned_replies_preserve_same_sort_aliases_across_expanded_and_recursive_schemas ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/parallel_memory.rs (target/debug/deps/parallel_memory-918a6ba7dafe9476)
+
+running 1 test
+test parallel_scopes_slices_and_recursive_helpers_preserve_collection_contracts ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+
+     Running tests/plan_manifest.rs (target/debug/deps/plan_manifest-2af874123f4c7782)
+
+running 1 test
+test manifest_identifies_source_plans_with_frozen_float_rows ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/preflight_capture.rs (target/debug/deps/preflight_capture-3d8db472d076d99f)
+
+running 1 test
+test preflight_uses_captured_arguments_once_and_preserves_raw_float_bits ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests/prepared_calls.rs (target/debug/deps/prepared_calls-a174bcc20705dae8)
+
+running 1 test
+test prepared_calls_keep_inputs_owned_and_replies_detached_across_reuse ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests/prepared_fields.rs (target/debug/deps/prepared_fields-c5f274c0b3507a1c)
+
+running 2 tests
+test mixed_record_preparation_keeps_changing_fields_guards_and_primals_live ... ok
+test aliased_record_expansion_keeps_bounded_preparation_and_literal_fallback ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.17s
+
+     Running tests/prepared_loops.rs (target/debug/deps/prepared_loops-7f3b04d918e93495)
+
+running 1 test
+test prepared_callbacks_preserve_dynamic_iterations_shadowing_laziness_and_stop_order ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+     Running tests/prepared_residual.rs (target/debug/deps/prepared_residual-cb774a573c09a8ff)
+
+running 2 tests
+test bounded_helper_preparation_falls_back_without_changing_ordinary_calls ... ok
+test sealed_partial_calls_retain_only_stable_readonly_values_in_source_order ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.19s
+
+     Running tests/prepared_sums.rs (target/debug/deps/prepared_sums-97bedaf5053902cd)
+
+running 1 test
+test sum_preparation_preserves_selected_arms_payloads_ownership_and_private_layouts ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.44s
+
+     Running tests/publication_queue.rs (target/debug/deps/publication_queue-7fce9c586fec0c95)
+
+running 1 test
+test reusable_publication_slots_preserve_order_reentry_disposal_and_nested_boundaries ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/record_elision.rs (target/debug/deps/record_elision-13485806183819b9)
+
+running 2 tests
+test private_records_work_in_native_float_pure_modules ... ok
+test selected_private_records_preserve_public_values_capture_transactions_and_checkpoints ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.25s
+
+     Running tests/scalar_records.rs (target/debug/deps/scalar_records-39e9f66ec6946fc0)
+
+running 2 tests
+test oversized_optional_record_body_retains_an_ordinary_complete_call ... ok
+test scalar_record_calls_share_exact_tangents_and_preserve_borrowed_getters ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.35s
+
+     Running tests/state_bindings.rs (target/debug/deps/state_bindings-f293fae38d00e364)
+
+running 1 test
+test expression_binding_blocks_preserve_snapshots_shadowing_strict_order_and_lazy_failure ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+
+     Running tests/state_capture.rs (target/debug/deps/state_capture-e0eca62a6d012847)
+
+running 1 test
+test compiled_capture_matches_validation_and_preserves_owned_boundaries ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/state_equality.rs (target/debug/deps/state_equality-9110d398067d912b)
+
+running 1 test
+test typed_state_equalities_match_reference_raw_float_bits ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests/state_float.rs (target/debug/deps/state_float-18d2d99cf8cbcd95)
+
+running 2 tests
+test recursive_float_shapes_keep_the_existing_bit_lane ... ok
+test native_helpers_keep_exact_state_events_snapshots_ownership_and_transactions ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.54s
+
+     Running tests/statements.rs (target/debug/deps/statements-d268888038d2c1e5)
+
+running 2 tests
+test direct_stages_read_once_and_lazy_branches_do_no_work ... ok
+test direct_loops_and_lexical_statements_match_interpreter_exactly ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+     Running tests/string_tables.rs (target/debug/deps/string_tables-02134e35b384b83a)
+
+running 1 test
+test dictionary_tables_preserve_order_falsy_values_failures_and_restore ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests/sum_spines.rs (target/debug/deps/sum_spines-d9cf80a7b6b5bde4)
+
+running 1 test
+test sum_layouts_preserve_boundaries_transactions_and_exact_wire_resources ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.75s
+
+     Running tests/utf8_search.rs (target/debug/deps/utf8_search-e48853f6d98830f1)
+
+running 2 tests
+test emitted_byte_length_matches_rust_without_encoding_allocations ... ok
+test emitted_search_matches_rust_and_reference_at_every_utf8_boundary ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.49s
+
+     Running tests/value_builder.rs (target/debug/deps/value_builder-d51849e8833b96c7)
+
+running 1 test
+test construction_sessions_reject_incomplete_wrong_and_exhausted_inputs ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/word_collections.rs (target/debug/deps/word_collections-c0b1079a44e46246)
+
+running 1 test
+test integer_sort_and_ordered_loads_preserve_values_and_ownership ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.20s
+
+     Running tests/word_operations.rs (target/debug/deps/word_operations-139f26a93fb6b971)
+
+running 3 tests
+test pure_word_operations_match_the_reference_evaluator ... ok
+test stateful_word_operations_match_the_reference_evaluator ... ok
+test split_loop_state_matches_the_reference_evaluator ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.67s
+
+   Doc-tests ink_lowering_js
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

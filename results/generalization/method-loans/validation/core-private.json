@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "package": "e9056193b9cf465bd92dd4bd349e082c0407f520",
+  "source": "21c18964e68f8e28b8f909109fca78b469c70f42",
+  "core_tree": "d7f3449ad44983a8cc84bca6a8b0e67b43d1ccff",
+  "archive_sha256": "34dea2c09a6f143a312dae2f50f140df27e662ba06f63f8f757020bbbc0f5765",
+  "log_sha256": "cb5bc66458a78c6d2988e1f50ba8a7efd02d02a79119c8345468a7b550bd48ee",
+  "cargo_version": "cargo 1.99.1 (5f94df478 2026-08-27)",
+  "private_checkout": true,
+  "private_target": true,
+  "scope": "Exact committed standalone core tree with complete tests and isolated compilation. No whole-checker, compiler, ABI or toolchain correctness proof."
+}

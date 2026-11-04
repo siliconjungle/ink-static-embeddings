@@ -1,0 +1,9 @@
+   Compiling ink v0.1.0 (/Users/jamesaddison/Documents/Codex/2026-11-03/do-x20/work/ink-compiler-src)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.05s
+     Running tests/variant_fold_ownership.rs (target/debug/deps/variant_fold_ownership-e7e5ad91ebe842a9)
+
+running 1 test
+test variant_branches_move_only_captures_without_later_or_repeated_uses ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 27.74s
+

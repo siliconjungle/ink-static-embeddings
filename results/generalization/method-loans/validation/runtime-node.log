@@ -1,0 +1,727 @@
+TAP version 13
+# Subtest: recent windows, failures, saturation, clock faults, timing budgets and detached history
+ok 1 - recent windows, failures, saturation, clock faults, timing budgets and detached history
+  ---
+  duration_ms: 1.374042
+  type: 'test'
+  ...
+# Subtest: phase shift switches both ways with exact snapshots, events and no repeated calls
+ok 2 - phase shift switches both ways with exact snapshots, events and no repeated calls
+  ---
+  duration_ms: 14.212417
+  type: 'test'
+  ...
+# Subtest: failed/corrupt/over-budget migration retains old instance and original reply
+ok 3 - failed/corrupt/over-budget migration retains old instance and original reply
+  ---
+  duration_ms: 3.580959
+  type: 'test'
+  ...
+# Subtest: unknown cells retain baseline; errors stay errors; static mode stays fixed
+ok 4 - unknown cells retain baseline; errors stay errors; static mode stays fixed
+  ---
+  duration_ms: 1.314333
+  type: 'test'
+  ...
+# Subtest: serialized captured inputs, bounded queue and close drain accepted calls
+ok 5 - serialized captured inputs, bounded queue and close drain accepted calls
+  ---
+  duration_ms: 0.609333
+  type: 'test'
+  ...
+# Subtest: external restore discards workload assumptions; malformed binding rejects before construction
+ok 6 - external restore discards workload assumptions; malformed binding rejects before construction
+  ---
+  duration_ms: 0.598083
+  type: 'test'
+  ...
+# Subtest: a completed call releases its single queue slot before its promise resolves
+ok 7 - a completed call releases its single queue slot before its promise resolves
+  ---
+  duration_ms: 0.562708
+  type: 'test'
+  ...
+# Subtest: no recording means no timings, feature windows or controller work
+ok 8 - no recording means no timings, feature windows or controller work
+  ---
+  duration_ms: 0.387916
+  type: 'test'
+  ...
+# Subtest: usage samples measure locality and changing access mix without inspecting arguments
+ok 9 - usage samples measure locality and changing access mix without inspecting arguments
+  ---
+  duration_ms: 1.821042
+  type: 'test'
+  ...
+# Subtest: independent collections switch locally and keep unrelated snapshots untouched
+ok 10 - independent collections switch locally and keep unrelated snapshots untouched
+  ---
+  duration_ms: 1.72825
+  type: 'test'
+  ...
+# Subtest: bounded usage sampling marks missing/overflow evidence and detaches reports
+ok 11 - bounded usage sampling marks missing/overflow evidence and detaches reports
+  ---
+  duration_ms: 0.466125
+  type: 'test'
+  ...
+# Subtest: collection construction cleans up prior hosts if a later binding is invalid
+ok 12 - collection construction cleans up prior hosts if a later binding is invalid
+  ---
+  duration_ms: 0.347209
+  type: 'test'
+  ...
+# Subtest: recent windows, failures, saturation, clock faults, timing budgets and detached history
+ok 13 - recent windows, failures, saturation, clock faults, timing budgets and detached history
+  ---
+  duration_ms: 1.739416
+  type: 'test'
+  ...
+# Subtest: phase shift switches both ways with exact snapshots, events and no repeated calls
+ok 14 - phase shift switches both ways with exact snapshots, events and no repeated calls
+  ---
+  duration_ms: 15.026
+  type: 'test'
+  ...
+# Subtest: failed/corrupt/over-budget migration retains old instance and original reply
+ok 15 - failed/corrupt/over-budget migration retains old instance and original reply
+  ---
+  duration_ms: 2.476625
+  type: 'test'
+  ...
+# Subtest: unknown cells retain baseline; errors stay errors; static mode stays fixed
+ok 16 - unknown cells retain baseline; errors stay errors; static mode stays fixed
+  ---
+  duration_ms: 1.87225
+  type: 'test'
+  ...
+# Subtest: serialized captured inputs, bounded queue and close drain accepted calls
+ok 17 - serialized captured inputs, bounded queue and close drain accepted calls
+  ---
+  duration_ms: 0.252416
+  type: 'test'
+  ...
+# Subtest: external restore discards workload assumptions; malformed binding rejects before construction
+ok 18 - external restore discards workload assumptions; malformed binding rejects before construction
+  ---
+  duration_ms: 0.4315
+  type: 'test'
+  ...
+# Subtest: a completed call releases its single queue slot before its promise resolves
+ok 19 - a completed call releases its single queue slot before its promise resolves
+  ---
+  duration_ms: 0.347417
+  type: 'test'
+  ...
+# Subtest: no recording means no timings, feature windows or controller work
+ok 20 - no recording means no timings, feature windows or controller work
+  ---
+  duration_ms: 0.349333
+  type: 'test'
+  ...
+# Subtest: usage samples measure locality and changing access mix without inspecting arguments
+ok 21 - usage samples measure locality and changing access mix without inspecting arguments
+  ---
+  duration_ms: 1.497167
+  type: 'test'
+  ...
+# Subtest: independent collections switch locally and keep unrelated snapshots untouched
+ok 22 - independent collections switch locally and keep unrelated snapshots untouched
+  ---
+  duration_ms: 2.668625
+  type: 'test'
+  ...
+# Subtest: complete execution owns inputs, one session, one read and both resource lifetimes
+ok 23 - complete execution owns inputs, one session, one read and both resource lifetimes
+  ---
+  duration_ms: 0.546
+  type: 'test'
+  ...
+# Subtest: every acquired resource is closed on open, execution, read and disposal failures
+ok 24 - every acquired resource is closed on open, execution, read and disposal failures
+  ---
+  duration_ms: 0.380041
+  type: 'test'
+  ...
+# Subtest: invalid complete workloads reject before allocating an engine
+ok 25 - invalid complete workloads reject before allocating an engine
+  ---
+  duration_ms: 0.225208
+  type: 'test'
+  ...
+# Subtest: complete execution retains an already captured immutable profile token
+ok 26 - complete execution retains an already captured immutable profile token
+  ---
+  duration_ms: 0.272209
+  type: 'test'
+  ...
+# Subtest: bounded usage sampling marks missing/overflow evidence and detaches reports
+ok 27 - bounded usage sampling marks missing/overflow evidence and detaches reports
+  ---
+  duration_ms: 0.217084
+  type: 'test'
+  ...
+# Subtest: collection construction cleans up prior hosts if a later binding is invalid
+ok 28 - collection construction cleans up prior hosts if a later binding is invalid
+  ---
+  duration_ms: 0.281459
+  type: 'test'
+  ...
+# Subtest: whole-call prices bind changed runtime transport and the scope version
+ok 29 - whole-call prices bind changed runtime transport and the scope version
+  ---
+  duration_ms: 0.069625
+  type: 'test'
+  ...
+# Subtest: prepared profiles capture before yielding and preserve shared decisions and target rejection
+ok 30 - prepared profiles capture before yielding and preserve shared decisions and target rejection
+  ---
+  duration_ms: 2.047
+  type: 'test'
+  ...
+# Subtest: prepared profile reuse avoids cloning its model graph and retains owned results
+ok 31 - prepared profile reuse avoids cloning its model graph and retains owned results
+  ---
+  duration_ms: 0.202333
+  type: 'test'
+  ...
+# Subtest: adaptive saved profiles choose by size without probing or reading the timer
+ok 32 - adaptive saved profiles choose by size without probing or reading the timer
+  ---
+  duration_ms: 0.573792
+  type: 'test'
+  ...
+# Subtest: static bypasses profiles and adaptive requires comparable CPU evidence
+ok 33 - static bypasses profiles and adaptive requires comparable CPU evidence
+  ---
+  duration_ms: 0.225292
+  type: 'test'
+  ...
+# Subtest: profile is privately bound and device failure keeps compiled CPU without speculative verification
+ok 34 - profile is privately bound and device failure keeps compiled CPU without speculative verification
+  ---
+  duration_ms: 0.137625
+  type: 'test'
+  ...
+# Subtest: adaptive selects the minimum eligible estimate with margin measured against CPU
+ok 35 - adaptive selects the minimum eligible estimate with margin measured against CPU
+  ---
+  duration_ms: 0.129542
+  type: 'test'
+  ...
+# Subtest: required GPU execution never invokes a CPU fallback
+ok 36 - required GPU execution never invokes a CPU fallback
+  ---
+  duration_ms: 0.089333
+  type: 'test'
+  ...
+# Subtest: reused decisions preserve private ownership and recheck changed eligibility and boundaries
+ok 37 - reused decisions preserve private ownership and recheck changed eligibility and boundaries
+  ---
+  duration_ms: 2.282875
+  type: 'test'
+  ...
+# Subtest: complete engine profiles cannot authorise resident session decisions or the reverse
+ok 38 - complete engine profiles cannot authorise resident session decisions or the reverse
+  ---
+  duration_ms: 0.753708
+  type: 'test'
+  ...
+# Subtest: resident profiles never transfer warm costs to cold CPU, device or shaders
+ok 39 - resident profiles never transfer warm costs to cold CPU, device or shaders
+  ---
+  duration_ms: 0.372125
+  type: 'test'
+  ...
+# Subtest: resident lifecycle costs charge setup once and steps and complete reads explicitly
+ok 40 - resident lifecycle costs charge setup once and steps and complete reads explicitly
+  ---
+  duration_ms: 0.337875
+  type: 'test'
+  ...
+# Subtest: session evidence binds feedback, output identity, input binding and compiled host
+ok 41 - session evidence binds feedback, output identity, input binding and compiled host
+  ---
+  duration_ms: 0.281292
+  type: 'test'
+  ...
+# Subtest: session workload forecasts are bounded, copied, and do not accept unsupported writes
+ok 42 - session workload forecasts are bounded, copied, and do not accept unsupported writes
+  ---
+  duration_ms: 0.109792
+  type: 'test'
+  ...
+# Subtest: separate selectors reuse only complete immutable decision inputs
+ok 43 - separate selectors reuse only complete immutable decision inputs
+  ---
+  duration_ms: 8.555708
+  type: 'test'
+  ...
+# Subtest: batches evaluate exactly and match single calls
+ok 44 - batches evaluate exactly and match single calls
+  ---
+  duration_ms: 1.121959
+  type: 'test'
+  ...
+# Subtest: hole weights read and write as rows
+ok 45 - hole weights read and write as rows
+  ---
+  duration_ms: 0.722334
+  type: 'test'
+  ...
+# Subtest: complete execution owns inputs, one session, one read and both resource lifetimes
+ok 46 - complete execution owns inputs, one session, one read and both resource lifetimes
+  ---
+  duration_ms: 1.648792
+  type: 'test'
+  ...
+# Subtest: every acquired resource is closed on open, execution, read and disposal failures
+ok 47 - every acquired resource is closed on open, execution, read and disposal failures
+  ---
+  duration_ms: 1.107167
+  type: 'test'
+  ...
+# Subtest: invalid complete workloads reject before allocating an engine
+ok 48 - invalid complete workloads reject before allocating an engine
+  ---
+  duration_ms: 0.542459
+  type: 'test'
+  ...
+# Subtest: complete execution retains an already captured immutable profile token
+ok 49 - complete execution retains an already captured immutable profile token
+  ---
+  duration_ms: 8.445667
+  type: 'test'
+  ...
+# Subtest: native JS destination preserves U64/F32 native values and untouched tail without Wasm loading
+ok 50 - native JS destination preserves U64/F32 native values and untouched tail without Wasm loading
+  ---
+  duration_ms: 20.408709
+  type: 'test'
+  ...
+# Subtest: captured CPU destination returns native BigInt and exact floating bits, with stable ordinary results
+ok 51 - captured CPU destination returns native BigInt and exact floating bits, with stable ordinary results
+  ---
+  duration_ms: 11.900833
+  type: 'test'
+  ...
+# Subtest: prepared CPU calls snapshot once and remain independent of ordinary calls
+ok 52 - prepared CPU calls snapshot once and remain independent of ordinary calls
+  ---
+  duration_ms: 8.653042
+  type: 'test'
+  ...
+# Subtest: resident CPU readInto preserves raw float payloads and detached tails
+ok 53 - resident CPU readInto preserves raw float payloads and detached tails
+  ---
+  duration_ms: 8.291167
+  type: 'test'
+  ...
+# Subtest: CPU resident writeFrom snapshots values and preserves capacity/lifetime boundaries
+ok 54 - CPU resident writeFrom snapshots values and preserves capacity/lifetime boundaries
+  ---
+  duration_ms: 7.841458
+  type: 'test'
+  ...
+# Subtest: capture, serialize concurrent calls and recover exact receipts
+ok 55 - capture, serialize concurrent calls and recover exact receipts
+  ---
+  duration_ms: 9.95075
+  type: 'test'
+  ...
+# Subtest: uncertain write before or after durable publication requires recovery
+ok 56 - uncertain write before or after durable publication requires recovery
+  ---
+  duration_ms: 1.995917
+  type: 'test'
+  ...
+# Subtest: receiver failure leaves pending events; acknowledgement is durable
+ok 57 - receiver failure leaves pending events; acknowledgement is durable
+  ---
+  duration_ms: 2.380917
+  type: 'test'
+  ...
+# Subtest: delivery can repeat after receiver success and failed acknowledgement
+ok 58 - delivery can repeat after receiver success and failed acknowledgement
+  ---
+  duration_ms: 1.007042
+  type: 'test'
+  ...
+# Subtest: action exception rolls back; bounded receipt eviction is explicit
+ok 59 - action exception rolls back; bounded receipt eviction is explicit
+  ---
+  duration_ms: 0.798458
+  type: 'test'
+  ...
+# Subtest: storage conflict rejects a second stale writer
+ok 60 - storage conflict rejects a second stale writer
+  ---
+  duration_ms: 0.785958
+  type: 'test'
+  ...
+# Subtest: real file replacement, ownership, recovery and corruption rejection
+ok 61 - real file replacement, ownership, recovery and corruption rejection
+  ---
+  duration_ms: 21.703416
+  type: 'test'
+  ...
+# Subtest: retained boundaries restore state after uncertain append, before and after publication
+ok 62 - retained boundaries restore state after uncertain append, before and after publication
+  ---
+  duration_ms: 44.479708
+  type: 'test'
+  ...
+# Subtest: legacy receipt field order remains retryable without executing the query
+ok 63 - legacy receipt field order remains retryable without executing the query
+  ---
+  duration_ms: 0.667833
+  type: 'test'
+  ...
+# Subtest: reads see committed state without receipts or frames; a mutating read requires recovery
+ok 64 - reads see committed state without receipts or frames; a mutating read requires recovery
+  ---
+  duration_ms: 13.280209
+  type: 'test'
+  ...
+# Subtest: a commit whose later publication fails is never served before reopening
+ok 65 - a commit whose later publication fails is never served before reopening
+  ---
+  duration_ms: 0.506167
+  type: 'test'
+  ...
+# Subtest: initialized artifact bytes bind size/hash and reject corruption/truncation
+ok 66 - initialized artifact bytes bind size/hash and reject corruption/truncation
+  ---
+  duration_ms: 8.671375
+  type: 'test'
+  ...
+# Subtest: bound trusted JS calls preserve wrapping, signed, Bool, U64 and F32 outputs without CPU transport
+ok 67 - bound trusted JS calls preserve wrapping, signed, Bool, U64 and F32 outputs without CPU transport
+  ---
+  duration_ms: 19.311542
+  type: 'test'
+  ...
+# Subtest: JS pipeline composes native Bool/list/U64 values and feedback, matching literal references
+ok 68 - JS pipeline composes native Bool/list/U64 values and feedback, matching literal references
+  ---
+  duration_ms: 9.949042
+  type: 'test'
+  ...
+# Subtest: packed CPU remains available and profile-free auto retains equivalent CPU results
+ok 69 - packed CPU remains available and profile-free auto retains equivalent CPU results
+  ---
+  duration_ms: 14.295666
+  type: 'test'
+  ...
+# Subtest: scalar host binds native JS and lazily retains its Wasm fallback
+ok 70 - scalar host binds native JS and lazily retains its Wasm fallback
+  ---
+  duration_ms: 5.356125
+  type: 'test'
+  ...
+# Subtest: saved adaptive JS selection performs exactly one call and never loads Wasm
+ok 71 - saved adaptive JS selection performs exactly one call and never loads Wasm
+  ---
+  duration_ms: 12.948541
+  type: 'test'
+  ...
+# Subtest: static JS auto setting bypasses packed ingress and all profiling
+ok 72 - static JS auto setting bypasses packed ingress and all profiling
+  ---
+  duration_ms: 5.935833
+  type: 'test'
+  ...
+# Subtest: prepared GPU output selection captures caller plan before queued preparation
+ok 73 - prepared GPU output selection captures caller plan before queued preparation
+  ---
+  duration_ms: 4.726792
+  type: 'test'
+  ...
+# Subtest: adaptive JS reuses its private U32 capture and retains packed-host owned Array outputs
+ok 74 - adaptive JS reuses its private U32 capture and retains packed-host owned Array outputs
+  ---
+  duration_ms: 6.12275
+  type: 'test'
+  ...
+# Subtest: adaptive native float capture precedes the queue and JS never packs transport
+ok 75 - adaptive native float capture precedes the queue and JS never packs transport
+  ---
+  duration_ms: 5.8965
+  type: 'test'
+  ...
+# Subtest: selected CPU materializes the captured float snapshot exactly once
+ok 76 - selected CPU materializes the captured float snapshot exactly once
+  ---
+  duration_ms: 7.899458
+  type: 'test'
+  ...
+# Subtest: reusable owned calls keep fresh detached results and lazily retain CPU words
+ok 77 - reusable owned calls keep fresh detached results and lazily retain CPU words
+  ---
+  duration_ms: 5.748209
+  type: 'test'
+  ...
+# Subtest: GPU failure packs from the owned capture and CPU fallback runs once
+ok 78 - GPU failure packs from the owned capture and CPU fallback runs once
+  ---
+  duration_ms: 5.45125
+  type: 'test'
+  ...
+# Subtest: ordinary prices cannot select the different prepared-call lifetime
+ok 79 - ordinary prices cannot select the different prepared-call lifetime
+  ---
+  duration_ms: 5.762833
+  type: 'test'
+  ...
+# Subtest: profile-free direct automatic CPU retains submission validation and capture
+ok 80 - profile-free direct automatic CPU retains submission validation and capture
+  ---
+  duration_ms: 5.093292
+  type: 'test'
+  ...
+# Subtest: single-field step records remain values in ordinary and prepared calls
+ok 81 - single-field step records remain values in ordinary and prepared calls
+  ---
+  duration_ms: 6.448667
+  type: 'test'
+  ...
+# Subtest: rows are keyed by argument values and indices
+ok 82 - rows are keyed by argument values and indices
+  ---
+  duration_ms: 0.983917
+  type: 'test'
+  ...
+# Subtest: the gate admits improvements and rolls back everything else
+ok 83 - the gate admits improvements and rolls back everything else
+  ---
+  duration_ms: 0.881875
+  type: 'test'
+  ...
+# Subtest: a scratch state keeps rejected edits away from the live state
+ok 84 - a scratch state keeps rejected edits away from the live state
+  ---
+  duration_ms: 0.175875
+  type: 'test'
+  ...
+# Subtest: a model proposal is parsed into an edit
+ok 85 - a model proposal is parsed into an edit
+  ---
+  duration_ms: 0.314708
+  type: 'test'
+  ...
+# Subtest: mixed module dispatches current graph and scalar aggregate host APIs
+ok 86 - mixed module dispatches current graph and scalar aggregate host APIs
+  ---
+  duration_ms: 6.123375
+  type: 'test'
+  ...
+# Subtest: mixed native package ignores a preserved stale pure-library target
+ok 87 - mixed native package ignores a preserved stale pure-library target
+  ---
+  duration_ms: 318.091916
+  type: 'test'
+  ...
+# Subtest: offline observations capture training inputs, materialise typed boundary ports and exclude fallback timings
+ok 88 - offline observations capture training inputs, materialise typed boundary ports and exclude fallback timings
+  ---
+  duration_ms: 1.644208
+  type: 'test'
+  ...
+# Subtest: wrong results and invalid collection budgets fail rather than becoming profile data
+ok 89 - wrong results and invalid collection budgets fail rather than becoming profile data
+  ---
+  duration_ms: 0.58375
+  type: 'test'
+  ...
+# Subtest: startup collection creates and closes a fresh engine per trial and excludes unavailable targets
+ok 90 - startup collection creates and closes a fresh engine per trial and excludes unavailable targets
+  ---
+  duration_ms: 0.21975
+  type: 'test'
+  ...
+# Subtest: worker timeout drains queued pure requests and removes dead capacity
+ok 91 - worker timeout drains queued pure requests and removes dead capacity
+  ---
+  duration_ms: 6.201792
+  type: 'test'
+  ...
+# Subtest: synchronous transport errors do not strand queued jobs
+ok 92 - synchronous transport errors do not strand queued jobs
+  ---
+  duration_ms: 0.373875
+  type: 'test'
+  ...
+# Subtest: malformed receipts and execution errors retire only the failed worker
+ok 93 - malformed receipts and execution errors retire only the failed worker
+  ---
+  duration_ms: 0.427042
+  type: 'test'
+  ...
+# Subtest: close drains active jobs, bounds pending queue, and never transfers caller buffers
+ok 94 - close drains active jobs, bounds pending queue, and never transfers caller buffers
+  ---
+  duration_ms: 0.572042
+  type: 'test'
+  ...
+# Subtest: prepared capture and destination persist across scratch rewinds and memory growth
+ok 95 - prepared capture and destination persist across scratch rewinds and memory growth
+  ---
+  duration_ms: 1.629084
+  type: 'test'
+  ...
+# Subtest: separate prepared instances do not invalidate each other
+ok 96 - separate prepared instances do not invalidate each other
+  ---
+  duration_ms: 0.150834
+  type: 'test'
+  ...
+# compiled graph resources: capture, ordered queue, byte/count overload, failure recovery and closure passed
+# Subtest: tests/route-resources.mjs
+ok 15 - tests/route-resources.mjs
+  ---
+  duration_ms: 50.26775
+  type: 'test'
+  ...
+# Subtest: scalar machine-word results preserve all numeric representations without header/output allocations
+ok 98 - scalar machine-word results preserve all numeric representations without header/output allocations
+  ---
+  duration_ms: 18.688042
+  type: 'test'
+  ...
+# Subtest: modules without scalar exports retain the previous packed result path
+ok 99 - modules without scalar exports retain the previous packed result path
+  ---
+  duration_ms: 10.462583
+  type: 'test'
+  ...
+# Subtest: failed scalar calls reset the arena and leave the serialized queue usable
+ok 100 - failed scalar calls reset the arena and leave the serialized queue usable
+  ---
+  duration_ms: 8.322167
+  type: 'test'
+  ...
+# Subtest: pause quiesces a live action and invalidates a pending plan
+ok 101 - pause quiesces a live action and invalidates a pending plan
+  ---
+  duration_ms: 4.543584
+  type: 'test'
+  ...
+# Subtest: continuous turns yield, accept wake and stop without closing the shared host
+ok 102 - continuous turns yield, accept wake and stop without closing the shared host
+  ---
+  duration_ms: 5.54975
+  type: 'test'
+  ...
+# Subtest: abort and plan/storage failure stop explicitly; no automatic retry
+ok 103 - abort and plan/storage failure stop explicitly; no automatic retry
+  ---
+  duration_ms: 0.581666
+  type: 'test'
+  ...
+# Subtest: a stopped but unresolved turn cannot be overlapped by another run
+ok 104 - a stopped but unresolved turn cannot be overlapped by another run
+  ---
+  duration_ms: 0.16225
+  type: 'test'
+  ...
+# Subtest: tests/shared-host-assets.mjs
+ok 18 - tests/shared-host-assets.mjs
+  ---
+  duration_ms: 475.2435
+  type: 'test'
+  ...
+# exact JSON and decoded response ownership: passed
+# Subtest: tests/state-wasm-json.mjs
+ok 19 - tests/state-wasm-json.mjs
+  ---
+  duration_ms: 25.849542
+  type: 'test'
+  ...
+# Subtest: independent effects overlap, barriers wait and the result is sequential
+ok 107 - independent effects overlap, barriers wait and the result is sequential
+  ---
+  duration_ms: 44.693875
+  type: 'test'
+  ...
+# Subtest: rejected replies fall back; the earliest failure in source order wins
+ok 108 - rejected replies fall back; the earliest failure in source order wins
+  ---
+  duration_ms: 21.958125
+  type: 'test'
+  ...
+# Subtest: speculative effects after a failure are aborted
+ok 109 - speculative effects after a failure are aborted
+  ---
+  duration_ms: 0.436792
+  type: 'test'
+  ...
+# Subtest: replay detects changed replies and needs no handlers
+ok 110 - replay detects changed replies and needs no handlers
+  ---
+  duration_ms: 0.506708
+  type: 'test'
+  ...
+# Subtest: a model effect prompts with the declared signature and parses JSON
+ok 111 - a model effect prompts with the declared signature and parses JSON
+  ---
+  duration_ms: 0.351166
+  type: 'test'
+  ...
+# Subtest: tests/transport40-fixture.mjs
+ok 21 - tests/transport40-fixture.mjs
+  ---
+  duration_ms: 448.107417
+  type: 'test'
+  ...
+# Subtest: terminal captured CPU results decode before reset across all packed carriers and memory growth
+ok 113 - terminal captured CPU results decode before reset across all packed carriers and memory growth
+  ---
+  duration_ms: 18.831208
+  type: 'test'
+  ...
+# Subtest: submission snapshots packed arguments before caller mutation
+ok 114 - submission snapshots packed arguments before caller mutation
+  ---
+  duration_ms: 11.755583
+  type: 'test'
+  ...
+# Subtest: pipeline outputs own values while used packed intermediates survive resets and feedback
+ok 115 - pipeline outputs own values while used packed intermediates survive resets and feedback
+  ---
+  duration_ms: 9.759
+  type: 'test'
+  ...
+# Subtest: CPU destination conversion writes native values once and preserves its tail
+ok 116 - CPU destination conversion writes native values once and preserves its tail
+  ---
+  duration_ms: 7.320833
+  type: 'test'
+  ...
+# Subtest: terminal output materialization retains arbitrary pipeline identifiers
+ok 117 - terminal output materialization retains arbitrary pipeline identifiers
+  ---
+  duration_ms: 6.113416
+  type: 'test'
+  ...
+# usage recorder: sync/async, failure accounting, bounded shapes and detached snapshots passed
+# Subtest: tests/usage-profile.mjs
+ok 23 - tests/usage-profile.mjs
+  ---
+  duration_ms: 22.092792
+  type: 'test'
+  ...
+# Subtest: bounded usage sampling marks missing/overflow evidence and detaches reports
+ok 119 - bounded usage sampling marks missing/overflow evidence and detaches reports
+  ---
+  duration_ms: 5.201709
+  type: 'test'
+  ...
+1..119
+# tests 119
+# suites 0
+# pass 119
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 672.526

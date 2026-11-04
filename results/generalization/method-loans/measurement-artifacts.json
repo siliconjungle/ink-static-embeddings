@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "scope": "Hash measured scripts, inputs, executable binaries and paired results after the run; no source or executable was edited during measurement. Generated source hashes are retained separately.",
+  "sources": {
+    "scripts/method_loans_benchmark.py": "4a1d013599c9e45be0ddbe39c9ae818d5d99da9ac6b087345f5fc99e9c7742e8",
+    "scripts/generalization_rust_benchmark.py": "b04421535ea16625f3937155e9089356d1a4120e657e8e7a1b6eec997285c8bf",
+    "work/generalization/inputs.json": "ca19991dc8a77383048650bea873281e76a434a037b764005da5073498c0d9d4",
+    "results/generalization/method-loans/report.json": "683498e36578051e9f70783df1055bfae87b3dca344d0280aa6af8aae93eb58c",
+    "results/generalization/method-loans/rust-artifacts.json": "ecc71fea6ae2267929800cd44efeba03eb6b12196f6256e6a15ab7fb8268668e",
+    "results/generalization/method-loans/javascript-check.json": "c481ddda65e9a49280fbbf18eff1fdfb01f6610708e0550b7c2e6a9092d82730",
+    "results/generalization/method-loans/paired-1.json": "ab66f83625ba6db07d4332c8e8e7cf38347d99ef1034e7149aa19104338f99fb",
+    "results/generalization/method-loans/paired-0.json": "9b9829d2c9a60ddb15dd89182b10fcb31810d4edf6ad5d472023eaaf55373bd3",
+    "results/generalization/method-loans/paired-2.json": "aead4a245bbfb9de943daeb0eb86594091c4e32864d0942610df291e6a92a33f",
+    "results/generalization/method-loans/method-loans-before/discovery.json": "a0ab07c31a64334c04d92961030698252f9848013e6aaad915b79d0f41106227",
+    "results/generalization/method-loans/method-loans-before/rust-report.json": "1c49179e4a4a26a3b7278270b31e18c0f160c62419865a9e9c5c9fe13941bfba",
+    "results/generalization/method-loans/method-loans-after/discovery.json": "a0ab07c31a64334c04d92961030698252f9848013e6aaad915b79d0f41106227",
+    "results/generalization/method-loans/method-loans-after/rust-report.json": "5a57242406935387b9b13b4de5d0141d95d4b7348f94e7a0b5a902e3e82f78e7"
+  },
+  "executables": {
+    "work/generalization/method-loans-before-rust-bench/target/release/matrix_columns_literal": "c6a32ab99ff063befedc8e26a54f438ce5cfad7cd04e3156b387161029d88d03",
+    "work/generalization/method-loans-before-rust-bench/target/release/matrix_columns_batched_0": "37eba7a1cff83ddf0f6755f465a28d48ea92cf96f9b60741e3059bad771fc831",
+    "work/generalization/method-loans-before-rust-bench/target/release/matrix_columns_batched_1": "5bccf316521f8dc21c2b6756b9d660531aa390a9492ca155d531061352c17931",
+    "work/generalization/method-loans-before-rust-bench/target/release/filter_bank_literal": "a894c91006fae38743545a85dadda31b63984e3788eafb3584043ff58dee6b77",
+    "work/generalization/method-loans-before-rust-bench/target/release/filter_bank_batched_0": "215dbebbb20f80db1782f168a84623aa5829c4dd0f391756f822f3a1b3c2d3a6",
+    "work/generalization/method-loans-before-rust-bench/target/release/filter_bank_batched_1": "7140ff2af0b1e34218c52aa9800333432a486f3d5e0b04b09b03ec751f82b47b",
+    "work/generalization/method-loans-before-rust-bench/target/release/channel_energy_literal": "5aaa19f1f29f875007ecefa767ef5ea57dda85e3bcf668d16fab3d5860d4d35e",
+    "work/generalization/method-loans-before-rust-bench/target/release/channel_energy_batched_0": "20ab352c44db9ebd577280af9fd68d6d1cf196d4dbebd173040386009640b03b",
+    "work/generalization/method-loans-before-rust-bench/target/release/channel_energy_batched_1": "3cba17a6240364644e31376903ffa93ae70ed96ce0b6d1be65c4239aab3fcbc5",
+    "work/generalization/method-loans-before-rust-bench/target/release/channel_energy_batched_2": "8c27ab1ff23207d6a8b44c9ee3c5c63ee97eac65b108b9e7d909a29270b67454",
+    "work/generalization/method-loans-before-rust-bench/target/release/channel_energy_batched_3": "5a908e3ef473260c07383376dd13064078382769bf8d080c2a967509200039fd",
+    "work/generalization/method-loans-after-rust-bench/target/release/matrix_columns_literal": "c6a32ab99ff063befedc8e26a54f438ce5cfad7cd04e3156b387161029d88d03",
+    "work/generalization/method-loans-after-rust-bench/target/release/matrix_columns_batched_0": "37eba7a1cff83ddf0f6755f465a28d48ea92cf96f9b60741e3059bad771fc831",
+    "work/generalization/method-loans-after-rust-bench/target/release/matrix_columns_batched_1": "0c1973b58eb25cf7d28a85101735234f3bb4d8d1b8511c740ad18f5eb6c17817",
+    "work/generalization/method-loans-after-rust-bench/target/release/filter_bank_literal": "a894c91006fae38743545a85dadda31b63984e3788eafb3584043ff58dee6b77",
+    "work/generalization/method-loans-after-rust-bench/target/release/filter_bank_batched_0": "215dbebbb20f80db1782f168a84623aa5829c4dd0f391756f822f3a1b3c2d3a6",
+    "work/generalization/method-loans-after-rust-bench/target/release/filter_bank_batched_1": "6793254ff54f148fc970816a63725ab92e18fcee142b8f6bee9e43d0c36c171f",
+    "work/generalization/method-loans-after-rust-bench/target/release/channel_energy_literal": "5aaa19f1f29f875007ecefa767ef5ea57dda85e3bcf668d16fab3d5860d4d35e",
+    "work/generalization/method-loans-after-rust-bench/target/release/channel_energy_batched_0": "20ab352c44db9ebd577280af9fd68d6d1cf196d4dbebd173040386009640b03b",
+    "work/generalization/method-loans-after-rust-bench/target/release/channel_energy_batched_1": "3cba17a6240364644e31376903ffa93ae70ed96ce0b6d1be65c4239aab3fcbc5",
+    "work/generalization/method-loans-after-rust-bench/target/release/channel_energy_batched_2": "8c27ab1ff23207d6a8b44c9ee3c5c63ee97eac65b108b9e7d909a29270b67454",
+    "work/generalization/method-loans-after-rust-bench/target/release/channel_energy_batched_3": "5a908e3ef473260c07383376dd13064078382769bf8d080c2a967509200039fd"
+  }
+}
