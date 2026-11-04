@@ -1,0 +1,623 @@
+{
+  "schema": 1,
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "machine": "arm64",
+  "harness_sha256": {
+    "scripts/node_bench.mjs": "ae601a49edc22df3cd764332bd2f5961b3632cc3d8723fa4a6f08e8cdd08315a",
+    "scripts/python_bench.py": "afecb46de2d8422db1a8cb72ad77edbdf69b85111e4b9d649f22507d2fb63a69",
+    "scripts/benchmark.py": "aaf40ff8928fa790bfafe51d81f9dcc6e7709de4bad461fa74628f51d5d46bf6",
+    "src/neural_to_ink/converter.py": "67449b267a43f7afff650c7d7990a255e7846e636b1af3ad6b65ae3b97c35162",
+    "uv.lock": "f59fe62dc9efec642f2e5e7e420d457ce51cc24d1510096e81955e20a754e4b3",
+    "toolchain.lock.json": "5b0bbe354ebe83e5a262ec3ea17b1f2011990709bc0e4456512083530faa4fe8"
+  },
+  "processes": 6,
+  "rounds": 9,
+  "cases": 64,
+  "corpus_sha256": "c5e1d0d975f89d751f7e774780fd67cf0273bd5775a723505774f48f23e9425f",
+  "model": {
+    "schema": 1,
+    "architecture": "model2vec-static-mean-l2",
+    "model_id": "minishlab/potion-base-2M",
+    "revision": "389b9f64be5aa4ae7a6bc6fe95ef20ce485ae5da",
+    "vocabulary_size": 29528,
+    "dimensions": 64,
+    "dtype": "float32-le",
+    "parameters": 1889792,
+    "shard_elements": 944896,
+    "source_sha256": "ad07220e6e86adfcba0977c6dd6abe73a1fb6df2cde7841577cfbaa5999e17dc",
+    "weights_sha256": "a0d8dd289307213f53db86d5c5368be6ae0e69b5c2536dc0352f9c188587d938",
+    "upstream_safetensors_sha256": "f95ffde02ad06f63ae38eb9d400038cd5ccaf8411ec3cb650c6025113f96cbb8",
+    "tokenizer_sha256": "e67e803f624fb4d67dea1c730d06e1067e1b14d830e2c2202569e3ef0f70bb50",
+    "numerics": "source-order F32; upstream NumPy reductions validated with explicit tolerance"
+  },
+  "compilation": {
+    "schema": 1,
+    "phases": [
+      {
+        "name": "literal",
+        "seconds": 0.007680916984099895,
+        "exit_code": 0
+      },
+      {
+        "name": "core",
+        "seconds": 0.004906874964945018,
+        "exit_code": 0
+      },
+      {
+        "name": "search",
+        "seconds": 13.692225082952064,
+        "exit_code": 0
+      },
+      {
+        "name": "check-selection",
+        "seconds": 0.006022542016580701,
+        "exit_code": 0
+      },
+      {
+        "name": "optimized",
+        "seconds": 0.010405334003735334,
+        "exit_code": 0
+      }
+    ],
+    "rule_applications": 1,
+    "compiler_sha256": "5e64707e9b7bea6bccd74460f8d75e4250777038be12eb983600db11106cfcaa",
+    "source_sha256": "ad07220e6e86adfcba0977c6dd6abe73a1fb6df2cde7841577cfbaa5999e17dc",
+    "selection_sha256": "b4fa12281fa09940069896096ceafe86f0504062b2fd357bdfabdcb29f851d59",
+    "literal_bytes": 169706,
+    "optimized_bytes": 169185,
+    "scope": "Existing Ink compiler/planner and vendored existing laws; no Ink modifications."
+  },
+  "measurements": {
+    "upstream": {
+      "median_ns_per_embedding": 8513.3515625,
+      "process_medians_ns": [
+        8479.171875,
+        8187.5,
+        9342.453125,
+        8547.53125,
+        8749.34375,
+        8290.359375
+      ],
+      "min_process_median_ns": 8187.5,
+      "max_process_median_ns": 9342.453125
+    },
+    "literal": {
+      "median_ns_per_embedding": 31846.02343749998,
+      "process_medians_ns": [
+        31808.593750000004,
+        31883.45312499996,
+        32142.57812499999,
+        31654.937499999924,
+        31620.45312499995,
+        32054.687499999956
+      ],
+      "min_process_median_ns": 31620.45312499995,
+      "max_process_median_ns": 32142.57812499999
+    },
+    "optimized": {
+      "median_ns_per_embedding": 31890.625000000007,
+      "process_medians_ns": [
+        31604.812500000022,
+        32155.609375000062,
+        31695.968750000025,
+        31699.875000000044,
+        32750.656249999953,
+        32081.374999999967
+      ],
+      "min_process_median_ns": 31604.812500000022,
+      "max_process_median_ns": 32750.656249999953
+    }
+  },
+  "literal_over_optimized_paired_speedups": [
+    1.0064477917722177,
+    0.9915362745321912,
+    1.01409041567786,
+    0.9985824076593324,
+    0.9654906724197319,
+    0.9991681310417645
+  ],
+  "median_compiler_optimization_speedup": 0.9988752693505485,
+  "validation": [
+    {
+      "pair": 0,
+      "cases": 64,
+      "dimensions": 64,
+      "literal_optimized_bit_equal": true,
+      "independent_ordered_oracle_bit_equal": true,
+      "max_upstream_absolute_error": 5.960464477539063e-08,
+      "nearest_neighbor_top1_matches": 12
+    },
+    {
+      "pair": 1,
+      "cases": 64,
+      "dimensions": 64,
+      "literal_optimized_bit_equal": true,
+      "independent_ordered_oracle_bit_equal": true,
+      "max_upstream_absolute_error": 5.960464477539063e-08,
+      "nearest_neighbor_top1_matches": 12
+    },
+    {
+      "pair": 2,
+      "cases": 64,
+      "dimensions": 64,
+      "literal_optimized_bit_equal": true,
+      "independent_ordered_oracle_bit_equal": true,
+      "max_upstream_absolute_error": 5.960464477539063e-08,
+      "nearest_neighbor_top1_matches": 12
+    },
+    {
+      "pair": 3,
+      "cases": 64,
+      "dimensions": 64,
+      "literal_optimized_bit_equal": true,
+      "independent_ordered_oracle_bit_equal": true,
+      "max_upstream_absolute_error": 5.960464477539063e-08,
+      "nearest_neighbor_top1_matches": 12
+    },
+    {
+      "pair": 4,
+      "cases": 64,
+      "dimensions": 64,
+      "literal_optimized_bit_equal": true,
+      "independent_ordered_oracle_bit_equal": true,
+      "max_upstream_absolute_error": 5.960464477539063e-08,
+      "nearest_neighbor_top1_matches": 12
+    },
+    {
+      "pair": 5,
+      "cases": 64,
+      "dimensions": 64,
+      "literal_optimized_bit_equal": true,
+      "independent_ordered_oracle_bit_equal": true,
+      "max_upstream_absolute_error": 5.960464477539063e-08,
+      "nearest_neighbor_top1_matches": 12
+    }
+  ],
+  "processes_detail": [
+    {
+      "pair": 0,
+      "mode": "upstream",
+      "python": "3.12.13 (main, Aug  7 2026, 02:15:23) [Clang 22.1.3 ]",
+      "numpy": "2.5.4",
+      "model_load_ms": 88.20420800475404,
+      "samples_ns_per_embedding": [
+        8694.015625,
+        8579.421875,
+        8648.4375,
+        8475.25,
+        8492.84375,
+        8426.421875,
+        8452.46875,
+        8479.171875,
+        8418.625
+      ],
+      "upstream_text_batch_ns_per_embedding": [
+        113022.72727272728,
+        107082.38636363637,
+        106489.59090909091,
+        106406.25,
+        105518.95454545454,
+        106010.43181818182,
+        105500.93181818182,
+        106559.65909090909,
+        105074.81818181818
+      ],
+      "checksum": -18.782315186362244,
+      "peak_rss_bytes": 93454336,
+      "wall_seconds": 0.2646742499782704
+    },
+    {
+      "pair": 0,
+      "mode": "literal",
+      "node": "v22.22.1",
+      "import_ms": 2.533042,
+      "weight_capture_prepare_ms": 16.944625,
+      "samples_ns_per_embedding": [
+        33481.125,
+        31802.09374999998,
+        32673.187500000033,
+        32673.82812499997,
+        30617.843749999985,
+        31808.593750000004,
+        30958.32812499999,
+        33056.64062500002,
+        30703.78124999995
+      ],
+      "checksum": -12.121096988994395,
+      "peak_rss_bytes": 106463232,
+      "wall_seconds": 0.07791441603330895
+    },
+    {
+      "pair": 0,
+      "mode": "optimized",
+      "node": "v22.22.1",
+      "import_ms": 2.6655420000000003,
+      "weight_capture_prepare_ms": 17.229292,
+      "samples_ns_per_embedding": [
+        33988.28124999997,
+        31436.20312499995,
+        32623.687499999996,
+        30490.23437499998,
+        31802.07812499991,
+        32481.125,
+        30201.82812500005,
+        31604.812500000022,
+        30391.281250000015
+      ],
+      "checksum": -12.121096988994395,
+      "peak_rss_bytes": 106692608,
+      "wall_seconds": 0.07751554204151034
+    },
+    {
+      "pair": 1,
+      "mode": "optimized",
+      "node": "v22.22.1",
+      "import_ms": 2.5255409999999987,
+      "weight_capture_prepare_ms": 16.763709,
+      "samples_ns_per_embedding": [
+        33581.37500000002,
+        30382.15624999996,
+        33490.89062499999,
+        32532.546874999956,
+        32613.28125000007,
+        32155.609375000062,
+        30295.562499999985,
+        31792.968749999927,
+        30566.406249999956
+      ],
+      "checksum": -12.121096988994395,
+      "peak_rss_bytes": 106545152,
+      "wall_seconds": 0.07781958399573341
+    },
+    {
+      "pair": 1,
+      "mode": "literal",
+      "node": "v22.22.1",
+      "import_ms": 2.5600829999999988,
+      "weight_capture_prepare_ms": 17.164625,
+      "samples_ns_per_embedding": [
+        33784.49999999999,
+        32489.578124999975,
+        33252.59375,
+        31883.45312499996,
+        30469.39062500009,
+        32455.718750000084,
+        30434.890625000044,
+        31725.250000000036,
+        30320.96875000001
+      ],
+      "checksum": -12.121096988994395,
+      "peak_rss_bytes": 106332160,
+      "wall_seconds": 0.0776060419739224
+    },
+    {
+      "pair": 1,
+      "mode": "upstream",
+      "python": "3.12.13 (main, Aug  7 2026, 02:15:23) [Clang 22.1.3 ]",
+      "numpy": "2.5.4",
+      "model_load_ms": 83.56662502046674,
+      "samples_ns_per_embedding": [
+        8383.46875,
+        8252.59375,
+        8076.171875,
+        8187.5,
+        8145.828125,
+        8144.53125,
+        8195.96875,
+        8149.734375,
+        8189.453125
+      ],
+      "upstream_text_batch_ns_per_embedding": [
+        111080.5,
+        105918.56818181818,
+        115282.20454545454,
+        111883.52272727272,
+        110362.68181818182,
+        113224.43181818182,
+        108375.95454545454,
+        124657.18181818182,
+        107215.90909090909
+      ],
+      "checksum": -18.782315186362244,
+      "peak_rss_bytes": 90914816,
+      "wall_seconds": 0.25825012498535216
+    },
+    {
+      "pair": 2,
+      "mode": "upstream",
+      "python": "3.12.13 (main, Aug  7 2026, 02:15:23) [Clang 22.1.3 ]",
+      "numpy": "2.5.4",
+      "model_load_ms": 84.28779104724526,
+      "samples_ns_per_embedding": [
+        9643.234375,
+        9423.828125,
+        8806.640625,
+        9169.921875,
+        9342.453125,
+        8779.953125,
+        8994.140625,
+        13412.109375,
+        9773.4375
+      ],
+      "upstream_text_batch_ns_per_embedding": [
+        121071.97727272728,
+        113723.47727272728,
+        110857.0,
+        113892.04545454546,
+        111915.72727272728,
+        111276.52272727272,
+        116831.43181818182,
+        111040.72727272728,
+        109543.56818181818
+      ],
+      "checksum": -18.782315186362244,
+      "peak_rss_bytes": 91570176,
+      "wall_seconds": 0.2656656660255976
+    },
+    {
+      "pair": 2,
+      "mode": "literal",
+      "node": "v22.22.1",
+      "import_ms": 2.7872079999999997,
+      "weight_capture_prepare_ms": 18.366417,
+      "samples_ns_per_embedding": [
+        35083.984374999935,
+        34127.60937500004,
+        31176.437499999985,
+        32199.87499999999,
+        30683.593750000073,
+        32321.60937500006,
+        30870.43749999996,
+        32142.57812499999,
+        30690.74999999999
+      ],
+      "checksum": -12.121096988994395,
+      "peak_rss_bytes": 108085248,
+      "wall_seconds": 0.08425029198406264
+    },
+    {
+      "pair": 2,
+      "mode": "optimized",
+      "node": "v22.22.1",
+      "import_ms": 2.7280420000000003,
+      "weight_capture_prepare_ms": 17.775624999999998,
+      "samples_ns_per_embedding": [
+        33645.171875000044,
+        30318.999999999985,
+        31877.60937499995,
+        30901.0312500001,
+        32330.078124999996,
+        31695.968750000025,
+        30437.500000000007,
+        32621.750000000004,
+        30404.953125000022
+      ],
+      "checksum": -12.121096988994395,
+      "peak_rss_bytes": 106233856,
+      "wall_seconds": 0.0790466659818776
+    },
+    {
+      "pair": 3,
+      "mode": "optimized",
+      "node": "v22.22.1",
+      "import_ms": 2.5790000000000006,
+      "weight_capture_prepare_ms": 17.0175,
+      "samples_ns_per_embedding": [
+        33585.296875,
+        30890.62499999995,
+        32227.874999999905,
+        31529.953125000065,
+        31699.875000000044,
+        30738.28125,
+        32644.531249999996,
+        31807.937499999993,
+        30407.546875000025
+      ],
+      "checksum": -12.121096988994395,
+      "peak_rss_bytes": 105988096,
+      "wall_seconds": 0.07866516697686166
+    },
+    {
+      "pair": 3,
+      "mode": "literal",
+      "node": "v22.22.1",
+      "import_ms": 2.6658329999999992,
+      "weight_capture_prepare_ms": 17.321709,
+      "samples_ns_per_embedding": [
+        34134.76562499995,
+        30343.093749999993,
+        32175.12499999997,
+        31733.734375000044,
+        31641.265625000025,
+        32138.031250000033,
+        30273.4375,
+        31654.937499999924,
+        30752.609374999905
+      ],
+      "checksum": -12.121096988994395,
+      "peak_rss_bytes": 106823680,
+      "wall_seconds": 0.07800312497420236
+    },
+    {
+      "pair": 3,
+      "mode": "upstream",
+      "python": "3.12.13 (main, Aug  7 2026, 02:15:23) [Clang 22.1.3 ]",
+      "numpy": "2.5.4",
+      "model_load_ms": 77.02437503030524,
+      "samples_ns_per_embedding": [
+        8643.234375,
+        8519.53125,
+        8625.640625,
+        8700.515625,
+        8688.796875,
+        8547.53125,
+        8508.46875,
+        8535.8125,
+        8521.484375
+      ],
+      "upstream_text_batch_ns_per_embedding": [
+        109119.31818181818,
+        104333.34090909091,
+        104133.52272727272,
+        102636.36363636363,
+        103191.29545454546,
+        102080.47727272728,
+        102321.02272727272,
+        102510.40909090909,
+        102069.13636363637
+      ],
+      "checksum": -18.782315186362244,
+      "peak_rss_bytes": 86163456,
+      "wall_seconds": 0.2401497500250116
+    },
+    {
+      "pair": 4,
+      "mode": "upstream",
+      "python": "3.12.13 (main, Aug  7 2026, 02:15:23) [Clang 22.1.3 ]",
+      "numpy": "2.5.4",
+      "model_load_ms": 79.36887501273304,
+      "samples_ns_per_embedding": [
+        8915.375,
+        8856.125,
+        8830.078125,
+        8825.515625,
+        8714.84375,
+        8734.375,
+        8682.296875,
+        8749.34375,
+        8697.90625
+      ],
+      "upstream_text_batch_ns_per_embedding": [
+        110655.29545454546,
+        104490.54545454546,
+        104000.0,
+        103890.15909090909,
+        103230.11363636363,
+        104332.38636363637,
+        103865.52272727272,
+        103560.61363636363,
+        103035.04545454546
+      ],
+      "checksum": -18.782315186362244,
+      "peak_rss_bytes": 85917696,
+      "wall_seconds": 0.24457062501460314
+    },
+    {
+      "pair": 4,
+      "mode": "literal",
+      "node": "v22.22.1",
+      "import_ms": 2.540667000000001,
+      "weight_capture_prepare_ms": 16.950833,
+      "samples_ns_per_embedding": [
+        34657.56250000007,
+        30782.54687500004,
+        32157.562500000015,
+        31671.875000000015,
+        30329.421875000095,
+        31620.45312499995,
+        30572.921875000047,
+        31621.750000000004,
+        30595.046875000033
+      ],
+      "checksum": -12.121096988994395,
+      "peak_rss_bytes": 106594304,
+      "wall_seconds": 0.0779515000176616
+    },
+    {
+      "pair": 4,
+      "mode": "optimized",
+      "node": "v22.22.1",
+      "import_ms": 2.5459580000000006,
+      "weight_capture_prepare_ms": 18.416333,
+      "samples_ns_per_embedding": [
+        39232.42187499998,
+        30669.921875000062,
+        32750.656249999953,
+        33945.96875,
+        35369.14062499996,
+        32416.015625000073,
+        30884.765624999978,
+        43317.70312500005,
+        29281.89062499986
+      ],
+      "checksum": -12.121096988994395,
+      "peak_rss_bytes": 107577344,
+      "wall_seconds": 0.08322479098569602
+    },
+    {
+      "pair": 5,
+      "mode": "optimized",
+      "node": "v22.22.1",
+      "import_ms": 2.6069999999999993,
+      "weight_capture_prepare_ms": 18.426333,
+      "samples_ns_per_embedding": [
+        36970.04687500005,
+        30388.031250000004,
+        35835.93750000003,
+        29398.43750000004,
+        33226.5625,
+        32213.546875,
+        30738.937500000007,
+        32081.374999999967,
+        31203.125
+      ],
+      "checksum": -12.121096988994395,
+      "peak_rss_bytes": 106987520,
+      "wall_seconds": 0.08269637502962723
+    },
+    {
+      "pair": 5,
+      "mode": "literal",
+      "node": "v22.22.1",
+      "import_ms": 2.7886250000000015,
+      "weight_capture_prepare_ms": 17.958584,
+      "samples_ns_per_embedding": [
+        40341.79687499995,
+        30820.31250000006,
+        33552.73437499995,
+        32169.921875000007,
+        31494.140625,
+        32054.687499999956,
+        30783.859374999945,
+        32109.374999999996,
+        30639.328125000033
+      ],
+      "checksum": -12.121096988994395,
+      "peak_rss_bytes": 107413504,
+      "wall_seconds": 0.08144808403449133
+    },
+    {
+      "pair": 5,
+      "mode": "upstream",
+      "python": "3.12.13 (main, Aug  7 2026, 02:15:23) [Clang 22.1.3 ]",
+      "numpy": "2.5.4",
+      "model_load_ms": 77.04975001979619,
+      "samples_ns_per_embedding": [
+        8601.5625,
+        8389.328125,
+        8404.296875,
+        8290.359375,
+        8298.828125,
+        8218.75,
+        8210.9375,
+        8210.9375,
+        8203.125
+      ],
+      "upstream_text_batch_ns_per_embedding": [
+        111217.79545454546,
+        103507.59090909091,
+        102623.09090909091,
+        102488.63636363637,
+        102482.0,
+        102016.11363636363,
+        101714.97727272728,
+        107014.20454545454,
+        97937.5
+      ],
+      "checksum": -18.782315186362244,
+      "peak_rss_bytes": 84492288,
+      "wall_seconds": 0.2383983749896288
+    }
+  ],
+  "scope": "Warm token-ID to complete embedding; full vocabulary retained and captured once. Tokenization, imports and model capture excluded from kernel samples and reported separately. Python/NumPy vs Node differences are not attributable solely to Ink."
+}

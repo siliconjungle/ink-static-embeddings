@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "architecture": "model2vec-static-mean-l2",
+  "model_id": "minishlab/potion-base-2M",
+  "revision": "389b9f64be5aa4ae7a6bc6fe95ef20ce485ae5da",
+  "vocabulary_size": 29528,
+  "dimensions": 64,
+  "dtype": "float32-le",
+  "parameters": 1889792,
+  "shard_elements": 944896,
+  "source_sha256": "ad07220e6e86adfcba0977c6dd6abe73a1fb6df2cde7841577cfbaa5999e17dc",
+  "weights_sha256": "a0d8dd289307213f53db86d5c5368be6ae0e69b5c2536dc0352f9c188587d938",
+  "upstream_safetensors_sha256": "f95ffde02ad06f63ae38eb9d400038cd5ccaf8411ec3cb650c6025113f96cbb8",
+  "tokenizer_sha256": "e67e803f624fb4d67dea1c730d06e1067e1b14d830e2c2202569e3ef0f70bb50",
+  "numerics": "source-order F32; upstream NumPy reductions validated with explicit tolerance"
+}
