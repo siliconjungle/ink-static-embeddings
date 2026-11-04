@@ -1,6 +1,6 @@
 {
   "duration_seconds": 16,
-  "seamless": true,
+  "seamless": false,
   "gif_loop_count": 0,
   "style_sources": [
     "https://inkwell.ing/",
@@ -10,5 +10,27 @@
     "results/javascript/report.json": "31c19137f27e436ae720e1e45ad596a1e6017e521f1b4a9ece6c89a95a3dbf52",
     "results/targets/report.json": "63f995c6ba4b5a912c1c218142dbdd6f7693ff489f8094e08c118f7f37b3dd97"
   },
-  "motion": "Each panel independently scaled; integer trips approximate inverse-latency ratios within 0.4%. Labels use original measurements."
+  "motion": "Velocities derive directly from inverse measured latency, with one time scale across all panels. No forced alignment, ratio approximation or fade. The GIF resets at its repeat boundary.",
+  "reference_round_trip_seconds": 2.4,
+  "reference_latency_us": 4.847656458333333,
+  "panels": [
+    {
+      "panel": "short \u00b7 1\u201316 tokens",
+      "ink_latency_us": 1.8443056249999754,
+      "numpy_latency_us": 4.847656458333333,
+      "ink_speed_over_numpy": 2.628445303545283
+    },
+    {
+      "panel": "mixed \u00b7 64 queries",
+      "ink_latency_us": 16.841487656250003,
+      "numpy_latency_us": 8.767389296875,
+      "ink_speed_over_numpy": 0.5205828294878307
+    },
+    {
+      "panel": "batch \u00b7 1,024",
+      "ink_latency_us": 3.766560546875,
+      "numpy_latency_us": 6.8689375,
+      "ink_speed_over_numpy": 1.8236631044465612
+    }
+  ]
 }

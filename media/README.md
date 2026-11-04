@@ -4,7 +4,7 @@
 
 ![Potion 2M comparison](potion-2m-speed.gif)
 
-The 16-second seamless animation compares Ink with original Model2Vec/NumPy inference for
+The 16-second animation compares Ink with original Model2Vec/NumPy inference for
 **Potion 2M on an Apple M4 Pro**, with two CPU panels and one GPU/CPU batch panel:
 
 | Workload | Ink / JS | Model2Vec / NumPy | Result |
@@ -13,11 +13,15 @@ The 16-second seamless animation compares Ink with original Model2Vec/NumPy infe
 | Mixed 64-case corpus | 16.84 µs/query | 8.77 µs/query | NumPy 1.92× faster |
 | GPU vs CPU, batch 1,024 | 3.77 µs/embedding (GPU) | 6.87 µs/embedding (CPU) | Ink GPU 1.82× CPU throughput |
 
-Each panel uses its own animation time scale and a common track distance for its
-two balls. Integer trip counts make the loop seamless; relative speeds approximate
-the measured ratios within 0.4%. Motion is illustrative, not real-time execution;
-the displayed timings are the recorded measurements. Empty inputs are excluded
+All six tracks use the same distance and animation time scale. Velocities derive
+directly from inverse measured latency; they are not adjusted to line up. The GIF
+visibly resets when it repeats. Movement is slowed for viewing, not real-time
+execution; displayed timings are the recorded measurements. Empty inputs are excluded
 from the short group and included in the mixed corpus.
+
+The source timings and shared motion scale are recorded in
+[animation.json](animation.json). At James's request, the earlier forced
+alignment and independently scaled panels have been removed.
 
 The first two panels are single-query CPU results. Loading/tokenization are excluded; changing
 ID capture and complete output consumption are included. Same weights and IDs;
