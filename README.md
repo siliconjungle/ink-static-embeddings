@@ -12,9 +12,26 @@ StaticEmbedding exports. Tokenization stays host-side; generated numeric
 inference runs independently of the original library. Transformer/LLM import and
 discovery of hidden symbolic algorithms are future work.
 
-The [general architecture validation](results/general/REPORT.md) covers Potion
-2M, Potion 8M, Sentence Transformers static retrieval, and generated models with
-unfamiliar dimensions, token remapping/weights and normalization policies.
+## Tested models
+
+**Three pretrained models and two synthetic fixtures** have passed JavaScript,
+Rust and hardware WebGPU correctness checks:
+
+| Pretrained model | Dimensions | F32 table values | Correctness | Performance data |
+| --- | ---: | ---: | --- | --- |
+| [minishlab/potion-base-2M](https://huggingface.co/minishlab/potion-base-2M) | 64 | 1,889,792 | JS / Rust / WebGPU | [CPU](results/compiler/REPORT.md), [native GPU](results/targets/REPORT.md), [browser WebGPU](results/browser/REPORT.md) |
+| [minishlab/potion-base-8M](https://huggingface.co/minishlab/potion-base-8M) | 256 | 7,559,168 | JS / Rust / WebGPU | Not benchmarked |
+| [sentence-transformers/static-retrieval-mrl-en-v1](https://huggingface.co/sentence-transformers/static-retrieval-mrl-en-v1) | 1,024 | 31,254,528 | JS / Rust / WebGPU | Not benchmarked |
+
+The synthetic fixtures cover weighted/remapped 7-dimensional embeddings and
+5-dimensional embeddings with clamped normalization. They are test data, not
+pretrained models. See [all tested models, pinned revisions and evidence](TESTED_MODELS.md)
+and the [general architecture validation](results/general/REPORT.md).
+
+Performance claims currently apply **only to Potion 2M**. Correctness results for
+the other models do not establish their speed or embedding quality.
+
+## Results
 
 **Initial result:** conversion and fidelity checks pass, but this workload shows
 no clear compiler-optimization speedup. The original NumPy kernel is faster than
