@@ -4,6 +4,7 @@ Requires Pillow and ffmpeg. Example:
 uv run --no-project --with pillow python scripts/render_speed_animation.py
 """
 import argparse
+from fractions import Fraction
 import json
 from pathlib import Path
 import shutil
@@ -43,22 +44,24 @@ def main():
         ratio=max(ink_us,numpy_us)/min(ink_us,numpy_us)
         text(64,y,title,28)
         text(1136,y,f'{winner} {ratio:.2f}×',28,anchor='ra')
+        # Small integer trip counts make a seamless loop. Panel scales differ;
+        # the within-panel ratios approximate measured speeds within 0.4%.
+        trips=Fraction(numpy_us/ink_us).limit_denominator(12)
         for index,(name,latency,c) in enumerate([(ink_label,ink_us,ink),(numpy_label,numpy_us,numpy)]):
             row=y+75+index*60
             text(64,row,name,24,c,anchor='lm')
             text(1136,row,f'{latency:.2f} µs',24,c,anchor='rm')
             draw.line((left*scale,row*scale,right*scale,row*scale),fill=track,width=2*scale)
-            tracks.append((row,c,latency,index==0))
+            tracks.append((row,c,trips.numerator if index==0 else trips.denominator,index==0))
         if y!=660:draw.line((64*scale,(y+183)*scale,1136*scale,(y+183)*scale),fill='#282a25',width=scale)
-    fps=30;duration=10
+    fps=30;duration=16
     def frame(t,poster=False):
         image=base.copy();pen=ImageDraw.Draw(image)
-        opacity=1 if poster else min(1,t/.25,(duration-t)/.35)
-        for row,c,latency,solid in tracks:
-            cycle=0 if poster else t/(2.4*latency/(times['short']['numpy']/1000))
+        for row,c,trips,solid in tracks:
+            cycle=0 if poster else t/duration*trips
             phase=cycle%1;x=left+distance*(2*phase if phase<.5 else 2*(1-phase))
             rgb=tuple(int(c[i:i+2],16) for i in (1,3,5))
-            fill=tuple(round(17+(v-17)*max(0,opacity)) for v in rgb)
+            fill=rgb
             r=10;bounds=((x-r)*scale,(row-r)*scale,(x+r)*scale,(row+r)*scale)
             if solid:pen.ellipse(bounds,fill=fill)
             else:pen.ellipse(bounds,fill=background,outline=fill,width=2*scale)

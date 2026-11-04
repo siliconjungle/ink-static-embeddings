@@ -1,0 +1,14 @@
+{
+  "duration_seconds": 16,
+  "seamless": true,
+  "gif_loop_count": 0,
+  "style_sources": [
+    "https://inkwell.ing/",
+    "https://siliconjungle.github.io/ink-spec-site/"
+  ],
+  "sources_sha256": {
+    "results/javascript/report.json": "31c19137f27e436ae720e1e45ad596a1e6017e521f1b4a9ece6c89a95a3dbf52",
+    "results/targets/report.json": "63f995c6ba4b5a912c1c218142dbdd6f7693ff489f8094e08c118f7f37b3dd97"
+  },
+  "motion": "Each panel independently scaled; integer trips approximate inverse-latency ratios within 0.4%. Labels use original measurements."
+}

@@ -4,7 +4,7 @@
 
 ![Potion 2M comparison](potion-2m-speed.gif)
 
-The 10-second animation compares Ink with original Model2Vec/NumPy inference for
+The 16-second seamless animation compares Ink with original Model2Vec/NumPy inference for
 **Potion 2M on an Apple M4 Pro**, with two CPU panels and one GPU/CPU batch panel:
 
 | Workload | Ink / JS | Model2Vec / NumPy | Result |
@@ -13,10 +13,10 @@ The 10-second animation compares Ink with original Model2Vec/NumPy inference for
 | Mixed 64-case corpus | 16.84 µs/query | 8.77 µs/query | NumPy 1.92× faster |
 | GPU vs CPU, batch 1,024 | 3.77 µs/embedding (GPU) | 6.87 µs/embedding (CPU) | Ink GPU 1.82× CPU throughput |
 
-Ball velocity is proportional to inverse measured latency, with a common track
-distance and scale across all panels. Movement is slowed for viewing; it is not
-real-time execution. Balls fade at the loop boundary, preserving the measured
-ratios without forcing an integer number of trips. Empty inputs are excluded
+Each panel uses its own animation time scale and a common track distance for its
+two balls. Integer trip counts make the loop seamless; relative speeds approximate
+the measured ratios within 0.4%. Motion is illustrative, not real-time execution;
+the displayed timings are the recorded measurements. Empty inputs are excluded
 from the short group and included in the mixed corpus.
 
 The first two panels are single-query CPU results. Loading/tokenization are excluded; changing
